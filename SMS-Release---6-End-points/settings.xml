@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="7cecd10d-e262-4870-93d2-fa3d75e04240" name="SMS Release - 6 End points" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7cecd10d-e262-4870-93d2-fa3d75e04240fileName">SMS-Release---6-End-points</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

@@ -1,0 +1,3106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/organisation" path="/organisation" id="61998ae8-eaac-4705-b749-493b610a065b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="61998ae8-eaac-4705-b749-493b610a065bfileName">%2Forganisation</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getOrganisations" id="78b976d3-8713-46e8-9bf7-431586d635e3" method="GET">
+    <con:description>Bulk operation to retrieve all available Organisations, each of which represents a single recognised Education Provider entity (ECEs, Schools &amp; Tertiary  Education Institutions), Community (Kāhui Ako, Learning Support Clusters, etc.), or others unit(Teen Parent Units, Activity Centres. etc.)</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "Organisations" : {
+    "Organisation" : [ {
+      "OrganisationRefId" : "922",
+      "OrganisationLocalId" : "42342",
+      "Name" : "Hogwart's Area School",
+      "Authority" : "STATE",
+      "SectorRole" : "35003",
+      "Type" : "10030",
+      "OperationalStatus" : "O",
+      "EntityOpen" : "1652-04-01",
+      "EducationRegion" : "12013",
+      "SpecialEducationDistrict" : "182011",
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "RU",
+          "Role" : "PHY",
+          "Line1" : "1175 Lake Ferry Rd",
+          "Suburb" : "RD 1",
+          "City" : "Martinborough"
+        } ]
+      },
+      "CommunicationChannelList" : {
+        "Channel" : [ {
+          "Notes" : "Attendance System (Self Service)",
+          "Type" : "WEB",
+          "Value" : "http://att.hogwarts.school.nz"
+        }, {
+          "Notes" : "School Website",
+          "Type" : "WEB",
+          "Value" : "http://www.hogwarts.school.nz"
+        } ]
+      },
+      "ContactList" : {
+        "Contact" : [ {
+          "Name" : {
+            "FamilyName" : "Dumbledore",
+            "GivenName" : "Albus",
+            "FullName" : "Albus Dumbledore"
+          },
+          "PositionTitle" : "Headmaster",
+          "Role" : "PRI",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        }, {
+          "Name" : {
+            "FamilyName" : "Hagrid",
+            "GivenName" : "Rubeus",
+            "FullName" : "Rubeus Hagrid"
+          },
+          "PositionTitle" : "Gamekeeper",
+          "Role" : "DIR",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "The Enchanted Wood",
+              "Line2" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "stuart@gmail.com"
+        } ]
+      },
+      "LocationList" : {
+        "Location" : [ {
+          "Description" : "Only Campus",
+          "Address" : {
+            "Type" : "RU",
+            "Role" : "PHY",
+            "Line1" : "1175 Lake Ferry Rd",
+            "Suburb" : "RD 1",
+            "City" : "Martinborough",
+            "PostalCode" : "5781"
+          },
+          "GridLocation" : {
+            "Latitude" : -41.2814719,
+            "Longitude" : 175.3458472
+          },
+          "StatisticalAreaList" : {
+            "StatisticalArea" : [ {
+              "SpatialUnitType" : "GE",
+              "Code" : "058"
+            }, {
+              "SpatialUnitType" : "TA",
+              "Code" : "050"
+            }, {
+              "SpatialUnitType" : "WA",
+              "Code" : "05003"
+            } ]
+          }
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Notes" : "Attendance Office (Automated)",
+          "Usage" : "SMS",
+          "Type" : "WTE",
+          "Number" : "(0274) 300 9991"
+        }, {
+          "Notes" : "Attendance Office",
+          "Usage" : "INT",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9992"
+        }, {
+          "Notes" : "School Secretary DDI",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9993"
+        } ]
+      },
+      "SchoolService" : {
+        "CoEdStatus" : "COED",
+        "Decile" : 5,
+        "NewEntrantPolicyList" : {
+          "EnactedPolicy" : [ {
+            "EffectiveTo" : "2018-12-31",
+            "Policy" : "AE"
+          }, {
+            "EffectiveFrom" : "2019-01-01",
+            "Policy" : "CE"
+          } ]
+        },
+        "SchoolYearList" : {
+          "SchoolYear" : [ {
+            "YearLevel" : 1,
+            "FIRSTSchoolYearGenderId" : 1001,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 2,
+            "FIRSTSchoolYearGenderId" : 1002,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 3,
+            "FIRSTSchoolYearGenderId" : 1003,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 4,
+            "FIRSTSchoolYearGenderId" : 1004,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 5,
+            "FIRSTSchoolYearGenderId" : 1005,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 6,
+            "FIRSTSchoolYearGenderId" : 1006,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 7,
+            "FIRSTSchoolYearGenderId" : 1007,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 8,
+            "FIRSTSchoolYearGenderId" : 1008,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 9,
+            "FIRSTSchoolYearGenderId" : 1009,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 10,
+            "FIRSTSchoolYearGenderId" : 1010,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 11,
+            "FIRSTSchoolYearGenderId" : 1011,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 12,
+            "FIRSTSchoolYearGenderId" : 1012,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 13,
+            "FIRSTSchoolYearGenderId" : 1013,
+            "Gender" : "F"
+          } ]
+        }
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<Organisations>
+  <Organisation>
+    <AddressList/>
+    <CommunicationChannelList/>
+    <ContactList>
+      <Contact>
+        <Name>
+          <FamilyName>Dumbledore</FamilyName>
+          <GivenName>Albus</GivenName>
+          <FullName>Albus Dumbledore</FullName>
+        </Name>
+        <PositionTitle>Lead School Headmaster</PositionTitle>
+        <Role>PRI</Role>
+        <AddressList>
+          <Address>
+            <Type>TH</Type>
+            <Role>PHY</Role>
+            <Line1>533 Hogwart's Way</Line1>
+            <City>Hogsmead</City>
+            <PostalCode>7733</PostalCode>
+          </Address>
+        </AddressList>
+        <EmailList/>
+        <PhoneNumberList/>
+      </Contact>
+    </ContactList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>hogwarts@mailinator.com</Address>
+      </Email>
+    </EmailList>
+    <LocationList/>
+    <Name>Masterton (Whakaoriori) Kāhui Ako</Name>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Notes>Lead School Secretary (Mobile)</Notes>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+    <Type>998</Type>
+    <OrganisationRefId>922</OrganisationRefId>
+    <OrganisationLocalId>99204</OrganisationLocalId>
+  </Organisation>
+</Organisations>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="158fa90f-2101-496e-b88c-24feed3de750" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="createOrganisations" id="e4fecce1-8667-4bd7-a774-6803e5354067" method="POST">
+    <con:description>Bulk operation to create one or more Organisations, each of which represents a single recognised Education Provider entity (ECEs, Schools &amp; Tertiary Education Institutions), Community (Kāhui Ako, Learning Support Clusters, etc.), or others unit(Teen Parent Units, Activity Centres. etc.)</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>x-http-method-override</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Rather than CREATE records, treat this request as a SYNC request.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent>{
+  "Organisations" : {
+    "Organisation" : [ {
+      "OrganisationRefId" : "922",
+      "OrganisationLocalId" : "42342",
+      "Name" : "Hogwart's Area School",
+      "Authority" : "STATE",
+      "SectorRole" : "35003",
+      "Type" : "10030",
+      "OperationalStatus" : "O",
+      "EntityOpen" : "1652-04-01",
+      "EducationRegion" : "12013",
+      "SpecialEducationDistrict" : "182011",
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "RU",
+          "Role" : "PHY",
+          "Line1" : "1175 Lake Ferry Rd",
+          "Suburb" : "RD 1",
+          "City" : "Martinborough"
+        } ]
+      },
+      "CommunicationChannelList" : {
+        "Channel" : [ {
+          "Notes" : "Attendance System (Self Service)",
+          "Type" : "WEB",
+          "Value" : "http://att.hogwarts.school.nz"
+        }, {
+          "Notes" : "School Website",
+          "Type" : "WEB",
+          "Value" : "http://www.hogwarts.school.nz"
+        } ]
+      },
+      "ContactList" : {
+        "Contact" : [ {
+          "Name" : {
+            "FamilyName" : "Dumbledore",
+            "GivenName" : "Albus",
+            "FullName" : "Albus Dumbledore"
+          },
+          "PositionTitle" : "Headmaster",
+          "Role" : "PRI",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        }, {
+          "Name" : {
+            "FamilyName" : "Hagrid",
+            "GivenName" : "Rubeus",
+            "FullName" : "Rubeus Hagrid"
+          },
+          "PositionTitle" : "Gamekeeper",
+          "Role" : "DIR",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "The Enchanted Wood",
+              "Line2" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "stuart@gmail.com"
+        } ]
+      },
+      "LocationList" : {
+        "Location" : [ {
+          "Description" : "Only Campus",
+          "Address" : {
+            "Type" : "RU",
+            "Role" : "PHY",
+            "Line1" : "1175 Lake Ferry Rd",
+            "Suburb" : "RD 1",
+            "City" : "Martinborough",
+            "PostalCode" : "5781"
+          },
+          "GridLocation" : {
+            "Latitude" : -41.2814719,
+            "Longitude" : 175.3458472
+          },
+          "StatisticalAreaList" : {
+            "StatisticalArea" : [ {
+              "SpatialUnitType" : "GE",
+              "Code" : "058"
+            }, {
+              "SpatialUnitType" : "TA",
+              "Code" : "050"
+            }, {
+              "SpatialUnitType" : "WA",
+              "Code" : "05003"
+            } ]
+          }
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Notes" : "Attendance Office (Automated)",
+          "Usage" : "SMS",
+          "Type" : "WTE",
+          "Number" : "(0274) 300 9991"
+        }, {
+          "Notes" : "Attendance Office",
+          "Usage" : "INT",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9992"
+        }, {
+          "Notes" : "School Secretary DDI",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9993"
+        } ]
+      },
+      "SchoolService" : {
+        "CoEdStatus" : "COED",
+        "Decile" : 5,
+        "NewEntrantPolicyList" : {
+          "EnactedPolicy" : [ {
+            "EffectiveTo" : "2018-12-31",
+            "Policy" : "AE"
+          }, {
+            "EffectiveFrom" : "2019-01-01",
+            "Policy" : "CE"
+          } ]
+        },
+        "SchoolYearList" : {
+          "SchoolYear" : [ {
+            "YearLevel" : 1,
+            "FIRSTSchoolYearGenderId" : 1001,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 2,
+            "FIRSTSchoolYearGenderId" : 1002,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 3,
+            "FIRSTSchoolYearGenderId" : 1003,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 4,
+            "FIRSTSchoolYearGenderId" : 1004,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 5,
+            "FIRSTSchoolYearGenderId" : 1005,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 6,
+            "FIRSTSchoolYearGenderId" : 1006,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 7,
+            "FIRSTSchoolYearGenderId" : 1007,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 8,
+            "FIRSTSchoolYearGenderId" : 1008,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 9,
+            "FIRSTSchoolYearGenderId" : 1009,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 10,
+            "FIRSTSchoolYearGenderId" : 1010,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 11,
+            "FIRSTSchoolYearGenderId" : 1011,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 12,
+            "FIRSTSchoolYearGenderId" : 1012,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 13,
+            "FIRSTSchoolYearGenderId" : 1013,
+            "Gender" : "F"
+          } ]
+        }
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent><![CDATA[<Organisations>
+  <Organisation>
+    <AddressList/>
+    <CommunicationChannelList/>
+    <ContactList>
+      <Contact>
+        <Name>
+          <FamilyName>Dumbledore</FamilyName>
+          <GivenName>Albus</GivenName>
+          <FullName>Albus Dumbledore</FullName>
+        </Name>
+        <PositionTitle>Lead School Headmaster</PositionTitle>
+        <Role>PRI</Role>
+        <AddressList>
+          <Address>
+            <Type>TH</Type>
+            <Role>PHY</Role>
+            <Line1>533 Hogwart's Way</Line1>
+            <City>Hogsmead</City>
+            <PostalCode>7733</PostalCode>
+          </Address>
+        </AddressList>
+        <EmailList/>
+        <PhoneNumberList/>
+      </Contact>
+    </ContactList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>hogwarts@mailinator.com</Address>
+      </Email>
+    </EmailList>
+    <LocationList/>
+    <Name>Masterton (Whakaoriori) Kāhui Ako</Name>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Notes>Lead School Secretary (Mobile)</Notes>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+    <Type>998</Type>
+    <OrganisationRefId>922</OrganisationRefId>
+    <OrganisationLocalId>99204</OrganisationLocalId>
+  </Organisation>
+</Organisations>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "Organisations" : {
+    "Organisation" : [ {
+      "OrganisationRefId" : "922",
+      "OrganisationLocalId" : "42342",
+      "Name" : "Hogwart's Area School",
+      "Authority" : "STATE",
+      "SectorRole" : "35003",
+      "Type" : "10030",
+      "OperationalStatus" : "O",
+      "EntityOpen" : "1652-04-01",
+      "EducationRegion" : "12013",
+      "SpecialEducationDistrict" : "182011",
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "RU",
+          "Role" : "PHY",
+          "Line1" : "1175 Lake Ferry Rd",
+          "Suburb" : "RD 1",
+          "City" : "Martinborough"
+        } ]
+      },
+      "CommunicationChannelList" : {
+        "Channel" : [ {
+          "Notes" : "Attendance System (Self Service)",
+          "Type" : "WEB",
+          "Value" : "http://att.hogwarts.school.nz"
+        }, {
+          "Notes" : "School Website",
+          "Type" : "WEB",
+          "Value" : "http://www.hogwarts.school.nz"
+        } ]
+      },
+      "ContactList" : {
+        "Contact" : [ {
+          "Name" : {
+            "FamilyName" : "Dumbledore",
+            "GivenName" : "Albus",
+            "FullName" : "Albus Dumbledore"
+          },
+          "PositionTitle" : "Headmaster",
+          "Role" : "PRI",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        }, {
+          "Name" : {
+            "FamilyName" : "Hagrid",
+            "GivenName" : "Rubeus",
+            "FullName" : "Rubeus Hagrid"
+          },
+          "PositionTitle" : "Gamekeeper",
+          "Role" : "DIR",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "The Enchanted Wood",
+              "Line2" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "stuart@gmail.com"
+        } ]
+      },
+      "LocationList" : {
+        "Location" : [ {
+          "Description" : "Only Campus",
+          "Address" : {
+            "Type" : "RU",
+            "Role" : "PHY",
+            "Line1" : "1175 Lake Ferry Rd",
+            "Suburb" : "RD 1",
+            "City" : "Martinborough",
+            "PostalCode" : "5781"
+          },
+          "GridLocation" : {
+            "Latitude" : -41.2814719,
+            "Longitude" : 175.3458472
+          },
+          "StatisticalAreaList" : {
+            "StatisticalArea" : [ {
+              "SpatialUnitType" : "GE",
+              "Code" : "058"
+            }, {
+              "SpatialUnitType" : "TA",
+              "Code" : "050"
+            }, {
+              "SpatialUnitType" : "WA",
+              "Code" : "05003"
+            } ]
+          }
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Notes" : "Attendance Office (Automated)",
+          "Usage" : "SMS",
+          "Type" : "WTE",
+          "Number" : "(0274) 300 9991"
+        }, {
+          "Notes" : "Attendance Office",
+          "Usage" : "INT",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9992"
+        }, {
+          "Notes" : "School Secretary DDI",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9993"
+        } ]
+      },
+      "SchoolService" : {
+        "CoEdStatus" : "COED",
+        "Decile" : 5,
+        "NewEntrantPolicyList" : {
+          "EnactedPolicy" : [ {
+            "EffectiveTo" : "2018-12-31",
+            "Policy" : "AE"
+          }, {
+            "EffectiveFrom" : "2019-01-01",
+            "Policy" : "CE"
+          } ]
+        },
+        "SchoolYearList" : {
+          "SchoolYear" : [ {
+            "YearLevel" : 1,
+            "FIRSTSchoolYearGenderId" : 1001,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 2,
+            "FIRSTSchoolYearGenderId" : 1002,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 3,
+            "FIRSTSchoolYearGenderId" : 1003,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 4,
+            "FIRSTSchoolYearGenderId" : 1004,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 5,
+            "FIRSTSchoolYearGenderId" : 1005,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 6,
+            "FIRSTSchoolYearGenderId" : 1006,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 7,
+            "FIRSTSchoolYearGenderId" : 1007,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 8,
+            "FIRSTSchoolYearGenderId" : 1008,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 9,
+            "FIRSTSchoolYearGenderId" : 1009,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 10,
+            "FIRSTSchoolYearGenderId" : 1010,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 11,
+            "FIRSTSchoolYearGenderId" : 1011,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 12,
+            "FIRSTSchoolYearGenderId" : 1012,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 13,
+            "FIRSTSchoolYearGenderId" : 1013,
+            "Gender" : "F"
+          } ]
+        }
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<Organisations>
+  <Organisation>
+    <AddressList/>
+    <CommunicationChannelList/>
+    <ContactList>
+      <Contact>
+        <Name>
+          <FamilyName>Dumbledore</FamilyName>
+          <GivenName>Albus</GivenName>
+          <FullName>Albus Dumbledore</FullName>
+        </Name>
+        <PositionTitle>Lead School Headmaster</PositionTitle>
+        <Role>PRI</Role>
+        <AddressList>
+          <Address>
+            <Type>TH</Type>
+            <Role>PHY</Role>
+            <Line1>533 Hogwart's Way</Line1>
+            <City>Hogsmead</City>
+            <PostalCode>7733</PostalCode>
+          </Address>
+        </AddressList>
+        <EmailList/>
+        <PhoneNumberList/>
+      </Contact>
+    </ContactList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>hogwarts@mailinator.com</Address>
+      </Email>
+    </EmailList>
+    <LocationList/>
+    <Name>Masterton (Whakaoriori) Kāhui Ako</Name>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Notes>Lead School Secretary (Mobile)</Notes>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+    <Type>998</Type>
+    <OrganisationRefId>922</OrganisationRefId>
+    <OrganisationLocalId>99204</OrganisationLocalId>
+  </Organisation>
+</Organisations>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="8bf0aefc-fafd-4ff8-bedd-c4efc58a9c5c" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{
+    "Organisations": {
+        "Organisation": [
+            {
+                "OrganisationRefId": "8005",
+                "EducationRegion": "12010",
+                "SpecialEducationDistrict": "182006",
+                "Name": "Karamū Primary School",
+                "OperationalStatus": "28001",
+                "Type": "10023",
+                "SectorRole": "35003",
+                "ProviderSMS": "MUS",
+                "Authority": "STATE",
+                "AddressList": {
+                    "Address": [
+                        {
+                            "Type": "TH",
+                            "Role": "PHY",
+                            "Line1": "Elder Lane",
+                            "City": "Tauranga",
+                            "Country": "New Zealand",
+                            "PostalCode": "3143",
+                            "GridLocation": {
+                                "Latitude": -37.704974,
+                                "Longitude": 176.11123
+                            }
+                        }
+                    ]
+                },
+                "EmailList": {
+                    "Email": [
+                        {
+                            "Type": "WORK",
+                            "Address": "principal@8005.school.nz"
+                        }
+                    ]
+                },
+                "PhoneNumberList": {
+                    "PhoneNumber": [
+                        {
+                            "Type": "MAI",
+                            "Number": "06 555 9766"
+                        }
+                    ]
+                },
+                "TeRitoConfig": {
+                    "DataAnalysisDashboardsInd": "Y",
+                    "StandardisedLearningSupportRegisterInd": "Y",
+                    "VirtualLearningEnvironmentInd": "N"
+                },
+                "SchoolService": {
+                    "CoEdStatus": "COED",
+                    "Decile": 2,
+                    "AllowManualProvisioning": "N",
+                    "SchoolClassificationList": {
+                        "Classification": [
+                            "52003"
+                        ]
+                    },
+                    "SchoolYearList": {
+                        "SchoolYear": [
+                            {
+                                "YearLevel": 1,
+                                "FIRSTSchoolYearGenderId": -80051,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 2,
+                                "FIRSTSchoolYearGenderId": -80052,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 3,
+                                "FIRSTSchoolYearGenderId": -80053,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 4,
+                                "FIRSTSchoolYearGenderId": -80054,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 5,
+                                "FIRSTSchoolYearGenderId": -80055,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 6,
+                                "FIRSTSchoolYearGenderId": -80056,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 7,
+                                "FIRSTSchoolYearGenderId": -80057,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 8,
+                                "FIRSTSchoolYearGenderId": -80058,
+                                "Gender": "55002"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "OrganisationRefId": "8006",
+                "EducationRegion": "12010",
+                "SpecialEducationDistrict": "182006",
+                "Name": "Horoeka Primary School",
+                "OperationalStatus": "28001",
+                "Type": "10024",
+                "SectorRole": "35003",
+                "ProviderSMS": "ETA",
+                "Authority": "STATE",
+                "AddressList": {
+                    "Address": [
+                        {
+                            "Type": "TH",
+                            "Role": "PHY",
+                            "Line1": "Mission Road",
+                            "City": "Whakatane",
+                            "Country": "New Zealand",
+                            "PostalCode": "3158",
+                            "GridLocation": {
+                                "Latitude": -38.148073,
+                                "Longitude": 177.007448
+                            }
+                        }
+                    ]
+                },
+                "EmailList": {
+                    "Email": [
+                        {
+                            "Type": "WORK",
+                            "Address": "principal@8006.school.nz"
+                        }
+                    ]
+                },
+                "PhoneNumberList": {
+                    "PhoneNumber": [
+                        {
+                            "Type": "MAI",
+                            "Number": "06 555 6622"
+                        }
+                    ]
+                },
+                "TeRitoConfig": {
+                    "DataAnalysisDashboardsInd": "Y",
+                    "StandardisedLearningSupportRegisterInd": "Y",
+                    "VirtualLearningEnvironmentInd": "N"
+                },
+                "SchoolService": {
+                    "CoEdStatus": "COED",
+                    "Decile": 3,
+                    "AllowManualProvisioning": "N",
+                    "SchoolYearList": {
+                        "SchoolYear": [
+                            {
+                                "YearLevel": 1,
+                                "FIRSTSchoolYearGenderId": -80061,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 2,
+                                "FIRSTSchoolYearGenderId": -80062,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 3,
+                                "FIRSTSchoolYearGenderId": -80063,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 4,
+                                "FIRSTSchoolYearGenderId": -80064,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 5,
+                                "FIRSTSchoolYearGenderId": -80065,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 6,
+                                "FIRSTSchoolYearGenderId": -80067,
+                                "Gender": "55002"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "OrganisationRefId": "8007",
+                "EducationRegion": "12010",
+                "SpecialEducationDistrict": "182006",
+                "Name": "Tarata High School",
+                "OperationalStatus": "28001",
+                "Type": "10033",
+                "SectorRole": "35003",
+                "ProviderSMS": "LIN",
+                "Authority": "STATE",
+                "AddressList": {
+                    "Address": [
+                        {
+                            "Type": "TH",
+                            "Role": "PHY",
+                            "Line1": "Karamu Street",
+                            "City": "Mangakino",
+                            "Country": "New Zealand",
+                            "PostalCode": "3445",
+                            "GridLocation": {
+                                "Latitude": -38.369528,
+                                "Longitude": 175.771411
+                            }
+                        }
+                    ]
+                },
+                "EmailList": {
+                    "Email": [
+                        {
+                            "Type": "WORK",
+                            "Address": "principal@8007.school.nz"
+                        }
+                    ]
+                },
+                "PhoneNumberList": {
+                    "PhoneNumber": [
+                        {
+                            "Type": "MAI",
+                            "Number": "06 555 1234"
+                        }
+                    ]
+                },
+                "TeRitoConfig": {
+                    "DataAnalysisDashboardsInd": "Y",
+                    "StandardisedLearningSupportRegisterInd": "Y",
+                    "VirtualLearningEnvironmentInd": "N"
+                },
+                "SchoolService": {
+                    "CoEdStatus": "COED",
+                    "Decile": 3,
+                    "AllowManualProvisioning": "N",
+                    "SchoolClassificationList": {
+                        "Classification": [
+                            "52003"
+                        ]
+                    },
+                    "SchoolYearList": {
+                        "SchoolYear": [
+                            {
+                                "YearLevel": 9,
+                                "FIRSTSchoolYearGenderId": -800709,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 10,
+                                "FIRSTSchoolYearGenderId": -800710,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 11,
+                                "FIRSTSchoolYearGenderId": -800711,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 12,
+                                "FIRSTSchoolYearGenderId": -800712,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 13,
+                                "FIRSTSchoolYearGenderId": -800713,
+                                "Gender": "55002"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "OrganisationRefId": "8008",
+                "EducationRegion": "12010",
+                "SpecialEducationDistrict": "182006",
+                "Name": "Pōhutukawa High School",
+                "OperationalStatus": "28001",
+                "Type": "10029",
+                "SectorRole": "35003",
+                "ProviderSMS": "ASS",
+                "Authority": "STATE",
+                "AddressList": {
+                    "Address": [
+                        {
+                            "Type": "TH",
+                            "Role": "PHY",
+                            "Line1": "43 Miro Drive",
+                            "City": "Murupara",
+                            "Country": "New Zealand",
+                            "PostalCode": "3062",
+                            "GridLocation": {
+                                "Latitude": -38.460994,
+                                "Longitude": 176.70927
+                            }
+                        }
+                    ]
+                },
+                "EmailList": {
+                    "Email": [
+                        {
+                            "Type": "WORK",
+                            "Address": "principal@8008.school.nz"
+                        }
+                    ]
+                },
+                "PhoneNumberList": {
+                    "PhoneNumber": [
+                        {
+                            "Type": "MAI",
+                            "Number": "06 555 2387"
+                        }
+                    ]
+                },
+                "TeRitoConfig": {
+                    "DataAnalysisDashboardsInd": "Y",
+                    "StandardisedLearningSupportRegisterInd": "Y",
+                    "VirtualLearningEnvironmentInd": "N"
+                },
+                "SchoolService": {
+                    "CoEdStatus": "COED",
+                    "Decile": 3,
+                    "AllowManualProvisioning": "N",
+                    "SchoolYearList": {
+                        "SchoolYear": [
+                            {
+                                "YearLevel": 7,
+                                "FIRSTSchoolYearGenderId": -800807,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 8,
+                                "FIRSTSchoolYearGenderId": -880808,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 9,
+                                "FIRSTSchoolYearGenderId": -800809,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 10,
+                                "FIRSTSchoolYearGenderId": -800810,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 11,
+                                "FIRSTSchoolYearGenderId": -800811,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 12,
+                                "FIRSTSchoolYearGenderId": -800812,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 13,
+                                "FIRSTSchoolYearGenderId": -800813,
+                                "Gender": "55002"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "OrganisationRefId": "90902",
+                "EducationRegion": "12010",
+                "SpecialEducationDistrict": "182006",
+                "Name": "Tōtara Early Learning Centre",
+                "OperationalStatus": "28001",
+                "Type": "10003",
+                "SectorRole": "35000",
+                "IsLicencedECEServiceProvider": "Y",
+                "IsPlaygroupServiceProvider": "N",
+                "ECEServiceProviderOwnershipType": "18004",
+                "AddressList": {
+                    "Address": [
+                        {
+                            "Type": "TH",
+                            "Role": "PHY",
+                            "Line1": "Waipapa Road",
+                            "City": "Turangi",
+                            "Country": "New Zealand",
+                            "PostalCode": "3334",
+                            "GridLocation": {
+                                "Latitude": -38.98579,
+                                "Longitude": 175.815059
+                            }
+                        }
+                    ]
+                },
+                "TeRitoConfig": {
+                    "DataAnalysisDashboardsInd": "N",
+                    "StandardisedLearningSupportRegisterInd": "Y",
+                    "VirtualLearningEnvironmentInd": "N"
+                },
+                "SchoolService": {
+                    "AllowManualProvisioning": "Y"
+                },
+                "ECEService": {
+                    "Type": "KG",
+                    "PrimaryLanguage": "NZS01112"
+                }
+            },
+            {
+                "OrganisationRefId": "90903",
+                "EducationRegion": "12010",
+                "SpecialEducationDistrict": "182006",
+                "Name": "Nīkau Kindergarten",
+                "OperationalStatus": "28001",
+                "Type": "10003",
+                "SectorRole": "35000",
+                "IsLicencedECEServiceProvider": "Y",
+                "IsPlaygroupServiceProvider": "N",
+                "ECEServiceProviderOwnershipType": "18004",
+                "AddressList": {
+                    "Address": [
+                        {
+                            "Type": "TH",
+                            "Role": "PHY",
+                            "Line1": "29 Mawake Place",
+                            "City": "Turangi",
+                            "Country": "New Zealand",
+                            "PostalCode": "3334",
+                            "GridLocation": {
+                                "Latitude": -38.984401,
+                                "Longitude": 175.803419
+                            }
+                        }
+                    ]
+                },
+                "TeRitoConfig": {
+                    "DataAnalysisDashboardsInd": "N",
+                    "StandardisedLearningSupportRegisterInd": "Y",
+                    "VirtualLearningEnvironmentInd": "N"
+                },
+                "SchoolService": {
+                    "AllowManualProvisioning": "Y"
+                },
+                "ECEService": {
+                    "Type": "PC",
+                    "PrimaryLanguage": "NZS01112"
+                }
+            },
+            {
+                "OrganisationRefId": "90101",
+                "EducationRegion": "12010",
+                "SpecialEducationDistrict": "182006",
+                "EntityOpen": "2020-01-27",
+                "Name": "Te Wheke Learning Support Cluster",
+                "OperationalStatus": "28010",
+                "Type": "10065",
+                "SectorRole": "35009"
+            }
+        ]
+    }
+}</con:request>
+      <con:originalUri>https://mocksifapi.azurewebsites.net/sif/organisation</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>Basic Auth - MockServer</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+      </con:parameters>
+    </con:request>
+    <con:request name="Request 2" id="8e76b956-23cc-4b9c-b479-b4704f485e34" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<Organisations>
+  <Organisation>
+    <AddressList/>
+    <CommunicationChannelList/>
+    <ContactList>
+      <Contact>
+        <Name>
+          <FamilyName>Dumbledore</FamilyName>
+          <GivenName>Albus</GivenName>
+          <FullName>Albus Dumbledore</FullName>
+        </Name>
+        <PositionTitle>Lead School Headmaster</PositionTitle>
+        <Role>PRI</Role>
+        <AddressList>
+          <Address>
+            <Type>TH</Type>
+            <Role>PHY</Role>
+            <Line1>533 Hogwart's Way</Line1>
+            <City>Hogsmead</City>
+            <PostalCode>7733</PostalCode>
+          </Address>
+        </AddressList>
+        <EmailList/>
+        <PhoneNumberList/>
+      </Contact>
+    </ContactList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>hogwarts@mailinator.com</Address>
+      </Email>
+    </EmailList>
+    <LocationList/>
+    <Name>Masterton (Whakaoriori) Kāhui Ako</Name>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Notes>Lead School Secretary (Mobile)</Notes>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+    <Type>998</Type>
+    <OrganisationRefId>922</OrganisationRefId>
+    <OrganisationLocalId>99204</OrganisationLocalId>
+  </Organisation>
+</Organisations>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="updateOrganisations" id="4c65a2dd-e651-438b-9509-62ea3b93835e" method="PUT">
+    <con:description>Bulk operation to update one or more Organisations, each of which represents a single recognised Education Provider entity (ECEs, Schools &amp; Tertiary  Education Institutions), Community (Kāhui Ako, Learning Support Clusters, etc.), or others unit(Teen Parent Units, Activity Centres. etc.)</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated objects</con:description>
+      <con:sampleContent>{
+  "Organisations" : {
+    "Organisation" : [ {
+      "OrganisationRefId" : "922",
+      "OrganisationLocalId" : "42342",
+      "Name" : "Hogwart's Area School",
+      "Authority" : "STATE",
+      "SectorRole" : "35003",
+      "Type" : "10030",
+      "OperationalStatus" : "O",
+      "EntityOpen" : "1652-04-01",
+      "EducationRegion" : "12013",
+      "SpecialEducationDistrict" : "182011",
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "RU",
+          "Role" : "PHY",
+          "Line1" : "1175 Lake Ferry Rd",
+          "Suburb" : "RD 1",
+          "City" : "Martinborough"
+        } ]
+      },
+      "CommunicationChannelList" : {
+        "Channel" : [ {
+          "Notes" : "Attendance System (Self Service)",
+          "Type" : "WEB",
+          "Value" : "http://att.hogwarts.school.nz"
+        }, {
+          "Notes" : "School Website",
+          "Type" : "WEB",
+          "Value" : "http://www.hogwarts.school.nz"
+        } ]
+      },
+      "ContactList" : {
+        "Contact" : [ {
+          "Name" : {
+            "FamilyName" : "Dumbledore",
+            "GivenName" : "Albus",
+            "FullName" : "Albus Dumbledore"
+          },
+          "PositionTitle" : "Headmaster",
+          "Role" : "PRI",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        }, {
+          "Name" : {
+            "FamilyName" : "Hagrid",
+            "GivenName" : "Rubeus",
+            "FullName" : "Rubeus Hagrid"
+          },
+          "PositionTitle" : "Gamekeeper",
+          "Role" : "DIR",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "The Enchanted Wood",
+              "Line2" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "stuart@gmail.com"
+        } ]
+      },
+      "LocationList" : {
+        "Location" : [ {
+          "Description" : "Only Campus",
+          "Address" : {
+            "Type" : "RU",
+            "Role" : "PHY",
+            "Line1" : "1175 Lake Ferry Rd",
+            "Suburb" : "RD 1",
+            "City" : "Martinborough",
+            "PostalCode" : "5781"
+          },
+          "GridLocation" : {
+            "Latitude" : -41.2814719,
+            "Longitude" : 175.3458472
+          },
+          "StatisticalAreaList" : {
+            "StatisticalArea" : [ {
+              "SpatialUnitType" : "GE",
+              "Code" : "058"
+            }, {
+              "SpatialUnitType" : "TA",
+              "Code" : "050"
+            }, {
+              "SpatialUnitType" : "WA",
+              "Code" : "05003"
+            } ]
+          }
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Notes" : "Attendance Office (Automated)",
+          "Usage" : "SMS",
+          "Type" : "WTE",
+          "Number" : "(0274) 300 9991"
+        }, {
+          "Notes" : "Attendance Office",
+          "Usage" : "INT",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9992"
+        }, {
+          "Notes" : "School Secretary DDI",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9993"
+        } ]
+      },
+      "SchoolService" : {
+        "CoEdStatus" : "COED",
+        "Decile" : 5,
+        "NewEntrantPolicyList" : {
+          "EnactedPolicy" : [ {
+            "EffectiveTo" : "2018-12-31",
+            "Policy" : "AE"
+          }, {
+            "EffectiveFrom" : "2019-01-01",
+            "Policy" : "CE"
+          } ]
+        },
+        "SchoolYearList" : {
+          "SchoolYear" : [ {
+            "YearLevel" : 1,
+            "FIRSTSchoolYearGenderId" : 1001,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 2,
+            "FIRSTSchoolYearGenderId" : 1002,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 3,
+            "FIRSTSchoolYearGenderId" : 1003,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 4,
+            "FIRSTSchoolYearGenderId" : 1004,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 5,
+            "FIRSTSchoolYearGenderId" : 1005,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 6,
+            "FIRSTSchoolYearGenderId" : 1006,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 7,
+            "FIRSTSchoolYearGenderId" : 1007,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 8,
+            "FIRSTSchoolYearGenderId" : 1008,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 9,
+            "FIRSTSchoolYearGenderId" : 1009,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 10,
+            "FIRSTSchoolYearGenderId" : 1010,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 11,
+            "FIRSTSchoolYearGenderId" : 1011,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 12,
+            "FIRSTSchoolYearGenderId" : 1012,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 13,
+            "FIRSTSchoolYearGenderId" : 1013,
+            "Gender" : "F"
+          } ]
+        }
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated objects</con:description>
+      <con:sampleContent><![CDATA[<Organisations>
+  <Organisation>
+    <AddressList/>
+    <CommunicationChannelList/>
+    <ContactList>
+      <Contact>
+        <Name>
+          <FamilyName>Dumbledore</FamilyName>
+          <GivenName>Albus</GivenName>
+          <FullName>Albus Dumbledore</FullName>
+        </Name>
+        <PositionTitle>Lead School Headmaster</PositionTitle>
+        <Role>PRI</Role>
+        <AddressList>
+          <Address>
+            <Type>TH</Type>
+            <Role>PHY</Role>
+            <Line1>533 Hogwart's Way</Line1>
+            <City>Hogsmead</City>
+            <PostalCode>7733</PostalCode>
+          </Address>
+        </AddressList>
+        <EmailList/>
+        <PhoneNumberList/>
+      </Contact>
+    </ContactList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>hogwarts@mailinator.com</Address>
+      </Email>
+    </EmailList>
+    <LocationList/>
+    <Name>Masterton (Whakaoriori) Kāhui Ako</Name>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Notes>Lead School Secretary (Mobile)</Notes>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+    <Type>998</Type>
+    <OrganisationRefId>922</OrganisationRefId>
+    <OrganisationLocalId>99204</OrganisationLocalId>
+  </Organisation>
+</Organisations>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "Organisations" : {
+    "Organisation" : [ {
+      "OrganisationRefId" : "922",
+      "OrganisationLocalId" : "42342",
+      "Name" : "Hogwart's Area School",
+      "Authority" : "STATE",
+      "SectorRole" : "35003",
+      "Type" : "10030",
+      "OperationalStatus" : "O",
+      "EntityOpen" : "1652-04-01",
+      "EducationRegion" : "12013",
+      "SpecialEducationDistrict" : "182011",
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "RU",
+          "Role" : "PHY",
+          "Line1" : "1175 Lake Ferry Rd",
+          "Suburb" : "RD 1",
+          "City" : "Martinborough"
+        } ]
+      },
+      "CommunicationChannelList" : {
+        "Channel" : [ {
+          "Notes" : "Attendance System (Self Service)",
+          "Type" : "WEB",
+          "Value" : "http://att.hogwarts.school.nz"
+        }, {
+          "Notes" : "School Website",
+          "Type" : "WEB",
+          "Value" : "http://www.hogwarts.school.nz"
+        } ]
+      },
+      "ContactList" : {
+        "Contact" : [ {
+          "Name" : {
+            "FamilyName" : "Dumbledore",
+            "GivenName" : "Albus",
+            "FullName" : "Albus Dumbledore"
+          },
+          "PositionTitle" : "Headmaster",
+          "Role" : "PRI",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        }, {
+          "Name" : {
+            "FamilyName" : "Hagrid",
+            "GivenName" : "Rubeus",
+            "FullName" : "Rubeus Hagrid"
+          },
+          "PositionTitle" : "Gamekeeper",
+          "Role" : "DIR",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "The Enchanted Wood",
+              "Line2" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "stuart@gmail.com"
+        } ]
+      },
+      "LocationList" : {
+        "Location" : [ {
+          "Description" : "Only Campus",
+          "Address" : {
+            "Type" : "RU",
+            "Role" : "PHY",
+            "Line1" : "1175 Lake Ferry Rd",
+            "Suburb" : "RD 1",
+            "City" : "Martinborough",
+            "PostalCode" : "5781"
+          },
+          "GridLocation" : {
+            "Latitude" : -41.2814719,
+            "Longitude" : 175.3458472
+          },
+          "StatisticalAreaList" : {
+            "StatisticalArea" : [ {
+              "SpatialUnitType" : "GE",
+              "Code" : "058"
+            }, {
+              "SpatialUnitType" : "TA",
+              "Code" : "050"
+            }, {
+              "SpatialUnitType" : "WA",
+              "Code" : "05003"
+            } ]
+          }
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Notes" : "Attendance Office (Automated)",
+          "Usage" : "SMS",
+          "Type" : "WTE",
+          "Number" : "(0274) 300 9991"
+        }, {
+          "Notes" : "Attendance Office",
+          "Usage" : "INT",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9992"
+        }, {
+          "Notes" : "School Secretary DDI",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9993"
+        } ]
+      },
+      "SchoolService" : {
+        "CoEdStatus" : "COED",
+        "Decile" : 5,
+        "NewEntrantPolicyList" : {
+          "EnactedPolicy" : [ {
+            "EffectiveTo" : "2018-12-31",
+            "Policy" : "AE"
+          }, {
+            "EffectiveFrom" : "2019-01-01",
+            "Policy" : "CE"
+          } ]
+        },
+        "SchoolYearList" : {
+          "SchoolYear" : [ {
+            "YearLevel" : 1,
+            "FIRSTSchoolYearGenderId" : 1001,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 2,
+            "FIRSTSchoolYearGenderId" : 1002,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 3,
+            "FIRSTSchoolYearGenderId" : 1003,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 4,
+            "FIRSTSchoolYearGenderId" : 1004,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 5,
+            "FIRSTSchoolYearGenderId" : 1005,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 6,
+            "FIRSTSchoolYearGenderId" : 1006,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 7,
+            "FIRSTSchoolYearGenderId" : 1007,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 8,
+            "FIRSTSchoolYearGenderId" : 1008,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 9,
+            "FIRSTSchoolYearGenderId" : 1009,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 10,
+            "FIRSTSchoolYearGenderId" : 1010,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 11,
+            "FIRSTSchoolYearGenderId" : 1011,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 12,
+            "FIRSTSchoolYearGenderId" : 1012,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 13,
+            "FIRSTSchoolYearGenderId" : 1013,
+            "Gender" : "F"
+          } ]
+        }
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<Organisations>
+  <Organisation>
+    <AddressList/>
+    <CommunicationChannelList/>
+    <ContactList>
+      <Contact>
+        <Name>
+          <FamilyName>Dumbledore</FamilyName>
+          <GivenName>Albus</GivenName>
+          <FullName>Albus Dumbledore</FullName>
+        </Name>
+        <PositionTitle>Lead School Headmaster</PositionTitle>
+        <Role>PRI</Role>
+        <AddressList>
+          <Address>
+            <Type>TH</Type>
+            <Role>PHY</Role>
+            <Line1>533 Hogwart's Way</Line1>
+            <City>Hogsmead</City>
+            <PostalCode>7733</PostalCode>
+          </Address>
+        </AddressList>
+        <EmailList/>
+        <PhoneNumberList/>
+      </Contact>
+    </ContactList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>hogwarts@mailinator.com</Address>
+      </Email>
+    </EmailList>
+    <LocationList/>
+    <Name>Masterton (Whakaoriori) Kāhui Ako</Name>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Notes>Lead School Secretary (Mobile)</Notes>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+    <Type>998</Type>
+    <OrganisationRefId>922</OrganisationRefId>
+    <OrganisationLocalId>99204</OrganisationLocalId>
+  </Organisation>
+</Organisations>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="545691b1-bb33-4894-915b-a2a2c8b2d3d7" mediaType="application/json" postQueryString="false">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "Organisations" : {\r
+    "Organisation" : [ {\r
+      "OrganisationRefId" : "922",\r
+      "OrganisationLocalId" : "42342",\r
+      "Name" : "Hogwart's Area School",\r
+      "Authority" : "STATE",\r
+      "SectorRole" : "35003",\r
+      "Type" : "10030",\r
+      "OperationalStatus" : "O",\r
+      "EntityOpen" : "1652-04-01",\r
+      "EducationRegion" : "12013",\r
+      "SpecialEducationDistrict" : "182011",\r
+      "AddressList" : {\r
+        "Address" : [ {\r
+          "Type" : "RU",\r
+          "Role" : "PHY",\r
+          "Line1" : "1175 Lake Ferry Rd",\r
+          "Suburb" : "RD 1",\r
+          "City" : "Martinborough"\r
+        } ]\r
+      },\r
+      "CommunicationChannelList" : {\r
+        "Channel" : [ {\r
+          "Notes" : "Attendance System (Self Service)",\r
+          "Type" : "WEB",\r
+          "Value" : "http://att.hogwarts.school.nz"\r
+        }, {\r
+          "Notes" : "School Website",\r
+          "Type" : "WEB",\r
+          "Value" : "http://www.hogwarts.school.nz"\r
+        } ]\r
+      },\r
+      "ContactList" : {\r
+        "Contact" : [ {\r
+          "Name" : {\r
+            "FamilyName" : "Dumbledore",\r
+            "GivenName" : "Albus",\r
+            "FullName" : "Albus Dumbledore"\r
+          },\r
+          "PositionTitle" : "Headmaster",\r
+          "Role" : "PRI",\r
+          "AddressList" : {\r
+            "Address" : [ {\r
+              "Type" : "TH",\r
+              "Role" : "PHY",\r
+              "Line1" : "533 Hogwart's Way",\r
+              "City" : "Hogsmead",\r
+              "PostalCode" : "7733"\r
+            } ]\r
+          },\r
+          "EmailList" : {\r
+            "Email" : [ ]\r
+          },\r
+          "PhoneNumberList" : {\r
+            "PhoneNumber" : [ ]\r
+          }\r
+        }, {\r
+          "Name" : {\r
+            "FamilyName" : "Hagrid",\r
+            "GivenName" : "Rubeus",\r
+            "FullName" : "Rubeus Hagrid"\r
+          },\r
+          "PositionTitle" : "Gamekeeper",\r
+          "Role" : "DIR",\r
+          "AddressList" : {\r
+            "Address" : [ {\r
+              "Type" : "TH",\r
+              "Role" : "PHY",\r
+              "Line1" : "The Enchanted Wood",\r
+              "Line2" : "533 Hogwart's Way",\r
+              "City" : "Hogsmead",\r
+              "PostalCode" : "7733"\r
+            } ]\r
+          },\r
+          "EmailList" : {\r
+            "Email" : [ ]\r
+          },\r
+          "PhoneNumberList" : {\r
+            "PhoneNumber" : [ ]\r
+          }\r
+        } ]\r
+      },\r
+      "EmailList" : {\r
+        "Email" : [ {\r
+          "Type" : "PRIM",\r
+          "Address" : "stuart@gmail.com"\r
+        } ]\r
+      },\r
+      "LocationList" : {\r
+        "Location" : [ {\r
+          "Description" : "Only Campus",\r
+          "Address" : {\r
+            "Type" : "RU",\r
+            "Role" : "PHY",\r
+            "Line1" : "1175 Lake Ferry Rd",\r
+            "Suburb" : "RD 1",\r
+            "City" : "Martinborough",\r
+            "PostalCode" : "5781"\r
+          },\r
+          "GridLocation" : {\r
+            "Latitude" : -41.2814719,\r
+            "Longitude" : 175.3458472\r
+          },\r
+          "StatisticalAreaList" : {\r
+            "StatisticalArea" : [ {\r
+              "SpatialUnitType" : "GE",\r
+              "Code" : "058"\r
+            }, {\r
+              "SpatialUnitType" : "TA",\r
+              "Code" : "050"\r
+            }, {\r
+              "SpatialUnitType" : "WA",\r
+              "Code" : "05003"\r
+            } ]\r
+          }\r
+        } ]\r
+      },\r
+      "PhoneNumberList" : {\r
+        "PhoneNumber" : [ {\r
+          "Notes" : "Attendance Office (Automated)",\r
+          "Usage" : "SMS",\r
+          "Type" : "WTE",\r
+          "Number" : "(0274) 300 9991"\r
+        }, {\r
+          "Notes" : "Attendance Office",\r
+          "Usage" : "INT",\r
+          "Type" : "WTE",\r
+          "Number" : "(04) 300 9992"\r
+        }, {\r
+          "Notes" : "School Secretary DDI",\r
+          "Type" : "WTE",\r
+          "Number" : "(04) 300 9993"\r
+        } ]\r
+      },\r
+      "SchoolService" : {\r
+        "CoEdStatus" : "COED",\r
+        "Decile" : 5,\r
+        "NewEntrantPolicyList" : {\r
+          "EnactedPolicy" : [ {\r
+            "EffectiveTo" : "2018-12-31",\r
+            "Policy" : "AE"\r
+          }, {\r
+            "EffectiveFrom" : "2019-01-01",\r
+            "Policy" : "CE"\r
+          } ]\r
+        },\r
+        "SchoolYearList" : {\r
+          "SchoolYear" : [ {\r
+            "YearLevel" : 1,\r
+            "FIRSTSchoolYearGenderId" : 1001,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 2,\r
+            "FIRSTSchoolYearGenderId" : 1002,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 3,\r
+            "FIRSTSchoolYearGenderId" : 1003,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 4,\r
+            "FIRSTSchoolYearGenderId" : 1004,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 5,\r
+            "FIRSTSchoolYearGenderId" : 1005,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 6,\r
+            "FIRSTSchoolYearGenderId" : 1006,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 7,\r
+            "FIRSTSchoolYearGenderId" : 1007,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 8,\r
+            "FIRSTSchoolYearGenderId" : 1008,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 9,\r
+            "FIRSTSchoolYearGenderId" : 1009,\r
+            "Gender" : "F"\r
+          }, {\r
+            "YearLevel" : 10,\r
+            "FIRSTSchoolYearGenderId" : 1010,\r
+            "Gender" : "F"\r
+          }, {\r
+            "YearLevel" : 11,\r
+            "FIRSTSchoolYearGenderId" : 1011,\r
+            "Gender" : "F"\r
+          }, {\r
+            "YearLevel" : 12,\r
+            "FIRSTSchoolYearGenderId" : 1012,\r
+            "Gender" : "F"\r
+          }, {\r
+            "YearLevel" : 13,\r
+            "FIRSTSchoolYearGenderId" : 1013,\r
+            "Gender" : "F"\r
+          } ]\r
+        }\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="eabcde7a-4d6d-4ec4-b707-8b10608f37b8" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<Organisations>
+  <Organisation>
+    <AddressList/>
+    <CommunicationChannelList/>
+    <ContactList>
+      <Contact>
+        <Name>
+          <FamilyName>Dumbledore</FamilyName>
+          <GivenName>Albus</GivenName>
+          <FullName>Albus Dumbledore</FullName>
+        </Name>
+        <PositionTitle>Lead School Headmaster</PositionTitle>
+        <Role>PRI</Role>
+        <AddressList>
+          <Address>
+            <Type>TH</Type>
+            <Role>PHY</Role>
+            <Line1>533 Hogwart's Way</Line1>
+            <City>Hogsmead</City>
+            <PostalCode>7733</PostalCode>
+          </Address>
+        </AddressList>
+        <EmailList/>
+        <PhoneNumberList/>
+      </Contact>
+    </ContactList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>hogwarts@mailinator.com</Address>
+      </Email>
+    </EmailList>
+    <LocationList/>
+    <Name>Masterton (Whakaoriori) Kāhui Ako</Name>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Notes>Lead School Secretary (Mobile)</Notes>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+    <Type>998</Type>
+    <OrganisationRefId>922</OrganisationRefId>
+    <OrganisationLocalId>99204</OrganisationLocalId>
+  </Organisation>
+</Organisations>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="patchOrganisations" id="1812df63-f7e6-49c0-92cf-cd0db1b7de7c" method="PATCH">
+    <con:description>Bulk operation to update one or more fields of one or more Organisations, each of which represents a single recognised Education Provider entity (ECEs, Schools &amp; Tertiary  Education Institutions), Community (Kāhui Ako, Learning Support Clusters, etc.), or others unit(Teen Parent Units, Activity Centres. etc.)</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent>{
+  "Organisations" : {
+    "Organisation" : [ {
+      "OrganisationRefId" : "922",
+      "OrganisationLocalId" : "42342",
+      "Name" : "Hogwart's Area School",
+      "Authority" : "STATE",
+      "SectorRole" : "35003",
+      "Type" : "10030",
+      "OperationalStatus" : "O",
+      "EntityOpen" : "1652-04-01",
+      "EducationRegion" : "12013",
+      "SpecialEducationDistrict" : "182011",
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "RU",
+          "Role" : "PHY",
+          "Line1" : "1175 Lake Ferry Rd",
+          "Suburb" : "RD 1",
+          "City" : "Martinborough"
+        } ]
+      },
+      "CommunicationChannelList" : {
+        "Channel" : [ {
+          "Notes" : "Attendance System (Self Service)",
+          "Type" : "WEB",
+          "Value" : "http://att.hogwarts.school.nz"
+        }, {
+          "Notes" : "School Website",
+          "Type" : "WEB",
+          "Value" : "http://www.hogwarts.school.nz"
+        } ]
+      },
+      "ContactList" : {
+        "Contact" : [ {
+          "Name" : {
+            "FamilyName" : "Dumbledore",
+            "GivenName" : "Albus",
+            "FullName" : "Albus Dumbledore"
+          },
+          "PositionTitle" : "Headmaster",
+          "Role" : "PRI",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        }, {
+          "Name" : {
+            "FamilyName" : "Hagrid",
+            "GivenName" : "Rubeus",
+            "FullName" : "Rubeus Hagrid"
+          },
+          "PositionTitle" : "Gamekeeper",
+          "Role" : "DIR",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "The Enchanted Wood",
+              "Line2" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "stuart@gmail.com"
+        } ]
+      },
+      "LocationList" : {
+        "Location" : [ {
+          "Description" : "Only Campus",
+          "Address" : {
+            "Type" : "RU",
+            "Role" : "PHY",
+            "Line1" : "1175 Lake Ferry Rd",
+            "Suburb" : "RD 1",
+            "City" : "Martinborough",
+            "PostalCode" : "5781"
+          },
+          "GridLocation" : {
+            "Latitude" : -41.2814719,
+            "Longitude" : 175.3458472
+          },
+          "StatisticalAreaList" : {
+            "StatisticalArea" : [ {
+              "SpatialUnitType" : "GE",
+              "Code" : "058"
+            }, {
+              "SpatialUnitType" : "TA",
+              "Code" : "050"
+            }, {
+              "SpatialUnitType" : "WA",
+              "Code" : "05003"
+            } ]
+          }
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Notes" : "Attendance Office (Automated)",
+          "Usage" : "SMS",
+          "Type" : "WTE",
+          "Number" : "(0274) 300 9991"
+        }, {
+          "Notes" : "Attendance Office",
+          "Usage" : "INT",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9992"
+        }, {
+          "Notes" : "School Secretary DDI",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9993"
+        } ]
+      },
+      "SchoolService" : {
+        "CoEdStatus" : "COED",
+        "Decile" : 5,
+        "NewEntrantPolicyList" : {
+          "EnactedPolicy" : [ {
+            "EffectiveTo" : "2018-12-31",
+            "Policy" : "AE"
+          }, {
+            "EffectiveFrom" : "2019-01-01",
+            "Policy" : "CE"
+          } ]
+        },
+        "SchoolYearList" : {
+          "SchoolYear" : [ {
+            "YearLevel" : 1,
+            "FIRSTSchoolYearGenderId" : 1001,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 2,
+            "FIRSTSchoolYearGenderId" : 1002,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 3,
+            "FIRSTSchoolYearGenderId" : 1003,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 4,
+            "FIRSTSchoolYearGenderId" : 1004,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 5,
+            "FIRSTSchoolYearGenderId" : 1005,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 6,
+            "FIRSTSchoolYearGenderId" : 1006,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 7,
+            "FIRSTSchoolYearGenderId" : 1007,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 8,
+            "FIRSTSchoolYearGenderId" : 1008,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 9,
+            "FIRSTSchoolYearGenderId" : 1009,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 10,
+            "FIRSTSchoolYearGenderId" : 1010,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 11,
+            "FIRSTSchoolYearGenderId" : 1011,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 12,
+            "FIRSTSchoolYearGenderId" : 1012,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 13,
+            "FIRSTSchoolYearGenderId" : 1013,
+            "Gender" : "F"
+          } ]
+        }
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent><![CDATA[<Organisations>
+  <Organisation>
+    <AddressList/>
+    <CommunicationChannelList/>
+    <ContactList>
+      <Contact>
+        <Name>
+          <FamilyName>Dumbledore</FamilyName>
+          <GivenName>Albus</GivenName>
+          <FullName>Albus Dumbledore</FullName>
+        </Name>
+        <PositionTitle>Lead School Headmaster</PositionTitle>
+        <Role>PRI</Role>
+        <AddressList>
+          <Address>
+            <Type>TH</Type>
+            <Role>PHY</Role>
+            <Line1>533 Hogwart's Way</Line1>
+            <City>Hogsmead</City>
+            <PostalCode>7733</PostalCode>
+          </Address>
+        </AddressList>
+        <EmailList/>
+        <PhoneNumberList/>
+      </Contact>
+    </ContactList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>hogwarts@mailinator.com</Address>
+      </Email>
+    </EmailList>
+    <LocationList/>
+    <Name>Masterton (Whakaoriori) Kāhui Ako</Name>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Notes>Lead School Secretary (Mobile)</Notes>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+    <Type>998</Type>
+    <OrganisationRefId>922</OrganisationRefId>
+    <OrganisationLocalId>99204</OrganisationLocalId>
+  </Organisation>
+</Organisations>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "Organisations" : {
+    "Organisation" : [ {
+      "OrganisationRefId" : "922",
+      "OrganisationLocalId" : "42342",
+      "Name" : "Hogwart's Area School",
+      "Authority" : "STATE",
+      "SectorRole" : "35003",
+      "Type" : "10030",
+      "OperationalStatus" : "O",
+      "EntityOpen" : "1652-04-01",
+      "EducationRegion" : "12013",
+      "SpecialEducationDistrict" : "182011",
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "RU",
+          "Role" : "PHY",
+          "Line1" : "1175 Lake Ferry Rd",
+          "Suburb" : "RD 1",
+          "City" : "Martinborough"
+        } ]
+      },
+      "CommunicationChannelList" : {
+        "Channel" : [ {
+          "Notes" : "Attendance System (Self Service)",
+          "Type" : "WEB",
+          "Value" : "http://att.hogwarts.school.nz"
+        }, {
+          "Notes" : "School Website",
+          "Type" : "WEB",
+          "Value" : "http://www.hogwarts.school.nz"
+        } ]
+      },
+      "ContactList" : {
+        "Contact" : [ {
+          "Name" : {
+            "FamilyName" : "Dumbledore",
+            "GivenName" : "Albus",
+            "FullName" : "Albus Dumbledore"
+          },
+          "PositionTitle" : "Headmaster",
+          "Role" : "PRI",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        }, {
+          "Name" : {
+            "FamilyName" : "Hagrid",
+            "GivenName" : "Rubeus",
+            "FullName" : "Rubeus Hagrid"
+          },
+          "PositionTitle" : "Gamekeeper",
+          "Role" : "DIR",
+          "AddressList" : {
+            "Address" : [ {
+              "Type" : "TH",
+              "Role" : "PHY",
+              "Line1" : "The Enchanted Wood",
+              "Line2" : "533 Hogwart's Way",
+              "City" : "Hogsmead",
+              "PostalCode" : "7733"
+            } ]
+          },
+          "EmailList" : {
+            "Email" : [ ]
+          },
+          "PhoneNumberList" : {
+            "PhoneNumber" : [ ]
+          }
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "stuart@gmail.com"
+        } ]
+      },
+      "LocationList" : {
+        "Location" : [ {
+          "Description" : "Only Campus",
+          "Address" : {
+            "Type" : "RU",
+            "Role" : "PHY",
+            "Line1" : "1175 Lake Ferry Rd",
+            "Suburb" : "RD 1",
+            "City" : "Martinborough",
+            "PostalCode" : "5781"
+          },
+          "GridLocation" : {
+            "Latitude" : -41.2814719,
+            "Longitude" : 175.3458472
+          },
+          "StatisticalAreaList" : {
+            "StatisticalArea" : [ {
+              "SpatialUnitType" : "GE",
+              "Code" : "058"
+            }, {
+              "SpatialUnitType" : "TA",
+              "Code" : "050"
+            }, {
+              "SpatialUnitType" : "WA",
+              "Code" : "05003"
+            } ]
+          }
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Notes" : "Attendance Office (Automated)",
+          "Usage" : "SMS",
+          "Type" : "WTE",
+          "Number" : "(0274) 300 9991"
+        }, {
+          "Notes" : "Attendance Office",
+          "Usage" : "INT",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9992"
+        }, {
+          "Notes" : "School Secretary DDI",
+          "Type" : "WTE",
+          "Number" : "(04) 300 9993"
+        } ]
+      },
+      "SchoolService" : {
+        "CoEdStatus" : "COED",
+        "Decile" : 5,
+        "NewEntrantPolicyList" : {
+          "EnactedPolicy" : [ {
+            "EffectiveTo" : "2018-12-31",
+            "Policy" : "AE"
+          }, {
+            "EffectiveFrom" : "2019-01-01",
+            "Policy" : "CE"
+          } ]
+        },
+        "SchoolYearList" : {
+          "SchoolYear" : [ {
+            "YearLevel" : 1,
+            "FIRSTSchoolYearGenderId" : 1001,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 2,
+            "FIRSTSchoolYearGenderId" : 1002,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 3,
+            "FIRSTSchoolYearGenderId" : 1003,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 4,
+            "FIRSTSchoolYearGenderId" : 1004,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 5,
+            "FIRSTSchoolYearGenderId" : 1005,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 6,
+            "FIRSTSchoolYearGenderId" : 1006,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 7,
+            "FIRSTSchoolYearGenderId" : 1007,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 8,
+            "FIRSTSchoolYearGenderId" : 1008,
+            "Gender" : "C"
+          }, {
+            "YearLevel" : 9,
+            "FIRSTSchoolYearGenderId" : 1009,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 10,
+            "FIRSTSchoolYearGenderId" : 1010,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 11,
+            "FIRSTSchoolYearGenderId" : 1011,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 12,
+            "FIRSTSchoolYearGenderId" : 1012,
+            "Gender" : "F"
+          }, {
+            "YearLevel" : 13,
+            "FIRSTSchoolYearGenderId" : 1013,
+            "Gender" : "F"
+          } ]
+        }
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<Organisations>
+  <Organisation>
+    <AddressList/>
+    <CommunicationChannelList/>
+    <ContactList>
+      <Contact>
+        <Name>
+          <FamilyName>Dumbledore</FamilyName>
+          <GivenName>Albus</GivenName>
+          <FullName>Albus Dumbledore</FullName>
+        </Name>
+        <PositionTitle>Lead School Headmaster</PositionTitle>
+        <Role>PRI</Role>
+        <AddressList>
+          <Address>
+            <Type>TH</Type>
+            <Role>PHY</Role>
+            <Line1>533 Hogwart's Way</Line1>
+            <City>Hogsmead</City>
+            <PostalCode>7733</PostalCode>
+          </Address>
+        </AddressList>
+        <EmailList/>
+        <PhoneNumberList/>
+      </Contact>
+    </ContactList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>hogwarts@mailinator.com</Address>
+      </Email>
+    </EmailList>
+    <LocationList/>
+    <Name>Masterton (Whakaoriori) Kāhui Ako</Name>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Notes>Lead School Secretary (Mobile)</Notes>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+    <Type>998</Type>
+    <OrganisationRefId>922</OrganisationRefId>
+    <OrganisationLocalId>99204</OrganisationLocalId>
+  </Organisation>
+</Organisations>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="05e61841-9fad-4b0b-8483-b84cfed4c581" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "Organisations" : {\r
+    "Organisation" : [ {\r
+      "OrganisationRefId" : "922",\r
+      "OrganisationLocalId" : "42342",\r
+      "Name" : "Hogwart's Area School",\r
+      "Authority" : "STATE",\r
+      "SectorRole" : "35003",\r
+      "Type" : "10030",\r
+      "OperationalStatus" : "O",\r
+      "EntityOpen" : "1652-04-01",\r
+      "EducationRegion" : "12013",\r
+      "SpecialEducationDistrict" : "182011",\r
+      "AddressList" : {\r
+        "Address" : [ {\r
+          "Type" : "RU",\r
+          "Role" : "PHY",\r
+          "Line1" : "1175 Lake Ferry Rd",\r
+          "Suburb" : "RD 1",\r
+          "City" : "Martinborough"\r
+        } ]\r
+      },\r
+      "CommunicationChannelList" : {\r
+        "Channel" : [ {\r
+          "Notes" : "Attendance System (Self Service)",\r
+          "Type" : "WEB",\r
+          "Value" : "http://att.hogwarts.school.nz"\r
+        }, {\r
+          "Notes" : "School Website",\r
+          "Type" : "WEB",\r
+          "Value" : "http://www.hogwarts.school.nz"\r
+        } ]\r
+      },\r
+      "ContactList" : {\r
+        "Contact" : [ {\r
+          "Name" : {\r
+            "FamilyName" : "Dumbledore",\r
+            "GivenName" : "Albus",\r
+            "FullName" : "Albus Dumbledore"\r
+          },\r
+          "PositionTitle" : "Headmaster",\r
+          "Role" : "PRI",\r
+          "AddressList" : {\r
+            "Address" : [ {\r
+              "Type" : "TH",\r
+              "Role" : "PHY",\r
+              "Line1" : "533 Hogwart's Way",\r
+              "City" : "Hogsmead",\r
+              "PostalCode" : "7733"\r
+            } ]\r
+          },\r
+          "EmailList" : {\r
+            "Email" : [ ]\r
+          },\r
+          "PhoneNumberList" : {\r
+            "PhoneNumber" : [ ]\r
+          }\r
+        }, {\r
+          "Name" : {\r
+            "FamilyName" : "Hagrid",\r
+            "GivenName" : "Rubeus",\r
+            "FullName" : "Rubeus Hagrid"\r
+          },\r
+          "PositionTitle" : "Gamekeeper",\r
+          "Role" : "DIR",\r
+          "AddressList" : {\r
+            "Address" : [ {\r
+              "Type" : "TH",\r
+              "Role" : "PHY",\r
+              "Line1" : "The Enchanted Wood",\r
+              "Line2" : "533 Hogwart's Way",\r
+              "City" : "Hogsmead",\r
+              "PostalCode" : "7733"\r
+            } ]\r
+          },\r
+          "EmailList" : {\r
+            "Email" : [ ]\r
+          },\r
+          "PhoneNumberList" : {\r
+            "PhoneNumber" : [ ]\r
+          }\r
+        } ]\r
+      },\r
+      "EmailList" : {\r
+        "Email" : [ {\r
+          "Type" : "PRIM",\r
+          "Address" : "stuart@gmail.com"\r
+        } ]\r
+      },\r
+      "LocationList" : {\r
+        "Location" : [ {\r
+          "Description" : "Only Campus",\r
+          "Address" : {\r
+            "Type" : "RU",\r
+            "Role" : "PHY",\r
+            "Line1" : "1175 Lake Ferry Rd",\r
+            "Suburb" : "RD 1",\r
+            "City" : "Martinborough",\r
+            "PostalCode" : "5781"\r
+          },\r
+          "GridLocation" : {\r
+            "Latitude" : -41.2814719,\r
+            "Longitude" : 175.3458472\r
+          },\r
+          "StatisticalAreaList" : {\r
+            "StatisticalArea" : [ {\r
+              "SpatialUnitType" : "GE",\r
+              "Code" : "058"\r
+            }, {\r
+              "SpatialUnitType" : "TA",\r
+              "Code" : "050"\r
+            }, {\r
+              "SpatialUnitType" : "WA",\r
+              "Code" : "05003"\r
+            } ]\r
+          }\r
+        } ]\r
+      },\r
+      "PhoneNumberList" : {\r
+        "PhoneNumber" : [ {\r
+          "Notes" : "Attendance Office (Automated)",\r
+          "Usage" : "SMS",\r
+          "Type" : "WTE",\r
+          "Number" : "(0274) 300 9991"\r
+        }, {\r
+          "Notes" : "Attendance Office",\r
+          "Usage" : "INT",\r
+          "Type" : "WTE",\r
+          "Number" : "(04) 300 9992"\r
+        }, {\r
+          "Notes" : "School Secretary DDI",\r
+          "Type" : "WTE",\r
+          "Number" : "(04) 300 9993"\r
+        } ]\r
+      },\r
+      "SchoolService" : {\r
+        "CoEdStatus" : "COED",\r
+        "Decile" : 5,\r
+        "NewEntrantPolicyList" : {\r
+          "EnactedPolicy" : [ {\r
+            "EffectiveTo" : "2018-12-31",\r
+            "Policy" : "AE"\r
+          }, {\r
+            "EffectiveFrom" : "2019-01-01",\r
+            "Policy" : "CE"\r
+          } ]\r
+        },\r
+        "SchoolYearList" : {\r
+          "SchoolYear" : [ {\r
+            "YearLevel" : 1,\r
+            "FIRSTSchoolYearGenderId" : 1001,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 2,\r
+            "FIRSTSchoolYearGenderId" : 1002,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 3,\r
+            "FIRSTSchoolYearGenderId" : 1003,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 4,\r
+            "FIRSTSchoolYearGenderId" : 1004,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 5,\r
+            "FIRSTSchoolYearGenderId" : 1005,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 6,\r
+            "FIRSTSchoolYearGenderId" : 1006,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 7,\r
+            "FIRSTSchoolYearGenderId" : 1007,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 8,\r
+            "FIRSTSchoolYearGenderId" : 1008,\r
+            "Gender" : "C"\r
+          }, {\r
+            "YearLevel" : 9,\r
+            "FIRSTSchoolYearGenderId" : 1009,\r
+            "Gender" : "F"\r
+          }, {\r
+            "YearLevel" : 10,\r
+            "FIRSTSchoolYearGenderId" : 1010,\r
+            "Gender" : "F"\r
+          }, {\r
+            "YearLevel" : 11,\r
+            "FIRSTSchoolYearGenderId" : 1011,\r
+            "Gender" : "F"\r
+          }, {\r
+            "YearLevel" : 12,\r
+            "FIRSTSchoolYearGenderId" : 1012,\r
+            "Gender" : "F"\r
+          }, {\r
+            "YearLevel" : 13,\r
+            "FIRSTSchoolYearGenderId" : 1013,\r
+            "Gender" : "F"\r
+          } ]\r
+        }\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="903993f0-73b1-4b4b-8879-e8d83b5aefaf" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<Organisations>
+  <Organisation>
+    <AddressList/>
+    <CommunicationChannelList/>
+    <ContactList>
+      <Contact>
+        <Name>
+          <FamilyName>Dumbledore</FamilyName>
+          <GivenName>Albus</GivenName>
+          <FullName>Albus Dumbledore</FullName>
+        </Name>
+        <PositionTitle>Lead School Headmaster</PositionTitle>
+        <Role>PRI</Role>
+        <AddressList>
+          <Address>
+            <Type>TH</Type>
+            <Role>PHY</Role>
+            <Line1>533 Hogwart's Way</Line1>
+            <City>Hogsmead</City>
+            <PostalCode>7733</PostalCode>
+          </Address>
+        </AddressList>
+        <EmailList/>
+        <PhoneNumberList/>
+      </Contact>
+    </ContactList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>hogwarts@mailinator.com</Address>
+      </Email>
+    </EmailList>
+    <LocationList/>
+    <Name>Masterton (Whakaoriori) Kāhui Ako</Name>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Notes>Lead School Secretary (Mobile)</Notes>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+    <Type>998</Type>
+    <OrganisationRefId>922</OrganisationRefId>
+    <OrganisationLocalId>99204</OrganisationLocalId>
+  </Organisation>
+</Organisations>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

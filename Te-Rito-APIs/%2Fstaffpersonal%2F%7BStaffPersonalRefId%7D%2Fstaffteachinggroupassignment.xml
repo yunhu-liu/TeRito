@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/staffpersonal/{StaffPersonalRefId}/staffteachinggroupassignment" path="/staffpersonal/{StaffPersonalRefId}/staffteachinggroupassignment" id="24b91434-55ab-48dc-9216-54d4cd50ba5a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="24b91434-55ab-48dc-9216-54d4cd50ba5afileName">%2Fstaffpersonal%2F%7BStaffPersonalRefId%7D%2Fstaffteachinggroupassignment</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getStaffTeachingGroupAssignmentByStaff" id="6fdfb611-6b31-460d-aff8-653918da18b5" method="GET">
+    <con:description>&lt;p>Retrieve all available assignments of a particular Staff member to any role with any TeachingGroup at the given Provider&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>start</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Include only items from start date;	`start=2017-08-01`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>end</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Include only items before end date;	`end=2017-08-31`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StaffPersonalRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the staff member.</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>status</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter the results; based upon the value of the Status field</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "StaffTeachingGroupAssignments" : {
+    "StaffTeachingGroupAssignment" : [ {
+      "StaffTeachingGroupAssignmentLocalId" : "2020_8003_HR9_T99064",
+      "Status" : "A",
+      "StaffMember" : {
+        "LocalId" : "T99064"
+      },
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "TeachingGroup" : {
+        "LocalId" : "2020_8003_HR9"
+      },
+      "Role" : "1401",
+      "StartDate" : "2020-01-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<StaffTeachingGroupAssignments>
+  <StaffTeachingGroupAssignment>
+    <StaffTeachingGroupAssignmentLocalId>2020_8003_HR9_T99064</StaffTeachingGroupAssignmentLocalId>
+    <StaffMember>
+      <LocalId>T99064"</LocalId>
+    </StaffMember>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <TeachingGroup>
+      <LocalId>2020_8003_HR9</LocalId>
+    </TeachingGroup>
+    <Role>1401</Role>
+    <StartDate>2020-01-27</StartDate>
+  </StaffTeachingGroupAssignment>
+</StaffTeachingGroupAssignments>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="d0138f43-5c6b-415b-9aeb-ce2c6e821bfa" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

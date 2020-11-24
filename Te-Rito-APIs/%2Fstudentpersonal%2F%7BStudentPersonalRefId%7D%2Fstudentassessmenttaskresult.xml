@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/studentpersonal/{StudentPersonalRefId}/studentassessmenttaskresult" path="/studentpersonal/{StudentPersonalRefId}/studentassessmenttaskresult" id="6852e683-c67b-45c9-9319-2398a5e5c88a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6852e683-c67b-45c9-9319-2398a5e5c88afileName">%2Fstudentpersonal%2F%7BStudentPersonalRefId%7D%2Fstudentassessmenttaskresult</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getStudentAssessmentTaskResultsByStudent" id="c201695a-5187-4627-ae1c-f8a808b36887" method="GET">
+    <con:description>&lt;p>Retrieve all of a particular student's available results from students' attempts at one or more assignments, essays, class tests, internal or external assessment exams, or any other tasks that are set to students and assessed as part of the learning process&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StudentPersonalRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the student.</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "StudentAssessmentTaskResults" : {
+    "StudentAssessmentTaskResult" : [ {
+      "StudentAssessmentTaskResultRefId" : "359d7510-1ad0-a9d7-a8c3-dad0a85103a2",
+      "AssessmentType" : "INT",
+      "Student" : {
+        "RefId" : "a75a0010-1a8c-301d-02e3-a05b359d0a00"
+      },
+      "OrganisationInvolvedList" : {
+        "OrganisationInvolved" : [ {
+          "RefId" : "9651",
+          "OrganisationRole" : "PRO"
+        } ]
+      },
+      "SubjectAreaList" : {
+        "SubjectArea" : [ "MATH" ]
+      },
+      "AssessmentMethodology" : "P",
+      "EvaluationType" : "F",
+      "Timeframe" : "OUT",
+      "ResultScoreList" : {
+        "ResultScore" : [ {
+          "Competency" : "Maths",
+          "ScoreMetric" : "RAW",
+          "ScoreValue" : "25"
+        }, {
+          "Competency" : "Maths",
+          "ScoreMetric" : "SCA",
+          "ScoreValue" : "38.5"
+        }, {
+          "Competency" : "Maths",
+          "ScoreMetric" : "MAR",
+          "ScoreValue" : "5.0"
+        }, {
+          "Competency" : "Maths",
+          "ScoreMetric" : "STA",
+          "ScoreValue" : "6"
+        }, {
+          "Competency" : "Maths",
+          "ScoreMetric" : "YEA",
+          "ScoreValue" : "4"
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<StudentAssessmentTaskResults>
+  <StudentAssessmentTaskResult>
+    <StudentAssessmentTaskResultRefId>359d7510-1ad0-a9d7-a8c3-dad0a85103a2</StudentAssessmentTaskResultRefId>
+    <AssessmentType>INT</AssessmentType>
+    <Student>
+      <RefId>a75a0010-1a8c-301d-02e3-a05b359d0a00</RefId>
+    </Student>
+    <OrganisationInvolvedList>
+      <OrganisationInvolved>
+        <RefId>9651</RefId>
+        <OrganisationRole>PRO</OrganisationRole>
+      </OrganisationInvolved>
+    </OrganisationInvolvedList>
+    <SubjectAreaList>
+      <SubjectArea>MATH</SubjectArea>
+    </SubjectAreaList>
+    <SummativeIndicator>N</SummativeIndicator>
+    <FormativeIndicator>Y</FormativeIndicator>
+    <ResultScoreList>
+      <ResultScore>
+        <ScoreMetric>RAW</ScoreMetric>
+        <ScoreValue>25</ScoreValue>
+      </ResultScore>
+      <ResultScore>
+        <ScoreMetric>SCA</ScoreMetric>
+        <ScoreValue>38.5</ScoreValue>
+      </ResultScore>
+      <ResultScore>
+        <ScoreMetric>MAR</ScoreMetric>
+        <ScoreValue>5.0</ScoreValue>
+      </ResultScore>
+      <ResultScore>
+        <ScoreMetric>STA</ScoreMetric>
+        <ScoreValue>6</ScoreValue>
+      </ResultScore>
+      <ResultScore>
+        <ScoreMetric>YEA</ScoreMetric>
+        <ScoreValue>4</ScoreValue>
+      </ResultScore>
+    </ResultScoreList>
+  </StudentAssessmentTaskResult>
+</StudentAssessmentTaskResults>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="12fb0da0-7d9a-492c-8fea-e8d500fc0f76" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

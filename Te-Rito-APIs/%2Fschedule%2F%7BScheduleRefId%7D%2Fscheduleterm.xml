@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/schedule/{ScheduleRefId}/scheduleterm" path="/schedule/{ScheduleRefId}/scheduleterm" id="933f6bdb-a459-4181-8c6a-ce313c7e4715" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="933f6bdb-a459-4181-8c6a-ce313c7e4715fileName">%2Fschedule%2F%7BScheduleRefId%7D%2Fscheduleterm</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getScheduleTerms" id="4639857b-cbc9-4adc-9438-74be3139f2d8" method="GET">
+    <con:description>Bulk operation to retrive one or more timetable ScheduleTerms for a particular &lt;a href="#tag/Schedule">Schedule&lt;/a> at the given Provider</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>ScheduleRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the timetable Schedule</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "ScheduleTerms" : {
+    "ScheduleTerm" : [ {
+      "ScheduleTermLocalId" : "2020_8001_T1",
+      "TermName" : "2020",
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "SchoolYear" : 2020,
+      "StartDate" : "2020-01-27",
+      "EndDate" : "2020-03-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<ScheduleTerms>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T1</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-01-27</StartDate>
+    <EndDate>2020-03-27<EndDate>
+  </ScheduleTerm>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T2</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-04-15</StartDate>
+    <EndDate>2020-07-03</EndDate>
+  </ScheduleTerm>
+</ScheduleTerms>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="7b2729e3-6af4-4a6e-a2cc-c5cc6f5b7bda" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="createScheduleTerms" id="478c6e71-b8c2-431c-87b0-da4e64c2325c" method="POST">
+    <con:description>Bulk operation to create one or more timetable ScheduleTerms for a particular &lt;a href="#tag/Schedule">Schedule&lt;/a> at the given Provider</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>x-http-method-override</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Rather than CREATE records, treat this request as a SYNC request.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>ScheduleRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the timetable Schedule</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent>{
+  "ScheduleTerms" : {
+    "ScheduleTerm" : [ {
+      "ScheduleTermLocalId" : "2020_8001_T1",
+      "TermName" : "2020",
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "SchoolYear" : 2020,
+      "StartDate" : "2020-01-27",
+      "EndDate" : "2020-03-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent><![CDATA[<ScheduleTerms>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T1</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-01-27</StartDate>
+    <EndDate>2020-03-27<EndDate>
+  </ScheduleTerm>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T2</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-04-15</StartDate>
+    <EndDate>2020-07-03</EndDate>
+  </ScheduleTerm>
+</ScheduleTerms>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "ScheduleTerms" : {
+    "ScheduleTerm" : [ {
+      "ScheduleTermLocalId" : "2020_8001_T1",
+      "TermName" : "2020",
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "SchoolYear" : 2020,
+      "StartDate" : "2020-01-27",
+      "EndDate" : "2020-03-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<ScheduleTerms>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T1</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-01-27</StartDate>
+    <EndDate>2020-03-27<EndDate>
+  </ScheduleTerm>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T2</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-04-15</StartDate>
+    <EndDate>2020-07-03</EndDate>
+  </ScheduleTerm>
+</ScheduleTerms>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="ad464f7a-44a2-4114-8fc7-c1d9afd21246" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "ScheduleTerms" : {\r
+    "ScheduleTerm" : [ {\r
+      "ScheduleTermLocalId" : "2020_8001_T1",\r
+      "TermName" : "2020",\r
+      "Organisation" : {\r
+        "RefId" : "8001"\r
+      },\r
+      "SchoolYear" : 2020,\r
+      "StartDate" : "2020-01-27",\r
+      "EndDate" : "2020-03-27"\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="0017d837-fd43-4ec3-83df-fde0ffd90379" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<ScheduleTerms>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T1</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-01-27</StartDate>
+    <EndDate>2020-03-27<EndDate>
+  </ScheduleTerm>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T2</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-04-15</StartDate>
+    <EndDate>2020-07-03</EndDate>
+  </ScheduleTerm>
+</ScheduleTerms>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="updateScheduleTerms" id="3795b9ab-5fae-4f47-9f02-6cec1446e8c3" method="PUT">
+    <con:description>Bulk operation to update one or more timetable ScheduleTerms for a particular &lt;a href="#tag/Schedule">Schedule&lt;/a> at the given Provider</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>ScheduleRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the timetable Schedule</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated objects</con:description>
+      <con:sampleContent>{
+  "ScheduleTerms" : {
+    "ScheduleTerm" : [ {
+      "ScheduleTermLocalId" : "2020_8001_T1",
+      "TermName" : "2020",
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "SchoolYear" : 2020,
+      "StartDate" : "2020-01-27",
+      "EndDate" : "2020-03-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated objects</con:description>
+      <con:sampleContent><![CDATA[<ScheduleTerms>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T1</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-01-27</StartDate>
+    <EndDate>2020-03-27<EndDate>
+  </ScheduleTerm>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T2</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-04-15</StartDate>
+    <EndDate>2020-07-03</EndDate>
+  </ScheduleTerm>
+</ScheduleTerms>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "ScheduleTerms" : {
+    "ScheduleTerm" : [ {
+      "ScheduleTermLocalId" : "2020_8001_T1",
+      "TermName" : "2020",
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "SchoolYear" : 2020,
+      "StartDate" : "2020-01-27",
+      "EndDate" : "2020-03-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<ScheduleTerms>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T1</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-01-27</StartDate>
+    <EndDate>2020-03-27<EndDate>
+  </ScheduleTerm>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T2</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-04-15</StartDate>
+    <EndDate>2020-07-03</EndDate>
+  </ScheduleTerm>
+</ScheduleTerms>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="718c85da-f670-41db-b67a-f114bfb25d66" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "ScheduleTerms" : {\r
+    "ScheduleTerm" : [ {\r
+      "ScheduleTermLocalId" : "2020_8001_T1",\r
+      "TermName" : "2020",\r
+      "Organisation" : {\r
+        "RefId" : "8001"\r
+      },\r
+      "SchoolYear" : 2020,\r
+      "StartDate" : "2020-01-27",\r
+      "EndDate" : "2020-03-27"\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="a912c8d5-3136-426f-bbf7-a92d0b1b32ec" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<ScheduleTerms>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T1</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-01-27</StartDate>
+    <EndDate>2020-03-27<EndDate>
+  </ScheduleTerm>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T2</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-04-15</StartDate>
+    <EndDate>2020-07-03</EndDate>
+  </ScheduleTerm>
+</ScheduleTerms>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="patchScheduleTerms" id="1e9e33e8-51bd-4d61-b429-8f14b2e45667" method="PATCH">
+    <con:description>Bulk operation to update one or more fields of one or more timetable ScheduleTerms for a particular &lt;a href="#tag/Schedule">Schedule&lt;/a> at the given Provider</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>ScheduleRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the timetable Schedule</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent>{
+  "ScheduleTerms" : {
+    "ScheduleTerm" : [ {
+      "ScheduleTermLocalId" : "2020_8001_T1",
+      "TermName" : "2020",
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "SchoolYear" : 2020,
+      "StartDate" : "2020-01-27",
+      "EndDate" : "2020-03-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent><![CDATA[<ScheduleTerms>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T1</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-01-27</StartDate>
+    <EndDate>2020-03-27<EndDate>
+  </ScheduleTerm>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T2</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-04-15</StartDate>
+    <EndDate>2020-07-03</EndDate>
+  </ScheduleTerm>
+</ScheduleTerms>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "ScheduleTerms" : {
+    "ScheduleTerm" : [ {
+      "ScheduleTermLocalId" : "2020_8001_T1",
+      "TermName" : "2020",
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "SchoolYear" : 2020,
+      "StartDate" : "2020-01-27",
+      "EndDate" : "2020-03-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<ScheduleTerms>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T1</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-01-27</StartDate>
+    <EndDate>2020-03-27<EndDate>
+  </ScheduleTerm>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T2</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-04-15</StartDate>
+    <EndDate>2020-07-03</EndDate>
+  </ScheduleTerm>
+</ScheduleTerms>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="819fff27-0a58-4a94-8705-bb65d7352a11" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "ScheduleTerms" : {\r
+    "ScheduleTerm" : [ {\r
+      "ScheduleTermLocalId" : "2020_8001_T1",\r
+      "TermName" : "2020",\r
+      "Organisation" : {\r
+        "RefId" : "8001"\r
+      },\r
+      "SchoolYear" : 2020,\r
+      "StartDate" : "2020-01-27",\r
+      "EndDate" : "2020-03-27"\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="0c6462ad-1528-4eba-8806-da8777dede77" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<ScheduleTerms>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T1</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-01-27</StartDate>
+    <EndDate>2020-03-27<EndDate>
+  </ScheduleTerm>
+  <ScheduleTerm>
+    <ScheduleTermLocalId>2020_8001_T2</ScheduleTermLocalId>
+    <TermName>2020</TermName>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <SchoolYear>2020</SchoolYear>
+    <StartDate>2020-04-15</StartDate>
+    <EndDate>2020-07-03</EndDate>
+  </ScheduleTerm>
+</ScheduleTerms>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/studentcontactpersonal/{StudentContactPersonalRefId}" path="/studentcontactpersonal/{StudentContactPersonalRefId}" id="346fc0f7-aab4-438d-82dd-93ca3e07762b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="346fc0f7-aab4-438d-82dd-93ca3e07762bfileName">%2Fstudentcontactpersonal%2F%7BStudentContactPersonalRefId%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getStudentContactPersonal" id="c8220bf2-0db4-4042-9133-0954bb813908" method="GET">
+    <con:description>&lt;p>Retrieve a StudentContactPersonal record of the personal contact and demographic information relating to a particular student whānau members for students enrolled at the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StudentPersonalRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the student.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StudentContactPersonalRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>&lt;p>The GUID identifying the record of the personal contact and demographic information of the particular student;s whānau member.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "StudentContactPersonal" : {
+    "StudentContactPersonalRefId" : "7c834ea9-eda1-2090-347f-83297e1c290f",
+    "StudentContactPersonalLocalId" : "P1234567",
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Hagrid",
+        "GivenName" : "Fridwulfa",
+        "FullName" : "Fridwulfa Hagrid",
+        "Type" : "LGL"
+      },
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "TH",
+          "Role" : "PHY",
+          "Line1" : "The Enchanted Wood",
+          "Line2" : "533 Hogwart's Way",
+          "City" : "Hogsmead",
+          "PostalCode" : "7733"
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "ridwulfa@gmail.com"
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Type" : "MOB",
+          "Number" : "(021) 300 999"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<StudentContactPersonal>
+  <StudentContactPersonalRefId>7c834ea9-eda1-2090-347f-83297e1c290f</StudentContactPersonalRefId>
+  <StudentContactPersonalLocalId>P1234567</StudentContactPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Hagrid</FamilyName>
+      <GivenName>Fridwulfa</GivenName>
+      <FullName>Fridwulfa Hagrid</FullName>
+      <Type>LGL</Type>
+    </Name>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>The Enchanted Wood</Line1>
+        <Line2>533 Hogwart's Way</Line2>
+        <City>Hogsmead</City>
+        <PostalCode>7733</PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>ridwulfa@gmail.com</Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentContactPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="8f950bb7-2f89-462b-9ec2-e2851d553063" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="updateStudentContactPersonal" id="ef07c741-a3a8-4705-b2b1-d414500cbc98" method="PUT">
+    <con:description>&lt;p>Update a StudentContactPersonal record of the personal contact and demographic information relating to a particular student whānau members for students enrolled at the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StudentContactPersonalRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>&lt;p>The GUID identifying the record of the personal contact and demographic information of the particular student;s whānau member.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated object</con:description>
+      <con:sampleContent>{
+  "StudentContactPersonal" : {
+    "StudentContactPersonalRefId" : "7c834ea9-eda1-2090-347f-83297e1c290f",
+    "StudentContactPersonalLocalId" : "P1234567",
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Hagrid",
+        "GivenName" : "Fridwulfa",
+        "FullName" : "Fridwulfa Hagrid",
+        "Type" : "LGL"
+      },
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "TH",
+          "Role" : "PHY",
+          "Line1" : "The Enchanted Wood",
+          "Line2" : "533 Hogwart's Way",
+          "City" : "Hogsmead",
+          "PostalCode" : "7733"
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "ridwulfa@gmail.com"
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Type" : "MOB",
+          "Number" : "(021) 300 999"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated object</con:description>
+      <con:sampleContent><![CDATA[<StudentContactPersonal>
+  <StudentContactPersonalRefId>7c834ea9-eda1-2090-347f-83297e1c290f</StudentContactPersonalRefId>
+  <StudentContactPersonalLocalId>P1234567</StudentContactPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Hagrid</FamilyName>
+      <GivenName>Fridwulfa</GivenName>
+      <FullName>Fridwulfa Hagrid</FullName>
+      <Type>LGL</Type>
+    </Name>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>The Enchanted Wood</Line1>
+        <Line2>533 Hogwart's Way</Line2>
+        <City>Hogsmead</City>
+        <PostalCode>7733</PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>ridwulfa@gmail.com</Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentContactPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentContactPersonal" : {
+    "StudentContactPersonalRefId" : "7c834ea9-eda1-2090-347f-83297e1c290f",
+    "StudentContactPersonalLocalId" : "P1234567",
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Hagrid",
+        "GivenName" : "Fridwulfa",
+        "FullName" : "Fridwulfa Hagrid",
+        "Type" : "LGL"
+      },
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "TH",
+          "Role" : "PHY",
+          "Line1" : "The Enchanted Wood",
+          "Line2" : "533 Hogwart's Way",
+          "City" : "Hogsmead",
+          "PostalCode" : "7733"
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "ridwulfa@gmail.com"
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Type" : "MOB",
+          "Number" : "(021) 300 999"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentContactPersonal>
+  <StudentContactPersonalRefId>7c834ea9-eda1-2090-347f-83297e1c290f</StudentContactPersonalRefId>
+  <StudentContactPersonalLocalId>P1234567</StudentContactPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Hagrid</FamilyName>
+      <GivenName>Fridwulfa</GivenName>
+      <FullName>Fridwulfa Hagrid</FullName>
+      <Type>LGL</Type>
+    </Name>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>The Enchanted Wood</Line1>
+        <Line2>533 Hogwart's Way</Line2>
+        <City>Hogsmead</City>
+        <PostalCode>7733</PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>ridwulfa@gmail.com</Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentContactPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="e9ceffea-bade-42ce-8a3b-eb8cb792be70" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentContactPersonal" : {\r
+    "StudentContactPersonalRefId" : "7c834ea9-eda1-2090-347f-83297e1c290f",\r
+    "StudentContactPersonalLocalId" : "P1234567",\r
+    "PersonInfo" : {\r
+      "Name" : {\r
+        "FamilyName" : "Hagrid",\r
+        "GivenName" : "Fridwulfa",\r
+        "FullName" : "Fridwulfa Hagrid",\r
+        "Type" : "LGL"\r
+      },\r
+      "AddressList" : {\r
+        "Address" : [ {\r
+          "Type" : "TH",\r
+          "Role" : "PHY",\r
+          "Line1" : "The Enchanted Wood",\r
+          "Line2" : "533 Hogwart's Way",\r
+          "City" : "Hogsmead",\r
+          "PostalCode" : "7733"\r
+        } ]\r
+      },\r
+      "EmailList" : {\r
+        "Email" : [ {\r
+          "Type" : "PRIM",\r
+          "Address" : "ridwulfa@gmail.com"\r
+        } ]\r
+      },\r
+      "PhoneNumberList" : {\r
+        "PhoneNumber" : [ {\r
+          "Type" : "MOB",\r
+          "Number" : "(021) 300 999"\r
+        } ]\r
+      }\r
+    }\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="b0a204a4-ea3d-41b3-8544-44df8e3ad1fa" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentContactPersonal>
+  <StudentContactPersonalRefId>7c834ea9-eda1-2090-347f-83297e1c290f</StudentContactPersonalRefId>
+  <StudentContactPersonalLocalId>P1234567</StudentContactPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Hagrid</FamilyName>
+      <GivenName>Fridwulfa</GivenName>
+      <FullName>Fridwulfa Hagrid</FullName>
+      <Type>LGL</Type>
+    </Name>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>The Enchanted Wood</Line1>
+        <Line2>533 Hogwart's Way</Line2>
+        <City>Hogsmead</City>
+        <PostalCode>7733</PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>ridwulfa@gmail.com</Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentContactPersonal>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="patchStudentContactPersonal" id="60ff38c3-a2c8-4450-9543-34500a56e192" method="PATCH">
+    <con:description>&lt;p>Update one or more fields of a StudentContactPersonal record of the personal contact and demographic information relating to a particular student whānau members for students enrolled at the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StudentContactPersonalRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>&lt;p>The GUID identifying the record of the personal contact and demographic information of the particular student;s whānau member.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched object</con:description>
+      <con:sampleContent>{
+  "StudentContactPersonal" : {
+    "StudentContactPersonalRefId" : "7c834ea9-eda1-2090-347f-83297e1c290f",
+    "StudentContactPersonalLocalId" : "P1234567",
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Hagrid",
+        "GivenName" : "Fridwulfa",
+        "FullName" : "Fridwulfa Hagrid",
+        "Type" : "LGL"
+      },
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "TH",
+          "Role" : "PHY",
+          "Line1" : "The Enchanted Wood",
+          "Line2" : "533 Hogwart's Way",
+          "City" : "Hogsmead",
+          "PostalCode" : "7733"
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "ridwulfa@gmail.com"
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Type" : "MOB",
+          "Number" : "(021) 300 999"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched object</con:description>
+      <con:sampleContent><![CDATA[<StudentContactPersonal>
+  <StudentContactPersonalRefId>7c834ea9-eda1-2090-347f-83297e1c290f</StudentContactPersonalRefId>
+  <StudentContactPersonalLocalId>P1234567</StudentContactPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Hagrid</FamilyName>
+      <GivenName>Fridwulfa</GivenName>
+      <FullName>Fridwulfa Hagrid</FullName>
+      <Type>LGL</Type>
+    </Name>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>The Enchanted Wood</Line1>
+        <Line2>533 Hogwart's Way</Line2>
+        <City>Hogsmead</City>
+        <PostalCode>7733</PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>ridwulfa@gmail.com</Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentContactPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentContactPersonal" : {
+    "StudentContactPersonalRefId" : "7c834ea9-eda1-2090-347f-83297e1c290f",
+    "StudentContactPersonalLocalId" : "P1234567",
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Hagrid",
+        "GivenName" : "Fridwulfa",
+        "FullName" : "Fridwulfa Hagrid",
+        "Type" : "LGL"
+      },
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "TH",
+          "Role" : "PHY",
+          "Line1" : "The Enchanted Wood",
+          "Line2" : "533 Hogwart's Way",
+          "City" : "Hogsmead",
+          "PostalCode" : "7733"
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "ridwulfa@gmail.com"
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Type" : "MOB",
+          "Number" : "(021) 300 999"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentContactPersonal>
+  <StudentContactPersonalRefId>7c834ea9-eda1-2090-347f-83297e1c290f</StudentContactPersonalRefId>
+  <StudentContactPersonalLocalId>P1234567</StudentContactPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Hagrid</FamilyName>
+      <GivenName>Fridwulfa</GivenName>
+      <FullName>Fridwulfa Hagrid</FullName>
+      <Type>LGL</Type>
+    </Name>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>The Enchanted Wood</Line1>
+        <Line2>533 Hogwart's Way</Line2>
+        <City>Hogsmead</City>
+        <PostalCode>7733</PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>ridwulfa@gmail.com</Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentContactPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="202dc8fa-242c-4bec-9f9b-bf82abfd830f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentContactPersonal" : {\r
+    "StudentContactPersonalRefId" : "7c834ea9-eda1-2090-347f-83297e1c290f",\r
+    "StudentContactPersonalLocalId" : "P1234567",\r
+    "PersonInfo" : {\r
+      "Name" : {\r
+        "FamilyName" : "Hagrid",\r
+        "GivenName" : "Fridwulfa",\r
+        "FullName" : "Fridwulfa Hagrid",\r
+        "Type" : "LGL"\r
+      },\r
+      "AddressList" : {\r
+        "Address" : [ {\r
+          "Type" : "TH",\r
+          "Role" : "PHY",\r
+          "Line1" : "The Enchanted Wood",\r
+          "Line2" : "533 Hogwart's Way",\r
+          "City" : "Hogsmead",\r
+          "PostalCode" : "7733"\r
+        } ]\r
+      },\r
+      "EmailList" : {\r
+        "Email" : [ {\r
+          "Type" : "PRIM",\r
+          "Address" : "ridwulfa@gmail.com"\r
+        } ]\r
+      },\r
+      "PhoneNumberList" : {\r
+        "PhoneNumber" : [ {\r
+          "Type" : "MOB",\r
+          "Number" : "(021) 300 999"\r
+        } ]\r
+      }\r
+    }\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="31d57593-b16f-483b-af1e-05a0c57bd320" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentContactPersonal>
+  <StudentContactPersonalRefId>7c834ea9-eda1-2090-347f-83297e1c290f</StudentContactPersonalRefId>
+  <StudentContactPersonalLocalId>P1234567</StudentContactPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Hagrid</FamilyName>
+      <GivenName>Fridwulfa</GivenName>
+      <FullName>Fridwulfa Hagrid</FullName>
+      <Type>LGL</Type>
+    </Name>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>The Enchanted Wood</Line1>
+        <Line2>533 Hogwart's Way</Line2>
+        <City>Hogsmead</City>
+        <PostalCode>7733</PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>ridwulfa@gmail.com</Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MOB</Type>
+        <Number>(021) 300 999</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentContactPersonal>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/studentpersonal/{StudentPersonalRefId}/studentattainment" path="/studentpersonal/{StudentPersonalRefId}/studentattainment" id="de96be0c-1ebd-4895-9fbd-38f7b0c52a9e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="de96be0c-1ebd-4895-9fbd-38f7b0c52a9efileName">%2Fstudentpersonal%2F%7BStudentPersonalRefId%7D%2Fstudentattainment</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getStudentAttainmentsByStudent" id="90f511d5-6702-4805-b3db-4b5a641ae288" method="GET">
+    <con:description><![CDATA[<p>Retrieve all of a particular Student's available achievements of some <a href="#tag/Credential">Credential</a>, <a href="#tag/LearningStandard">LearningStandard</a>, or completing a <a href="#tag/ProviderCourse">ProviderCourse</a>, within the scope of the  Provider the students are enrolled in.]]></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>start</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Include only items from start date;	`start=2017-08-01`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>end</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Include only items before end date;	`end=2017-08-31`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StudentPersonalRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the student.</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "StudentAttainments" : {
+    "StudentAttainment" : [ {
+      "StudentAttainmentRefId" : "359d7510-1ad0-a9d7-a8c3-dad0a85103a2",
+      "GrantingOrganisation" : {
+        "RefId" : "8772"
+      },
+      "Attainment" : {
+        "RefId" : "d0a0a27a-d0a8-510a-d9d7-5101a8c3da39",
+        "Name" : "NCEA Level 2 Chemistry - Endorsed with merit",
+        "ObjectType" : "Credential"
+      },
+      "Student" : {
+        "RefId" : "cd106d6d-d9d5-41fb-9943-5feb967c9435",
+        "LocalId" : "HP85-1039",
+        "Name" : "Harry Potter"
+      },
+      "YearAttained" : "2018",
+      "DateAttained" : "2018-07-25",
+      "JustificationList" : {
+        "Justification" : [ {
+          "RefId" : "2752a16b-b62a-4973-9d44-23e13e1c037b",
+          "LocalId" : "91165-v2",
+          "Name" : "Demonstrate understanding of the properties of selected organic compounds",
+          "ObjectType" : "StudentAssessmentTaskResult",
+          "AssessmentType" : "EXT",
+          "Result" : "Achieved",
+          "Date" : "2016-06-28",
+          "CreditValue" : 4
+        }, {
+          "RefId" : "eca0da5d-94af-4223-aaa6-7c0083006efd",
+          "LocalId" : "91166-v2",
+          "Name" : "Demonstrate understanding of chemical reactivity",
+          "ObjectType" : "StudentAssessmentTaskResult",
+          "AssessmentType" : "INT",
+          "Result" : "Achieved with merit",
+          "Date" : "2016-06-01",
+          "CreditValue" : 3
+        }, {
+          "RefId" : "12f4761d-5e97-4e12-804e-e16d882c86c7",
+          "LocalId" : "91167-v2",
+          "Name" : "Demonstrate understanding of oxidation-reduction",
+          "ObjectType" : "StudentAssessmentTaskResult",
+          "AssessmentType" : "EXT",
+          "Result" : "Achieved",
+          "Date" : "2016-06-28",
+          "CreditValue" : 3
+        } ]
+      },
+      "SubjectAreaList" : {
+        "SubjectArea" : [ "CHEM" ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<StudentAttainments>
+  <StudentAttainment>
+    <StudentAttainmentRefId>359d7510-1ad0-a9d7-a8c3-dad0a85103a2</StudentAttainmentRefId>
+    <GrantingOrganisation>
+      <RefId>8772</RefId>
+    </GrantingOrganisation>
+    <Attainment>
+      <RefId>d0a0a27a-d0a8-510a-d9d7-5101a8c3da39</RefId>
+      <Name>NCEA Level 2 Chemistry - Endorsed with merit</Name>
+      <ObjectType>Credential</ObjectType>
+    </Attainment>
+    <Student>
+      <RefId>cd106d6d-d9d5-41fb-9943-5feb967c9435</RefId>
+      <LocalId>HP85-1039</LocalId>
+      <Name>Harry Potter</Name>
+    </Student>
+    </DateAttained>2018-07-25</DateAttained>
+    <JustificationList>
+      <Justification>
+        <RefId>2752a16b-b62a-4973-9d44-23e13e1c037b</RefId>
+        <LocalId>91165-v2</LocalId>
+        <Name>Demonstrate understanding of the properties of selected organic compounds</Name>
+        <ObjectType>StudentAssessmentTaskResult</ObjectType>
+        <AssessmentType>EXT</AssessmentType>
+        <Result>Achieved</Result>
+        <Date>2016-06-28</Date>
+        <CreditValue>4</CreditValue>
+      </Justification>
+      <Justification>
+        <RefId>eca0da5d-94af-4223-aaa6-7c0083006efd</RefId>
+        <LocalId>91166-v2</LocalId>
+        <Name>Demonstrate understanding of chemical reactivity</Name>
+        <ObjectType>StudentAssessmentTaskResult</ObjectType>
+        <AssessmentType>INT</AssessmentType>
+        <Result>Achieved with merit</Result>
+        <Date>2016-06-01</Date>
+        <CreditValue>3</CreditValue>
+      </Justification>
+      <Justification>
+        <RefId>12f4761d-5e97-4e12-804e-e16d882c86c7</RefId>
+        <LocalId>91167-v2</LocalId>
+        <Name>Demonstrate understanding of oxidation-reduction</Name>
+        <ObjectType>StudentAssessmentTaskResult</ObjectType>
+        <AssessmentType>EXT</AssessmentType>
+        <Result>Achieved</Result>
+        <Date>2016-06-28</Date>
+        <CreditValue>3</CreditValue>
+      </Justification>
+    </JustificationList>
+    <SubjectAreaList>
+      <SubjectArea>CHEM</SubjectArea>
+    </SubjectAreaList>
+  </StudentAttainment>
+</StudentAttainments>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="767c53b5-dcf2-417c-a2da-7ebf1e2c2f84" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

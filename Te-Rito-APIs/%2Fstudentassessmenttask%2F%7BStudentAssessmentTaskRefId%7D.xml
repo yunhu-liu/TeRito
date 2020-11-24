@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/studentassessmenttask/{StudentAssessmentTaskRefId}" path="/studentassessmenttask/{StudentAssessmentTaskRefId}" id="f8140a17-9d8e-4d9f-b394-d2bc415d7427" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f8140a17-9d8e-4d9f-b394-d2bc415d7427fileName">%2Fstudentassessmenttask%2F%7BStudentAssessmentTaskRefId%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getStudentAssessmentTask" id="bdcd34c6-1f79-4fe8-9102-eac10b9d6ee9" method="GET">
+    <con:description>&lt;p>Retrieve a single student's attempt at a single assignment, essay, class test,  internal or external assessment exam, or any other task that is set to students and  assessed as part of the learning process, within the scope of the Provider that the student is enrolled in.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>start</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Include only items from start date;	`start=2017-08-01`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>end</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Include only items before end date;	`end=2017-08-31`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StudentAssessmentTaskRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>&lt;p>Unique identifier (GUID) that uniquely identifies the particular student's attempt at the particular assignment, essay, class test, internal or external assessment exam, or any other &lt;a href="#tag/AssessmentTask">AssessmentTask&lt;/a> that is being attempted.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "StudentAssessmentTask" : {
+    "StudentAssessmentTaskRefId" : "359d7510-1ad0-a9d7-a8c3-dad0a85103a2",
+    "Student" : {
+      "RefId" : "cd106d6d-d9d5-41fb-9943-5feb967c9435",
+      "LocalId" : "HP-850139",
+      "Name" : "Harry Potter"
+    },
+    "AssessmentTask" : {
+      "RefId" : "d0a0a27a-d0a8-510a-d9d7-5101a8c3da39"
+    },
+    "OrganisationInvolvedList" : {
+      "OrganisationInvolved" : [ {
+        "RefId" : "9651",
+        "OrganisationRole" : "PRO"
+      } ]
+    },
+    "StaffInvolvedList" : {
+      "StaffInvolved" : [ {
+        "RefId" : "228a2cbe-93c4-46ba-91fa-b3ae689eb437",
+        "Name" : "Prof. McGonnegal",
+        "StaffRole" : "INV"
+      } ]
+    },
+    "Status" : "PUB",
+    "DateTimeAssessmentScheduled" : "2018-11-25T09:00:00+12:00",
+    "AssessmentAttempt" : 1
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<StudentAssessmentTask>
+  <StudentAssessmentTaskRefId>359d7510-1ad0-a9d7-a8c3-dad0a85103a2</StudentAssessmentTaskRefId>
+  <Student>
+    <RefId>cd106d6d-d9d5-41fb-9943-5feb967c9435</RefId>
+    <LocalId>HP-850139</LocalId>
+    <Name>Harry Potter</Name>
+  </Student>
+  <AssessmentTask>
+    <RefId>d0a0a27a-d0a8-510a-d9d7-5101a8c3da39</RefId>
+  </AssessmentTask>
+  <OrganisationInvolvedList>
+    <OrganisationInvolved>
+      <RefId>ad30d3a6-e663-4d5b-8975-6c4ffc745bfb</RefId>
+      <OrganisationRole>PRO</OrganisationRole>
+    </OrganisationInvolved>
+  </OrganisationInvolvedList>
+  <StaffInvolvedList>
+    <StaffInvolved>
+      <RefId>228a2cbe-93c4-46ba-91fa-b3ae689eb437</RefId>
+      <Name>Prof. McGonnegal</Name>
+      <StaffRole>INV</StaffRole>
+    </StaffInvolved>
+  </StaffInvolvedList>
+  <DateTimeAssessmentScheduled>2018-11-25T09:00:00+12:00</DateTimeAssessmentScheduled>
+</StudentAssessmentTask>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="9dfbadaa-15d2-4f40-bbaf-80bd933b397c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="updateStudentAssessmentTask" id="5f2e4e02-c543-4d04-aaa5-12299ee5aa08" method="PUT">
+    <con:description>&lt;p>Update a single student's attempt at a single assignment, essay, class test,  internal or external assessment exam, or any other task that is set to students and  assessed as part of the learning process, within the scope of the Provider that the student is enrolled in.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StudentAssessmentTaskRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>&lt;p>Unique identifier (GUID) that uniquely identifies the particular student's attempt at the particular assignment, essay, class test, internal or external assessment exam, or any other &lt;a href="#tag/AssessmentTask">AssessmentTask&lt;/a> that is being attempted.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated object</con:description>
+      <con:sampleContent>{
+  "StudentAssessmentTask" : {
+    "StudentAssessmentTaskRefId" : "359d7510-1ad0-a9d7-a8c3-dad0a85103a2",
+    "Student" : {
+      "RefId" : "cd106d6d-d9d5-41fb-9943-5feb967c9435",
+      "LocalId" : "HP-850139",
+      "Name" : "Harry Potter"
+    },
+    "AssessmentTask" : {
+      "RefId" : "d0a0a27a-d0a8-510a-d9d7-5101a8c3da39"
+    },
+    "OrganisationInvolvedList" : {
+      "OrganisationInvolved" : [ {
+        "RefId" : "9651",
+        "OrganisationRole" : "PRO"
+      } ]
+    },
+    "StaffInvolvedList" : {
+      "StaffInvolved" : [ {
+        "RefId" : "228a2cbe-93c4-46ba-91fa-b3ae689eb437",
+        "Name" : "Prof. McGonnegal",
+        "StaffRole" : "INV"
+      } ]
+    },
+    "Status" : "PUB",
+    "DateTimeAssessmentScheduled" : "2018-11-25T09:00:00+12:00",
+    "AssessmentAttempt" : 1
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated object</con:description>
+      <con:sampleContent><![CDATA[<StudentAssessmentTask>
+  <StudentAssessmentTaskRefId>359d7510-1ad0-a9d7-a8c3-dad0a85103a2</StudentAssessmentTaskRefId>
+  <Student>
+    <RefId>cd106d6d-d9d5-41fb-9943-5feb967c9435</RefId>
+    <LocalId>HP-850139</LocalId>
+    <Name>Harry Potter</Name>
+  </Student>
+  <AssessmentTask>
+    <RefId>d0a0a27a-d0a8-510a-d9d7-5101a8c3da39</RefId>
+  </AssessmentTask>
+  <OrganisationInvolvedList>
+    <OrganisationInvolved>
+      <RefId>ad30d3a6-e663-4d5b-8975-6c4ffc745bfb</RefId>
+      <OrganisationRole>PRO</OrganisationRole>
+    </OrganisationInvolved>
+  </OrganisationInvolvedList>
+  <StaffInvolvedList>
+    <StaffInvolved>
+      <RefId>228a2cbe-93c4-46ba-91fa-b3ae689eb437</RefId>
+      <Name>Prof. McGonnegal</Name>
+      <StaffRole>INV</StaffRole>
+    </StaffInvolved>
+  </StaffInvolvedList>
+  <DateTimeAssessmentScheduled>2018-11-25T09:00:00+12:00</DateTimeAssessmentScheduled>
+</StudentAssessmentTask>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentAssessmentTask" : {
+    "StudentAssessmentTaskRefId" : "359d7510-1ad0-a9d7-a8c3-dad0a85103a2",
+    "Student" : {
+      "RefId" : "cd106d6d-d9d5-41fb-9943-5feb967c9435",
+      "LocalId" : "HP-850139",
+      "Name" : "Harry Potter"
+    },
+    "AssessmentTask" : {
+      "RefId" : "d0a0a27a-d0a8-510a-d9d7-5101a8c3da39"
+    },
+    "OrganisationInvolvedList" : {
+      "OrganisationInvolved" : [ {
+        "RefId" : "9651",
+        "OrganisationRole" : "PRO"
+      } ]
+    },
+    "StaffInvolvedList" : {
+      "StaffInvolved" : [ {
+        "RefId" : "228a2cbe-93c4-46ba-91fa-b3ae689eb437",
+        "Name" : "Prof. McGonnegal",
+        "StaffRole" : "INV"
+      } ]
+    },
+    "Status" : "PUB",
+    "DateTimeAssessmentScheduled" : "2018-11-25T09:00:00+12:00",
+    "AssessmentAttempt" : 1
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentAssessmentTask>
+  <StudentAssessmentTaskRefId>359d7510-1ad0-a9d7-a8c3-dad0a85103a2</StudentAssessmentTaskRefId>
+  <Student>
+    <RefId>cd106d6d-d9d5-41fb-9943-5feb967c9435</RefId>
+    <LocalId>HP-850139</LocalId>
+    <Name>Harry Potter</Name>
+  </Student>
+  <AssessmentTask>
+    <RefId>d0a0a27a-d0a8-510a-d9d7-5101a8c3da39</RefId>
+  </AssessmentTask>
+  <OrganisationInvolvedList>
+    <OrganisationInvolved>
+      <RefId>ad30d3a6-e663-4d5b-8975-6c4ffc745bfb</RefId>
+      <OrganisationRole>PRO</OrganisationRole>
+    </OrganisationInvolved>
+  </OrganisationInvolvedList>
+  <StaffInvolvedList>
+    <StaffInvolved>
+      <RefId>228a2cbe-93c4-46ba-91fa-b3ae689eb437</RefId>
+      <Name>Prof. McGonnegal</Name>
+      <StaffRole>INV</StaffRole>
+    </StaffInvolved>
+  </StaffInvolvedList>
+  <DateTimeAssessmentScheduled>2018-11-25T09:00:00+12:00</DateTimeAssessmentScheduled>
+</StudentAssessmentTask>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="c7dca740-ddd7-434a-8c30-105522b2ce9e" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentAssessmentTask" : {\r
+    "StudentAssessmentTaskRefId" : "359d7510-1ad0-a9d7-a8c3-dad0a85103a2",\r
+    "Student" : {\r
+      "RefId" : "cd106d6d-d9d5-41fb-9943-5feb967c9435",\r
+      "LocalId" : "HP-850139",\r
+      "Name" : "Harry Potter"\r
+    },\r
+    "AssessmentTask" : {\r
+      "RefId" : "d0a0a27a-d0a8-510a-d9d7-5101a8c3da39"\r
+    },\r
+    "OrganisationInvolvedList" : {\r
+      "OrganisationInvolved" : [ {\r
+        "RefId" : "9651",\r
+        "OrganisationRole" : "PRO"\r
+      } ]\r
+    },\r
+    "StaffInvolvedList" : {\r
+      "StaffInvolved" : [ {\r
+        "RefId" : "228a2cbe-93c4-46ba-91fa-b3ae689eb437",\r
+        "Name" : "Prof. McGonnegal",\r
+        "StaffRole" : "INV"\r
+      } ]\r
+    },\r
+    "Status" : "PUB",\r
+    "DateTimeAssessmentScheduled" : "2018-11-25T09:00:00+12:00",\r
+    "AssessmentAttempt" : 1\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="ee00b252-8f27-4a0a-a9fe-07efea9bda85" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentAssessmentTask>
+  <StudentAssessmentTaskRefId>359d7510-1ad0-a9d7-a8c3-dad0a85103a2</StudentAssessmentTaskRefId>
+  <Student>
+    <RefId>cd106d6d-d9d5-41fb-9943-5feb967c9435</RefId>
+    <LocalId>HP-850139</LocalId>
+    <Name>Harry Potter</Name>
+  </Student>
+  <AssessmentTask>
+    <RefId>d0a0a27a-d0a8-510a-d9d7-5101a8c3da39</RefId>
+  </AssessmentTask>
+  <OrganisationInvolvedList>
+    <OrganisationInvolved>
+      <RefId>ad30d3a6-e663-4d5b-8975-6c4ffc745bfb</RefId>
+      <OrganisationRole>PRO</OrganisationRole>
+    </OrganisationInvolved>
+  </OrganisationInvolvedList>
+  <StaffInvolvedList>
+    <StaffInvolved>
+      <RefId>228a2cbe-93c4-46ba-91fa-b3ae689eb437</RefId>
+      <Name>Prof. McGonnegal</Name>
+      <StaffRole>INV</StaffRole>
+    </StaffInvolved>
+  </StaffInvolvedList>
+  <DateTimeAssessmentScheduled>2018-11-25T09:00:00+12:00</DateTimeAssessmentScheduled>
+</StudentAssessmentTask>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="patchStudentAssessmentTask" id="97ee6c73-ca04-4266-b9e1-ba6db1d00176" method="PATCH">
+    <con:description>&lt;p>Update one or more fields of a single student's attempt at a single assignment, essay, class test,  internal or external assessment exam, or any other task that is set to students and  assessed as part of the learning process, within the scope of the Provider that the student is enrolled in.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StudentAssessmentTaskRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>&lt;p>Unique identifier (GUID) that uniquely identifies the particular student's attempt at the particular assignment, essay, class test, internal or external assessment exam, or any other &lt;a href="#tag/AssessmentTask">AssessmentTask&lt;/a> that is being attempted.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched object</con:description>
+      <con:sampleContent>{
+  "StudentAssessmentTask" : {
+    "StudentAssessmentTaskRefId" : "359d7510-1ad0-a9d7-a8c3-dad0a85103a2",
+    "Student" : {
+      "RefId" : "cd106d6d-d9d5-41fb-9943-5feb967c9435",
+      "LocalId" : "HP-850139",
+      "Name" : "Harry Potter"
+    },
+    "AssessmentTask" : {
+      "RefId" : "d0a0a27a-d0a8-510a-d9d7-5101a8c3da39"
+    },
+    "OrganisationInvolvedList" : {
+      "OrganisationInvolved" : [ {
+        "RefId" : "9651",
+        "OrganisationRole" : "PRO"
+      } ]
+    },
+    "StaffInvolvedList" : {
+      "StaffInvolved" : [ {
+        "RefId" : "228a2cbe-93c4-46ba-91fa-b3ae689eb437",
+        "Name" : "Prof. McGonnegal",
+        "StaffRole" : "INV"
+      } ]
+    },
+    "Status" : "PUB",
+    "DateTimeAssessmentScheduled" : "2018-11-25T09:00:00+12:00",
+    "AssessmentAttempt" : 1
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched object</con:description>
+      <con:sampleContent><![CDATA[<StudentAssessmentTask>
+  <StudentAssessmentTaskRefId>359d7510-1ad0-a9d7-a8c3-dad0a85103a2</StudentAssessmentTaskRefId>
+  <Student>
+    <RefId>cd106d6d-d9d5-41fb-9943-5feb967c9435</RefId>
+    <LocalId>HP-850139</LocalId>
+    <Name>Harry Potter</Name>
+  </Student>
+  <AssessmentTask>
+    <RefId>d0a0a27a-d0a8-510a-d9d7-5101a8c3da39</RefId>
+  </AssessmentTask>
+  <OrganisationInvolvedList>
+    <OrganisationInvolved>
+      <RefId>ad30d3a6-e663-4d5b-8975-6c4ffc745bfb</RefId>
+      <OrganisationRole>PRO</OrganisationRole>
+    </OrganisationInvolved>
+  </OrganisationInvolvedList>
+  <StaffInvolvedList>
+    <StaffInvolved>
+      <RefId>228a2cbe-93c4-46ba-91fa-b3ae689eb437</RefId>
+      <Name>Prof. McGonnegal</Name>
+      <StaffRole>INV</StaffRole>
+    </StaffInvolved>
+  </StaffInvolvedList>
+  <DateTimeAssessmentScheduled>2018-11-25T09:00:00+12:00</DateTimeAssessmentScheduled>
+</StudentAssessmentTask>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentAssessmentTask" : {
+    "StudentAssessmentTaskRefId" : "359d7510-1ad0-a9d7-a8c3-dad0a85103a2",
+    "Student" : {
+      "RefId" : "cd106d6d-d9d5-41fb-9943-5feb967c9435",
+      "LocalId" : "HP-850139",
+      "Name" : "Harry Potter"
+    },
+    "AssessmentTask" : {
+      "RefId" : "d0a0a27a-d0a8-510a-d9d7-5101a8c3da39"
+    },
+    "OrganisationInvolvedList" : {
+      "OrganisationInvolved" : [ {
+        "RefId" : "9651",
+        "OrganisationRole" : "PRO"
+      } ]
+    },
+    "StaffInvolvedList" : {
+      "StaffInvolved" : [ {
+        "RefId" : "228a2cbe-93c4-46ba-91fa-b3ae689eb437",
+        "Name" : "Prof. McGonnegal",
+        "StaffRole" : "INV"
+      } ]
+    },
+    "Status" : "PUB",
+    "DateTimeAssessmentScheduled" : "2018-11-25T09:00:00+12:00",
+    "AssessmentAttempt" : 1
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentAssessmentTask>
+  <StudentAssessmentTaskRefId>359d7510-1ad0-a9d7-a8c3-dad0a85103a2</StudentAssessmentTaskRefId>
+  <Student>
+    <RefId>cd106d6d-d9d5-41fb-9943-5feb967c9435</RefId>
+    <LocalId>HP-850139</LocalId>
+    <Name>Harry Potter</Name>
+  </Student>
+  <AssessmentTask>
+    <RefId>d0a0a27a-d0a8-510a-d9d7-5101a8c3da39</RefId>
+  </AssessmentTask>
+  <OrganisationInvolvedList>
+    <OrganisationInvolved>
+      <RefId>ad30d3a6-e663-4d5b-8975-6c4ffc745bfb</RefId>
+      <OrganisationRole>PRO</OrganisationRole>
+    </OrganisationInvolved>
+  </OrganisationInvolvedList>
+  <StaffInvolvedList>
+    <StaffInvolved>
+      <RefId>228a2cbe-93c4-46ba-91fa-b3ae689eb437</RefId>
+      <Name>Prof. McGonnegal</Name>
+      <StaffRole>INV</StaffRole>
+    </StaffInvolved>
+  </StaffInvolvedList>
+  <DateTimeAssessmentScheduled>2018-11-25T09:00:00+12:00</DateTimeAssessmentScheduled>
+</StudentAssessmentTask>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="b1d3384d-1559-464a-ad36-93b2fd94457a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentAssessmentTask" : {\r
+    "StudentAssessmentTaskRefId" : "359d7510-1ad0-a9d7-a8c3-dad0a85103a2",\r
+    "Student" : {\r
+      "RefId" : "cd106d6d-d9d5-41fb-9943-5feb967c9435",\r
+      "LocalId" : "HP-850139",\r
+      "Name" : "Harry Potter"\r
+    },\r
+    "AssessmentTask" : {\r
+      "RefId" : "d0a0a27a-d0a8-510a-d9d7-5101a8c3da39"\r
+    },\r
+    "OrganisationInvolvedList" : {\r
+      "OrganisationInvolved" : [ {\r
+        "RefId" : "9651",\r
+        "OrganisationRole" : "PRO"\r
+      } ]\r
+    },\r
+    "StaffInvolvedList" : {\r
+      "StaffInvolved" : [ {\r
+        "RefId" : "228a2cbe-93c4-46ba-91fa-b3ae689eb437",\r
+        "Name" : "Prof. McGonnegal",\r
+        "StaffRole" : "INV"\r
+      } ]\r
+    },\r
+    "Status" : "PUB",\r
+    "DateTimeAssessmentScheduled" : "2018-11-25T09:00:00+12:00",\r
+    "AssessmentAttempt" : 1\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="cb5699e5-03b0-4fd2-a013-c623221746d5" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentAssessmentTask>
+  <StudentAssessmentTaskRefId>359d7510-1ad0-a9d7-a8c3-dad0a85103a2</StudentAssessmentTaskRefId>
+  <Student>
+    <RefId>cd106d6d-d9d5-41fb-9943-5feb967c9435</RefId>
+    <LocalId>HP-850139</LocalId>
+    <Name>Harry Potter</Name>
+  </Student>
+  <AssessmentTask>
+    <RefId>d0a0a27a-d0a8-510a-d9d7-5101a8c3da39</RefId>
+  </AssessmentTask>
+  <OrganisationInvolvedList>
+    <OrganisationInvolved>
+      <RefId>ad30d3a6-e663-4d5b-8975-6c4ffc745bfb</RefId>
+      <OrganisationRole>PRO</OrganisationRole>
+    </OrganisationInvolved>
+  </OrganisationInvolvedList>
+  <StaffInvolvedList>
+    <StaffInvolved>
+      <RefId>228a2cbe-93c4-46ba-91fa-b3ae689eb437</RefId>
+      <Name>Prof. McGonnegal</Name>
+      <StaffRole>INV</StaffRole>
+    </StaffInvolved>
+  </StaffInvolvedList>
+  <DateTimeAssessmentScheduled>2018-11-25T09:00:00+12:00</DateTimeAssessmentScheduled>
+</StudentAssessmentTask>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

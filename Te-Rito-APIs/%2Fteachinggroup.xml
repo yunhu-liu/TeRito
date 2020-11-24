@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/teachinggroup" path="/teachinggroup" id="aa98a2b4-95be-49d7-a0ca-7d287bf5d8d8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="aa98a2b4-95be-49d7-a0ca-7d287bf5d8d8fileName">%2Fteachinggroup</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getTeachingGroups" id="61809736-1a2c-447d-8151-fe753034a1b7" method="GET">
+    <con:description><![CDATA[<p>Bulk operation to retrieve all available TeachingGroups from the given Provider.  TeachingGroups can have multiple staff  assigned in a variety of roles (via <a href="#tag/StaffTeachingGroupAssignment">StaffTeachingGroupAssignment</a>),  may be assigned students from multiple year levels (via <a href="#tag/StudentTeachingGroupEnrolment">StudentTeachingGroupEnrolment</a>), and may be taught multiple <a href="#tag/ProviderCourse">ProviderCourses</a>.</p>]]></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "TeachingGroups" : {
+    "TeachingGroup" : [ {
+      "TeachingGroupLocalId" : "2020_8003_HR9",
+      "ShortName" : "HR_9",
+      "LongName" : "Homeroom Year 9",
+      "GroupType" : "RC",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "ScheduleTerm" : {
+        "LocalId" : "2020_8003_Y"
+      },
+      "YearLevelList" : {
+        "YearLevel" : [ 9 ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<TeachingGroups>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR9</TeachingGroupLocalId>
+    <ShortName>HR_9<ShortName>
+    <LongName>Homeroom Year 9</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>9</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR10</TeachingGroupLocalId>
+    <ShortName>HR_10</ShortName>
+    <LongName>Homeroom Year 10</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>10</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+</TeachingGroups>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="5963fbf5-4414-4f25-a49b-cd8e204462ff" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="createTeachingGroups" id="401f816e-f910-40fe-8dc4-c272a0286063" method="POST">
+    <con:description><![CDATA[<p>Bulk operation to create one or more TeachingGroups which can have multiple staff  assigned in a variety of roles (via <a href="#tag/StaffTeachingGroupAssignment">StaffTeachingGroupAssignment</a>),  may be assigned students from multiple year levels (via <a href="#tag/StudentTeachingGroupEnrolment">StudentTeachingGroupEnrolment</a>), and may be taught multiple <a href="#tag/ProviderCourse">ProviderCourses</a>.</p>]]></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>x-http-method-override</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Rather than CREATE records, treat this request as a SYNC request.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent>{
+  "TeachingGroups" : {
+    "TeachingGroup" : [ {
+      "TeachingGroupLocalId" : "2020_8003_HR9",
+      "ShortName" : "HR_9",
+      "LongName" : "Homeroom Year 9",
+      "GroupType" : "RC",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "ScheduleTerm" : {
+        "LocalId" : "2020_8003_Y"
+      },
+      "YearLevelList" : {
+        "YearLevel" : [ 9 ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent><![CDATA[<TeachingGroups>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR9</TeachingGroupLocalId>
+    <ShortName>HR_9<ShortName>
+    <LongName>Homeroom Year 9</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>9</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR10</TeachingGroupLocalId>
+    <ShortName>HR_10</ShortName>
+    <LongName>Homeroom Year 10</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>10</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+</TeachingGroups>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "TeachingGroups" : {
+    "TeachingGroup" : [ {
+      "TeachingGroupLocalId" : "2020_8003_HR9",
+      "ShortName" : "HR_9",
+      "LongName" : "Homeroom Year 9",
+      "GroupType" : "RC",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "ScheduleTerm" : {
+        "LocalId" : "2020_8003_Y"
+      },
+      "YearLevelList" : {
+        "YearLevel" : [ 9 ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<TeachingGroups>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR9</TeachingGroupLocalId>
+    <ShortName>HR_9<ShortName>
+    <LongName>Homeroom Year 9</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>9</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR10</TeachingGroupLocalId>
+    <ShortName>HR_10</ShortName>
+    <LongName>Homeroom Year 10</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>10</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+</TeachingGroups>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="de0baaa7-6a83-4b04-b68a-45a9e9174c20" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "TeachingGroups" : {\r
+    "TeachingGroup" : [ {\r
+      "TeachingGroupLocalId" : "2020_8003_HR9",\r
+      "ShortName" : "HR_9",\r
+      "LongName" : "Homeroom Year 9",\r
+      "GroupType" : "RC",\r
+      "Organisation" : {\r
+        "RefId" : "8003"\r
+      },\r
+      "ScheduleTerm" : {\r
+        "LocalId" : "2020_8003_Y"\r
+      },\r
+      "YearLevelList" : {\r
+        "YearLevel" : [ 9 ]\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="a114afad-6b2c-49ac-87b0-8f1351c34733" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<TeachingGroups>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR9</TeachingGroupLocalId>
+    <ShortName>HR_9<ShortName>
+    <LongName>Homeroom Year 9</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>9</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR10</TeachingGroupLocalId>
+    <ShortName>HR_10</ShortName>
+    <LongName>Homeroom Year 10</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>10</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+</TeachingGroups>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="updateTeachingGroups" id="193521a7-fab6-4000-beb2-bdcd07c495f3" method="PUT">
+    <con:description><![CDATA[<p>Bulk operation to update one or more TeachingGroups, which can have multiple staff  assigned in a variety of roles (via <a href="#tag/StaffTeachingGroupAssignment">StaffTeachingGroupAssignment</a>),  may be assigned students from multiple year levels (via <a href="#tag/StudentTeachingGroupEnrolment">StudentTeachingGroupEnrolment</a>), and may be taught multiple <a href="#tag/ProviderCourse">ProviderCourses</a>.</p>]]></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Updatae successful; returns updated objects</con:description>
+      <con:sampleContent>{
+  "TeachingGroups" : {
+    "TeachingGroup" : [ {
+      "TeachingGroupLocalId" : "2020_8003_HR9",
+      "ShortName" : "HR_9",
+      "LongName" : "Homeroom Year 9",
+      "GroupType" : "RC",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "ScheduleTerm" : {
+        "LocalId" : "2020_8003_Y"
+      },
+      "YearLevelList" : {
+        "YearLevel" : [ 9 ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Updatae successful; returns updated objects</con:description>
+      <con:sampleContent><![CDATA[<TeachingGroups>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR9</TeachingGroupLocalId>
+    <ShortName>HR_9<ShortName>
+    <LongName>Homeroom Year 9</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>9</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR10</TeachingGroupLocalId>
+    <ShortName>HR_10</ShortName>
+    <LongName>Homeroom Year 10</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>10</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+</TeachingGroups>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "TeachingGroups" : {
+    "TeachingGroup" : [ {
+      "TeachingGroupLocalId" : "2020_8003_HR9",
+      "ShortName" : "HR_9",
+      "LongName" : "Homeroom Year 9",
+      "GroupType" : "RC",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "ScheduleTerm" : {
+        "LocalId" : "2020_8003_Y"
+      },
+      "YearLevelList" : {
+        "YearLevel" : [ 9 ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<TeachingGroups>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR9</TeachingGroupLocalId>
+    <ShortName>HR_9<ShortName>
+    <LongName>Homeroom Year 9</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>9</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR10</TeachingGroupLocalId>
+    <ShortName>HR_10</ShortName>
+    <LongName>Homeroom Year 10</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>10</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+</TeachingGroups>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="7f0c5fd6-56ca-4d4c-ab9d-510a34df1043" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "TeachingGroups" : {\r
+    "TeachingGroup" : [ {\r
+      "TeachingGroupLocalId" : "2020_8003_HR9",\r
+      "ShortName" : "HR_9",\r
+      "LongName" : "Homeroom Year 9",\r
+      "GroupType" : "RC",\r
+      "Organisation" : {\r
+        "RefId" : "8003"\r
+      },\r
+      "ScheduleTerm" : {\r
+        "LocalId" : "2020_8003_Y"\r
+      },\r
+      "YearLevelList" : {\r
+        "YearLevel" : [ 9 ]\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="e7023504-83cf-4500-9d74-a6273ade0084" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<TeachingGroups>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR9</TeachingGroupLocalId>
+    <ShortName>HR_9<ShortName>
+    <LongName>Homeroom Year 9</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>9</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR10</TeachingGroupLocalId>
+    <ShortName>HR_10</ShortName>
+    <LongName>Homeroom Year 10</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>10</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+</TeachingGroups>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="patchTeachingGroups" id="d9c85955-1786-4782-9d84-accf87fd99bd" method="PATCH">
+    <con:description><![CDATA[<p>Bulk operation to update one or more fields of one or more TeachingGroups, which can have multiple staff  assigned in a variety of roles (via <a href="#tag/StaffTeachingGroupAssignment">StaffTeachingGroupAssignment</a>),  may be assigned students from multiple year levels (via <a href="#tag/StudentTeachingGroupEnrolment">StudentTeachingGroupEnrolment</a>), and may be taught multiple <a href="#tag/ProviderCourse">ProviderCourses</a>.</p>]]></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent>{
+  "TeachingGroups" : {
+    "TeachingGroup" : [ {
+      "TeachingGroupLocalId" : "2020_8003_HR9",
+      "ShortName" : "HR_9",
+      "LongName" : "Homeroom Year 9",
+      "GroupType" : "RC",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "ScheduleTerm" : {
+        "LocalId" : "2020_8003_Y"
+      },
+      "YearLevelList" : {
+        "YearLevel" : [ 9 ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent><![CDATA[<TeachingGroups>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR9</TeachingGroupLocalId>
+    <ShortName>HR_9<ShortName>
+    <LongName>Homeroom Year 9</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>9</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR10</TeachingGroupLocalId>
+    <ShortName>HR_10</ShortName>
+    <LongName>Homeroom Year 10</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>10</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+</TeachingGroups>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "TeachingGroups" : {
+    "TeachingGroup" : [ {
+      "TeachingGroupLocalId" : "2020_8003_HR9",
+      "ShortName" : "HR_9",
+      "LongName" : "Homeroom Year 9",
+      "GroupType" : "RC",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "ScheduleTerm" : {
+        "LocalId" : "2020_8003_Y"
+      },
+      "YearLevelList" : {
+        "YearLevel" : [ 9 ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<TeachingGroups>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR9</TeachingGroupLocalId>
+    <ShortName>HR_9<ShortName>
+    <LongName>Homeroom Year 9</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>9</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR10</TeachingGroupLocalId>
+    <ShortName>HR_10</ShortName>
+    <LongName>Homeroom Year 10</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>10</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+</TeachingGroups>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="ee8168cf-c732-442d-ac36-63630fd7d49a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "TeachingGroups" : {\r
+    "TeachingGroup" : [ {\r
+      "TeachingGroupLocalId" : "2020_8003_HR9",\r
+      "ShortName" : "HR_9",\r
+      "LongName" : "Homeroom Year 9",\r
+      "GroupType" : "RC",\r
+      "Organisation" : {\r
+        "RefId" : "8003"\r
+      },\r
+      "ScheduleTerm" : {\r
+        "LocalId" : "2020_8003_Y"\r
+      },\r
+      "YearLevelList" : {\r
+        "YearLevel" : [ 9 ]\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="c7e378c9-890b-420c-96ab-bb9059980d82" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<TeachingGroups>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR9</TeachingGroupLocalId>
+    <ShortName>HR_9<ShortName>
+    <LongName>Homeroom Year 9</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>9</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+  <TeachingGroup>
+    <TeachingGroupLocalId>2020_8003_HR10</TeachingGroupLocalId>
+    <ShortName>HR_10</ShortName>
+    <LongName>Homeroom Year 10</LongName>
+    <GroupType>RC</GroupType>
+    <Organisation>
+      <RefId>8003</RefId>
+    </Organisation>
+    <ScheduleTerm>
+      <LocalId>2020_8003_Y</LocalId>
+    </ScheduleTerm>
+    <YearLevelList>
+      <YearLevel>10</YearLevel>
+    </YearLevelList>
+  </TeachingGroup>
+</TeachingGroups>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

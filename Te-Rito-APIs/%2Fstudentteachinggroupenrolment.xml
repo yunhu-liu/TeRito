@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/studentteachinggroupenrolment" path="/studentteachinggroupenrolment" id="2ac94f4a-646b-4e9f-8593-19b016a1c38a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2ac94f4a-646b-4e9f-8593-19b016a1c38afileName">%2Fstudentteachinggroupenrolment</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getStudentTeachingGroupEnrolments" id="c0313b71-291a-45ec-afef-9da95dbc6361" method="GET">
+    <con:description>&lt;p>Bulk operation to retrieve all available records of students' arrival at and departure from TeachingGroups at the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>start</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Include only items from start date;	`start=2017-08-01`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>end</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Include only items before end date;	`end=2017-08-31`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>status</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter the results; based upon the value of the Status field</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "StudentTeachingGroupEnrolments" : {
+    "StudentTeachingGroupEnrolment" : [ {
+      "StudentTeachingGroupEnrolmentLocalId" : "2020_8001_HR6_ST1000001",
+      "Student" : {
+        "LocalId" : "ST1000001",
+        "NationalStudentNumber" : 9001000001,
+        "YearLevel" : 6
+      },
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "Status" : "A",
+      "TeachingGroup" : {
+        "LocalId" : "2020_8001_HR6"
+      },
+      "StartDate" : "2020-01-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<StudentTeachingGroupEnrolments>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000001</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000001</LocalId>
+      <NationalStudentNumber>9001000001</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-27</StartDate>
+  </StudentTeachingGroupEnrolment>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000014</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000014</LocalId>
+      <NationalStudentNumber>9001000014</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-28</StartDate>
+  </StudentTeachingGroupEnrolment>
+</StudentTeachingGroupEnrolments>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="85be73b0-dc54-40ff-b2bd-764abd18695f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="createStudentTeachingGroupEnrolment" id="fa6881bf-0b0a-442d-b3fa-1386ff3a4010" method="POST">
+    <con:description>&lt;p>Bulk operation to create multiple records of students' arrival at and departure from TeachingGroups at the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>x-http-method-override</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Rather than CREATE records, treat this request as a SYNC request.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent>{
+  "StudentTeachingGroupEnrolments" : {
+    "StudentTeachingGroupEnrolment" : [ {
+      "StudentTeachingGroupEnrolmentLocalId" : "2020_8001_HR6_ST1000001",
+      "Student" : {
+        "LocalId" : "ST1000001",
+        "NationalStudentNumber" : 9001000001,
+        "YearLevel" : 6
+      },
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "Status" : "A",
+      "TeachingGroup" : {
+        "LocalId" : "2020_8001_HR6"
+      },
+      "StartDate" : "2020-01-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent><![CDATA[<StudentTeachingGroupEnrolments>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000001</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000001</LocalId>
+      <NationalStudentNumber>9001000001</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-27</StartDate>
+  </StudentTeachingGroupEnrolment>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000014</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000014</LocalId>
+      <NationalStudentNumber>9001000014</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-28</StartDate>
+  </StudentTeachingGroupEnrolment>
+</StudentTeachingGroupEnrolments>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentTeachingGroupEnrolments" : {
+    "StudentTeachingGroupEnrolment" : [ {
+      "StudentTeachingGroupEnrolmentLocalId" : "2020_8001_HR6_ST1000001",
+      "Student" : {
+        "LocalId" : "ST1000001",
+        "NationalStudentNumber" : 9001000001,
+        "YearLevel" : 6
+      },
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "Status" : "A",
+      "TeachingGroup" : {
+        "LocalId" : "2020_8001_HR6"
+      },
+      "StartDate" : "2020-01-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentTeachingGroupEnrolments>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000001</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000001</LocalId>
+      <NationalStudentNumber>9001000001</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-27</StartDate>
+  </StudentTeachingGroupEnrolment>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000014</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000014</LocalId>
+      <NationalStudentNumber>9001000014</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-28</StartDate>
+  </StudentTeachingGroupEnrolment>
+</StudentTeachingGroupEnrolments>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="847f0288-50a9-40d3-b858-5f830b9b743c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentTeachingGroupEnrolments" : {\r
+    "StudentTeachingGroupEnrolment" : [ {\r
+      "StudentTeachingGroupEnrolmentLocalId" : "2020_8001_HR6_ST1000001",\r
+      "Student" : {\r
+        "LocalId" : "ST1000001",\r
+        "NationalStudentNumber" : 9001000001,\r
+        "YearLevel" : 6\r
+      },\r
+      "Organisation" : {\r
+        "RefId" : "8001"\r
+      },\r
+      "Status" : "A",\r
+      "TeachingGroup" : {\r
+        "LocalId" : "2020_8001_HR6"\r
+      },\r
+      "StartDate" : "2020-01-27"\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="2d7dd3a8-90a2-499e-adb2-b0aef0530bf3" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentTeachingGroupEnrolments>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000001</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000001</LocalId>
+      <NationalStudentNumber>9001000001</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-27</StartDate>
+  </StudentTeachingGroupEnrolment>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000014</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000014</LocalId>
+      <NationalStudentNumber>9001000014</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-28</StartDate>
+  </StudentTeachingGroupEnrolment>
+</StudentTeachingGroupEnrolments>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="updateStudentTeachingGroupEnrolments" id="7272a4fb-bb4f-4a9e-8096-e3e695e18cb7" method="PUT">
+    <con:description>&lt;p>Bulk operation to update one or more records of students' arrival at and departure from TeachingGroups at the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns update objects</con:description>
+      <con:sampleContent>{
+  "StudentTeachingGroupEnrolments" : {
+    "StudentTeachingGroupEnrolment" : [ {
+      "StudentTeachingGroupEnrolmentLocalId" : "2020_8001_HR6_ST1000001",
+      "Student" : {
+        "LocalId" : "ST1000001",
+        "NationalStudentNumber" : 9001000001,
+        "YearLevel" : 6
+      },
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "Status" : "A",
+      "TeachingGroup" : {
+        "LocalId" : "2020_8001_HR6"
+      },
+      "StartDate" : "2020-01-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns update objects</con:description>
+      <con:sampleContent><![CDATA[<StudentTeachingGroupEnrolments>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000001</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000001</LocalId>
+      <NationalStudentNumber>9001000001</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-27</StartDate>
+  </StudentTeachingGroupEnrolment>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000014</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000014</LocalId>
+      <NationalStudentNumber>9001000014</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-28</StartDate>
+  </StudentTeachingGroupEnrolment>
+</StudentTeachingGroupEnrolments>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentTeachingGroupEnrolments" : {
+    "StudentTeachingGroupEnrolment" : [ {
+      "StudentTeachingGroupEnrolmentLocalId" : "2020_8001_HR6_ST1000001",
+      "Student" : {
+        "LocalId" : "ST1000001",
+        "NationalStudentNumber" : 9001000001,
+        "YearLevel" : 6
+      },
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "Status" : "A",
+      "TeachingGroup" : {
+        "LocalId" : "2020_8001_HR6"
+      },
+      "StartDate" : "2020-01-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentTeachingGroupEnrolments>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000001</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000001</LocalId>
+      <NationalStudentNumber>9001000001</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-27</StartDate>
+  </StudentTeachingGroupEnrolment>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000014</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000014</LocalId>
+      <NationalStudentNumber>9001000014</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-28</StartDate>
+  </StudentTeachingGroupEnrolment>
+</StudentTeachingGroupEnrolments>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="6c1ec0ef-4ab8-4347-af25-3b7f09c30621" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentTeachingGroupEnrolments" : {\r
+    "StudentTeachingGroupEnrolment" : [ {\r
+      "StudentTeachingGroupEnrolmentLocalId" : "2020_8001_HR6_ST1000001",\r
+      "Student" : {\r
+        "LocalId" : "ST1000001",\r
+        "NationalStudentNumber" : 9001000001,\r
+        "YearLevel" : 6\r
+      },\r
+      "Organisation" : {\r
+        "RefId" : "8001"\r
+      },\r
+      "Status" : "A",\r
+      "TeachingGroup" : {\r
+        "LocalId" : "2020_8001_HR6"\r
+      },\r
+      "StartDate" : "2020-01-27"\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="842eec07-c597-4b65-8396-b91458def94a" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentTeachingGroupEnrolments>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000001</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000001</LocalId>
+      <NationalStudentNumber>9001000001</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-27</StartDate>
+  </StudentTeachingGroupEnrolment>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000014</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000014</LocalId>
+      <NationalStudentNumber>9001000014</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-28</StartDate>
+  </StudentTeachingGroupEnrolment>
+</StudentTeachingGroupEnrolments>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="patchStudentTeachingGroupEnrolments" id="be16734e-386f-4e2d-8a7b-2578f3d09128" method="PATCH">
+    <con:description>&lt;p>Bulk operation to update one or more fields of one or more records of students'  arrival at and departure from TeachingGroups at the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent>{
+  "StudentTeachingGroupEnrolments" : {
+    "StudentTeachingGroupEnrolment" : [ {
+      "StudentTeachingGroupEnrolmentLocalId" : "2020_8001_HR6_ST1000001",
+      "Student" : {
+        "LocalId" : "ST1000001",
+        "NationalStudentNumber" : 9001000001,
+        "YearLevel" : 6
+      },
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "Status" : "A",
+      "TeachingGroup" : {
+        "LocalId" : "2020_8001_HR6"
+      },
+      "StartDate" : "2020-01-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent><![CDATA[<StudentTeachingGroupEnrolments>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000001</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000001</LocalId>
+      <NationalStudentNumber>9001000001</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-27</StartDate>
+  </StudentTeachingGroupEnrolment>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000014</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000014</LocalId>
+      <NationalStudentNumber>9001000014</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-28</StartDate>
+  </StudentTeachingGroupEnrolment>
+</StudentTeachingGroupEnrolments>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentTeachingGroupEnrolments" : {
+    "StudentTeachingGroupEnrolment" : [ {
+      "StudentTeachingGroupEnrolmentLocalId" : "2020_8001_HR6_ST1000001",
+      "Student" : {
+        "LocalId" : "ST1000001",
+        "NationalStudentNumber" : 9001000001,
+        "YearLevel" : 6
+      },
+      "Organisation" : {
+        "RefId" : "8001"
+      },
+      "Status" : "A",
+      "TeachingGroup" : {
+        "LocalId" : "2020_8001_HR6"
+      },
+      "StartDate" : "2020-01-27"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentTeachingGroupEnrolments>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000001</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000001</LocalId>
+      <NationalStudentNumber>9001000001</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-27</StartDate>
+  </StudentTeachingGroupEnrolment>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000014</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000014</LocalId>
+      <NationalStudentNumber>9001000014</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-28</StartDate>
+  </StudentTeachingGroupEnrolment>
+</StudentTeachingGroupEnrolments>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="6c14970d-f0a1-4666-b8a8-55228c425542" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentTeachingGroupEnrolments" : {\r
+    "StudentTeachingGroupEnrolment" : [ {\r
+      "StudentTeachingGroupEnrolmentLocalId" : "2020_8001_HR6_ST1000001",\r
+      "Student" : {\r
+        "LocalId" : "ST1000001",\r
+        "NationalStudentNumber" : 9001000001,\r
+        "YearLevel" : 6\r
+      },\r
+      "Organisation" : {\r
+        "RefId" : "8001"\r
+      },\r
+      "Status" : "A",\r
+      "TeachingGroup" : {\r
+        "LocalId" : "2020_8001_HR6"\r
+      },\r
+      "StartDate" : "2020-01-27"\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="7942f18f-89ad-4b52-b8cf-bef4b9f219cb" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentTeachingGroupEnrolments>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000001</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000001</LocalId>
+      <NationalStudentNumber>9001000001</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-27</StartDate>
+  </StudentTeachingGroupEnrolment>
+  <StudentTeachingGroupEnrolment>
+    <StudentTeachingGroupEnrolmentLocalId>2020_8001_HR6_ST1000014</StudentTeachingGroupEnrolmentLocalId>
+    <Student>
+      <LocalId>ST1000014</LocalId>
+      <NationalStudentNumber>9001000014</NationalStudentNumber>
+      <YearLevel>6</YearLevel>
+    </Student>
+    <Organisation>
+      <RefId>8001</RefId>
+    </Organisation>
+    <Status>A</Status>
+    <TeachingGroup>
+      <LocalId>2020_8001_HR6</LocalId>
+    </TeachingGroup>
+    <StartDate>2020-01-28</StartDate>
+  </StudentTeachingGroupEnrolment>
+</StudentTeachingGroupEnrolments>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

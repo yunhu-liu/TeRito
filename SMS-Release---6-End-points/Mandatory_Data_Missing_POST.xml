@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="3dc8a646-4dca-47ce-a72a-0a012e8c2700" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Mandatory_Data_Missing_POST" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3dc8a646-4dca-47ce-a72a-0a012e8c2700fileName">Mandatory_Data_Missing_POST</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="DataSource" id="136a5125-53cb-4fd3-8df5-54650b70ec5b">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Directory">
+        <con:configuration>
+          <directory>C:/Temp/MockServer 3.2/wrappedTestCases/StaffPersonal/invalid/emptyField</directory>
+          <filter>*.json</filter>
+          <encoding>UTF-8</encoding>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:preload>true</con:preload>
+      <con:property>fileContents</con:property>
+      <con:property>filename</con:property>
+      <con:startRow/>
+      <con:endRow/>
+      <con:recordsPerIteration>1</con:recordsPerIteration>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:trimValues>false</con:trimValues>
+      <con:entitizeValues>false</con:entitizeValues>
+      <con:restartOnRun>true</con:restartOnRun>
+      <con:expandProperties>false</con:expandProperties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="GET and Confirm Existence" id="0177a616-9094-4e69-8d6c-bcf3366e6cab" disabled="true">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="getStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="GET and Confirm Existence" id="2cd69b18-8dcf-4cc7-aec2-d27a017e6251" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="dfb9c09b-1055-4c01-a1fb-2040c72cc4b6" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="MessageContentAssertion" id="fc8ae433-244e-4481-bcf8-02f94a512ca0" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal/';
+//ns1:Response[1]/ns1:StudentPersonal[1]/ns1:NationalStudentNumber[1]</con:xpath>
+              <con:element>NationalStudentNumber</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>9005000013</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal/';
+//ns1:Response[1]/ns1:StudentPersonal[1]/ns1:PersonInfo[1]/ns1:Name[1]/ns1:FamilyName[1]</con:xpath>
+              <con:element>FamilyName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Preston</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal/';
+//ns1:Response[1]/ns1:StudentPersonal[1]/ns1:PersonInfo[1]/ns1:Name[1]/ns1:GivenName[1]</con:xpath>
+              <con:element>GivenName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Connor</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<Response xmlns="https://mocksifapi.azurewebsites.net/sif/studentpersonal/">
+   <StudentPersonal>
+      <StudentPersonalRefId>ae655c67-badf-45c5-b0a1-85c500d49d8b</StudentPersonalRefId>
+      <StudentPersonalLocalId>ST5000013</StudentPersonalLocalId>
+      <NationalStudentNumber>9005000013</NationalStudentNumber>
+      <FirstNZSchoolingDate>2014-04-11T00:00:00</FirstNZSchoolingDate>
+      <PersonInfo>
+         <Name>
+            <FamilyName>Preston</FamilyName>
+            <GivenName>Connor</GivenName>
+            <IsVerified>0</IsVerified>
+         </Name>
+         <Demographics>
+            <BirthDate>2009-04-11T00:00:00</BirthDate>
+            <Gender>1</Gender>
+            <LanguageList>
+               <Language>
+                  <e>
+                     <Code>NZS01112</Code>
+                     <Usage>SH</Usage>
+                  </e>
+               </Language>
+            </LanguageList>
+            <EthnicityList>
+               <Ethnicity>
+                  <e>
+                     <PreferenceOrderNumber>0</PreferenceOrderNumber>
+                     <Code>211</Code>
+                  </e>
+               </Ethnicity>
+            </EthnicityList>
+            <IwiAffiliationList>
+               <Iwi>
+                  <e>
+                     <Code>NZS0507</Code>
+                     <PreferenceOrderNumber>0</PreferenceOrderNumber>
+                     <HapuAffiliationList null="true"/>
+                  </e>
+               </Iwi>
+            </IwiAffiliationList>
+         </Demographics>
+         <EmailList>
+            <Email>
+               <e>
+                  <Type>0</Type>
+                  <Address>cpreston@mailinator.com</Address>
+               </e>
+            </Email>
+         </EmailList>
+      </PersonInfo>
+      <BiographicChangeReason>0</BiographicChangeReason>
+      <RecordAudit>
+         <CreatedDateTime>2020-10-21T02:58:01.7356289+00:00</CreatedDateTime>
+      </RecordAudit>
+   </StudentPersonal>
+</Response>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
+          <con:entry key="StudentPersonalRefId" value="ae655c67-badf-45c5-b0a1-85c500d49d8b"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request_Can create negative test" id="a1eb40cc-d589-412a-ae6c-6245ac5a3235" disabled="true">
+    <con:settings/>
+    <con:config service="/Te Rito APIs_Additional" resourcePath="/studentpersonal/{StudentPersonalLocalId}" methodName="getStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request_Can create negative test" id="2cd69b18-8dcf-4cc7-aec2-d27a017e6251" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal/ST5000000</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="a288c849-511d-438d-af04-4d48a0079002" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="a3ce1cd9-8e48-45d7-a9e5-60d063090b38" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
+          <con:entry key="StudentPersonalLocalId" value="ST5000000"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>fields</con:entry>
+          <con:entry>page</con:entry>
+          <con:entry>max</con:entry>
+          <con:entry>unwrap</con:entry>
+          <con:entry>human</con:entry>
+          <con:entry>sort</con:entry>
+          <con:entry>field</con:entry>
+          <con:entry>pattern</con:entry>
+          <con:entry>Accept</con:entry>
+          <con:entry>X-Edsby-OrganisationRefId</con:entry>
+          <con:entry>StudentPersonalLocalId</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Copy of /studentpersonal POST Request 1_Valid_Single" id="ea5b82c6-f0d4-4bfc-9d3e-9435ede7e901" disabled="true">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="createStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Copy of /studentpersonal POST Request 1_Valid_Single" id="33c88154-0043-4c50-9f03-8a295f2f60d1" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request>{\r
+   "StudentPersonals" : {\r
+      "StudentPersonal" : [\r
+         {\r
+            "StudentPersonalLocalId" : "ST5000000",\r
+            "NationalStudentNumber" : 9005000000,\r
+            "FirstNZSchoolingDate" : "2013-04-01",\r
+            "EarlyChildhoodEducation" : {\r
+               "Type" : "EPG"\r
+            },\r
+            "PersonInfo" : {\r
+               "Name" : {\r
+                  "FamilyName" : "White",\r
+                  "GivenName" : "Jacob",\r
+                  "PreferredGivenName" : "Jake",\r
+                  "FullName" : "Jacob 'Jake' White"\r
+               },\r
+               "Demographics" : {\r
+                  "BirthDate" : "2008-04-01",\r
+                  "Gender" : "1",\r
+                  "LanguageList" : {\r
+                     "Language" : [\r
+                        {\r
+                           "Code" : "NZS01112",\r
+                           "Usage" : "SH"\r
+                        }\r
+                     ]\r
+                  },\r
+                  "EthnicityList" : {\r
+                     "Ethnicity" : [\r
+                        {\r
+                           "Code" : "321"\r
+                        }\r
+                     ]\r
+                  }\r
+               },\r
+               "AddressList" : {\r
+                  "Address" : [\r
+                     {\r
+                        "Type" : "TH",\r
+                        "Role" : "PHY",\r
+                        "Line1" : "27 Arataua Street",\r
+                        "Suburb" : "Rotorua",\r
+                        "City" : "Rotorua",\r
+                        "Country" : "New Zealand",\r
+                        "PostalCode" : "3010"\r
+                     }\r
+                  ]\r
+               },\r
+               "EmailList" : {\r
+                  "Email" : [\r
+                     {\r
+                        "SourceOrganisation" : {\r
+                           "RefId" : "8005"\r
+                        },\r
+                        "Address" : "jwhite@mailinator.com"\r
+                     }\r
+                  ]\r
+               },\r
+               "PhoneNumberList" : {\r
+                  "PhoneNumber" : [\r
+                     {\r
+                        "Type" : "MAI",\r
+                        "Number" : "+64 7-943 8050"\r
+                     }\r
+                  ]\r
+               }\r
+            },\r
+            "StudentProviderEnrolment" : {\r
+               "EntryDate" : "2013-04-01",\r
+               "YearLevel" : 8,\r
+               "FundingYearLevel" : 8\r
+            }\r
+         }\r
+      ]\r
+   }\r
+}</con:request>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="854df1e0-8a6a-4c6d-a8c6-fc19934d6931" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="MessageContentAssertion" id="eca7ea13-7822-4c08-8e52-826b1959d6ed" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:StudentPersonalRefId[1]</con:xpath>
+              <con:element>StudentPersonalRefId</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>1dbfac52-e73c-4970-92fb-aa53db6d85da</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:StudentPersonalLocalId[1]</con:xpath>
+              <con:element>StudentPersonalLocalId</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>ST1000001_zzz</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:NationalStudentNumber[1]</con:xpath>
+              <con:element>NationalStudentNumber</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>9001000001</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:FirstNZSchoolingDate[1]</con:xpath>
+              <con:element>FirstNZSchoolingDate</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>2015-03-07T00:00:00</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:EarlyChildhoodEducation[1]/ns1:Type[1]</con:xpath>
+              <con:element>Type</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>EPG</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Name[1]/ns1:FamilyName[1]</con:xpath>
+              <con:element>FamilyName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>Saunders</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Name[1]/ns1:GivenName[1]</con:xpath>
+              <con:element>GivenName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>Thomas</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Name[1]/ns1:FullName[1]</con:xpath>
+              <con:element>FullName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>Thomas Saunders</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Name[1]/ns1:IsVerified[1]</con:xpath>
+              <con:element>IsVerified</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>0</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:BirthDate[1]</con:xpath>
+              <con:element>BirthDate</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>2010-03-07T00:00:00</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:Gender[1]</con:xpath>
+              <con:element>Gender</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>1</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:LanguageList[1]/ns1:Language[1]/ns1:e[1]/ns1:Code[1]</con:xpath>
+              <con:element>Code</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>NZS01112</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:LanguageList[1]/ns1:Language[1]/ns1:e[1]/ns1:Usage[1]</con:xpath>
+              <con:element>Usage</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>SH</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:EthnicityList[1]/ns1:Ethnicity[1]/ns1:e[1]/ns1:PreferenceOrderNumber[1]</con:xpath>
+              <con:element>PreferenceOrderNumber</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:EthnicityList[1]/ns1:Ethnicity[1]/ns1:e[1]/ns1:PreferenceOrderNumber[1]/@null</con:xpath>
+              <con:element>@null</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>true</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:EthnicityList[1]/ns1:Ethnicity[1]/ns1:e[1]/ns1:Code[1]</con:xpath>
+              <con:element>Code</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>321</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:Type[1]</con:xpath>
+              <con:element>Type</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>TH</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:Role[1]</con:xpath>
+              <con:element>Role</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>PHY</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:Line1[1]</con:xpath>
+              <con:element>Line1</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>27 Arataua Street</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:Suburb[1]</con:xpath>
+              <con:element>Suburb</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>Rotorua</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:City[1]</con:xpath>
+              <con:element>City</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>Rotorua</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:Country[1]</con:xpath>
+              <con:element>Country</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>New Zealand</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:PostalCode[1]</con:xpath>
+              <con:element>PostalCode</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>3010</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:EmailList[1]/ns1:Email[1]/ns1:e[1]/ns1:Type[1]</con:xpath>
+              <con:element>Type</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>0</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:EmailList[1]/ns1:Email[1]/ns1:e[1]/ns1:SourceOrganisation[1]/ns1:RefId[1]</con:xpath>
+              <con:element>RefId</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>8001</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:EmailList[1]/ns1:Email[1]/ns1:e[1]/ns1:Address[1]</con:xpath>
+              <con:element>Address</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>tsaunders@mailinator.com</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:PhoneNumberList[1]/ns1:PhoneNumber[1]/ns1:e[1]/ns1:Type[1]</con:xpath>
+              <con:element>Type</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>MAI</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:PhoneNumberList[1]/ns1:PhoneNumber[1]/ns1:e[1]/ns1:Number[1]</con:xpath>
+              <con:element>Number</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>+64 7-943 8050</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:BiographicChangeReason[1]</con:xpath>
+              <con:element>BiographicChangeReason</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>0</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:RecordAudit[1]/ns1:CreatedDateTime[1]</con:xpath>
+              <con:element>CreatedDateTime</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>2020-11-08T20:36:24.9384487+00:00</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<Response xmlns="https://mocksifapi.azurewebsites.net/sif/studentpersonal">
+   <StudentPersonals>
+      <StudentPersonal>
+         <e>
+            <StudentPersonalRefId>1dbfac52-e73c-4970-92fb-aa53db6d85da</StudentPersonalRefId>
+            <StudentPersonalLocalId>ST1000001_zzz</StudentPersonalLocalId>
+            <NationalStudentNumber>9001000001</NationalStudentNumber>
+            <FirstNZSchoolingDate>2015-03-07T00:00:00</FirstNZSchoolingDate>
+            <EarlyChildhoodEducation>
+               <Type>EPG</Type>
+            </EarlyChildhoodEducation>
+            <PersonInfo>
+               <Name>
+                  <FamilyName>Saunders</FamilyName>
+                  <GivenName>Thomas</GivenName>
+                  <FullName>Thomas Saunders</FullName>
+                  <IsVerified>0</IsVerified>
+               </Name>
+               <Demographics>
+                  <BirthDate>2010-03-07T00:00:00</BirthDate>
+                  <Gender>1</Gender>
+                  <LanguageList>
+                     <Language>
+                        <e>
+                           <Code>NZS01112</Code>
+                           <Usage>SH</Usage>
+                        </e>
+                     </Language>
+                  </LanguageList>
+                  <EthnicityList>
+                     <Ethnicity>
+                        <e>
+                           <PreferenceOrderNumber null="true"/>
+                           <Code>321</Code>
+                        </e>
+                     </Ethnicity>
+                  </EthnicityList>
+               </Demographics>
+               <AddressList>
+                  <Address>
+                     <e>
+                        <Type>TH</Type>
+                        <Role>PHY</Role>
+                        <Line1>27 Arataua Street</Line1>
+                        <Suburb>Rotorua</Suburb>
+                        <City>Rotorua</City>
+                        <Country>New Zealand</Country>
+                        <PostalCode>3010</PostalCode>
+                     </e>
+                  </Address>
+               </AddressList>
+               <EmailList>
+                  <Email>
+                     <e>
+                        <Type>0</Type>
+                        <SourceOrganisation>
+                           <RefId>8001</RefId>
+                        </SourceOrganisation>
+                        <Address>tsaunders@mailinator.com</Address>
+                     </e>
+                  </Email>
+               </EmailList>
+               <PhoneNumberList>
+                  <PhoneNumber>
+                     <e>
+                        <Type>MAI</Type>
+                        <Number>+64 7-943 8050</Number>
+                     </e>
+                  </PhoneNumber>
+               </PhoneNumberList>
+            </PersonInfo>
+            <BiographicChangeReason>0</BiographicChangeReason>
+            <RecordAudit>
+               <CreatedDateTime>2020-11-08T20:36:24.9384487+00:00</CreatedDateTime>
+            </RecordAudit>
+         </e>
+      </StudentPersonal>
+   </StudentPersonals>
+</Response>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Copy of Copy of /staffpersonal/{StaffPersonalRefId} PATCH Request 1_valid" id="27b349a7-6b26-49cb-a7ce-e21f34ce5164">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/staffpersonal/{StaffPersonalRefId}" methodName="patchStaffPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Copy of Copy of /staffpersonal/{StaffPersonalRefId} PATCH Request 1_valid" id="f6045870-5b98-47e3-89ff-2898a9aef47d" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request>${DataSource#fileContents}</con:request>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/staffpersonal/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="d19fbc79-660c-4b00-b268-e232a85f27dc" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>422</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="StaffPersonalRefId" value="fcbcfa9d-8dfa-4c1a-897a-fe5f6875719c"/>
+          <con:entry key="Filename" value="${DataSource#filename}"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>Accept</con:entry>
+          <con:entry>X-Edsby-OrganisationRefId</con:entry>
+          <con:entry>StaffPersonalRefId</con:entry>
+          <con:entry>Filename</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Copy of /studentpersonal POST Request 1_Valid" id="bff70a77-b23a-4fc1-b5d4-d7be1280a6f4" disabled="true">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="createStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Copy of /studentpersonal POST Request 1_Valid" id="33c88154-0043-4c50-9f03-8a295f2f60d1" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request>${DataSource#fileContents}</con:request>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="854df1e0-8a6a-4c6d-a8c6-fc19934d6931" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="MessageContentAssertion" id="eca7ea13-7822-4c08-8e52-826b1959d6ed" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:StudentPersonalRefId[1]</con:xpath>
+              <con:element>StudentPersonalRefId</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>1dbfac52-e73c-4970-92fb-aa53db6d85da</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:StudentPersonalLocalId[1]</con:xpath>
+              <con:element>StudentPersonalLocalId</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>ST1000001_zzz</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:NationalStudentNumber[1]</con:xpath>
+              <con:element>NationalStudentNumber</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>9001000001</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:FirstNZSchoolingDate[1]</con:xpath>
+              <con:element>FirstNZSchoolingDate</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>2015-03-07T00:00:00</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:EarlyChildhoodEducation[1]/ns1:Type[1]</con:xpath>
+              <con:element>Type</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>EPG</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Name[1]/ns1:FamilyName[1]</con:xpath>
+              <con:element>FamilyName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>Saunders</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Name[1]/ns1:GivenName[1]</con:xpath>
+              <con:element>GivenName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>Thomas</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Name[1]/ns1:FullName[1]</con:xpath>
+              <con:element>FullName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>Thomas Saunders</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Name[1]/ns1:IsVerified[1]</con:xpath>
+              <con:element>IsVerified</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>0</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:BirthDate[1]</con:xpath>
+              <con:element>BirthDate</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>2010-03-07T00:00:00</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:Gender[1]</con:xpath>
+              <con:element>Gender</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>1</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:LanguageList[1]/ns1:Language[1]/ns1:e[1]/ns1:Code[1]</con:xpath>
+              <con:element>Code</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>NZS01112</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:LanguageList[1]/ns1:Language[1]/ns1:e[1]/ns1:Usage[1]</con:xpath>
+              <con:element>Usage</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>SH</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:EthnicityList[1]/ns1:Ethnicity[1]/ns1:e[1]/ns1:PreferenceOrderNumber[1]</con:xpath>
+              <con:element>PreferenceOrderNumber</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:EthnicityList[1]/ns1:Ethnicity[1]/ns1:e[1]/ns1:PreferenceOrderNumber[1]/@null</con:xpath>
+              <con:element>@null</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>true</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:Demographics[1]/ns1:EthnicityList[1]/ns1:Ethnicity[1]/ns1:e[1]/ns1:Code[1]</con:xpath>
+              <con:element>Code</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>321</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:Type[1]</con:xpath>
+              <con:element>Type</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>TH</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:Role[1]</con:xpath>
+              <con:element>Role</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>PHY</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:Line1[1]</con:xpath>
+              <con:element>Line1</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>27 Arataua Street</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:Suburb[1]</con:xpath>
+              <con:element>Suburb</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>Rotorua</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:City[1]</con:xpath>
+              <con:element>City</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>Rotorua</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:Country[1]</con:xpath>
+              <con:element>Country</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>New Zealand</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:AddressList[1]/ns1:Address[1]/ns1:e[1]/ns1:PostalCode[1]</con:xpath>
+              <con:element>PostalCode</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>3010</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:EmailList[1]/ns1:Email[1]/ns1:e[1]/ns1:Type[1]</con:xpath>
+              <con:element>Type</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>0</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:EmailList[1]/ns1:Email[1]/ns1:e[1]/ns1:SourceOrganisation[1]/ns1:RefId[1]</con:xpath>
+              <con:element>RefId</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>8001</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:EmailList[1]/ns1:Email[1]/ns1:e[1]/ns1:Address[1]</con:xpath>
+              <con:element>Address</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>tsaunders@mailinator.com</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:PhoneNumberList[1]/ns1:PhoneNumber[1]/ns1:e[1]/ns1:Type[1]</con:xpath>
+              <con:element>Type</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>MAI</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:PersonInfo[1]/ns1:PhoneNumberList[1]/ns1:PhoneNumber[1]/ns1:e[1]/ns1:Number[1]</con:xpath>
+              <con:element>Number</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>+64 7-943 8050</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:BiographicChangeReason[1]</con:xpath>
+              <con:element>BiographicChangeReason</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>0</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]/ns1:e[1]/ns1:RecordAudit[1]/ns1:CreatedDateTime[1]</con:xpath>
+              <con:element>CreatedDateTime</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>2020-11-08T20:36:24.9384487+00:00</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<Response xmlns="https://mocksifapi.azurewebsites.net/sif/studentpersonal">
+   <StudentPersonals>
+      <StudentPersonal>
+         <e>
+            <StudentPersonalRefId>1dbfac52-e73c-4970-92fb-aa53db6d85da</StudentPersonalRefId>
+            <StudentPersonalLocalId>ST1000001_zzz</StudentPersonalLocalId>
+            <NationalStudentNumber>9001000001</NationalStudentNumber>
+            <FirstNZSchoolingDate>2015-03-07T00:00:00</FirstNZSchoolingDate>
+            <EarlyChildhoodEducation>
+               <Type>EPG</Type>
+            </EarlyChildhoodEducation>
+            <PersonInfo>
+               <Name>
+                  <FamilyName>Saunders</FamilyName>
+                  <GivenName>Thomas</GivenName>
+                  <FullName>Thomas Saunders</FullName>
+                  <IsVerified>0</IsVerified>
+               </Name>
+               <Demographics>
+                  <BirthDate>2010-03-07T00:00:00</BirthDate>
+                  <Gender>1</Gender>
+                  <LanguageList>
+                     <Language>
+                        <e>
+                           <Code>NZS01112</Code>
+                           <Usage>SH</Usage>
+                        </e>
+                     </Language>
+                  </LanguageList>
+                  <EthnicityList>
+                     <Ethnicity>
+                        <e>
+                           <PreferenceOrderNumber null="true"/>
+                           <Code>321</Code>
+                        </e>
+                     </Ethnicity>
+                  </EthnicityList>
+               </Demographics>
+               <AddressList>
+                  <Address>
+                     <e>
+                        <Type>TH</Type>
+                        <Role>PHY</Role>
+                        <Line1>27 Arataua Street</Line1>
+                        <Suburb>Rotorua</Suburb>
+                        <City>Rotorua</City>
+                        <Country>New Zealand</Country>
+                        <PostalCode>3010</PostalCode>
+                     </e>
+                  </Address>
+               </AddressList>
+               <EmailList>
+                  <Email>
+                     <e>
+                        <Type>0</Type>
+                        <SourceOrganisation>
+                           <RefId>8001</RefId>
+                        </SourceOrganisation>
+                        <Address>tsaunders@mailinator.com</Address>
+                     </e>
+                  </Email>
+               </EmailList>
+               <PhoneNumberList>
+                  <PhoneNumber>
+                     <e>
+                        <Type>MAI</Type>
+                        <Number>+64 7-943 8050</Number>
+                     </e>
+                  </PhoneNumber>
+               </PhoneNumberList>
+            </PersonInfo>
+            <BiographicChangeReason>0</BiographicChangeReason>
+            <RecordAudit>
+               <CreatedDateTime>2020-11-08T20:36:24.9384487+00:00</CreatedDateTime>
+            </RecordAudit>
+         </e>
+      </StudentPersonal>
+   </StudentPersonals>
+</Response>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Copy of /studentpersonal/{StudentPersonalRefId} PATCH Request 1_Valid" id="a3c4538f-49b4-4bbe-ae57-9133c6f670c8" disabled="true">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="patchStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Copy of /studentpersonal/{StudentPersonalRefId} PATCH Request 1_Valid" id="b4922b4d-3206-4fd6-adbc-1a40df193169" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request>{
+   "StaffPersonal" : {
+      "StudentPersonalRefId" : "2810a414-1d62-4ebf-a94d-ab3da385cd0d",
+      "StudentPersonalLocalId" : "ST5100205",
+      "NationalStudentNumber" : 9005100205,
+      "FirstNZSchoolingDate" : "2019-12-17T00:00:00",
+      "PersonInfo" : {
+         "Name" : {
+            "FamilyName" : "Paua",
+            "GivenName" : "Brooklyn",
+            "IsVerified" : 0
+         },
+         "Demographics" : {
+            "BirthDate" : "2014-12-17T00:00:00",
+            "Gender" : "1",
+            "LanguageList" : {
+               "Language" : [
+                  {
+                     "Code" : "NZS01112",
+                     "Usage" : "SH"
+                  }
+               ]
+            },
+            "EthnicityList" : {
+               "Ethnicity" : [
+                  {
+                     "PreferenceOrderNumber" : 0,
+                     "Code" : "211"
+                  }
+               ]
+            },
+            "IwiAffiliationList" : {
+               "Iwi" : [
+                  {
+                     "Code" : "NZS0504",
+                     "PreferenceOrderNumber" : 0,
+                     "HapuAffiliationList" : null
+                  }
+               ]
+            }
+         },
+         "EmailList" : {
+            "Email" : [
+               {
+                  "Type" : 0,
+                  "Address" : "bpaua@mailinator.com"
+               }
+            ]
+         }
+      },
+      "BiographicChangeReason" : 0,
+      "RecordAudit" : {
+         "CreatedDateTime" : "2020-10-21T02:58:01.7766176+00:00"
+      }
+   }
+}</con:request>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="067489f5-d1b9-400f-83f9-abd3cae4ac50" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
+          <con:entry key="StudentPersonalRefId" value="2810a414-1d62-4ebf-a94d-ab3da385cd0d"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>Accept</con:entry>
+          <con:entry>X-Edsby-OrganisationRefId</con:entry>
+          <con:entry>StudentPersonalRefId</con:entry>
+          <con:entry>Content-Type</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="addPet - Request 2" id="6634c377-f49d-4e48-960b-d62e5ab87c79" disabled="true">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="addPet - Request 2" id="fa62aebc-fb9f-4346-82fa-e82bf6b2f7d0" mediaType="application/xml" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://petstore.swagger.io</con:endpoint>
+        <con:request>${DataSource#fileContents}
+${Copy of /studentpersonal POST Request 1_Valid#RawRequest}</con:request>
+        <con:originalUri>http://petstore.swagger.io/v2/pet</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="e5b77ed9-4352-4a6e-83d5-c584de70b258">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>Copy of Copy of /staffpersonal/{StaffPersonalRefId} PATCH Request 1_valid</targetStep>
+      <discardResults>false</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>dc979dd1-559a-479f-bbe1-2d73d0afbeb5</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>c4940e17-a06b-4f21-8bda-d3950fa8fe4d</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>eb2b7010-2d51-48f0-836e-16461344f80e</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>6d54ff5b-e8ea-42cb-a151-ac5f02947e42</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>b10f3814-5920-4f66-913c-568470826946</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>8658b208-ef49-4683-9b07-68ba3a5711d3</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>bb5adf6c-9ae9-4a79-944d-547ad740ca4c</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>99999af8-99de-4b07-867c-b0d9cb5bbe3b</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>2547d263-8d18-4ee4-88d9-99db21862047</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>cde6abe1-d763-4d39-8d03-89ebd06a80c6</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

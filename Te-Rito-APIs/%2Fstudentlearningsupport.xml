@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/studentlearningsupport" path="/studentlearningsupport" id="97c4a9f1-c2af-4c74-9340-04c3d7d5ab24" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="97c4a9f1-c2af-4c74-9340-04c3d7d5ab24fileName">%2Fstudentlearningsupport</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getStudentLearningSupports" id="28d71e69-2eb0-434f-a7b7-8d4d1d61f6d2" method="GET">
+    <con:description>&lt;p>Bulk operation to retrieve one or more StudentLearningSupports, each of which  is meta-data and metrics pertaining to a particular student's Learning Support needs.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "StudentLearningSupports" : {
+    "StudentLearningSupport" : [ {
+      "StudentLearningSupportRefId" : "461b63b4-cfef-4820-8501-e7d1e54555cb",
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Student" : {
+        "RefId" : "ca285746-359d-7510-1a8c-36432a901a16"
+      },
+      "LearnerStatus" : "ACT",
+      "StudentConsentList" : {
+        "StudentConsent" : [ {
+          "RefId" : "461423b4-cfef-4820-8501-e7d1e54555cb"
+        } ]
+      },
+      "DyslexiaScreeningTool" : "Y",
+      "OtherScreening" : "N",
+      "AdolescentHealthScreening" : "N",
+      "NonAttendance" : "Y",
+      "NewToNewZealand" : "N",
+      "NumberOfSchoolChanges" : "Y",
+      "B4SchoolCheck" : "Y",
+      "OtherFamilyContext" : "N",
+      "StudentVoiceList" : {
+        "StudentVoice" : [ {
+          "RefId" : "461423b4-cfef-4820-8345-e7d1e54555cb"
+        }, {
+          "RefId" : "461423b4-bbef-4820-8345-e7d1e54555cb"
+        } ]
+      },
+      "SupportNeedList" : {
+        "SupportNeed" : [ {
+          "Need" : {
+            "RefId" : "461423b4-bbef-4820-8345-e724e54555cb"
+          }
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<StudentLearningSupports>
+  <StudentLearningSupport>
+    <StudentLearningSupportRefId>461b63b4-cfef-4820-8501-e7d1e54555cb</StudentLearningSupportRefId>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Student>
+      <RefId>ca285746-359d-7510-1a8c-36432a901a16</RefId>
+    </Student>
+    <LearnerStatus>ACT</LearnerStatus>
+    <StudentConsentList>
+      <StudentConsent>
+        <RefId>461423b4-cfef-4820-8501-e7d1e54555cb</RefId>
+      </StudentConsent>
+    </StudentConsentList>
+    <DyslexiaScreeningTool>Y</DyslexiaScreeningTool>
+    <OtherScreening>N</OtherScreening>
+    <AdolescentHealthScreening>N</AdolescentHealthScreening>
+    <NonAttendance>Y</NonAttendance>
+    <NewToNewZealand>N</NewToNewZealand>
+    <NumberOfSchoolChanges>Y</NumberOfSchoolChanges>
+    <B4SchoolCheck>Y</B4SchoolCheck>
+    <OtherFamilyContext>N</OtherFamilyContext>
+    <StudentVoiceList>
+      <StudentVoice>
+        <RefId>461423b4-cfef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+      <StudentVoice>
+        <RefId>461423b4-bbef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+    </StudentVoiceList>
+    <SupportNeedList>
+      <SupportNeed>
+        <Need>
+          <RefId>461423b4-bbef-4820-8345-e724e54555cb</RefId>
+          <Name>Literacy</Name>
+        </Need>
+        <ResponseList>
+          <Response>
+            <RefId>461423b4-bbef-4820-8345-e724e5455bbb</RefId>
+          </Response>
+        </ResponseList>
+      </SupportNeed>
+    </SupportNeedList>
+  </StudentLearningSupport>
+</StudentLearningSupports>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="82376630-872e-47ea-9ce6-8ebbacef612f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="createStudentLearningSupports" id="22b681cf-fd98-40ec-bf02-bac3fc86fce6" method="POST">
+    <con:description>&lt;p>Bulk operation to create one or more StudentLearningSupports, each of which  is meta-data and metrics pertaining to a particular student's Learning Support needs.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>x-http-method-override</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Rather than CREATE records, treat this request as a SYNC request.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent>{
+  "StudentLearningSupports" : {
+    "StudentLearningSupport" : [ {
+      "StudentLearningSupportRefId" : "461b63b4-cfef-4820-8501-e7d1e54555cb",
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Student" : {
+        "RefId" : "ca285746-359d-7510-1a8c-36432a901a16"
+      },
+      "LearnerStatus" : "ACT",
+      "StudentConsentList" : {
+        "StudentConsent" : [ {
+          "RefId" : "461423b4-cfef-4820-8501-e7d1e54555cb"
+        } ]
+      },
+      "DyslexiaScreeningTool" : "Y",
+      "OtherScreening" : "N",
+      "AdolescentHealthScreening" : "N",
+      "NonAttendance" : "Y",
+      "NewToNewZealand" : "N",
+      "NumberOfSchoolChanges" : "Y",
+      "B4SchoolCheck" : "Y",
+      "OtherFamilyContext" : "N",
+      "StudentVoiceList" : {
+        "StudentVoice" : [ {
+          "RefId" : "461423b4-cfef-4820-8345-e7d1e54555cb"
+        }, {
+          "RefId" : "461423b4-bbef-4820-8345-e7d1e54555cb"
+        } ]
+      },
+      "SupportNeedList" : {
+        "SupportNeed" : [ {
+          "Need" : {
+            "RefId" : "461423b4-bbef-4820-8345-e724e54555cb"
+          }
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent><![CDATA[<StudentLearningSupports>
+  <StudentLearningSupport>
+    <StudentLearningSupportRefId>461b63b4-cfef-4820-8501-e7d1e54555cb</StudentLearningSupportRefId>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Student>
+      <RefId>ca285746-359d-7510-1a8c-36432a901a16</RefId>
+    </Student>
+    <LearnerStatus>ACT</LearnerStatus>
+    <StudentConsentList>
+      <StudentConsent>
+        <RefId>461423b4-cfef-4820-8501-e7d1e54555cb</RefId>
+      </StudentConsent>
+    </StudentConsentList>
+    <DyslexiaScreeningTool>Y</DyslexiaScreeningTool>
+    <OtherScreening>N</OtherScreening>
+    <AdolescentHealthScreening>N</AdolescentHealthScreening>
+    <NonAttendance>Y</NonAttendance>
+    <NewToNewZealand>N</NewToNewZealand>
+    <NumberOfSchoolChanges>Y</NumberOfSchoolChanges>
+    <B4SchoolCheck>Y</B4SchoolCheck>
+    <OtherFamilyContext>N</OtherFamilyContext>
+    <StudentVoiceList>
+      <StudentVoice>
+        <RefId>461423b4-cfef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+      <StudentVoice>
+        <RefId>461423b4-bbef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+    </StudentVoiceList>
+    <SupportNeedList>
+      <SupportNeed>
+        <Need>
+          <RefId>461423b4-bbef-4820-8345-e724e54555cb</RefId>
+          <Name>Literacy</Name>
+        </Need>
+        <ResponseList>
+          <Response>
+            <RefId>461423b4-bbef-4820-8345-e724e5455bbb</RefId>
+          </Response>
+        </ResponseList>
+      </SupportNeed>
+    </SupportNeedList>
+  </StudentLearningSupport>
+</StudentLearningSupports>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentLearningSupports" : {
+    "StudentLearningSupport" : [ {
+      "StudentLearningSupportRefId" : "461b63b4-cfef-4820-8501-e7d1e54555cb",
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Student" : {
+        "RefId" : "ca285746-359d-7510-1a8c-36432a901a16"
+      },
+      "LearnerStatus" : "ACT",
+      "StudentConsentList" : {
+        "StudentConsent" : [ {
+          "RefId" : "461423b4-cfef-4820-8501-e7d1e54555cb"
+        } ]
+      },
+      "DyslexiaScreeningTool" : "Y",
+      "OtherScreening" : "N",
+      "AdolescentHealthScreening" : "N",
+      "NonAttendance" : "Y",
+      "NewToNewZealand" : "N",
+      "NumberOfSchoolChanges" : "Y",
+      "B4SchoolCheck" : "Y",
+      "OtherFamilyContext" : "N",
+      "StudentVoiceList" : {
+        "StudentVoice" : [ {
+          "RefId" : "461423b4-cfef-4820-8345-e7d1e54555cb"
+        }, {
+          "RefId" : "461423b4-bbef-4820-8345-e7d1e54555cb"
+        } ]
+      },
+      "SupportNeedList" : {
+        "SupportNeed" : [ {
+          "Need" : {
+            "RefId" : "461423b4-bbef-4820-8345-e724e54555cb"
+          }
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentLearningSupports>
+  <StudentLearningSupport>
+    <StudentLearningSupportRefId>461b63b4-cfef-4820-8501-e7d1e54555cb</StudentLearningSupportRefId>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Student>
+      <RefId>ca285746-359d-7510-1a8c-36432a901a16</RefId>
+    </Student>
+    <LearnerStatus>ACT</LearnerStatus>
+    <StudentConsentList>
+      <StudentConsent>
+        <RefId>461423b4-cfef-4820-8501-e7d1e54555cb</RefId>
+      </StudentConsent>
+    </StudentConsentList>
+    <DyslexiaScreeningTool>Y</DyslexiaScreeningTool>
+    <OtherScreening>N</OtherScreening>
+    <AdolescentHealthScreening>N</AdolescentHealthScreening>
+    <NonAttendance>Y</NonAttendance>
+    <NewToNewZealand>N</NewToNewZealand>
+    <NumberOfSchoolChanges>Y</NumberOfSchoolChanges>
+    <B4SchoolCheck>Y</B4SchoolCheck>
+    <OtherFamilyContext>N</OtherFamilyContext>
+    <StudentVoiceList>
+      <StudentVoice>
+        <RefId>461423b4-cfef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+      <StudentVoice>
+        <RefId>461423b4-bbef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+    </StudentVoiceList>
+    <SupportNeedList>
+      <SupportNeed>
+        <Need>
+          <RefId>461423b4-bbef-4820-8345-e724e54555cb</RefId>
+          <Name>Literacy</Name>
+        </Need>
+        <ResponseList>
+          <Response>
+            <RefId>461423b4-bbef-4820-8345-e724e5455bbb</RefId>
+          </Response>
+        </ResponseList>
+      </SupportNeed>
+    </SupportNeedList>
+  </StudentLearningSupport>
+</StudentLearningSupports>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="eebdb387-0002-40f9-877d-0cbafb82540e" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentLearningSupports" : {\r
+    "StudentLearningSupport" : [ {\r
+      "StudentLearningSupportRefId" : "461b63b4-cfef-4820-8501-e7d1e54555cb",\r
+      "Organisation" : {\r
+        "RefId" : "9651"\r
+      },\r
+      "Student" : {\r
+        "RefId" : "ca285746-359d-7510-1a8c-36432a901a16"\r
+      },\r
+      "LearnerStatus" : "ACT",\r
+      "StudentConsentList" : {\r
+        "StudentConsent" : [ {\r
+          "RefId" : "461423b4-cfef-4820-8501-e7d1e54555cb"\r
+        } ]\r
+      },\r
+      "DyslexiaScreeningTool" : "Y",\r
+      "OtherScreening" : "N",\r
+      "AdolescentHealthScreening" : "N",\r
+      "NonAttendance" : "Y",\r
+      "NewToNewZealand" : "N",\r
+      "NumberOfSchoolChanges" : "Y",\r
+      "B4SchoolCheck" : "Y",\r
+      "OtherFamilyContext" : "N",\r
+      "StudentVoiceList" : {\r
+        "StudentVoice" : [ {\r
+          "RefId" : "461423b4-cfef-4820-8345-e7d1e54555cb"\r
+        }, {\r
+          "RefId" : "461423b4-bbef-4820-8345-e7d1e54555cb"\r
+        } ]\r
+      },\r
+      "SupportNeedList" : {\r
+        "SupportNeed" : [ {\r
+          "Need" : {\r
+            "RefId" : "461423b4-bbef-4820-8345-e724e54555cb"\r
+          }\r
+        } ]\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="612a0fbe-0950-4743-a881-6be032d03f05" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentLearningSupports>
+  <StudentLearningSupport>
+    <StudentLearningSupportRefId>461b63b4-cfef-4820-8501-e7d1e54555cb</StudentLearningSupportRefId>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Student>
+      <RefId>ca285746-359d-7510-1a8c-36432a901a16</RefId>
+    </Student>
+    <LearnerStatus>ACT</LearnerStatus>
+    <StudentConsentList>
+      <StudentConsent>
+        <RefId>461423b4-cfef-4820-8501-e7d1e54555cb</RefId>
+      </StudentConsent>
+    </StudentConsentList>
+    <DyslexiaScreeningTool>Y</DyslexiaScreeningTool>
+    <OtherScreening>N</OtherScreening>
+    <AdolescentHealthScreening>N</AdolescentHealthScreening>
+    <NonAttendance>Y</NonAttendance>
+    <NewToNewZealand>N</NewToNewZealand>
+    <NumberOfSchoolChanges>Y</NumberOfSchoolChanges>
+    <B4SchoolCheck>Y</B4SchoolCheck>
+    <OtherFamilyContext>N</OtherFamilyContext>
+    <StudentVoiceList>
+      <StudentVoice>
+        <RefId>461423b4-cfef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+      <StudentVoice>
+        <RefId>461423b4-bbef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+    </StudentVoiceList>
+    <SupportNeedList>
+      <SupportNeed>
+        <Need>
+          <RefId>461423b4-bbef-4820-8345-e724e54555cb</RefId>
+          <Name>Literacy</Name>
+        </Need>
+        <ResponseList>
+          <Response>
+            <RefId>461423b4-bbef-4820-8345-e724e5455bbb</RefId>
+          </Response>
+        </ResponseList>
+      </SupportNeed>
+    </SupportNeedList>
+  </StudentLearningSupport>
+</StudentLearningSupports>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="updateStudentLearningSupports" id="77d710fd-fcc3-451c-817c-6b6ee45c6a0e" method="PUT">
+    <con:description>&lt;p>Bulk operation to update one or more StudentLearningSupports, each of which  is meta-data and metrics pertaining to a particular student's Learning Support needs.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated objects</con:description>
+      <con:sampleContent>{
+  "StudentLearningSupports" : {
+    "StudentLearningSupport" : [ {
+      "StudentLearningSupportRefId" : "461b63b4-cfef-4820-8501-e7d1e54555cb",
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Student" : {
+        "RefId" : "ca285746-359d-7510-1a8c-36432a901a16"
+      },
+      "LearnerStatus" : "ACT",
+      "StudentConsentList" : {
+        "StudentConsent" : [ {
+          "RefId" : "461423b4-cfef-4820-8501-e7d1e54555cb"
+        } ]
+      },
+      "DyslexiaScreeningTool" : "Y",
+      "OtherScreening" : "N",
+      "AdolescentHealthScreening" : "N",
+      "NonAttendance" : "Y",
+      "NewToNewZealand" : "N",
+      "NumberOfSchoolChanges" : "Y",
+      "B4SchoolCheck" : "Y",
+      "OtherFamilyContext" : "N",
+      "StudentVoiceList" : {
+        "StudentVoice" : [ {
+          "RefId" : "461423b4-cfef-4820-8345-e7d1e54555cb"
+        }, {
+          "RefId" : "461423b4-bbef-4820-8345-e7d1e54555cb"
+        } ]
+      },
+      "SupportNeedList" : {
+        "SupportNeed" : [ {
+          "Need" : {
+            "RefId" : "461423b4-bbef-4820-8345-e724e54555cb"
+          }
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated objects</con:description>
+      <con:sampleContent><![CDATA[<StudentLearningSupports>
+  <StudentLearningSupport>
+    <StudentLearningSupportRefId>461b63b4-cfef-4820-8501-e7d1e54555cb</StudentLearningSupportRefId>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Student>
+      <RefId>ca285746-359d-7510-1a8c-36432a901a16</RefId>
+    </Student>
+    <LearnerStatus>ACT</LearnerStatus>
+    <StudentConsentList>
+      <StudentConsent>
+        <RefId>461423b4-cfef-4820-8501-e7d1e54555cb</RefId>
+      </StudentConsent>
+    </StudentConsentList>
+    <DyslexiaScreeningTool>Y</DyslexiaScreeningTool>
+    <OtherScreening>N</OtherScreening>
+    <AdolescentHealthScreening>N</AdolescentHealthScreening>
+    <NonAttendance>Y</NonAttendance>
+    <NewToNewZealand>N</NewToNewZealand>
+    <NumberOfSchoolChanges>Y</NumberOfSchoolChanges>
+    <B4SchoolCheck>Y</B4SchoolCheck>
+    <OtherFamilyContext>N</OtherFamilyContext>
+    <StudentVoiceList>
+      <StudentVoice>
+        <RefId>461423b4-cfef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+      <StudentVoice>
+        <RefId>461423b4-bbef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+    </StudentVoiceList>
+    <SupportNeedList>
+      <SupportNeed>
+        <Need>
+          <RefId>461423b4-bbef-4820-8345-e724e54555cb</RefId>
+          <Name>Literacy</Name>
+        </Need>
+        <ResponseList>
+          <Response>
+            <RefId>461423b4-bbef-4820-8345-e724e5455bbb</RefId>
+          </Response>
+        </ResponseList>
+      </SupportNeed>
+    </SupportNeedList>
+  </StudentLearningSupport>
+</StudentLearningSupports>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentLearningSupports" : {
+    "StudentLearningSupport" : [ {
+      "StudentLearningSupportRefId" : "461b63b4-cfef-4820-8501-e7d1e54555cb",
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Student" : {
+        "RefId" : "ca285746-359d-7510-1a8c-36432a901a16"
+      },
+      "LearnerStatus" : "ACT",
+      "StudentConsentList" : {
+        "StudentConsent" : [ {
+          "RefId" : "461423b4-cfef-4820-8501-e7d1e54555cb"
+        } ]
+      },
+      "DyslexiaScreeningTool" : "Y",
+      "OtherScreening" : "N",
+      "AdolescentHealthScreening" : "N",
+      "NonAttendance" : "Y",
+      "NewToNewZealand" : "N",
+      "NumberOfSchoolChanges" : "Y",
+      "B4SchoolCheck" : "Y",
+      "OtherFamilyContext" : "N",
+      "StudentVoiceList" : {
+        "StudentVoice" : [ {
+          "RefId" : "461423b4-cfef-4820-8345-e7d1e54555cb"
+        }, {
+          "RefId" : "461423b4-bbef-4820-8345-e7d1e54555cb"
+        } ]
+      },
+      "SupportNeedList" : {
+        "SupportNeed" : [ {
+          "Need" : {
+            "RefId" : "461423b4-bbef-4820-8345-e724e54555cb"
+          }
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentLearningSupports>
+  <StudentLearningSupport>
+    <StudentLearningSupportRefId>461b63b4-cfef-4820-8501-e7d1e54555cb</StudentLearningSupportRefId>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Student>
+      <RefId>ca285746-359d-7510-1a8c-36432a901a16</RefId>
+    </Student>
+    <LearnerStatus>ACT</LearnerStatus>
+    <StudentConsentList>
+      <StudentConsent>
+        <RefId>461423b4-cfef-4820-8501-e7d1e54555cb</RefId>
+      </StudentConsent>
+    </StudentConsentList>
+    <DyslexiaScreeningTool>Y</DyslexiaScreeningTool>
+    <OtherScreening>N</OtherScreening>
+    <AdolescentHealthScreening>N</AdolescentHealthScreening>
+    <NonAttendance>Y</NonAttendance>
+    <NewToNewZealand>N</NewToNewZealand>
+    <NumberOfSchoolChanges>Y</NumberOfSchoolChanges>
+    <B4SchoolCheck>Y</B4SchoolCheck>
+    <OtherFamilyContext>N</OtherFamilyContext>
+    <StudentVoiceList>
+      <StudentVoice>
+        <RefId>461423b4-cfef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+      <StudentVoice>
+        <RefId>461423b4-bbef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+    </StudentVoiceList>
+    <SupportNeedList>
+      <SupportNeed>
+        <Need>
+          <RefId>461423b4-bbef-4820-8345-e724e54555cb</RefId>
+          <Name>Literacy</Name>
+        </Need>
+        <ResponseList>
+          <Response>
+            <RefId>461423b4-bbef-4820-8345-e724e5455bbb</RefId>
+          </Response>
+        </ResponseList>
+      </SupportNeed>
+    </SupportNeedList>
+  </StudentLearningSupport>
+</StudentLearningSupports>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="86a92018-2496-4bea-86d0-c75b3349767a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentLearningSupports" : {\r
+    "StudentLearningSupport" : [ {\r
+      "StudentLearningSupportRefId" : "461b63b4-cfef-4820-8501-e7d1e54555cb",\r
+      "Organisation" : {\r
+        "RefId" : "9651"\r
+      },\r
+      "Student" : {\r
+        "RefId" : "ca285746-359d-7510-1a8c-36432a901a16"\r
+      },\r
+      "LearnerStatus" : "ACT",\r
+      "StudentConsentList" : {\r
+        "StudentConsent" : [ {\r
+          "RefId" : "461423b4-cfef-4820-8501-e7d1e54555cb"\r
+        } ]\r
+      },\r
+      "DyslexiaScreeningTool" : "Y",\r
+      "OtherScreening" : "N",\r
+      "AdolescentHealthScreening" : "N",\r
+      "NonAttendance" : "Y",\r
+      "NewToNewZealand" : "N",\r
+      "NumberOfSchoolChanges" : "Y",\r
+      "B4SchoolCheck" : "Y",\r
+      "OtherFamilyContext" : "N",\r
+      "StudentVoiceList" : {\r
+        "StudentVoice" : [ {\r
+          "RefId" : "461423b4-cfef-4820-8345-e7d1e54555cb"\r
+        }, {\r
+          "RefId" : "461423b4-bbef-4820-8345-e7d1e54555cb"\r
+        } ]\r
+      },\r
+      "SupportNeedList" : {\r
+        "SupportNeed" : [ {\r
+          "Need" : {\r
+            "RefId" : "461423b4-bbef-4820-8345-e724e54555cb"\r
+          }\r
+        } ]\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="9bc9a42b-519a-4fd5-a705-7df1b4bdff37" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentLearningSupports>
+  <StudentLearningSupport>
+    <StudentLearningSupportRefId>461b63b4-cfef-4820-8501-e7d1e54555cb</StudentLearningSupportRefId>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Student>
+      <RefId>ca285746-359d-7510-1a8c-36432a901a16</RefId>
+    </Student>
+    <LearnerStatus>ACT</LearnerStatus>
+    <StudentConsentList>
+      <StudentConsent>
+        <RefId>461423b4-cfef-4820-8501-e7d1e54555cb</RefId>
+      </StudentConsent>
+    </StudentConsentList>
+    <DyslexiaScreeningTool>Y</DyslexiaScreeningTool>
+    <OtherScreening>N</OtherScreening>
+    <AdolescentHealthScreening>N</AdolescentHealthScreening>
+    <NonAttendance>Y</NonAttendance>
+    <NewToNewZealand>N</NewToNewZealand>
+    <NumberOfSchoolChanges>Y</NumberOfSchoolChanges>
+    <B4SchoolCheck>Y</B4SchoolCheck>
+    <OtherFamilyContext>N</OtherFamilyContext>
+    <StudentVoiceList>
+      <StudentVoice>
+        <RefId>461423b4-cfef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+      <StudentVoice>
+        <RefId>461423b4-bbef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+    </StudentVoiceList>
+    <SupportNeedList>
+      <SupportNeed>
+        <Need>
+          <RefId>461423b4-bbef-4820-8345-e724e54555cb</RefId>
+          <Name>Literacy</Name>
+        </Need>
+        <ResponseList>
+          <Response>
+            <RefId>461423b4-bbef-4820-8345-e724e5455bbb</RefId>
+          </Response>
+        </ResponseList>
+      </SupportNeed>
+    </SupportNeedList>
+  </StudentLearningSupport>
+</StudentLearningSupports>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="patchStudentLearningSupports" id="feaceadc-20db-41d5-a9b9-cdaa5e4f58ab" method="PATCH">
+    <con:description>&lt;p>Bulk operation to update one or more fields of one or more StudentLearningSupports, each of which is meta-data and metrics pertaining to a particular student's Learning  Support needs.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent>{
+  "StudentLearningSupports" : {
+    "StudentLearningSupport" : [ {
+      "StudentLearningSupportRefId" : "461b63b4-cfef-4820-8501-e7d1e54555cb",
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Student" : {
+        "RefId" : "ca285746-359d-7510-1a8c-36432a901a16"
+      },
+      "LearnerStatus" : "ACT",
+      "StudentConsentList" : {
+        "StudentConsent" : [ {
+          "RefId" : "461423b4-cfef-4820-8501-e7d1e54555cb"
+        } ]
+      },
+      "DyslexiaScreeningTool" : "Y",
+      "OtherScreening" : "N",
+      "AdolescentHealthScreening" : "N",
+      "NonAttendance" : "Y",
+      "NewToNewZealand" : "N",
+      "NumberOfSchoolChanges" : "Y",
+      "B4SchoolCheck" : "Y",
+      "OtherFamilyContext" : "N",
+      "StudentVoiceList" : {
+        "StudentVoice" : [ {
+          "RefId" : "461423b4-cfef-4820-8345-e7d1e54555cb"
+        }, {
+          "RefId" : "461423b4-bbef-4820-8345-e7d1e54555cb"
+        } ]
+      },
+      "SupportNeedList" : {
+        "SupportNeed" : [ {
+          "Need" : {
+            "RefId" : "461423b4-bbef-4820-8345-e724e54555cb"
+          }
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent><![CDATA[<StudentLearningSupports>
+  <StudentLearningSupport>
+    <StudentLearningSupportRefId>461b63b4-cfef-4820-8501-e7d1e54555cb</StudentLearningSupportRefId>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Student>
+      <RefId>ca285746-359d-7510-1a8c-36432a901a16</RefId>
+    </Student>
+    <LearnerStatus>ACT</LearnerStatus>
+    <StudentConsentList>
+      <StudentConsent>
+        <RefId>461423b4-cfef-4820-8501-e7d1e54555cb</RefId>
+      </StudentConsent>
+    </StudentConsentList>
+    <DyslexiaScreeningTool>Y</DyslexiaScreeningTool>
+    <OtherScreening>N</OtherScreening>
+    <AdolescentHealthScreening>N</AdolescentHealthScreening>
+    <NonAttendance>Y</NonAttendance>
+    <NewToNewZealand>N</NewToNewZealand>
+    <NumberOfSchoolChanges>Y</NumberOfSchoolChanges>
+    <B4SchoolCheck>Y</B4SchoolCheck>
+    <OtherFamilyContext>N</OtherFamilyContext>
+    <StudentVoiceList>
+      <StudentVoice>
+        <RefId>461423b4-cfef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+      <StudentVoice>
+        <RefId>461423b4-bbef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+    </StudentVoiceList>
+    <SupportNeedList>
+      <SupportNeed>
+        <Need>
+          <RefId>461423b4-bbef-4820-8345-e724e54555cb</RefId>
+          <Name>Literacy</Name>
+        </Need>
+        <ResponseList>
+          <Response>
+            <RefId>461423b4-bbef-4820-8345-e724e5455bbb</RefId>
+          </Response>
+        </ResponseList>
+      </SupportNeed>
+    </SupportNeedList>
+  </StudentLearningSupport>
+</StudentLearningSupports>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentLearningSupports" : {
+    "StudentLearningSupport" : [ {
+      "StudentLearningSupportRefId" : "461b63b4-cfef-4820-8501-e7d1e54555cb",
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Student" : {
+        "RefId" : "ca285746-359d-7510-1a8c-36432a901a16"
+      },
+      "LearnerStatus" : "ACT",
+      "StudentConsentList" : {
+        "StudentConsent" : [ {
+          "RefId" : "461423b4-cfef-4820-8501-e7d1e54555cb"
+        } ]
+      },
+      "DyslexiaScreeningTool" : "Y",
+      "OtherScreening" : "N",
+      "AdolescentHealthScreening" : "N",
+      "NonAttendance" : "Y",
+      "NewToNewZealand" : "N",
+      "NumberOfSchoolChanges" : "Y",
+      "B4SchoolCheck" : "Y",
+      "OtherFamilyContext" : "N",
+      "StudentVoiceList" : {
+        "StudentVoice" : [ {
+          "RefId" : "461423b4-cfef-4820-8345-e7d1e54555cb"
+        }, {
+          "RefId" : "461423b4-bbef-4820-8345-e7d1e54555cb"
+        } ]
+      },
+      "SupportNeedList" : {
+        "SupportNeed" : [ {
+          "Need" : {
+            "RefId" : "461423b4-bbef-4820-8345-e724e54555cb"
+          }
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentLearningSupports>
+  <StudentLearningSupport>
+    <StudentLearningSupportRefId>461b63b4-cfef-4820-8501-e7d1e54555cb</StudentLearningSupportRefId>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Student>
+      <RefId>ca285746-359d-7510-1a8c-36432a901a16</RefId>
+    </Student>
+    <LearnerStatus>ACT</LearnerStatus>
+    <StudentConsentList>
+      <StudentConsent>
+        <RefId>461423b4-cfef-4820-8501-e7d1e54555cb</RefId>
+      </StudentConsent>
+    </StudentConsentList>
+    <DyslexiaScreeningTool>Y</DyslexiaScreeningTool>
+    <OtherScreening>N</OtherScreening>
+    <AdolescentHealthScreening>N</AdolescentHealthScreening>
+    <NonAttendance>Y</NonAttendance>
+    <NewToNewZealand>N</NewToNewZealand>
+    <NumberOfSchoolChanges>Y</NumberOfSchoolChanges>
+    <B4SchoolCheck>Y</B4SchoolCheck>
+    <OtherFamilyContext>N</OtherFamilyContext>
+    <StudentVoiceList>
+      <StudentVoice>
+        <RefId>461423b4-cfef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+      <StudentVoice>
+        <RefId>461423b4-bbef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+    </StudentVoiceList>
+    <SupportNeedList>
+      <SupportNeed>
+        <Need>
+          <RefId>461423b4-bbef-4820-8345-e724e54555cb</RefId>
+          <Name>Literacy</Name>
+        </Need>
+        <ResponseList>
+          <Response>
+            <RefId>461423b4-bbef-4820-8345-e724e5455bbb</RefId>
+          </Response>
+        </ResponseList>
+      </SupportNeed>
+    </SupportNeedList>
+  </StudentLearningSupport>
+</StudentLearningSupports>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="8a9b53ad-3fe6-4db5-b470-7dc542ca15d3" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentLearningSupports" : {\r
+    "StudentLearningSupport" : [ {\r
+      "StudentLearningSupportRefId" : "461b63b4-cfef-4820-8501-e7d1e54555cb",\r
+      "Organisation" : {\r
+        "RefId" : "9651"\r
+      },\r
+      "Student" : {\r
+        "RefId" : "ca285746-359d-7510-1a8c-36432a901a16"\r
+      },\r
+      "LearnerStatus" : "ACT",\r
+      "StudentConsentList" : {\r
+        "StudentConsent" : [ {\r
+          "RefId" : "461423b4-cfef-4820-8501-e7d1e54555cb"\r
+        } ]\r
+      },\r
+      "DyslexiaScreeningTool" : "Y",\r
+      "OtherScreening" : "N",\r
+      "AdolescentHealthScreening" : "N",\r
+      "NonAttendance" : "Y",\r
+      "NewToNewZealand" : "N",\r
+      "NumberOfSchoolChanges" : "Y",\r
+      "B4SchoolCheck" : "Y",\r
+      "OtherFamilyContext" : "N",\r
+      "StudentVoiceList" : {\r
+        "StudentVoice" : [ {\r
+          "RefId" : "461423b4-cfef-4820-8345-e7d1e54555cb"\r
+        }, {\r
+          "RefId" : "461423b4-bbef-4820-8345-e7d1e54555cb"\r
+        } ]\r
+      },\r
+      "SupportNeedList" : {\r
+        "SupportNeed" : [ {\r
+          "Need" : {\r
+            "RefId" : "461423b4-bbef-4820-8345-e724e54555cb"\r
+          }\r
+        } ]\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="ce2844b4-1407-453b-9ff6-090ae32e4ca9" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentLearningSupports>
+  <StudentLearningSupport>
+    <StudentLearningSupportRefId>461b63b4-cfef-4820-8501-e7d1e54555cb</StudentLearningSupportRefId>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Student>
+      <RefId>ca285746-359d-7510-1a8c-36432a901a16</RefId>
+    </Student>
+    <LearnerStatus>ACT</LearnerStatus>
+    <StudentConsentList>
+      <StudentConsent>
+        <RefId>461423b4-cfef-4820-8501-e7d1e54555cb</RefId>
+      </StudentConsent>
+    </StudentConsentList>
+    <DyslexiaScreeningTool>Y</DyslexiaScreeningTool>
+    <OtherScreening>N</OtherScreening>
+    <AdolescentHealthScreening>N</AdolescentHealthScreening>
+    <NonAttendance>Y</NonAttendance>
+    <NewToNewZealand>N</NewToNewZealand>
+    <NumberOfSchoolChanges>Y</NumberOfSchoolChanges>
+    <B4SchoolCheck>Y</B4SchoolCheck>
+    <OtherFamilyContext>N</OtherFamilyContext>
+    <StudentVoiceList>
+      <StudentVoice>
+        <RefId>461423b4-cfef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+      <StudentVoice>
+        <RefId>461423b4-bbef-4820-8345-e7d1e54555cb</RefId>
+      </StudentVoice>
+    </StudentVoiceList>
+    <SupportNeedList>
+      <SupportNeed>
+        <Need>
+          <RefId>461423b4-bbef-4820-8345-e724e54555cb</RefId>
+          <Name>Literacy</Name>
+        </Need>
+        <ResponseList>
+          <Response>
+            <RefId>461423b4-bbef-4820-8345-e724e5455bbb</RefId>
+          </Response>
+        </ResponseList>
+      </SupportNeed>
+    </SupportNeedList>
+  </StudentLearningSupport>
+</StudentLearningSupports>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

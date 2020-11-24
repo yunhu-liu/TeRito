@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/studentcontactrelationship" path="/studentcontactrelationship" id="47e7a2e9-a35e-402d-a703-6960f4c8530d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="47e7a2e9-a35e-402d-a703-6960f4c8530dfileName">%2Fstudentcontactrelationship</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getStudentContactRelationships" id="d161c9a7-6e3c-4a59-9a2c-05efe6863fad" method="GET">
+    <con:description><![CDATA[<p>Bulk operation to retrieve all available relationships between a person who is part of a  Student's whānau and that Student, for all students enrolled at the given Provider.</p> <p>Relationship properties include the relationship type and roles played by the student contact in respect of the student.</p>  <p>Individual details about the student and student contact are provided  <a href="#tag/StudentPersonal">StudentPersonal</a> and <a href="#tag/StudentContactPersonal">StudentContactPersonal</a></p>]]></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>start</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Include only items from start date;	`start=2017-08-01`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>end</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Include only items before end date;	`end=2017-08-31`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>status</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter the results; based upon the value of the Status field</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "StudentContactRelationships" : {
+    "StudentContactRelationship" : [ {
+      "StudentContactRelationshipRefId" : "7572b261-0947-583a-463d-bb345291b332",
+      "Student" : {
+        "RefId" : "dee34b35-9d75-101a-8c3d-00aa001a1652"
+      },
+      "StudentContact" : {
+        "RefId" : "6472b261-0947-583a-463d-bb345291b001"
+      },
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Relationship" : {
+        "Code" : "LEG"
+      },
+      "Status" : "A",
+      "StartDate" : "2020-05-30",
+      "ContactFlags" : {
+        "ParentLegalGuardian" : "Y",
+        "LivesWith" : "N",
+        "AccessToRecords" : "N",
+        "ReceivesAssessmentReport" : "Y",
+        "EmergencyContact" : "Y",
+        "CivilDefenceEmergencyContact" : "N",
+        "DisciplinaryContact" : "N",
+        "AttendanceContact" : "N",
+        "PrimaryCareProvider" : "Y",
+        "FeesBilling" : "Y",
+        "FamilyMail" : "Y",
+        "CourtOrder" : "N"
+      },
+      "ContactSequence" : 1
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<StudentContactRelationships>
+  <StudentContactRelationship>
+    <StudentContactRelationshipRefId>7572b261-0947-583a-463d-bb345291b332</StudentContactRelationshipRefId>
+    <Student>
+      <RefId>dee34b35-9d75-101a-8c3d-00aa001a1652</RefId>
+    </Student>
+    <StudentContact>
+      <RefId>6472b261-0947-583a-463d-bb345291b001</RefId>
+    </StudentContact>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Relationship>
+      <Code>LEG</Code>
+    </Relationship>
+    <ContactFlags>
+      <ParentLegalGuardian>Y</ParentLegalGuardian>
+      <PickupRights>Y</PickupRights>
+      <LivesWith>N</LivesWith>
+      <AccessToRecords>U</AccessToRecords>
+      <ReceivesAssessmentReport>Y</ReceivesAssessmentReport>
+      <EmergencyContact>Y</EmergencyContact>
+      <CivilDefenceEmergencyContact>N</CivilDefenceEmergencyContact>
+      <DisciplinaryContact>N</DisciplinaryContact>
+      <AttendanceContact>N</AttendanceContact>
+      <PrimaryCareOrganisation>U</PrimaryCareOrganisation>
+      <FeesBilling>Y</FeesBilling>
+      <FamilyMail>Y</FamilyMail>
+      <CourtOrder>N</CourtOrder>
+    </ContactFlags>
+    <ContactSequence>1</ContactSequence>
+  </StudentContactRelationship>
+</StudentContactRelationships>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="f3f9d2b2-21ed-4fc9-a047-e31e6186c491" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="createStudentContactRelationships" id="3c99efc0-8b62-4f44-8f64-2ac4e0acb4cd" method="POST">
+    <con:description><![CDATA[<p>Bulk operation to update one or more relationships between a person who is part of a  Student's whānau and that Student, for students enrolled at the given Provider.</p> <p>Relationship properties include the relationship type and roles played by the student contact in respect of the student.</p>  <p>Individual details about the student and student contact are provided  <a href="#tag/StudentPersonal">StudentPersonal</a> and <a href="#tag/StudentContactPersonal">StudentContactPersonal</a></p>]]></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>x-http-method-override</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Rather than CREATE records, treat this request as a SYNC request.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent>{
+  "StudentContactRelationships" : {
+    "StudentContactRelationship" : [ {
+      "StudentContactRelationshipRefId" : "7572b261-0947-583a-463d-bb345291b332",
+      "Student" : {
+        "RefId" : "dee34b35-9d75-101a-8c3d-00aa001a1652"
+      },
+      "StudentContact" : {
+        "RefId" : "6472b261-0947-583a-463d-bb345291b001"
+      },
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Relationship" : {
+        "Code" : "LEG"
+      },
+      "Status" : "A",
+      "StartDate" : "2020-05-30",
+      "ContactFlags" : {
+        "ParentLegalGuardian" : "Y",
+        "LivesWith" : "N",
+        "AccessToRecords" : "N",
+        "ReceivesAssessmentReport" : "Y",
+        "EmergencyContact" : "Y",
+        "CivilDefenceEmergencyContact" : "N",
+        "DisciplinaryContact" : "N",
+        "AttendanceContact" : "N",
+        "PrimaryCareProvider" : "Y",
+        "FeesBilling" : "Y",
+        "FamilyMail" : "Y",
+        "CourtOrder" : "N"
+      },
+      "ContactSequence" : 1
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent><![CDATA[<StudentContactRelationships>
+  <StudentContactRelationship>
+    <StudentContactRelationshipRefId>7572b261-0947-583a-463d-bb345291b332</StudentContactRelationshipRefId>
+    <Student>
+      <RefId>dee34b35-9d75-101a-8c3d-00aa001a1652</RefId>
+    </Student>
+    <StudentContact>
+      <RefId>6472b261-0947-583a-463d-bb345291b001</RefId>
+    </StudentContact>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Relationship>
+      <Code>LEG</Code>
+    </Relationship>
+    <ContactFlags>
+      <ParentLegalGuardian>Y</ParentLegalGuardian>
+      <PickupRights>Y</PickupRights>
+      <LivesWith>N</LivesWith>
+      <AccessToRecords>U</AccessToRecords>
+      <ReceivesAssessmentReport>Y</ReceivesAssessmentReport>
+      <EmergencyContact>Y</EmergencyContact>
+      <CivilDefenceEmergencyContact>N</CivilDefenceEmergencyContact>
+      <DisciplinaryContact>N</DisciplinaryContact>
+      <AttendanceContact>N</AttendanceContact>
+      <PrimaryCareOrganisation>U</PrimaryCareOrganisation>
+      <FeesBilling>Y</FeesBilling>
+      <FamilyMail>Y</FamilyMail>
+      <CourtOrder>N</CourtOrder>
+    </ContactFlags>
+    <ContactSequence>1</ContactSequence>
+  </StudentContactRelationship>
+</StudentContactRelationships>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentContactRelationships" : {
+    "StudentContactRelationship" : [ {
+      "StudentContactRelationshipRefId" : "7572b261-0947-583a-463d-bb345291b332",
+      "Student" : {
+        "RefId" : "dee34b35-9d75-101a-8c3d-00aa001a1652"
+      },
+      "StudentContact" : {
+        "RefId" : "6472b261-0947-583a-463d-bb345291b001"
+      },
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Relationship" : {
+        "Code" : "LEG"
+      },
+      "Status" : "A",
+      "StartDate" : "2020-05-30",
+      "ContactFlags" : {
+        "ParentLegalGuardian" : "Y",
+        "LivesWith" : "N",
+        "AccessToRecords" : "N",
+        "ReceivesAssessmentReport" : "Y",
+        "EmergencyContact" : "Y",
+        "CivilDefenceEmergencyContact" : "N",
+        "DisciplinaryContact" : "N",
+        "AttendanceContact" : "N",
+        "PrimaryCareProvider" : "Y",
+        "FeesBilling" : "Y",
+        "FamilyMail" : "Y",
+        "CourtOrder" : "N"
+      },
+      "ContactSequence" : 1
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentContactRelationships>
+  <StudentContactRelationship>
+    <StudentContactRelationshipRefId>7572b261-0947-583a-463d-bb345291b332</StudentContactRelationshipRefId>
+    <Student>
+      <RefId>dee34b35-9d75-101a-8c3d-00aa001a1652</RefId>
+    </Student>
+    <StudentContact>
+      <RefId>6472b261-0947-583a-463d-bb345291b001</RefId>
+    </StudentContact>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Relationship>
+      <Code>LEG</Code>
+    </Relationship>
+    <ContactFlags>
+      <ParentLegalGuardian>Y</ParentLegalGuardian>
+      <PickupRights>Y</PickupRights>
+      <LivesWith>N</LivesWith>
+      <AccessToRecords>U</AccessToRecords>
+      <ReceivesAssessmentReport>Y</ReceivesAssessmentReport>
+      <EmergencyContact>Y</EmergencyContact>
+      <CivilDefenceEmergencyContact>N</CivilDefenceEmergencyContact>
+      <DisciplinaryContact>N</DisciplinaryContact>
+      <AttendanceContact>N</AttendanceContact>
+      <PrimaryCareOrganisation>U</PrimaryCareOrganisation>
+      <FeesBilling>Y</FeesBilling>
+      <FamilyMail>Y</FamilyMail>
+      <CourtOrder>N</CourtOrder>
+    </ContactFlags>
+    <ContactSequence>1</ContactSequence>
+  </StudentContactRelationship>
+</StudentContactRelationships>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="47a54b97-7908-4819-adc2-18759dc3424c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentContactRelationships" : {\r
+    "StudentContactRelationship" : [ {\r
+      "StudentContactRelationshipRefId" : "7572b261-0947-583a-463d-bb345291b332",\r
+      "Student" : {\r
+        "RefId" : "dee34b35-9d75-101a-8c3d-00aa001a1652"\r
+      },\r
+      "StudentContact" : {\r
+        "RefId" : "6472b261-0947-583a-463d-bb345291b001"\r
+      },\r
+      "Organisation" : {\r
+        "RefId" : "9651"\r
+      },\r
+      "Relationship" : {\r
+        "Code" : "LEG"\r
+      },\r
+      "Status" : "A",\r
+      "StartDate" : "2020-05-30",\r
+      "ContactFlags" : {\r
+        "ParentLegalGuardian" : "Y",\r
+        "LivesWith" : "N",\r
+        "AccessToRecords" : "N",\r
+        "ReceivesAssessmentReport" : "Y",\r
+        "EmergencyContact" : "Y",\r
+        "CivilDefenceEmergencyContact" : "N",\r
+        "DisciplinaryContact" : "N",\r
+        "AttendanceContact" : "N",\r
+        "PrimaryCareProvider" : "Y",\r
+        "FeesBilling" : "Y",\r
+        "FamilyMail" : "Y",\r
+        "CourtOrder" : "N"\r
+      },\r
+      "ContactSequence" : 1\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="a15db925-d8a1-4ae1-9824-de8156f8ccc5" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentContactRelationships>
+  <StudentContactRelationship>
+    <StudentContactRelationshipRefId>7572b261-0947-583a-463d-bb345291b332</StudentContactRelationshipRefId>
+    <Student>
+      <RefId>dee34b35-9d75-101a-8c3d-00aa001a1652</RefId>
+    </Student>
+    <StudentContact>
+      <RefId>6472b261-0947-583a-463d-bb345291b001</RefId>
+    </StudentContact>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Relationship>
+      <Code>LEG</Code>
+    </Relationship>
+    <ContactFlags>
+      <ParentLegalGuardian>Y</ParentLegalGuardian>
+      <PickupRights>Y</PickupRights>
+      <LivesWith>N</LivesWith>
+      <AccessToRecords>U</AccessToRecords>
+      <ReceivesAssessmentReport>Y</ReceivesAssessmentReport>
+      <EmergencyContact>Y</EmergencyContact>
+      <CivilDefenceEmergencyContact>N</CivilDefenceEmergencyContact>
+      <DisciplinaryContact>N</DisciplinaryContact>
+      <AttendanceContact>N</AttendanceContact>
+      <PrimaryCareOrganisation>U</PrimaryCareOrganisation>
+      <FeesBilling>Y</FeesBilling>
+      <FamilyMail>Y</FamilyMail>
+      <CourtOrder>N</CourtOrder>
+    </ContactFlags>
+    <ContactSequence>1</ContactSequence>
+  </StudentContactRelationship>
+</StudentContactRelationships>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="updateStudentContactRelationships" id="67b7ce5b-8c99-428b-ab9c-039c98f31d5e" method="PUT">
+    <con:description><![CDATA[<p>Bulk operation to update one or more relationships between a person who is part of a  Student's whānau and that Student, for all students enrolled at the given Provider.</p> <p>Relationship properties include the relationship type and roles played by the student contact in respect of the student.</p>  <p>Individual details about the student and student contact are provided  <a href="#tag/StudentPersonal">StudentPersonal</a> and <a href="#tag/StudentContactPersonal">StudentContactPersonal</a></p>]]></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated objects</con:description>
+      <con:sampleContent>{
+  "StudentContactRelationships" : {
+    "StudentContactRelationship" : [ {
+      "StudentContactRelationshipRefId" : "7572b261-0947-583a-463d-bb345291b332",
+      "Student" : {
+        "RefId" : "dee34b35-9d75-101a-8c3d-00aa001a1652"
+      },
+      "StudentContact" : {
+        "RefId" : "6472b261-0947-583a-463d-bb345291b001"
+      },
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Relationship" : {
+        "Code" : "LEG"
+      },
+      "Status" : "A",
+      "StartDate" : "2020-05-30",
+      "ContactFlags" : {
+        "ParentLegalGuardian" : "Y",
+        "LivesWith" : "N",
+        "AccessToRecords" : "N",
+        "ReceivesAssessmentReport" : "Y",
+        "EmergencyContact" : "Y",
+        "CivilDefenceEmergencyContact" : "N",
+        "DisciplinaryContact" : "N",
+        "AttendanceContact" : "N",
+        "PrimaryCareProvider" : "Y",
+        "FeesBilling" : "Y",
+        "FamilyMail" : "Y",
+        "CourtOrder" : "N"
+      },
+      "ContactSequence" : 1
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated objects</con:description>
+      <con:sampleContent><![CDATA[<StudentContactRelationships>
+  <StudentContactRelationship>
+    <StudentContactRelationshipRefId>7572b261-0947-583a-463d-bb345291b332</StudentContactRelationshipRefId>
+    <Student>
+      <RefId>dee34b35-9d75-101a-8c3d-00aa001a1652</RefId>
+    </Student>
+    <StudentContact>
+      <RefId>6472b261-0947-583a-463d-bb345291b001</RefId>
+    </StudentContact>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Relationship>
+      <Code>LEG</Code>
+    </Relationship>
+    <ContactFlags>
+      <ParentLegalGuardian>Y</ParentLegalGuardian>
+      <PickupRights>Y</PickupRights>
+      <LivesWith>N</LivesWith>
+      <AccessToRecords>U</AccessToRecords>
+      <ReceivesAssessmentReport>Y</ReceivesAssessmentReport>
+      <EmergencyContact>Y</EmergencyContact>
+      <CivilDefenceEmergencyContact>N</CivilDefenceEmergencyContact>
+      <DisciplinaryContact>N</DisciplinaryContact>
+      <AttendanceContact>N</AttendanceContact>
+      <PrimaryCareOrganisation>U</PrimaryCareOrganisation>
+      <FeesBilling>Y</FeesBilling>
+      <FamilyMail>Y</FamilyMail>
+      <CourtOrder>N</CourtOrder>
+    </ContactFlags>
+    <ContactSequence>1</ContactSequence>
+  </StudentContactRelationship>
+</StudentContactRelationships>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentContactRelationships" : {
+    "StudentContactRelationship" : [ {
+      "StudentContactRelationshipRefId" : "7572b261-0947-583a-463d-bb345291b332",
+      "Student" : {
+        "RefId" : "dee34b35-9d75-101a-8c3d-00aa001a1652"
+      },
+      "StudentContact" : {
+        "RefId" : "6472b261-0947-583a-463d-bb345291b001"
+      },
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Relationship" : {
+        "Code" : "LEG"
+      },
+      "Status" : "A",
+      "StartDate" : "2020-05-30",
+      "ContactFlags" : {
+        "ParentLegalGuardian" : "Y",
+        "LivesWith" : "N",
+        "AccessToRecords" : "N",
+        "ReceivesAssessmentReport" : "Y",
+        "EmergencyContact" : "Y",
+        "CivilDefenceEmergencyContact" : "N",
+        "DisciplinaryContact" : "N",
+        "AttendanceContact" : "N",
+        "PrimaryCareProvider" : "Y",
+        "FeesBilling" : "Y",
+        "FamilyMail" : "Y",
+        "CourtOrder" : "N"
+      },
+      "ContactSequence" : 1
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentContactRelationships>
+  <StudentContactRelationship>
+    <StudentContactRelationshipRefId>7572b261-0947-583a-463d-bb345291b332</StudentContactRelationshipRefId>
+    <Student>
+      <RefId>dee34b35-9d75-101a-8c3d-00aa001a1652</RefId>
+    </Student>
+    <StudentContact>
+      <RefId>6472b261-0947-583a-463d-bb345291b001</RefId>
+    </StudentContact>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Relationship>
+      <Code>LEG</Code>
+    </Relationship>
+    <ContactFlags>
+      <ParentLegalGuardian>Y</ParentLegalGuardian>
+      <PickupRights>Y</PickupRights>
+      <LivesWith>N</LivesWith>
+      <AccessToRecords>U</AccessToRecords>
+      <ReceivesAssessmentReport>Y</ReceivesAssessmentReport>
+      <EmergencyContact>Y</EmergencyContact>
+      <CivilDefenceEmergencyContact>N</CivilDefenceEmergencyContact>
+      <DisciplinaryContact>N</DisciplinaryContact>
+      <AttendanceContact>N</AttendanceContact>
+      <PrimaryCareOrganisation>U</PrimaryCareOrganisation>
+      <FeesBilling>Y</FeesBilling>
+      <FamilyMail>Y</FamilyMail>
+      <CourtOrder>N</CourtOrder>
+    </ContactFlags>
+    <ContactSequence>1</ContactSequence>
+  </StudentContactRelationship>
+</StudentContactRelationships>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="f126061d-2ceb-486c-b1a6-90a1eada15fd" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentContactRelationships" : {\r
+    "StudentContactRelationship" : [ {\r
+      "StudentContactRelationshipRefId" : "7572b261-0947-583a-463d-bb345291b332",\r
+      "Student" : {\r
+        "RefId" : "dee34b35-9d75-101a-8c3d-00aa001a1652"\r
+      },\r
+      "StudentContact" : {\r
+        "RefId" : "6472b261-0947-583a-463d-bb345291b001"\r
+      },\r
+      "Organisation" : {\r
+        "RefId" : "9651"\r
+      },\r
+      "Relationship" : {\r
+        "Code" : "LEG"\r
+      },\r
+      "Status" : "A",\r
+      "StartDate" : "2020-05-30",\r
+      "ContactFlags" : {\r
+        "ParentLegalGuardian" : "Y",\r
+        "LivesWith" : "N",\r
+        "AccessToRecords" : "N",\r
+        "ReceivesAssessmentReport" : "Y",\r
+        "EmergencyContact" : "Y",\r
+        "CivilDefenceEmergencyContact" : "N",\r
+        "DisciplinaryContact" : "N",\r
+        "AttendanceContact" : "N",\r
+        "PrimaryCareProvider" : "Y",\r
+        "FeesBilling" : "Y",\r
+        "FamilyMail" : "Y",\r
+        "CourtOrder" : "N"\r
+      },\r
+      "ContactSequence" : 1\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="5dc25099-c075-453a-a013-1b0834b06bac" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentContactRelationships>
+  <StudentContactRelationship>
+    <StudentContactRelationshipRefId>7572b261-0947-583a-463d-bb345291b332</StudentContactRelationshipRefId>
+    <Student>
+      <RefId>dee34b35-9d75-101a-8c3d-00aa001a1652</RefId>
+    </Student>
+    <StudentContact>
+      <RefId>6472b261-0947-583a-463d-bb345291b001</RefId>
+    </StudentContact>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Relationship>
+      <Code>LEG</Code>
+    </Relationship>
+    <ContactFlags>
+      <ParentLegalGuardian>Y</ParentLegalGuardian>
+      <PickupRights>Y</PickupRights>
+      <LivesWith>N</LivesWith>
+      <AccessToRecords>U</AccessToRecords>
+      <ReceivesAssessmentReport>Y</ReceivesAssessmentReport>
+      <EmergencyContact>Y</EmergencyContact>
+      <CivilDefenceEmergencyContact>N</CivilDefenceEmergencyContact>
+      <DisciplinaryContact>N</DisciplinaryContact>
+      <AttendanceContact>N</AttendanceContact>
+      <PrimaryCareOrganisation>U</PrimaryCareOrganisation>
+      <FeesBilling>Y</FeesBilling>
+      <FamilyMail>Y</FamilyMail>
+      <CourtOrder>N</CourtOrder>
+    </ContactFlags>
+    <ContactSequence>1</ContactSequence>
+  </StudentContactRelationship>
+</StudentContactRelationships>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="patchStudentContactRelationships" id="a5b38d43-4177-4fc0-89b6-d2e8eba7b634" method="PATCH">
+    <con:description><![CDATA[<p>Bulk operation to update one or more fields of one or more relationships between a person who is part of a Student's whānau and that Student, for all students enrolled at the given Provider.</p> <p>Relationship properties include the relationship type and roles played by the student contact in respect of the student.</p>  <p>Individual details about the student and student contact are provided  <a href="#tag/StudentPersonal">StudentPersonal</a> and <a href="#tag/StudentContactPersonal">StudentContactPersonal</a></p>]]></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent>{
+  "StudentContactRelationships" : {
+    "StudentContactRelationship" : [ {
+      "StudentContactRelationshipRefId" : "7572b261-0947-583a-463d-bb345291b332",
+      "Student" : {
+        "RefId" : "dee34b35-9d75-101a-8c3d-00aa001a1652"
+      },
+      "StudentContact" : {
+        "RefId" : "6472b261-0947-583a-463d-bb345291b001"
+      },
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Relationship" : {
+        "Code" : "LEG"
+      },
+      "Status" : "A",
+      "StartDate" : "2020-05-30",
+      "ContactFlags" : {
+        "ParentLegalGuardian" : "Y",
+        "LivesWith" : "N",
+        "AccessToRecords" : "N",
+        "ReceivesAssessmentReport" : "Y",
+        "EmergencyContact" : "Y",
+        "CivilDefenceEmergencyContact" : "N",
+        "DisciplinaryContact" : "N",
+        "AttendanceContact" : "N",
+        "PrimaryCareProvider" : "Y",
+        "FeesBilling" : "Y",
+        "FamilyMail" : "Y",
+        "CourtOrder" : "N"
+      },
+      "ContactSequence" : 1
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent><![CDATA[<StudentContactRelationships>
+  <StudentContactRelationship>
+    <StudentContactRelationshipRefId>7572b261-0947-583a-463d-bb345291b332</StudentContactRelationshipRefId>
+    <Student>
+      <RefId>dee34b35-9d75-101a-8c3d-00aa001a1652</RefId>
+    </Student>
+    <StudentContact>
+      <RefId>6472b261-0947-583a-463d-bb345291b001</RefId>
+    </StudentContact>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Relationship>
+      <Code>LEG</Code>
+    </Relationship>
+    <ContactFlags>
+      <ParentLegalGuardian>Y</ParentLegalGuardian>
+      <PickupRights>Y</PickupRights>
+      <LivesWith>N</LivesWith>
+      <AccessToRecords>U</AccessToRecords>
+      <ReceivesAssessmentReport>Y</ReceivesAssessmentReport>
+      <EmergencyContact>Y</EmergencyContact>
+      <CivilDefenceEmergencyContact>N</CivilDefenceEmergencyContact>
+      <DisciplinaryContact>N</DisciplinaryContact>
+      <AttendanceContact>N</AttendanceContact>
+      <PrimaryCareOrganisation>U</PrimaryCareOrganisation>
+      <FeesBilling>Y</FeesBilling>
+      <FamilyMail>Y</FamilyMail>
+      <CourtOrder>N</CourtOrder>
+    </ContactFlags>
+    <ContactSequence>1</ContactSequence>
+  </StudentContactRelationship>
+</StudentContactRelationships>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentContactRelationships" : {
+    "StudentContactRelationship" : [ {
+      "StudentContactRelationshipRefId" : "7572b261-0947-583a-463d-bb345291b332",
+      "Student" : {
+        "RefId" : "dee34b35-9d75-101a-8c3d-00aa001a1652"
+      },
+      "StudentContact" : {
+        "RefId" : "6472b261-0947-583a-463d-bb345291b001"
+      },
+      "Organisation" : {
+        "RefId" : "9651"
+      },
+      "Relationship" : {
+        "Code" : "LEG"
+      },
+      "Status" : "A",
+      "StartDate" : "2020-05-30",
+      "ContactFlags" : {
+        "ParentLegalGuardian" : "Y",
+        "LivesWith" : "N",
+        "AccessToRecords" : "N",
+        "ReceivesAssessmentReport" : "Y",
+        "EmergencyContact" : "Y",
+        "CivilDefenceEmergencyContact" : "N",
+        "DisciplinaryContact" : "N",
+        "AttendanceContact" : "N",
+        "PrimaryCareProvider" : "Y",
+        "FeesBilling" : "Y",
+        "FamilyMail" : "Y",
+        "CourtOrder" : "N"
+      },
+      "ContactSequence" : 1
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentContactRelationships>
+  <StudentContactRelationship>
+    <StudentContactRelationshipRefId>7572b261-0947-583a-463d-bb345291b332</StudentContactRelationshipRefId>
+    <Student>
+      <RefId>dee34b35-9d75-101a-8c3d-00aa001a1652</RefId>
+    </Student>
+    <StudentContact>
+      <RefId>6472b261-0947-583a-463d-bb345291b001</RefId>
+    </StudentContact>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Relationship>
+      <Code>LEG</Code>
+    </Relationship>
+    <ContactFlags>
+      <ParentLegalGuardian>Y</ParentLegalGuardian>
+      <PickupRights>Y</PickupRights>
+      <LivesWith>N</LivesWith>
+      <AccessToRecords>U</AccessToRecords>
+      <ReceivesAssessmentReport>Y</ReceivesAssessmentReport>
+      <EmergencyContact>Y</EmergencyContact>
+      <CivilDefenceEmergencyContact>N</CivilDefenceEmergencyContact>
+      <DisciplinaryContact>N</DisciplinaryContact>
+      <AttendanceContact>N</AttendanceContact>
+      <PrimaryCareOrganisation>U</PrimaryCareOrganisation>
+      <FeesBilling>Y</FeesBilling>
+      <FamilyMail>Y</FamilyMail>
+      <CourtOrder>N</CourtOrder>
+    </ContactFlags>
+    <ContactSequence>1</ContactSequence>
+  </StudentContactRelationship>
+</StudentContactRelationships>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="61972cdb-b223-49eb-9080-15e032bb20c5" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentContactRelationships" : {\r
+    "StudentContactRelationship" : [ {\r
+      "StudentContactRelationshipRefId" : "7572b261-0947-583a-463d-bb345291b332",\r
+      "Student" : {\r
+        "RefId" : "dee34b35-9d75-101a-8c3d-00aa001a1652"\r
+      },\r
+      "StudentContact" : {\r
+        "RefId" : "6472b261-0947-583a-463d-bb345291b001"\r
+      },\r
+      "Organisation" : {\r
+        "RefId" : "9651"\r
+      },\r
+      "Relationship" : {\r
+        "Code" : "LEG"\r
+      },\r
+      "Status" : "A",\r
+      "StartDate" : "2020-05-30",\r
+      "ContactFlags" : {\r
+        "ParentLegalGuardian" : "Y",\r
+        "LivesWith" : "N",\r
+        "AccessToRecords" : "N",\r
+        "ReceivesAssessmentReport" : "Y",\r
+        "EmergencyContact" : "Y",\r
+        "CivilDefenceEmergencyContact" : "N",\r
+        "DisciplinaryContact" : "N",\r
+        "AttendanceContact" : "N",\r
+        "PrimaryCareProvider" : "Y",\r
+        "FeesBilling" : "Y",\r
+        "FamilyMail" : "Y",\r
+        "CourtOrder" : "N"\r
+      },\r
+      "ContactSequence" : 1\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="3d4cc3d3-3c5f-4726-accc-1eb3ee5166d3" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentContactRelationships>
+  <StudentContactRelationship>
+    <StudentContactRelationshipRefId>7572b261-0947-583a-463d-bb345291b332</StudentContactRelationshipRefId>
+    <Student>
+      <RefId>dee34b35-9d75-101a-8c3d-00aa001a1652</RefId>
+    </Student>
+    <StudentContact>
+      <RefId>6472b261-0947-583a-463d-bb345291b001</RefId>
+    </StudentContact>
+    <Organisation>
+      <RefId>9651</RefId>
+    </Organisation>
+    <Relationship>
+      <Code>LEG</Code>
+    </Relationship>
+    <ContactFlags>
+      <ParentLegalGuardian>Y</ParentLegalGuardian>
+      <PickupRights>Y</PickupRights>
+      <LivesWith>N</LivesWith>
+      <AccessToRecords>U</AccessToRecords>
+      <ReceivesAssessmentReport>Y</ReceivesAssessmentReport>
+      <EmergencyContact>Y</EmergencyContact>
+      <CivilDefenceEmergencyContact>N</CivilDefenceEmergencyContact>
+      <DisciplinaryContact>N</DisciplinaryContact>
+      <AttendanceContact>N</AttendanceContact>
+      <PrimaryCareOrganisation>U</PrimaryCareOrganisation>
+      <FeesBilling>Y</FeesBilling>
+      <FamilyMail>Y</FamilyMail>
+      <CourtOrder>N</CourtOrder>
+    </ContactFlags>
+    <ContactSequence>1</ContactSequence>
+  </StudentContactRelationship>
+</StudentContactRelationships>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,1419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/schedule/{ScheduleRefId}/scheduledate" path="/schedule/{ScheduleRefId}/scheduledate" id="780d121c-2266-49eb-baee-81038b85a8b6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="780d121c-2266-49eb-baee-81038b85a8b6fileName">%2Fschedule%2F%7BScheduleRefId%7D%2Fscheduledate</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getScheduleDates" id="5e77ce9e-bad5-4f70-bbf6-cea204e38f99" method="GET">
+    <con:description>Bulk operation to retrieve all available timetable ScheduleDates for a particular &lt;a href="#tag/Schedule">Schedule&lt;/a> at the given Provider</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>start</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Include only items from start date;	`start=2017-08-01`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>end</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Include only items before end date;	`end=2017-08-31`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>ScheduleRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the timetable Schedule</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "ScheduleDates" : {
+    "ScheduleDate" : [ {
+      "ScheduleDateLocalId" : "8003_2020_001",
+      "CalendarDate" : "2020-01-27",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "Term" : {
+        "LocalId" : "2020_8003_T1"
+      },
+      "Schedule" : {
+        "LocalId" : "8003_Sched_2020"
+      },
+      "AcademicDay" : {
+        "LocalId" : "8003_Day_A"
+      },
+      "BellSchedule" : {
+        "LocalId" : "8003_Regular"
+      },
+      "SchedulePeriodList" : {
+        "SchedulePeriodTime" : [ {
+          "Period" : {
+            "LocalId" : "8003_HR"
+          },
+          "StartTime" : "08:45:00",
+          "EndTime" : "08:55:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P1"
+          },
+          "StartTime" : "09:00:00",
+          "EndTime" : "09:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P2"
+          },
+          "StartTime" : "09:55:00",
+          "EndTime" : "10:45:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P3"
+          },
+          "StartTime" : "11:00:00",
+          "EndTime" : "11:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P4"
+          },
+          "StartTime" : "12:40:00",
+          "EndTime" : "13:30:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P5"
+          },
+          "StartTime" : "13:45:00",
+          "EndTime" : "14:45:00"
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<ScheduleDates>
+  <ScheduleDate>
+    <ScheduleDateLocalId>8003_2020_001</ScheduleDateLocalId>
+    <CalendarDate>2020-01-27</CalendarDate>
+    <Organisation><RefId>8003</RefId></Organisation>
+    <Term><LocalId>2020_8003_T1<LocalId></Term>
+    <Schedule><LocalId>8003_Sched_2020</LocalId></Schedule>
+    <AcademicDay><LocalId>8003_Day_A</LocalId></AcademicDay>
+    <BellSchedule>LocalId>8003_Regular</LocalId></BellSchedule>
+    <SchedulePeriodList>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_HR<LocalId></Period>
+        <StartTime>08:45:00</StartTime>
+        <EndTime>08:55:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P1</LocalId></Period>
+        <StartTime>09:00:00</StartTime>
+        <EndTime>09:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P2</LocalId></Period>
+        <StartTime>09:55:00</StartTime>
+        <EndTime>10:45:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P3</LocalId></Period>
+        <StartTime>11:00:00</StartTime>
+        <EndTime>11:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P4</LocalId></Period>
+        <StartTime>12:40:00</StartTime>
+        <EndTime>13:30:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P5</LocalId></Period>
+        <StartTime>13:45:00</StartTime>
+        <EndTime>14:45:00<EndTime>
+      </SchedulePeriodTime>
+    </SchedulePeriodList>
+  </ScheduleDate>
+</ScheduleDates>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="23213c27-e0eb-4d91-83d3-5d33630581ea" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="createScheduleDates" id="92853f18-8010-42c6-b646-c65945ca7bb1" method="POST">
+    <con:description>Bulk operation to create one or more timetable ScheduleDates for a particular &lt;a href="#tag/Schedule">Schedule&lt;/a> at the given Provider</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>x-http-method-override</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Rather than CREATE records, treat this request as a SYNC request.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>ScheduleRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the timetable Schedule</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent>{
+  "ScheduleDates" : {
+    "ScheduleDate" : [ {
+      "ScheduleDateLocalId" : "8003_2020_001",
+      "CalendarDate" : "2020-01-27",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "Term" : {
+        "LocalId" : "2020_8003_T1"
+      },
+      "Schedule" : {
+        "LocalId" : "8003_Sched_2020"
+      },
+      "AcademicDay" : {
+        "LocalId" : "8003_Day_A"
+      },
+      "BellSchedule" : {
+        "LocalId" : "8003_Regular"
+      },
+      "SchedulePeriodList" : {
+        "SchedulePeriodTime" : [ {
+          "Period" : {
+            "LocalId" : "8003_HR"
+          },
+          "StartTime" : "08:45:00",
+          "EndTime" : "08:55:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P1"
+          },
+          "StartTime" : "09:00:00",
+          "EndTime" : "09:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P2"
+          },
+          "StartTime" : "09:55:00",
+          "EndTime" : "10:45:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P3"
+          },
+          "StartTime" : "11:00:00",
+          "EndTime" : "11:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P4"
+          },
+          "StartTime" : "12:40:00",
+          "EndTime" : "13:30:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P5"
+          },
+          "StartTime" : "13:45:00",
+          "EndTime" : "14:45:00"
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Create successful; returns created objects</con:description>
+      <con:sampleContent><![CDATA[<ScheduleDates>
+  <ScheduleDate>
+    <ScheduleDateLocalId>8003_2020_001</ScheduleDateLocalId>
+    <CalendarDate>2020-01-27</CalendarDate>
+    <Organisation><RefId>8003</RefId></Organisation>
+    <Term><LocalId>2020_8003_T1<LocalId></Term>
+    <Schedule><LocalId>8003_Sched_2020</LocalId></Schedule>
+    <AcademicDay><LocalId>8003_Day_A</LocalId></AcademicDay>
+    <BellSchedule>LocalId>8003_Regular</LocalId></BellSchedule>
+    <SchedulePeriodList>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_HR<LocalId></Period>
+        <StartTime>08:45:00</StartTime>
+        <EndTime>08:55:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P1</LocalId></Period>
+        <StartTime>09:00:00</StartTime>
+        <EndTime>09:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P2</LocalId></Period>
+        <StartTime>09:55:00</StartTime>
+        <EndTime>10:45:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P3</LocalId></Period>
+        <StartTime>11:00:00</StartTime>
+        <EndTime>11:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P4</LocalId></Period>
+        <StartTime>12:40:00</StartTime>
+        <EndTime>13:30:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P5</LocalId></Period>
+        <StartTime>13:45:00</StartTime>
+        <EndTime>14:45:00<EndTime>
+      </SchedulePeriodTime>
+    </SchedulePeriodList>
+  </ScheduleDate>
+</ScheduleDates>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "ScheduleDates" : {
+    "ScheduleDate" : [ {
+      "ScheduleDateLocalId" : "8003_2020_001",
+      "CalendarDate" : "2020-01-27",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "Term" : {
+        "LocalId" : "2020_8003_T1"
+      },
+      "Schedule" : {
+        "LocalId" : "8003_Sched_2020"
+      },
+      "AcademicDay" : {
+        "LocalId" : "8003_Day_A"
+      },
+      "BellSchedule" : {
+        "LocalId" : "8003_Regular"
+      },
+      "SchedulePeriodList" : {
+        "SchedulePeriodTime" : [ {
+          "Period" : {
+            "LocalId" : "8003_HR"
+          },
+          "StartTime" : "08:45:00",
+          "EndTime" : "08:55:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P1"
+          },
+          "StartTime" : "09:00:00",
+          "EndTime" : "09:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P2"
+          },
+          "StartTime" : "09:55:00",
+          "EndTime" : "10:45:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P3"
+          },
+          "StartTime" : "11:00:00",
+          "EndTime" : "11:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P4"
+          },
+          "StartTime" : "12:40:00",
+          "EndTime" : "13:30:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P5"
+          },
+          "StartTime" : "13:45:00",
+          "EndTime" : "14:45:00"
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<ScheduleDates>
+  <ScheduleDate>
+    <ScheduleDateLocalId>8003_2020_001</ScheduleDateLocalId>
+    <CalendarDate>2020-01-27</CalendarDate>
+    <Organisation><RefId>8003</RefId></Organisation>
+    <Term><LocalId>2020_8003_T1<LocalId></Term>
+    <Schedule><LocalId>8003_Sched_2020</LocalId></Schedule>
+    <AcademicDay><LocalId>8003_Day_A</LocalId></AcademicDay>
+    <BellSchedule>LocalId>8003_Regular</LocalId></BellSchedule>
+    <SchedulePeriodList>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_HR<LocalId></Period>
+        <StartTime>08:45:00</StartTime>
+        <EndTime>08:55:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P1</LocalId></Period>
+        <StartTime>09:00:00</StartTime>
+        <EndTime>09:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P2</LocalId></Period>
+        <StartTime>09:55:00</StartTime>
+        <EndTime>10:45:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P3</LocalId></Period>
+        <StartTime>11:00:00</StartTime>
+        <EndTime>11:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P4</LocalId></Period>
+        <StartTime>12:40:00</StartTime>
+        <EndTime>13:30:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P5</LocalId></Period>
+        <StartTime>13:45:00</StartTime>
+        <EndTime>14:45:00<EndTime>
+      </SchedulePeriodTime>
+    </SchedulePeriodList>
+  </ScheduleDate>
+</ScheduleDates>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="0bd9d6ee-bfde-4223-8532-ba16212a0020" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "ScheduleDates" : {\r
+    "ScheduleDate" : [ {\r
+      "ScheduleDateLocalId" : "8003_2020_001",\r
+      "CalendarDate" : "2020-01-27",\r
+      "Organisation" : {\r
+        "RefId" : "8003"\r
+      },\r
+      "Term" : {\r
+        "LocalId" : "2020_8003_T1"\r
+      },\r
+      "Schedule" : {\r
+        "LocalId" : "8003_Sched_2020"\r
+      },\r
+      "AcademicDay" : {\r
+        "LocalId" : "8003_Day_A"\r
+      },\r
+      "BellSchedule" : {\r
+        "LocalId" : "8003_Regular"\r
+      },\r
+      "SchedulePeriodList" : {\r
+        "SchedulePeriodTime" : [ {\r
+          "Period" : {\r
+            "LocalId" : "8003_HR"\r
+          },\r
+          "StartTime" : "08:45:00",\r
+          "EndTime" : "08:55:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P1"\r
+          },\r
+          "StartTime" : "09:00:00",\r
+          "EndTime" : "09:50:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P2"\r
+          },\r
+          "StartTime" : "09:55:00",\r
+          "EndTime" : "10:45:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P3"\r
+          },\r
+          "StartTime" : "11:00:00",\r
+          "EndTime" : "11:50:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P4"\r
+          },\r
+          "StartTime" : "12:40:00",\r
+          "EndTime" : "13:30:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P5"\r
+          },\r
+          "StartTime" : "13:45:00",\r
+          "EndTime" : "14:45:00"\r
+        } ]\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="b9845ded-0297-4498-b0ed-4a47253c82d8" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<ScheduleDates>
+  <ScheduleDate>
+    <ScheduleDateLocalId>8003_2020_001</ScheduleDateLocalId>
+    <CalendarDate>2020-01-27</CalendarDate>
+    <Organisation><RefId>8003</RefId></Organisation>
+    <Term><LocalId>2020_8003_T1<LocalId></Term>
+    <Schedule><LocalId>8003_Sched_2020</LocalId></Schedule>
+    <AcademicDay><LocalId>8003_Day_A</LocalId></AcademicDay>
+    <BellSchedule>LocalId>8003_Regular</LocalId></BellSchedule>
+    <SchedulePeriodList>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_HR<LocalId></Period>
+        <StartTime>08:45:00</StartTime>
+        <EndTime>08:55:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P1</LocalId></Period>
+        <StartTime>09:00:00</StartTime>
+        <EndTime>09:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P2</LocalId></Period>
+        <StartTime>09:55:00</StartTime>
+        <EndTime>10:45:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P3</LocalId></Period>
+        <StartTime>11:00:00</StartTime>
+        <EndTime>11:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P4</LocalId></Period>
+        <StartTime>12:40:00</StartTime>
+        <EndTime>13:30:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P5</LocalId></Period>
+        <StartTime>13:45:00</StartTime>
+        <EndTime>14:45:00<EndTime>
+      </SchedulePeriodTime>
+    </SchedulePeriodList>
+  </ScheduleDate>
+</ScheduleDates>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="updateScheduleDates" id="c4a46021-d92d-45de-a8ce-1ca3604bf379" method="PUT">
+    <con:description>Bulk operation to update one or more timetable ScheduleDates for a particular &lt;a href="#tag/Schedule">Schedule&lt;/a> at the given Provider</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>ScheduleRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the timetable Schedule</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated objects</con:description>
+      <con:sampleContent>{
+  "ScheduleDates" : {
+    "ScheduleDate" : [ {
+      "ScheduleDateLocalId" : "8003_2020_001",
+      "CalendarDate" : "2020-01-27",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "Term" : {
+        "LocalId" : "2020_8003_T1"
+      },
+      "Schedule" : {
+        "LocalId" : "8003_Sched_2020"
+      },
+      "AcademicDay" : {
+        "LocalId" : "8003_Day_A"
+      },
+      "BellSchedule" : {
+        "LocalId" : "8003_Regular"
+      },
+      "SchedulePeriodList" : {
+        "SchedulePeriodTime" : [ {
+          "Period" : {
+            "LocalId" : "8003_HR"
+          },
+          "StartTime" : "08:45:00",
+          "EndTime" : "08:55:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P1"
+          },
+          "StartTime" : "09:00:00",
+          "EndTime" : "09:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P2"
+          },
+          "StartTime" : "09:55:00",
+          "EndTime" : "10:45:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P3"
+          },
+          "StartTime" : "11:00:00",
+          "EndTime" : "11:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P4"
+          },
+          "StartTime" : "12:40:00",
+          "EndTime" : "13:30:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P5"
+          },
+          "StartTime" : "13:45:00",
+          "EndTime" : "14:45:00"
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated objects</con:description>
+      <con:sampleContent><![CDATA[<ScheduleDates>
+  <ScheduleDate>
+    <ScheduleDateLocalId>8003_2020_001</ScheduleDateLocalId>
+    <CalendarDate>2020-01-27</CalendarDate>
+    <Organisation><RefId>8003</RefId></Organisation>
+    <Term><LocalId>2020_8003_T1<LocalId></Term>
+    <Schedule><LocalId>8003_Sched_2020</LocalId></Schedule>
+    <AcademicDay><LocalId>8003_Day_A</LocalId></AcademicDay>
+    <BellSchedule>LocalId>8003_Regular</LocalId></BellSchedule>
+    <SchedulePeriodList>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_HR<LocalId></Period>
+        <StartTime>08:45:00</StartTime>
+        <EndTime>08:55:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P1</LocalId></Period>
+        <StartTime>09:00:00</StartTime>
+        <EndTime>09:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P2</LocalId></Period>
+        <StartTime>09:55:00</StartTime>
+        <EndTime>10:45:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P3</LocalId></Period>
+        <StartTime>11:00:00</StartTime>
+        <EndTime>11:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P4</LocalId></Period>
+        <StartTime>12:40:00</StartTime>
+        <EndTime>13:30:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P5</LocalId></Period>
+        <StartTime>13:45:00</StartTime>
+        <EndTime>14:45:00<EndTime>
+      </SchedulePeriodTime>
+    </SchedulePeriodList>
+  </ScheduleDate>
+</ScheduleDates>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "ScheduleDates" : {
+    "ScheduleDate" : [ {
+      "ScheduleDateLocalId" : "8003_2020_001",
+      "CalendarDate" : "2020-01-27",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "Term" : {
+        "LocalId" : "2020_8003_T1"
+      },
+      "Schedule" : {
+        "LocalId" : "8003_Sched_2020"
+      },
+      "AcademicDay" : {
+        "LocalId" : "8003_Day_A"
+      },
+      "BellSchedule" : {
+        "LocalId" : "8003_Regular"
+      },
+      "SchedulePeriodList" : {
+        "SchedulePeriodTime" : [ {
+          "Period" : {
+            "LocalId" : "8003_HR"
+          },
+          "StartTime" : "08:45:00",
+          "EndTime" : "08:55:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P1"
+          },
+          "StartTime" : "09:00:00",
+          "EndTime" : "09:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P2"
+          },
+          "StartTime" : "09:55:00",
+          "EndTime" : "10:45:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P3"
+          },
+          "StartTime" : "11:00:00",
+          "EndTime" : "11:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P4"
+          },
+          "StartTime" : "12:40:00",
+          "EndTime" : "13:30:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P5"
+          },
+          "StartTime" : "13:45:00",
+          "EndTime" : "14:45:00"
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<ScheduleDates>
+  <ScheduleDate>
+    <ScheduleDateLocalId>8003_2020_001</ScheduleDateLocalId>
+    <CalendarDate>2020-01-27</CalendarDate>
+    <Organisation><RefId>8003</RefId></Organisation>
+    <Term><LocalId>2020_8003_T1<LocalId></Term>
+    <Schedule><LocalId>8003_Sched_2020</LocalId></Schedule>
+    <AcademicDay><LocalId>8003_Day_A</LocalId></AcademicDay>
+    <BellSchedule>LocalId>8003_Regular</LocalId></BellSchedule>
+    <SchedulePeriodList>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_HR<LocalId></Period>
+        <StartTime>08:45:00</StartTime>
+        <EndTime>08:55:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P1</LocalId></Period>
+        <StartTime>09:00:00</StartTime>
+        <EndTime>09:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P2</LocalId></Period>
+        <StartTime>09:55:00</StartTime>
+        <EndTime>10:45:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P3</LocalId></Period>
+        <StartTime>11:00:00</StartTime>
+        <EndTime>11:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P4</LocalId></Period>
+        <StartTime>12:40:00</StartTime>
+        <EndTime>13:30:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P5</LocalId></Period>
+        <StartTime>13:45:00</StartTime>
+        <EndTime>14:45:00<EndTime>
+      </SchedulePeriodTime>
+    </SchedulePeriodList>
+  </ScheduleDate>
+</ScheduleDates>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="e47f2717-ecdd-4256-a485-df0cdc7dc667" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "ScheduleDates" : {\r
+    "ScheduleDate" : [ {\r
+      "ScheduleDateLocalId" : "8003_2020_001",\r
+      "CalendarDate" : "2020-01-27",\r
+      "Organisation" : {\r
+        "RefId" : "8003"\r
+      },\r
+      "Term" : {\r
+        "LocalId" : "2020_8003_T1"\r
+      },\r
+      "Schedule" : {\r
+        "LocalId" : "8003_Sched_2020"\r
+      },\r
+      "AcademicDay" : {\r
+        "LocalId" : "8003_Day_A"\r
+      },\r
+      "BellSchedule" : {\r
+        "LocalId" : "8003_Regular"\r
+      },\r
+      "SchedulePeriodList" : {\r
+        "SchedulePeriodTime" : [ {\r
+          "Period" : {\r
+            "LocalId" : "8003_HR"\r
+          },\r
+          "StartTime" : "08:45:00",\r
+          "EndTime" : "08:55:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P1"\r
+          },\r
+          "StartTime" : "09:00:00",\r
+          "EndTime" : "09:50:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P2"\r
+          },\r
+          "StartTime" : "09:55:00",\r
+          "EndTime" : "10:45:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P3"\r
+          },\r
+          "StartTime" : "11:00:00",\r
+          "EndTime" : "11:50:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P4"\r
+          },\r
+          "StartTime" : "12:40:00",\r
+          "EndTime" : "13:30:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P5"\r
+          },\r
+          "StartTime" : "13:45:00",\r
+          "EndTime" : "14:45:00"\r
+        } ]\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="8a21fda8-2707-4403-829e-6188afb25d2c" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<ScheduleDates>
+  <ScheduleDate>
+    <ScheduleDateLocalId>8003_2020_001</ScheduleDateLocalId>
+    <CalendarDate>2020-01-27</CalendarDate>
+    <Organisation><RefId>8003</RefId></Organisation>
+    <Term><LocalId>2020_8003_T1<LocalId></Term>
+    <Schedule><LocalId>8003_Sched_2020</LocalId></Schedule>
+    <AcademicDay><LocalId>8003_Day_A</LocalId></AcademicDay>
+    <BellSchedule>LocalId>8003_Regular</LocalId></BellSchedule>
+    <SchedulePeriodList>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_HR<LocalId></Period>
+        <StartTime>08:45:00</StartTime>
+        <EndTime>08:55:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P1</LocalId></Period>
+        <StartTime>09:00:00</StartTime>
+        <EndTime>09:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P2</LocalId></Period>
+        <StartTime>09:55:00</StartTime>
+        <EndTime>10:45:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P3</LocalId></Period>
+        <StartTime>11:00:00</StartTime>
+        <EndTime>11:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P4</LocalId></Period>
+        <StartTime>12:40:00</StartTime>
+        <EndTime>13:30:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P5</LocalId></Period>
+        <StartTime>13:45:00</StartTime>
+        <EndTime>14:45:00<EndTime>
+      </SchedulePeriodTime>
+    </SchedulePeriodList>
+  </ScheduleDate>
+</ScheduleDates>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="patchScheduleDates" id="36d92985-5970-4047-9fc6-37f662d9f8c6" method="PATCH">
+    <con:description>Bulk operation to update one or more fields of one or more timetable ScheduleDates for a particular &lt;a href="#tag/Schedule">Schedule&lt;/a> at the given Provider</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>ScheduleRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the timetable Schedule</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent>{
+  "ScheduleDates" : {
+    "ScheduleDate" : [ {
+      "ScheduleDateLocalId" : "8003_2020_001",
+      "CalendarDate" : "2020-01-27",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "Term" : {
+        "LocalId" : "2020_8003_T1"
+      },
+      "Schedule" : {
+        "LocalId" : "8003_Sched_2020"
+      },
+      "AcademicDay" : {
+        "LocalId" : "8003_Day_A"
+      },
+      "BellSchedule" : {
+        "LocalId" : "8003_Regular"
+      },
+      "SchedulePeriodList" : {
+        "SchedulePeriodTime" : [ {
+          "Period" : {
+            "LocalId" : "8003_HR"
+          },
+          "StartTime" : "08:45:00",
+          "EndTime" : "08:55:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P1"
+          },
+          "StartTime" : "09:00:00",
+          "EndTime" : "09:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P2"
+          },
+          "StartTime" : "09:55:00",
+          "EndTime" : "10:45:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P3"
+          },
+          "StartTime" : "11:00:00",
+          "EndTime" : "11:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P4"
+          },
+          "StartTime" : "12:40:00",
+          "EndTime" : "13:30:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P5"
+          },
+          "StartTime" : "13:45:00",
+          "EndTime" : "14:45:00"
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched objects</con:description>
+      <con:sampleContent><![CDATA[<ScheduleDates>
+  <ScheduleDate>
+    <ScheduleDateLocalId>8003_2020_001</ScheduleDateLocalId>
+    <CalendarDate>2020-01-27</CalendarDate>
+    <Organisation><RefId>8003</RefId></Organisation>
+    <Term><LocalId>2020_8003_T1<LocalId></Term>
+    <Schedule><LocalId>8003_Sched_2020</LocalId></Schedule>
+    <AcademicDay><LocalId>8003_Day_A</LocalId></AcademicDay>
+    <BellSchedule>LocalId>8003_Regular</LocalId></BellSchedule>
+    <SchedulePeriodList>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_HR<LocalId></Period>
+        <StartTime>08:45:00</StartTime>
+        <EndTime>08:55:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P1</LocalId></Period>
+        <StartTime>09:00:00</StartTime>
+        <EndTime>09:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P2</LocalId></Period>
+        <StartTime>09:55:00</StartTime>
+        <EndTime>10:45:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P3</LocalId></Period>
+        <StartTime>11:00:00</StartTime>
+        <EndTime>11:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P4</LocalId></Period>
+        <StartTime>12:40:00</StartTime>
+        <EndTime>13:30:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P5</LocalId></Period>
+        <StartTime>13:45:00</StartTime>
+        <EndTime>14:45:00<EndTime>
+      </SchedulePeriodTime>
+    </SchedulePeriodList>
+  </ScheduleDate>
+</ScheduleDates>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "ScheduleDates" : {
+    "ScheduleDate" : [ {
+      "ScheduleDateLocalId" : "8003_2020_001",
+      "CalendarDate" : "2020-01-27",
+      "Organisation" : {
+        "RefId" : "8003"
+      },
+      "Term" : {
+        "LocalId" : "2020_8003_T1"
+      },
+      "Schedule" : {
+        "LocalId" : "8003_Sched_2020"
+      },
+      "AcademicDay" : {
+        "LocalId" : "8003_Day_A"
+      },
+      "BellSchedule" : {
+        "LocalId" : "8003_Regular"
+      },
+      "SchedulePeriodList" : {
+        "SchedulePeriodTime" : [ {
+          "Period" : {
+            "LocalId" : "8003_HR"
+          },
+          "StartTime" : "08:45:00",
+          "EndTime" : "08:55:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P1"
+          },
+          "StartTime" : "09:00:00",
+          "EndTime" : "09:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P2"
+          },
+          "StartTime" : "09:55:00",
+          "EndTime" : "10:45:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P3"
+          },
+          "StartTime" : "11:00:00",
+          "EndTime" : "11:50:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P4"
+          },
+          "StartTime" : "12:40:00",
+          "EndTime" : "13:30:00"
+        }, {
+          "Period" : {
+            "LocalId" : "8003_P5"
+          },
+          "StartTime" : "13:45:00",
+          "EndTime" : "14:45:00"
+        } ]
+      }
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<ScheduleDates>
+  <ScheduleDate>
+    <ScheduleDateLocalId>8003_2020_001</ScheduleDateLocalId>
+    <CalendarDate>2020-01-27</CalendarDate>
+    <Organisation><RefId>8003</RefId></Organisation>
+    <Term><LocalId>2020_8003_T1<LocalId></Term>
+    <Schedule><LocalId>8003_Sched_2020</LocalId></Schedule>
+    <AcademicDay><LocalId>8003_Day_A</LocalId></AcademicDay>
+    <BellSchedule>LocalId>8003_Regular</LocalId></BellSchedule>
+    <SchedulePeriodList>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_HR<LocalId></Period>
+        <StartTime>08:45:00</StartTime>
+        <EndTime>08:55:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P1</LocalId></Period>
+        <StartTime>09:00:00</StartTime>
+        <EndTime>09:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P2</LocalId></Period>
+        <StartTime>09:55:00</StartTime>
+        <EndTime>10:45:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P3</LocalId></Period>
+        <StartTime>11:00:00</StartTime>
+        <EndTime>11:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P4</LocalId></Period>
+        <StartTime>12:40:00</StartTime>
+        <EndTime>13:30:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P5</LocalId></Period>
+        <StartTime>13:45:00</StartTime>
+        <EndTime>14:45:00<EndTime>
+      </SchedulePeriodTime>
+    </SchedulePeriodList>
+  </ScheduleDate>
+</ScheduleDates>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="61b1c2e6-c868-468c-80d4-234849f71fa9" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "ScheduleDates" : {\r
+    "ScheduleDate" : [ {\r
+      "ScheduleDateLocalId" : "8003_2020_001",\r
+      "CalendarDate" : "2020-01-27",\r
+      "Organisation" : {\r
+        "RefId" : "8003"\r
+      },\r
+      "Term" : {\r
+        "LocalId" : "2020_8003_T1"\r
+      },\r
+      "Schedule" : {\r
+        "LocalId" : "8003_Sched_2020"\r
+      },\r
+      "AcademicDay" : {\r
+        "LocalId" : "8003_Day_A"\r
+      },\r
+      "BellSchedule" : {\r
+        "LocalId" : "8003_Regular"\r
+      },\r
+      "SchedulePeriodList" : {\r
+        "SchedulePeriodTime" : [ {\r
+          "Period" : {\r
+            "LocalId" : "8003_HR"\r
+          },\r
+          "StartTime" : "08:45:00",\r
+          "EndTime" : "08:55:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P1"\r
+          },\r
+          "StartTime" : "09:00:00",\r
+          "EndTime" : "09:50:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P2"\r
+          },\r
+          "StartTime" : "09:55:00",\r
+          "EndTime" : "10:45:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P3"\r
+          },\r
+          "StartTime" : "11:00:00",\r
+          "EndTime" : "11:50:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P4"\r
+          },\r
+          "StartTime" : "12:40:00",\r
+          "EndTime" : "13:30:00"\r
+        }, {\r
+          "Period" : {\r
+            "LocalId" : "8003_P5"\r
+          },\r
+          "StartTime" : "13:45:00",\r
+          "EndTime" : "14:45:00"\r
+        } ]\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="55eeb02e-30d1-4a20-b924-5a8d55089ffa" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<ScheduleDates>
+  <ScheduleDate>
+    <ScheduleDateLocalId>8003_2020_001</ScheduleDateLocalId>
+    <CalendarDate>2020-01-27</CalendarDate>
+    <Organisation><RefId>8003</RefId></Organisation>
+    <Term><LocalId>2020_8003_T1<LocalId></Term>
+    <Schedule><LocalId>8003_Sched_2020</LocalId></Schedule>
+    <AcademicDay><LocalId>8003_Day_A</LocalId></AcademicDay>
+    <BellSchedule>LocalId>8003_Regular</LocalId></BellSchedule>
+    <SchedulePeriodList>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_HR<LocalId></Period>
+        <StartTime>08:45:00</StartTime>
+        <EndTime>08:55:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P1</LocalId></Period>
+        <StartTime>09:00:00</StartTime>
+        <EndTime>09:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P2</LocalId></Period>
+        <StartTime>09:55:00</StartTime>
+        <EndTime>10:45:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P3</LocalId></Period>
+        <StartTime>11:00:00</StartTime>
+        <EndTime>11:50:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P4</LocalId></Period>
+        <StartTime>12:40:00</StartTime>
+        <EndTime>13:30:00</EndTime>
+      </SchedulePeriodTime>
+      <SchedulePeriodTime>
+        <Period><LocalId>8003_P5</LocalId></Period>
+        <StartTime>13:45:00</StartTime>
+        <EndTime>14:45:00<EndTime>
+      </SchedulePeriodTime>
+    </SchedulePeriodList>
+  </ScheduleDate>
+</ScheduleDates>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

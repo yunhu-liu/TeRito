@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Copy of /studentpersonal/{StudentPersonalRefId}" path="/studentpersonal/{StudentPersonalLocalId}" id="37ed40dd-2e43-4a5e-9c3d-a9ff8c8d9072" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="37ed40dd-2e43-4a5e-9c3d-a9ff8c8d9072fileName">Copy-of-%2Fstudentpersonal%2F%7BStudentPersonalRefId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>StudentPersonalLocalId</con:name>
+      <con:value/>
+      <con:style>TEMPLATE</con:style>
+      <con:default/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="getStudentPersonal" id="4e487123-5709-46e4-93de-d5bd8cc84d38" method="GET">
+    <con:description>&lt;p>Retrieve a single StudentPersonal record of a particular student's personal contact and demographic information within the scope of the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "StudentPersonal" : {
+    "StudentPersonalLocalId" : "ST1000001",
+    "NationalStudentNumber" : 9001000001,
+    "FirstNZSchoolingDate" : "2015-03-07",
+    "EarlyChildhoodEducation" : {
+      "Type" : "EPG"
+    },
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Saunders",
+        "GivenName" : "Thomas",
+        "FullName" : "Thomas Saunders"
+      },
+      "Demographics" : {
+        "BirthDate" : "2010-03-07",
+        "Gender" : "1",
+        "LanguageList" : {
+          "Language" : [ {
+            "Code" : "NZS01112",
+            "Usage" : "SH"
+          } ]
+        },
+        "EthnicityList" : {
+          "Ethnicity" : [ {
+            "Code" : "321"
+          } ]
+        }
+      },
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "TH",
+          "Role" : "PHY",
+          "Line1" : "27 Arataua Street",
+          "Suburb" : "Rotorua",
+          "City" : "Rotorua",
+          "Country" : "New Zealand",
+          "PostalCode" : "3010"
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "SourceOrganisation" : {
+            "RefId" : "8001"
+          },
+          "Address" : "tsaunders@mailinator.com"
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Type" : "MAI",
+          "Number" : "+64 7-943 8050"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<StudentPersonal>
+  <StudentPersonalLocalId>ST1000001
+  <NationalStudentNumber>9001000001</NationalStudentNumber>
+  <FirstNZSchoolingDate>2015-03-07</FirstNZSchoolingDate>
+  <EarlyChildhoodEducation>
+    <Type>EPG</Type>
+  </EarlyChildhoodEducation>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Saunders</FamilyName>
+      <GivenName>Thomas</GivenName>
+      <FullName>Thomas Saunders</FullName>
+    </Name>
+    <Demographics>
+      <BirthDate>2010-03-07</BirthDate>
+      <Gender>1</Gender>
+      <LanguageList>
+        <Language>
+          <Code>NZS01112</Code>
+          <Usage>SH</Usage>
+        </Language>
+      </LanguageList>
+      <EthnicityList>
+        <Ethnicity>
+          <Code>321</Code>
+        </Ethnicity>
+      </EthnicityList>
+    </Demographics>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>27 Arataua Street</Line1>
+        <Suburb>Rotorua</Suburb>
+        <City>Rotorua</City>
+        <Country>New Zealand</Country>
+        <PostalCode>3010<PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <SourceOrganisation>
+          <RefId>8001</RefId>
+        </SourceOrganisation>
+        <Address>tsaunders@mailinator.com<Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MAI</Type>
+        <Number>+64 7-943 8050</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401 422 404</con:status>
+      <con:params/>
+      <con:element xmlns:st5="https://mocksifapi.azurewebsites.net/sif/studentpersonal/ST5000000">st5:Fault</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="2cd69b18-8dcf-4cc7-aec2-d27a017e6251" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="StudentPersonalLocalId" value=""/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>fields</con:entry>
+        <con:entry>page</con:entry>
+        <con:entry>max</con:entry>
+        <con:entry>unwrap</con:entry>
+        <con:entry>human</con:entry>
+        <con:entry>sort</con:entry>
+        <con:entry>field</con:entry>
+        <con:entry>pattern</con:entry>
+        <con:entry>Accept</con:entry>
+        <con:entry>X-Edsby-OrganisationRefId</con:entry>
+        <con:entry>StudentPersonalLocalId</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="updateStudentPersonal" id="0e5a815c-8cc5-4b3d-9edc-b232844e3560" method="PUT">
+    <con:description>&lt;p>Update a single StudentPersonal record of a particular student's personal contact and demographic information within the scope of the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StudentPersonalRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>System RefId of the student.</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated object</con:description>
+      <con:sampleContent>{
+  "StudentPersonal" : {
+    "StudentPersonalLocalId" : "ST1000001",
+    "NationalStudentNumber" : 9001000001,
+    "FirstNZSchoolingDate" : "2015-03-07",
+    "EarlyChildhoodEducation" : {
+      "Type" : "EPG"
+    },
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Saunders",
+        "GivenName" : "Thomas",
+        "FullName" : "Thomas Saunders"
+      },
+      "Demographics" : {
+        "BirthDate" : "2010-03-07",
+        "Gender" : "1",
+        "LanguageList" : {
+          "Language" : [ {
+            "Code" : "NZS01112",
+            "Usage" : "SH"
+          } ]
+        },
+        "EthnicityList" : {
+          "Ethnicity" : [ {
+            "Code" : "321"
+          } ]
+        }
+      },
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "TH",
+          "Role" : "PHY",
+          "Line1" : "27 Arataua Street",
+          "Suburb" : "Rotorua",
+          "City" : "Rotorua",
+          "Country" : "New Zealand",
+          "PostalCode" : "3010"
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "SourceOrganisation" : {
+            "RefId" : "8001"
+          },
+          "Address" : "tsaunders@mailinator.com"
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Type" : "MAI",
+          "Number" : "+64 7-943 8050"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated object</con:description>
+      <con:sampleContent><![CDATA[<StudentPersonal>
+  <StudentPersonalLocalId>ST1000001
+  <NationalStudentNumber>9001000001</NationalStudentNumber>
+  <FirstNZSchoolingDate>2015-03-07</FirstNZSchoolingDate>
+  <EarlyChildhoodEducation>
+    <Type>EPG</Type>
+  </EarlyChildhoodEducation>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Saunders</FamilyName>
+      <GivenName>Thomas</GivenName>
+      <FullName>Thomas Saunders</FullName>
+    </Name>
+    <Demographics>
+      <BirthDate>2010-03-07</BirthDate>
+      <Gender>1</Gender>
+      <LanguageList>
+        <Language>
+          <Code>NZS01112</Code>
+          <Usage>SH</Usage>
+        </Language>
+      </LanguageList>
+      <EthnicityList>
+        <Ethnicity>
+          <Code>321</Code>
+        </Ethnicity>
+      </EthnicityList>
+    </Demographics>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>27 Arataua Street</Line1>
+        <Suburb>Rotorua</Suburb>
+        <City>Rotorua</City>
+        <Country>New Zealand</Country>
+        <PostalCode>3010<PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <SourceOrganisation>
+          <RefId>8001</RefId>
+        </SourceOrganisation>
+        <Address>tsaunders@mailinator.com<Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MAI</Type>
+        <Number>+64 7-943 8050</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentPersonal" : {
+    "StudentPersonalLocalId" : "ST1000001",
+    "NationalStudentNumber" : 9001000001,
+    "FirstNZSchoolingDate" : "2015-03-07",
+    "EarlyChildhoodEducation" : {
+      "Type" : "EPG"
+    },
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Saunders",
+        "GivenName" : "Thomas",
+        "FullName" : "Thomas Saunders"
+      },
+      "Demographics" : {
+        "BirthDate" : "2010-03-07",
+        "Gender" : "1",
+        "LanguageList" : {
+          "Language" : [ {
+            "Code" : "NZS01112",
+            "Usage" : "SH"
+          } ]
+        },
+        "EthnicityList" : {
+          "Ethnicity" : [ {
+            "Code" : "321"
+          } ]
+        }
+      },
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "TH",
+          "Role" : "PHY",
+          "Line1" : "27 Arataua Street",
+          "Suburb" : "Rotorua",
+          "City" : "Rotorua",
+          "Country" : "New Zealand",
+          "PostalCode" : "3010"
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "SourceOrganisation" : {
+            "RefId" : "8001"
+          },
+          "Address" : "tsaunders@mailinator.com"
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Type" : "MAI",
+          "Number" : "+64 7-943 8050"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentPersonal>
+  <StudentPersonalLocalId>ST1000001
+  <NationalStudentNumber>9001000001</NationalStudentNumber>
+  <FirstNZSchoolingDate>2015-03-07</FirstNZSchoolingDate>
+  <EarlyChildhoodEducation>
+    <Type>EPG</Type>
+  </EarlyChildhoodEducation>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Saunders</FamilyName>
+      <GivenName>Thomas</GivenName>
+      <FullName>Thomas Saunders</FullName>
+    </Name>
+    <Demographics>
+      <BirthDate>2010-03-07</BirthDate>
+      <Gender>1</Gender>
+      <LanguageList>
+        <Language>
+          <Code>NZS01112</Code>
+          <Usage>SH</Usage>
+        </Language>
+      </LanguageList>
+      <EthnicityList>
+        <Ethnicity>
+          <Code>321</Code>
+        </Ethnicity>
+      </EthnicityList>
+    </Demographics>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>27 Arataua Street</Line1>
+        <Suburb>Rotorua</Suburb>
+        <City>Rotorua</City>
+        <Country>New Zealand</Country>
+        <PostalCode>3010<PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <SourceOrganisation>
+          <RefId>8001</RefId>
+        </SourceOrganisation>
+        <Address>tsaunders@mailinator.com<Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MAI</Type>
+        <Number>+64 7-943 8050</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="a89feaf0-16fc-4f22-90ea-8fcbba5955e9" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentPersonal" : {\r
+    "StudentPersonalLocalId" : "ST1000001",\r
+    "NationalStudentNumber" : 9001000001,\r
+    "FirstNZSchoolingDate" : "2015-03-07",\r
+    "EarlyChildhoodEducation" : {\r
+      "Type" : "EPG"\r
+    },\r
+    "PersonInfo" : {\r
+      "Name" : {\r
+        "FamilyName" : "Saunders",\r
+        "GivenName" : "Thomas",\r
+        "FullName" : "Thomas Saunders"\r
+      },\r
+      "Demographics" : {\r
+        "BirthDate" : "2010-03-07",\r
+        "Gender" : "1",\r
+        "LanguageList" : {\r
+          "Language" : [ {\r
+            "Code" : "NZS01112",\r
+            "Usage" : "SH"\r
+          } ]\r
+        },\r
+        "EthnicityList" : {\r
+          "Ethnicity" : [ {\r
+            "Code" : "321"\r
+          } ]\r
+        }\r
+      },\r
+      "AddressList" : {\r
+        "Address" : [ {\r
+          "Type" : "TH",\r
+          "Role" : "PHY",\r
+          "Line1" : "27 Arataua Street",\r
+          "Suburb" : "Rotorua",\r
+          "City" : "Rotorua",\r
+          "Country" : "New Zealand",\r
+          "PostalCode" : "3010"\r
+        } ]\r
+      },\r
+      "EmailList" : {\r
+        "Email" : [ {\r
+          "SourceOrganisation" : {\r
+            "RefId" : "8001"\r
+          },\r
+          "Address" : "tsaunders@mailinator.com"\r
+        } ]\r
+      },\r
+      "PhoneNumberList" : {\r
+        "PhoneNumber" : [ {\r
+          "Type" : "MAI",\r
+          "Number" : "+64 7-943 8050"\r
+        } ]\r
+      }\r
+    }\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="StudentPersonalLocalId" value=""/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+        <con:entry>X-Edsby-OrganisationRefId</con:entry>
+        <con:entry>StudentPersonalRefId</con:entry>
+        <con:entry>StudentPersonalLocalId</con:entry>
+      </con:parameterOrder>
+    </con:request>
+    <con:request name="Request 2" id="2766a034-2067-42d0-8e0a-4f7db241273b" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentPersonal>
+  <StudentPersonalLocalId>ST1000001
+  <NationalStudentNumber>9001000001</NationalStudentNumber>
+  <FirstNZSchoolingDate>2015-03-07</FirstNZSchoolingDate>
+  <EarlyChildhoodEducation>
+    <Type>EPG</Type>
+  </EarlyChildhoodEducation>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Saunders</FamilyName>
+      <GivenName>Thomas</GivenName>
+      <FullName>Thomas Saunders</FullName>
+    </Name>
+    <Demographics>
+      <BirthDate>2010-03-07</BirthDate>
+      <Gender>1</Gender>
+      <LanguageList>
+        <Language>
+          <Code>NZS01112</Code>
+          <Usage>SH</Usage>
+        </Language>
+      </LanguageList>
+      <EthnicityList>
+        <Ethnicity>
+          <Code>321</Code>
+        </Ethnicity>
+      </EthnicityList>
+    </Demographics>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>27 Arataua Street</Line1>
+        <Suburb>Rotorua</Suburb>
+        <City>Rotorua</City>
+        <Country>New Zealand</Country>
+        <PostalCode>3010<PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <SourceOrganisation>
+          <RefId>8001</RefId>
+        </SourceOrganisation>
+        <Address>tsaunders@mailinator.com<Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MAI</Type>
+        <Number>+64 7-943 8050</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentPersonal>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="StudentPersonalLocalId" value=""/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+        <con:entry>X-Edsby-OrganisationRefId</con:entry>
+        <con:entry>StudentPersonalRefId</con:entry>
+        <con:entry>StudentPersonalLocalId</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="patchStudentPersonal" id="9ad83b8a-cfa9-488b-861e-0d912d576691" method="PATCH">
+    <con:description>&lt;p>Update one or more fields of a single StudentPersonal record of a particular student's personal contact and demographic information within the scope of the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched object</con:description>
+      <con:sampleContent>{
+  "StudentPersonal" : {
+    "StudentPersonalLocalId" : "ST1000001",
+    "NationalStudentNumber" : 9001000001,
+    "FirstNZSchoolingDate" : "2015-03-07",
+    "EarlyChildhoodEducation" : {
+      "Type" : "EPG"
+    },
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Saunders",
+        "GivenName" : "Thomas",
+        "FullName" : "Thomas Saunders"
+      },
+      "Demographics" : {
+        "BirthDate" : "2010-03-07",
+        "Gender" : "1",
+        "LanguageList" : {
+          "Language" : [ {
+            "Code" : "NZS01112",
+            "Usage" : "SH"
+          } ]
+        },
+        "EthnicityList" : {
+          "Ethnicity" : [ {
+            "Code" : "321"
+          } ]
+        }
+      },
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "TH",
+          "Role" : "PHY",
+          "Line1" : "27 Arataua Street",
+          "Suburb" : "Rotorua",
+          "City" : "Rotorua",
+          "Country" : "New Zealand",
+          "PostalCode" : "3010"
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "SourceOrganisation" : {
+            "RefId" : "8001"
+          },
+          "Address" : "tsaunders@mailinator.com"
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Type" : "MAI",
+          "Number" : "+64 7-943 8050"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched object</con:description>
+      <con:sampleContent><![CDATA[<StudentPersonal>
+  <StudentPersonalLocalId>ST1000001
+  <NationalStudentNumber>9001000001</NationalStudentNumber>
+  <FirstNZSchoolingDate>2015-03-07</FirstNZSchoolingDate>
+  <EarlyChildhoodEducation>
+    <Type>EPG</Type>
+  </EarlyChildhoodEducation>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Saunders</FamilyName>
+      <GivenName>Thomas</GivenName>
+      <FullName>Thomas Saunders</FullName>
+    </Name>
+    <Demographics>
+      <BirthDate>2010-03-07</BirthDate>
+      <Gender>1</Gender>
+      <LanguageList>
+        <Language>
+          <Code>NZS01112</Code>
+          <Usage>SH</Usage>
+        </Language>
+      </LanguageList>
+      <EthnicityList>
+        <Ethnicity>
+          <Code>321</Code>
+        </Ethnicity>
+      </EthnicityList>
+    </Demographics>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>27 Arataua Street</Line1>
+        <Suburb>Rotorua</Suburb>
+        <City>Rotorua</City>
+        <Country>New Zealand</Country>
+        <PostalCode>3010<PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <SourceOrganisation>
+          <RefId>8001</RefId>
+        </SourceOrganisation>
+        <Address>tsaunders@mailinator.com<Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MAI</Type>
+        <Number>+64 7-943 8050</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StudentPersonal" : {
+    "StudentPersonalLocalId" : "ST1000001",
+    "NationalStudentNumber" : 9001000001,
+    "FirstNZSchoolingDate" : "2015-03-07",
+    "EarlyChildhoodEducation" : {
+      "Type" : "EPG"
+    },
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Saunders",
+        "GivenName" : "Thomas",
+        "FullName" : "Thomas Saunders"
+      },
+      "Demographics" : {
+        "BirthDate" : "2010-03-07",
+        "Gender" : "1",
+        "LanguageList" : {
+          "Language" : [ {
+            "Code" : "NZS01112",
+            "Usage" : "SH"
+          } ]
+        },
+        "EthnicityList" : {
+          "Ethnicity" : [ {
+            "Code" : "321"
+          } ]
+        }
+      },
+      "AddressList" : {
+        "Address" : [ {
+          "Type" : "TH",
+          "Role" : "PHY",
+          "Line1" : "27 Arataua Street",
+          "Suburb" : "Rotorua",
+          "City" : "Rotorua",
+          "Country" : "New Zealand",
+          "PostalCode" : "3010"
+        } ]
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "SourceOrganisation" : {
+            "RefId" : "8001"
+          },
+          "Address" : "tsaunders@mailinator.com"
+        } ]
+      },
+      "PhoneNumberList" : {
+        "PhoneNumber" : [ {
+          "Type" : "MAI",
+          "Number" : "+64 7-943 8050"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StudentPersonal>
+  <StudentPersonalLocalId>ST1000001
+  <NationalStudentNumber>9001000001</NationalStudentNumber>
+  <FirstNZSchoolingDate>2015-03-07</FirstNZSchoolingDate>
+  <EarlyChildhoodEducation>
+    <Type>EPG</Type>
+  </EarlyChildhoodEducation>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Saunders</FamilyName>
+      <GivenName>Thomas</GivenName>
+      <FullName>Thomas Saunders</FullName>
+    </Name>
+    <Demographics>
+      <BirthDate>2010-03-07</BirthDate>
+      <Gender>1</Gender>
+      <LanguageList>
+        <Language>
+          <Code>NZS01112</Code>
+          <Usage>SH</Usage>
+        </Language>
+      </LanguageList>
+      <EthnicityList>
+        <Ethnicity>
+          <Code>321</Code>
+        </Ethnicity>
+      </EthnicityList>
+    </Demographics>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>27 Arataua Street</Line1>
+        <Suburb>Rotorua</Suburb>
+        <City>Rotorua</City>
+        <Country>New Zealand</Country>
+        <PostalCode>3010<PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <SourceOrganisation>
+          <RefId>8001</RefId>
+        </SourceOrganisation>
+        <Address>tsaunders@mailinator.com<Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MAI</Type>
+        <Number>+64 7-943 8050</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401 404</con:status>
+      <con:params/>
+      <con:element xmlns:stud="https://mocksifapi.azurewebsites.net/sif/studentpersonal/">stud:Fault</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="b4922b4d-3206-4fd6-adbc-1a40df193169" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StudentPersonal" : {\r
+    "StudentPersonalLocalId" : "ST1000001",\r
+    "NationalStudentNumber" : 9001000001,\r
+    "FirstNZSchoolingDate" : "2015-03-07",\r
+    "EarlyChildhoodEducation" : {\r
+      "Type" : "EPG"\r
+    },\r
+    "PersonInfo" : {\r
+      "Name" : {\r
+        "FamilyName" : "Saunders",\r
+        "GivenName" : "Thomas",\r
+        "FullName" : "Thomas Saunders"\r
+      },\r
+      "Demographics" : {\r
+        "BirthDate" : "2010-03-07",\r
+        "Gender" : "1",\r
+        "LanguageList" : {\r
+          "Language" : [ {\r
+            "Code" : "NZS01112",\r
+            "Usage" : "SH"\r
+          } ]\r
+        },\r
+        "EthnicityList" : {\r
+          "Ethnicity" : [ {\r
+            "Code" : "321"\r
+          } ]\r
+        }\r
+      },\r
+      "AddressList" : {\r
+        "Address" : [ {\r
+          "Type" : "TH",\r
+          "Role" : "PHY",\r
+          "Line1" : "27 Arataua Street",\r
+          "Suburb" : "Rotorua",\r
+          "City" : "Rotorua",\r
+          "Country" : "New Zealand",\r
+          "PostalCode" : "3010"\r
+        } ]\r
+      },\r
+      "EmailList" : {\r
+        "Email" : [ {\r
+          "SourceOrganisation" : {\r
+            "RefId" : "8001"\r
+          },\r
+          "Address" : "tsaunders@mailinator.com"\r
+        } ]\r
+      },\r
+      "PhoneNumberList" : {\r
+        "PhoneNumber" : [ {\r
+          "Type" : "MAI",\r
+          "Number" : "+64 7-943 8050"\r
+        } ]\r
+      }\r
+    }\r
+  }\r
+}</con:request>
+      <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal/</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="StudentPersonalLocalId" value=""/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+        <con:entry>X-Edsby-OrganisationRefId</con:entry>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>StudentPersonalLocalId</con:entry>
+      </con:parameterOrder>
+    </con:request>
+    <con:request name="Request 2" id="7c883c31-75af-48d3-a356-50b1997cefbc" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StudentPersonal>
+  <StudentPersonalLocalId>ST1000001
+  <NationalStudentNumber>9001000001</NationalStudentNumber>
+  <FirstNZSchoolingDate>2015-03-07</FirstNZSchoolingDate>
+  <EarlyChildhoodEducation>
+    <Type>EPG</Type>
+  </EarlyChildhoodEducation>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Saunders</FamilyName>
+      <GivenName>Thomas</GivenName>
+      <FullName>Thomas Saunders</FullName>
+    </Name>
+    <Demographics>
+      <BirthDate>2010-03-07</BirthDate>
+      <Gender>1</Gender>
+      <LanguageList>
+        <Language>
+          <Code>NZS01112</Code>
+          <Usage>SH</Usage>
+        </Language>
+      </LanguageList>
+      <EthnicityList>
+        <Ethnicity>
+          <Code>321</Code>
+        </Ethnicity>
+      </EthnicityList>
+    </Demographics>
+    <AddressList>
+      <Address>
+        <Type>TH</Type>
+        <Role>PHY</Role>
+        <Line1>27 Arataua Street</Line1>
+        <Suburb>Rotorua</Suburb>
+        <City>Rotorua</City>
+        <Country>New Zealand</Country>
+        <PostalCode>3010<PostalCode>
+      </Address>
+    </AddressList>
+    <EmailList>
+      <Email>
+        <SourceOrganisation>
+          <RefId>8001</RefId>
+        </SourceOrganisation>
+        <Address>tsaunders@mailinator.com<Address>
+      </Email>
+    </EmailList>
+    <PhoneNumberList>
+      <PhoneNumber>
+        <Type>MAI</Type>
+        <Number>+64 7-943 8050</Number>
+      </PhoneNumber>
+    </PhoneNumberList>
+  </PersonInfo>
+</StudentPersonal>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="StudentPersonalLocalId" value=""/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+        <con:entry>X-Edsby-OrganisationRefId</con:entry>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>StudentPersonalLocalId</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

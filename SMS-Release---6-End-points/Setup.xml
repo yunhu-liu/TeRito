@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="cb903ccd-797d-4498-bf4f-82b9718dafaa" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Setup" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cb903ccd-797d-4498-bf4f-82b9718dafaafileName">Setup</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="jdbc" name="Data Clean up" id="73a09cd6-92d4-4c12-9c1e-6f326bf2f2b8">
+    <con:settings>
+      <con:setting id="prettyPrintResponse">true</con:setting>
+    </con:settings>
+    <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dbConnectionName>MockSIF</con:dbConnectionName>
+      <con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver>
+      <con:connectionString>jdbc:sqlserver://mocksifapidbserver.database.windows.net:1433;databaseName=mocksif;user=sifadmin;password=PASS_VALUE</con:connectionString>
+      <con:password>sifsandbox1!</con:password>
+      <con:connectionProperties/>
+      <con:query>delete from Apis</con:query>
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="jdbc" name="Load Sample Data" id="b3d70583-3818-40fd-a976-e5a646538bd0">
+    <con:settings>
+      <con:setting id="prettyPrintResponse">true</con:setting>
+    </con:settings>
+    <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dbConnectionName>MockSIF</con:dbConnectionName>
+      <con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver>
+      <con:connectionString>jdbc:sqlserver://mocksifapidbserver.database.windows.net:1433;databaseName=mocksif;user=sifadmin;password=PASS_VALUE</con:connectionString>
+      <con:password>sifsandbox1!</con:password>
+      <con:connectionProperties/>
+      <con:query>dbo.InsertSampleData</con:query>
+      <con:storedProcedure>true</con:storedProcedure>
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="POST_Single_ORG_REST Request" id="bbc0378e-2ce0-4c2b-919d-73f7de6d9d86">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/organisation" methodName="createOrganisations" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="POST_Single_ORG_REST Request" id="8bf0aefc-fafd-4ff8-bedd-c4efc58a9c5c" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request>{
+    "Organisations": {
+        "Organisation": [
+            {
+                "OrganisationRefId": "972",
+                "EducationRegion": "12010",
+                "SpecialEducationDistrict": "182006",
+                "Name": "Mr Patel Primary School",
+                "OperationalStatus": "28001",
+                "Type": "10023",
+                "SectorRole": "35003",
+                "ProviderSMS": "MUS",
+                "Authority": "STATE",
+                "AddressList": {
+                    "Address": [
+                        {
+                            "Type": "TH",
+                            "Role": "PHY",
+                            "Line1": "Elder Lane",
+                            "City": "Tauranga",
+                            "Country": "New Zealand",
+                            "PostalCode": "3143",
+                            "GridLocation": {
+                                "Latitude": -37.704974,
+                                "Longitude": 176.11123
+                            }
+                        }
+                    ]
+                },
+                "EmailList": {
+                    "Email": [
+                        {
+                            "Type": "WORK",
+                            "Address": "zp_principal@8005.school.nz"
+                        }
+                    ]
+                },
+                "PhoneNumberList": {
+                    "PhoneNumber": [
+                        {
+                            "Type": "MAI",
+                            "Number": "06 555 9766"
+                        }
+                    ]
+                },
+                "TeRitoConfig": {
+                    "DataAnalysisDashboardsInd": "Y",
+                    "StandardisedLearningSupportRegisterInd": "Y",
+                    "VirtualLearningEnvironmentInd": "N"
+                },
+                "SchoolService": {
+                    "CoEdStatus": "COED",
+                    "Decile": 2,
+                    "AllowManualProvisioning": "N",
+                    "SchoolClassificationList": {
+                        "Classification": [
+                            "52003"
+                        ]
+                    },
+                    "SchoolYearList": {
+                        "SchoolYear": [
+                            {
+                                "YearLevel": 1,
+                                "FIRSTSchoolYearGenderId": -80051,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 2,
+                                "FIRSTSchoolYearGenderId": -80052,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 3,
+                                "FIRSTSchoolYearGenderId": -80053,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 4,
+                                "FIRSTSchoolYearGenderId": -80054,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 5,
+                                "FIRSTSchoolYearGenderId": -80055,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 6,
+                                "FIRSTSchoolYearGenderId": -80056,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 7,
+                                "FIRSTSchoolYearGenderId": -80057,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 8,
+                                "FIRSTSchoolYearGenderId": -80058,
+                                "Gender": "55002"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}</con:request>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/organisation</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="43ba5421-f365-4345-bd77-550519effd0d" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Basic Auth - MockServer</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>73a09cd6-92d4-4c12-9c1e-6f326bf2f2b8</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>b3d70583-3818-40fd-a976-e5a646538bd0</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

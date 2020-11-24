@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/staffpersonal/{StaffPersonalRefId}" path="/staffpersonal/{StaffPersonalRefId}" id="bd3eb10d-b831-438a-affe-e6aac2dee7e1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bd3eb10d-b831-438a-affe-e6aac2dee7e1fileName">%2Fstaffpersonal%2F%7BStaffPersonalRefId%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getStaffPersonal" id="4931571f-3789-43fa-81b6-e43954651e0c" method="GET">
+    <con:description>Retrieve a single record of the personal contact and demographic information relating to a single staff member, who might be a teacher or other employee of the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return only specified fields	`fields=name,nid`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>page</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Return nth page of results; default 0	`page=2`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>max</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Maximum items per page, default 10,000; `max=100`; applies to any call with repeated data</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>unwrap</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Remove top level wrapper from json results in single result reponses;	`unwrap=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>human</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>For code set fields, translate code to human readable form;	`human=1`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sort</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sort results by specified field;	`sort=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>field</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Field to filter on when used with **pattern**;	`field=FamilyName`</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pattern</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Filter results using pattern on **field**; `pattern=We*`</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StaffPersonalRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>&lt;p>Unique identifier (GUID) that uniquely identifies the particular StaffPersonal record of the personal contact and demographic information relating to a single  staff member, who might be a teacher or other employee of a Provider.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "StaffPersonal" : {
+    "StaffPersonalRefId" : "d3e34f41-9d75-101a-8c3d-00aa001a1652",
+    "StaffPersonalLocalId" : "ST-001",
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Smith",
+        "GivenName" : "Fred",
+        "FullName" : "Fred Smith",
+        "IsVerified" : "N"
+      },
+      "Demographics" : {
+        "BirthDate" : "1966-05-01"
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "freddy@mailinator.com"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<StaffPersonal>
+  <StaffPersonalRefId>d3e34f41-9d75-101a-8c3d-00aa001a1652</StaffPersonalRefId>
+  <StaffPersonalLocalId>ST-001</StaffPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Smith</FamilyName>
+      <GivenName>Fred</GivenName>
+      <FullName>Fred Smith</FullName>
+      <IsVerified>N</IsVerified>
+    </Name>
+    <Demographics>
+      <BirthDate>1966-05-01</BirthDate>
+    </Demographics>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>freddy@gmail.com</Address>
+      </Email>
+    </EmailList>
+  </PersonInfo>
+</StaffPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="0729e505-7706-42db-ba88-52cd175a6736" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://mocksifapi.azurewebsites.net/sif/staffpersonal/fcbcfa9d-8dfa-4c1a-897a-fe5f6875719c</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="StaffPersonalRefId" value="fcbcfa9d-8dfa-4c1a-897a-fe5f6875719c"/>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+  <con:method name="updateStaffPersonal" id="d9e546ce-693c-40b3-b52a-f6766dce3e29" method="PUT">
+    <con:description>Update a single record of the personal contact and demographic information relating to a single staff member, who might be a teacher or other employee of the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StaffPersonalRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>&lt;p>Unique identifier (GUID) that uniquely identifies the particular StaffPersonal record of the personal contact and demographic information relating to a single  staff member, who might be a teacher or other employee of a Provider.&lt;/p></con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated object</con:description>
+      <con:sampleContent>{
+  "StaffPersonal" : {
+    "StaffPersonalRefId" : "d3e34f41-9d75-101a-8c3d-00aa001a1652",
+    "StaffPersonalLocalId" : "ST-001",
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Smith",
+        "GivenName" : "Fred",
+        "FullName" : "Fred Smith",
+        "IsVerified" : "N"
+      },
+      "Demographics" : {
+        "BirthDate" : "1966-05-01"
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "freddy@mailinator.com"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Update successful; returns updated object</con:description>
+      <con:sampleContent><![CDATA[<StaffPersonal>
+  <StaffPersonalRefId>d3e34f41-9d75-101a-8c3d-00aa001a1652</StaffPersonalRefId>
+  <StaffPersonalLocalId>ST-001</StaffPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Smith</FamilyName>
+      <GivenName>Fred</GivenName>
+      <FullName>Fred Smith</FullName>
+      <IsVerified>N</IsVerified>
+    </Name>
+    <Demographics>
+      <BirthDate>1966-05-01</BirthDate>
+    </Demographics>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>freddy@gmail.com</Address>
+      </Email>
+    </EmailList>
+  </PersonInfo>
+</StaffPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StaffPersonal" : {
+    "StaffPersonalRefId" : "d3e34f41-9d75-101a-8c3d-00aa001a1652",
+    "StaffPersonalLocalId" : "ST-001",
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Smith",
+        "GivenName" : "Fred",
+        "FullName" : "Fred Smith",
+        "IsVerified" : "N"
+      },
+      "Demographics" : {
+        "BirthDate" : "1966-05-01"
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "freddy@mailinator.com"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StaffPersonal>
+  <StaffPersonalRefId>d3e34f41-9d75-101a-8c3d-00aa001a1652</StaffPersonalRefId>
+  <StaffPersonalLocalId>ST-001</StaffPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Smith</FamilyName>
+      <GivenName>Fred</GivenName>
+      <FullName>Fred Smith</FullName>
+      <IsVerified>N</IsVerified>
+    </Name>
+    <Demographics>
+      <BirthDate>1966-05-01</BirthDate>
+    </Demographics>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>freddy@gmail.com</Address>
+      </Email>
+    </EmailList>
+  </PersonInfo>
+</StaffPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="293d55db-b789-4000-a644-f2d3c2d587d5" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{
+  "StaffPersonalRefId": "fcbcfa9d-8dfa-4c1a-897a-fe5f6875719c",
+  "StaffPersonalLocalId": "T98001",
+  "PersonInfo": {
+    "Name": {
+      "FamilyName": "Smyth",
+      "GivenName": "Riley",
+      "IsVerified": 0
+    },
+    "Demographics": {
+      "BirthDate": "1950-11-10T00:00:00"
+    },
+    "EmailList": {
+      "Email": [
+        {
+          "Type": 0,
+          "Address": "rileys@mailinator.com"
+        }
+      ]
+    }
+  },
+  "RecordAudit": {
+    "CreatedDateTime": "2020-10-21T15:57:01.4765161+13:00"
+  }
+}</con:request>
+      <con:originalUri>https://mocksifapi.azurewebsites.net/sif/staffpersonal/fcbcfa9d-8dfa-4c1a-897a-fe5f6875719c</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>Basic Auth - MockServer</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="StaffPersonalRefId" value="fcbcfa9d-8dfa-4c1a-897a-fe5f6875719c"/>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
+      </con:parameters>
+    </con:request>
+    <con:request name="Request 2" id="f4d8b114-9ae0-4fd5-8c15-d8509967c1d1" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StaffPersonal>
+  <StaffPersonalRefId>d3e34f41-9d75-101a-8c3d-00aa001a1652</StaffPersonalRefId>
+  <StaffPersonalLocalId>ST-001</StaffPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Smith</FamilyName>
+      <GivenName>Fred</GivenName>
+      <FullName>Fred Smith</FullName>
+      <IsVerified>N</IsVerified>
+    </Name>
+    <Demographics>
+      <BirthDate>1966-05-01</BirthDate>
+    </Demographics>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>freddy@gmail.com</Address>
+      </Email>
+    </EmailList>
+  </PersonInfo>
+</StaffPersonal>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="patchStaffPersonal" id="14476f3e-8ce3-4a2b-9c16-a07bd67e2eaa" method="PATCH">
+    <con:description>Update one or more fields of asingle record of the personal contact and demographic information relating to a single staff member, who might be a teacher or other employee of the given Provider.&lt;/p></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Accept</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Standard HTTP accept header, choose between JSON and XML for response. Defaults to XML if this header is missing.</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>X-Edsby-OrganisationRefId</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>&lt;p>The Ministry of Education Organisation Id of the Provider(or other Organisation); used to limit the scope of the API endpoint to a particular MoE Organisation.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>StaffPersonalRefId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>&lt;p>Unique identifier (GUID) that uniquely identifies the particular StaffPersonal record of the personal contact and demographic information relating to a single  staff member, who might be a teacher or other employee of a Provider.&lt;/p></con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Filename</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched object</con:description>
+      <con:sampleContent>{
+  "StaffPersonal" : {
+    "StaffPersonalRefId" : "d3e34f41-9d75-101a-8c3d-00aa001a1652",
+    "StaffPersonalLocalId" : "ST-001",
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Smith",
+        "GivenName" : "Fred",
+        "FullName" : "Fred Smith",
+        "IsVerified" : "N"
+      },
+      "Demographics" : {
+        "BirthDate" : "1966-05-01"
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "freddy@mailinator.com"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Patch successful; returns patched object</con:description>
+      <con:sampleContent><![CDATA[<StaffPersonal>
+  <StaffPersonalRefId>d3e34f41-9d75-101a-8c3d-00aa001a1652</StaffPersonalRefId>
+  <StaffPersonalLocalId>ST-001</StaffPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Smith</FamilyName>
+      <GivenName>Fred</GivenName>
+      <FullName>Fred Smith</FullName>
+      <IsVerified>N</IsVerified>
+    </Name>
+    <Demographics>
+      <BirthDate>1966-05-01</BirthDate>
+    </Demographics>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>freddy@gmail.com</Address>
+      </Email>
+    </EmailList>
+  </PersonInfo>
+</StaffPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Request didn't have Bearer token</con:description>
+      <con:sampleContent>{
+  "error" : 401,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unauthorised request: Bearer token missing??"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Request didn't have Accept header</con:description>
+      <con:sampleContent>{
+  "error" : 422,
+  "when" : "2020-07-16T20:00:46.000Z",
+  "errorstr" : "Unprocessable request: Accept or X-Edsby-OrganisationRefId header missing?? Request body invalid??  Check sl-violations header in response"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "StaffPersonal" : {
+    "StaffPersonalRefId" : "d3e34f41-9d75-101a-8c3d-00aa001a1652",
+    "StaffPersonalLocalId" : "ST-001",
+    "PersonInfo" : {
+      "Name" : {
+        "FamilyName" : "Smith",
+        "GivenName" : "Fred",
+        "FullName" : "Fred Smith",
+        "IsVerified" : "N"
+      },
+      "Demographics" : {
+        "BirthDate" : "1966-05-01"
+      },
+      "EmailList" : {
+        "Email" : [ {
+          "Type" : "PRIM",
+          "Address" : "freddy@mailinator.com"
+        } ]
+      }
+    }
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<StaffPersonal>
+  <StaffPersonalRefId>d3e34f41-9d75-101a-8c3d-00aa001a1652</StaffPersonalRefId>
+  <StaffPersonalLocalId>ST-001</StaffPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Smith</FamilyName>
+      <GivenName>Fred</GivenName>
+      <FullName>Fred Smith</FullName>
+      <IsVerified>N</IsVerified>
+    </Name>
+    <Demographics>
+      <BirthDate>1966-05-01</BirthDate>
+    </Demographics>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>freddy@gmail.com</Address>
+      </Email>
+    </EmailList>
+  </PersonInfo>
+</StaffPersonal>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="f6045870-5b98-47e3-89ff-2898a9aef47d" mediaType="application/json" postQueryString="false">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request>{\r
+  "StaffPersonal" : {\r
+    "StaffPersonalRefId" : "d3e34f41-9d75-101a-8c3d-00aa001a1652",\r
+    "StaffPersonalLocalId" : "ST-001",\r
+    "PersonInfo" : {\r
+      "Name" : {\r
+        "FamilyName" : "Smith",\r
+        "GivenName" : "Fred",\r
+        "FullName" : "Fred Smith",\r
+        "IsVerified" : "N"\r
+      },\r
+      "Demographics" : {\r
+        "BirthDate" : "1966-05-01"\r
+      },\r
+      "EmailList" : {\r
+        "Email" : [ {\r
+          "Type" : "PRIM",\r
+          "Address" : "freddy@mailinator.com"\r
+        } ]\r
+      }\r
+    }\r
+  }\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+        <con:entry>X-Edsby-OrganisationRefId</con:entry>
+        <con:entry>StaffPersonalRefId</con:entry>
+        <con:entry>Filename</con:entry>
+      </con:parameterOrder>
+    </con:request>
+    <con:request name="Request 2" id="c786fbb5-d933-4a65-a43f-2c2b70d9cd8b" mediaType="application/xml" postQueryString="false">
+      <con:settings/>
+      <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request><![CDATA[<StaffPersonal>
+  <StaffPersonalRefId>d3e34f41-9d75-101a-8c3d-00aa001a1652</StaffPersonalRefId>
+  <StaffPersonalLocalId>ST-001</StaffPersonalLocalId>
+  <PersonInfo>
+    <Name>
+      <FamilyName>Smith</FamilyName>
+      <GivenName>Fred</GivenName>
+      <FullName>Fred Smith</FullName>
+      <IsVerified>N</IsVerified>
+    </Name>
+    <Demographics>
+      <BirthDate>1966-05-01</BirthDate>
+    </Demographics>
+    <EmailList>
+      <Email>
+        <Type>PRIM</Type>
+        <Address>freddy@gmail.com</Address>
+      </Email>
+    </EmailList>
+  </PersonInfo>
+</StaffPersonal>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+        <con:entry>X-Edsby-OrganisationRefId</con:entry>
+        <con:entry>StaffPersonalRefId</con:entry>
+        <con:entry>Filename</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>
