@@ -4,7 +4,7 @@
     <con:setting id="928c7332-047a-459a-9bb2-246c382508f5fileName">StudentPersonal</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
-  <con:testStep type="datasource" name="DataSource - Random OrganisationRefId" id="c3b7a3c7-f5b9-4a95-813a-fe1f1853195b">
+  <con:testStep type="datasource" name="DataSource - Random OrgRefId" id="c3b7a3c7-f5b9-4a95-813a-fe1f1853195b">
     <con:settings>
       <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
     </con:settings>
@@ -12,7 +12,7 @@
       <con:dataSource type="Data Connection">
         <con:configuration>
           <Connection>MockSIF( Default environment )</Connection>
-          <query>SELECT TOP 1 OrganisationRefId FROM (SELECT DISTINCT OrganisationRefId FROM Apis) t
+          <query>SELECT TOP 1 OrganisationRefId AS OrgRefId FROM (SELECT DISTINCT OrganisationRefId FROM Apis) t
 ORDER BY NEWID()</query>
           <fetchSize/>
           <stored-procedure>false</stored-procedure>
@@ -20,7 +20,7 @@ ORDER BY NEWID()</query>
       </con:dataSource>
       <con:shared>true</con:shared>
       <con:restartShared>true</con:restartShared>
-      <con:property>OrganisationRefId</con:property>
+      <con:property>OrgRefId</con:property>
       <con:startRow/>
       <con:endRow/>
       <con:recordsPerIteration>1</con:recordsPerIteration>
@@ -29,6 +29,90 @@ ORDER BY NEWID()</query>
       <con:entitizeValues>false</con:entitizeValues>
       <con:restartOnRun>true</con:restartOnRun>
       <con:expandProperties>false</con:expandProperties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasource" name="DataSource - Random Invalid OrgRefId" id="ab0e2f01-cfc7-4365-a1f9-b634d75bb029">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>1</generatedDataCount>
+          <generatorsTotalNumber>1</generatorsTotalNumber>
+          <lastSelectedProperty>0</lastSelectedProperty>
+          <GeneratorType0>INT</GeneratorType0>
+          <PropertyName0>InvalidOrgId</PropertyName0>
+          <repetitionCountInvalidOrgId>0</repetitionCountInvalidOrgId>
+          <repeatValuesInvalidOrgId>false</repeatValuesInvalidOrgId>
+          <IntegerDataGeneratorMinValueInvalidOrgId>1000</IntegerDataGeneratorMinValueInvalidOrgId>
+          <IntegerDataGeneratorMaxValueInvalidOrgId>8000</IntegerDataGeneratorMaxValueInvalidOrgId>
+          <IntegerDataGeneratorStepValueInvalidOrgId>1</IntegerDataGeneratorStepValueInvalidOrgId>
+          <IntegerDataGeneratorConsequentValuesInvalidOrgId>false</IntegerDataGeneratorConsequentValuesInvalidOrgId>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>InvalidOrgId</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasource" name="DataSource - Random Student Local Id" id="6d63d18c-77cf-44e2-bdb6-cc759d7d1e08">
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
+    </con:settings>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>1</generatedDataCount>
+          <generatorsTotalNumber>1</generatorsTotalNumber>
+          <lastSelectedProperty>1</lastSelectedProperty>
+          <GeneratorType0>INT</GeneratorType0>
+          <PropertyName0>StudentLocalId</PropertyName0>
+          <repetitionCountStudentLocalId>0</repetitionCountStudentLocalId>
+          <repeatValuesStudentLocalId>false</repeatValuesStudentLocalId>
+          <IntegerDataGeneratorMinValueStudentLocalId>1000</IntegerDataGeneratorMinValueStudentLocalId>
+          <IntegerDataGeneratorMaxValueStudentLocalId>9999</IntegerDataGeneratorMaxValueStudentLocalId>
+          <IntegerDataGeneratorStepValueStudentLocalId>1</IntegerDataGeneratorStepValueStudentLocalId>
+          <IntegerDataGeneratorConsequentValuesStudentLocalId>false</IntegerDataGeneratorConsequentValuesStudentLocalId>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>StudentLocalId</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="transfer" name="Property Transfer" id="a66839f5-e4b2-49bd-b4c5-1a7e5a1a683e">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>SaveOrgRefId</con:name>
+        <con:sourceType>OrgRefId</con:sourceType>
+        <con:sourceStep>DataSource - Random OrgRefId</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>OrgRefId</con:targetType>
+        <con:targetStep>#TestCase#</con:targetStep>
+        <con:targetPath/>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>SaveInvalidOrgRefId</con:name>
+        <con:sourceType>InvalidOrgId</con:sourceType>
+        <con:sourceStep>DataSource - Random Invalid OrgRefId</con:sourceStep>
+        <con:targetType>InvalidOrgRefId</con:targetType>
+        <con:targetStep>#TestCase#</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>SaveStudentLocalId</con:name>
+        <con:sourceType>StudentLocalId</con:sourceType>
+        <con:sourceStep>DataSource - Random Student Local Id</con:sourceStep>
+        <con:targetType>StudentLocalId</con:targetType>
+        <con:targetStep>#TestCase#</con:targetStep>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
     </con:config>
   </con:testStep>
   <con:testStep type="restrequest" name="/studentpersonal GET Request 1_Valid" id="56097faa-e75d-45c3-94b7-7c101f1bfc12">
@@ -54,7 +138,7 @@ ORDER BY NEWID()</query>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
-          <con:entry key="X-Edsby-OrganisationRefId" value="${DataSource - Random OrganisationRefId#OrganisationRefId}"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${#TestCase#OrgRefId}"/>
         </con:parameters>
       </con:restRequest>
     </con:config>
@@ -171,27 +255,9 @@ ORDER BY NEWID()</query>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
-          <con:entry key="X-Edsby-OrganisationRefId" value="2020"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${#TestCase#InvalidOrgRefId}"/>
         </con:parameters>
       </con:restRequest>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="datagen" name="DataGen" id="205e4437-5306-4aee-8e46-bba663b6529f">
-    <con:settings/>
-    <con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:property type="Number">
-        <con:configuration>
-          <start>01</start>
-          <end/>
-          <step/>
-          <pattern>01</pattern>
-          <random>true</random>
-          <persist>false</persist>
-        </con:configuration>
-        <con:name>Value</con:name>
-        <con:mode>STEP</con:mode>
-        <con:shared>false</con:shared>
-      </con:property>
     </con:config>
   </con:testStep>
   <con:testStep type="restrequest" name="/studentpersonal POST Request 1_Valid_Single" id="a1e8100a-202a-408d-9a6b-b55e9741530f">
@@ -203,68 +269,80 @@ ORDER BY NEWID()</query>
         </con:settings>
         <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
         <con:request>{\r
-  "StudentPersonals" : {\r
-    "StudentPersonal" : [ {\r
-      "StudentPersonalLocalId" : "ST1000001_zzz${DataGen#Value}",\r
-      "NationalStudentNumber" : 9001000001,\r
-      "FirstNZSchoolingDate" : "2015-03-07",\r
-      "EarlyChildhoodEducation" : {\r
-        "Type" : "EPG"\r
-      },\r
-      "PersonInfo" : {\r
-        "Name" : {\r
-          "FamilyName" : "Saunders",\r
-          "GivenName" : "Thomas",\r
-          "FullName" : "Thomas Saunders"\r
-        },\r
-        "Demographics" : {\r
-          "BirthDate" : "2010-03-07",\r
-          "Gender" : "1",\r
-          "LanguageList" : {\r
-            "Language" : [ {\r
-              "Code" : "NZS01112",\r
-              "Usage" : "SH"\r
-            } ]\r
-          },\r
-          "EthnicityList" : {\r
-            "Ethnicity" : [ {\r
-              "Code" : "321"\r
-            } ]\r
-          }\r
-        },\r
-        "AddressList" : {\r
-          "Address" : [ {\r
-            "Type" : "TH",\r
-            "Role" : "PHY",\r
-            "Line1" : "27 Arataua Street",\r
-            "Suburb" : "Rotorua",\r
-            "City" : "Rotorua",\r
-            "Country" : "New Zealand",\r
-            "PostalCode" : "3010"\r
-          } ]\r
-        },\r
-        "EmailList" : {\r
-          "Email" : [ {\r
-            "SourceOrganisation" : {\r
-              "RefId" : "8005"\r
+   "StudentPersonals" : {\r
+      "StudentPersonal" : [\r
+         {\r
+            "StudentPersonalLocalId" : "ST1000001_${#TestCase#StudentLocalId}",\r
+            "NationalStudentNumber" : 9001000001,\r
+            "FirstNZSchoolingDate" : "2015-03-07",\r
+            "EarlyChildhoodEducation" : {\r
+               "Type" : "EPG"\r
             },\r
-            "Address" : "tsaunders@mailinator.com"\r
-          } ]\r
-        },\r
-        "PhoneNumberList" : {\r
-          "PhoneNumber" : [ {\r
-            "Type" : "MAI",\r
-            "Number" : "+64 7-943 8050"\r
-          } ]\r
-        }\r
-      },\r
-      "StudentProviderEnrolment" : {\r
-        "EntryDate" : "2020-01-29",\r
-        "YearLevel" : 6,\r
-        "FundingYearLevel" : 7\r
-      }\r
-    } ]\r
-  }\r
+            "PersonInfo" : {\r
+               "Name" : {\r
+                  "FamilyName" : "Saunders",\r
+                  "GivenName" : "Thomas",\r
+                  "FullName" : "Thomas Saunders"\r
+               },\r
+               "Demographics" : {\r
+                  "BirthDate" : "2010-03-07",\r
+                  "Gender" : "1",\r
+                  "LanguageList" : {\r
+                     "Language" : [\r
+                        {\r
+                           "Code" : "NZS01112",\r
+                           "Usage" : "SH"\r
+                        }\r
+                     ]\r
+                  },\r
+                  "EthnicityList" : {\r
+                     "Ethnicity" : [\r
+                        {\r
+                           "Code" : "321"\r
+                        }\r
+                     ]\r
+                  }\r
+               },\r
+               "AddressList" : {\r
+                  "Address" : [\r
+                     {\r
+                        "Type" : "TH",\r
+                        "Role" : "PHY",\r
+                        "Line1" : "27 Arataua Street",\r
+                        "Suburb" : "Rotorua",\r
+                        "City" : "Rotorua",\r
+                        "Country" : "New Zealand",\r
+                        "PostalCode" : "3010"\r
+                     }\r
+                  ]\r
+               },\r
+               "EmailList" : {\r
+                  "Email" : [\r
+                     {\r
+                        "SourceOrganisation" : {\r
+                           "RefId" : "${#TestCase#OrgRefId}"\r
+                        },\r
+                        "Address" : "tsaunders@mailinator.com"\r
+                     }\r
+                  ]\r
+               },\r
+               "PhoneNumberList" : {\r
+                  "PhoneNumber" : [\r
+                     {\r
+                        "Type" : "MAI",\r
+                        "Number" : "+64 7-943 8050"\r
+                     }\r
+                  ]\r
+               }\r
+            },\r
+            "StudentProviderEnrolment" : {\r
+               "EntryDate" : "2020-01-29",\r
+               "YearLevel" : 6,\r
+               "FundingYearLevel" : 7\r
+            }\r
+         }\r
+      ]\r
+   }\r
 }</con:request>
         <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="854df1e0-8a6a-4c6d-a8c6-fc19934d6931" name="Valid HTTP Status Codes">
@@ -693,9 +771,25 @@ ORDER BY NEWID()</query>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
-          <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${#TestCase#OrgRefId}"/>
         </con:parameters>
       </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="transfer" name="PropertyTransfer" id="6cc8cf78-5c21-45aa-a2db-a1c898f34947">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>StudentPersonalRefId</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
+        <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['StudentPersonalRefId']</con:sourcePath>
+        <con:targetType>StudentRefId</con:targetType>
+        <con:targetStep>#TestCase#</con:targetStep>
+        <con:targetPath/>
+        <con:type>JSONPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
     </con:config>
   </con:testStep>
   <con:testStep type="restrequest" name="/studentpersonal POST Request 1_Valid_Single_MandatoryDataMissing" id="179f199c-9c8f-4034-bdea-54765a62296c" disabled="true">
@@ -1200,12 +1294,6 @@ ORDER BY NEWID()</query>
           <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
         </con:parameters>
       </con:restRequest>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="delay" name="Delay" id="fb49a13d-d4c7-4730-8d64-97f5089b426f">
-    <con:settings/>
-    <con:config>
-      <delay>5000</delay>
     </con:config>
   </con:testStep>
   <con:testStep type="restrequest" name="/studentpersonal POST Request 1_Valid_Multi" id="3f0c2775-131a-4113-9889-53f0599b65ee">
@@ -40738,7 +40826,24 @@ ORDER BY NEWID()</query>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:properties/>
+  <con:properties>
+    <con:property>
+      <con:name>OrgRefId</con:name>
+      <con:value>8007</con:value>
+    </con:property>
+    <con:property>
+      <con:name>InvalidOrgRefId</con:name>
+      <con:value>2484</con:value>
+    </con:property>
+    <con:property>
+      <con:name>StudentLocalId</con:name>
+      <con:value>3013</con:value>
+    </con:property>
+    <con:property>
+      <con:name>StudentRefId</con:name>
+      <con:value>f1ea4cb1-b1f0-4bc9-8a7a-f3266da1bbe9</con:value>
+    </con:property>
+  </con:properties>
   <con:reportParameters/>
   <con:breakPoints>
     <con:testStepId>8ef87231-9dcc-4846-9b97-8f5f50bd12b1</con:testStepId>
@@ -40782,7 +40887,7 @@ ORDER BY NEWID()</query>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>2084d27a-e865-4001-a46b-6533d6b9cf4c</con:testStepId>
-    <con:status>NONE</con:status>
+    <con:status>ENABLED</con:status>
     <con:properties/>
   </con:breakPoints>
   <con:breakPoints>
@@ -40817,7 +40922,7 @@ ORDER BY NEWID()</query>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>179f199c-9c8f-4034-bdea-54765a62296c</con:testStepId>
-    <con:status>NONE</con:status>
+    <con:status>ENABLED</con:status>
     <con:properties/>
   </con:breakPoints>
   <con:breakPoints>
@@ -40831,17 +40936,7 @@ ORDER BY NEWID()</query>
     <con:properties/>
   </con:breakPoints>
   <con:breakPoints>
-    <con:testStepId>205e4437-5306-4aee-8e46-bba663b6529f</con:testStepId>
-    <con:status>NONE</con:status>
-    <con:properties/>
-  </con:breakPoints>
-  <con:breakPoints>
     <con:testStepId>a1e8100a-202a-408d-9a6b-b55e9741530f</con:testStepId>
-    <con:status>NONE</con:status>
-    <con:properties/>
-  </con:breakPoints>
-  <con:breakPoints>
-    <con:testStepId>fb49a13d-d4c7-4730-8d64-97f5089b426f</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
@@ -40882,6 +40977,26 @@ ORDER BY NEWID()</query>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>bf9cf611-a6bd-423a-aa6c-e276036446bd</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>6d63d18c-77cf-44e2-bdb6-cc759d7d1e08</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>6cc8cf78-5c21-45aa-a2db-a1c898f34947</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>a66839f5-e4b2-49bd-b4c5-1a7e5a1a683e</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>ab0e2f01-cfc7-4365-a1f9-b634d75bb029</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>

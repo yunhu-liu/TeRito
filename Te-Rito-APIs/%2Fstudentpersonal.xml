@@ -533,7 +533,7 @@
   </StudentPersonal>
 </StudentPersonals>]]></con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="33c88154-0043-4c50-9f03-8a295f2f60d1" mediaType="application/json">
+    <con:request name="Request 1" id="33c88154-0043-4c50-9f03-8a295f2f60d1" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request>{\r
@@ -604,6 +604,7 @@
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
     <con:request name="Request 2" id="93609899-b131-42b4-9c39-de3940b95293" mediaType="application/xml">
