@@ -4,6 +4,12 @@
     <con:setting id="928c7332-047a-459a-9bb2-246c382508f5fileName">StudentPersonal</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="properties" name="Properties" id="432540d4-7ded-4115-b4f7-c64f0c8b0ca9">
+    <con:settings/>
+    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties></con:properties>
+    </con:config>
+  </con:testStep>
   <con:testStep type="datasource" name="DataSource - Random OrgRefId" id="c3b7a3c7-f5b9-4a95-813a-fe1f1853195b">
     <con:settings>
       <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
@@ -84,7 +90,7 @@ ORDER BY NEWID()</query>
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
-  <con:testStep type="transfer" name="Property Transfer" id="a66839f5-e4b2-49bd-b4c5-1a7e5a1a683e">
+  <con:testStep type="transfer" name="Property Transfer1" id="a66839f5-e4b2-49bd-b4c5-1a7e5a1a683e">
     <con:settings/>
     <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
@@ -776,7 +782,7 @@ ORDER BY NEWID()</query>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="transfer" name="PropertyTransfer" id="6cc8cf78-5c21-45aa-a2db-a1c898f34947">
+  <con:testStep type="transfer" name="Property Transfer2" id="6cc8cf78-5c21-45aa-a2db-a1c898f34947">
     <con:settings/>
     <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
@@ -787,6 +793,57 @@ ORDER BY NEWID()</query>
         <con:targetType>StudentRefId</con:targetType>
         <con:targetStep>#TestCase#</con:targetStep>
         <con:targetPath/>
+        <con:type>JSONPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>NationalStudentNumber</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
+        <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['NationalStudentNumber']</con:sourcePath>
+        <con:targetType>NationalStudentNumber</con:targetType>
+        <con:targetStep>#TestCase#</con:targetStep>
+        <con:targetPath/>
+        <con:type>JSONPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>FamilyName</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
+        <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['PersonInfo']['Name']['FamilyName']</con:sourcePath>
+        <con:targetType>FamilyName</con:targetType>
+        <con:targetStep>#TestCase#</con:targetStep>
+        <con:type>JSONPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>GivenName</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
+        <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['PersonInfo']['Name']['GivenName']</con:sourcePath>
+        <con:targetType>GivenName</con:targetType>
+        <con:targetStep>#TestCase#</con:targetStep>
+        <con:type>JSONPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>EmailRefId</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
+        <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['PersonInfo']['EmailList']['Email'][0]['SourceOrganisation']['RefId']</con:sourcePath>
+        <con:targetType>EmailRefId</con:targetType>
+        <con:targetStep>#TestCase#</con:targetStep>
+        <con:type>JSONPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>EmailAddress</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
+        <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['PersonInfo']['EmailList']['Email'][0]['Address']</con:sourcePath>
+        <con:targetType>EmailAddress</con:targetType>
+        <con:targetStep>#TestCase#</con:targetStep>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
@@ -36751,7 +36808,7 @@ ORDER BY NEWID()</query>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
-          <con:entry key="X-Edsby-OrganisationRefId" value="2000"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${#TestCase#InvalidOrgRefId}"/>
         </con:parameters>
       </con:restRequest>
     </con:config>
@@ -38868,7 +38925,7 @@ ORDER BY NEWID()</query>
               <con:type xsi:nil="true"/>
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
-              <con:expectedValue>9005000480</con:expectedValue>
+              <con:expectedValue>${#TestCase#NationalStudentNumber}</con:expectedValue>
               <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
@@ -38879,7 +38936,7 @@ ORDER BY NEWID()</query>
               <con:type xsi:nil="true"/>
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
-              <con:expectedValue>zz_Galvan_zz</con:expectedValue>
+              <con:expectedValue>${#TestCase#FamilyName}</con:expectedValue>
               <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
@@ -38890,7 +38947,7 @@ ORDER BY NEWID()</query>
               <con:type xsi:nil="true"/>
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
-              <con:expectedValue>zz_Grace_zz</con:expectedValue>
+              <con:expectedValue>${#TestCase#GivenName}</con:expectedValue>
               <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
@@ -38901,7 +38958,7 @@ ORDER BY NEWID()</query>
               <con:type xsi:nil="true"/>
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
-              <con:expectedValue>8005</con:expectedValue>
+              <con:expectedValue>${#TestCase#EmailRefId}</con:expectedValue>
               <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
@@ -38912,7 +38969,7 @@ ORDER BY NEWID()</query>
               <con:type xsi:nil="true"/>
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
-              <con:expectedValue>zzz_ggalvan@mailinator.comcomcomcom</con:expectedValue>
+              <con:expectedValue>zzz_ggalvan@${#TestCase#EmailAddress}</con:expectedValue>
               <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
@@ -38993,6 +39050,15 @@ ORDER BY NEWID()</query>
 </Response>]]></con:originalMessage>
           </con:configuration>
         </con:assertion>
+        <con:assertion type="JsonPath Match" id="6e9af812-08d5-4479-bcec-8efe4e20bfae" name="Match content of [NationalStudentNumber]">
+          <con:configuration>
+            <path>$['StudentPersonal']['NationalStudentNumber']</path>
+            <content>${#TestCase#NationalStudentNumber}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
         <con:credentials>
           <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
@@ -39000,8 +39066,8 @@ ORDER BY NEWID()</query>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
-          <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
-          <con:entry key="StudentPersonalRefId" value="9e9c3c75-ec1c-42c0-86d1-e04f34db8fcc"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${#TestCase#OrgRefId}"/>
+          <con:entry key="StudentPersonalRefId" value="${#TestCase#StudentRefId}"/>
         </con:parameters>
       </con:restRequest>
     </con:config>
@@ -40829,19 +40895,43 @@ ORDER BY NEWID()</query>
   <con:properties>
     <con:property>
       <con:name>OrgRefId</con:name>
-      <con:value>8007</con:value>
+      <con:value>90902</con:value>
     </con:property>
     <con:property>
       <con:name>InvalidOrgRefId</con:name>
-      <con:value>2484</con:value>
+      <con:value>1809</con:value>
     </con:property>
     <con:property>
       <con:name>StudentLocalId</con:name>
-      <con:value>3013</con:value>
+      <con:value>9185</con:value>
     </con:property>
     <con:property>
       <con:name>StudentRefId</con:name>
-      <con:value>f1ea4cb1-b1f0-4bc9-8a7a-f3266da1bbe9</con:value>
+      <con:value>1fa3b157-324c-417e-b2ce-c691262b4f18</con:value>
+    </con:property>
+    <con:property>
+      <con:name>NationalStudentNumber</con:name>
+      <con:value>9001000001</con:value>
+    </con:property>
+    <con:property>
+      <con:name>FamilyName</con:name>
+      <con:value>Saunders</con:value>
+    </con:property>
+    <con:property>
+      <con:name>GivenName</con:name>
+      <con:value>Thomas</con:value>
+    </con:property>
+    <con:property>
+      <con:name>EmailOrgId</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>EmailRefId</con:name>
+      <con:value>90902</con:value>
+    </con:property>
+    <con:property>
+      <con:name>EmailAddress</con:name>
+      <con:value>tsaunders@mailinator.com</con:value>
     </con:property>
   </con:properties>
   <con:reportParameters/>
@@ -40997,6 +41087,11 @@ ORDER BY NEWID()</query>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>ab0e2f01-cfc7-4365-a1f9-b634d75bb029</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>432540d4-7ded-4115-b4f7-c64f0c8b0ca9</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
