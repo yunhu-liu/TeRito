@@ -10,19 +10,19 @@
       <con:properties>
         <con:property>
           <con:name>OrgRefId</con:name>
-          <con:value>90902</con:value>
+          <con:value>972</con:value>
         </con:property>
         <con:property>
           <con:name>InvalidOrgRefId</con:name>
-          <con:value>3085</con:value>
+          <con:value>3012</con:value>
         </con:property>
         <con:property>
           <con:name>StudentLocalId</con:name>
-          <con:value>80bb3106-c978-44ba-be77-9225b598fc7c</con:value>
+          <con:value>74cb7658-352f-402d-a189-b81469eeb78f</con:value>
         </con:property>
         <con:property>
           <con:name>StudentRefId</con:name>
-          <con:value>10a9b053-f1a1-47b7-b3c4-46a80e309a53</con:value>
+          <con:value>3d8f9846-4b67-43bb-a626-c2db0b39622c</con:value>
         </con:property>
         <con:property>
           <con:name>NationalStudentNumber</con:name>
@@ -42,11 +42,88 @@
         </con:property>
         <con:property>
           <con:name>EmailRefId</con:name>
-          <con:value>90902</con:value>
+          <con:value>972</con:value>
         </con:property>
         <con:property>
           <con:name>EmailAddress</con:name>
           <con:value>tsaunders@mailinator.com</con:value>
+        </con:property>
+        <con:property>
+          <con:name>StudentPersonal</con:name>
+          <con:value>{
+  "StudentPersonal": {
+    "StudentPersonalRefId": "3d8f9846-4b67-43bb-a626-c2db0b39622c",
+    "StudentPersonalLocalId": "ST1000001_74cb7658-352f-402d-a189-b81469eeb78f",
+    "NationalStudentNumber": 9001000001,
+    "FirstNZSchoolingDate": "2015-03-07",
+    "EarlyChildhoodEducation": {
+      "Type": "EPG"
+    },
+    "PersonInfo": {
+      "Name": {
+        "FamilyName": "Saunders",
+        "GivenName": "Thomas",
+        "FullName": "Thomas Saunders",
+        "IsVerified": 0
+      },
+      "Demographics": {
+        "BirthDate": "2010-03-07",
+        "Gender": "1",
+        "LanguageList": {
+          "Language": [
+            {
+              "Code": "NZS01112",
+              "Usage": "SH"
+            }
+          ]
+        },
+        "EthnicityList": {
+          "Ethnicity": [
+            {
+              "Code": "321"
+            }
+          ]
+        }
+      },
+      "AddressList": {
+        "Address": [
+          {
+            "Type": "TH",
+            "Role": "PHY",
+            "Line1": "27 Arataua Street",
+            "Suburb": "Rotorua",
+            "City": "Rotorua",
+            "Country": "New Zealand",
+            "PostalCode": "3010"
+          }
+        ]
+      },
+      "EmailList": {
+        "Email": [
+          {
+            "Type": 0,
+            "SourceOrganisation": {
+              "RefId": "972"
+            },
+            "Address": "tsaunders@mailinator.com"
+          }
+        ]
+      },
+      "PhoneNumberList": {
+        "PhoneNumber": [
+          {
+            "Type": "MAI",
+            "Number": "+64 7-943 8050"
+          }
+        ]
+      }
+    },
+    "BiographicChangeReason": 0,
+    "RecordAudit": {
+      "CreatedDateTime": "2020-12-01T10:05:31.360557+00:00"
+    }
+  }
+}</con:value>
         </con:property>
       </con:properties>
     </con:config>
@@ -34287,7 +34364,56 @@ ORDER BY NEWID()</query>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_Valid" id="62991fb2-ef5c-4711-bfde-4d195b2ef057" disabled="true">
+  <con:testStep type="transfer" name="Property Transfer3" id="71063446-4dd3-4b34-a759-860ab8aaf619">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>SaveStudentPersonal</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>/studentpersonal/{StudentPersonalRefId} GET Request 1_Valid</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>StudentPersonal</con:targetType>
+        <con:targetStep>Properties</con:targetStep>
+        <con:targetPath/>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasource" name="DataSource - Prepare Student Info for Update" id="61ed788c-aeec-4c97-b743-49f219532e77">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Groovy">
+        <con:configuration>
+          <script>import groovy.json.JsonBuilder
+import groovy.json.JsonSlurper
+
+def content = context.expand('${Properties#StudentPersonal}')
+def slurped = new JsonSlurper().parseText(content)
+def builder = new JsonBuilder(slurped)
+
+result["StudentLocalId"] = builder.content.StudentPersonal.StudentPersonalLocalId
+
+def newFamilyName = builder.content.StudentPersonal.PersonInfo.Name.FamilyName + '_zzz'
+def newGivenName = builder.content.StudentPersonal.PersonInfo.Name.GivenName + '_zzz'
+builder.content.StudentPersonal.PersonInfo.Name.FamilyName = newFamilyName
+builder.content.StudentPersonal.PersonInfo.Name.GivenName = newGivenName
+result["StudentPersonalNew"] = builder.toString()
+
+result["NewFamilyName"] = newFamilyName
+result["NewGivenName"] = newGivenName</script>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>StudentPersonalNew</con:property>
+      <con:property>StudentLocalId</con:property>
+      <con:property>NewFamilyName</con:property>
+      <con:property>NewGivenName</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_Valid" id="62991fb2-ef5c-4711-bfde-4d195b2ef057">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="updateStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_Valid" id="a89feaf0-16fc-4f22-90ea-8fcbba5955e9" mediaType="application/json" postQueryString="false">
@@ -34295,81 +34421,7 @@ ORDER BY NEWID()</query>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
-        <con:request>{
-   "StudentPersonal" : {
-      "StudentPersonalRefId" : "9e9c3c75-ec1c-42c0-86d1-e04f34db8fcc",
-      "StudentPersonalLocalId" : "ST5000480",
-      "NationalStudentNumber" : 9005000480,
-      "FirstNZSchoolingDate" : "2019-08-28",
-      "EarlyChildhoodEducation" : {
-         "Type" : "EUN"
-      },
-      "PersonInfo" : {
-         "Name" : {
-            "FamilyName" : "Galvan_zz",
-            "GivenName" : "Grace_zz",
-            "FullName" : "Grace Galvan_zz",
-            "IsVerified" : 0
-         },
-         "Demographics" : {
-            "BirthDate" : "2015-08-28",
-            "Gender" : "1",
-            "LanguageList" : {
-               "Language" : [
-                  {
-                     "Code" : "NZS01112",
-                     "Usage" : "SH"
-                  }
-               ]
-            },
-            "EthnicityList" : {
-               "Ethnicity" : [
-                  {
-                     "PreferenceOrderNumber" : null,
-                     "Code" : "521"
-                  }
-               ]
-            }
-         },
-         "AddressList" : {
-            "Address" : [
-               {
-                  "Type" : "TH",
-                  "Role" : "PHY",
-                  "Line1" : "51 Greenstone Way",
-                  "Suburb" : "Hairini",
-                  "City" : "Tauranga",
-                  "Country" : "New Zealand",
-                  "PostalCode" : "3112"
-               }
-            ]
-         },
-         "EmailList" : {
-            "Email" : [
-               {
-                  "Type" : 0,
-                  "SourceOrganisation" : {
-                     "RefId" : "8005"
-                  },
-                  "Address" : "ggalvan@mailinator.comcomcomcom"
-               }
-            ]
-         },
-         "PhoneNumberList" : {
-            "PhoneNumber" : [
-               {
-                  "Type" : "MAI",
-                  "Number" : "+64 7-887 6282"
-               }
-            ]
-         }
-      },
-      "BiographicChangeReason" : 1,
-      "RecordAudit" : {
-         "CreatedDateTime" : "2020-11-19T01:51:55.9105967+00:00"
-      }
-   }
-}</con:request>
+        <con:request>${DataSource - Prepare Student Info for Update#StudentPersonalNew}</con:request>
         <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal/</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="aec97ea1-3c3e-4dd2-ae41-4ce75d0387ed" name="Valid HTTP Status Codes">
           <con:settings/>
@@ -34397,7 +34449,7 @@ ORDER BY NEWID()</query>
               <con:type xsi:nil="true"/>
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
-              <con:expectedValue>ST5000480</con:expectedValue>
+              <con:expectedValue>${DataSource - Prepare Student Info for Update#StudentLocalId}</con:expectedValue>
               <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
@@ -34430,7 +34482,7 @@ ORDER BY NEWID()</query>
               <con:type xsi:nil="true"/>
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
-              <con:expectedValue>Galvan_zz</con:expectedValue>
+              <con:expectedValue>${DataSource - Prepare Student Info for Update#NewFamilyName}</con:expectedValue>
               <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
@@ -34441,7 +34493,7 @@ ORDER BY NEWID()</query>
               <con:type xsi:nil="true"/>
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
-              <con:expectedValue>Grace_zz</con:expectedValue>
+              <con:expectedValue>${DataSource - Prepare Student Info for Update#NewGivenName}</con:expectedValue>
               <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
@@ -34462,7 +34514,7 @@ ORDER BY NEWID()</query>
               <con:element>BirthDate</con:element>
               <con:type xsi:nil="true"/>
               <con:operator>=</con:operator>
-              <con:enabled>true</con:enabled>
+              <con:enabled>false</con:enabled>
               <con:expectedValue>2015-08-28</con:expectedValue>
               <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
@@ -34539,7 +34591,7 @@ ORDER BY NEWID()</query>
               <con:element>Address</con:element>
               <con:type xsi:nil="true"/>
               <con:operator>=</con:operator>
-              <con:enabled>true</con:enabled>
+              <con:enabled>false</con:enabled>
               <con:expectedValue>ggalvan@mailinator.comcomcomcom</con:expectedValue>
               <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
@@ -34550,7 +34602,7 @@ ORDER BY NEWID()</query>
               <con:element>BiographicChangeReason</con:element>
               <con:type xsi:nil="true"/>
               <con:operator>=</con:operator>
-              <con:enabled>true</con:enabled>
+              <con:enabled>false</con:enabled>
               <con:expectedValue>CF</con:expectedValue>
               <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
@@ -34583,7 +34635,7 @@ ORDER BY NEWID()</query>
               <con:element>Type</con:element>
               <con:type xsi:nil="true"/>
               <con:operator>=</con:operator>
-              <con:enabled>true</con:enabled>
+              <con:enabled>false</con:enabled>
               <con:expectedValue>MAI</con:expectedValue>
               <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
@@ -36119,6 +36171,16 @@ ORDER BY NEWID()</query>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>56a850ce-312d-430e-97f1-7255521325de</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>61ed788c-aeec-4c97-b743-49f219532e77</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>71063446-4dd3-4b34-a759-860ab8aaf619</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
