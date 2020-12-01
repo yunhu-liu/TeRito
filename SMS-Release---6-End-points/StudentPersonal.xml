@@ -7,7 +7,48 @@
   <con:testStep type="properties" name="Properties" id="432540d4-7ded-4115-b4f7-c64f0c8b0ca9">
     <con:settings/>
     <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:properties></con:properties>
+      <con:properties>
+        <con:property>
+          <con:name>OrgRefId</con:name>
+          <con:value>8008</con:value>
+        </con:property>
+        <con:property>
+          <con:name>InvalidOrgRefId</con:name>
+          <con:value>7608</con:value>
+        </con:property>
+        <con:property>
+          <con:name>StudentLocalId</con:name>
+          <con:value>44dc0378-ccbb-4a78-9cf9-6a7517ec15fc</con:value>
+        </con:property>
+        <con:property>
+          <con:name>StudentRefId</con:name>
+          <con:value>71af936c-586d-4834-a511-4575579971a1</con:value>
+        </con:property>
+        <con:property>
+          <con:name>NationalStudentNumber</con:name>
+          <con:value>9001000001</con:value>
+        </con:property>
+        <con:property>
+          <con:name>FamilyName</con:name>
+          <con:value>Saunders</con:value>
+        </con:property>
+        <con:property>
+          <con:name>GivenName</con:name>
+          <con:value>Thomas</con:value>
+        </con:property>
+        <con:property>
+          <con:name>EmailOrgId</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>EmailRefId</con:name>
+          <con:value>8008</con:value>
+        </con:property>
+        <con:property>
+          <con:name>EmailAddress</con:name>
+          <con:value>tsaunders@mailinator.com</con:value>
+        </con:property>
+      </con:properties>
     </con:config>
   </con:testStep>
   <con:testStep type="datasource" name="DataSource - Random OrgRefId" id="c3b7a3c7-f5b9-4a95-813a-fe1f1853195b">
@@ -62,31 +103,24 @@ ORDER BY NEWID()</query>
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
-  <con:testStep type="datasource" name="DataSource - Random Student Local Id" id="6d63d18c-77cf-44e2-bdb6-cc759d7d1e08">
-    <con:settings>
-      <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
-    </con:settings>
+  <con:testStep type="datasource" name="DataSource - Random Student Local Id" id="56a850ce-312d-430e-97f1-7255521325de">
+    <con:settings/>
     <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:dataSource type="Data Generator">
         <con:configuration>
           <generatedDataCount>1</generatedDataCount>
           <generatorsTotalNumber>1</generatorsTotalNumber>
-          <lastSelectedProperty>1</lastSelectedProperty>
-          <GeneratorType0>INT</GeneratorType0>
+          <lastSelectedProperty>0</lastSelectedProperty>
+          <GeneratorType0>GUID</GeneratorType0>
           <PropertyName0>StudentLocalId</PropertyName0>
           <repetitionCountStudentLocalId>0</repetitionCountStudentLocalId>
           <repeatValuesStudentLocalId>false</repeatValuesStudentLocalId>
-          <IntegerDataGeneratorMinValueStudentLocalId>1000</IntegerDataGeneratorMinValueStudentLocalId>
-          <IntegerDataGeneratorMaxValueStudentLocalId>9999</IntegerDataGeneratorMaxValueStudentLocalId>
-          <IntegerDataGeneratorStepValueStudentLocalId>1</IntegerDataGeneratorStepValueStudentLocalId>
-          <IntegerDataGeneratorConsequentValuesStudentLocalId>false</IntegerDataGeneratorConsequentValuesStudentLocalId>
           <escapeSpaceSequence/>
         </con:configuration>
       </con:dataSource>
       <con:shared>true</con:shared>
       <con:restartShared>true</con:restartShared>
       <con:property>StudentLocalId</con:property>
-      <con:completeLastOperation>true</con:completeLastOperation>
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
@@ -99,7 +133,7 @@ ORDER BY NEWID()</query>
         <con:sourceStep>DataSource - Random OrgRefId</con:sourceStep>
         <con:sourcePath/>
         <con:targetType>OrgRefId</con:targetType>
-        <con:targetStep>#TestCase#</con:targetStep>
+        <con:targetStep>Properties</con:targetStep>
         <con:targetPath/>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
@@ -108,7 +142,7 @@ ORDER BY NEWID()</query>
         <con:sourceType>InvalidOrgId</con:sourceType>
         <con:sourceStep>DataSource - Random Invalid OrgRefId</con:sourceStep>
         <con:targetType>InvalidOrgRefId</con:targetType>
-        <con:targetStep>#TestCase#</con:targetStep>
+        <con:targetStep>Properties</con:targetStep>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
       <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
@@ -116,7 +150,7 @@ ORDER BY NEWID()</query>
         <con:sourceType>StudentLocalId</con:sourceType>
         <con:sourceStep>DataSource - Random Student Local Id</con:sourceStep>
         <con:targetType>StudentLocalId</con:targetType>
-        <con:targetStep>#TestCase#</con:targetStep>
+        <con:targetStep>Properties</con:targetStep>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
     </con:config>
@@ -144,7 +178,7 @@ ORDER BY NEWID()</query>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
-          <con:entry key="X-Edsby-OrganisationRefId" value="${#TestCase#OrgRefId}"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#OrgRefId}"/>
         </con:parameters>
       </con:restRequest>
     </con:config>
@@ -261,7 +295,7 @@ ORDER BY NEWID()</query>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
-          <con:entry key="X-Edsby-OrganisationRefId" value="${#TestCase#InvalidOrgRefId}"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#InvalidOrgRefId}"/>
         </con:parameters>
       </con:restRequest>
     </con:config>
@@ -278,7 +312,7 @@ ORDER BY NEWID()</query>
    "StudentPersonals" : {\r
       "StudentPersonal" : [\r
          {\r
-            "StudentPersonalLocalId" : "ST1000001_${#TestCase#StudentLocalId}",\r
+            "StudentPersonalLocalId" : "ST1000001_${Properties#StudentLocalId}",\r
             "NationalStudentNumber" : 9001000001,\r
             "FirstNZSchoolingDate" : "2015-03-07",\r
             "EarlyChildhoodEducation" : {\r
@@ -326,7 +360,7 @@ ORDER BY NEWID()</query>
                   "Email" : [\r
                      {\r
                         "SourceOrganisation" : {\r
-                           "RefId" : "${#TestCase#OrgRefId}"\r
+                           "RefId" : "${Properties#OrgRefId}"\r
                         },\r
                         "Address" : "tsaunders@mailinator.com"\r
                      }\r
@@ -777,7 +811,7 @@ ORDER BY NEWID()</query>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
-          <con:entry key="X-Edsby-OrganisationRefId" value="${#TestCase#OrgRefId}"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#OrgRefId}"/>
         </con:parameters>
       </con:restRequest>
     </con:config>
@@ -791,7 +825,7 @@ ORDER BY NEWID()</query>
         <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
         <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['StudentPersonalRefId']</con:sourcePath>
         <con:targetType>StudentRefId</con:targetType>
-        <con:targetStep>#TestCase#</con:targetStep>
+        <con:targetStep>Properties</con:targetStep>
         <con:targetPath/>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
@@ -802,7 +836,7 @@ ORDER BY NEWID()</query>
         <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
         <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['NationalStudentNumber']</con:sourcePath>
         <con:targetType>NationalStudentNumber</con:targetType>
-        <con:targetStep>#TestCase#</con:targetStep>
+        <con:targetStep>Properties</con:targetStep>
         <con:targetPath/>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
@@ -813,7 +847,7 @@ ORDER BY NEWID()</query>
         <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
         <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['PersonInfo']['Name']['FamilyName']</con:sourcePath>
         <con:targetType>FamilyName</con:targetType>
-        <con:targetStep>#TestCase#</con:targetStep>
+        <con:targetStep>Properties</con:targetStep>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
@@ -823,7 +857,7 @@ ORDER BY NEWID()</query>
         <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
         <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['PersonInfo']['Name']['GivenName']</con:sourcePath>
         <con:targetType>GivenName</con:targetType>
-        <con:targetStep>#TestCase#</con:targetStep>
+        <con:targetStep>Properties</con:targetStep>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
@@ -833,7 +867,7 @@ ORDER BY NEWID()</query>
         <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
         <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['PersonInfo']['EmailList']['Email'][0]['SourceOrganisation']['RefId']</con:sourcePath>
         <con:targetType>EmailRefId</con:targetType>
-        <con:targetStep>#TestCase#</con:targetStep>
+        <con:targetStep>Properties</con:targetStep>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
@@ -843,7 +877,7 @@ ORDER BY NEWID()</query>
         <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
         <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['PersonInfo']['EmailList']['Email'][0]['Address']</con:sourcePath>
         <con:targetType>EmailAddress</con:targetType>
-        <con:targetStep>#TestCase#</con:targetStep>
+        <con:targetStep>Properties</con:targetStep>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
@@ -857,69 +891,81 @@ ORDER BY NEWID()</query>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
-        <con:request>{\r
-  "StudentPersonals" : {\r
-    "StudentPersonal" : [ {\r
-      "StudentPersonalLocalId" : "ST1000001_zzz${DataGen#Value}",\r
-      "NationalStudentNumber" : 9001000001,\r
-      "FirstNZSchoolingDate" : "2015-03-07",\r
-      "EarlyChildhoodEducation" : {\r
-        "Type" : "EPG"\r
-      },\r
-      "PersonInfo" : {\r
-        "Name" : {\r
-          "FamilyName" : "Saunders",\r
-          "GivenName" : "Thomas",\r
-          "FullName" : "Thomas Saunders"\r
-        },\r
-        "Demographics" : {\r
-          "BirthDate" : "2010-03-07",\r
-          "Gender" : "1",\r
-          "LanguageList" : {\r
-            "Language" : [ {\r
-              "Code" : "NZS01112",\r
-              "Usage" : "SH"\r
-            } ]\r
-          },\r
-          "EthnicityList" : {\r
-            "Ethnicity" : [ {\r
-              "Code" : "321"\r
-            } ]\r
-          }\r
-        },\r
-        "AddressList" : {\r
-          "Address" : [ {\r
-            "Type" : "TH",\r
-            "Role" : "PHY",\r
-            "Line1" : "27 Arataua Street",\r
-            "Suburb" : "Rotorua",\r
-            "City" : "Rotorua",\r
-            "Country" : "New Zealand",\r
-            "PostalCode" : "3010"\r
-          } ]\r
-        },\r
-        "EmailList" : {\r
-          "Email" : [ {\r
-            "SourceOrganisation" : {\r
-              "RefId" : "8005"\r
-            },\r
-            "Address" : "tsaunders@mailinator.com"\r
-          } ]\r
-        },\r
-        "PhoneNumberList" : {\r
-          "PhoneNumber" : [ {\r
-            "Type" : "MAI",\r
-            "Number" : "+64 7-943 8050"\r
-          } ]\r
-        }\r
-      },\r
-      "StudentProviderEnrolment" : {\r
-        "EntryDate" : "2020-01-29",\r
-        "YearLevel" : 6,\r
-        "FundingYearLevel" : 7\r
-      }\r
-    } ]\r
-  }\r
+        <con:request>{
+   "StudentPersonals" : {
+      "StudentPersonal" : [
+         {
+            "StudentPersonalLocalId" : "ST1000001_${Properties#StudentLocalId}",
+            "NationalStudentNumber" : 9001000001,
+            "FirstNZSchoolingDate" : "2015-03-07",
+            "EarlyChildhoodEducation" : {
+               "Type" : "EPG"
+            },
+            "PersonInfo" : {
+               "Name" : {
+                  "FamilyName" : "Saunders",
+                  "GivenName" : "Thomas",
+                  "FullName" : "Thomas Saunders"
+               },
+               "Demographics" : {
+                  "BirthDate" : "2010-03-07",
+                  "Gender" : "1",
+                  "LanguageList" : {
+                     "Language" : [
+                        {
+                           "Code" : "NZS01112",
+                           "Usage" : "SH"
+                        }
+                     ]
+                  },
+                  "EthnicityList" : {
+                     "Ethnicity" : [
+                        {
+                           "Code" : "321"
+                        }
+                     ]
+                  }
+               },
+               "AddressList" : {
+                  "Address" : [
+                     {
+                        "Type" : "TH",
+                        "Role" : "PHY",
+                        "Line1" : "27 Arataua Street",
+                        "Suburb" : "Rotorua",
+                        "City" : "Rotorua",
+                        "Country" : "New Zealand",
+                        "PostalCode" : "3010"
+                     }
+                  ]
+               },
+               "EmailList" : {
+                  "Email" : [
+                     {
+                        "SourceOrganisation" : {
+                           "RefId" : "${Properties#OrgRefId}"
+                        },
+                        "Address" : "tsaunders@mailinator.com"
+                     }
+                  ]
+               },
+               "PhoneNumberList" : {
+                  "PhoneNumber" : [
+                     {
+                        "Type" : "MAI",
+                        "Number" : "+64 7-943 8050"
+                     }
+                  ]
+               }
+            },
+            "StudentProviderEnrolment" : {
+               "EntryDate" : "2020-01-29",
+               "YearLevel" : 6,
+               "FundingYearLevel" : 7
+            }
+         }
+      ]
+   }
 }</con:request>
         <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="854df1e0-8a6a-4c6d-a8c6-fc19934d6931" name="Valid HTTP Status Codes">
@@ -1348,7 +1394,7 @@ ORDER BY NEWID()</query>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
-          <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#OrgRefId}"/>
         </con:parameters>
       </con:restRequest>
     </con:config>
@@ -40892,48 +40938,7 @@ ORDER BY NEWID()</query>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:properties>
-    <con:property>
-      <con:name>OrgRefId</con:name>
-      <con:value>90902</con:value>
-    </con:property>
-    <con:property>
-      <con:name>InvalidOrgRefId</con:name>
-      <con:value>1809</con:value>
-    </con:property>
-    <con:property>
-      <con:name>StudentLocalId</con:name>
-      <con:value>9185</con:value>
-    </con:property>
-    <con:property>
-      <con:name>StudentRefId</con:name>
-      <con:value>1fa3b157-324c-417e-b2ce-c691262b4f18</con:value>
-    </con:property>
-    <con:property>
-      <con:name>NationalStudentNumber</con:name>
-      <con:value>9001000001</con:value>
-    </con:property>
-    <con:property>
-      <con:name>FamilyName</con:name>
-      <con:value>Saunders</con:value>
-    </con:property>
-    <con:property>
-      <con:name>GivenName</con:name>
-      <con:value>Thomas</con:value>
-    </con:property>
-    <con:property>
-      <con:name>EmailOrgId</con:name>
-      <con:value/>
-    </con:property>
-    <con:property>
-      <con:name>EmailRefId</con:name>
-      <con:value>90902</con:value>
-    </con:property>
-    <con:property>
-      <con:name>EmailAddress</con:name>
-      <con:value>tsaunders@mailinator.com</con:value>
-    </con:property>
-  </con:properties>
+  <con:properties/>
   <con:reportParameters/>
   <con:breakPoints>
     <con:testStepId>8ef87231-9dcc-4846-9b97-8f5f50bd12b1</con:testStepId>
@@ -41007,12 +41012,12 @@ ORDER BY NEWID()</query>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>3f0c2775-131a-4113-9889-53f0599b65ee</con:testStepId>
-    <con:status>NONE</con:status>
+    <con:status>ENABLED</con:status>
     <con:properties/>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>179f199c-9c8f-4034-bdea-54765a62296c</con:testStepId>
-    <con:status>ENABLED</con:status>
+    <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
   <con:breakPoints>
@@ -41071,11 +41076,6 @@ ORDER BY NEWID()</query>
     <con:properties/>
   </con:breakPoints>
   <con:breakPoints>
-    <con:testStepId>6d63d18c-77cf-44e2-bdb6-cc759d7d1e08</con:testStepId>
-    <con:status>NONE</con:status>
-    <con:properties/>
-  </con:breakPoints>
-  <con:breakPoints>
     <con:testStepId>6cc8cf78-5c21-45aa-a2db-a1c898f34947</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
@@ -41092,6 +41092,11 @@ ORDER BY NEWID()</query>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>432540d4-7ded-4115-b4f7-c64f0c8b0ca9</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>56a850ce-312d-430e-97f1-7255521325de</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
