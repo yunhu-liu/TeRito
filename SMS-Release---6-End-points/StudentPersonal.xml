@@ -18,7 +18,7 @@
         </con:property>
         <con:property>
           <con:name>StudentLocalId</con:name>
-          <con:value>c84e8a24-4843-4df2-a1f0-840257225d12</con:value>
+          <con:value>75030785-1f33-4524-9529-9130a973bae7</con:value>
         </con:property>
         <con:property>
           <con:name>StudentRefId</con:name>
@@ -217,7 +217,7 @@ context["allOrgs"] &lt;&lt; context.expand( '${GetAllOrgs#OrganisationRefId}' )<
 Collections.shuffle( context["allOrgs"] )
 
 // Get the value of the current row
-def row = testRunner.testCase.testSteps["DataSource"].currentRow
+def row = testRunner.testCase.testSteps["GetRandomOrgRefId"].currentRow
 
 // Return the value as long as it is within the list
 if ( row + 1 &lt;= context["allOrgs"].size() )
@@ -233,12 +233,14 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
     </con:config>
   </con:testStep>
   <con:testStep type="datasource" name="GetRandomInvalidOrgRefId" id="ab0e2f01-cfc7-4365-a1f9-b634d75bb029">
-    <con:settings/>
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
+    </con:settings>
     <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:dataSource type="Data Generator">
         <con:configuration>
           <generatedDataCount>1</generatedDataCount>
-          <generatorsTotalNumber>1</generatorsTotalNumber>
+          <generatorsTotalNumber>2</generatorsTotalNumber>
           <lastSelectedProperty>0</lastSelectedProperty>
           <GeneratorType0>INT</GeneratorType0>
           <PropertyName0>InvalidOrgId</PropertyName0>
@@ -248,6 +250,14 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
           <IntegerDataGeneratorMaxValueInvalidOrgId>8000</IntegerDataGeneratorMaxValueInvalidOrgId>
           <IntegerDataGeneratorStepValueInvalidOrgId>1</IntegerDataGeneratorStepValueInvalidOrgId>
           <IntegerDataGeneratorConsequentValuesInvalidOrgId>false</IntegerDataGeneratorConsequentValuesInvalidOrgId>
+          <GeneratorType1>INT</GeneratorType1>
+          <PropertyName1>InvalidOrgRefId</PropertyName1>
+          <repetitionCountInvalidOrgRefId>0</repetitionCountInvalidOrgRefId>
+          <repeatValuesInvalidOrgRefId>false</repeatValuesInvalidOrgRefId>
+          <IntegerDataGeneratorMinValueInvalidOrgRefId>1000</IntegerDataGeneratorMinValueInvalidOrgRefId>
+          <IntegerDataGeneratorMaxValueInvalidOrgRefId>8000</IntegerDataGeneratorMaxValueInvalidOrgRefId>
+          <IntegerDataGeneratorStepValueInvalidOrgRefId>1</IntegerDataGeneratorStepValueInvalidOrgRefId>
+          <IntegerDataGeneratorConsequentValuesInvalidOrgRefId>false</IntegerDataGeneratorConsequentValuesInvalidOrgRefId>
           <escapeSpaceSequence/>
         </con:configuration>
       </con:dataSource>
@@ -41088,7 +41098,7 @@ result["NewGivenName"] = newGivenName</script>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>7b4c400f-24f4-41b3-b908-bd90a26a2043</con:testStepId>
-    <con:status>ENABLED</con:status>
+    <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
   <con:breakPoints>
@@ -41218,7 +41228,7 @@ result["NewGivenName"] = newGivenName</script>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>a66839f5-e4b2-49bd-b4c5-1a7e5a1a683e</con:testStepId>
-    <con:status>NONE</con:status>
+    <con:status>ENABLED</con:status>
     <con:properties/>
   </con:breakPoints>
   <con:breakPoints>
