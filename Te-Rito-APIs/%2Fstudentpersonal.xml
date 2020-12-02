@@ -607,7 +607,7 @@
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
-    <con:request name="Request 2" id="93609899-b131-42b4-9c39-de3940b95293" mediaType="application/xml">
+    <con:request name="Request 2" id="93609899-b131-42b4-9c39-de3940b95293" mediaType="application/xml" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request><![CDATA[<StudentPersonals>
@@ -676,6 +676,7 @@
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
   </con:method>
