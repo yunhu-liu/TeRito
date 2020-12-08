@@ -1,0 +1,62 @@
+{
+  "BellSchedules": {
+    "BellSchedule": [
+      {
+        "BellScheduleLocalId": "8008_Regular",
+        "BellScheduleName": "Pōhutukawa Schedule",
+        "Organisation": {
+          "RefId": "8008"
+        },
+        "Schedule": {
+          "LocalId": "8008_Sched_2020"
+        },
+        "SchedulePeriodList": {
+          "SchedulePeriodTime": [
+            {
+              "Period": {
+                "LocalId": "8008_HR"
+              },
+              "StartTime": "08:45:00",
+              "EndTime": "08:55:00"
+            },
+            {
+              "Period": {
+                "LocalId": "8008_P1"
+              },
+              "StartTime": "09:00:00",
+              "EndTime": "09:50:00"
+            },
+            {
+              "Period": {
+                "LocalId": "8008_P2"
+              },
+              "StartTime": "09:55:00",
+              "EndTime": "10:45:00"
+            },
+            {
+              "Period": {
+                "LocalId": "8008_P3"
+              },
+              "StartTime": "11:00:00",
+              "EndTime": "11:50:00"
+            },
+            {
+              "Period": {
+                "LocalId": "8008_P4"
+              },
+              "StartTime": "12:40:00",
+              "EndTime": "13:30:00"
+            },
+            {
+              "Period": {
+                "LocalId": "8008_P5"
+              },
+              "StartTime": "13:45:00",
+              "EndTime": "14:45:00"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

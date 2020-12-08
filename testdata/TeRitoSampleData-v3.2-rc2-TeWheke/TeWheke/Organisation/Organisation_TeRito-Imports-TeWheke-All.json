@@ -1,0 +1,428 @@
+{
+  "Organisations": {
+    "Organisation": [
+      {
+        "OrganisationRefId": "8005",
+        "EducationRegion": "12010",
+        "SpecialEducationDistrict": "182006",
+        "EntityOpen": "1950-01-28T00:00:00+12:00",
+        "Name": "Karamū Primary School",
+        "OperationalStatus": "28001",
+        "Type": "10023",
+        "SectorRole": "35003",
+        "ProviderSMS": "MUS",
+        "Authority": "STATE",
+        "Address": {
+          "Physical": {
+            "Type": "TH",
+            "Line1": "Elder Lane",
+            "City": "Tauranga",
+            "Country": "New Zealand",
+            "PostalCode": "3143",
+            "GridLocation": {
+              "Latitude": -37.704974,
+              "Longitude": 176.11123
+            }
+          }
+        },
+        "Email": {
+          "Main": {
+            "Address": "principal@8005.school.nz"
+          }
+        },
+        "Phone": {
+          "Main": {
+            "Number": "06 555 9766"
+          }
+        },
+        "TeRitoConfig": {
+          "DataAnalysisDashboardsInd": "Y",
+          "StandardisedLearningSupportRegisterInd": "Y",
+          "VirtualLearningEnvironmentInd": "N"
+        },
+        "SchoolService": {
+          "CoEdStatus": "COED",
+          "Decile": 2,
+          "AllowManualProvisioning": "N",
+          "SchoolClassificationList": {
+            "Classification": [
+              "52003"
+            ]
+          },
+          "SchoolYearList": {
+            "SchoolYear": [
+              {
+                "YearLevel": 1,
+                "FIRSTSchoolYearGenderId": -80051,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 2,
+                "FIRSTSchoolYearGenderId": -80052,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 3,
+                "FIRSTSchoolYearGenderId": -80053,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 4,
+                "FIRSTSchoolYearGenderId": -80054,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 5,
+                "FIRSTSchoolYearGenderId": -80055,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 6,
+                "FIRSTSchoolYearGenderId": -80056,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 7,
+                "FIRSTSchoolYearGenderId": -80057,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 8,
+                "FIRSTSchoolYearGenderId": -80058,
+                "Gender": "55002"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "OrganisationRefId": "8006",
+        "EducationRegion": "12010",
+        "SpecialEducationDistrict": "182006",
+        "EntityOpen": "1950-01-28T00:00:00+12:00",
+        "Name": "Horoeka Primary School",
+        "OperationalStatus": "28001",
+        "Type": "10024",
+        "SectorRole": "35003",
+        "ProviderSMS": "ETA",
+        "Authority": "STATE",
+        "Address": {
+          "Physical": {
+            "Type": "TH",
+            "Line1": "Mission Road",
+            "City": "Whakatane",
+            "Country": "New Zealand",
+            "PostalCode": "3158",
+            "GridLocation": {
+              "Latitude": -38.148073,
+              "Longitude": 177.007448
+            }
+          }
+        },
+        "Email": {
+          "Main": {
+            "Address": "principal@8006.school.nz"
+          }
+        },
+        "Phone": {
+          "Main": {
+            "Number": "06 555 6622"
+          }
+        },
+        "TeRitoConfig": {
+          "DataAnalysisDashboardsInd": "Y",
+          "StandardisedLearningSupportRegisterInd": "Y",
+          "VirtualLearningEnvironmentInd": "N"
+        },
+        "SchoolService": {
+          "CoEdStatus": "COED",
+          "Decile": 3,
+          "AllowManualProvisioning": "N",
+          "SchoolYearList": {
+            "SchoolYear": [
+              {
+                "YearLevel": 1,
+                "FIRSTSchoolYearGenderId": -80061,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 2,
+                "FIRSTSchoolYearGenderId": -80062,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 3,
+                "FIRSTSchoolYearGenderId": -80063,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 4,
+                "FIRSTSchoolYearGenderId": -80064,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 5,
+                "FIRSTSchoolYearGenderId": -80065,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 6,
+                "FIRSTSchoolYearGenderId": -80067,
+                "Gender": "55002"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "OrganisationRefId": "8007",
+        "EducationRegion": "12010",
+        "SpecialEducationDistrict": "182006",
+        "EntityOpen": "1950-01-28T00:00:00+12:00",
+        "Name": "Tarata High School",
+        "OperationalStatus": "28001",
+        "Type": "10033",
+        "SectorRole": "35003",
+        "ProviderSMS": "LIN",
+        "Authority": "STATE",
+        "Address": {
+          "Physical": {
+            "Type": "TH",
+            "Line1": "Karamu Street",
+            "City": "Mangakino",
+            "Country": "New Zealand",
+            "PostalCode": "3445",
+            "GridLocation": {
+              "Latitude": -38.369528,
+              "Longitude": 175.771411
+            }
+          }
+        },
+        "Email": {
+          "Main": {
+            "Address": "principal@8007.school.nz"
+          }
+        },
+        "Phone": {
+          "Main": {
+            "Number": "06 555 1234"
+          }
+        },
+        "TeRitoConfig": {
+          "DataAnalysisDashboardsInd": "Y",
+          "StandardisedLearningSupportRegisterInd": "Y",
+          "VirtualLearningEnvironmentInd": "N"
+        },
+        "SchoolService": {
+          "CoEdStatus": "COED",
+          "Decile": 3,
+          "AllowManualProvisioning": "N",
+          "SchoolClassificationList": {
+            "Classification": [
+              "52003"
+            ]
+          },
+          "SchoolYearList": {
+            "SchoolYear": [
+              {
+                "YearLevel": 9,
+                "FIRSTSchoolYearGenderId": -800709,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 10,
+                "FIRSTSchoolYearGenderId": -800710,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 11,
+                "FIRSTSchoolYearGenderId": -800711,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 12,
+                "FIRSTSchoolYearGenderId": -800712,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 13,
+                "FIRSTSchoolYearGenderId": -800713,
+                "Gender": "55002"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "OrganisationRefId": "8008",
+        "EducationRegion": "12010",
+        "SpecialEducationDistrict": "182006",
+        "EntityOpen": "1950-01-28T00:00:00+12:00",
+        "Name": "Pōhutukawa High School",
+        "OperationalStatus": "28001",
+        "Type": "10029",
+        "SectorRole": "35003",
+        "ProviderSMS": "ASS",
+        "Authority": "STATE",
+        "Address": {
+          "Physical": {
+            "Type": "TH",
+            "Line1": "43 Miro Drive",
+            "City": "Murupara",
+            "Country": "New Zealand",
+            "PostalCode": "3062",
+            "GridLocation": {
+              "Latitude": -38.460994,
+              "Longitude": 176.70927
+            }
+          }
+        },
+        "Email": {
+          "Main": {
+            "Address": "principal@8008.school.nz"
+          }
+        },
+        "Phone": {
+          "Main": {
+            "Number": "06 555 2387"
+          }
+        },
+        "TeRitoConfig": {
+          "DataAnalysisDashboardsInd": "Y",
+          "StandardisedLearningSupportRegisterInd": "Y",
+          "VirtualLearningEnvironmentInd": "N"
+        },
+        "SchoolService": {
+          "CoEdStatus": "COED",
+          "Decile": 3,
+          "AllowManualProvisioning": "N",
+          "SchoolYearList": {
+            "SchoolYear": [
+              {
+                "YearLevel": 7,
+                "FIRSTSchoolYearGenderId": -800807,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 8,
+                "FIRSTSchoolYearGenderId": -880808,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 9,
+                "FIRSTSchoolYearGenderId": -800809,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 10,
+                "FIRSTSchoolYearGenderId": -800810,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 11,
+                "FIRSTSchoolYearGenderId": -800811,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 12,
+                "FIRSTSchoolYearGenderId": -800812,
+                "Gender": "55002"
+              },
+              {
+                "YearLevel": 13,
+                "FIRSTSchoolYearGenderId": -800813,
+                "Gender": "55002"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "OrganisationRefId": "90902",
+        "EducationRegion": "12010",
+        "SpecialEducationDistrict": "182006",
+        "EntityOpen": "1950-01-28T00:00:00+12:00",
+        "Name": "Tōtara Early Learning Centre",
+        "OperationalStatus": "28001",
+        "Type": "10003",
+        "SectorRole": "35000",
+        "IsLicencedECEServiceProvider": "Y",
+        "IsPlaygroupServiceProvider": "N",
+        "ECEServiceProviderOwnershipType": "18004",
+        "Address": {
+          "Physical": {
+            "Type": "TH",
+            "Line1": "Waipapa Road",
+            "City": "Turangi",
+            "Country": "New Zealand",
+            "PostalCode": "3334",
+            "GridLocation": {
+              "Latitude": -38.98579,
+              "Longitude": 175.815059
+            }
+          }
+        },
+        "TeRitoConfig": {
+          "DataAnalysisDashboardsInd": "N",
+          "StandardisedLearningSupportRegisterInd": "Y",
+          "VirtualLearningEnvironmentInd": "N"
+        },
+        "SchoolService": {
+          "AllowManualProvisioning": "Y"
+        },
+        "ECEService": {
+          "Type": "KG",
+          "PrimaryLanguage": "NZS01112"
+        }
+      },
+      {
+        "OrganisationRefId": "90903",
+        "EducationRegion": "12010",
+        "SpecialEducationDistrict": "182006",
+        "EntityOpen": "1950-01-28T00:00:00+12:00",
+        "Name": "Nīkau Kindergarten",
+        "OperationalStatus": "28001",
+        "Type": "10003",
+        "SectorRole": "35000",
+        "IsLicencedECEServiceProvider": "Y",
+        "IsPlaygroupServiceProvider": "N",
+        "ECEServiceProviderOwnershipType": "18004",
+        "Address": {
+          "Physical": {
+            "Type": "TH",
+            "Line1": "29 Mawake Place",
+            "City": "Turangi",
+            "Country": "New Zealand",
+            "PostalCode": "3334",
+            "GridLocation": {
+              "Latitude": -38.984401,
+              "Longitude": 175.803419
+            }
+          }
+        },
+        "TeRitoConfig": {
+          "DataAnalysisDashboardsInd": "N",
+          "StandardisedLearningSupportRegisterInd": "Y",
+          "VirtualLearningEnvironmentInd": "N"
+        },
+        "SchoolService": {
+          "AllowManualProvisioning": "Y"
+        },
+        "ECEService": {
+          "Type": "PC",
+          "PrimaryLanguage": "NZS01112"
+        }
+      },
+      {
+        "OrganisationRefId": "90101",
+        "EducationRegion": "12010",
+        "SpecialEducationDistrict": "182006",
+        "EntityOpen": "2020-01-27T00:00:00+12:00",
+        "Name": "Te Wheke Learning Support Cluster",
+        "OperationalStatus": "28010",
+        "Type": "10065",
+        "SectorRole": "35009"
+      }
+    ]
+  }
+}

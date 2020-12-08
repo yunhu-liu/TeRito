@@ -1,0 +1,34 @@
+{
+  "BellSchedules": {
+    "BellSchedule": [
+      {
+        "BellScheduleLocalId": "8005_Regular",
+        "BellScheduleName": "Karamū Schedule",
+        "Organisation": {
+          "RefId": "8005"
+        },
+        "Schedule": {
+          "LocalId": "8005_Sched_2020"
+        },
+        "SchedulePeriodList": {
+          "SchedulePeriodTime": [
+            {
+              "Period": {
+                "LocalId": "8005_HR"
+              },
+              "StartTime": "09:00:00",
+              "EndTime": "12:00:00"
+            },
+            {
+              "Period": {
+                "LocalId": "8005_HR"
+              },
+              "StartTime": "12:45:00",
+              "EndTime": "15:00:00"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

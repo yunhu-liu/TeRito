@@ -1,0 +1,34 @@
+{
+  "BellSchedules": {
+    "BellSchedule": [
+      {
+        "BellScheduleLocalId": "8006_Regular",
+        "BellScheduleName": "Horoeka Schedule",
+        "Organisation": {
+          "RefId": "8006"
+        },
+        "Schedule": {
+          "LocalId": "8006_Sched_2020"
+        },
+        "SchedulePeriodList": {
+          "SchedulePeriodTime": [
+            {
+              "Period": {
+                "LocalId": "8006_HR"
+              },
+              "StartTime": "09:00:00",
+              "EndTime": "12:00:00"
+            },
+            {
+              "Period": {
+                "LocalId": "8006_HR"
+              },
+              "StartTime": "12:45:00",
+              "EndTime": "15:00:00"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

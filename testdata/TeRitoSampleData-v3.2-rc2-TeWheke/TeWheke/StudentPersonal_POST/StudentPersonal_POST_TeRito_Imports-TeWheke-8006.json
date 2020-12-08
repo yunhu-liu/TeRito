@@ -1,0 +1,6061 @@
+{
+  "StudentPersonals": {
+    "StudentPersonal": [
+      {
+        "StudentPersonalLocalId": "ST6000008",
+        "NationalStudentNumber": 9006000008,
+        "FirstNZSchoolingDate": "2015-03-31T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ECO"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Hopkins",
+            "GivenName": "Keira",
+            "FullName": "Keira Hopkins"
+          },
+          "Demographics": {
+            "BirthDate": "2010-03-31T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0509"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "32 Emme Allan Road",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "khopkins@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-339 2633"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-03-31T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000010",
+        "NationalStudentNumber": 9006000010,
+        "FirstNZSchoolingDate": "2015-05-16T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Matheson",
+            "GivenName": "Hayley",
+            "FullName": "Hayley Matheson"
+          },
+          "Demographics": {
+            "BirthDate": "2010-05-16T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "111"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "5 Te Akau Street",
+              "Suburb": "Ohope",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3121"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "hmatheson@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-601 7618"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-05-16T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000023",
+        "NationalStudentNumber": 9006000023,
+        "FirstNZSchoolingDate": "2015-08-12T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Vallely",
+            "GivenName": "Thomas",
+            "FullName": "Thomas Vallely"
+          },
+          "Demographics": {
+            "BirthDate": "2010-08-12T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "121"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "29 Cutler Crescent",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "tvallely@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-888 7061"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-08-12T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000036",
+        "NationalStudentNumber": 9006000036,
+        "FirstNZSchoolingDate": "2016-08-24T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ECO"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Thomson",
+            "GivenName": "Henry",
+            "FullName": "Henry Thomson"
+          },
+          "Demographics": {
+            "BirthDate": "2011-08-24T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0504"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "3 Liverpool Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "hthomson@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-853 5122"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2016-08-24T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 5,
+            "FundingYearLevel": 5
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000049",
+        "NationalStudentNumber": 9006000049,
+        "FirstNZSchoolingDate": "2016-11-04T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ECO"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Sullivan",
+            "GivenName": "Poppy",
+            "FullName": "Poppy Sullivan"
+          },
+          "Demographics": {
+            "BirthDate": "2011-11-04T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "111"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "90 Fox Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "psullivan@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-979 3217"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2016-11-04T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 5,
+            "FundingYearLevel": 5
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000051",
+        "NationalStudentNumber": 9006000051,
+        "FirstNZSchoolingDate": "2017-01-07T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Litchfield",
+            "GivenName": "Samuel",
+            "FullName": "Samuel Litchfield"
+          },
+          "Demographics": {
+            "BirthDate": "2012-01-07T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "955"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "3 Kupe Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "slitchfield@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-928 8227"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2017-01-07T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 4,
+            "FundingYearLevel": 4
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000064",
+        "NationalStudentNumber": 9006000064,
+        "FirstNZSchoolingDate": "2017-03-09T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Seal",
+            "GivenName": "Joshua",
+            "FullName": "Joshua Seal"
+          },
+          "Demographics": {
+            "BirthDate": "2012-03-09T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "351"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "26 Owen Road",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "jseal@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-305 9832"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2017-03-09T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 4,
+            "FundingYearLevel": 4
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000077",
+        "NationalStudentNumber": 9006000077,
+        "FirstNZSchoolingDate": "2017-03-12T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Wilson",
+            "GivenName": "David",
+            "FullName": "David Wilson"
+          },
+          "Demographics": {
+            "BirthDate": "2012-03-12T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0509"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "60 Kowhai Avenue",
+              "Suburb": "Edgecumbe",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "dwilson@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-610 8642"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2017-03-12T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 4,
+            "FundingYearLevel": 4
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6100085",
+        "NationalStudentNumber": 9006100085,
+        "FirstNZSchoolingDate": "2017-03-15T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Harrison",
+            "GivenName": "Brianna",
+            "PreferredGivenName": "Lottie",
+            "FullName": "Brianna 'Lottie' Harrison"
+          },
+          "Demographics": {
+            "BirthDate": "2012-03-15T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0504"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "48 Union Street",
+              "Suburb": "Opotiki",
+              "City": "Opotiki",
+              "Country": "New Zealand",
+              "PostalCode": "3122"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "bharrison@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-243 4203"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2017-03-15T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 4,
+            "FundingYearLevel": 4
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000092",
+        "NationalStudentNumber": 9006000092,
+        "FirstNZSchoolingDate": "2017-12-06T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Petrie",
+            "GivenName": "Maia",
+            "FullName": "Maia Petrie"
+          },
+          "Demographics": {
+            "BirthDate": "2012-12-06T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0406"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "53 Ocean View Road",
+              "Suburb": "Coastlands",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "mpetrie@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-860 5850"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2017-12-06T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 4,
+            "FundingYearLevel": 4
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000102",
+        "NationalStudentNumber": 9006000102,
+        "FirstNZSchoolingDate": "2018-02-24T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPG"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Macleod",
+            "GivenName": "Alexandra",
+            "FullName": "Alexandra Macleod"
+          },
+          "Demographics": {
+            "BirthDate": "2013-02-24T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0410"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "64 Bill Schmelz Place",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "amacleod@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-203 7326"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-02-24T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000115",
+        "NationalStudentNumber": 9006000115,
+        "FirstNZSchoolingDate": "2018-03-08T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Jeffrey",
+            "GivenName": "Angel",
+            "FullName": "Angel Jeffrey"
+          },
+          "Demographics": {
+            "BirthDate": "2013-03-08T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0406"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "24 Browne Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "ajeffrey@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-321 5918"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-03-08T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000128",
+        "NationalStudentNumber": 9006000128,
+        "FirstNZSchoolingDate": "2018-04-15T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPG"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Stanley",
+            "GivenName": "Anahera",
+            "FullName": "Anahera Stanley"
+          },
+          "Demographics": {
+            "BirthDate": "2013-04-15T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0414"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "89 Francis Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "astanley@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-533  661"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-04-15T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000130",
+        "NationalStudentNumber": 9006000130,
+        "FirstNZSchoolingDate": "2018-05-04T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Page",
+            "GivenName": "Blake",
+            "FullName": "Blake Page"
+          },
+          "Demographics": {
+            "BirthDate": "2013-05-04T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS16110",
+                  "Usage": "SH",
+                  "ProficiencyList": {
+                    "Proficiency": [
+                      {
+                        "Level": "AD",
+                        "Type": "SP"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0504"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "57 Jervois Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "bpage@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-408 5537"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-05-04T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000143",
+        "NationalStudentNumber": 9006000143,
+        "FirstNZSchoolingDate": "2018-05-16T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Paterson",
+            "GivenName": "Max",
+            "FullName": "Max Paterson"
+          },
+          "Demographics": {
+            "BirthDate": "2013-05-16T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0407"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "66 Brabant Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "mpaterson@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-727  487"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-05-16T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000156",
+        "NationalStudentNumber": 9006000156,
+        "FirstNZSchoolingDate": "2018-12-05T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Skinner",
+            "GivenName": "Charlotte",
+            "FullName": "Charlotte Skinner"
+          },
+          "Demographics": {
+            "BirthDate": "2013-12-05T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "121"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "49 Kirk Crescent",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "cskinner@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-124 6529"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-12-05T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000169",
+        "NationalStudentNumber": 9006000169,
+        "FirstNZSchoolingDate": "2019-04-18T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Waddell",
+            "GivenName": "Christian",
+            "FullName": "Christian Waddell"
+          },
+          "Demographics": {
+            "BirthDate": "2014-04-18T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0407"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "22 Syme Crescent",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "cwaddell@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-809  209"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-04-18T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000171",
+        "NationalStudentNumber": 9006000171,
+        "FirstNZSchoolingDate": "2019-08-09T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Todd",
+            "GivenName": "Noah",
+            "FullName": "Noah Todd"
+          },
+          "Demographics": {
+            "BirthDate": "2014-08-09T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS02110",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "611"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "99 Goodwin Parade",
+              "Suburb": "Ohope",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3121"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "ntodd@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-124 3318"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-08-09T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000184",
+        "NationalStudentNumber": 9006000184,
+        "FirstNZSchoolingDate": "2019-08-13T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EOS"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Jones",
+            "GivenName": "Sarah",
+            "FullName": "Sarah Jones"
+          },
+          "Demographics": {
+            "BirthDate": "2014-08-13T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "966"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "81 Dave Weston Place",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "sjones@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-872 1660"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-08-13T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000197",
+        "NationalStudentNumber": 9006000197,
+        "FirstNZSchoolingDate": "2019-11-08T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Voyce",
+            "GivenName": "Isabelle",
+            "FullName": "Isabelle Voyce"
+          },
+          "Demographics": {
+            "BirthDate": "2014-11-08T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "411"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "29 Cobham Street",
+              "Suburb": "Taneatua",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3123"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "ivoyce@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-550 4590"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-11-08T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000207",
+        "NationalStudentNumber": 9006000207,
+        "FirstNZSchoolingDate": "2020-01-20T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Wallace",
+            "GivenName": "Jorja",
+            "FullName": "Jorja Wallace"
+          },
+          "Demographics": {
+            "BirthDate": "2015-01-20T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "511"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "50 Merritt Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "jwallace@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-880 4979"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-01-20T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6100215",
+        "NationalStudentNumber": 9006100215,
+        "FirstNZSchoolingDate": "2020-04-04T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Ritchie",
+            "GivenName": "Angel",
+            "FullName": "Angel Ritchie"
+          },
+          "Demographics": {
+            "BirthDate": "2015-04-04T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0415"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "94 Eruini Street",
+              "Suburb": "Ohope",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3121"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "aritchie@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-516  523"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-04-04T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000222",
+        "NationalStudentNumber": 9006000222,
+        "FirstNZSchoolingDate": "2020-06-30T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPC"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Goymour",
+            "GivenName": "Ella",
+            "FullName": "Ella Goymour"
+          },
+          "Demographics": {
+            "BirthDate": "2015-06-30T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0406"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "65 Owen Road",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "egoymour@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-485 8217"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-06-30T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000235",
+        "NationalStudentNumber": 9006000235,
+        "FirstNZSchoolingDate": "2020-08-10T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Merritt",
+            "GivenName": "Luka",
+            "FullName": "Luka Merritt"
+          },
+          "Demographics": {
+            "BirthDate": "2015-08-10T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0503"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "16 Simpkins Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "lmerritt@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-394 7754"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-08-10T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000248",
+        "NationalStudentNumber": 9006000248,
+        "FirstNZSchoolingDate": "2020-10-09T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Pole",
+            "GivenName": "Luke",
+            "FullName": "Luke Pole"
+          },
+          "Demographics": {
+            "BirthDate": "2015-10-09T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0504"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "14 Merito Place",
+              "Suburb": "Ohope",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3121"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "lpole@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-292 3854"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-10-09T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000250",
+        "NationalStudentNumber": 9006000250,
+        "FirstNZSchoolingDate": "2015-05-21T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPG"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Taylor",
+            "GivenName": "Sebastian",
+            "FullName": "Sebastian Taylor"
+          },
+          "Demographics": {
+            "BirthDate": "2010-05-21T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0504"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "94 Tirotiro Rise",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "staylor@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-676 4993"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-05-21T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000263",
+        "NationalStudentNumber": 9006000263,
+        "FirstNZSchoolingDate": "2015-06-02T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPG"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Kitson",
+            "GivenName": "Caleb",
+            "FullName": "Caleb Kitson"
+          },
+          "Demographics": {
+            "BirthDate": "2010-06-02T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0504"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "65 Thompson Crescent",
+              "Suburb": "Poroporo",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "ckitson@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-710 3693"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-06-02T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000276",
+        "NationalStudentNumber": 9006000276,
+        "FirstNZSchoolingDate": "2015-08-05T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Gemming",
+            "GivenName": "Matthew",
+            "FullName": "Matthew Gemming"
+          },
+          "Demographics": {
+            "BirthDate": "2010-08-05T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0407"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "25 Landward Close",
+              "Suburb": "Ohope",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3121"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "mgemming@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-874 8740"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-08-05T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000289",
+        "NationalStudentNumber": 9006000289,
+        "FirstNZSchoolingDate": "2015-10-06T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "O'Connor",
+            "GivenName": "Caleb",
+            "FullName": "Caleb O'Connor"
+          },
+          "Demographics": {
+            "BirthDate": "2010-10-06T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0405"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "56 Tuhoe Street",
+              "Suburb": "Taneatua",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3123"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "co'connor@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-146 4251"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-10-06T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000291",
+        "NationalStudentNumber": 9006000291,
+        "FirstNZSchoolingDate": "2016-01-09T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Norrie",
+            "GivenName": "Angel",
+            "FullName": "Angel Norrie"
+          },
+          "Demographics": {
+            "BirthDate": "2011-01-09T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01110",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0509"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "35 Armstrong Avenue",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "anorrie@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-227 4640"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2016-01-09T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 5,
+            "FundingYearLevel": 5
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000301",
+        "NationalStudentNumber": 9006000301,
+        "FirstNZSchoolingDate": "2016-05-21T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Jones",
+            "GivenName": "Grace",
+            "FullName": "Grace Jones"
+          },
+          "Demographics": {
+            "BirthDate": "2011-05-21T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "111"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "36 Kohi Point Lookout Road",
+              "Suburb": "Ohope",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3121"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "gjones@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-944 7789"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2016-05-21T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 5,
+            "FundingYearLevel": 5
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000314",
+        "NationalStudentNumber": 9006000314,
+        "FirstNZSchoolingDate": "2016-09-23T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Rendel",
+            "GivenName": "Logan",
+            "FullName": "Logan Rendel"
+          },
+          "Demographics": {
+            "BirthDate": "2011-09-23T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0405"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "77 Bledisloe Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "lrendel@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-282 1836"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2016-09-23T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 5,
+            "FundingYearLevel": 5
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000327",
+        "NationalStudentNumber": 9006000327,
+        "FirstNZSchoolingDate": "2016-10-25T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPG"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Johnston",
+            "GivenName": "Sam",
+            "FullName": "Sam Johnston"
+          },
+          "Demographics": {
+            "BirthDate": "2011-10-25T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "111"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "4 Domett Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "sjohnston@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-266 6051"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2016-10-25T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 5,
+            "FundingYearLevel": 5
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6100335",
+        "NationalStudentNumber": 9006100335,
+        "FirstNZSchoolingDate": "2016-11-29T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPC"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Jackson",
+            "GivenName": "Benjamin",
+            "FullName": "Benjamin Jackson"
+          },
+          "Demographics": {
+            "BirthDate": "2011-11-29T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS02110",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0504"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "68 Morrison Road",
+              "Suburb": "Taneatua",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3123"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "bjackson@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-120 8379"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2016-11-29T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 5,
+            "FundingYearLevel": 5
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000342",
+        "NationalStudentNumber": 9006000342,
+        "FirstNZSchoolingDate": "2017-01-14T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "White",
+            "GivenName": "Dylan",
+            "FullName": "Dylan White"
+          },
+          "Demographics": {
+            "BirthDate": "2012-01-14T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS02110",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0507"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "92 Tamarangi Drive",
+              "Suburb": "Kawerau",
+              "City": "Kawerau;Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "dwhite@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-555 4406"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2017-01-14T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 4,
+            "FundingYearLevel": 4
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000355",
+        "NationalStudentNumber": 9006000355,
+        "FirstNZSchoolingDate": "2017-03-17T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Nott",
+            "GivenName": "Jessica",
+            "FullName": "Jessica Nott"
+          },
+          "Demographics": {
+            "BirthDate": "2012-03-17T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0510"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "10 The Strand",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "jnott@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-835 3854"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2017-03-17T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 4,
+            "FundingYearLevel": 4
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000368",
+        "NationalStudentNumber": 9006000368,
+        "FirstNZSchoolingDate": "2017-07-29T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Workman",
+            "GivenName": "Cody",
+            "FullName": "Cody Workman"
+          },
+          "Demographics": {
+            "BirthDate": "2012-07-29T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS16110",
+                  "Usage": "SH",
+                  "ProficiencyList": {
+                    "Proficiency": [
+                      {
+                        "Level": "IN",
+                        "Type": "RE"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "111"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "45 Robinson Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "cworkman@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-776 2256"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2017-07-29T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 4,
+            "FundingYearLevel": 4
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000370",
+        "NationalStudentNumber": 9006000370,
+        "FirstNZSchoolingDate": "2017-11-04T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ECO"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Rathgen",
+            "GivenName": "Max",
+            "FullName": "Max Rathgen"
+          },
+          "Demographics": {
+            "BirthDate": "2012-11-04T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "37122"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "31 Beach Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "mrathgen@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-468 4174"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2017-11-04T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 4,
+            "FundingYearLevel": 4
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000383",
+        "NationalStudentNumber": 9006000383,
+        "FirstNZSchoolingDate": "2018-08-05T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Nash",
+            "GivenName": "Noah",
+            "FullName": "Noah Nash"
+          },
+          "Demographics": {
+            "BirthDate": "2013-08-05T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01110",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0507"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "68 Ballance Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "nnash@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-508 8825"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-08-05T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000396",
+        "NationalStudentNumber": 9006000396,
+        "FirstNZSchoolingDate": "2018-09-23T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Howard",
+            "GivenName": "Zara",
+            "FullName": "Zara Howard"
+          },
+          "Demographics": {
+            "BirthDate": "2013-09-23T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0503"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "4 Ohope Road",
+              "Suburb": "Maraetotara",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "zhoward@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-315 6246"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-09-23T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000406",
+        "NationalStudentNumber": 9006000406,
+        "FirstNZSchoolingDate": "2018-12-10T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Stone",
+            "GivenName": "Oliver",
+            "FullName": "Oliver Stone"
+          },
+          "Demographics": {
+            "BirthDate": "2013-12-10T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "521"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "88 Beach Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "ostone@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-404 5063"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-12-10T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000419",
+        "NationalStudentNumber": 9006000419,
+        "FirstNZSchoolingDate": "2019-02-12T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ETU"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Smale",
+            "GivenName": "Christian",
+            "FullName": "Christian Smale"
+          },
+          "Demographics": {
+            "BirthDate": "2014-02-12T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0509"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "18 Douglas Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "csmale@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-444 6533"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-02-12T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000421",
+        "NationalStudentNumber": 9006000421,
+        "FirstNZSchoolingDate": "2019-03-16T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EOS"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Mcneilage",
+            "GivenName": "Charlotte",
+            "FullName": "Charlotte Mcneilage"
+          },
+          "Demographics": {
+            "BirthDate": "2014-03-16T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS02110",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0507"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "96 Blundell Avenue",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "cmcneilage@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-733 4589"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-03-16T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000434",
+        "NationalStudentNumber": 9006000434,
+        "FirstNZSchoolingDate": "2019-05-01T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Service",
+            "GivenName": "Noah",
+            "FullName": "Noah Service"
+          },
+          "Demographics": {
+            "BirthDate": "2014-05-01T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS02110",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0414"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "15 Stewart Street",
+              "Suburb": "Opotiki",
+              "City": "Opotiki",
+              "Country": "New Zealand",
+              "PostalCode": "3122"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "nservice@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-648 8367"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-05-01T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000447",
+        "NationalStudentNumber": 9006000447,
+        "FirstNZSchoolingDate": "2019-06-21T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EOS"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Scott",
+            "GivenName": "Liam",
+            "FullName": "Liam Scott"
+          },
+          "Demographics": {
+            "BirthDate": "2014-06-21T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS02110",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0411"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "3 Hinau Place",
+              "Suburb": "Edgecumbe",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "lscott@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-959 3102"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-06-21T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6100455",
+        "NationalStudentNumber": 9006100455,
+        "FirstNZSchoolingDate": "2019-12-18T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Robinson",
+            "GivenName": "Olivia",
+            "FullName": "Olivia Robinson"
+          },
+          "Demographics": {
+            "BirthDate": "2014-12-18T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "321"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "25 Bowen Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "orobinson@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-191 2098"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-12-18T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000462",
+        "NationalStudentNumber": 9006000462,
+        "FirstNZSchoolingDate": "2019-12-20T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EOS"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Wolland",
+            "GivenName": "Jesse",
+            "FullName": "Jesse Wolland"
+          },
+          "Demographics": {
+            "BirthDate": "2014-12-20T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS02110",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "126"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "67 Matata Road",
+              "Suburb": "Edgecumbe",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "jwolland@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-468 4167"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-12-20T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000475",
+        "NationalStudentNumber": 9006000475,
+        "FirstNZSchoolingDate": "2020-05-17T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Wallace",
+            "GivenName": "Luke",
+            "FullName": "Luke Wallace"
+          },
+          "Demographics": {
+            "BirthDate": "2015-05-17T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0507"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "55 Windsor Street",
+              "Suburb": "Opotiki",
+              "City": "Opotiki",
+              "Country": "New Zealand",
+              "PostalCode": "3122"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "lwallace@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-683 9522"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-05-17T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000488",
+        "NationalStudentNumber": 9006000488,
+        "FirstNZSchoolingDate": "2020-05-26T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Wysocki",
+            "GivenName": "Brooke",
+            "FullName": "Brooke Wysocki"
+          },
+          "Demographics": {
+            "BirthDate": "2015-05-26T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS131",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "111"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "45 Anchorage Grove",
+              "Suburb": "Coastlands",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "bwysocki@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-456 2823"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-05-26T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000490",
+        "NationalStudentNumber": 9006000490,
+        "FirstNZSchoolingDate": "2020-08-03T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Ritchie",
+            "GivenName": "George",
+            "FullName": "George Ritchie"
+          },
+          "Demographics": {
+            "BirthDate": "2015-08-03T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0503"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "75 Blundell Road",
+              "Suburb": "Taneatua",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3123"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "gritchie@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-732 5098"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-08-03T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000500",
+        "NationalStudentNumber": 9006000500,
+        "FirstNZSchoolingDate": "2015-01-06T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Salmon",
+            "GivenName": "Jade",
+            "FullName": "Jade Salmon"
+          },
+          "Demographics": {
+            "BirthDate": "2010-01-06T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "12112"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "65 Marchignal Street",
+              "Suburb": "Coastlands",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "jsalmon@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-256 8731"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-01-06T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000513",
+        "NationalStudentNumber": 9006000513,
+        "FirstNZSchoolingDate": "2015-02-07T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Wakelin",
+            "GivenName": "Ryan",
+            "FullName": "Ryan Wakelin"
+          },
+          "Demographics": {
+            "BirthDate": "2010-02-07T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0507"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "70 Fitzgerald Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "rwakelin@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-305 1680"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-02-07T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000526",
+        "NationalStudentNumber": 9006000526,
+        "FirstNZSchoolingDate": "2015-03-31T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Rayfield",
+            "GivenName": "Matthew",
+            "FullName": "Matthew Rayfield"
+          },
+          "Demographics": {
+            "BirthDate": "2010-03-31T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0411"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "79 James Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "mrayfield@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-943 6369"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-03-31T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000539",
+        "NationalStudentNumber": 9006000539,
+        "FirstNZSchoolingDate": "2015-05-02T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Schoch",
+            "GivenName": "Amy",
+            "FullName": "Amy Schoch"
+          },
+          "Demographics": {
+            "BirthDate": "2010-05-02T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0504"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "25 Onslow Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "aschoch@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-487 8641"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-05-02T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000541",
+        "NationalStudentNumber": 9006000541,
+        "FirstNZSchoolingDate": "2015-05-27T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPG"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Spencer",
+            "GivenName": "Hannah",
+            "FullName": "Hannah Spencer"
+          },
+          "Demographics": {
+            "BirthDate": "2010-05-27T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0415"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "17 Sisam Place",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "hspencer@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-999 4045"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-05-27T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000554",
+        "NationalStudentNumber": 9006000554,
+        "FirstNZSchoolingDate": "2015-06-03T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Lindsay",
+            "GivenName": "Alexander",
+            "FullName": "Alexander Lindsay"
+          },
+          "Demographics": {
+            "BirthDate": "2010-06-03T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0415"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "64 The Glebe",
+              "Suburb": "Coastlands",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "alindsay@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-672 5685"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-06-03T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000567",
+        "NationalStudentNumber": 9006000567,
+        "FirstNZSchoolingDate": "2015-11-18T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ETU"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Tubb",
+            "GivenName": "Connor",
+            "FullName": "Connor Tubb"
+          },
+          "Demographics": {
+            "BirthDate": "2010-11-18T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0412"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "19 Princess Street",
+              "Suburb": "Opotiki",
+              "City": "Opotiki",
+              "Country": "New Zealand",
+              "PostalCode": "3122"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "ctubb@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-833 5105"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2015-11-18T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 6,
+            "FundingYearLevel": 6
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6100575",
+        "NationalStudentNumber": 9006100575,
+        "FirstNZSchoolingDate": "2016-02-15T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Mcginley",
+            "GivenName": "Bella",
+            "FullName": "Bella Mcginley"
+          },
+          "Demographics": {
+            "BirthDate": "2011-02-15T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0503"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "30 Brabant Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "bmcginley@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-766 6188"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2016-02-15T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 5,
+            "FundingYearLevel": 5
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000582",
+        "NationalStudentNumber": 9006000582,
+        "FirstNZSchoolingDate": "2016-04-17T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Jones",
+            "GivenName": "Joshua",
+            "FullName": "Joshua Jones"
+          },
+          "Demographics": {
+            "BirthDate": "2011-04-17T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0507"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "46 Weld Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "jjones@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-766 5176"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2016-04-17T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 5,
+            "FundingYearLevel": 5
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000595",
+        "NationalStudentNumber": 9006000595,
+        "FirstNZSchoolingDate": "2016-06-22T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Millar",
+            "GivenName": "Hayley",
+            "FullName": "Hayley Millar"
+          },
+          "Demographics": {
+            "BirthDate": "2011-06-22T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0507"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "58 Nile Street",
+              "Suburb": "Kowhai Park",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "4500"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "hmillar@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-546 5367"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2016-06-22T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 5,
+            "FundingYearLevel": 5
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000605",
+        "NationalStudentNumber": 9006000605,
+        "FirstNZSchoolingDate": "2018-02-09T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPG"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Talbot",
+            "GivenName": "Ava",
+            "FullName": "Ava Talbot"
+          },
+          "Demographics": {
+            "BirthDate": "2013-02-09T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "42111"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "84 Awakeri Road",
+              "Suburb": "Edgecumbe",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "atalbot@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-706 6872"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-02-09T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000618",
+        "NationalStudentNumber": 9006000618,
+        "FirstNZSchoolingDate": "2018-03-01T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPG"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Sutton",
+            "GivenName": "Zachary",
+            "FullName": "Zachary Sutton"
+          },
+          "Demographics": {
+            "BirthDate": "2013-03-01T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS16111",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "111"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "4 SH 35",
+              "Suburb": "Opotiki",
+              "City": "Opotiki",
+              "Country": "New Zealand",
+              "PostalCode": "3122"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "zsutton@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-527 1071"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-03-01T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000620",
+        "NationalStudentNumber": 9006000620,
+        "FirstNZSchoolingDate": "2018-05-17T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Pearson",
+            "GivenName": "Sam",
+            "FullName": "Sam Pearson"
+          },
+          "Demographics": {
+            "BirthDate": "2013-05-17T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS16111",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0404"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "61 Kiwi Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "spearson@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-633 8936"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-05-17T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000633",
+        "NationalStudentNumber": 9006000633,
+        "FirstNZSchoolingDate": "2018-10-26T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Thomas",
+            "GivenName": "Emma",
+            "FullName": "Emma Thomas"
+          },
+          "Demographics": {
+            "BirthDate": "2013-10-26T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS07116",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "124"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "46 Victoria Street",
+              "Suburb": "Opotiki",
+              "City": "Opotiki",
+              "Country": "New Zealand",
+              "PostalCode": "3122"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "ethomas@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-845 1582"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-10-26T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000646",
+        "NationalStudentNumber": 9006000646,
+        "FirstNZSchoolingDate": "2019-01-07T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Gambirazzi",
+            "GivenName": "Sarah",
+            "FullName": "Sarah Gambirazzi"
+          },
+          "Demographics": {
+            "BirthDate": "2014-01-07T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0507"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "68 Fox Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "sgambirazzi@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-735 9353"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-01-07T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000659",
+        "NationalStudentNumber": 9006000659,
+        "FirstNZSchoolingDate": "2019-03-27T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Mcdonald",
+            "GivenName": "Trinity",
+            "FullName": "Trinity Mcdonald"
+          },
+          "Demographics": {
+            "BirthDate": "2014-03-27T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS07116",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "43117"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "92 Sisam Place",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "tmcdonald@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-775 9962"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-03-27T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000661",
+        "NationalStudentNumber": 9006000661,
+        "FirstNZSchoolingDate": "2019-04-09T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPC"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Lynch",
+            "GivenName": "Jessica",
+            "FullName": "Jessica Lynch"
+          },
+          "Demographics": {
+            "BirthDate": "2014-04-09T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0406"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "83 White Street",
+              "Suburb": "Kowhai Park",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "4500"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "jlynch@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-145 3321"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-04-09T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000674",
+        "NationalStudentNumber": 9006000674,
+        "FirstNZSchoolingDate": "2019-10-14T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EOS"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Johnson",
+            "GivenName": "Ethan",
+            "FullName": "Ethan Johnson"
+          },
+          "Demographics": {
+            "BirthDate": "2014-10-14T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0404"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "86 Plantation Reserve",
+              "Suburb": "Ohope",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3121"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "ejohnson@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-980 9137"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-10-14T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000687",
+        "NationalStudentNumber": 9006000687,
+        "FirstNZSchoolingDate": "2019-10-16T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EOS"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Taylor",
+            "GivenName": "Isabella",
+            "FullName": "Isabella Taylor"
+          },
+          "Demographics": {
+            "BirthDate": "2014-10-16T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0401"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "21 Lord Cobham Avenue",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "itaylor@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-771 7476"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-10-16T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6100695",
+        "NationalStudentNumber": 9006100695,
+        "FirstNZSchoolingDate": "2019-12-22T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Hewitson",
+            "GivenName": "Zara",
+            "FullName": "Zara Hewitson"
+          },
+          "Demographics": {
+            "BirthDate": "2014-12-22T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "124"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "81 Fitzroy Street",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "zhewitson@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-440 8901"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-12-22T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6100705",
+        "NationalStudentNumber": 9006100705,
+        "FirstNZSchoolingDate": "2020-06-08T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Lawson",
+            "GivenName": "Cameron",
+            "FullName": "Cameron Lawson"
+          },
+          "Demographics": {
+            "BirthDate": "2015-06-08T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0504"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "13 Ryder Place",
+              "Suburb": "Kawerau",
+              "City": "Kawerau",
+              "Country": "New Zealand",
+              "PostalCode": "3127"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "clawson@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-902 1123"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-06-08T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000712",
+        "NationalStudentNumber": 9006000712,
+        "FirstNZSchoolingDate": "2020-07-02T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Hick",
+            "GivenName": "David",
+            "FullName": "David Hick"
+          },
+          "Demographics": {
+            "BirthDate": "2015-07-02T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "121"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "12 Matirerau Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "dhick@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-495 3141"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-07-02T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000725",
+        "NationalStudentNumber": 9006000725,
+        "FirstNZSchoolingDate": "2020-07-31T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EOS"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Tims",
+            "GivenName": "Nathan",
+            "FullName": "Nathan Tims"
+          },
+          "Demographics": {
+            "BirthDate": "2015-07-31T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0508"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "53 Muriwai Terrace",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "ntims@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-561 6407"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-07-31T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000738",
+        "NationalStudentNumber": 9006000738,
+        "FirstNZSchoolingDate": "2020-11-18T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EOS"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Mcewan",
+            "GivenName": "Thomas",
+            "FullName": "Thomas Mcewan"
+          },
+          "Demographics": {
+            "BirthDate": "2015-11-18T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0503"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "50 Hurinui Avenue",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "tmcewan@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-481 8445"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-11-18T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000740",
+        "NationalStudentNumber": 9006000740,
+        "FirstNZSchoolingDate": "2020-12-13T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Witthaus",
+            "GivenName": "Isabelle",
+            "FullName": "Isabelle Witthaus"
+          },
+          "Demographics": {
+            "BirthDate": "2015-12-13T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0410"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "11 Diana Glade",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "iwitthaus@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-326 7841"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-12-13T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000753",
+        "NationalStudentNumber": 9006000753,
+        "FirstNZSchoolingDate": "2017-10-25T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Itamara",
+            "GivenName": "Maddison",
+            "FullName": "Maddison Itamara"
+          },
+          "Demographics": {
+            "BirthDate": "2012-10-25T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0505"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "4 Barry Avenue",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "mitamara@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-998 2407"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2017-10-25T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 4,
+            "FundingYearLevel": 4
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000766",
+        "NationalStudentNumber": 9006000766,
+        "FirstNZSchoolingDate": "2017-11-02T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ECO"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Person",
+            "GivenName": "Connor",
+            "FullName": "Connor Person"
+          },
+          "Demographics": {
+            "BirthDate": "2012-11-02T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0504"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "69 Ocean View Road",
+              "Suburb": "Coastlands",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "cperson@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-779 6381"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2017-11-02T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 4,
+            "FundingYearLevel": 4
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000779",
+        "NationalStudentNumber": 9006000779,
+        "FirstNZSchoolingDate": "2018-03-18T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Tebbutt",
+            "GivenName": "Jasmine",
+            "FullName": "Jasmine Tebbutt"
+          },
+          "Demographics": {
+            "BirthDate": "2013-03-18T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0507"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "5 Richard Street",
+              "Suburb": "Opotiki",
+              "City": "Opotiki",
+              "Country": "New Zealand",
+              "PostalCode": "3122"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "jtebbutt@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-382 7045"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-03-18T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000781",
+        "NationalStudentNumber": 9006000781,
+        "FirstNZSchoolingDate": "2018-08-15T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Martin",
+            "GivenName": "Mason",
+            "FullName": "Mason Martin"
+          },
+          "Demographics": {
+            "BirthDate": "2013-08-15T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "12119"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "45 Churchill Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "mmartin@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-857  250"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2018-08-15T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 3,
+            "FundingYearLevel": 3
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000794",
+        "NationalStudentNumber": 9006000794,
+        "FirstNZSchoolingDate": "2019-02-07T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Robertshaw",
+            "GivenName": "Daniel",
+            "FullName": "Daniel Robertshaw"
+          },
+          "Demographics": {
+            "BirthDate": "2014-02-07T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "121"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "9 Puriri Crescent",
+              "Suburb": "Edgecumbe",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "drobertshaw@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-250 6279"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-02-07T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000804",
+        "NationalStudentNumber": 9006000804,
+        "FirstNZSchoolingDate": "2019-02-19T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPG"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Milligan",
+            "GivenName": "Isabelle",
+            "FullName": "Isabelle Milligan"
+          },
+          "Demographics": {
+            "BirthDate": "2014-02-19T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0503"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "67 Farnworth Crescent",
+              "Suburb": "Poroporo",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "imilligan@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-826 9449"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-02-19T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000817",
+        "NationalStudentNumber": 9006000817,
+        "FirstNZSchoolingDate": "2019-03-31T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ENA"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Sullivan",
+            "GivenName": "Aaron",
+            "FullName": "Aaron Sullivan"
+          },
+          "Demographics": {
+            "BirthDate": "2014-03-31T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "43117"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "57 Ohiwa Parade",
+              "Suburb": "Ohope",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3121"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "asullivan@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-790 6916"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-03-31T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6100825",
+        "NationalStudentNumber": 9006100825,
+        "FirstNZSchoolingDate": "2019-06-30T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "ECO"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Leeden",
+            "GivenName": "Abigail",
+            "FullName": "Abigail Leeden"
+          },
+          "Demographics": {
+            "BirthDate": "2014-06-30T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0403"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "42 St John Street",
+              "Suburb": "Opotiki",
+              "City": "Opotiki",
+              "Country": "New Zealand",
+              "PostalCode": "3122"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "aleeden@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-781 3762"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-06-30T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000832",
+        "NationalStudentNumber": 9006000832,
+        "FirstNZSchoolingDate": "2019-09-07T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Ross",
+            "GivenName": "Zoe",
+            "FullName": "Zoe Ross"
+          },
+          "Demographics": {
+            "BirthDate": "2014-09-07T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0405"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "93 Wybo Veldman Place",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "zross@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-794 7378"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-09-07T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000845",
+        "NationalStudentNumber": 9006000845,
+        "FirstNZSchoolingDate": "2019-12-26T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EUN"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Hall",
+            "GivenName": "Thomas",
+            "FullName": "Thomas Hall"
+          },
+          "Demographics": {
+            "BirthDate": "2014-12-26T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "12113"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "74 Kowhai Avenue",
+              "Suburb": "Edgecumbe",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "thall@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-777 3803"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2019-12-26T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 2,
+            "FundingYearLevel": 2
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000858",
+        "NationalStudentNumber": 9006000858,
+        "FirstNZSchoolingDate": "2020-04-23T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EKE"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Gilbert",
+            "GivenName": "Jamie",
+            "FullName": "Jamie Gilbert"
+          },
+          "Demographics": {
+            "BirthDate": "2015-04-23T00:00:00+12:00",
+            "Gender": "1",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0507"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "81 Ratima Place",
+              "Suburb": "Poroporo",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "jgilbert@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-824 6243"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-04-23T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000860",
+        "NationalStudentNumber": 9006000860,
+        "FirstNZSchoolingDate": "2020-07-05T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPC"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Laws",
+            "GivenName": "Brianna",
+            "FullName": "Brianna Laws"
+          },
+          "Demographics": {
+            "BirthDate": "2015-07-05T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "211"
+                }
+              ]
+            },
+            "IwiAffiliationList": {
+              "Iwi": [
+                {
+                  "Code": "NZS0504"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "93 Stewart Street",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "blaws@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-823 1366"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-07-05T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      },
+      {
+        "StudentPersonalLocalId": "ST6000873",
+        "NationalStudentNumber": 9006000873,
+        "FirstNZSchoolingDate": "2020-07-07T00:00:00+12:00",
+        "EarlyChildhoodEducation": {
+          "Type": "EPC"
+        },
+        "PersonInfo": {
+          "Name": {
+            "FamilyName": "Urquhart",
+            "GivenName": "Madison",
+            "FullName": "Madison Urquhart"
+          },
+          "Demographics": {
+            "BirthDate": "2015-07-07T00:00:00+12:00",
+            "Gender": "2",
+            "LanguageList": {
+              "Language": [
+                {
+                  "Code": "NZS01112",
+                  "Usage": "SH"
+                }
+              ]
+            },
+            "EthnicityList": {
+              "Ethnicity": [
+                {
+                  "Code": "521"
+                }
+              ]
+            }
+          },
+          "Address": {
+            "Physical": {
+              "Type": "TH",
+              "Line1": "98 Alexander Avenue",
+              "Suburb": "Whakatane",
+              "City": "Whakatane",
+              "Country": "New Zealand",
+              "PostalCode": "3120"
+            }
+          },
+          "Email": {
+            "Personal": {
+              "SourceOrganisation": {
+                "RefId": "8006"
+              },
+              "Address": "murquhart@mailinator.com"
+            }
+          },
+          "Phone": {
+            "Home": {
+              "Number": "+64 7-955  119"
+            }
+          }
+        },
+        "StudentProviderEnrolment": {
+          "EntryDate": "2020-07-07T00:00:00+12:00",
+          "SchoolEnrolment": {
+            "YearLevel": 1,
+            "FundingYearLevel": 1
+          }
+        }
+      }
+    ]
+  }
+}

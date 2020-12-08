@@ -1,0 +1,66 @@
+{
+  "SchedulePeriods": {
+    "SchedulePeriod": [
+      {
+        "SchedulePeriodLocalId": "8008_HR",
+        "PeriodName": "Homeroom",
+        "Organisation": {
+          "RefId": "8008"
+        },
+        "Schedule": {
+          "LocalId": "8008_Sched_2020"
+        }
+      },
+      {
+        "SchedulePeriodLocalId": "8008_P1",
+        "PeriodName": "Period 1",
+        "Organisation": {
+          "RefId": "8008"
+        },
+        "Schedule": {
+          "LocalId": "8008_Sched_2020"
+        }
+      },
+      {
+        "SchedulePeriodLocalId": "8008_P2",
+        "PeriodName": "Period 2",
+        "Organisation": {
+          "RefId": "8008"
+        },
+        "Schedule": {
+          "LocalId": "8008_Sched_2020"
+        }
+      },
+      {
+        "SchedulePeriodLocalId": "8008_P3",
+        "PeriodName": "Period 3",
+        "Organisation": {
+          "RefId": "8008"
+        },
+        "Schedule": {
+          "LocalId": "8008_Sched_2020"
+        }
+      },
+      {
+        "SchedulePeriodLocalId": "8008_P4",
+        "PeriodName": "Period 4",
+        "Organisation": {
+          "RefId": "8008"
+        },
+        "Schedule": {
+          "LocalId": "8008_Sched_2020"
+        }
+      },
+      {
+        "SchedulePeriodLocalId": "8008_P5",
+        "PeriodName": "Period 5",
+        "Organisation": {
+          "RefId": "8008"
+        },
+        "Schedule": {
+          "LocalId": "8008_Sched_2020"
+        }
+      }
+    ]
+  }
+}
