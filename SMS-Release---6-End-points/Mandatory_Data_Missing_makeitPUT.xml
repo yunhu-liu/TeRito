@@ -151,53 +151,6 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="REST Request_Can create negative test" id="cde6abe1-d763-4d39-8d03-89ebd06a80c6" disabled="true">
-    <con:settings/>
-    <con:config service="/Te Rito APIs_Additional" resourcePath="/studentpersonal/{StudentPersonalLocalId}" methodName="getStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="REST Request_Can create negative test" id="2cd69b18-8dcf-4cc7-aec2-d27a017e6251" mediaType="application/json">
-        <con:settings>
-          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-        </con:settings>
-        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
-        <con:request/>
-        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal/ST5000000</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="a288c849-511d-438d-af04-4d48a0079002" name="Valid HTTP Status Codes">
-          <con:settings/>
-          <con:configuration>
-            <codes>200</codes>
-          </con:configuration>
-        </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="a3ce1cd9-8e48-45d7-a9e5-60d063090b38" name="Response SLA">
-          <con:configuration>
-            <SLA>200</SLA>
-          </con:configuration>
-        </con:assertion>
-        <con:credentials>
-          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:parameters>
-          <con:entry key="Accept" value="application/json"/>
-          <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
-          <con:entry key="StudentPersonalLocalId" value="ST5000000"/>
-        </con:parameters>
-        <con:parameterOrder>
-          <con:entry>fields</con:entry>
-          <con:entry>page</con:entry>
-          <con:entry>max</con:entry>
-          <con:entry>unwrap</con:entry>
-          <con:entry>human</con:entry>
-          <con:entry>sort</con:entry>
-          <con:entry>field</con:entry>
-          <con:entry>pattern</con:entry>
-          <con:entry>Accept</con:entry>
-          <con:entry>X-Edsby-OrganisationRefId</con:entry>
-          <con:entry>StudentPersonalLocalId</con:entry>
-        </con:parameterOrder>
-      </con:restRequest>
-    </con:config>
-  </con:testStep>
   <con:testStep type="restrequest" name="Copy of /studentpersonal POST Request 1_Valid_Single" id="2547d263-8d18-4ee4-88d9-99db21862047" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="createStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -1282,27 +1235,6 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="addPet - Request 2" id="8658b208-ef49-4683-9b07-68ba3a5711d3" disabled="true">
-    <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="addPet - Request 2" id="fa62aebc-fb9f-4346-82fa-e82bf6b2f7d0" mediaType="application/xml" postQueryString="false">
-        <con:settings>
-          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-        </con:settings>
-        <con:endpoint>https://petstore.swagger.io</con:endpoint>
-        <con:request>${DataSource#fileContents}
-${Copy of /studentpersonal POST Request 1_Valid#RawRequest}</con:request>
-        <con:originalUri>http://petstore.swagger.io/v2/pet</con:originalUri>
-        <con:credentials>
-          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:parameters/>
-        <con:parameterOrder/>
-      </con:restRequest>
-    </con:config>
-  </con:testStep>
   <con:testStep type="datasourceloop" name="DataSource Loop" id="bb5adf6c-9ae9-4a79-944d-547ad740ca4c">
     <con:settings/>
     <con:config>
@@ -1339,11 +1271,6 @@ ${Copy of /studentpersonal POST Request 1_Valid#RawRequest}</con:request>
     <con:properties/>
   </con:breakPoints>
   <con:breakPoints>
-    <con:testStepId>8658b208-ef49-4683-9b07-68ba3a5711d3</con:testStepId>
-    <con:status>NONE</con:status>
-    <con:properties/>
-  </con:breakPoints>
-  <con:breakPoints>
     <con:testStepId>bb5adf6c-9ae9-4a79-944d-547ad740ca4c</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
@@ -1355,11 +1282,6 @@ ${Copy of /studentpersonal POST Request 1_Valid#RawRequest}</con:request>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>2547d263-8d18-4ee4-88d9-99db21862047</con:testStepId>
-    <con:status>NONE</con:status>
-    <con:properties/>
-  </con:breakPoints>
-  <con:breakPoints>
-    <con:testStepId>cde6abe1-d763-4d39-8d03-89ebd06a80c6</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>

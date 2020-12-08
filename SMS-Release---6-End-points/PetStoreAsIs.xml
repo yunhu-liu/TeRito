@@ -21,26 +21,6 @@
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="addPet - Request 2" id="5cb3ad9f-8c14-458b-b0cc-56a9ad67307d">
-    <con:settings/>
-    <con:config service="Swagger Petstore" resourcePath="/v2/pet" methodName="addPet" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="addPet - Request 2" id="fa62aebc-fb9f-4346-82fa-e82bf6b2f7d0" mediaType="application/xml" postQueryString="false">
-        <con:settings>
-          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-        </con:settings>
-        <con:endpoint>https://petstore.swagger.io</con:endpoint>
-        <con:request>${DataSource#fileContents}</con:request>
-        <con:originalUri>http://petstore.swagger.io/v2/pet</con:originalUri>
-        <con:credentials>
-          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:parameters/>
-        <con:parameterOrder/>
-      </con:restRequest>
-    </con:config>
-  </con:testStep>
   <con:testStep type="datasourceloop" name="DataSource Loop" id="c1dcc436-c8ce-4989-a99b-22d3cd78d0ad">
     <con:settings/>
     <con:config>
