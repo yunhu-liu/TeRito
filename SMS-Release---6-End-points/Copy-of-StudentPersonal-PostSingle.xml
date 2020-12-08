@@ -1,483 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="928c7332-047a-459a-9bb2-246c382508f5" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="StudentPersonal" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase id="ccfb1aa2-db53-4271-ad0a-23eafdf1667b" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Copy of StudentPersonal-PostSingle" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="928c7332-047a-459a-9bb2-246c382508f5fileName">StudentPersonal</con:setting>
+    <con:setting id="ccfb1aa2-db53-4271-ad0a-23eafdf1667bfileName">Copy-of-StudentPersonal-PostSingle</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
-  <con:testStep type="properties" name="Properties" id="432540d4-7ded-4115-b4f7-c64f0c8b0ca9">
-    <con:settings/>
-    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:properties>
-        <con:property>
-          <con:name>OrgRefId</con:name>
-          <con:value>90903</con:value>
-        </con:property>
-        <con:property>
-          <con:name>InvalidOrgRefId</con:name>
-          <con:value>1715</con:value>
-        </con:property>
-        <con:property>
-          <con:name>StudentLocalId</con:name>
-          <con:value>93924683-ed4b-4114-8df2-ffe0f1c471f4</con:value>
-        </con:property>
-        <con:property>
-          <con:name>StudentRefId</con:name>
-          <con:value>36380c70-0b14-48c9-847e-87b0810d9395</con:value>
-        </con:property>
-        <con:property>
-          <con:name>NationalStudentNumber</con:name>
-          <con:value>9001000001</con:value>
-        </con:property>
-        <con:property>
-          <con:name>FamilyName</con:name>
-          <con:value>Saunders</con:value>
-        </con:property>
-        <con:property>
-          <con:name>GivenName</con:name>
-          <con:value>Thomas</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EmailOrgId</con:name>
-          <con:value/>
-        </con:property>
-        <con:property>
-          <con:name>EmailRefId</con:name>
-          <con:value>90903</con:value>
-        </con:property>
-        <con:property>
-          <con:name>EmailAddress</con:name>
-          <con:value>tsaunders@mailinator.com</con:value>
-        </con:property>
-        <con:property>
-          <con:name>StudentPersonal</con:name>
-          <con:value>{
-  "StudentPersonal": {
-    "StudentPersonalRefId": "75645c6c-5d75-4076-8554-ee984e271759",
-    "StudentPersonalLocalId": "ST1000001_d1b37f1b-37d5-4484-9654-5c166ca129d7",
-    "NationalStudentNumber": 9001000001,
-    "FirstNZSchoolingDate": "2015-03-07",
-    "EarlyChildhoodEducation": {
-      "Type": "EPG"
-    },
-    "PersonInfo": {
-      "Name": {
-        "FamilyName": "Saunders",
-        "GivenName": "Thomas",
-        "FullName": "Thomas Saunders",
-        "IsVerified": 0
-      },
-      "Demographics": {
-        "BirthDate": "2010-03-07",
-        "Gender": "1",
-        "LanguageList": {
-          "Language": [
-            {
-              "Code": "NZS01112",
-              "Usage": "SH"
-            }
-          ]
-        },
-        "EthnicityList": {
-          "Ethnicity": [
-            {
-              "Code": "321"
-            }
-          ]
-        }
-      },
-      "AddressList": {
-        "Address": [
-          {
-            "Type": "TH",
-            "Role": "PHY",
-            "Line1": "27 Arataua Street",
-            "Suburb": "Rotorua",
-            "City": "Rotorua",
-            "Country": "New Zealand",
-            "PostalCode": "3010"
-          }
-        ]
-      },
-      "EmailList": {
-        "Email": [
-          {
-            "Type": 0,
-            "SourceOrganisation": {
-              "RefId": "8008"
-            },
-            "Address": "tsaunders@mailinator.com"
-          }
-        ]
-      },
-      "PhoneNumberList": {
-        "PhoneNumber": [
-          {
-            "Type": "MAI",
-            "Number": "+64 7-943 8050"
-          }
-        ]
-      }
-    },
-    "BiographicChangeReason": 0,
-    "RecordAudit": {
-      "CreatedDateTime": "2020-12-02T03:20:56.7796037+00:00"
-    }
-  }
-}</con:value>
-        </con:property>
-      </con:properties>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="datasource" name="DataSource" id="c62a7714-8f70-4228-ba35-ec14163e606e">
-    <con:settings/>
-    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:dataSource type="Groovy">
-        <con:configuration>
-          <script/>
-        </con:configuration>
-      </con:dataSource>
-      <con:shared>true</con:shared>
-      <con:restartShared>true</con:restartShared>
-      <con:restartOnRun>true</con:restartOnRun>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="datasource" name="GetAllOrgs" id="6f8c3a58-8eb7-45b5-b6b7-f05cf0f0a963">
-    <con:settings/>
-    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:dataSource type="File">
-        <con:configuration>
-          <fileName>C:/TeRito/testdata/wrappedTestCases/Organisation/valid/TeWheke.csv</fileName>
-          <separator>,</separator>
-          <trim>true</trim>
-          <charset>Cp1252</charset>
-          <quotedValues>false</quotedValues>
-        </con:configuration>
-      </con:dataSource>
-      <con:shared>true</con:shared>
-      <con:restartShared>true</con:restartShared>
-      <con:property>_op</con:property>
-      <con:property>OrganisationRefId</con:property>
-      <con:property>EducationRegion</con:property>
-      <con:property>SpecialEducationDistrict</con:property>
-      <con:property>EntityOpen</con:property>
-      <con:property>Name</con:property>
-      <con:property>OperationalStatus</con:property>
-      <con:property>Type</con:property>
-      <con:property>SectorRole</con:property>
-      <con:property>ProviderSMS</con:property>
-      <con:property>IsLicencedECEServiceProvider</con:property>
-      <con:property>IsPlaygroupServiceProvider</con:property>
-      <con:property>ECEServiceProviderOwnershipType</con:property>
-      <con:property>Authority</con:property>
-      <con:property>AddressList.Address.Type</con:property>
-      <con:property>AddressList.Address.Role</con:property>
-      <con:property>AddressList.Address.Line1</con:property>
-      <con:property>AddressList.Address.City</con:property>
-      <con:property>AddressList.Address.Country</con:property>
-      <con:property>AddressList.Address.PostalCode</con:property>
-      <con:property>AddressList.Address.GridLocation.Latitude</con:property>
-      <con:property>AddressList.Address.GridLocation.Longitude</con:property>
-      <con:property>EmailList.Email.Type</con:property>
-      <con:property>EmailList.Email.Address</con:property>
-      <con:property>PhoneNumberList.PhoneNumber.Type</con:property>
-      <con:property>PhoneNumberList.PhoneNumber.Number</con:property>
-      <con:property>TeRitoConfig.DataAnalysisDashboardsInd</con:property>
-      <con:property>TeRitoConfig.StandardisedLearningSupportRegisterInd</con:property>
-      <con:property>TeRitoConfig.VirtualLearningEnvironmentInd</con:property>
-      <con:property>SchoolService.CoEdStatus</con:property>
-      <con:property>SchoolService.Decile</con:property>
-      <con:property>SchoolService.AllowManualProvisioning</con:property>
-      <con:property>SchoolService.SchoolClassificationList.Classification</con:property>
-      <con:property>SchoolService.SchoolYearList.SchoolYear.YearLevel</con:property>
-      <con:property>SchoolService.SchoolYearList.SchoolYear.FIRSTSchoolYearGenderId</con:property>
-      <con:property>SchoolService.SchoolYearList.SchoolYear.Gender</con:property>
-      <con:property>ECEService.Type</con:property>
-      <con:property>ECEService.PrimaryLanguage</con:property>
-      <con:startRow>1</con:startRow>
-      <con:endRow/>
-      <con:recordsPerIteration>1</con:recordsPerIteration>
-      <con:completeLastOperation>true</con:completeLastOperation>
-      <con:trimValues>false</con:trimValues>
-      <con:entitizeValues>false</con:entitizeValues>
-      <con:restartOnRun>true</con:restartOnRun>
-      <con:expandProperties>false</con:expandProperties>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="groovy" name="SaveAllOrgs" id="1289e28c-e1af-4c20-baa2-ac3b8985168b">
-    <con:settings/>
-    <con:config>
-      <script>// Create a list for orgnisations
-if( context["allOrgs"] == null ) context["allOrgs"] = []
-
-// Append the current data source row value to the list
-context["allOrgs"] &lt;&lt; context.expand( '${GetAllOrgs#OrganisationRefId}' )</script>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="datasourceloop" name="LoopAllOrgs" id="802b15e8-cffa-49b8-a77c-8dc866c58ff2">
-    <con:settings/>
-    <con:config>
-      <dataSourceStep>GetAllOrgs</dataSourceStep>
-      <targetStep>SaveAllOrgs</targetStep>
-      <discardResults>true</discardResults>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="datasource" name="GetRandomOrgRefId" id="f0c864b8-ce86-48ff-8cc6-ea2c4b43d0d1">
-    <con:settings/>
-    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:dataSource type="Groovy">
-        <con:configuration>
-          <script>// Shuffle the list before returning values
-Collections.shuffle( context["allOrgs"] )
-
-// Get the value of the current row
-def row = testRunner.testCase.testSteps["GetRandomOrgRefId"].currentRow
-
-// Return the value as long as it is within the list
-if ( row + 1 &lt;= context["allOrgs"].size() )
-{
-    result["RandomOrgRefId"] = context["allOrgs"][row]
-}</script>
-        </con:configuration>
-      </con:dataSource>
-      <con:shared>true</con:shared>
-      <con:restartShared>true</con:restartShared>
-      <con:property>RandomOrgRefId</con:property>
-      <con:restartOnRun>true</con:restartOnRun>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="datasource" name="GetRandomInvalidOrgRefId" id="ab0e2f01-cfc7-4365-a1f9-b634d75bb029">
-    <con:settings>
-      <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
-    </con:settings>
-    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:dataSource type="Data Generator">
-        <con:configuration>
-          <generatedDataCount>1</generatedDataCount>
-          <generatorsTotalNumber>2</generatorsTotalNumber>
-          <lastSelectedProperty>0</lastSelectedProperty>
-          <GeneratorType0>INT</GeneratorType0>
-          <PropertyName0>InvalidOrgId</PropertyName0>
-          <repetitionCountInvalidOrgId>0</repetitionCountInvalidOrgId>
-          <repeatValuesInvalidOrgId>false</repeatValuesInvalidOrgId>
-          <IntegerDataGeneratorMinValueInvalidOrgId>1000</IntegerDataGeneratorMinValueInvalidOrgId>
-          <IntegerDataGeneratorMaxValueInvalidOrgId>8000</IntegerDataGeneratorMaxValueInvalidOrgId>
-          <IntegerDataGeneratorStepValueInvalidOrgId>1</IntegerDataGeneratorStepValueInvalidOrgId>
-          <IntegerDataGeneratorConsequentValuesInvalidOrgId>false</IntegerDataGeneratorConsequentValuesInvalidOrgId>
-          <GeneratorType1>INT</GeneratorType1>
-          <PropertyName1>InvalidOrgRefId</PropertyName1>
-          <repetitionCountInvalidOrgRefId>0</repetitionCountInvalidOrgRefId>
-          <repeatValuesInvalidOrgRefId>false</repeatValuesInvalidOrgRefId>
-          <IntegerDataGeneratorMinValueInvalidOrgRefId>1000</IntegerDataGeneratorMinValueInvalidOrgRefId>
-          <IntegerDataGeneratorMaxValueInvalidOrgRefId>8000</IntegerDataGeneratorMaxValueInvalidOrgRefId>
-          <IntegerDataGeneratorStepValueInvalidOrgRefId>1</IntegerDataGeneratorStepValueInvalidOrgRefId>
-          <IntegerDataGeneratorConsequentValuesInvalidOrgRefId>false</IntegerDataGeneratorConsequentValuesInvalidOrgRefId>
-          <escapeSpaceSequence/>
-        </con:configuration>
-      </con:dataSource>
-      <con:shared>true</con:shared>
-      <con:restartShared>true</con:restartShared>
-      <con:property>InvalidOrgRefId</con:property>
-      <con:restartOnRun>true</con:restartOnRun>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="datasource" name="CreateStudentLocalId" id="56a850ce-312d-430e-97f1-7255521325de">
-    <con:settings/>
-    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:dataSource type="Data Generator">
-        <con:configuration>
-          <generatedDataCount>1</generatedDataCount>
-          <generatorsTotalNumber>1</generatorsTotalNumber>
-          <lastSelectedProperty>0</lastSelectedProperty>
-          <GeneratorType0>GUID</GeneratorType0>
-          <PropertyName0>StudentLocalId</PropertyName0>
-          <repetitionCountStudentLocalId>0</repetitionCountStudentLocalId>
-          <repeatValuesStudentLocalId>false</repeatValuesStudentLocalId>
-          <escapeSpaceSequence/>
-        </con:configuration>
-      </con:dataSource>
-      <con:shared>true</con:shared>
-      <con:restartShared>true</con:restartShared>
-      <con:property>StudentLocalId</con:property>
-      <con:restartOnRun>true</con:restartOnRun>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="transfer" name="Property Transfer1" id="a66839f5-e4b2-49bd-b4c5-1a7e5a1a683e">
-    <con:settings/>
-    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
-        <con:name>SaveOrgRefId</con:name>
-        <con:sourceType>RandomOrgRefId</con:sourceType>
-        <con:sourceStep>GetRandomOrgRefId</con:sourceStep>
-        <con:sourcePath/>
-        <con:targetType>OrgRefId</con:targetType>
-        <con:targetStep>Properties</con:targetStep>
-        <con:targetPath/>
-        <con:upgraded>true</con:upgraded>
-      </con:transfers>
-      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
-        <con:name>SaveInvalidOrgRefId</con:name>
-        <con:sourceType>InvalidOrgRefId</con:sourceType>
-        <con:sourceStep>GetRandomInvalidOrgRefId</con:sourceStep>
-        <con:targetType>InvalidOrgRefId</con:targetType>
-        <con:targetStep>Properties</con:targetStep>
-        <con:upgraded>true</con:upgraded>
-      </con:transfers>
-      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
-        <con:name>SaveStudentLocalId</con:name>
-        <con:sourceType>StudentLocalId</con:sourceType>
-        <con:sourceStep>CreateStudentLocalId</con:sourceStep>
-        <con:targetType>StudentLocalId</con:targetType>
-        <con:targetStep>Properties</con:targetStep>
-        <con:upgraded>true</con:upgraded>
-      </con:transfers>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal GET Request 1_Valid" id="56097faa-e75d-45c3-94b7-7c101f1bfc12">
-    <con:settings/>
-    <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="getStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="/studentpersonal GET Request 1_Valid" id="00ddad57-9534-4eaf-b628-d8146aedb0b0" mediaType="application/json">
-        <con:settings>
-          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-        </con:settings>
-        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
-        <con:request/>
-        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="8f069fc5-1018-4eb3-8ab5-95bc2d129030" name="Valid HTTP Status Codes">
-          <con:settings/>
-          <con:configuration>
-            <codes>200</codes>
-          </con:configuration>
-        </con:assertion>
-        <con:credentials>
-          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:parameters>
-          <con:entry key="Accept" value="application/json"/>
-          <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#OrgRefId}"/>
-        </con:parameters>
-      </con:restRequest>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal GET Request 1_NonExisting" id="7b4c400f-24f4-41b3-b908-bd90a26a2043">
-    <con:settings/>
-    <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="getStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="/studentpersonal GET Request 1_NonExisting" id="00ddad57-9534-4eaf-b628-d8146aedb0b0" mediaType="application/json">
-        <con:settings>
-          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-        </con:settings>
-        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
-        <con:request/>
-        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="8f069fc5-1018-4eb3-8ab5-95bc2d129030" name="Valid HTTP Status Codes">
-          <con:settings/>
-          <con:configuration>
-            <codes>200</codes>
-          </con:configuration>
-        </con:assertion>
-        <con:assertion type="MessageContentAssertion" id="2a417152-4a73-4e78-8caa-6c97165d6533" name="Message Content Assertion">
-          <con:configuration xsi:type="con:MessageContentAssertion">
-            <con:elements>
-              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
-//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]</con:xpath>
-              <con:element>StudentPersonal</con:element>
-              <con:type xsi:nil="true"/>
-              <con:operator>exists</con:operator>
-              <con:enabled>true</con:enabled>
-              <con:expectedValue xsi:nil="true"/>
-              <con:hasValue>false</con:hasValue>
-              <con:numberType>false</con:numberType>
-            </con:elements>
-            <con:originalMessage>&lt;Response xmlns="https://mocksifapi.azurewebsites.net/sif/studentpersonal">
-   &lt;StudentPersonals>
-      &lt;StudentPersonal/>
-   &lt;/StudentPersonals>
-&lt;/Response></con:originalMessage>
-          </con:configuration>
-        </con:assertion>
-        <con:credentials>
-          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:parameters>
-          <con:entry key="Accept" value="application/json"/>
-          <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#InvalidOrgRefId}"/>
-        </con:parameters>
-      </con:restRequest>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal GET Request 1_withoutOrgRefId" id="8ef87231-9dcc-4846-9b97-8f5f50bd12b1">
-    <con:settings/>
-    <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="getStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="/studentpersonal GET Request 1_withoutOrgRefId" id="00ddad57-9534-4eaf-b628-d8146aedb0b0" mediaType="application/json">
-        <con:settings>
-          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-        </con:settings>
-        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
-        <con:request/>
-        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="8f069fc5-1018-4eb3-8ab5-95bc2d129030" name="Valid HTTP Status Codes">
-          <con:settings/>
-          <con:configuration>
-            <codes>422</codes>
-          </con:configuration>
-        </con:assertion>
-        <con:assertion type="MessageContentAssertion" id="2a417152-4a73-4e78-8caa-6c97165d6533" name="Message Content Assertion">
-          <con:configuration xsi:type="con:MessageContentAssertion">
-            <con:elements>
-              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
-//ns1:Fault[1]/ns1:when[1]</con:xpath>
-              <con:element>when</con:element>
-              <con:type xsi:nil="true"/>
-              <con:operator>=</con:operator>
-              <con:enabled>false</con:enabled>
-              <con:expectedValue>2020-11-18T23:33:42.8106331+00:00</con:expectedValue>
-              <con:hasValue>false</con:hasValue>
-              <con:numberType>false</con:numberType>
-            </con:elements>
-            <con:elements>
-              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
-//ns1:Fault[1]/ns1:errorstr[1]</con:xpath>
-              <con:element>errorstr</con:element>
-              <con:type xsi:nil="true"/>
-              <con:operator>=</con:operator>
-              <con:enabled>true</con:enabled>
-              <con:expectedValue>Unprocessable request: X-Edsby-OrganisationRefId header missing.</con:expectedValue>
-              <con:hasValue>false</con:hasValue>
-              <con:numberType>false</con:numberType>
-            </con:elements>
-            <con:elements>
-              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
-//ns1:Fault[1]/ns1:error[1]</con:xpath>
-              <con:element>error</con:element>
-              <con:type xsi:nil="true"/>
-              <con:operator>=</con:operator>
-              <con:enabled>true</con:enabled>
-              <con:expectedValue>422</con:expectedValue>
-              <con:hasValue>false</con:hasValue>
-              <con:numberType>false</con:numberType>
-            </con:elements>
-            <con:originalMessage><![CDATA[<Fault xmlns="https://mocksifapi.azurewebsites.net/sif/studentpersonal">
-   <error>422</error>
-   <when>2020-11-18T23:33:42.8106331+00:00</when>
-   <errorstr>Unprocessable request: X-Edsby-OrganisationRefId header missing.</errorstr>
-</Fault>]]></con:originalMessage>
-          </con:configuration>
-        </con:assertion>
-        <con:credentials>
-          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:parameters>
-          <con:entry key="Accept" value="application/json"/>
-        </con:parameters>
-      </con:restRequest>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal POST Request 1_Valid_Single" id="a1e8100a-202a-408d-9a6b-b55e9741530f">
+  <con:testStep type="restrequest" name="/studentpersonal POST Request 1_Valid_Single" id="da409038-2ee5-4416-8c78-068d825b26ff">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="createStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal POST Request 1_Valid_Single" id="33c88154-0043-4c50-9f03-8a295f2f60d1" mediaType="application/json" postQueryString="false">
@@ -993,7 +520,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="transfer" name="Property Transfer2" id="6cc8cf78-5c21-45aa-a2db-a1c898f34947">
+  <con:testStep type="transfer" name="Property Transfer2" id="c5b98ab8-415a-47db-8bd5-9ffab3e066aa">
     <con:settings/>
     <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
@@ -1001,8 +528,8 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
         <con:sourceType>Response</con:sourceType>
         <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
         <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['StudentPersonalRefId']</con:sourcePath>
-        <con:targetType>StudentRefId</con:targetType>
-        <con:targetStep>Properties</con:targetStep>
+        <con:targetType xsi:nil="true"/>
+        <con:targetStep>/studentpersonal POST Request 1_Valid_Single_MandatoryDataMissing</con:targetStep>
         <con:targetPath/>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
@@ -1012,8 +539,8 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
         <con:sourceType>Response</con:sourceType>
         <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
         <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['NationalStudentNumber']</con:sourcePath>
-        <con:targetType>NationalStudentNumber</con:targetType>
-        <con:targetStep>Properties</con:targetStep>
+        <con:targetType xsi:nil="true"/>
+        <con:targetStep>/studentpersonal POST Request 1_Valid_Single_MandatoryDataMissing</con:targetStep>
         <con:targetPath/>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
@@ -1023,8 +550,8 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
         <con:sourceType>Response</con:sourceType>
         <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
         <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['PersonInfo']['Name']['FamilyName']</con:sourcePath>
-        <con:targetType>FamilyName</con:targetType>
-        <con:targetStep>Properties</con:targetStep>
+        <con:targetType xsi:nil="true"/>
+        <con:targetStep>/studentpersonal POST Request 1_Valid_Single_MandatoryDataMissing</con:targetStep>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
@@ -1033,8 +560,8 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
         <con:sourceType>Response</con:sourceType>
         <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
         <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['PersonInfo']['Name']['GivenName']</con:sourcePath>
-        <con:targetType>GivenName</con:targetType>
-        <con:targetStep>Properties</con:targetStep>
+        <con:targetType xsi:nil="true"/>
+        <con:targetStep>/studentpersonal POST Request 1_Valid_Single_MandatoryDataMissing</con:targetStep>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
@@ -1043,8 +570,8 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
         <con:sourceType>Response</con:sourceType>
         <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
         <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['PersonInfo']['EmailList']['Email'][0]['SourceOrganisation']['RefId']</con:sourcePath>
-        <con:targetType>EmailRefId</con:targetType>
-        <con:targetStep>Properties</con:targetStep>
+        <con:targetType xsi:nil="true"/>
+        <con:targetStep>/studentpersonal POST Request 1_Valid_Single_MandatoryDataMissing</con:targetStep>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
@@ -1053,14 +580,14 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
         <con:sourceType>Response</con:sourceType>
         <con:sourceStep>/studentpersonal POST Request 1_Valid_Single</con:sourceStep>
         <con:sourcePath>$['StudentPersonals']['StudentPersonal'][0]['PersonInfo']['EmailList']['Email'][0]['Address']</con:sourcePath>
-        <con:targetType>EmailAddress</con:targetType>
-        <con:targetStep>Properties</con:targetStep>
+        <con:targetType xsi:nil="true"/>
+        <con:targetStep>/studentpersonal POST Request 1_Valid_Single_MandatoryDataMissing</con:targetStep>
         <con:type>JSONPATH</con:type>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal POST Request 1_Valid_Single_MandatoryDataMissing" id="179f199c-9c8f-4034-bdea-54765a62296c" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal POST Request 1_Valid_Single_MandatoryDataMissing" id="9158d62b-08f0-4905-8f1a-f0b02e66cafd" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="createStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal POST Request 1_Valid_Single_MandatoryDataMissing" id="33c88154-0043-4c50-9f03-8a295f2f60d1" mediaType="application/json" postQueryString="false">
@@ -1576,7 +1103,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal POST Request 1_Valid_Multi" id="3f0c2775-131a-4113-9889-53f0599b65ee">
+  <con:testStep type="restrequest" name="/studentpersonal POST Request 1_Valid_Multi" id="cabf9f2c-92b0-4fb1-8396-51784277ab29">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="createStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal POST Request 1_Valid_Multi" id="33c88154-0043-4c50-9f03-8a295f2f60d1" mediaType="application/json" postQueryString="false">
@@ -31895,7 +31422,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal POST Request 1_withoutOrgRefId" id="4baa4cc8-46f9-498f-a962-4c8d50fa14d2" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal POST Request 1_withoutOrgRefId" id="d0113c27-0c55-4f98-ada7-777767904eb4" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="createStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal POST Request 1_withoutOrgRefId" id="33c88154-0043-4c50-9f03-8a295f2f60d1" mediaType="application/json" postQueryString="false">
@@ -32027,7 +31554,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal POST Request 1_NonExisting" id="fe13bc12-6503-4afa-950d-9d92fab10253" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal POST Request 1_NonExisting" id="bcc6c3c0-4e24-46b9-91e2-91430d62108c" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="createStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal POST Request 1_NonExisting" id="33c88154-0043-4c50-9f03-8a295f2f60d1" mediaType="application/json" postQueryString="false">
@@ -32160,7 +31687,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal PUT Request 1_Valid_Multi" id="a1e0be5b-4716-48ec-827a-720268bd93bd" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal PUT Request 1_Valid_Multi" id="3856907a-5e91-4db8-a7b6-e0eea5c8d613" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="updateStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal PUT Request 1_Valid_Multi" id="ed10ad93-1527-47ca-b90f-d2d004b65f8a" mediaType="application/json" postQueryString="false">
@@ -32671,7 +32198,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal PUT Request 1_withoutOrgRefId" id="194b5167-8222-4548-9960-2787d6c38b34" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal PUT Request 1_withoutOrgRefId" id="084467f8-9aee-4a4a-bc93-354a23c66080" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="updateStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal PUT Request 1_withoutOrgRefId" id="ed10ad93-1527-47ca-b90f-d2d004b65f8a" mediaType="application/json" postQueryString="false">
@@ -32901,7 +32428,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal PUT Request 1_NonExisting" id="edf78d84-180e-495a-bc65-db7531bc4dbb" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal PUT Request 1_NonExisting" id="dfec9a5e-b86e-45c2-b9b4-b72958b57450" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="updateStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal PUT Request 1_NonExisting" id="ed10ad93-1527-47ca-b90f-d2d004b65f8a" mediaType="application/json" postQueryString="false">
@@ -33132,7 +32659,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal PATCH Request 1_Valid_Multi" id="f06a99db-9c7a-4d94-aee2-f47ff890e7a1" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal PATCH Request 1_Valid_Multi" id="1ae9c97f-0ac4-4b75-9491-f691e3a8bf2f" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="PATCH" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal PATCH Request 1_Valid_Multi" id="a2eea1cb-bf9e-4087-a195-d7f7b1695f92" mediaType="application/json" postQueryString="false">
@@ -33808,7 +33335,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal PATCH Request 1_withoutOrgRefId" id="aea4668f-ba0e-40d4-8ee1-8e691e108d76" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal PATCH Request 1_withoutOrgRefId" id="a209b8df-1682-4393-8ea6-236ed7081794" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="PATCH" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal PATCH Request 1_withoutOrgRefId" id="a2eea1cb-bf9e-4087-a195-d7f7b1695f92" mediaType="application/json" postQueryString="false">
@@ -34027,7 +33554,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal PATCH Request 1_NonExisting" id="316532de-252b-4476-bf02-e9ce56cb7fee" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal PATCH Request 1_NonExisting" id="5f105812-f65f-4666-a475-3961da4b8825" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="PATCH" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal PATCH Request 1_NonExisting" id="a2eea1cb-bf9e-4087-a195-d7f7b1695f92" mediaType="application/json" postQueryString="false">
@@ -34247,7 +33774,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} GET Request 1_Valid" id="e43dd844-8559-4dc5-b5eb-c3e8c15eea16">
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} GET Request 1_Valid" id="55689df8-1350-4ed9-b754-0906a0ed7944">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="getStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} GET Request 1_Valid" id="2cd69b18-8dcf-4cc7-aec2-d27a017e6251" mediaType="application/json">
@@ -34419,7 +33946,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} GET Request 1_withoutOrgRefId" id="2084d27a-e865-4001-a46b-6533d6b9cf4c">
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} GET Request 1_withoutOrgRefId" id="662bc66d-e9fc-423f-a82f-4fb431eb148d">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="getStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} GET Request 1_withoutOrgRefId" id="2cd69b18-8dcf-4cc7-aec2-d27a017e6251" mediaType="application/json">
@@ -34478,7 +34005,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} GET Request 1_withoutStudentPersonalRefId" id="b151fd3e-5aaa-45a0-a730-7ed2b70db1ba">
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} GET Request 1_withoutStudentPersonalRefId" id="73e614bf-18a8-4d27-9337-e7f7123e33fa">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="getStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} GET Request 1_withoutStudentPersonalRefId" id="2cd69b18-8dcf-4cc7-aec2-d27a017e6251" mediaType="application/json">
@@ -34506,7 +34033,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} GET Request 1_NonExisting" id="63d43a18-08e8-4685-8552-1aa66e8589cf">
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} GET Request 1_NonExisting" id="2c80991c-8e8f-4812-900e-d3e5095c5c44">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="getStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} GET Request 1_NonExisting" id="2cd69b18-8dcf-4cc7-aec2-d27a017e6251" mediaType="application/json">
@@ -34566,7 +34093,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="transfer" name="Property Transfer3" id="71063446-4dd3-4b34-a759-860ab8aaf619">
+  <con:testStep type="transfer" name="Property Transfer3" id="84916f9c-87c5-4e3b-b3d0-a3990514eb74">
     <con:settings/>
     <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
@@ -34574,14 +34101,14 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
         <con:sourceType>Response</con:sourceType>
         <con:sourceStep>/studentpersonal/{StudentPersonalRefId} GET Request 1_Valid</con:sourceStep>
         <con:sourcePath/>
-        <con:targetType>StudentPersonal</con:targetType>
-        <con:targetStep>Properties</con:targetStep>
+        <con:targetType xsi:nil="true"/>
+        <con:targetStep>/studentpersonal/{StudentPersonalRefId} PUT Request 1_Valid</con:targetStep>
         <con:targetPath/>
         <con:upgraded>true</con:upgraded>
       </con:transfers>
     </con:config>
   </con:testStep>
-  <con:testStep type="datasource" name="PrepareStudentInfoUpdate" id="61ed788c-aeec-4c97-b743-49f219532e77">
+  <con:testStep type="datasource" name="PrepareStudentInfoUpdate" id="3ac3b53c-a226-4fe2-97a2-4c5e9bb0c8e9">
     <con:settings/>
     <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:dataSource type="Groovy">
@@ -34615,7 +34142,7 @@ result["NewGivenName"] = newGivenName</script>
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_Valid" id="62991fb2-ef5c-4711-bfde-4d195b2ef057">
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_Valid" id="051ee4d9-7eaa-4322-84d9-4f91c3d47a57">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="updateStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_Valid" id="a89feaf0-16fc-4f22-90ea-8fcbba5955e9" mediaType="application/json" postQueryString="false">
@@ -34933,7 +34460,7 @@ result["NewGivenName"] = newGivenName</script>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_withoutOrgRefId" id="99ef8fe7-9b7d-47dc-b171-6bc2d68f35bb" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_withoutOrgRefId" id="f4e5e630-8cbe-4a56-ada4-775469d762a6" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="updateStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_withoutOrgRefId" id="a89feaf0-16fc-4f22-90ea-8fcbba5955e9" mediaType="application/json" postQueryString="false">
@@ -35077,7 +34604,7 @@ result["NewGivenName"] = newGivenName</script>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_withoutStudentPersonalRefId" id="a131de1c-186a-410b-aba5-7bcd1b1772b2" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_withoutStudentPersonalRefId" id="38d652a3-dcde-4e9a-a4ef-d085d59e232d" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="updateStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_withoutStudentPersonalRefId" id="a89feaf0-16fc-4f22-90ea-8fcbba5955e9" mediaType="application/json" postQueryString="false">
@@ -35221,7 +34748,7 @@ result["NewGivenName"] = newGivenName</script>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_NonExisting" id="cd972596-475d-4089-9dbb-6770a05d7104" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_NonExisting" id="1f760056-87fc-4143-b16d-4d0b244d899c" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="updateStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} PUT Request 1_NonExisting" id="a89feaf0-16fc-4f22-90ea-8fcbba5955e9" mediaType="application/json" postQueryString="false">
@@ -35366,7 +34893,7 @@ result["NewGivenName"] = newGivenName</script>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PATCH Request 1_Valid" id="64ee4054-da46-47af-b89d-bfc34dc6667d" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PATCH Request 1_Valid" id="f7031849-e200-4c50-a76f-5d8d7d08911a" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="patchStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} PATCH Request 1_Valid" id="b4922b4d-3206-4fd6-adbc-1a40df193169" mediaType="application/json" postQueryString="false">
@@ -35775,7 +35302,7 @@ result["NewGivenName"] = newGivenName</script>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PATCH Request 1_withoutOrgRefId" id="d7016145-3e1c-4d19-984f-7089c671ffd7" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PATCH Request 1_withoutOrgRefId" id="7b1e88ea-5c9d-4f87-862c-993a5a9e3a6a" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="patchStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} PATCH Request 1_withoutOrgRefId" id="b4922b4d-3206-4fd6-adbc-1a40df193169" mediaType="application/json" postQueryString="false">
@@ -35919,7 +35446,7 @@ result["NewGivenName"] = newGivenName</script>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PATCH Request 1_withoutStudentPersonalRefId" id="fe7776c1-50ac-40f1-ba2d-0044b3a02be9" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PATCH Request 1_withoutStudentPersonalRefId" id="8d3e24d7-aa02-439a-957b-18d14ca4b365" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="patchStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} PATCH Request 1_withoutStudentPersonalRefId" id="b4922b4d-3206-4fd6-adbc-1a40df193169" mediaType="application/json" postQueryString="false">
@@ -36063,7 +35590,7 @@ result["NewGivenName"] = newGivenName</script>
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PATCH Request 1_NonExisting" id="bf9cf611-a6bd-423a-aa6c-e276036446bd" disabled="true">
+  <con:testStep type="restrequest" name="/studentpersonal/{StudentPersonalRefId} PATCH Request 1_NonExisting" id="f1a17433-b032-4cfe-995e-e12d9e6b712f" disabled="true">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentpersonal/{StudentPersonalRefId}" methodName="patchStudentPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="/studentpersonal/{StudentPersonalRefId} PATCH Request 1_NonExisting" id="b4922b4d-3206-4fd6-adbc-1a40df193169" mediaType="application/json" postQueryString="false">
@@ -36349,7 +35876,7 @@ result["NewGivenName"] = newGivenName</script>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>6cc8cf78-5c21-45aa-a2db-a1c898f34947</con:testStepId>
-    <con:status>NONE</con:status>
+    <con:status>ENABLED</con:status>
     <con:properties/>
   </con:breakPoints>
   <con:breakPoints>
@@ -36393,12 +35920,17 @@ result["NewGivenName"] = newGivenName</script>
     <con:properties/>
   </con:breakPoints>
   <con:breakPoints>
-    <con:testStepId>6f8c3a58-8eb7-45b5-b6b7-f05cf0f0a963</con:testStepId>
+    <con:testStepId>f0c864b8-ce86-48ff-8cc6-ea2c4b43d0d1</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
   <con:breakPoints>
-    <con:testStepId>f0c864b8-ce86-48ff-8cc6-ea2c4b43d0d1</con:testStepId>
+    <con:testStepId>b4379948-8848-4470-9706-912e53c91480</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>78199efa-c536-40b8-90fd-9bf8b81eb168</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>

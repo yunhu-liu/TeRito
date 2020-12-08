@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="928c7332-047a-459a-9bb2-246c382508f5" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="StudentPersonal-Get" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="928c7332-047a-459a-9bb2-246c382508f5fileName">StudentPersonal-Get</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="/studentpersonal GET Request 1_Valid" id="56097faa-e75d-45c3-94b7-7c101f1bfc12">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="getStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="/studentpersonal GET Request 1_Valid" id="00ddad57-9534-4eaf-b628-d8146aedb0b0" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="8f069fc5-1018-4eb3-8ab5-95bc2d129030" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${#[SMS Release - 6 End points#StudentPersonal-PrepareData#Properties]#OrgRefId}"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="/studentpersonal GET Request 1_NonExisting" id="7b4c400f-24f4-41b3-b908-bd90a26a2043">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="getStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="/studentpersonal GET Request 1_NonExisting" id="00ddad57-9534-4eaf-b628-d8146aedb0b0" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="8f069fc5-1018-4eb3-8ab5-95bc2d129030" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="MessageContentAssertion" id="2a417152-4a73-4e78-8caa-6c97165d6533" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Response[1]/ns1:StudentPersonals[1]/ns1:StudentPersonal[1]</con:xpath>
+              <con:element>StudentPersonal</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage>&lt;Response xmlns="https://mocksifapi.azurewebsites.net/sif/studentpersonal">
+   &lt;StudentPersonals>
+      &lt;StudentPersonal/>
+   &lt;/StudentPersonals>
+&lt;/Response></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${#[SMS Release - 6 End points#StudentPersonal-PrepareData#Properties]#InvalidOrgRefId}"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="/studentpersonal GET Request 1_withoutOrgRefId" id="8ef87231-9dcc-4846-9b97-8f5f50bd12b1">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/studentpersonal" methodName="getStudentPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="/studentpersonal GET Request 1_withoutOrgRefId" id="00ddad57-9534-4eaf-b628-d8146aedb0b0" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/studentpersonal</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="8f069fc5-1018-4eb3-8ab5-95bc2d129030" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>422</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="MessageContentAssertion" id="2a417152-4a73-4e78-8caa-6c97165d6533" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Fault[1]/ns1:when[1]</con:xpath>
+              <con:element>when</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>2020-11-18T23:33:42.8106331+00:00</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Fault[1]/ns1:errorstr[1]</con:xpath>
+              <con:element>errorstr</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Unprocessable request: X-Edsby-OrganisationRefId header missing.</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://mocksifapi.azurewebsites.net/sif/studentpersonal';
+//ns1:Fault[1]/ns1:error[1]</con:xpath>
+              <con:element>error</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>422</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<Fault xmlns="https://mocksifapi.azurewebsites.net/sif/studentpersonal">
+   <error>422</error>
+   <when>2020-11-18T23:33:42.8106331+00:00</when>
+   <errorstr>Unprocessable request: X-Edsby-OrganisationRefId header missing.</errorstr>
+</Fault>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:setupScript/>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>8ef87231-9dcc-4846-9b97-8f5f50bd12b1</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>7b4c400f-24f4-41b3-b908-bd90a26a2043</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>56097faa-e75d-45c3-94b7-7c101f1bfc12</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>
