@@ -1,0 +1,20 @@
+{
+    "OrganisationRelationships": {
+        "OrganisationRelationship": [
+            {
+                "OrganisationRelationshipLocalId": "90101_8005",
+                "RelationshipType": "34028",
+                "SourceOrganisation": {
+                    "RefId": "90101"
+                },
+                "SourceOrganisationRole": "LSC",
+                "RelatedOrganisation": {
+                    "RefId": "8005"
+                },
+                "RelatedOrganisationRole": "184000",
+                "RelatedOrganisationAgreementDate": "2020-01-15",
+                "EffectiveDate": "2020-01-15"
+            }
+        ]
+    }
+}

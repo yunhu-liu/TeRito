@@ -1,0 +1,20 @@
+{
+    "SchedulePeriods": {
+        "SchedulePeriod": [
+            {
+                "SchedulePeriodLocalId": "8007_HR",
+                "PeriodName": "Homeroom",
+                "Organisation": {
+                    "RefId": "8007"
+                },
+                "Schedule": {
+                    "LocalId": "8007_Sched_2020"
+                },
+                "RecordAudit": {
+                    "CreatedDateTime": "2020-05-27T12:40:30+1200",
+                    "LastUpdatedDateTime": "2020-05-27T12:40:30+1200"
+                }
+            }
+        ]
+    }
+}

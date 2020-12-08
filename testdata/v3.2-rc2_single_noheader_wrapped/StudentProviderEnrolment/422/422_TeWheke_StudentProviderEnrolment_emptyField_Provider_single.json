@@ -1,0 +1,38 @@
+{
+    "StudentProviderEnrolments": {
+        "StudentProviderEnrolment": [
+            {
+                "StudentProviderEnrolmentLocalId": "2020_8005_ST5000000",
+                "Student": {
+                    "LocalId": "ST5000000",
+                    "NationalStudentNumber": 9005000000
+                },
+                "Provider": "",
+                "StudentId": "ST5000000",
+                "EntryDate": "2013-04-01",
+                "Status": "ACT",
+                "ECEEducationHistoryList": {
+                    "ECEType": [
+                        {
+                            "Type": "EPG"
+                        }
+                    ]
+                },
+                "SchoolEnrolmentList": {
+                    "SchoolEnrolment": [
+                        {
+                            "SchoolCalendarYear": 2020,
+                            "StartDate": "2020-01-27",
+                            "MembershipType": "BASE",
+                            "YearLevel": 8,
+                            "FTE": 1,
+                            "FundingType": "SF",
+                            "FundingYearLevel": 8,
+                            "Curriculum": "NZC"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

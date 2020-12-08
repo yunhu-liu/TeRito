@@ -1,0 +1,13 @@
+{
+    "SchedulePeriods": {
+        "SchedulePeriod": [
+            {
+                "SchedulePeriodLocalId": "8007_HR",
+                "PeriodName": "Homeroom",
+                "Schedule": {
+                    "LocalId": "8007_Sched_2020"
+                }
+            }
+        ]
+    }
+}

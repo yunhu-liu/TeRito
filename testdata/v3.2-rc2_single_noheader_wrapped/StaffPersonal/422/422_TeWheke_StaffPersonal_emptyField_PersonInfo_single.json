@@ -1,0 +1,12 @@
+{
+    "StaffPersonals": {
+        "StaffPersonal": [
+            {
+                "StaffPersonalLocalId": "T98001",
+                "SchoolSMSUserId": "SmythR",
+                "EnableLogin": "Y",
+                "PersonInfo": ""
+            }
+        ]
+    }
+}

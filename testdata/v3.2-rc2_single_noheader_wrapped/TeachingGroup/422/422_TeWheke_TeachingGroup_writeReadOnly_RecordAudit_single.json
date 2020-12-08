@@ -1,0 +1,27 @@
+{
+    "TeachingGroups": {
+        "TeachingGroup": [
+            {
+                "TeachingGroupLocalId": "2020_8007_HR9",
+                "ShortName": "HR_9",
+                "LongName": "Homeroom Year 9",
+                "GroupType": "RC",
+                "Organisation": {
+                    "RefId": "8007"
+                },
+                "ScheduleTerm": {
+                    "LocalId": "2020_8007_Y"
+                },
+                "YearLevelList": {
+                    "YearLevel": [
+                        9
+                    ]
+                },
+                "RecordAudit": {
+                    "CreatedDateTime": "2020-05-27T12:40:30+1200",
+                    "LastUpdatedDateTime": "2020-05-27T12:40:30+1200"
+                }
+            }
+        ]
+    }
+}

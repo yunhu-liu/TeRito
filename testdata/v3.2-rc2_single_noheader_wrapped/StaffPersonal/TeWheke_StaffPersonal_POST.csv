@@ -1,0 +1,130 @@
+_op,StaffPersonalLocalId,SchoolSMSUserId,EnableLogin,PersonInfo.Name.Title,PersonInfo.Name.FamilyName,PersonInfo.Name.GivenName,PersonInfo.Name.MiddleName,PersonInfo.Name.PreferredGivenName,PersonInfo.Name.Suffix,PersonInfo.Name.FullName,PersonInfo.Demographics.BirthDate,PersonInfo.EmailList.Email.Type,PersonInfo.EmailList.Email.SourceOrganisation.RefId,PersonInfo.EmailList.Email.Address,RecordAudit.CreatedDateTime,RecordAudit.LastUpdatedDateTime,StaffAssignment.StaffRole,StaffAssignment.StartDate
+upsert,T98001,SmythR,Y,Mr,Smyth,Riley,,,Jr,Riley Smyth Jr,1950-11-10,WORK,8005,rileys@mailinator.com,43978.528125,43978.528125,1201,1995-01-02
+upsert,T98002,PartridgeV,Y,Ms.,Partridge,Viktoria,,Vic,,Viktoria 'Vic' Partridge,1952-01-17,WORK,8005,viktoriap@mailinator.com,43978.52829861111,43978.52829861111,1201,1995-03-06
+upsert,T98003,MarksF,Y,Mr,Marks,Fionn,,,,Fionn Marks,1953-09-03,WORK,8005,fionnm@mailinator.com,43978.52847222222,43978.52847222222,1201,1995-05-01
+upsert,T98004,SquiresM,Y,Mr,Squires,Maya,,,,Maya Squires,1953-11-21,WORK,8005,mayas@mailinator.com,43978.52864583334,43978.52864583334,1201,1995-05-15
+upsert,T98005,WheelerN,Y,Ms.,Wheeler,Nayla,D,,,Nayla D Wheeler,1956-04-09,WORK,8005,naylaw@mailinator.com,43978.52881944444,43978.52881944444,1201,1996-03-25
+upsert,T98006,SharpK,Y,Ms.,Sharp,Keagan,E,,,Keagan E Sharp,1957-08-08,WORK,8005,keagans@mailinator.com,43978.52899305556,43978.52899305556,1201,1997-08-11
+upsert,T98007,LoveE,Y,Mr,Love,Eleasha,,,,Eleasha Love,1963-05-04,WORK,8005,eleashal@mailinator.com,43978.52916666667,43978.52916666667,1201,2000-03-20
+upsert,T98008,DavidsonF,Y,Mr,Davidson,Fletcher,,,,Fletcher Davidson,1963-06-18,WORK,8005,fletcherd@mailinator.com,43978.52934027778,43978.52934027778,1201,2001-02-12
+upsert,T98009,AshtonD,Y,Ms.,Ashton,Dayna,J,,,Dayna J Ashton,1963-11-28,WORK,8005,daynaa@mailinator.com,43978.52951388889,43978.52951388889,1201,2001-03-26
+upsert,T98010,KrauseE,Y,Mr,Krause,Emer,,,,Emer Krause,1969-11-08,WORK,8005,emerk@mailinator.com,43978.5296875,43978.5296875,1201,2004-01-19
+upsert,T98011,HoldingM,Y,Mr,Holding,Moshe,,,,Moshe Holding,1970-06-28,WORK,8005,mosheh@mailinator.com,43978.52986111111,43978.52986111111,1201,2005-10-31
+upsert,T98012,SearleC,Y,Ms.,Searle,Caiden,E,,,Caiden E Searle,1972-11-11,WORK,8005,caidens@mailinator.com,43978.53003472222,43978.53003472222,1201,2006-09-25
+upsert,T98013,StampH,Y,Mr,Stamp,Howard,,,,Howard Stamp,1975-08-11,WORK,8005,howards@mailinator.com,43978.53020833333,43978.53020833333,1201,2011-05-23
+upsert,T98014,BeasleyT,Y,Mr,Beasley,Tyson,,Ty,,Tyson 'Ty' Beasley,1975-12-24,WORK,8005,tysonb@mailinator.com,43978.53038194445,43978.53038194445,1201,2011-07-25
+upsert,T98015,RutledgeD,Y,Mr,Rutledge,Demi-Lee,,,,Demi-Lee Rutledge,1977-07-30,WORK,8005,demi-leer@mailinator.com,43978.53055555555,43978.53055555555,1201,2012-08-13
+upsert,T98016,MendozaE,Y,Mr,Mendoza,Evan,,,,Evan Mendoza,1977-10-14,WORK,8005,evanm@mailinator.com,43978.53072916667,43978.53072916667,1201,2013-11-04
+upsert,T98017,MasseyD,Y,Mr,Massey,Dione,,,,Dione Massey,1979-11-21,WORK,8005,dionem@mailinator.com,43978.53090277778,43978.53090277778,1201,2013-11-18
+upsert,T98018,DaweL,Y,Ms.,Dawe,Lesley,,,,Lesley Dawe,1983-07-04,WORK,8005,lesleyd@mailinator.com,43978.53107638889,43978.53107638889,1201,2016-02-01
+upsert,T98019,WhittakerD,Y,Mr,Whittaker,Dominika,S,,,Dominika S Whittaker,1983-08-31,WORK,8005,dominikaw@mailinator.com,43978.53125,43978.53125,1201,2016-06-27
+upsert,T98020,HamiltonT,Y,Mr,Hamilton,Trevor,,,,Trevor Hamilton,1987-09-05,WORK,8005,trevorh@mailinator.com,43978.53142361111,43978.53142361111,1201,2017-05-01
+upsert,T98021,FergusonM,Y,Mr,Ferguson,Maurice,,,,Maurice Ferguson,1988-04-24,WORK,8005,mauricef@mailinator.com,43978.53159722222,43978.53159722222,1201,2017-09-18
+upsert,T98022,RobinR,Y,Mr,Robin,Rebekka,J,,,Rebekka J Robin,1988-05-22,WORK,8005,rebekkar@mailinator.com,43978.53177083333,43978.53177083333,1201,2018-02-19
+upsert,T98023,JoynerA,Y,Mr,Joyner,Alton,,,,Alton Joyner,1988-07-25,WORK,8005,altonj@mailinator.com,43978.53194444445,43978.53194444445,1201,2018-03-12
+upsert,T98024,GrantM,Y,Ms.,Grant,Madiha,,,,Madiha Grant,1988-12-14,WORK,8005,madihag@mailinator.com,43978.53211805555,43978.53211805555,1201,2019-02-04
+upsert,T98025,LeZ,Y,Mr,Le,Ziggy,,,,Ziggy Le,1995-11-18,WORK,8005,ziggyl@mailinator.com,43978.53229166667,43978.53229166667,1201,2019-03-18
+upsert,T98026,TruongS,Y,Mr,Truong,Sarah-Jane,,S-J,,Sarah-Jane 'S-J' Truong,1951-12-03,WORK,8005,sarah-janet@mailinator.com,43978.53246527778,43978.53246527778,1201,1995-02-06
+upsert,T98027,HouseK,Y,Ms.,House,Kaira,,,,Kaira House,1952-10-08,WORK,8005,kairah@mailinator.com,43978.53263888889,43978.53263888889,1201,1995-09-04
+upsert,T98028,FritzB,Y,Mr,Fritz,Blane,,,,Blane Fritz,1954-02-08,WORK,8005,blanef@mailinator.com,43978.5328125,43978.5328125,1201,1995-12-18
+upsert,T98029,HookA,Y,Mr,Hook,Abbas,,,,Abbas Hook,1958-03-18,WORK,8005,abbash@mailinator.com,43978.53298611111,43978.53298611111,1201,2000-07-03
+upsert,T98030,EatonH,Y,Ms.,Eaton,Huey,,,,Huey Eaton,1958-12-20,WORK,8005,hueye@mailinator.com,43978.53315972222,43978.53315972222,1201,2000-09-04
+upsert,T98031,RojasF,Y,Mr,Rojas,Faizaan,D,,,Faizaan D Rojas,1964-03-16,WORK,8005,faizaanr@mailinator.com,43978.53333333333,43978.53333333333,1201,2001-05-14
+upsert,T98032,CunninghamP,Y,Ms.,Cunningham,Pranav,,,,Pranav Cunningham,1966-02-25,WORK,8005,pranavc@mailinator.com,43978.53350694444,43978.53350694444,1201,2002-07-22
+upsert,T98033,GuerreroA,Y,Ms.,Guerrero,Aleeza,P,,,Aleeza P Guerrero,1968-06-12,WORK,8005,aleezag@mailinator.com,43978.53368055556,43978.53368055556,1201,2004-05-24
+upsert,T98034,MeltonM,Y,Ms.,Melton,Madison,DP,,,Madison DP Melton,1970-08-01,WORK,8005,madisonm@mailinator.com,43978.53385416666,43978.53385416666,1201,2004-12-27
+upsert,T98035,LilyH,Y,Mr,Higgins,Lily,OH,,,Lily OH Higgins,1972-06-10,WORK,8006,lilyh@mailinator.com,43978.53402777778,43978.53402777778,1201,2005-09-26
+upsert,T98036,HibbaT,Y,Mr,Turner,Hibba,O,,,Hibba O Turner,1973-02-03,WORK,8006,hibbat@mailinator.com,43978.53420138889,43978.53420138889,1201,2007-04-09
+upsert,T98037,GrahamL,Y,Mr,Legge,Graham,,,,Graham Legge,1977-06-29,WORK,8006,grahaml@mailinator.com,43978.534375,43978.534375,1201,2007-05-21
+upsert,T98038,MalakiF,Y,Ms.,Ferrell,Malaki,A,,,Malaki A Ferrell,1978-08-27,WORK,8006,malakif@mailinator.com,43978.53454861111,43978.53454861111,1201,2007-10-15
+upsert,T98039,PhoenixM,Y,Ms.,Morrow,Phoenix,,,,Phoenix Morrow,1979-11-21,WORK,8006,phoenixm@mailinator.com,43978.53472222222,43978.53472222222,1201,2008-07-14
+upsert,T98040,MontellR,Y,Ms.,Riddle,Montell,,,,Montell Riddle,1981-07-27,WORK,8006,montellr@mailinator.com,43978.53489583333,43978.53489583333,1201,2009-12-07
+upsert,T98041,KevinR,Y,Mr,Reeves,Kevin,,,,Kevin Reeves,1981-12-20,WORK,8006,kevinr@mailinator.com,43978.53506944444,43978.53506944444,1201,2012-01-02
+upsert,T98042,CharlieR,Y,Ms.,Rich,Charlie,,,,Charlie Rich,1983-12-24,WORK,8006,charlier@mailinator.com,43978.53524305556,43978.53524305556,1201,2012-02-20
+upsert,T98043,GinaO,Y,Mr,O'Gallagher,Gina,,,,Gina O'Gallagher,1983-12-28,WORK,8006,ginao@mailinator.com,43978.53541666667,43978.53541666667,1201,2014-02-24
+upsert,T98044,DonovanM,Y,Ms.,Mccabe,Donovan,,,,Donovan Mccabe,1985-09-15,WORK,8006,donovanm@mailinator.com,43978.53559027778,43978.53559027778,1201,2017-05-15
+upsert,T98045,HusseinM,Y,Mr,Mcconnell,Hussein,,,,Hussein Mcconnell,1986-01-14,WORK,8006,husseinm@mailinator.com,43978.53576388889,43978.53576388889,1201,2017-06-26
+upsert,T98046,LeviO,Y,Ms.,Oakley,Levi,,,,Levi Oakley,1988-03-13,WORK,8006,levio@mailinator.com,43978.5359375,43978.5359375,1201,2017-10-23
+upsert,T98047,ReneeB,Y,Ms.,Byrd,Renee,,,,Renee Byrd,1990-09-27,WORK,8006,reneeb@mailinator.com,43978.53611111111,43978.53611111111,1201,2018-07-09
+upsert,T98048,CarolinaP,Y,Mr,Paine,Carolina,,,,Carolina Paine,1990-12-21,WORK,8006,carolinap@mailinator.com,43978.53628472222,43978.53628472222,1201,2018-10-01
+upsert,T98049,GiselleH,Y,Mr,Howe,Giselle,,,,Giselle Howe,1993-04-10,WORK,8006,giselleh@mailinator.com,43978.53645833334,43978.53645833334,1201,2019-03-11
+upsert,T98050,PatsyF,Y,Mr,Fenton,Patsy,,,,Patsy Fenton,1994-07-06,WORK,8006,patsyf@mailinator.com,43978.53663194444,43978.53663194444,1201,2019-12-30
+upsert,T98051,RhianL,Y,Ms.,Luna,Rhian,,,,Rhian Luna,1953-03-16,WORK,8006,rhianl@mailinator.com,43978.53680555556,43978.53680555556,1201,1999-03-01
+upsert,T98052,NataliaC,Y,Mr,Cote,Natalia,,Nat,,Natalia 'Nat' Cote,1955-01-31,WORK,8006,nataliac@mailinator.com,43978.53697916667,43978.53697916667,1201,1999-08-09
+upsert,T98053,CarleyT,Y,Ms.,Turnbull,Carley,,,,Carley Turnbull,1957-06-28,WORK,8006,carleyt@mailinator.com,43978.53715277778,43978.53715277778,1201,2000-06-12
+upsert,T98054,PeterH,Y,Mr,Houston,Peter,,,,Peter Houston,1957-08-04,WORK,8006,peterh@mailinator.com,43978.53732638889,43978.53732638889,1201,2000-09-25
+upsert,T98055,WillaL,Y,Ms.,Langley,Willa,,,,Willa Langley,1959-01-24,WORK,8006,willal@mailinator.com,43978.5375,43978.5375,1201,2001-02-12
+upsert,T98056,RichardL,Y,Mr,Laing,Richard,,,,Richard Laing,1962-10-19,WORK,8006,richardl@mailinator.com,43978.53767361111,43978.53767361111,1201,2002-04-01
+upsert,T98057,JoeS,Y,Ms.,Spears,Joe,,,,Joe Spears,1963-11-23,WORK,8006,joes@mailinator.com,43978.53784722222,43978.53784722222,1201,2003-08-11
+upsert,T98058,Riley-JamesR,Y,Ms.,Redmond,Riley-James,,,,Riley-James Redmond,1970-03-22,WORK,8006,riley-jamesr@mailinator.com,43978.53802083333,43978.53802083333,1201,2005-12-12
+upsert,T98059,AmandaV,Y,Ms.,Velez,Amanda,,,,Amanda Velez,1974-01-03,WORK,8006,amandav@mailinator.com,43978.53819444445,43978.53819444445,1201,2006-01-02
+upsert,T98060,AlenaW,Y,Mr,Wills,Alena,P,,,Alena P Wills,1974-05-31,WORK,8006,alenaw@mailinator.com,43978.53836805555,43978.53836805555,1201,2006-09-25
+upsert,T98061,BKorban,Y,Ms.,Bond,Korban,DP,,,Korban DP Bond,1976-01-14,WORK,8007,korbanb@mailinator.com,43978.53854166667,43978.53854166667,1201,2008-09-15
+upsert,T98062,MKyle,Y,Mr,Mclellan,Kyle,OH,,,Kyle OH Mclellan,1978-03-26,WORK,8007,kylem@mailinator.com,43978.53871527778,43978.53871527778,1201,2009-05-18
+upsert,T98063,BTyrese,Y,Ms.,Barlow,Tyrese,O,,,Tyrese O Barlow,1978-09-01,WORK,8007,tyreseb@mailinator.com,43978.53888888889,43978.53888888889,1201,2011-08-15
+upsert,T98064,FMimi,Y,Ms.,Fischer,Mimi,,,,Mimi Fischer,1981-10-09,WORK,8007,mimif@mailinator.com,43978.5390625,43978.5390625,1201,2012-01-16
+upsert,T98065,BClarence,Y,Ms.,Bonner,Clarence,,,,Clarence Bonner,1983-01-14,WORK,8007,clarenceb@mailinator.com,43978.53923611111,43978.53923611111,1201,2012-06-18
+upsert,T98066,ASuleman,Y,Ms.,Alvarado,Suleman,K,,,Suleman K Alvarado,1984-05-31,WORK,8007,sulemana@mailinator.com,43978.53940972222,43978.53940972222,1201,2012-08-06
+upsert,T98067,CGianluca,Y,Mr,Craft,Gianluca,L,,,Gianluca L Craft,1985-04-29,WORK,8007,gianlucac@mailinator.com,43978.53958333333,43978.53958333333,1201,2013-05-20
+upsert,T98068,DPaddy,Y,Ms.,Douglas,Paddy,,,,Paddy Douglas,1986-09-28,WORK,8007,paddyd@mailinator.com,43978.53975694445,43978.53975694445,1201,2013-07-01
+upsert,T98069,DLeslie,Y,Mr,Daniels,Leslie,,,,Leslie Daniels,1989-09-14,WORK,8007,leslied@mailinator.com,43978.53993055555,43978.53993055555,1201,2013-09-09
+upsert,T98070,PAasiyah,Y,Ms.,Park,Aasiyah,,,,Aasiyah Park,1991-04-30,WORK,8007,aasiyahp@mailinator.com,43978.54010416667,43978.54010416667,1201,2013-12-02
+upsert,T98071,GTianna,Y,Ms.,Gates,Tianna,,,,Tianna Gates,1991-11-11,WORK,8007,tiannag@mailinator.com,43978.54027777778,43978.54027777778,1201,2015-03-02
+upsert,T98072,NOttilie,Y,Ms.,Nieves,Ottilie,Bella,,,Ottilie Bella Nieves,1993-06-04,WORK,8007,ottilien@mailinator.com,43978.54045138889,43978.54045138889,1201,2016-01-11
+upsert,T98073,BMarius,Y,Ms.,Bishop,Marius,,,,Marius Bishop,1993-06-15,WORK,8007,mariusb@mailinator.com,43978.540625,43978.540625,1201,2016-05-23
+upsert,T98074,MIqrah,Y,Mr,Mccormick,Iqrah,,,,Iqrah Mccormick,1994-08-06,WORK,8007,iqrahm@mailinator.com,43978.54079861111,43978.54079861111,1201,2019-06-10
+upsert,T98075,KRudra,Y,Mr,Knight,Rudra,,,,Rudra Knight,1995-02-26,WORK,8007,rudrak@mailinator.com,43978.54097222222,43978.54097222222,1201,2020-02-10
+upsert,T98076,MKatey,Y,Ms.,Mccullough,Katey,,,,Katey Mccullough,1953-07-02,WORK,8007,kateym@mailinator.com,43978.54114583333,43978.54114583333,1201,1995-03-20
+upsert,T98077,DDane,Y,Ms.,David,Dane,,,,Dane David,1959-04-18,WORK,8007,daned@mailinator.com,43978.54131944444,43978.54131944444,1201,1996-11-25
+upsert,T98078,LRoger,Y,Mr,Lord,Roger,Ethan,,,Roger Ethan Lord,1960-10-19,WORK,8007,rogerl@mailinator.com,43978.54149305556,43978.54149305556,1201,1997-02-17
+upsert,T98079,RTheresa,Y,Ms.,Rayner,Theresa,Isabella,,,Theresa Isabella Rayner,1965-10-11,WORK,8007,theresar@mailinator.com,43978.54166666666,43978.54166666666,1201,1997-06-16
+upsert,T98080,DEmelie,Y,Ms.,Davies,Emelie,Mia,,,Emelie Mia Davies,1967-08-24,WORK,8007,emelied@mailinator.com,43978.54184027778,43978.54184027778,1201,1999-03-22
+upsert,T98081,HJesse,Y,Mr,Hackett,Jesse,,,,Jesse Hackett,1967-12-10,WORK,8007,jesseh@mailinator.com,43978.54201388889,43978.54201388889,1201,2000-06-12
+upsert,T98082,KBernard,Y,Ms.,Kaiser,Bernard,,,,Bernard Kaiser,1971-04-06,WORK,8007,bernardk@mailinator.com,43978.5421875,43978.5421875,1201,2000-10-30
+upsert,T98083,CKianna,Y,Mr,Cabrera,Kianna,,,,Kianna Cabrera,1971-06-19,WORK,8007,kiannac@mailinator.com,43978.54236111111,43978.54236111111,1201,2001-02-05
+upsert,T98084,CElizabeth,Y,Ms.,Cooley,Elizabeth,P,,,Elizabeth P Cooley,1972-03-23,WORK,8007,elizabethc@mailinator.com,43978.54253472222,43978.54253472222,1201,2001-07-09
+upsert,T98085,CC,Y,Ms.,Carty,Courtney,DP,,,Courtney DP Carty,1972-04-12,WORK,8008,courtneyc@mailinator.com,43978.54270833333,43978.54270833333,1201,2002-06-10
+upsert,T98086,ML,Y,Ms.,Mcdonald,Libbi,OH,,,Libbi OH Mcdonald,1975-08-12,WORK,8008,libbim@mailinator.com,43978.54288194444,43978.54288194444,1201,2002-10-28
+upsert,T98087,WC,Y,Mr,White,Cohan,O,,,Cohan O White,1976-02-06,WORK,8008,cohanw@mailinator.com,43978.54305555556,43978.54305555556,1201,2003-04-21
+upsert,T98088,DT,Y,Ms.,Drew,Terrence,,,,Terrence Drew,1977-03-09,WORK,8008,terrenced@mailinator.com,43978.54322916667,43978.54322916667,1201,2003-06-09
+upsert,T98089,AL,Y,Mr,Adam,Liberty,,,,Liberty Adam,1978-10-03,WORK,8008,libertya@mailinator.com,43978.54340277778,43978.54340277778,1201,2004-04-19
+upsert,T98090,LK,Y,Ms.,Lacey,Kristian,,,,Kristian Lacey,1981-05-16,WORK,8008,kristianl@mailinator.com,43978.54357638889,43978.54357638889,1201,2004-12-06
+upsert,T98091,MM,Y,Ms.,Mcloughlin,Macie,,,,Macie Mcloughlin,1982-04-04,WORK,8008,maciem@mailinator.com,43978.54375,43978.54375,1201,2006-02-20
+upsert,T98092,HP,Y,Mr,Hood,Patryk,,,,Patryk Hood,1982-11-14,WORK,8008,patrykh@mailinator.com,43978.54392361111,43978.54392361111,1201,2006-04-17
+upsert,T98093,AS,Y,Mr,Adamson,Sylvie,,,,Sylvie Adamson,1984-06-13,WORK,8008,sylviea@mailinator.com,43978.54409722222,43978.54409722222,1201,2006-08-14
+upsert,T98094,SJ,Y,Mr,Stafford,James,,Jimmy,,James 'Jimmy' Stafford,1986-06-30,WORK,8008,jamess@mailinator.com,43978.54427083334,43978.54427083334,1201,2006-10-02
+upsert,T98095,GT,Y,Ms.,Glover,Tanvir,,,,Tanvir Glover,1986-09-12,WORK,8008,tanvirg@mailinator.com,43978.54444444444,43978.54444444444,1201,2007-03-19
+upsert,T98096,BF,Y,Mr,Brock,Fabian,Jamie,,,Fabian Jamie Brock,1986-11-20,WORK,8008,fabianb@mailinator.com,43978.54461805556,43978.54461805556,1201,2011-11-14
+upsert,T98097,RW,Y,Mr,Ramsay,Wiktoria,Matthew,,,Wiktoria Matthew Ramsay,1987-02-14,WORK,8008,wiktoriar@mailinator.com,43978.54479166667,43978.54479166667,1201,2012-04-16
+upsert,T98098,RR,Y,Ms.,Regan,Ray,Lauren,,,Ray Lauren Regan,1991-12-12,WORK,8008,rayr@mailinator.com,43978.54496527778,43978.54496527778,1201,2015-04-27
+upsert,T98099,CA,Y,Ms.,Clegg,Arun,Isabelle,,,Arun Isabelle Clegg,1992-08-09,WORK,8008,arunc@mailinator.com,43978.54513888889,43978.54513888889,1201,2017-04-03
+upsert,T98100,HS,Y,Ms.,Hartman,Simra,Charlotte,,,Simra Charlotte Hartman,1993-10-04,WORK,8008,simrah@mailinator.com,43978.5453125,43978.5453125,1201,2017-12-11
+upsert,T98101,LS,Y,Ms.,Leigh,Sachin,Amber,,,Sachin Amber Leigh,1955-04-16,WORK,8008,sachinl@mailinator.com,43978.54548611111,43978.54548611111,1201,1995-01-09
+upsert,T98102,HA,Y,Ms.,Haines,Antonio,,,,Antonio Haines,1956-01-08,WORK,8008,antonioh@mailinator.com,43978.54565972222,43978.54565972222,1201,1995-05-22
+upsert,T98103,MB,Y,Ms.,Miles,Brian,,,,Brian Miles,1957-03-29,WORK,8008,brianm@mailinator.com,43978.54583333333,43978.54583333333,1201,1996-09-02
+upsert,T98104,KC,Y,Mr,Knox,Coral,,,,Coral Knox,1961-02-08,WORK,8008,coralk@mailinator.com,43978.54600694445,43978.54600694445,1201,1998-06-29
+upsert,T98105,CA,Y,Mr,Cannon,Albi,,,,Albi Cannon,1964-04-11,WORK,8008,albic@mailinator.com,43978.54618055555,43978.54618055555,1201,1998-12-07
+upsert,T98106,MH,Y,Ms.,Mata,Hunter,,,,Hunter Mata,1964-04-16,WORK,8008,hunterm@mailinator.com,43978.54635416667,43978.54635416667,1201,1999-08-30
+upsert,T98107,HR,Y,Mr,Hernandez,Reis,,,Jr,Reis Hernandez Jr,1964-09-09,WORK,8008,reish@mailinator.com,43978.54652777778,43978.54652777778,1201,2000-06-26
+upsert,T98108,RA,Y,Ms.,Rennie,Ari,Olivia,,,Ari Olivia Rennie,1965-07-16,WORK,8008,arir@mailinator.com,43978.54670138889,43978.54670138889,1201,2000-12-04
+upsert,T98109,HB,Y,Ms.,Hawes,Blake,Madison,,,Blake Madison Hawes,1965-08-19,WORK,8008,blakeh@mailinator.com,43978.546875,43978.546875,1201,2001-10-15
+upsert,T98110,LC,Y,Ms.,Leach,Coen,Laura,,,Coen Laura Leach,1965-09-17,WORK,8008,coenl@mailinator.com,43978.54704861111,43978.54704861111,1201,2002-08-26
+upsert,T98111,KA,Y,Ms.,Kidd,Alessandro,Holly,,,Alessandro Holly Kidd,1967-09-05,WORK,8008,alessandrok@mailinator.com,43978.54722222222,43978.54722222222,1201,2004-10-11
+upsert,T98112,PC,Y,Mr,Parra,Cassidy,,,,Cassidy Parra,1968-03-02,WORK,8008,cassidyp@mailinator.com,43978.54739583333,43978.54739583333,1201,2005-03-28
+upsert,T98113,KodiS,Y,Mr,Steadman,Kodi,Jacob,,,Kodi Jacob Steadman,1968-09-18,WORK,90902,kodis@mailinator.com,43978.54756944445,43978.54756944445,1201,2006-03-13
+upsert,T98114,MaeveC,Y,Ms.,Cox,Maeve,,,,Maeve Cox,1969-07-13,WORK,90902,maevec@mailinator.com,43978.54774305555,43978.54774305555,1201,2007-06-18
+upsert,T98115,ElaH,Y,Ms.,Horn,Ela,P,,,Ela P Horn,1971-03-11,WORK,90902,elah@mailinator.com,43978.54791666667,43978.54791666667,1201,2007-08-20
+upsert,T98116,MelodyD,Y,Mr,Dale,Melody,DP,,,Melody DP Dale,1976-08-03,WORK,90902,melodyd@mailinator.com,43978.54809027778,43978.54809027778,1201,2008-08-11
+upsert,T98117,MeganS,Y,Ms.,Sanchez,Megan,OH,,,Megan OH Sanchez,1977-07-11,WORK,90902,megans@mailinator.com,43978.54826388889,43978.54826388889,1201,2009-01-12
+upsert,T98118,KadeemT,Y,Mr,Tierney,Kadeem,O,,,Kadeem O Tierney,1977-08-30,WORK,90902,kadeemt@mailinator.com,43978.5484375,43978.5484375,1201,2010-01-25
+upsert,T98119,BartlomiejC,Y,Ms.,Cortez,Bartlomiej,,,,Bartlomiej Cortez,1979-08-16,WORK,90902,bartlomiejc@mailinator.com,43978.54861111111,43978.54861111111,1201,2012-11-19
+upsert,T98120,RhondaH,Y,Ms.,Hartley,Rhonda,,,,Rhonda Hartley,1980-01-10,WORK,90902,rhondah@mailinator.com,43978.54878472222,43978.54878472222,1201,2013-02-11
+upsert,T98121,WFannie,Y,Ms.,Walmsley,Fannie,,,,Fannie Walmsley,1986-01-23,WORK,90903,fanniew@mailinator.com,43978.54895833333,43978.54895833333,1201,2016-10-17
+upsert,T98122,EZakariyya,Y,Mr,Emery,Zakariyya,,,,Zakariyya Emery,1988-05-27,WORK,90903,zakariyyae@mailinator.com,43978.54913194444,43978.54913194444,1201,2016-10-31
+upsert,T98123,MConrad,Y,Ms.,Milne,Conrad,P,,,Conrad P Milne,1988-06-30,WORK,90903,conradm@mailinator.com,43978.54930555556,43978.54930555556,1201,2017-07-03
+upsert,T98124,MBella-Rose,Y,Mr,Marquez,Bella-Rose,DP,,,Bella-Rose DP Marquez,1989-09-28,WORK,90903,bella-rosem@mailinator.com,43978.54947916666,43978.54947916666,1201,2017-07-17
+upsert,T98125,JMurray,Y,Mr,Jordan,Murray,OH,,,Murray OH Jordan,1993-05-31,WORK,90903,murrayj@mailinator.com,43978.54965277778,43978.54965277778,1201,2018-10-08
+upsert,T98126,MNaya,Y,Ms.,Moody,Naya,O,,,Naya O Moody,1955-05-20,WORK,90903,nayam@mailinator.com,43978.54982638889,43978.54982638889,1201,1997-10-20
+upsert,T98127,MSaima,Y,Ms.,Mcdougall,Saima,Jorja,,,Saima Jorja Mcdougall,1959-12-06,WORK,90903,saimam@mailinator.com,43978.55,43978.55,1201,1999-05-10
+upsert,T98128,WLynsey,Y,Mr,Wilkinson,Lynsey,,,,Lynsey Wilkinson,1959-12-09,WORK,90903,lynseyw@mailinator.com,43978.55017361111,43978.55017361111,1201,2000-03-20
+upsert,,,,,,,,,,,,,,,,,,

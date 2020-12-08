@@ -1,0 +1,38 @@
+{
+    "StaffPersonals": {
+        "StaffPersonal": [
+            {
+                "StaffPersonalLocalId": "T98001",
+                "SchoolSMSUserId": "SmythR",
+                "EnableLogin": "Y",
+                "PersonInfo": {
+                    "Name": {
+                        "Title": "Mr",
+                        "FamilyName": "Smyth",
+                        "GivenName": "Riley",
+                        "Suffix": "Jr",
+                        "FullName": "Riley Smyth Jr"
+                    },
+                    "Demographics": {
+                        "BirthDate": "1950-11-10"
+                    },
+                    "EmailList": {
+                        "Email": [
+                            {
+                                "Type": "WORK",
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "rileys@mailinator.com"
+                            }
+                        ]
+                    }
+                },
+                "RecordAudit": {
+                    "CreatedDateTime": "2020-05-27T12:40:30+1200",
+                    "LastUpdatedDateTime": "2020-05-27T12:40:30+1200"
+                }
+            }
+        ]
+    }
+}
