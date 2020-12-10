@@ -145,13 +145,21 @@
 }</con:sampleContent>
     </con:representation>
     <con:request name="Request 1" id="5963fbf5-4414-4f25-a49b-cd8e204462ff" mediaType="application/json">
-      <con:settings/>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://mocksifapi.azurewebsites.net/sif/teachinggroup</con:originalUri>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
-      <con:parameters/>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="Accept" value="application\json"/>
+        <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
+      </con:parameters>
     </con:request>
   </con:method>
   <con:method name="createTeachingGroups" id="401f816e-f910-40fe-8dc4-c272a0286063" method="POST">
@@ -318,7 +326,7 @@
   </TeachingGroup>
 </TeachingGroups>]]></con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="de0baaa7-6a83-4b04-b68a-45a9e9174c20" mediaType="application/json">
+    <con:request name="Request 1" id="de0baaa7-6a83-4b04-b68a-45a9e9174c20" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request>{\r
@@ -341,12 +349,13 @@
   }\r
 }</con:request>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
-    <con:request name="Request 2" id="a114afad-6b2c-49ac-87b0-8f1351c34733" mediaType="application/xml">
+    <con:request name="Request 2" id="a114afad-6b2c-49ac-87b0-8f1351c34733" mediaType="application/xml" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request><![CDATA[<TeachingGroups>
@@ -382,9 +391,10 @@
   </TeachingGroup>
 </TeachingGroups>]]></con:request>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -547,7 +557,7 @@
   </TeachingGroup>
 </TeachingGroups>]]></con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="7f0c5fd6-56ca-4d4c-ab9d-510a34df1043" mediaType="application/json">
+    <con:request name="Request 1" id="7f0c5fd6-56ca-4d4c-ab9d-510a34df1043" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request>{\r
@@ -570,12 +580,13 @@
   }\r
 }</con:request>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
-    <con:request name="Request 2" id="e7023504-83cf-4500-9d74-a6273ade0084" mediaType="application/xml">
+    <con:request name="Request 2" id="e7023504-83cf-4500-9d74-a6273ade0084" mediaType="application/xml" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request><![CDATA[<TeachingGroups>
@@ -611,9 +622,10 @@
   </TeachingGroup>
 </TeachingGroups>]]></con:request>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -776,7 +788,7 @@
   </TeachingGroup>
 </TeachingGroups>]]></con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="ee8168cf-c732-442d-ac36-63630fd7d49a" mediaType="application/json">
+    <con:request name="Request 1" id="ee8168cf-c732-442d-ac36-63630fd7d49a" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request>{\r
@@ -799,12 +811,13 @@
   }\r
 }</con:request>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
-    <con:request name="Request 2" id="c7e378c9-890b-420c-96ab-bb9059980d82" mediaType="application/xml">
+    <con:request name="Request 2" id="c7e378c9-890b-420c-96ab-bb9059980d82" mediaType="application/xml" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request><![CDATA[<TeachingGroups>
@@ -840,10 +853,16 @@
   </TeachingGroup>
 </TeachingGroups>]]></con:request>
       <con:credentials>
-        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
   </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="Default">
+      <con:authProfile>Basic Auth - MockServer</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:resource>
