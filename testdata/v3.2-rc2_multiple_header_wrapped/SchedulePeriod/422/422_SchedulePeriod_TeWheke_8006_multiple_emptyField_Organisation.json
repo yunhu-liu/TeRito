@@ -1,0 +1,26 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The Organisation field is replaced with an empty string.",
+    "testcase": {
+        "SchedulePeriods": {
+            "SchedulePeriod": [
+                {
+                    "SchedulePeriodLocalId": "8006_AM",
+                    "PeriodName": "Morning",
+                    "Organisation": "",
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8006_PM",
+                    "PeriodName": "Afternoon",
+                    "Organisation": "",
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    }
+                }
+            ]
+        }
+    }
+}

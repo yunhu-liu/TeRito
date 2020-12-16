@@ -1,0 +1,35 @@
+{
+    "Schedules": {
+        "Schedule": [
+            {
+                "ScheduleLocalId": "8005_Sched_2020",
+                "ScheduleName": "Karamū Primary Schedule - 2020",
+                "StartDate": "2020-01-27 00:00:00+1200+12:00",
+                "EndDate": "2020-12-18T00:00:00+12:00",
+                "Organisation": {
+                    "RefId": "8005"
+                },
+                "AcademicDayList": {
+                    "AcademicDay": [
+                        {
+                            "LocalId": "8005_Normal",
+                            "BellSchedule": {
+                                "LocalId": "8005_Regular"
+                            },
+                            "PeriodList": {
+                                "Period": [
+                                    {
+                                        "LocalId": "8005_AM"
+                                    },
+                                    {
+                                        "LocalId": "8005_PM"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

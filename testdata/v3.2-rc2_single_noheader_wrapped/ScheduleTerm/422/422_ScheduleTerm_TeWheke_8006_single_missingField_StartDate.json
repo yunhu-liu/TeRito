@@ -1,0 +1,15 @@
+{
+    "ScheduleTerms": {
+        "ScheduleTerm": [
+            {
+                "ScheduleTermLocalId": "2020_8006_T1",
+                "TermName": "2020",
+                "Organisation": {
+                    "RefId": "8006"
+                },
+                "SchoolYear": 2020,
+                "EndDate": "2020-03-27T00:00:00+12:00"
+            }
+        ]
+    }
+}

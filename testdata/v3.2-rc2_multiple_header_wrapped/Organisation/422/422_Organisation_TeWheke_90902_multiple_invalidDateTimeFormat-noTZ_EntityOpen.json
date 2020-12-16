@@ -1,0 +1,48 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The date time format for EntityOpen is incorrect. Time zone missing.",
+    "testcase": {
+        "Organisations": {
+            "Organisation": [
+                {
+                    "OrganisationRefId": "90902",
+                    "EducationRegion": "12010",
+                    "SpecialEducationDistrict": "182006",
+                    "EntityOpen": "1950-01-28T00:00:00",
+                    "Name": "Tōtara Early Learning Centre",
+                    "OperationalStatus": "28001",
+                    "Type": "10003",
+                    "SectorRole": "35000",
+                    "IsLicencedECEServiceProvider": "Y",
+                    "IsPlaygroupServiceProvider": "N",
+                    "ECEServiceProviderOwnershipType": "18004",
+                    "Address": {
+                        "Physical": {
+                            "Type": "TH",
+                            "Line1": "Waipapa Road",
+                            "City": "Turangi",
+                            "Country": "New Zealand",
+                            "PostalCode": "3334",
+                            "GridLocation": {
+                                "Latitude": -38.98579,
+                                "Longitude": 175.815059
+                            }
+                        }
+                    },
+                    "TeRitoConfig": {
+                        "DataAnalysisDashboardsInd": "N",
+                        "StandardisedLearningSupportRegisterInd": "Y",
+                        "VirtualLearningEnvironmentInd": "N"
+                    },
+                    "SchoolService": {
+                        "AllowManualProvisioning": "Y"
+                    },
+                    "ECEService": {
+                        "Type": "KG",
+                        "PrimaryLanguage": "NZS01112"
+                    }
+                }
+            ]
+        }
+    }
+}

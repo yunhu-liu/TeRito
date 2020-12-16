@@ -1,0 +1,27 @@
+{
+    "ScheduleAcademicDays": {
+        "ScheduleAcademicDay": [
+            {
+                "ScheduleAcademicDayLocalId": "8006_Normal",
+                "AcademicDayName": "Normal",
+                "Organisation": {
+                    "RefId": "8006"
+                },
+                "Schedule": "",
+                "BellSchedule": {
+                    "LocalId": "8005_Regular"
+                },
+                "PeriodList": {
+                    "Period": [
+                        {
+                            "LocalId": "8006_AM"
+                        },
+                        {
+                            "LocalId": "8006_PM"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

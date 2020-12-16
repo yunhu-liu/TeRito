@@ -1,0 +1,978 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The Student field is replaced with an empty string.",
+    "testcase": {
+        "StudentTeachingGroupEnrolments": {
+            "StudentTeachingGroupEnrolment": [
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000008",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-05-05T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000010",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-05-06T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000023",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-05-07T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000036",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-05-08T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000049",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-05-09T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000051",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-05-10T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000064",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-05-11T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000077",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-05-12T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6100085",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-05-13T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000092",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-05-14T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000102",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-05-15T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000115",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-05-16T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000128",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-05-17T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000130",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-05-18T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000143",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-05-19T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000156",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-05-20T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000169",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-05-21T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000171",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-05-22T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000184",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-05-23T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000197",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-05-24T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000207",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-05-25T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6100215",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-05-26T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000222",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-05-27T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000235",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-05-28T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000248",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-05-29T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000250",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-05-30T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000263",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-05-31T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000276",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-06-01T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000289",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-06-02T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000291",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-06-03T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000301",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-06-04T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000314",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-06-05T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000327",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-06-06T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6100335",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-06-07T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000342",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-06-08T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000355",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-06-09T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000368",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-06-10T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000370",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-06-11T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000383",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-06-12T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000396",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-06-13T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000406",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-06-14T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000419",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-06-15T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000421",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-06-16T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000434",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-06-17T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000447",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-06-18T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6100455",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-06-19T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000462",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-06-20T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000475",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-06-21T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000488",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-06-22T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000490",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-06-23T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000500",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-06-24T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000513",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-06-25T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000526",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-06-26T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000539",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-06-27T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000541",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-06-28T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000554",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-06-29T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR6_ST6000567",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "StartDate": "2020-06-30T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6100575",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-07-01T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000582",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-07-02T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000595",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-07-03T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000605",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-07-04T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000618",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-07-05T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000620",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-07-06T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000633",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-07-07T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000646",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-08T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000659",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-09T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000661",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-10T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000674",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-11T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000687",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-12T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6100695",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-13T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6100705",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-14T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000712",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-15T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000725",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-16T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000738",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-17T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000740",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-18T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000753",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-07-19T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR4_HR5_ST6000766",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "StartDate": "2020-07-20T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000779",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-07-21T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_HR3_ST6000781",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "StartDate": "2020-07-22T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000794",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-23T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000804",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-24T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000817",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-25T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6100825",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-26T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000832",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-27T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000845",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-28T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000858",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-29T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000860",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-30T00:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8006_JR_ST6000873",
+                    "Student": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "StartDate": "2020-07-31T00:00:00+12:00"
+                }
+            ]
+        }
+    }
+}

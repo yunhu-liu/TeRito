@@ -1,0 +1,80 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). An invalid option for ['GroupType'] codeset is provided.",
+    "testcase": {
+        "TeachingGroups": {
+            "TeachingGroup": [
+                {
+                    "TeachingGroupLocalId": "2020_8006_JR",
+                    "ShortName": "Room 1",
+                    "LongName": "Room 1 - Year 1 & 2",
+                    "GroupType": "Andy is GREAT!",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8006_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            1,
+                            2
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8006_HR3",
+                    "ShortName": "Room 2",
+                    "LongName": "Room 2 - Year 3",
+                    "GroupType": "Andy is GREAT!",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8006_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            3
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8006_HR4_HR5",
+                    "ShortName": "Room 3",
+                    "LongName": "Room 3 - Year 4 & 5",
+                    "GroupType": "Andy is GREAT!",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8006_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            4,
+                            5
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8006_HR6",
+                    "ShortName": "Room 4",
+                    "LongName": "Room 4 - Year 6",
+                    "GroupType": "Andy is GREAT!",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8006_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            6
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

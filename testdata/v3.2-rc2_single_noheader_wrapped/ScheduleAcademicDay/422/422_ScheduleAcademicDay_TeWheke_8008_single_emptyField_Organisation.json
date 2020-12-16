@@ -1,0 +1,39 @@
+{
+    "ScheduleAcademicDays": {
+        "ScheduleAcademicDay": [
+            {
+                "ScheduleAcademicDayLocalId": "8008_Day_A",
+                "AcademicDayName": "Day A",
+                "Organisation": "",
+                "Schedule": {
+                    "LocalId": "8008_Sched_2020"
+                },
+                "BellSchedule": {
+                    "LocalId": "8008_Regular"
+                },
+                "PeriodList": {
+                    "Period": [
+                        {
+                            "LocalId": "8008_HR"
+                        },
+                        {
+                            "LocalId": "8008_P1"
+                        },
+                        {
+                            "LocalId": "8008_P2"
+                        },
+                        {
+                            "LocalId": "8008_P3"
+                        },
+                        {
+                            "LocalId": "8008_P4"
+                        },
+                        {
+                            "LocalId": "8008_P5"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

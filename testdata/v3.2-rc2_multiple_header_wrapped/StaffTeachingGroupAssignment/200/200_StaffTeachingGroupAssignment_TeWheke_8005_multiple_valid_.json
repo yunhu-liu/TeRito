@@ -1,0 +1,108 @@
+{
+    "expects": "200",
+    "comment": "Valid payload for multiple entity(ies) for StaffTeachingGroupAssignment data object.",
+    "testcase": {
+        "StaffTeachingGroupAssignments": {
+            "StaffTeachingGroupAssignment": [
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8005_JR_T98005",
+                    "StaffMember": {
+                        "LocalId": "T98005"
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8005_HR3_T98006",
+                    "StaffMember": {
+                        "LocalId": "T98006"
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8005_HR4_T98007",
+                    "StaffMember": {
+                        "LocalId": "T98007"
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8005_HR5_T98008",
+                    "StaffMember": {
+                        "LocalId": "T98008"
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8005_HR6_T98009",
+                    "StaffMember": {
+                        "LocalId": "T98009"
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8005_HR7_HR8_T98010",
+                    "StaffMember": {
+                        "LocalId": "T98010"
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8005_HR7_HR8_T98011",
+                    "StaffMember": {
+                        "LocalId": "T98011"
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                }
+            ]
+        }
+    }
+}

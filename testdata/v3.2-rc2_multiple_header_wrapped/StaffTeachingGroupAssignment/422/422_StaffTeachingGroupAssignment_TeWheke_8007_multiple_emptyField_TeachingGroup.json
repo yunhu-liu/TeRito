@@ -1,0 +1,70 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The TeachingGroup field is replaced with an empty string.",
+    "testcase": {
+        "StaffTeachingGroupAssignments": {
+            "StaffTeachingGroupAssignment": [
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8007_HR9_T98064",
+                    "StaffMember": {
+                        "LocalId": "T98064"
+                    },
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "TeachingGroup": "",
+                    "Role": "1401",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8007_HR10_T98065",
+                    "StaffMember": {
+                        "LocalId": "T98065"
+                    },
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "TeachingGroup": "",
+                    "Role": "1401",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8007_HR11_T98066",
+                    "StaffMember": {
+                        "LocalId": "T98066"
+                    },
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "TeachingGroup": "",
+                    "Role": "1401",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8007_HR12_HR13_T98067",
+                    "StaffMember": {
+                        "LocalId": "T98067"
+                    },
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "TeachingGroup": "",
+                    "Role": "1401",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8007_HR12_HR13_T98090",
+                    "StaffMember": {
+                        "LocalId": "T98090"
+                    },
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "TeachingGroup": "",
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                }
+            ]
+        }
+    }
+}

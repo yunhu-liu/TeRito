@@ -1,0 +1,146 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The Organisation field is replaced with an empty string.",
+    "testcase": {
+        "TeachingGroupEvents": {
+            "TeachingGroupEvent": [
+                {
+                    "TeachingGroupEventLocalId": "2020_8006_JR_Normal_AM",
+                    "Organisation": "",
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    },
+                    "SchedulePeriod": {
+                        "LocalId": "8006_AM"
+                    },
+                    "AcademicDay": {
+                        "LocalId": "8006_Normal"
+                    },
+                    "TakeAttendanceFlag": "Y"
+                },
+                {
+                    "TeachingGroupEventLocalId": "2020_8006_JR_Normal_PM",
+                    "Organisation": "",
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    },
+                    "SchedulePeriod": {
+                        "LocalId": "8006_PM"
+                    },
+                    "AcademicDay": {
+                        "LocalId": "8006_Normal"
+                    },
+                    "TakeAttendanceFlag": "Y"
+                },
+                {
+                    "TeachingGroupEventLocalId": "2020_8006_HR3_Normal_AM",
+                    "Organisation": "",
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    },
+                    "SchedulePeriod": {
+                        "LocalId": "8006_AM"
+                    },
+                    "AcademicDay": {
+                        "LocalId": "8006_Normal"
+                    },
+                    "TakeAttendanceFlag": "Y"
+                },
+                {
+                    "TeachingGroupEventLocalId": "2020_8006_HR3_Normal_PM",
+                    "Organisation": "",
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    },
+                    "SchedulePeriod": {
+                        "LocalId": "8006_PM"
+                    },
+                    "AcademicDay": {
+                        "LocalId": "8006_Normal"
+                    },
+                    "TakeAttendanceFlag": "Y"
+                },
+                {
+                    "TeachingGroupEventLocalId": "2020_8006_HR4_HR5_Normal_AM",
+                    "Organisation": "",
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    },
+                    "SchedulePeriod": {
+                        "LocalId": "8006_AM"
+                    },
+                    "AcademicDay": {
+                        "LocalId": "8006_Normal"
+                    },
+                    "TakeAttendanceFlag": "Y"
+                },
+                {
+                    "TeachingGroupEventLocalId": "2020_8006_HR4_HR5_Normal_PM",
+                    "Organisation": "",
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    },
+                    "SchedulePeriod": {
+                        "LocalId": "8006_PM"
+                    },
+                    "AcademicDay": {
+                        "LocalId": "8006_Normal"
+                    },
+                    "TakeAttendanceFlag": "Y"
+                },
+                {
+                    "TeachingGroupEventLocalId": "2020_8006_HR6_Normal_AM",
+                    "Organisation": "",
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    },
+                    "SchedulePeriod": {
+                        "LocalId": "8006_AM"
+                    },
+                    "AcademicDay": {
+                        "LocalId": "8006_Normal"
+                    },
+                    "TakeAttendanceFlag": "Y"
+                },
+                {
+                    "TeachingGroupEventLocalId": "2020_8006_HR6_Normal_PM",
+                    "Organisation": "",
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    },
+                    "SchedulePeriod": {
+                        "LocalId": "8006_PM"
+                    },
+                    "AcademicDay": {
+                        "LocalId": "8006_Normal"
+                    },
+                    "TakeAttendanceFlag": "Y"
+                }
+            ]
+        }
+    }
+}

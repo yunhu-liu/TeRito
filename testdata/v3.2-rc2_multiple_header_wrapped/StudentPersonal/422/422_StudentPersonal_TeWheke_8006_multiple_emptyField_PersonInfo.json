@@ -1,0 +1,802 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The PersonInfo field is replaced with an empty string.",
+    "testcase": {
+        "StudentPersonals": {
+            "StudentPersonal": [
+                {
+                    "StudentPersonalLocalId": "ST6000008",
+                    "NationalStudentNumber": 9006000008,
+                    "FirstNZSchoolingDate": "2015-03-31T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ECO"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000010",
+                    "NationalStudentNumber": 9006000010,
+                    "FirstNZSchoolingDate": "2015-05-16T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000023",
+                    "NationalStudentNumber": 9006000023,
+                    "FirstNZSchoolingDate": "2015-08-12T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000036",
+                    "NationalStudentNumber": 9006000036,
+                    "FirstNZSchoolingDate": "2016-08-24T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ECO"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000049",
+                    "NationalStudentNumber": 9006000049,
+                    "FirstNZSchoolingDate": "2016-11-04T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ECO"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000051",
+                    "NationalStudentNumber": 9006000051,
+                    "FirstNZSchoolingDate": "2017-01-07T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000064",
+                    "NationalStudentNumber": 9006000064,
+                    "FirstNZSchoolingDate": "2017-03-09T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000077",
+                    "NationalStudentNumber": 9006000077,
+                    "FirstNZSchoolingDate": "2017-03-12T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6100085",
+                    "NationalStudentNumber": 9006100085,
+                    "FirstNZSchoolingDate": "2017-03-15T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000092",
+                    "NationalStudentNumber": 9006000092,
+                    "FirstNZSchoolingDate": "2017-12-06T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000102",
+                    "NationalStudentNumber": 9006000102,
+                    "FirstNZSchoolingDate": "2018-02-24T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000115",
+                    "NationalStudentNumber": 9006000115,
+                    "FirstNZSchoolingDate": "2018-03-08T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000128",
+                    "NationalStudentNumber": 9006000128,
+                    "FirstNZSchoolingDate": "2018-04-15T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000130",
+                    "NationalStudentNumber": 9006000130,
+                    "FirstNZSchoolingDate": "2018-05-04T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000143",
+                    "NationalStudentNumber": 9006000143,
+                    "FirstNZSchoolingDate": "2018-05-16T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000156",
+                    "NationalStudentNumber": 9006000156,
+                    "FirstNZSchoolingDate": "2018-12-05T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000169",
+                    "NationalStudentNumber": 9006000169,
+                    "FirstNZSchoolingDate": "2019-04-18T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000171",
+                    "NationalStudentNumber": 9006000171,
+                    "FirstNZSchoolingDate": "2019-08-09T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000184",
+                    "NationalStudentNumber": 9006000184,
+                    "FirstNZSchoolingDate": "2019-08-13T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000197",
+                    "NationalStudentNumber": 9006000197,
+                    "FirstNZSchoolingDate": "2019-11-08T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000207",
+                    "NationalStudentNumber": 9006000207,
+                    "FirstNZSchoolingDate": "2020-01-20T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6100215",
+                    "NationalStudentNumber": 9006100215,
+                    "FirstNZSchoolingDate": "2020-04-04T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000222",
+                    "NationalStudentNumber": 9006000222,
+                    "FirstNZSchoolingDate": "2020-06-30T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPC"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000235",
+                    "NationalStudentNumber": 9006000235,
+                    "FirstNZSchoolingDate": "2020-08-10T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000248",
+                    "NationalStudentNumber": 9006000248,
+                    "FirstNZSchoolingDate": "2020-10-09T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000250",
+                    "NationalStudentNumber": 9006000250,
+                    "FirstNZSchoolingDate": "2015-05-21T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000263",
+                    "NationalStudentNumber": 9006000263,
+                    "FirstNZSchoolingDate": "2015-06-02T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000276",
+                    "NationalStudentNumber": 9006000276,
+                    "FirstNZSchoolingDate": "2015-08-05T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000289",
+                    "NationalStudentNumber": 9006000289,
+                    "FirstNZSchoolingDate": "2015-10-06T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000291",
+                    "NationalStudentNumber": 9006000291,
+                    "FirstNZSchoolingDate": "2016-01-09T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000301",
+                    "NationalStudentNumber": 9006000301,
+                    "FirstNZSchoolingDate": "2016-05-21T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000314",
+                    "NationalStudentNumber": 9006000314,
+                    "FirstNZSchoolingDate": "2016-09-23T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000327",
+                    "NationalStudentNumber": 9006000327,
+                    "FirstNZSchoolingDate": "2016-10-25T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6100335",
+                    "NationalStudentNumber": 9006100335,
+                    "FirstNZSchoolingDate": "2016-11-29T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPC"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000342",
+                    "NationalStudentNumber": 9006000342,
+                    "FirstNZSchoolingDate": "2017-01-14T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000355",
+                    "NationalStudentNumber": 9006000355,
+                    "FirstNZSchoolingDate": "2017-03-17T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000368",
+                    "NationalStudentNumber": 9006000368,
+                    "FirstNZSchoolingDate": "2017-07-29T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000370",
+                    "NationalStudentNumber": 9006000370,
+                    "FirstNZSchoolingDate": "2017-11-04T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ECO"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000383",
+                    "NationalStudentNumber": 9006000383,
+                    "FirstNZSchoolingDate": "2018-08-05T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000396",
+                    "NationalStudentNumber": 9006000396,
+                    "FirstNZSchoolingDate": "2018-09-23T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000406",
+                    "NationalStudentNumber": 9006000406,
+                    "FirstNZSchoolingDate": "2018-12-10T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000419",
+                    "NationalStudentNumber": 9006000419,
+                    "FirstNZSchoolingDate": "2019-02-12T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ETU"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000421",
+                    "NationalStudentNumber": 9006000421,
+                    "FirstNZSchoolingDate": "2019-03-16T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000434",
+                    "NationalStudentNumber": 9006000434,
+                    "FirstNZSchoolingDate": "2019-05-01T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000447",
+                    "NationalStudentNumber": 9006000447,
+                    "FirstNZSchoolingDate": "2019-06-21T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6100455",
+                    "NationalStudentNumber": 9006100455,
+                    "FirstNZSchoolingDate": "2019-12-18T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000462",
+                    "NationalStudentNumber": 9006000462,
+                    "FirstNZSchoolingDate": "2019-12-20T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000475",
+                    "NationalStudentNumber": 9006000475,
+                    "FirstNZSchoolingDate": "2020-05-17T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000488",
+                    "NationalStudentNumber": 9006000488,
+                    "FirstNZSchoolingDate": "2020-05-26T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000490",
+                    "NationalStudentNumber": 9006000490,
+                    "FirstNZSchoolingDate": "2020-08-03T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000500",
+                    "NationalStudentNumber": 9006000500,
+                    "FirstNZSchoolingDate": "2015-01-06T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000513",
+                    "NationalStudentNumber": 9006000513,
+                    "FirstNZSchoolingDate": "2015-02-07T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000526",
+                    "NationalStudentNumber": 9006000526,
+                    "FirstNZSchoolingDate": "2015-03-31T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000539",
+                    "NationalStudentNumber": 9006000539,
+                    "FirstNZSchoolingDate": "2015-05-02T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000541",
+                    "NationalStudentNumber": 9006000541,
+                    "FirstNZSchoolingDate": "2015-05-27T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000554",
+                    "NationalStudentNumber": 9006000554,
+                    "FirstNZSchoolingDate": "2015-06-03T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000567",
+                    "NationalStudentNumber": 9006000567,
+                    "FirstNZSchoolingDate": "2015-11-18T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ETU"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6100575",
+                    "NationalStudentNumber": 9006100575,
+                    "FirstNZSchoolingDate": "2016-02-15T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000582",
+                    "NationalStudentNumber": 9006000582,
+                    "FirstNZSchoolingDate": "2016-04-17T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000595",
+                    "NationalStudentNumber": 9006000595,
+                    "FirstNZSchoolingDate": "2016-06-22T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000605",
+                    "NationalStudentNumber": 9006000605,
+                    "FirstNZSchoolingDate": "2018-02-09T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000618",
+                    "NationalStudentNumber": 9006000618,
+                    "FirstNZSchoolingDate": "2018-03-01T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000620",
+                    "NationalStudentNumber": 9006000620,
+                    "FirstNZSchoolingDate": "2018-05-17T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000633",
+                    "NationalStudentNumber": 9006000633,
+                    "FirstNZSchoolingDate": "2018-10-26T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000646",
+                    "NationalStudentNumber": 9006000646,
+                    "FirstNZSchoolingDate": "2019-01-07T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000659",
+                    "NationalStudentNumber": 9006000659,
+                    "FirstNZSchoolingDate": "2019-03-27T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000661",
+                    "NationalStudentNumber": 9006000661,
+                    "FirstNZSchoolingDate": "2019-04-09T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPC"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000674",
+                    "NationalStudentNumber": 9006000674,
+                    "FirstNZSchoolingDate": "2019-10-14T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000687",
+                    "NationalStudentNumber": 9006000687,
+                    "FirstNZSchoolingDate": "2019-10-16T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6100695",
+                    "NationalStudentNumber": 9006100695,
+                    "FirstNZSchoolingDate": "2019-12-22T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6100705",
+                    "NationalStudentNumber": 9006100705,
+                    "FirstNZSchoolingDate": "2020-06-08T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000712",
+                    "NationalStudentNumber": 9006000712,
+                    "FirstNZSchoolingDate": "2020-07-02T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000725",
+                    "NationalStudentNumber": 9006000725,
+                    "FirstNZSchoolingDate": "2020-07-31T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000738",
+                    "NationalStudentNumber": 9006000738,
+                    "FirstNZSchoolingDate": "2020-11-18T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000740",
+                    "NationalStudentNumber": 9006000740,
+                    "FirstNZSchoolingDate": "2020-12-13T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000753",
+                    "NationalStudentNumber": 9006000753,
+                    "FirstNZSchoolingDate": "2017-10-25T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000766",
+                    "NationalStudentNumber": 9006000766,
+                    "FirstNZSchoolingDate": "2017-11-02T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ECO"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000779",
+                    "NationalStudentNumber": 9006000779,
+                    "FirstNZSchoolingDate": "2018-03-18T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000781",
+                    "NationalStudentNumber": 9006000781,
+                    "FirstNZSchoolingDate": "2018-08-15T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000794",
+                    "NationalStudentNumber": 9006000794,
+                    "FirstNZSchoolingDate": "2019-02-07T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000804",
+                    "NationalStudentNumber": 9006000804,
+                    "FirstNZSchoolingDate": "2019-02-19T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000817",
+                    "NationalStudentNumber": 9006000817,
+                    "FirstNZSchoolingDate": "2019-03-31T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6100825",
+                    "NationalStudentNumber": 9006100825,
+                    "FirstNZSchoolingDate": "2019-06-30T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ECO"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000832",
+                    "NationalStudentNumber": 9006000832,
+                    "FirstNZSchoolingDate": "2019-09-07T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000845",
+                    "NationalStudentNumber": 9006000845,
+                    "FirstNZSchoolingDate": "2019-12-26T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000858",
+                    "NationalStudentNumber": 9006000858,
+                    "FirstNZSchoolingDate": "2020-04-23T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000860",
+                    "NationalStudentNumber": 9006000860,
+                    "FirstNZSchoolingDate": "2020-07-05T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPC"
+                    },
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST6000873",
+                    "NationalStudentNumber": 9006000873,
+                    "FirstNZSchoolingDate": "2020-07-07T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPC"
+                    },
+                    "PersonInfo": ""
+                }
+            ]
+        }
+    }
+}

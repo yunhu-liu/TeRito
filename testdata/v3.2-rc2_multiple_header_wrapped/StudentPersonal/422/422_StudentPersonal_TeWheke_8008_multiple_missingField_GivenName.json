@@ -1,0 +1,3925 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The GivenName field is removed.",
+    "testcase": {
+        "StudentPersonals": {
+            "StudentPersonal": [
+                {
+                    "StudentPersonalLocalId": "ST8000002",
+                    "NationalStudentNumber": 9008000002,
+                    "FirstNZSchoolingDate": "2008-03-10T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Maxwell",
+                            "FullName": "Brooklyn Maxwell"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2003-03-10T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS16111",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "122"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "77 Sardinia Rise",
+                                "Suburb": "Bethlehem",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "bmaxwell@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-371 1705"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000015",
+                    "NationalStudentNumber": 9008000015,
+                    "FirstNZSchoolingDate": "2008-04-15T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPC"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Peacock",
+                            "FullName": "Trinity Peacock"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2003-04-15T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "111"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "46 The Drive",
+                                "Suburb": "Bellevue",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "tpeacock@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-182  370"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000028",
+                    "NationalStudentNumber": 9008000028,
+                    "FirstNZSchoolingDate": "2008-05-03T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Voyce",
+                            "FullName": "Zara Voyce"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2003-05-03T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "111"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "70 Devoy Drive",
+                                "Suburb": "Owhata",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3010"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "zvoyce@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-418 5047"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000030",
+                    "NationalStudentNumber": 9008000030,
+                    "FirstNZSchoolingDate": "2008-07-09T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ETU"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Mccoll",
+                            "FullName": "Aaron Mccoll"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2003-07-09T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0405"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "6 Ngatai Road",
+                                "Suburb": "Otumoetai",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "amccoll@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-897  777"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000043",
+                    "NationalStudentNumber": 9008000043,
+                    "FirstNZSchoolingDate": "2009-03-26T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Thomson",
+                            "FullName": "Emma Thomson"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2004-03-26T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0503"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "97 Reilly Avenue",
+                                "Suburb": "Mt Maunganui",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3116"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "ethomson@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-819  446"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000056",
+                    "NationalStudentNumber": 9008000056,
+                    "FirstNZSchoolingDate": "2009-03-27T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Jones",
+                            "FullName": "Isabel Jones"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2004-03-27T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "111"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "98 Bell Road",
+                                "Suburb": "Western Heights",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3015"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "ijones@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-979  186"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000069",
+                    "NationalStudentNumber": 9008000069,
+                    "FirstNZSchoolingDate": "2010-01-13T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Herk",
+                            "FullName": "Anahera Herk"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2005-01-13T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0507"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "59 Pukeko Street",
+                                "Suburb": "Hillcrest",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3015"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "aherk@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-960 7136"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000071",
+                    "NationalStudentNumber": 9008000071,
+                    "FirstNZSchoolingDate": "2010-07-25T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Young",
+                            "FullName": "Thomas Young"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2005-07-25T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0412"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "8 Coates Road",
+                                "Suburb": "Kawerau",
+                                "City": "Kawerau",
+                                "Country": "New Zealand",
+                                "PostalCode": "3127"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "tyoung@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-460 4982"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000084",
+                    "NationalStudentNumber": 9008000084,
+                    "FirstNZSchoolingDate": "2010-11-22T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Green",
+                            "FullName": "William Green"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2005-11-22T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0510"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "68 Rothesay Lane",
+                                "Suburb": "Bethlehem",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "wgreen@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-189 2269"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000097",
+                    "NationalStudentNumber": 9008000097,
+                    "FirstNZSchoolingDate": "2011-04-05T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Mitchell",
+                            "FullName": "Joshua Mitchell"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-04-05T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0509"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "18 Middleton Road",
+                                "Suburb": "Owhata",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3010"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "jmitchell@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-132 1542"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000107",
+                    "NationalStudentNumber": 9008000107,
+                    "FirstNZSchoolingDate": "2011-09-19T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Thomson",
+                            "FullName": "Jorja Thomson"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-09-19T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0504"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "51 Hannah Place",
+                                "Suburb": "Hairini",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3112"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "jthomson@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-576 3206"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8100115",
+                    "NationalStudentNumber": 9008100115,
+                    "FirstNZSchoolingDate": "2011-10-09T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Malone",
+                            "FullName": "Tyler Malone"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-10-09T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0406"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "78 Pacific View Road",
+                                "Suburb": "Papamoa Beach",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3118"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "tmalone@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-289 5840"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000122",
+                    "NationalStudentNumber": 9008000122,
+                    "FirstNZSchoolingDate": "2012-06-25T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Heaton",
+                            "FullName": "William Heaton"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2007-06-25T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0504"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "10 Saunders Place",
+                                "Suburb": "Te Puke",
+                                "City": "Western Bay of Plenty",
+                                "Country": "New Zealand",
+                                "PostalCode": "3119"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "wheaton@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-522 5405"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000135",
+                    "NationalStudentNumber": 9008000135,
+                    "FirstNZSchoolingDate": "2012-07-31T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Wise",
+                            "FullName": "Sophie Wise"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2007-07-31T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0504"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "80 Short Place",
+                                "Suburb": "Papamoa Beach",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3118"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "swise@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-160 7766"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000148",
+                    "NationalStudentNumber": 9008000148,
+                    "FirstNZSchoolingDate": "2012-09-23T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ETU"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Marshall",
+                            "FullName": "Phoenix Marshall"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2007-09-23T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS131",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0507"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "7 Orchid Place",
+                                "Suburb": "Hairini",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3112"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "pmarshall@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-895 9085"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000150",
+                    "NationalStudentNumber": 9008000150,
+                    "FirstNZSchoolingDate": "2013-01-17T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Scott",
+                            "FullName": "Molly Scott"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2008-01-17T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "531"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "64 Tapuaeotu Way",
+                                "Suburb": "Welcome Bay",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3112"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "mscott@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-593 2690"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000163",
+                    "NationalStudentNumber": 9008000163,
+                    "FirstNZSchoolingDate": "2013-08-21T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Park",
+                            "FullName": "Lachlan Park"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2008-08-21T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS07116",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "42111"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "65 Sheppard Street",
+                                "Suburb": "Gate Pa",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3112"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "lpark@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-407 8756"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000176",
+                    "NationalStudentNumber": 9008000176,
+                    "FirstNZSchoolingDate": "2013-11-08T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Williams",
+                            "FullName": "Blake Williams"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2008-11-08T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0503"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "5 Weka Street",
+                                "Suburb": "Springfield",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3015"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "bwilliams@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-222 1546"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000189",
+                    "NationalStudentNumber": 9008000189,
+                    "FirstNZSchoolingDate": "2013-12-07T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Leonard",
+                            "FullName": "William Leonard"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2008-12-07T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0412"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "37 French Place",
+                                "Suburb": "Tihoitonga",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3015"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "wleonard@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-768 9099"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000191",
+                    "NationalStudentNumber": 9008000191,
+                    "FirstNZSchoolingDate": "2014-04-07T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ECO"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Skurr",
+                            "FullName": "Flynn Skurr"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2009-04-07T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS07116",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0411"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "3 Ratima Place",
+                                "Suburb": "Poroporo",
+                                "City": "Whakatane",
+                                "Country": "New Zealand",
+                                "PostalCode": "3120"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "fskurr@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-729 1516"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000201",
+                    "NationalStudentNumber": 9008000201,
+                    "FirstNZSchoolingDate": "2014-06-25T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPC"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Mcgeorge",
+                            "FullName": "Isla Mcgeorge"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2009-06-25T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0507"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "55 Boucher Avenue",
+                                "Suburb": "Te Puke",
+                                "City": "Western Bay of Plenty",
+                                "Country": "New Zealand",
+                                "PostalCode": "3119"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "imcgeorge@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-405  177"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000214",
+                    "NationalStudentNumber": 9008000214,
+                    "FirstNZSchoolingDate": "2014-07-23T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Thomson",
+                            "FullName": "Holly Thomson"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2009-07-23T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0508"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "37 Millbrook Drive",
+                                "Suburb": "Bethlehem",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "hthomson@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-544 8498"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000227",
+                    "NationalStudentNumber": 9008000227,
+                    "FirstNZSchoolingDate": "2014-09-25T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPC"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Menteath",
+                            "FullName": "Paige Menteath"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2009-09-25T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0507"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "9 Robinson Avenue",
+                                "Suburb": "Owhata",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3010"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "pmenteath@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-149 9015"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8100235",
+                    "NationalStudentNumber": 9008100235,
+                    "FirstNZSchoolingDate": "2014-12-20T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Ward",
+                            "FullName": "Isabella Ward"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2009-12-20T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "12512"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "16 Exeter Street",
+                                "Suburb": "Mt Maunganui",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3116"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "iward@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-936 9493"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000242",
+                    "NationalStudentNumber": 9008000242,
+                    "FirstNZSchoolingDate": "2014-12-26T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Taylor",
+                            "FullName": "Sebastian Taylor"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2009-12-26T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "12599"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "30 Ruby Place",
+                                "Suburb": "Papamoa Beach",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3118"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "staylor@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-551 1596"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000255",
+                    "NationalStudentNumber": 9008000255,
+                    "FirstNZSchoolingDate": "2008-04-09T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Thomson",
+                            "FullName": "Georgia Thomson"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2003-04-09T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0504"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "73 Sixteenth Avenue",
+                                "Suburb": "Tauranga South",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3112"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "gthomson@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-801 6975"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000268",
+                    "NationalStudentNumber": 9008000268,
+                    "FirstNZSchoolingDate": "2009-10-14T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "La Trobe",
+                            "FullName": "Ethan La Trobe"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2004-10-14T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS07116",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0503"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "31 Rostrevor Place",
+                                "Suburb": "Tihoitonga",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3015"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "ela trobe@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-229 3204"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000270",
+                    "NationalStudentNumber": 9008000270,
+                    "FirstNZSchoolingDate": "2009-11-09T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Walker",
+                            "FullName": "William Walker"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2004-11-09T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0507"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "60 Belray Place",
+                                "Suburb": "Papamoa Beach",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3118"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "wwalker@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-182  208"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000283",
+                    "NationalStudentNumber": 9008000283,
+                    "FirstNZSchoolingDate": "2009-12-17T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Harry",
+                            "FullName": "Gabriel Harry"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2004-12-17T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "511"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "17 Alfred Road",
+                                "Suburb": "Owhata",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3010"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "gharry@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-542 3634"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000296",
+                    "NationalStudentNumber": 9008000296,
+                    "FirstNZSchoolingDate": "2010-05-14T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Taylor",
+                            "PreferredGivenName": "Ben",
+                            "FullName": "Benjamin 'Ben' Taylor"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2005-05-14T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0406"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "88 Tautara Place",
+                                "Suburb": "Hairini",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3112"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "btaylor@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-328 8426"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000306",
+                    "NationalStudentNumber": 9008000306,
+                    "FirstNZSchoolingDate": "2011-01-04T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Oberg",
+                            "FullName": "Finn Oberg"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-01-04T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS16111",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0504"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "42 Garden Place",
+                                "Suburb": "Tauranga South",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3112"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "foberg@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-566 3476"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000319",
+                    "NationalStudentNumber": 9008000319,
+                    "FirstNZSchoolingDate": "2011-02-11T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Jolly",
+                            "FullName": "Ava Jolly"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-02-11T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "531"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "70 Browne Street",
+                                "Suburb": "Kawerau",
+                                "City": "Kawerau",
+                                "Country": "New Zealand",
+                                "PostalCode": "3127"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "ajolly@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-335 5308"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000321",
+                    "NationalStudentNumber": 9008000321,
+                    "FirstNZSchoolingDate": "2011-03-25T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Huriwaka",
+                            "FullName": "Cole Huriwaka"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-03-25T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "955"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "86 Rochdale Close",
+                                "Suburb": "Bethlehem",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "churiwaka@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-202 4644"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000334",
+                    "NationalStudentNumber": 9008000334,
+                    "FirstNZSchoolingDate": "2011-05-20T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Page",
+                            "FullName": "Liam Page"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-05-20T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0411"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "43 Dive Crescent",
+                                "Suburb": "Tauranga",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "lpage@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-278 1519"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000347",
+                    "NationalStudentNumber": 9008000347,
+                    "FirstNZSchoolingDate": "2011-10-29T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPC"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Mcbean",
+                            "FullName": "Jade Mcbean"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-10-29T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "441"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "87 Glenrowan Rise",
+                                "Suburb": "Bethlehem",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "jmcbean@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-143  767"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8100355",
+                    "NationalStudentNumber": 9008100355,
+                    "FirstNZSchoolingDate": "2011-12-13T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ETU"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Young",
+                            "FullName": "Jamie Young"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-12-13T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0405"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "74 Pretoria Street",
+                                "Suburb": "Victoria",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3010"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "jyoung@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-395 2320"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000362",
+                    "NationalStudentNumber": 9008000362,
+                    "FirstNZSchoolingDate": "2011-12-20T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Lewin",
+                            "FullName": "Isaac Lewin"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-12-20T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS07116",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "121"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "34 Laburnum Glen",
+                                "Suburb": "Mt Maunganui",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3116"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "ilewin@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-926 2325"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000375",
+                    "NationalStudentNumber": 9008000375,
+                    "FirstNZSchoolingDate": "2012-01-16T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ETU"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Orr",
+                            "FullName": "Alyssa Orr"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2007-01-16T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "121"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "57 Jefferson Place",
+                                "Suburb": "Brookfield",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "aorr@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-445 7367"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000388",
+                    "NationalStudentNumber": 9008000388,
+                    "FirstNZSchoolingDate": "2012-03-03T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Stewart",
+                            "FullName": "Maddison Stewart"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2007-03-03T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "999"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "27 Radisich Place",
+                                "Suburb": "Mt Maunganui",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3116"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "mstewart@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-167 3962"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000390",
+                    "NationalStudentNumber": 9008000390,
+                    "FirstNZSchoolingDate": "2012-04-27T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Hancock",
+                            "FullName": "Jorja Hancock"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2007-04-27T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0504"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "22 Cumberworth Close",
+                                "Suburb": "Pyes Pa",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3112"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "jhancock@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-239 3950"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000400",
+                    "NationalStudentNumber": 9008000400,
+                    "FirstNZSchoolingDate": "2012-09-11T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Mcloughlin",
+                            "FullName": "Zachary Mcloughlin"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2007-09-11T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0505"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "95 Vaughan Road",
+                                "Suburb": "Owhata",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3010"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "zmcloughlin@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-536 8299"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000413",
+                    "NationalStudentNumber": 9008000413,
+                    "FirstNZSchoolingDate": "2012-09-30T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Ramsay",
+                            "FullName": "Oliver Ramsay"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2007-09-30T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0504"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "88 Ely Place",
+                                "Suburb": "Judea",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "oramsay@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-977 9978"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000426",
+                    "NationalStudentNumber": 9008000426,
+                    "FirstNZSchoolingDate": "2013-02-26T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Malone",
+                            "FullName": "Robert Malone"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2008-02-26T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0415"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "87 Russley Drive",
+                                "Suburb": "Mt Maunganui",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3116"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "rmalone@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-259  863"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000439",
+                    "NationalStudentNumber": 9008000439,
+                    "FirstNZSchoolingDate": "2013-04-17T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Reid",
+                            "FullName": "Sophie Reid"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2008-04-17T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0507"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "32 Spencer Street",
+                                "Suburb": "Western Heights",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3015"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "sreid@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-350 5743"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000441",
+                    "NationalStudentNumber": 9008000441,
+                    "FirstNZSchoolingDate": "2013-05-18T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Monteith",
+                            "FullName": "Emma Monteith"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2008-05-18T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0414"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "90 Donnington Place",
+                                "Suburb": "Judea",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "emonteith@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-437 1141"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000454",
+                    "NationalStudentNumber": 9008000454,
+                    "FirstNZSchoolingDate": "2013-05-26T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EOS"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Heperi",
+                            "FullName": "Grace Heperi"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2008-05-26T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "124"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "83 Fox Street",
+                                "Suburb": "Kawerau",
+                                "City": "Kawerau",
+                                "Country": "New Zealand",
+                                "PostalCode": "3127"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "gheperi@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-871 5745"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000467",
+                    "NationalStudentNumber": 9008000467,
+                    "FirstNZSchoolingDate": "2013-06-03T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Harvey",
+                            "FullName": "Hannah Harvey"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2008-06-03T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "12949"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "78 Compton Place",
+                                "Suburb": "Mt Maunganui",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3116"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "hharvey@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-663  131"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8100475",
+                    "NationalStudentNumber": 9008100475,
+                    "FirstNZSchoolingDate": "2013-12-09T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Odlum",
+                            "FullName": "Abigail Odlum"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2008-12-09T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "351"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "40 Sel Cave Crescent",
+                                "Suburb": "Whakatane",
+                                "City": "Whakatane",
+                                "Country": "New Zealand",
+                                "PostalCode": "3120"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "aodlum@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-480 5217"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000482",
+                    "NationalStudentNumber": 9008000482,
+                    "FirstNZSchoolingDate": "2014-03-12T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPC"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Kennedy",
+                            "FullName": "George Kennedy"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2009-03-12T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0507"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "86 Carlton Street",
+                                "Suburb": "Glenholme",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3010"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "gkennedy@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-937 2801"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000495",
+                    "NationalStudentNumber": 9008000495,
+                    "FirstNZSchoolingDate": "2014-05-27T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ECO"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Horsnell",
+                            "FullName": "Anahera Horsnell"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2009-05-27T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "52113"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "94 Coles Cove",
+                                "Suburb": "Papamoa Beach",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3118"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "ahorsnell@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-784 8688"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000505",
+                    "NationalStudentNumber": 9008000505,
+                    "FirstNZSchoolingDate": "2008-02-18T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPC"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Hall",
+                            "FullName": "Angel Hall"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2003-02-18T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0406"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "72 Pendennis Crescent",
+                                "Suburb": "Bethlehem",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "ahall@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-838  772"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000518",
+                    "NationalStudentNumber": 9008000518,
+                    "FirstNZSchoolingDate": "2008-05-04T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "List",
+                            "FullName": "Ava List"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2003-05-04T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0411"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "31 Valley Grove Way",
+                                "Suburb": "Bethlehem",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "alist@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-198 1450"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000520",
+                    "NationalStudentNumber": 9008000520,
+                    "FirstNZSchoolingDate": "2009-02-16T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Wallace",
+                            "FullName": "Sam Wallace"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2004-02-16T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0414"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "31 Riddington Rise",
+                                "Suburb": "Hairini",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3112"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "swallace@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-962 7803"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000533",
+                    "NationalStudentNumber": 9008000533,
+                    "FirstNZSchoolingDate": "2009-03-22T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EUN"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Paterson",
+                            "FullName": "Ethan Paterson"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2004-03-22T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "955"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "73 Santa Fe Key",
+                                "Suburb": "Papamoa Beach",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3118"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "epaterson@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-975 7316"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000546",
+                    "NationalStudentNumber": 9008000546,
+                    "FirstNZSchoolingDate": "2010-03-21T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Peterson",
+                            "FullName": "Lily Peterson"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2005-03-21T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "12932"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "51 Stewart Street",
+                                "Suburb": "Te Puke",
+                                "City": "Western Bay of Plenty",
+                                "Country": "New Zealand",
+                                "PostalCode": "3119"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "lpeterson@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-340 1431"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000559",
+                    "NationalStudentNumber": 9008000559,
+                    "FirstNZSchoolingDate": "2010-05-02T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ETU"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Scott",
+                            "FullName": "Jessica Scott"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2005-05-02T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "111"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "23 Karenga Street",
+                                "Suburb": "Koutu",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3010"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "jscott@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-224 2905"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000561",
+                    "NationalStudentNumber": 9008000561,
+                    "FirstNZSchoolingDate": "2010-07-18T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Parkinson",
+                            "FullName": "Sophie Parkinson"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2005-07-18T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0506"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "95 Toko Street",
+                                "Suburb": "Victoria",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3010"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "sparkinson@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-379 6360"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000574",
+                    "NationalStudentNumber": 9008000574,
+                    "FirstNZSchoolingDate": "2010-08-05T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EKE"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Littlewood",
+                            "FullName": "Matthew Littlewood"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2005-08-05T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "12949"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "16 Mapou Street",
+                                "Suburb": "Mamaku",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3020"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "mlittlewood@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-994 1028"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000587",
+                    "NationalStudentNumber": 9008000587,
+                    "FirstNZSchoolingDate": "2011-06-19T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ECO"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Stevens",
+                            "PreferredGivenName": "Zack",
+                            "FullName": "Zachary 'Zack' Stevens"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-06-19T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "124"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "41 Scott Street",
+                                "Suburb": "Gate Pa",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3112"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "zstevens@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-210 8168"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8100595",
+                    "NationalStudentNumber": 9008100595,
+                    "FirstNZSchoolingDate": "2011-11-25T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Russell",
+                            "FullName": "Angel Russell"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-11-25T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0507"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "11 Talbot Place",
+                                "Suburb": "Welcome Bay",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3112"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "arussell@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-406 4132"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8100605",
+                    "NationalStudentNumber": 9008100605,
+                    "FirstNZSchoolingDate": "2011-12-24T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Gush",
+                            "FullName": "Xavier Gush"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2006-12-24T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0503"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "70 Ferguson Street",
+                                "Suburb": "Taneatua",
+                                "City": "Whakatane",
+                                "Country": "New Zealand",
+                                "PostalCode": "3123"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "xgush@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-610 4269"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000612",
+                    "NationalStudentNumber": 9008000612,
+                    "FirstNZSchoolingDate": "2012-04-10T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ENA"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Strong",
+                            "FullName": "Paige Strong"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2007-04-10T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS16111",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0509"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "27 Hamiora Place",
+                                "Suburb": "Ngapuna",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3010"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "pstrong@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-463 1247"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000625",
+                    "NationalStudentNumber": 9008000625,
+                    "FirstNZSchoolingDate": "2012-05-23T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPG"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Welsh",
+                            "FullName": "Riley Welsh"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2007-05-23T00:00:00+12:00",
+                            "Gender": "1",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "111"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "73 Hartwell Place",
+                                "Suburb": "Matua",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3110"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "rwelsh@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-252 9589"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000638",
+                    "NationalStudentNumber": 9008000638,
+                    "FirstNZSchoolingDate": "2012-07-27T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "ECO"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Grueber",
+                            "FullName": "Oliver Grueber"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2007-07-27T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "211"
+                                    }
+                                ]
+                            },
+                            "IwiAffiliationList": {
+                                "Iwi": [
+                                    {
+                                        "Code": "NZS0401"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "63 Grable Court",
+                                "Suburb": "Mt Maunganui",
+                                "City": "Tauranga",
+                                "Country": "New Zealand",
+                                "PostalCode": "3116"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "ogrueber@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-984 9527"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StudentPersonalLocalId": "ST8000640",
+                    "NationalStudentNumber": 9008000640,
+                    "FirstNZSchoolingDate": "2012-08-14T00:00:00+12:00",
+                    "EarlyChildhoodEducation": {
+                        "Type": "EPC"
+                    },
+                    "PersonInfo": {
+                        "Name": {
+                            "FamilyName": "Greenslade",
+                            "FullName": "Mason Greenslade"
+                        },
+                        "Demographics": {
+                            "BirthDate": "2007-08-14T00:00:00+12:00",
+                            "Gender": "2",
+                            "LanguageList": {
+                                "Language": [
+                                    {
+                                        "Code": "NZS01112",
+                                        "Usage": "SH"
+                                    }
+                                ]
+                            },
+                            "EthnicityList": {
+                                "Ethnicity": [
+                                    {
+                                        "Code": "966"
+                                    }
+                                ]
+                            }
+                        },
+                        "Address": {
+                            "Physical": {
+                                "Type": "TH",
+                                "Line1": "61 Trigg Avenue",
+                                "Suburb": "Glenholme",
+                                "City": "Rotorua",
+                                "Country": "New Zealand",
+                                "PostalCode": "3010"
+                            }
+                        },
+                        "Email": {
+                            "Personal": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "mgreenslade@mailinator.com"
+                            }
+                        },
+                        "Phone": {
+                            "Home": {
+                                "Number": "+64 7-787 5166"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

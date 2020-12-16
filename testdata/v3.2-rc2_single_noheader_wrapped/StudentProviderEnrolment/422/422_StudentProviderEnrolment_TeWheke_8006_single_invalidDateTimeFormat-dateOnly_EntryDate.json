@@ -1,0 +1,39 @@
+{
+    "StudentProviderEnrolments": {
+        "StudentProviderEnrolment": [
+            {
+                "StudentProviderEnrolmentLocalId": "2020_8006_ST6000008",
+                "Student": {
+                    "LocalId": "ST6000008",
+                    "NationalStudentNumber": 9006000008
+                },
+                "Provider": {
+                    "RefId": "8006"
+                },
+                "StudentId": "ST6000008",
+                "EntryDate": "2015-03-31",
+                "ECEEducationHistoryList": {
+                    "ECEType": [
+                        {
+                            "Type": "ECO"
+                        }
+                    ]
+                },
+                "SchoolEnrolmentList": {
+                    "SchoolEnrolment": [
+                        {
+                            "SchoolCalendarYear": 2020,
+                            "StartDate": "2020-01-27T00:00:00+12:00",
+                            "MembershipType": "BASE",
+                            "YearLevel": 6,
+                            "FTE": 1,
+                            "FundingType": "RE",
+                            "FundingYearLevel": 6,
+                            "Curriculum": "NZC"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

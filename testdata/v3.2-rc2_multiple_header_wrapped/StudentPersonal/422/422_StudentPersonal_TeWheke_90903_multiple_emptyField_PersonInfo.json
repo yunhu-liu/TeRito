@@ -1,0 +1,235 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The PersonInfo field is replaced with an empty string.",
+    "testcase": {
+        "StudentPersonals": {
+            "StudentPersonal": [
+                {
+                    "StudentPersonalLocalId": "ST2100545",
+                    "NationalStudentNumber": 9902100545,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000003",
+                    "NationalStudentNumber": 9903000003,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000016",
+                    "NationalStudentNumber": 9903000016,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000029",
+                    "NationalStudentNumber": 9903000029,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000031",
+                    "NationalStudentNumber": 9903000031,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000044",
+                    "NationalStudentNumber": 9903000044,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000057",
+                    "NationalStudentNumber": 9903000057,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3100065",
+                    "NationalStudentNumber": 9903100065,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000072",
+                    "NationalStudentNumber": 9903000072,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000085",
+                    "NationalStudentNumber": 9903000085,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000098",
+                    "NationalStudentNumber": 9903000098,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000108",
+                    "NationalStudentNumber": 9903000108,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000110",
+                    "NationalStudentNumber": 9903000110,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000123",
+                    "NationalStudentNumber": 9903000123,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000136",
+                    "NationalStudentNumber": 9903000136,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000149",
+                    "NationalStudentNumber": 9903000149,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000151",
+                    "NationalStudentNumber": 9903000151,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000164",
+                    "NationalStudentNumber": 9903000164,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000177",
+                    "NationalStudentNumber": 9903000177,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3100185",
+                    "NationalStudentNumber": 9903100185,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000192",
+                    "NationalStudentNumber": 9903000192,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000202",
+                    "NationalStudentNumber": 9903000202,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000215",
+                    "NationalStudentNumber": 9903000215,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000228",
+                    "NationalStudentNumber": 9903000228,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000230",
+                    "NationalStudentNumber": 9903000230,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000243",
+                    "NationalStudentNumber": 9903000243,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000256",
+                    "NationalStudentNumber": 9903000256,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000269",
+                    "NationalStudentNumber": 9903000269,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000271",
+                    "NationalStudentNumber": 9903000271,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000284",
+                    "NationalStudentNumber": 9903000284,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000297",
+                    "NationalStudentNumber": 9903000297,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000307",
+                    "NationalStudentNumber": 9903000307,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3100315",
+                    "NationalStudentNumber": 9903100315,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000322",
+                    "NationalStudentNumber": 9903000322,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000335",
+                    "NationalStudentNumber": 9903000335,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000348",
+                    "NationalStudentNumber": 9903000348,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000350",
+                    "NationalStudentNumber": 9903000350,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000363",
+                    "NationalStudentNumber": 9903000363,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000376",
+                    "NationalStudentNumber": 9903000376,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000389",
+                    "NationalStudentNumber": 9903000389,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000391",
+                    "NationalStudentNumber": 9903000391,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000401",
+                    "NationalStudentNumber": 9903000401,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000414",
+                    "NationalStudentNumber": 9903000414,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3000427",
+                    "NationalStudentNumber": 9903000427,
+                    "PersonInfo": ""
+                },
+                {
+                    "StudentPersonalLocalId": "ST3100435",
+                    "NationalStudentNumber": 9903100435,
+                    "PersonInfo": ""
+                }
+            ]
+        }
+    }
+}

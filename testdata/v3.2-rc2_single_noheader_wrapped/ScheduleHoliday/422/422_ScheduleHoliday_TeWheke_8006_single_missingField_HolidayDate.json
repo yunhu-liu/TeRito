@@ -1,0 +1,14 @@
+{
+    "ScheduleHolidays": {
+        "ScheduleHoliday": [
+            {
+                "ScheduleHolidayLocalId": "8006-2020-Waitangi",
+                "Organisation": {
+                    "RefId": "8006"
+                },
+                "HolidayName": "Waitangi Day",
+                "AlwaysDisplayFlag": "Y"
+            }
+        ]
+    }
+}

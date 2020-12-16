@@ -1,0 +1,85 @@
+{
+    "StudentPersonals": {
+        "StudentPersonal": [
+            {
+                "StudentPersonalLocalId": "ST6000130",
+                "NationalStudentNumber": 9006000130,
+                "FirstNZSchoolingDate": "2018-05-04T00:00:00+12:00",
+                "EarlyChildhoodEducation": {
+                    "Type": "EUN"
+                },
+                "PersonInfo": {
+                    "Name": {
+                        "FamilyName": "Page",
+                        "GivenName": "Blake",
+                        "FullName": "Blake Page"
+                    },
+                    "Demographics": {
+                        "BirthDate": "2013-05-04T00:00:00+12:00",
+                        "Gender": "Andy is GREAT!",
+                        "LanguageList": {
+                            "Language": [
+                                {
+                                    "Code": "NZS16110",
+                                    "Usage": "SH",
+                                    "ProficiencyList": {
+                                        "Proficiency": [
+                                            {
+                                                "Level": "AD",
+                                                "Type": "SP"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "EthnicityList": {
+                            "Ethnicity": [
+                                {
+                                    "Code": "211"
+                                }
+                            ]
+                        },
+                        "IwiAffiliationList": {
+                            "Iwi": [
+                                {
+                                    "Code": "NZS0504"
+                                }
+                            ]
+                        }
+                    },
+                    "Address": {
+                        "Physical": {
+                            "Type": "TH",
+                            "Line1": "57 Jervois Street",
+                            "Suburb": "Kawerau",
+                            "City": "Kawerau",
+                            "Country": "New Zealand",
+                            "PostalCode": "3127"
+                        }
+                    },
+                    "Email": {
+                        "Personal": {
+                            "SourceOrganisation": {
+                                "RefId": "8006"
+                            },
+                            "Address": "bpage@mailinator.com"
+                        }
+                    },
+                    "Phone": {
+                        "Home": {
+                            "Number": "+64 7-408 5537"
+                        }
+                    }
+                },
+                "StudentProviderEnrolment": {
+                    "EntryDate": "2018-05-04T00:00:00+12:00",
+                    "SchoolEnrolment": {
+                        "YearLevel": 3,
+                        "FundingYearLevel": 3
+                    }
+                }
+            }
+        ]
+    }
+}

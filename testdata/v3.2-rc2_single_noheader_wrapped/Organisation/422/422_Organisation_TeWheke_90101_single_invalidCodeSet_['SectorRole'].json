@@ -1,0 +1,16 @@
+{
+    "Organisations": {
+        "Organisation": [
+            {
+                "OrganisationRefId": "90101",
+                "EducationRegion": "12010",
+                "SpecialEducationDistrict": "182006",
+                "EntityOpen": "2020-01-27T00:00:00+12:00",
+                "Name": "Te Wheke Learning Support Cluster",
+                "OperationalStatus": "28010",
+                "Type": "10065",
+                "SectorRole": "Andy is GREAT!"
+            }
+        ]
+    }
+}

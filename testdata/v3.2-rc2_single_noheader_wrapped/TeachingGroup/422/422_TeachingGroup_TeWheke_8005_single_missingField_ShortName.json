@@ -1,0 +1,23 @@
+{
+    "TeachingGroups": {
+        "TeachingGroup": [
+            {
+                "TeachingGroupLocalId": "2020_8005_JR",
+                "LongName": "Room 1 - Jrs",
+                "GroupType": "HR",
+                "Organisation": {
+                    "RefId": "8005"
+                },
+                "ScheduleTerm": {
+                    "LocalId": "2020_8005_Y"
+                },
+                "YearLevelList": {
+                    "YearLevel": [
+                        1,
+                        2
+                    ]
+                }
+            }
+        ]
+    }
+}

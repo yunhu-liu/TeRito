@@ -1,0 +1,231 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The date time format for StartDate is incorrect. T is missing.",
+    "testcase": {
+        "StaffPersonals": {
+            "StaffPersonal": [
+                {
+                    "StaffPersonalLocalId": "T98113",
+                    "SchoolSMSUserId": "KodiS",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Steadman",
+                            "GivenName": "Kodi",
+                            "MiddleName": "Jacob",
+                            "FullName": "Kodi Jacob Steadman"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1968-09-18T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "kodis@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2006-03-1300:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98114",
+                    "SchoolSMSUserId": "MaeveC",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Cox",
+                            "GivenName": "Maeve",
+                            "FullName": "Maeve Cox"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1969-07-13T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "maevec@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2007-06-1800:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98115",
+                    "SchoolSMSUserId": "ElaH",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Horn",
+                            "GivenName": "Ela",
+                            "MiddleName": "P",
+                            "FullName": "Ela P Horn"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1971-03-11T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "elah@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2007-08-2000:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98116",
+                    "SchoolSMSUserId": "MelodyD",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Dale",
+                            "GivenName": "Melody",
+                            "MiddleName": "DP",
+                            "FullName": "Melody DP Dale"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1976-08-03T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "melodyd@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2008-08-1100:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98117",
+                    "SchoolSMSUserId": "MeganS",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Sanchez",
+                            "GivenName": "Megan",
+                            "MiddleName": "OH",
+                            "FullName": "Megan OH Sanchez"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1977-07-11T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "megans@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2009-01-1200:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98118",
+                    "SchoolSMSUserId": "KadeemT",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Tierney",
+                            "GivenName": "Kadeem",
+                            "MiddleName": "O",
+                            "FullName": "Kadeem O Tierney"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1977-08-30T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "kadeemt@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2010-01-2500:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98119",
+                    "SchoolSMSUserId": "BartlomiejC",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Cortez",
+                            "GivenName": "Bartlomiej",
+                            "FullName": "Bartlomiej Cortez"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1979-08-16T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "bartlomiejc@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1009",
+                        "StartDate": "2012-11-1900:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98120",
+                    "SchoolSMSUserId": "RhondaH",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Hartley",
+                            "GivenName": "Rhonda",
+                            "FullName": "Rhonda Hartley"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1980-01-10T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "rhondah@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1001",
+                        "StartDate": "2013-02-1100:00:00+12:00"
+                    }
+                }
+            ]
+        }
+    }
+}

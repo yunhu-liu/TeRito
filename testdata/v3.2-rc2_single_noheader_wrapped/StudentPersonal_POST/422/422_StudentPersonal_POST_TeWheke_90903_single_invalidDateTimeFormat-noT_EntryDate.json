@@ -1,0 +1,72 @@
+{
+    "StudentPersonals": {
+        "StudentPersonal": [
+            {
+                "StudentPersonalLocalId": "ST3000003",
+                "NationalStudentNumber": 9903000003,
+                "PersonInfo": {
+                    "Name": {
+                        "FamilyName": "Hewitt",
+                        "GivenName": "Aaron",
+                        "FullName": "Aaron Hewitt"
+                    },
+                    "Demographics": {
+                        "BirthDate": "2016-06-17T00:00:00+12:00",
+                        "Gender": "2",
+                        "LanguageList": {
+                            "Language": [
+                                {
+                                    "Code": "NZS131",
+                                    "Usage": "SH"
+                                }
+                            ]
+                        },
+                        "EthnicityList": {
+                            "Ethnicity": [
+                                {
+                                    "Code": "211"
+                                }
+                            ]
+                        },
+                        "IwiAffiliationList": {
+                            "Iwi": [
+                                {
+                                    "Code": "NZS0504"
+                                }
+                            ]
+                        }
+                    },
+                    "Address": {
+                        "Physical": {
+                            "Type": "TH",
+                            "Line1": "67 Carribean Place",
+                            "Suburb": "Papamoa Beach",
+                            "City": "Tauranga",
+                            "Country": "New Zealand",
+                            "PostalCode": "3118"
+                        }
+                    },
+                    "Email": {
+                        "Personal": {
+                            "SourceOrganisation": {
+                                "RefId": "90903"
+                            },
+                            "Address": "AHewitt@mailinator.com"
+                        }
+                    },
+                    "Phone": {
+                        "Home": {
+                            "Number": "+64 7-848 7222"
+                        }
+                    }
+                },
+                "StudentProviderEnrolment": {
+                    "EntryDate": "2017-01-3000:00:00+12:00",
+                    "ECEEnrolment": {
+                        "ECEYearLevel": "FOU"
+                    }
+                }
+            }
+        ]
+    }
+}

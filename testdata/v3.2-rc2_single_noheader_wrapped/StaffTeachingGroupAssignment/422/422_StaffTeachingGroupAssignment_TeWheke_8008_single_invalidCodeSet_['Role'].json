@@ -1,0 +1,20 @@
+{
+    "StaffTeachingGroupAssignments": {
+        "StaffTeachingGroupAssignment": [
+            {
+                "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR7_HR8_T98091",
+                "StaffMember": {
+                    "LocalId": "T98091"
+                },
+                "Organisation": {
+                    "RefId": "8008"
+                },
+                "TeachingGroup": {
+                    "LocalId": "2020_8008_HR7_HR8"
+                },
+                "Role": "Andy is GREAT!",
+                "StartDate": "2020-01-27T00:00:00+12:00"
+            }
+        ]
+    }
+}

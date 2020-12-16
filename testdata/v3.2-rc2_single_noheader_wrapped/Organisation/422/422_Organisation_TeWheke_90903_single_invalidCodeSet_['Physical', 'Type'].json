@@ -1,0 +1,44 @@
+{
+    "Organisations": {
+        "Organisation": [
+            {
+                "OrganisationRefId": "90903",
+                "EducationRegion": "12010",
+                "SpecialEducationDistrict": "182006",
+                "EntityOpen": "1950-01-28T00:00:00+12:00",
+                "Name": "Nīkau Kindergarten",
+                "OperationalStatus": "28001",
+                "Type": "10003",
+                "SectorRole": "35000",
+                "IsLicencedECEServiceProvider": "Y",
+                "IsPlaygroupServiceProvider": "N",
+                "ECEServiceProviderOwnershipType": "18004",
+                "Address": {
+                    "Physical": {
+                        "Type": "Andy is GREAT!",
+                        "Line1": "29 Mawake Place",
+                        "City": "Turangi",
+                        "Country": "New Zealand",
+                        "PostalCode": "3334",
+                        "GridLocation": {
+                            "Latitude": -38.984401,
+                            "Longitude": 175.803419
+                        }
+                    }
+                },
+                "TeRitoConfig": {
+                    "DataAnalysisDashboardsInd": "N",
+                    "StandardisedLearningSupportRegisterInd": "Y",
+                    "VirtualLearningEnvironmentInd": "N"
+                },
+                "SchoolService": {
+                    "AllowManualProvisioning": "Y"
+                },
+                "ECEService": {
+                    "Type": "PC",
+                    "PrimaryLanguage": "NZS01112"
+                }
+            }
+        ]
+    }
+}

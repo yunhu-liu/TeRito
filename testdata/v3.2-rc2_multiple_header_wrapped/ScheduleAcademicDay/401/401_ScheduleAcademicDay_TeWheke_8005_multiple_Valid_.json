@@ -1,0 +1,33 @@
+{
+    "expects": "401",
+    "comment": "Valid payload for %s entity(ies) for %s data object. To be used to test for 401 responses.",
+    "testcase": {
+        "ScheduleAcademicDays": {
+            "ScheduleAcademicDay": [
+                {
+                    "ScheduleAcademicDayLocalId": "8005_Normal",
+                    "AcademicDayName": "Normal",
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "Schedule": {
+                        "LocalId": "8005_Sched_2020"
+                    },
+                    "BellSchedule": {
+                        "LocalId": "8005_Regular"
+                    },
+                    "PeriodList": {
+                        "Period": [
+                            {
+                                "LocalId": "8005_AM"
+                            },
+                            {
+                                "LocalId": "8005_PM"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

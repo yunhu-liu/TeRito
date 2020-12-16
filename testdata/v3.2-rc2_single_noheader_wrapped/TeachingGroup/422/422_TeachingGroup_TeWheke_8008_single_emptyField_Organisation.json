@@ -1,0 +1,22 @@
+{
+    "TeachingGroups": {
+        "TeachingGroup": [
+            {
+                "TeachingGroupLocalId": "2020_8008_HR7_HR8",
+                "ShortName": "Juniors",
+                "LongName": "Room 1 -Years 7 & 8",
+                "GroupType": "RC",
+                "Organisation": "",
+                "ScheduleTerm": {
+                    "LocalId": "2020_8008_Y"
+                },
+                "YearLevelList": {
+                    "YearLevel": [
+                        7,
+                        8
+                    ]
+                }
+            }
+        ]
+    }
+}

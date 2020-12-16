@@ -1,0 +1,190 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The StartDate field is removed.",
+    "testcase": {
+        "Schedules": {
+            "Schedule": [
+                {
+                    "ScheduleLocalId": "8008_Sched_2020",
+                    "ScheduleName": "Pōhutukawa High Schedule - 2020",
+                    "EndDate": "2020-12-18T00:00:00+12:00",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "AcademicDayList": {
+                        "AcademicDay": [
+                            {
+                                "LocalId": "8008_Day_A",
+                                "BellSchedule": {
+                                    "LocalId": "8008_Regular"
+                                },
+                                "PeriodList": {
+                                    "Period": [
+                                        {
+                                            "LocalId": "8008_HR"
+                                        },
+                                        {
+                                            "LocalId": "8008_P1"
+                                        },
+                                        {
+                                            "LocalId": "8008_P2"
+                                        },
+                                        {
+                                            "LocalId": "8008_P3"
+                                        },
+                                        {
+                                            "LocalId": "8008_P4"
+                                        },
+                                        {
+                                            "LocalId": "8008_P5"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "LocalId": "8008_Day_B",
+                                "BellSchedule": {
+                                    "LocalId": "8008_Regular"
+                                },
+                                "PeriodList": {
+                                    "Period": [
+                                        {
+                                            "LocalId": "8008_HR"
+                                        },
+                                        {
+                                            "LocalId": "8008_P1"
+                                        },
+                                        {
+                                            "LocalId": "8008_P2"
+                                        },
+                                        {
+                                            "LocalId": "8008_P3"
+                                        },
+                                        {
+                                            "LocalId": "8008_P4"
+                                        },
+                                        {
+                                            "LocalId": "8008_P5"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "LocalId": "8008_Day_C",
+                                "BellSchedule": {
+                                    "LocalId": "8008_Regular"
+                                },
+                                "PeriodList": {
+                                    "Period": [
+                                        {
+                                            "LocalId": "8008_HR"
+                                        },
+                                        {
+                                            "LocalId": "8008_P1"
+                                        },
+                                        {
+                                            "LocalId": "8008_P2"
+                                        },
+                                        {
+                                            "LocalId": "8008_P3"
+                                        },
+                                        {
+                                            "LocalId": "8008_P4"
+                                        },
+                                        {
+                                            "LocalId": "8008_P5"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "LocalId": "8008_Day_D",
+                                "BellSchedule": {
+                                    "LocalId": "8008_Regular"
+                                },
+                                "PeriodList": {
+                                    "Period": [
+                                        {
+                                            "LocalId": "8008_HR"
+                                        },
+                                        {
+                                            "LocalId": "8008_P1"
+                                        },
+                                        {
+                                            "LocalId": "8008_P2"
+                                        },
+                                        {
+                                            "LocalId": "8008_P3"
+                                        },
+                                        {
+                                            "LocalId": "8008_P4"
+                                        },
+                                        {
+                                            "LocalId": "8008_P5"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "LocalId": "8008_Day_E",
+                                "BellSchedule": {
+                                    "LocalId": "8008_Regular"
+                                },
+                                "PeriodList": {
+                                    "Period": [
+                                        {
+                                            "LocalId": "8008_HR"
+                                        },
+                                        {
+                                            "LocalId": "8008_P1"
+                                        },
+                                        {
+                                            "LocalId": "8008_P2"
+                                        },
+                                        {
+                                            "LocalId": "8008_P3"
+                                        },
+                                        {
+                                            "LocalId": "8008_P4"
+                                        },
+                                        {
+                                            "LocalId": "8008_P5"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "LocalId": "8008_Day_F",
+                                "BellSchedule": {
+                                    "LocalId": "8008_Regular"
+                                },
+                                "PeriodList": {
+                                    "Period": [
+                                        {
+                                            "LocalId": "8008_HR"
+                                        },
+                                        {
+                                            "LocalId": "8008_P1"
+                                        },
+                                        {
+                                            "LocalId": "8008_P2"
+                                        },
+                                        {
+                                            "LocalId": "8008_P3"
+                                        },
+                                        {
+                                            "LocalId": "8008_P4"
+                                        },
+                                        {
+                                            "LocalId": "8008_P5"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

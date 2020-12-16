@@ -1,0 +1,25 @@
+{
+    "TeachingGroupEvents": {
+        "TeachingGroupEvent": [
+            {
+                "TeachingGroupEventLocalId": "2020_8005_JR_Normal_AM",
+                "Organisation": {
+                    "RefId": "8005"
+                },
+                "TeachingGroup": {
+                    "LocalId": "2020_8005_JR"
+                },
+                "Schedule": {
+                    "LocalId": "8005_Sched_2020"
+                },
+                "SchedulePeriod": {
+                    "LocalId": "8005_AM"
+                },
+                "AcademicDay": {
+                    "LocalId": "8005_Normal"
+                },
+                "TakeAttendanceFlag": "Andy is GREAT!"
+            }
+        ]
+    }
+}

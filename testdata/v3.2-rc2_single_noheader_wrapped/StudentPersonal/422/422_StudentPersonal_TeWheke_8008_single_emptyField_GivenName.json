@@ -1,0 +1,71 @@
+{
+    "StudentPersonals": {
+        "StudentPersonal": [
+            {
+                "StudentPersonalLocalId": "ST8000296",
+                "NationalStudentNumber": 9008000296,
+                "FirstNZSchoolingDate": "2010-05-14T00:00:00+12:00",
+                "EarlyChildhoodEducation": {
+                    "Type": "EOS"
+                },
+                "PersonInfo": {
+                    "Name": {
+                        "FamilyName": "Taylor",
+                        "GivenName": "",
+                        "PreferredGivenName": "Ben",
+                        "FullName": "Benjamin 'Ben' Taylor"
+                    },
+                    "Demographics": {
+                        "BirthDate": "2005-05-14T00:00:00+12:00",
+                        "Gender": "2",
+                        "LanguageList": {
+                            "Language": [
+                                {
+                                    "Code": "NZS01112",
+                                    "Usage": "SH"
+                                }
+                            ]
+                        },
+                        "EthnicityList": {
+                            "Ethnicity": [
+                                {
+                                    "Code": "211"
+                                }
+                            ]
+                        },
+                        "IwiAffiliationList": {
+                            "Iwi": [
+                                {
+                                    "Code": "NZS0406"
+                                }
+                            ]
+                        }
+                    },
+                    "Address": {
+                        "Physical": {
+                            "Type": "TH",
+                            "Line1": "88 Tautara Place",
+                            "Suburb": "Hairini",
+                            "City": "Tauranga",
+                            "Country": "New Zealand",
+                            "PostalCode": "3112"
+                        }
+                    },
+                    "Email": {
+                        "Personal": {
+                            "SourceOrganisation": {
+                                "RefId": "8008"
+                            },
+                            "Address": "btaylor@mailinator.com"
+                        }
+                    },
+                    "Phone": {
+                        "Home": {
+                            "Number": "+64 7-328 8426"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

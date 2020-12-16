@@ -1,0 +1,58 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The HolidayDate field is removed.",
+    "testcase": {
+        "ScheduleHolidays": {
+            "ScheduleHoliday": [
+                {
+                    "ScheduleHolidayLocalId": "8007-2020-Waitangi",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "HolidayName": "Waitangi Day",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8007-2020-Gfri",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "HolidayName": "Good Friday",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8007-2020-Emon",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "HolidayName": "Easter Monday",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8007-2020-ANZAC",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "HolidayName": "ANZAC Day",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8007-2020-Qbdy",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "HolidayName": "Queen's Birthday",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8007-2020-Lbdy",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "HolidayName": "Labour Day",
+                    "AlwaysDisplayFlag": "Y"
+                }
+            ]
+        }
+    }
+}

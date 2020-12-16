@@ -1,0 +1,24 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The PeriodList field is replaced with an empty string.",
+    "testcase": {
+        "ScheduleAcademicDays": {
+            "ScheduleAcademicDay": [
+                {
+                    "ScheduleAcademicDayLocalId": "8006_Normal",
+                    "AcademicDayName": "Normal",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    },
+                    "BellSchedule": {
+                        "LocalId": "8005_Regular"
+                    },
+                    "PeriodList": ""
+                }
+            ]
+        }
+    }
+}

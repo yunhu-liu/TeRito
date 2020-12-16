@@ -10,11 +10,11 @@
       <con:properties>
         <con:property>
           <con:name>OrgRefId</con:name>
-          <con:value>8006</con:value>
+          <con:value>8007</con:value>
         </con:property>
         <con:property>
           <con:name>InvalidOrgRefId</con:name>
-          <con:value>3922</con:value>
+          <con:value>2283</con:value>
         </con:property>
       </con:properties>
     </con:config>
@@ -33,7 +33,7 @@
     <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:dataSource type="JSON">
         <con:configuration>
-          <sourceStep>LoadJsonForOrgs</sourceStep>
+          <sourceStep/>
           <sourceProperty>fileContent</sourceProperty>
           <rowPath>$['Organisations']['Organisation']</rowPath>
           <columnPath>['OrganisationRefId']</columnPath>
@@ -44,6 +44,7 @@
       <con:restartShared>true</con:restartShared>
       <con:property>OrganisationRefId</con:property>
       <con:property>EducationRegion</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
@@ -86,6 +87,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       <con:shared>true</con:shared>
       <con:restartShared>true</con:restartShared>
       <con:property>RandomOrgRefId</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
@@ -121,6 +123,7 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
       <con:shared>true</con:shared>
       <con:restartShared>true</con:restartShared>
       <con:property>InvalidOrgRefId</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>

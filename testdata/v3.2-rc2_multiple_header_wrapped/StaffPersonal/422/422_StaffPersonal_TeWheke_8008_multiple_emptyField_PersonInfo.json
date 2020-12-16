@@ -1,0 +1,150 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The PersonInfo field is replaced with an empty string.",
+    "testcase": {
+        "StaffPersonals": {
+            "StaffPersonal": [
+                {
+                    "StaffPersonalLocalId": "T98085",
+                    "SchoolSMSUserId": "CC",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98086",
+                    "SchoolSMSUserId": "ML",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98087",
+                    "SchoolSMSUserId": "WC",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98088",
+                    "SchoolSMSUserId": "DT",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98089",
+                    "SchoolSMSUserId": "AL",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98090",
+                    "SchoolSMSUserId": "LK",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98091",
+                    "SchoolSMSUserId": "MM",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98092",
+                    "SchoolSMSUserId": "HP",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98093",
+                    "SchoolSMSUserId": "AS",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98094",
+                    "SchoolSMSUserId": "SJ",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98095",
+                    "SchoolSMSUserId": "GT",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98096",
+                    "SchoolSMSUserId": "BF",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98097",
+                    "SchoolSMSUserId": "RW",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98098",
+                    "SchoolSMSUserId": "RR",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98099",
+                    "SchoolSMSUserId": "CA",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98100",
+                    "SchoolSMSUserId": "HS",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98101",
+                    "SchoolSMSUserId": "LS",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98102",
+                    "SchoolSMSUserId": "HA",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98103",
+                    "SchoolSMSUserId": "MB",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98104",
+                    "SchoolSMSUserId": "KC",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98105",
+                    "SchoolSMSUserId": "CA",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98106",
+                    "SchoolSMSUserId": "MH",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98107",
+                    "SchoolSMSUserId": "HR",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98108",
+                    "SchoolSMSUserId": "RA",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98109",
+                    "SchoolSMSUserId": "HB",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98110",
+                    "SchoolSMSUserId": "LC",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98111",
+                    "SchoolSMSUserId": "KA",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98112",
+                    "SchoolSMSUserId": "PC",
+                    "PersonInfo": ""
+                }
+            ]
+        }
+    }
+}

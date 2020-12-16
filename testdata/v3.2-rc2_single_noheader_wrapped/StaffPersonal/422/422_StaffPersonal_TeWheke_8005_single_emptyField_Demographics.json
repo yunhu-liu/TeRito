@@ -1,0 +1,28 @@
+{
+    "StaffPersonals": {
+        "StaffPersonal": [
+            {
+                "StaffPersonalLocalId": "T98001",
+                "SchoolSMSUserId": "SmythR",
+                "PersonInfo": {
+                    "Name": {
+                        "Title": "Mr",
+                        "FamilyName": "Smyth",
+                        "GivenName": "Riley",
+                        "Suffix": "Jr",
+                        "FullName": "Riley Smyth Jr"
+                    },
+                    "Demographics": "",
+                    "Email": {
+                        "Work": {
+                            "SourceOrganisation": {
+                                "RefId": "8005"
+                            },
+                            "Address": "rileys@mailinator.com"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

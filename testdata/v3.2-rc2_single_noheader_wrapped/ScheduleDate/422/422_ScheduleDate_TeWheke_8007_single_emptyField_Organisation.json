@@ -1,0 +1,69 @@
+{
+    "ScheduleDates": {
+        "ScheduleDate": [
+            {
+                "ScheduleDateLocalId": "8007_2020_001",
+                "CalendarDate": "2020-01-27T00:00:00+12:00",
+                "Organisation": "",
+                "Term": {
+                    "LocalId": "2020_8007_T1"
+                },
+                "Schedule": {
+                    "LocalId": "8007_Sched_2020"
+                },
+                "AcademicDay": {
+                    "LocalId": "8007_Day_A"
+                },
+                "BellSchedule": {
+                    "LocalId": "8007_Regular"
+                },
+                "SchedulePeriodList": {
+                    "SchedulePeriodTime": [
+                        {
+                            "Period": {
+                                "LocalId": "8007_HR"
+                            },
+                            "StartTime": "08:45:00+12:00",
+                            "EndTime": "08:55:00+12:00"
+                        },
+                        {
+                            "Period": {
+                                "LocalId": "8007_P1"
+                            },
+                            "StartTime": "09:00:00+12:00",
+                            "EndTime": "09:50:00+12:00"
+                        },
+                        {
+                            "Period": {
+                                "LocalId": "8007_P2"
+                            },
+                            "StartTime": "09:55:00+12:00",
+                            "EndTime": "10:45:00+12:00"
+                        },
+                        {
+                            "Period": {
+                                "LocalId": "8007_P3"
+                            },
+                            "StartTime": "11:00:00+12:00",
+                            "EndTime": "11:50:00+12:00"
+                        },
+                        {
+                            "Period": {
+                                "LocalId": "8007_P4"
+                            },
+                            "StartTime": "12:40:00+12:00",
+                            "EndTime": "13:30:00+12:00"
+                        },
+                        {
+                            "Period": {
+                                "LocalId": "8007_P5"
+                            },
+                            "StartTime": "13:45:00+12:00",
+                            "EndTime": "14:45:00+12:00"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

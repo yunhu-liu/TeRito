@@ -1,0 +1,98 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The date time format for StartDate is incorrect.White space missing.",
+    "testcase": {
+        "StaffAssignments": {
+            "StaffAssignment": [
+                {
+                    "StaffAssignmentLocalId": "2020_T98113_90902",
+                    "StaffMember": {
+                        "LocalId": "T98113"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90902"
+                    },
+                    "StaffRole": "1205",
+                    "StartDate": "2006-03-13 00:00:00+1200+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98114_90902",
+                    "StaffMember": {
+                        "LocalId": "T98114"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90902"
+                    },
+                    "StaffRole": "1205",
+                    "StartDate": "2007-06-18 00:00:00+1200+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98115_90902",
+                    "StaffMember": {
+                        "LocalId": "T98115"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90902"
+                    },
+                    "StaffRole": "1205",
+                    "StartDate": "2007-08-20 00:00:00+1200+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98116_90902",
+                    "StaffMember": {
+                        "LocalId": "T98116"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90902"
+                    },
+                    "StaffRole": "1205",
+                    "StartDate": "2008-08-11 00:00:00+1200+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98117_90902",
+                    "StaffMember": {
+                        "LocalId": "T98117"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90902"
+                    },
+                    "StaffRole": "1205",
+                    "StartDate": "2009-01-12 00:00:00+1200+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98118_90902",
+                    "StaffMember": {
+                        "LocalId": "T98118"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90902"
+                    },
+                    "StaffRole": "1205",
+                    "StartDate": "2010-01-25 00:00:00+1200+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98119_90902",
+                    "StaffMember": {
+                        "LocalId": "T98119"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90902"
+                    },
+                    "StaffRole": "1009",
+                    "StartDate": "2012-11-19 00:00:00+1200+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98120_90902",
+                    "StaffMember": {
+                        "LocalId": "T98120"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90902"
+                    },
+                    "StaffRole": "1001",
+                    "StartDate": "2013-02-11 00:00:00+1200+12:00"
+                }
+            ]
+        }
+    }
+}

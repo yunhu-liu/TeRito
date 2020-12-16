@@ -1,0 +1,85 @@
+{
+    "Organisations": {
+        "Organisation": [
+            {
+                "OrganisationRefId": "8006",
+                "EducationRegion": "12010",
+                "SpecialEducationDistrict": "182006",
+                "EntityOpen": "1950-01-28T00:00:00+12:00",
+                "Name": "",
+                "OperationalStatus": "28001",
+                "Type": "10024",
+                "SectorRole": "35003",
+                "ProviderSMS": "ETA",
+                "Authority": "STATE",
+                "Address": {
+                    "Physical": {
+                        "Type": "TH",
+                        "Line1": "Mission Road",
+                        "City": "Whakatane",
+                        "Country": "New Zealand",
+                        "PostalCode": "3158",
+                        "GridLocation": {
+                            "Latitude": -38.148073,
+                            "Longitude": 177.007448
+                        }
+                    }
+                },
+                "Email": {
+                    "Main": {
+                        "Address": "principal@8006.school.nz"
+                    }
+                },
+                "Phone": {
+                    "Main": {
+                        "Number": "06 555 6622"
+                    }
+                },
+                "TeRitoConfig": {
+                    "DataAnalysisDashboardsInd": "Y",
+                    "StandardisedLearningSupportRegisterInd": "Y",
+                    "VirtualLearningEnvironmentInd": "N"
+                },
+                "SchoolService": {
+                    "CoEdStatus": "COED",
+                    "Decile": 3,
+                    "AllowManualProvisioning": "N",
+                    "SchoolYearList": {
+                        "SchoolYear": [
+                            {
+                                "YearLevel": 1,
+                                "FIRSTSchoolYearGenderId": -80061,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 2,
+                                "FIRSTSchoolYearGenderId": -80062,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 3,
+                                "FIRSTSchoolYearGenderId": -80063,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 4,
+                                "FIRSTSchoolYearGenderId": -80064,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 5,
+                                "FIRSTSchoolYearGenderId": -80065,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 6,
+                                "FIRSTSchoolYearGenderId": -80067,
+                                "Gender": "55002"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,771 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The GivenName field is removed.",
+    "testcase": {
+        "StaffPersonals": {
+            "StaffPersonal": [
+                {
+                    "StaffPersonalLocalId": "T98001",
+                    "SchoolSMSUserId": "SmythR",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Smyth",
+                            "Suffix": "Jr",
+                            "FullName": "Riley Smyth Jr"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1950-11-10T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "rileys@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98002",
+                    "SchoolSMSUserId": "PartridgeV",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Partridge",
+                            "PreferredGivenName": "Vic",
+                            "FullName": "Viktoria 'Vic' Partridge"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1952-01-17T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "viktoriap@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98003",
+                    "SchoolSMSUserId": "MarksF",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Marks",
+                            "FullName": "Fionn Marks"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1953-09-03T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "fionnm@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98004",
+                    "SchoolSMSUserId": "SquiresM",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Squires",
+                            "FullName": "Maya Squires"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1953-11-21T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "mayas@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98005",
+                    "SchoolSMSUserId": "WheelerN",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Wheeler",
+                            "MiddleName": "D",
+                            "FullName": "Nayla D Wheeler"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1956-04-09T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "naylaw@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98006",
+                    "SchoolSMSUserId": "SharpK",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Sharp",
+                            "MiddleName": "E",
+                            "FullName": "Keagan E Sharp"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1957-08-08T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "keagans@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98007",
+                    "SchoolSMSUserId": "LoveE",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Love",
+                            "FullName": "Eleasha Love"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1963-05-04T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "eleashal@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98008",
+                    "SchoolSMSUserId": "DavidsonF",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Davidson",
+                            "FullName": "Fletcher Davidson"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1963-06-18T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "fletcherd@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98009",
+                    "SchoolSMSUserId": "AshtonD",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Ashton",
+                            "MiddleName": "J",
+                            "FullName": "Dayna J Ashton"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1963-11-28T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "daynaa@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98010",
+                    "SchoolSMSUserId": "KrauseE",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Krause",
+                            "FullName": "Emer Krause"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1969-11-08T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "emerk@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98011",
+                    "SchoolSMSUserId": "HoldingM",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Holding",
+                            "FullName": "Moshe Holding"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1970-06-28T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "mosheh@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98012",
+                    "SchoolSMSUserId": "SearleC",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Searle",
+                            "MiddleName": "E",
+                            "FullName": "Caiden E Searle"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1972-11-11T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "caidens@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98013",
+                    "SchoolSMSUserId": "StampH",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Stamp",
+                            "FullName": "Howard Stamp"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1975-08-11T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "howards@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98014",
+                    "SchoolSMSUserId": "BeasleyT",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Beasley",
+                            "PreferredGivenName": "Ty",
+                            "FullName": "Tyson 'Ty' Beasley"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1975-12-24T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "tysonb@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98015",
+                    "SchoolSMSUserId": "RutledgeD",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Rutledge",
+                            "FullName": "Demi-Lee Rutledge"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1977-07-30T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "demi-leer@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98016",
+                    "SchoolSMSUserId": "MendozaE",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Mendoza",
+                            "FullName": "Evan Mendoza"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1977-10-14T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "evanm@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98017",
+                    "SchoolSMSUserId": "MasseyD",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Massey",
+                            "FullName": "Dione Massey"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1979-11-21T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "dionem@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98018",
+                    "SchoolSMSUserId": "DaweL",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Dawe",
+                            "FullName": "Lesley Dawe"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1983-07-04T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "lesleyd@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98019",
+                    "SchoolSMSUserId": "WhittakerD",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Whittaker",
+                            "MiddleName": "S",
+                            "FullName": "Dominika S Whittaker"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1983-08-31T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "dominikaw@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98020",
+                    "SchoolSMSUserId": "HamiltonT",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Hamilton",
+                            "FullName": "Trevor Hamilton"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1987-09-05T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "trevorh@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98021",
+                    "SchoolSMSUserId": "FergusonM",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Ferguson",
+                            "FullName": "Maurice Ferguson"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1988-04-24T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "mauricef@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98022",
+                    "SchoolSMSUserId": "RobinR",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Robin",
+                            "MiddleName": "J",
+                            "FullName": "Rebekka J Robin"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1988-05-22T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "rebekkar@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98023",
+                    "SchoolSMSUserId": "JoynerA",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Joyner",
+                            "FullName": "Alton Joyner"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1988-07-25T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "altonj@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98024",
+                    "SchoolSMSUserId": "GrantM",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Grant",
+                            "FullName": "Madiha Grant"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1988-12-14T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "madihag@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98025",
+                    "SchoolSMSUserId": "LeZ",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Le",
+                            "FullName": "Ziggy Le"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1995-11-18T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "ziggyl@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98026",
+                    "SchoolSMSUserId": "TruongS",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Truong",
+                            "PreferredGivenName": "S-J",
+                            "FullName": "Sarah-Jane 'S-J' Truong"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1951-12-03T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "sarah-janet@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98027",
+                    "SchoolSMSUserId": "HouseK",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "House",
+                            "FullName": "Kaira House"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1952-10-08T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "kairah@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98028",
+                    "SchoolSMSUserId": "FritzB",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Fritz",
+                            "FullName": "Blane Fritz"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1954-02-08T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "blanef@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98029",
+                    "SchoolSMSUserId": "HookA",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Hook",
+                            "FullName": "Abbas Hook"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1958-03-18T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "abbash@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98030",
+                    "SchoolSMSUserId": "EatonH",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Eaton",
+                            "FullName": "Huey Eaton"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1958-12-20T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "hueye@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98031",
+                    "SchoolSMSUserId": "RojasF",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Rojas",
+                            "MiddleName": "D",
+                            "FullName": "Faizaan D Rojas"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1964-03-16T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "faizaanr@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98032",
+                    "SchoolSMSUserId": "CunninghamP",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Cunningham",
+                            "FullName": "Pranav Cunningham"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1966-02-25T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "pranavc@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98033",
+                    "SchoolSMSUserId": "GuerreroA",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Guerrero",
+                            "MiddleName": "P",
+                            "FullName": "Aleeza P Guerrero"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1968-06-12T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "aleezag@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98034",
+                    "SchoolSMSUserId": "MeltonM",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Melton",
+                            "MiddleName": "DP",
+                            "FullName": "Madison DP Melton"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1970-08-01T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8005"
+                                },
+                                "Address": "madisonm@mailinator.com"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

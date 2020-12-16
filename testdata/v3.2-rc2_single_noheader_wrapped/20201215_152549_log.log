@@ -1,0 +1,913 @@
+2020-12-15 15:26:53,115 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,115 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,115 generateObjForArray: WARNING - Contact not in the data.
+2020-12-15 15:26:53,115 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,115 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,115 generateObjForArray: WARNING - Location not in the data.
+2020-12-15 15:26:53,115 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,115 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,115 generateObjForArray: WARNING - EnactedPolicy not in the data.
+2020-12-15 15:26:53,115 generateObjForArray: WARNING - SchoolYear not in the data.
+2020-12-15 15:26:53,131 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8005 in Organisation.
+2020-12-15 15:26:53,131 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 8005 in Organisation.
+2020-12-15 15:26:53,131 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8005 in Organisation.
+2020-12-15 15:26:53,131 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Website', 'Usage'] for 8005 in Organisation.
+2020-12-15 15:26:53,131 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for 8005 in Organisation.
+2020-12-15 15:26:53,147 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for 8005 in Organisation.
+2020-12-15 15:26:53,147 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for 8005 in Organisation.
+2020-12-15 15:26:53,147 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Contact', 'Role'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Physical', 'Type'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Address', 'Type'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 8005 in Organisation.
+2020-12-15 15:26:53,148 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['OperationalStatusReason'] for 8005 in Organisation.
+2020-12-15 15:26:53,165 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['IsLicencedECEServiceProvider'] for 8005 in Organisation.
+2020-12-15 15:26:53,165 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['IsPlaygroupServiceProvider'] for 8005 in Organisation.
+2020-12-15 15:26:53,165 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEServiceProviderOwnershipType'] for 8005 in Organisation.
+2020-12-15 15:26:53,165 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EnactedPolicy', 'Policy'] for 8005 in Organisation.
+2020-12-15 15:26:53,165 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolClassificationList', 'Classification'] for 8005 in Organisation.
+2020-12-15 15:26:53,165 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolYear', 'Boarding'] for 8005 in Organisation.
+2020-12-15 15:26:53,165 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEService', 'Type'] for 8005 in Organisation.
+2020-12-15 15:26:53,165 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEService', 'PrimaryLanguage'] for 8005 in Organisation.
+2020-12-15 15:26:53,231 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,231 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,231 generateObjForArray: WARNING - Contact not in the data.
+2020-12-15 15:26:53,231 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,231 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,231 generateObjForArray: WARNING - Location not in the data.
+2020-12-15 15:26:53,231 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,231 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,231 generateObjForArray: WARNING - EnactedPolicy not in the data.
+2020-12-15 15:26:53,231 generateObjForArray: WARNING - Classification not in the data.
+2020-12-15 15:26:53,231 generateObjForArray: WARNING - SchoolYear not in the data.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Website', 'Usage'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Contact', 'Role'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Physical', 'Type'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Address', 'Type'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 8006 in Organisation.
+2020-12-15 15:26:53,248 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['OperationalStatusReason'] for 8006 in Organisation.
+2020-12-15 15:26:53,264 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['IsLicencedECEServiceProvider'] for 8006 in Organisation.
+2020-12-15 15:26:53,264 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['IsPlaygroupServiceProvider'] for 8006 in Organisation.
+2020-12-15 15:26:53,264 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEServiceProviderOwnershipType'] for 8006 in Organisation.
+2020-12-15 15:26:53,264 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EnactedPolicy', 'Policy'] for 8006 in Organisation.
+2020-12-15 15:26:53,264 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolClassificationList', 'Classification'] for 8006 in Organisation.
+2020-12-15 15:26:53,264 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolYear', 'Boarding'] for 8006 in Organisation.
+2020-12-15 15:26:53,264 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEService', 'Type'] for 8006 in Organisation.
+2020-12-15 15:26:53,264 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEService', 'PrimaryLanguage'] for 8006 in Organisation.
+2020-12-15 15:26:53,331 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,331 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,331 generateObjForArray: WARNING - Contact not in the data.
+2020-12-15 15:26:53,331 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,331 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,331 generateObjForArray: WARNING - Location not in the data.
+2020-12-15 15:26:53,331 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,331 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,331 generateObjForArray: WARNING - EnactedPolicy not in the data.
+2020-12-15 15:26:53,331 generateObjForArray: WARNING - SchoolYear not in the data.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Website', 'Usage'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Contact', 'Role'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Physical', 'Type'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Address', 'Type'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 8007 in Organisation.
+2020-12-15 15:26:53,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['OperationalStatusReason'] for 8007 in Organisation.
+2020-12-15 15:26:53,364 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['IsLicencedECEServiceProvider'] for 8007 in Organisation.
+2020-12-15 15:26:53,364 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['IsPlaygroupServiceProvider'] for 8007 in Organisation.
+2020-12-15 15:26:53,364 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEServiceProviderOwnershipType'] for 8007 in Organisation.
+2020-12-15 15:26:53,364 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EnactedPolicy', 'Policy'] for 8007 in Organisation.
+2020-12-15 15:26:53,364 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolClassificationList', 'Classification'] for 8007 in Organisation.
+2020-12-15 15:26:53,364 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolYear', 'Boarding'] for 8007 in Organisation.
+2020-12-15 15:26:53,380 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEService', 'Type'] for 8007 in Organisation.
+2020-12-15 15:26:53,380 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEService', 'PrimaryLanguage'] for 8007 in Organisation.
+2020-12-15 15:26:53,431 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,431 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,431 generateObjForArray: WARNING - Contact not in the data.
+2020-12-15 15:26:53,431 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,431 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,431 generateObjForArray: WARNING - Location not in the data.
+2020-12-15 15:26:53,431 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,431 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,431 generateObjForArray: WARNING - EnactedPolicy not in the data.
+2020-12-15 15:26:53,447 generateObjForArray: WARNING - Classification not in the data.
+2020-12-15 15:26:53,447 generateObjForArray: WARNING - SchoolYear not in the data.
+2020-12-15 15:26:53,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8008 in Organisation.
+2020-12-15 15:26:53,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 8008 in Organisation.
+2020-12-15 15:26:53,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8008 in Organisation.
+2020-12-15 15:26:53,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Website', 'Usage'] for 8008 in Organisation.
+2020-12-15 15:26:53,464 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for 8008 in Organisation.
+2020-12-15 15:26:53,464 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for 8008 in Organisation.
+2020-12-15 15:26:53,464 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Contact', 'Role'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Physical', 'Type'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Address', 'Type'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 8008 in Organisation.
+2020-12-15 15:26:53,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['OperationalStatusReason'] for 8008 in Organisation.
+2020-12-15 15:26:53,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['IsLicencedECEServiceProvider'] for 8008 in Organisation.
+2020-12-15 15:26:53,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['IsPlaygroupServiceProvider'] for 8008 in Organisation.
+2020-12-15 15:26:53,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEServiceProviderOwnershipType'] for 8008 in Organisation.
+2020-12-15 15:26:53,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EnactedPolicy', 'Policy'] for 8008 in Organisation.
+2020-12-15 15:26:53,498 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolClassificationList', 'Classification'] for 8008 in Organisation.
+2020-12-15 15:26:53,498 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolYear', 'Boarding'] for 8008 in Organisation.
+2020-12-15 15:26:53,498 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEService', 'Type'] for 8008 in Organisation.
+2020-12-15 15:26:53,498 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEService', 'PrimaryLanguage'] for 8008 in Organisation.
+2020-12-15 15:26:53,565 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,565 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,565 generateObjForArray: WARNING - Contact not in the data.
+2020-12-15 15:26:53,565 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,565 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,565 generateObjForArray: WARNING - Location not in the data.
+2020-12-15 15:26:53,565 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,565 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,565 generateObjForArray: WARNING - EnactedPolicy not in the data.
+2020-12-15 15:26:53,565 generateObjForArray: WARNING - Classification not in the data.
+2020-12-15 15:26:53,565 generateObjForArray: WARNING - SchoolYear not in the data.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Website', 'Usage'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Contact', 'Role'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Physical', 'Type'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Address', 'Type'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 90902 in Organisation.
+2020-12-15 15:26:53,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['OperationalStatusReason'] for 90902 in Organisation.
+2020-12-15 15:26:53,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ProviderSMS'] for 90902 in Organisation.
+2020-12-15 15:26:53,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Authority'] for 90902 in Organisation.
+2020-12-15 15:26:53,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolService', 'CoEdStatus'] for 90902 in Organisation.
+2020-12-15 15:26:53,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EnactedPolicy', 'Policy'] for 90902 in Organisation.
+2020-12-15 15:26:53,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolClassificationList', 'Classification'] for 90902 in Organisation.
+2020-12-15 15:26:53,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolYear', 'Gender'] for 90902 in Organisation.
+2020-12-15 15:26:53,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolYear', 'Boarding'] for 90902 in Organisation.
+2020-12-15 15:26:53,664 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,664 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,664 generateObjForArray: WARNING - Contact not in the data.
+2020-12-15 15:26:53,664 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,664 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,664 generateObjForArray: WARNING - Location not in the data.
+2020-12-15 15:26:53,664 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,664 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,664 generateObjForArray: WARNING - EnactedPolicy not in the data.
+2020-12-15 15:26:53,664 generateObjForArray: WARNING - Classification not in the data.
+2020-12-15 15:26:53,664 generateObjForArray: WARNING - SchoolYear not in the data.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Website', 'Usage'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Contact', 'Role'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Physical', 'Type'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Address', 'Type'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 90903 in Organisation.
+2020-12-15 15:26:53,681 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['OperationalStatusReason'] for 90903 in Organisation.
+2020-12-15 15:26:53,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ProviderSMS'] for 90903 in Organisation.
+2020-12-15 15:26:53,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Authority'] for 90903 in Organisation.
+2020-12-15 15:26:53,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolService', 'CoEdStatus'] for 90903 in Organisation.
+2020-12-15 15:26:53,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EnactedPolicy', 'Policy'] for 90903 in Organisation.
+2020-12-15 15:26:53,714 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolClassificationList', 'Classification'] for 90903 in Organisation.
+2020-12-15 15:26:53,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolYear', 'Gender'] for 90903 in Organisation.
+2020-12-15 15:26:53,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolYear', 'Boarding'] for 90903 in Organisation.
+2020-12-15 15:26:53,765 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,765 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,765 generateObjForArray: WARNING - Contact not in the data.
+2020-12-15 15:26:53,765 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,765 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,765 generateObjForArray: WARNING - Location not in the data.
+2020-12-15 15:26:53,780 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,780 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:53,780 generateObjForArray: WARNING - EnactedPolicy not in the data.
+2020-12-15 15:26:53,780 generateObjForArray: WARNING - Classification not in the data.
+2020-12-15 15:26:53,780 generateObjForArray: WARNING - SchoolYear not in the data.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Physical', 'Type'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Website', 'Usage'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Contact', 'Role'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Physical', 'Type'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for 90101 in Organisation.
+2020-12-15 15:26:53,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Address', 'Type'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Main', 'Usage'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['OperationalStatusReason'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ProviderSMS'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['TeRitoConfig', 'DataAnalysisDashboardsInd'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['TeRitoConfig', 'StandardisedLearningSupportRegisterInd'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['TeRitoConfig', 'VirtualLearningEnvironmentInd'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['IsLicencedECEServiceProvider'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['IsPlaygroupServiceProvider'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEServiceProviderOwnershipType'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Authority'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolService', 'CoEdStatus'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EnactedPolicy', 'Policy'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolService', 'AllowManualProvisioning'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolClassificationList', 'Classification'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolYear', 'Gender'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolYear', 'Boarding'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEService', 'Type'] for 90101 in Organisation.
+2020-12-15 15:26:53,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEService', 'PrimaryLanguage'] for 90101 in Organisation.
+2020-12-15 15:26:53,898 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:53,898 generateObjForArray: WARNING - SubjectArea not in the data.
+2020-12-15 15:26:53,898 generateObjForArray: WARNING - NCEASubjectArea not in the data.
+2020-12-15 15:26:53,914 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'SubjectArea'] for 90101_8005 in OrganisationRelationship.
+2020-12-15 15:26:53,914 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'NCEASubjectArea'] for 90101_8005 in OrganisationRelationship.
+2020-12-15 15:26:53,981 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:53,981 generateObjForArray: WARNING - SubjectArea not in the data.
+2020-12-15 15:26:53,981 generateObjForArray: WARNING - NCEASubjectArea not in the data.
+2020-12-15 15:26:53,998 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'SubjectArea'] for 90101_8006 in OrganisationRelationship.
+2020-12-15 15:26:53,998 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'NCEASubjectArea'] for 90101_8006 in OrganisationRelationship.
+2020-12-15 15:26:54,048 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:54,048 generateObjForArray: WARNING - SubjectArea not in the data.
+2020-12-15 15:26:54,048 generateObjForArray: WARNING - NCEASubjectArea not in the data.
+2020-12-15 15:26:54,065 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'SubjectArea'] for 90101_8007 in OrganisationRelationship.
+2020-12-15 15:26:54,065 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'NCEASubjectArea'] for 90101_8007 in OrganisationRelationship.
+2020-12-15 15:26:54,115 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:54,115 generateObjForArray: WARNING - SubjectArea not in the data.
+2020-12-15 15:26:54,115 generateObjForArray: WARNING - NCEASubjectArea not in the data.
+2020-12-15 15:26:54,131 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'SubjectArea'] for 90101_8008 in OrganisationRelationship.
+2020-12-15 15:26:54,131 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'NCEASubjectArea'] for 90101_8008 in OrganisationRelationship.
+2020-12-15 15:26:54,181 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:54,181 generateObjForArray: WARNING - SubjectArea not in the data.
+2020-12-15 15:26:54,181 generateObjForArray: WARNING - NCEASubjectArea not in the data.
+2020-12-15 15:26:54,198 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'SubjectArea'] for 90101_90902 in OrganisationRelationship.
+2020-12-15 15:26:54,198 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'NCEASubjectArea'] for 90101_90902 in OrganisationRelationship.
+2020-12-15 15:26:54,263 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:54,264 generateObjForArray: WARNING - SubjectArea not in the data.
+2020-12-15 15:26:54,264 generateObjForArray: WARNING - NCEASubjectArea not in the data.
+2020-12-15 15:26:54,281 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'SubjectArea'] for 90101_90903 in OrganisationRelationship.
+2020-12-15 15:26:54,281 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'NCEASubjectArea'] for 90101_90903 in OrganisationRelationship.
+2020-12-15 15:26:54,331 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:54,331 generateObjForArray: WARNING - SubjectArea not in the data.
+2020-12-15 15:26:54,331 generateObjForArray: WARNING - NCEASubjectArea not in the data.
+2020-12-15 15:26:54,365 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'SubjectArea'] for 90101_8005 in OrganisationRelationship.
+2020-12-15 15:26:54,365 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'NCEASubjectArea'] for 90101_8005 in OrganisationRelationship.
+2020-12-15 15:26:54,514 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for T98001 in StaffPersonal.
+2020-12-15 15:26:54,514 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for T98001 in StaffPersonal.
+2020-12-15 15:26:54,514 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for T98001 in StaffPersonal.
+2020-12-15 15:26:54,514 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for T98001 in StaffPersonal.
+2020-12-15 15:26:54,514 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for T98001 in StaffPersonal.
+2020-12-15 15:26:54,514 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for T98001 in StaffPersonal.
+2020-12-15 15:26:54,514 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffAssignment', 'StaffRole'] for T98001 in StaffPersonal.
+2020-12-15 15:26:54,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for T98035 in StaffPersonal.
+2020-12-15 15:26:54,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for T98035 in StaffPersonal.
+2020-12-15 15:26:54,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for T98035 in StaffPersonal.
+2020-12-15 15:26:54,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for T98035 in StaffPersonal.
+2020-12-15 15:26:54,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for T98035 in StaffPersonal.
+2020-12-15 15:26:54,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for T98035 in StaffPersonal.
+2020-12-15 15:26:54,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffAssignment', 'StaffRole'] for T98035 in StaffPersonal.
+2020-12-15 15:26:54,631 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for T98061 in StaffPersonal.
+2020-12-15 15:26:54,631 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for T98061 in StaffPersonal.
+2020-12-15 15:26:54,631 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for T98061 in StaffPersonal.
+2020-12-15 15:26:54,631 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for T98061 in StaffPersonal.
+2020-12-15 15:26:54,631 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for T98061 in StaffPersonal.
+2020-12-15 15:26:54,631 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for T98061 in StaffPersonal.
+2020-12-15 15:26:54,631 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffAssignment', 'StaffRole'] for T98061 in StaffPersonal.
+2020-12-15 15:26:54,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for T98085 in StaffPersonal.
+2020-12-15 15:26:54,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for T98085 in StaffPersonal.
+2020-12-15 15:26:54,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for T98085 in StaffPersonal.
+2020-12-15 15:26:54,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for T98085 in StaffPersonal.
+2020-12-15 15:26:54,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for T98085 in StaffPersonal.
+2020-12-15 15:26:54,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for T98085 in StaffPersonal.
+2020-12-15 15:26:54,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffAssignment', 'StaffRole'] for T98085 in StaffPersonal.
+2020-12-15 15:26:54,765 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for T98113 in StaffPersonal.
+2020-12-15 15:26:54,765 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for T98113 in StaffPersonal.
+2020-12-15 15:26:54,765 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for T98113 in StaffPersonal.
+2020-12-15 15:26:54,765 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for T98113 in StaffPersonal.
+2020-12-15 15:26:54,765 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for T98113 in StaffPersonal.
+2020-12-15 15:26:54,765 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for T98113 in StaffPersonal.
+2020-12-15 15:26:54,765 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffAssignment', 'StaffRole'] for T98113 in StaffPersonal.
+2020-12-15 15:26:54,831 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for T98123 in StaffPersonal.
+2020-12-15 15:26:54,831 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for T98123 in StaffPersonal.
+2020-12-15 15:26:54,831 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for T98123 in StaffPersonal.
+2020-12-15 15:26:54,831 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for T98123 in StaffPersonal.
+2020-12-15 15:26:54,831 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for T98123 in StaffPersonal.
+2020-12-15 15:26:54,831 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for T98123 in StaffPersonal.
+2020-12-15 15:26:54,831 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffAssignment', 'StaffRole'] for T98123 in StaffPersonal.
+2020-12-15 15:26:54,948 generateObjForArray: WARNING - StaffSubject not in the data.
+2020-12-15 15:26:54,948 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:54,948 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:54,965 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffSubject', 'Code'] for 2020_T98003_8005 in StaffAssignment.
+2020-12-15 15:26:54,998 generateObjForArray: WARNING - StaffSubject not in the data.
+2020-12-15 15:26:54,998 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:54,998 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:55,015 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffSubject', 'Code'] for 2020_T98038_8006 in StaffAssignment.
+2020-12-15 15:26:55,048 generateObjForArray: WARNING - StaffSubject not in the data.
+2020-12-15 15:26:55,048 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:55,048 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:55,065 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffSubject', 'Code'] for 2020_T98061_8007 in StaffAssignment.
+2020-12-15 15:26:55,098 generateObjForArray: WARNING - StaffSubject not in the data.
+2020-12-15 15:26:55,113 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:55,113 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:55,114 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffSubject', 'Code'] for 2020_T98109_8008 in StaffAssignment.
+2020-12-15 15:26:55,148 generateObjForArray: WARNING - StaffSubject not in the data.
+2020-12-15 15:26:55,148 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:55,148 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:55,164 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EmployingOrAccommodatingProvider'] for 2020_T98113_90902 in StaffAssignment.
+2020-12-15 15:26:55,164 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffSubject', 'Code'] for 2020_T98113_90902 in StaffAssignment.
+2020-12-15 15:26:55,198 generateObjForArray: WARNING - StaffSubject not in the data.
+2020-12-15 15:26:55,198 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:55,198 generateObjForArray: WARNING - YearLevel not in the data.
+2020-12-15 15:26:55,215 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EmployingOrAccommodatingProvider'] for 2020_T98121_90903 in StaffAssignment.
+2020-12-15 15:26:55,215 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffSubject', 'Code'] for 2020_T98121_90903 in StaffAssignment.
+2020-12-15 15:26:55,298 generateObjForArray: WARNING - AcademicDay not in the data.
+2020-12-15 15:26:55,298 generateObjForArray: WARNING - Period not in the data.
+2020-12-15 15:26:55,348 generateObjForArray: WARNING - AcademicDay not in the data.
+2020-12-15 15:26:55,348 generateObjForArray: WARNING - Period not in the data.
+2020-12-15 15:26:55,398 generateObjForArray: WARNING - AcademicDay not in the data.
+2020-12-15 15:26:55,398 generateObjForArray: WARNING - Period not in the data.
+2020-12-15 15:26:55,464 generateObjForArray: WARNING - AcademicDay not in the data.
+2020-12-15 15:26:55,464 generateObjForArray: WARNING - Period not in the data.
+2020-12-15 15:26:56,048 generateObjForArray: WARNING - Period not in the data.
+2020-12-15 15:26:56,098 generateObjForArray: WARNING - Period not in the data.
+2020-12-15 15:26:56,131 generateObjForArray: WARNING - Period not in the data.
+2020-12-15 15:26:56,181 generateObjForArray: WARNING - Period not in the data.
+2020-12-15 15:26:57,062 generateObjForArray: WARNING - Event not in the data.
+2020-12-15 15:26:57,062 generateObjForArray: WARNING - SchedulePeriodTime not in the data.
+2020-12-15 15:26:57,115 generateObjForArray: WARNING - Event not in the data.
+2020-12-15 15:26:57,115 generateObjForArray: WARNING - SchedulePeriodTime not in the data.
+2020-12-15 15:26:57,164 generateObjForArray: WARNING - Event not in the data.
+2020-12-15 15:26:57,164 generateObjForArray: WARNING - SchedulePeriodTime not in the data.
+2020-12-15 15:26:57,231 generateObjForArray: WARNING - Event not in the data.
+2020-12-15 15:26:57,247 generateObjForArray: WARNING - SchedulePeriodTime not in the data.
+2020-12-15 15:26:57,331 generateObjForArray: WARNING - Course not in the data.
+2020-12-15 15:26:57,331 generateObjForArray: WARNING - SubjectArea not in the data.
+2020-12-15 15:26:57,331 generateObjForArray: WARNING - NCEASubjectArea not in the data.
+2020-12-15 15:26:57,331 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'SubjectArea'] for 2020_8005_JR in TeachingGroup.
+2020-12-15 15:26:57,331 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'NCEASubjectArea'] for 2020_8005_JR in TeachingGroup.
+2020-12-15 15:26:57,365 generateObjForArray: WARNING - Course not in the data.
+2020-12-15 15:26:57,365 generateObjForArray: WARNING - SubjectArea not in the data.
+2020-12-15 15:26:57,365 generateObjForArray: WARNING - NCEASubjectArea not in the data.
+2020-12-15 15:26:57,365 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'SubjectArea'] for 2020_8006_JR in TeachingGroup.
+2020-12-15 15:26:57,365 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'NCEASubjectArea'] for 2020_8006_JR in TeachingGroup.
+2020-12-15 15:26:57,415 generateObjForArray: WARNING - Course not in the data.
+2020-12-15 15:26:57,415 generateObjForArray: WARNING - SubjectArea not in the data.
+2020-12-15 15:26:57,415 generateObjForArray: WARNING - NCEASubjectArea not in the data.
+2020-12-15 15:26:57,415 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'SubjectArea'] for 2020_8007_HR9 in TeachingGroup.
+2020-12-15 15:26:57,415 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'NCEASubjectArea'] for 2020_8007_HR9 in TeachingGroup.
+2020-12-15 15:26:57,448 generateObjForArray: WARNING - Course not in the data.
+2020-12-15 15:26:57,448 generateObjForArray: WARNING - SubjectArea not in the data.
+2020-12-15 15:26:57,448 generateObjForArray: WARNING - NCEASubjectArea not in the data.
+2020-12-15 15:26:57,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'SubjectArea'] for 2020_8008_HR7_HR8 in TeachingGroup.
+2020-12-15 15:26:57,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SubjectAreaList', 'NCEASubjectArea'] for 2020_8008_HR7_HR8 in TeachingGroup.
+2020-12-15 15:26:57,531 generateObjForArray: WARNING - StaffMember not in the data.
+2020-12-15 15:26:57,531 generateObjForArray: WARNING - Course not in the data.
+2020-12-15 15:26:57,531 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffMember', 'Role'] for 2020_8005_JR_Normal_AM in TeachingGroupEvent.
+2020-12-15 15:26:57,564 generateObjForArray: WARNING - StaffMember not in the data.
+2020-12-15 15:26:57,564 generateObjForArray: WARNING - Course not in the data.
+2020-12-15 15:26:57,564 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffMember', 'Role'] for 2020_8006_JR_Normal_AM in TeachingGroupEvent.
+2020-12-15 15:26:57,598 generateObjForArray: WARNING - StaffMember not in the data.
+2020-12-15 15:26:57,598 generateObjForArray: WARNING - Course not in the data.
+2020-12-15 15:26:57,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffMember', 'Role'] for 2020_8007_HR9_Day_A in TeachingGroupEvent.
+2020-12-15 15:26:57,648 generateObjForArray: WARNING - StaffMember not in the data.
+2020-12-15 15:26:57,648 generateObjForArray: WARNING - Course not in the data.
+2020-12-15 15:26:57,648 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StaffMember', 'Role'] for 2020_8008_HR7_HR8_Day_A in TeachingGroupEvent.
+2020-12-15 15:26:58,315 generateObjForArray: WARNING - Name not in the data.
+2020-12-15 15:26:58,315 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:26:58,315 generateObjForArray: WARNING - Proficiency not in the data.
+2020-12-15 15:26:58,315 generateObjForArray: WARNING - Ethnicity not in the data.
+2020-12-15 15:26:58,315 generateObjForArray: WARNING - Iwi not in the data.
+2020-12-15 15:26:58,315 generateObjForArray: WARNING - Hapu not in the data.
+2020-12-15 15:26:58,315 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:58,315 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:58,315 generateObjForArray: WARNING - MedicalNeed not in the data.
+2020-12-15 15:26:58,331 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,331 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,331 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,331 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,331 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,331 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,331 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,331 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,331 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Verification', 'Source'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,346 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,346 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,362 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,362 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,362 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,362 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,362 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,362 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,362 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['BiographicChangeReason'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,362 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEEnrolment', 'ECEYearLevel'] for ST5000728 in StudentPersonal.
+2020-12-15 15:26:58,431 generateObjForArray: WARNING - Name not in the data.
+2020-12-15 15:26:58,431 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:26:58,431 generateObjForArray: WARNING - Proficiency not in the data.
+2020-12-15 15:26:58,431 generateObjForArray: WARNING - Ethnicity not in the data.
+2020-12-15 15:26:58,431 generateObjForArray: WARNING - Iwi not in the data.
+2020-12-15 15:26:58,431 generateObjForArray: WARNING - Hapu not in the data.
+2020-12-15 15:26:58,431 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:58,431 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:58,431 generateObjForArray: WARNING - MedicalNeed not in the data.
+2020-12-15 15:26:58,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Verification', 'Source'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['BiographicChangeReason'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,465 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEEnrolment', 'ECEYearLevel'] for ST6000130 in StudentPersonal.
+2020-12-15 15:26:58,547 generateObjForArray: WARNING - Name not in the data.
+2020-12-15 15:26:58,548 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:26:58,548 generateObjForArray: WARNING - Proficiency not in the data.
+2020-12-15 15:26:58,548 generateObjForArray: WARNING - Ethnicity not in the data.
+2020-12-15 15:26:58,548 generateObjForArray: WARNING - Iwi not in the data.
+2020-12-15 15:26:58,548 generateObjForArray: WARNING - Hapu not in the data.
+2020-12-15 15:26:58,548 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:58,548 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:58,548 generateObjForArray: WARNING - MedicalNeed not in the data.
+2020-12-15 15:26:58,565 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,565 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,565 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,565 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,565 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,565 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,565 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,565 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,565 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Verification', 'Source'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['BiographicChangeReason'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEEnrolment', 'ECEYearLevel'] for ST7000299 in StudentPersonal.
+2020-12-15 15:26:58,648 generateObjForArray: WARNING - Name not in the data.
+2020-12-15 15:26:58,648 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:26:58,648 generateObjForArray: WARNING - Proficiency not in the data.
+2020-12-15 15:26:58,648 generateObjForArray: WARNING - Ethnicity not in the data.
+2020-12-15 15:26:58,648 generateObjForArray: WARNING - Iwi not in the data.
+2020-12-15 15:26:58,648 generateObjForArray: WARNING - Hapu not in the data.
+2020-12-15 15:26:58,648 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:58,648 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:58,648 generateObjForArray: WARNING - MedicalNeed not in the data.
+2020-12-15 15:26:58,682 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,682 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,682 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,682 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,682 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,682 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,682 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,682 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,682 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Verification', 'Source'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,682 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Proficiency', 'Level'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,682 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Proficiency', 'Type'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,697 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['BiographicChangeReason'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,698 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEEnrolment', 'ECEYearLevel'] for ST8000296 in StudentPersonal.
+2020-12-15 15:26:58,765 generateObjForArray: WARNING - Name not in the data.
+2020-12-15 15:26:58,765 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:26:58,765 generateObjForArray: WARNING - Proficiency not in the data.
+2020-12-15 15:26:58,765 generateObjForArray: WARNING - Ethnicity not in the data.
+2020-12-15 15:26:58,765 generateObjForArray: WARNING - Iwi not in the data.
+2020-12-15 15:26:58,765 generateObjForArray: WARNING - Hapu not in the data.
+2020-12-15 15:26:58,765 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:58,765 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:58,765 generateObjForArray: WARNING - MedicalNeed not in the data.
+2020-12-15 15:26:58,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EarlyChildhoodEducation', 'Type'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,781 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Verification', 'Source'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['BiographicChangeReason'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,798 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEEnrolment', 'ECEYearLevel'] for ST2000274 in StudentPersonal.
+2020-12-15 15:26:58,881 generateObjForArray: WARNING - Name not in the data.
+2020-12-15 15:26:58,881 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:26:58,881 generateObjForArray: WARNING - Proficiency not in the data.
+2020-12-15 15:26:58,881 generateObjForArray: WARNING - Ethnicity not in the data.
+2020-12-15 15:26:58,881 generateObjForArray: WARNING - Iwi not in the data.
+2020-12-15 15:26:58,881 generateObjForArray: WARNING - Hapu not in the data.
+2020-12-15 15:26:58,881 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:58,881 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:26:58,881 generateObjForArray: WARNING - MedicalNeed not in the data.
+2020-12-15 15:26:58,898 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EarlyChildhoodEducation', 'Type'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,898 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,898 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,898 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,898 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,898 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,898 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,898 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,898 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,898 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Verification', 'Source'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,898 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Proficiency', 'Level'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,898 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Proficiency', 'Type'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,914 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,914 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,914 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,914 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,914 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,914 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,914 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,914 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,914 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['BiographicChangeReason'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:58,914 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEEnrolment', 'ECEYearLevel'] for ST3000003 in StudentPersonal.
+2020-12-15 15:26:59,228 generateObjForArray: WARNING - Intervention not in the data.
+2020-12-15 15:26:59,228 generateObjForArray: WARNING - School not in the data.
+2020-12-15 15:26:59,228 generateObjForArray: WARNING - ECEType not in the data.
+2020-12-15 15:26:59,228 generateObjForArray: WARNING - SchoolEnrolment not in the data.
+2020-12-15 15:26:59,228 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:26:59,228 generateObjForArray: WARNING - StudentConsent not in the data.
+2020-12-15 15:26:59,243 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Exit', 'Reason'] for 2020_8005_ST5000000 in StudentProviderEnrolment.
+2020-12-15 15:26:59,243 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Exit', 'PostSchoolActivity'] for 2020_8005_ST5000000 in StudentProviderEnrolment.
+2020-12-15 15:26:59,243 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EarlyChildhoodEnrolment', 'ECEYearLevel'] for 2020_8005_ST5000000 in StudentProviderEnrolment.
+2020-12-15 15:26:59,243 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EarlyChildhoodEnrolment', 'Curriculum'] for 2020_8005_ST5000000 in StudentProviderEnrolment.
+2020-12-15 15:26:59,243 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Language', 'Code'] for 2020_8005_ST5000000 in StudentProviderEnrolment.
+2020-12-15 15:26:59,243 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Language', 'Level'] for 2020_8005_ST5000000 in StudentProviderEnrolment.
+2020-12-15 15:26:59,243 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolEnrolment', 'Section9Agreement'] for 2020_8005_ST5000000 in StudentProviderEnrolment.
+2020-12-15 15:26:59,243 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolEnrolment', 'OngoingResourceScheme'] for 2020_8005_ST5000000 in StudentProviderEnrolment.
+2020-12-15 15:26:59,243 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['CoEnrolment', 'CoEnrolmentType'] for 2020_8005_ST5000000 in StudentProviderEnrolment.
+2020-12-15 15:26:59,243 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['PreEnrolmentCancellation', 'CancellationMethod'] for 2020_8005_ST5000000 in StudentProviderEnrolment.
+2020-12-15 15:26:59,243 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['PreEnrolmentCancellation', 'CancellationReason'] for 2020_8005_ST5000000 in StudentProviderEnrolment.
+2020-12-15 15:26:59,298 generateObjForArray: WARNING - Intervention not in the data.
+2020-12-15 15:26:59,298 generateObjForArray: WARNING - School not in the data.
+2020-12-15 15:26:59,298 generateObjForArray: WARNING - ECEType not in the data.
+2020-12-15 15:26:59,298 generateObjForArray: WARNING - SchoolEnrolment not in the data.
+2020-12-15 15:26:59,298 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:26:59,298 generateObjForArray: WARNING - StudentConsent not in the data.
+2020-12-15 15:26:59,298 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Exit', 'Reason'] for 2020_8006_ST6000008 in StudentProviderEnrolment.
+2020-12-15 15:26:59,298 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Exit', 'PostSchoolActivity'] for 2020_8006_ST6000008 in StudentProviderEnrolment.
+2020-12-15 15:26:59,315 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EarlyChildhoodEnrolment', 'ECEYearLevel'] for 2020_8006_ST6000008 in StudentProviderEnrolment.
+2020-12-15 15:26:59,315 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EarlyChildhoodEnrolment', 'Curriculum'] for 2020_8006_ST6000008 in StudentProviderEnrolment.
+2020-12-15 15:26:59,315 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Language', 'Code'] for 2020_8006_ST6000008 in StudentProviderEnrolment.
+2020-12-15 15:26:59,315 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Language', 'Level'] for 2020_8006_ST6000008 in StudentProviderEnrolment.
+2020-12-15 15:26:59,315 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolEnrolment', 'Section9Agreement'] for 2020_8006_ST6000008 in StudentProviderEnrolment.
+2020-12-15 15:26:59,315 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolEnrolment', 'OngoingResourceScheme'] for 2020_8006_ST6000008 in StudentProviderEnrolment.
+2020-12-15 15:26:59,315 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['CoEnrolment', 'CoEnrolmentType'] for 2020_8006_ST6000008 in StudentProviderEnrolment.
+2020-12-15 15:26:59,315 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['PreEnrolmentCancellation', 'CancellationMethod'] for 2020_8006_ST6000008 in StudentProviderEnrolment.
+2020-12-15 15:26:59,315 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['PreEnrolmentCancellation', 'CancellationReason'] for 2020_8006_ST6000008 in StudentProviderEnrolment.
+2020-12-15 15:26:59,348 generateObjForArray: WARNING - Intervention not in the data.
+2020-12-15 15:26:59,348 generateObjForArray: WARNING - School not in the data.
+2020-12-15 15:26:59,348 generateObjForArray: WARNING - ECEType not in the data.
+2020-12-15 15:26:59,348 generateObjForArray: WARNING - SchoolEnrolment not in the data.
+2020-12-15 15:26:59,348 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:26:59,348 generateObjForArray: WARNING - StudentConsent not in the data.
+2020-12-15 15:26:59,365 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Exit', 'Reason'] for 2020_8007_ST7000005 in StudentProviderEnrolment.
+2020-12-15 15:26:59,365 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Exit', 'PostSchoolActivity'] for 2020_8007_ST7000005 in StudentProviderEnrolment.
+2020-12-15 15:26:59,380 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EarlyChildhoodEnrolment', 'ECEYearLevel'] for 2020_8007_ST7000005 in StudentProviderEnrolment.
+2020-12-15 15:26:59,380 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EarlyChildhoodEnrolment', 'Curriculum'] for 2020_8007_ST7000005 in StudentProviderEnrolment.
+2020-12-15 15:26:59,381 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Language', 'Code'] for 2020_8007_ST7000005 in StudentProviderEnrolment.
+2020-12-15 15:26:59,381 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Language', 'Level'] for 2020_8007_ST7000005 in StudentProviderEnrolment.
+2020-12-15 15:26:59,381 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolEnrolment', 'Section9Agreement'] for 2020_8007_ST7000005 in StudentProviderEnrolment.
+2020-12-15 15:26:59,381 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolEnrolment', 'OngoingResourceScheme'] for 2020_8007_ST7000005 in StudentProviderEnrolment.
+2020-12-15 15:26:59,381 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['CoEnrolment', 'CoEnrolmentType'] for 2020_8007_ST7000005 in StudentProviderEnrolment.
+2020-12-15 15:26:59,381 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['PreEnrolmentCancellation', 'CancellationMethod'] for 2020_8007_ST7000005 in StudentProviderEnrolment.
+2020-12-15 15:26:59,381 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['PreEnrolmentCancellation', 'CancellationReason'] for 2020_8007_ST7000005 in StudentProviderEnrolment.
+2020-12-15 15:26:59,414 generateObjForArray: WARNING - Intervention not in the data.
+2020-12-15 15:26:59,414 generateObjForArray: WARNING - School not in the data.
+2020-12-15 15:26:59,414 generateObjForArray: WARNING - ECEType not in the data.
+2020-12-15 15:26:59,414 generateObjForArray: WARNING - SchoolEnrolment not in the data.
+2020-12-15 15:26:59,414 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:26:59,414 generateObjForArray: WARNING - StudentConsent not in the data.
+2020-12-15 15:26:59,431 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Exit', 'Reason'] for 2020_8008_ST8000002 in StudentProviderEnrolment.
+2020-12-15 15:26:59,431 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Exit', 'PostSchoolActivity'] for 2020_8008_ST8000002 in StudentProviderEnrolment.
+2020-12-15 15:26:59,431 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EarlyChildhoodEnrolment', 'ECEYearLevel'] for 2020_8008_ST8000002 in StudentProviderEnrolment.
+2020-12-15 15:26:59,431 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EarlyChildhoodEnrolment', 'Curriculum'] for 2020_8008_ST8000002 in StudentProviderEnrolment.
+2020-12-15 15:26:59,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Language', 'Code'] for 2020_8008_ST8000002 in StudentProviderEnrolment.
+2020-12-15 15:26:59,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Language', 'Level'] for 2020_8008_ST8000002 in StudentProviderEnrolment.
+2020-12-15 15:26:59,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolEnrolment', 'Section9Agreement'] for 2020_8008_ST8000002 in StudentProviderEnrolment.
+2020-12-15 15:26:59,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['SchoolEnrolment', 'OngoingResourceScheme'] for 2020_8008_ST8000002 in StudentProviderEnrolment.
+2020-12-15 15:26:59,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['CoEnrolment', 'CoEnrolmentType'] for 2020_8008_ST8000002 in StudentProviderEnrolment.
+2020-12-15 15:26:59,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['PreEnrolmentCancellation', 'CancellationMethod'] for 2020_8008_ST8000002 in StudentProviderEnrolment.
+2020-12-15 15:26:59,448 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['PreEnrolmentCancellation', 'CancellationReason'] for 2020_8008_ST8000002 in StudentProviderEnrolment.
+2020-12-15 15:26:59,815 main: WARNING - Empty sample data for StudentContactPersonal. Moving onto the next sheet.
+2020-12-15 15:26:59,848 main: WARNING - Empty sample data for StudentContactRelationship. Moving onto the next sheet.
+2020-12-15 15:27:00,303 generateObjForArray: WARNING - Name not in the data.
+2020-12-15 15:27:00,303 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:27:00,303 generateObjForArray: WARNING - Proficiency not in the data.
+2020-12-15 15:27:00,303 generateObjForArray: WARNING - Ethnicity not in the data.
+2020-12-15 15:27:00,303 generateObjForArray: WARNING - Iwi not in the data.
+2020-12-15 15:27:00,303 generateObjForArray: WARNING - Hapu not in the data.
+2020-12-15 15:27:00,303 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:27:00,303 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:27:00,303 generateObjForArray: WARNING - MedicalNeed not in the data.
+2020-12-15 15:27:00,335 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,335 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,335 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,335 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,335 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,335 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,335 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Verification', 'Source'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,348 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['BiographicChangeReason'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,364 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEEnrolment', 'ECEYearLevel'] for ST5000728 in StudentPersonal.
+2020-12-15 15:27:00,431 generateObjForArray: WARNING - Name not in the data.
+2020-12-15 15:27:00,431 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:27:00,431 generateObjForArray: WARNING - Proficiency not in the data.
+2020-12-15 15:27:00,431 generateObjForArray: WARNING - Ethnicity not in the data.
+2020-12-15 15:27:00,431 generateObjForArray: WARNING - Iwi not in the data.
+2020-12-15 15:27:00,431 generateObjForArray: WARNING - Hapu not in the data.
+2020-12-15 15:27:00,431 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:27:00,431 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:27:00,431 generateObjForArray: WARNING - MedicalNeed not in the data.
+2020-12-15 15:27:00,464 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,464 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,464 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,464 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,464 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,464 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,464 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,464 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,464 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Verification', 'Source'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['BiographicChangeReason'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEEnrolment', 'ECEYearLevel'] for ST6000130 in StudentPersonal.
+2020-12-15 15:27:00,548 generateObjForArray: WARNING - Name not in the data.
+2020-12-15 15:27:00,548 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:27:00,548 generateObjForArray: WARNING - Proficiency not in the data.
+2020-12-15 15:27:00,548 generateObjForArray: WARNING - Ethnicity not in the data.
+2020-12-15 15:27:00,548 generateObjForArray: WARNING - Iwi not in the data.
+2020-12-15 15:27:00,548 generateObjForArray: WARNING - Hapu not in the data.
+2020-12-15 15:27:00,548 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:27:00,548 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:27:00,548 generateObjForArray: WARNING - MedicalNeed not in the data.
+2020-12-15 15:27:00,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,581 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Verification', 'Source'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['BiographicChangeReason'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,598 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEEnrolment', 'ECEYearLevel'] for ST7000299 in StudentPersonal.
+2020-12-15 15:27:00,681 generateObjForArray: WARNING - Name not in the data.
+2020-12-15 15:27:00,681 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:27:00,681 generateObjForArray: WARNING - Proficiency not in the data.
+2020-12-15 15:27:00,681 generateObjForArray: WARNING - Ethnicity not in the data.
+2020-12-15 15:27:00,681 generateObjForArray: WARNING - Iwi not in the data.
+2020-12-15 15:27:00,681 generateObjForArray: WARNING - Hapu not in the data.
+2020-12-15 15:27:00,681 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:27:00,681 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:27:00,681 generateObjForArray: WARNING - MedicalNeed not in the data.
+2020-12-15 15:27:00,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Verification', 'Source'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Proficiency', 'Level'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,715 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Proficiency', 'Type'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,731 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,731 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,731 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,731 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,731 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,731 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,731 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,731 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,731 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['BiographicChangeReason'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,731 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['ECEEnrolment', 'ECEYearLevel'] for ST8000296 in StudentPersonal.
+2020-12-15 15:27:00,814 generateObjForArray: WARNING - Name not in the data.
+2020-12-15 15:27:00,814 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:27:00,814 generateObjForArray: WARNING - Proficiency not in the data.
+2020-12-15 15:27:00,814 generateObjForArray: WARNING - Ethnicity not in the data.
+2020-12-15 15:27:00,814 generateObjForArray: WARNING - Iwi not in the data.
+2020-12-15 15:27:00,814 generateObjForArray: WARNING - Hapu not in the data.
+2020-12-15 15:27:00,814 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:27:00,814 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:27:00,814 generateObjForArray: WARNING - MedicalNeed not in the data.
+2020-12-15 15:27:00,848 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EarlyChildhoodEducation', 'Type'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,848 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,848 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,848 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,848 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,848 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,848 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,848 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,848 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,848 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Verification', 'Source'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,865 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,865 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,865 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,865 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,865 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,865 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,865 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,865 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,865 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['BiographicChangeReason'] for ST2000274 in StudentPersonal.
+2020-12-15 15:27:00,980 generateObjForArray: WARNING - Name not in the data.
+2020-12-15 15:27:00,981 generateObjForArray: WARNING - Language not in the data.
+2020-12-15 15:27:00,981 generateObjForArray: WARNING - Proficiency not in the data.
+2020-12-15 15:27:00,981 generateObjForArray: WARNING - Ethnicity not in the data.
+2020-12-15 15:27:00,981 generateObjForArray: WARNING - Iwi not in the data.
+2020-12-15 15:27:00,981 generateObjForArray: WARNING - Hapu not in the data.
+2020-12-15 15:27:00,981 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:27:00,981 generateObjForArray: WARNING - StatisticalArea not in the data.
+2020-12-15 15:27:00,981 generateObjForArray: WARNING - MedicalNeed not in the data.
+2020-12-15 15:27:00,998 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['EarlyChildhoodEducation', 'Type'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:00,998 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:00,998 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:00,998 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:00,998 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:00,998 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:00,998 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:00,998 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:00,998 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:00,998 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Verification', 'Source'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:01,014 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Proficiency', 'Level'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:01,014 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Proficiency', 'Type'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:01,014 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:01,014 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Postal', 'Type'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:01,014 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['StatisticalArea', 'SpatialUnitType'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:01,014 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:01,014 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:01,014 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Home', 'Usage'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:01,014 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:01,014 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Mobile', 'Usage'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:01,014 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['BiographicChangeReason'] for ST3000003 in StudentPersonal.
+2020-12-15 15:27:01,234 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for T98001 in StaffPersonal.
+2020-12-15 15:27:01,234 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for T98001 in StaffPersonal.
+2020-12-15 15:27:01,234 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for T98001 in StaffPersonal.
+2020-12-15 15:27:01,234 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for T98001 in StaffPersonal.
+2020-12-15 15:27:01,234 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for T98001 in StaffPersonal.
+2020-12-15 15:27:01,234 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for T98001 in StaffPersonal.
+2020-12-15 15:27:01,314 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for T98035 in StaffPersonal.
+2020-12-15 15:27:01,314 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for T98035 in StaffPersonal.
+2020-12-15 15:27:01,330 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for T98035 in StaffPersonal.
+2020-12-15 15:27:01,330 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for T98035 in StaffPersonal.
+2020-12-15 15:27:01,330 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for T98035 in StaffPersonal.
+2020-12-15 15:27:01,331 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for T98035 in StaffPersonal.
+2020-12-15 15:27:01,398 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for T98061 in StaffPersonal.
+2020-12-15 15:27:01,398 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for T98061 in StaffPersonal.
+2020-12-15 15:27:01,414 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for T98061 in StaffPersonal.
+2020-12-15 15:27:01,414 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for T98061 in StaffPersonal.
+2020-12-15 15:27:01,414 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for T98061 in StaffPersonal.
+2020-12-15 15:27:01,414 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for T98061 in StaffPersonal.
+2020-12-15 15:27:01,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for T98085 in StaffPersonal.
+2020-12-15 15:27:01,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for T98085 in StaffPersonal.
+2020-12-15 15:27:01,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for T98085 in StaffPersonal.
+2020-12-15 15:27:01,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for T98085 in StaffPersonal.
+2020-12-15 15:27:01,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for T98085 in StaffPersonal.
+2020-12-15 15:27:01,481 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for T98085 in StaffPersonal.
+2020-12-15 15:27:01,564 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for T98113 in StaffPersonal.
+2020-12-15 15:27:01,564 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for T98113 in StaffPersonal.
+2020-12-15 15:27:01,564 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for T98113 in StaffPersonal.
+2020-12-15 15:27:01,564 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for T98113 in StaffPersonal.
+2020-12-15 15:27:01,564 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for T98113 in StaffPersonal.
+2020-12-15 15:27:01,564 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for T98113 in StaffPersonal.
+2020-12-15 15:27:01,647 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'FamilyNameFirst'] for T98123 in StaffPersonal.
+2020-12-15 15:27:01,647 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'PreferredFamilyNameFirst'] for T98123 in StaffPersonal.
+2020-12-15 15:27:01,647 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'Type'] for T98123 in StaffPersonal.
+2020-12-15 15:27:01,647 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Name', 'IsVerified'] for T98123 in StaffPersonal.
+2020-12-15 15:27:01,647 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Personal', 'Usage'] for T98123 in StaffPersonal.
+2020-12-15 15:27:01,647 generateInvalidCodeSet: WARNING - Skipping replacing codeset values for ['Work', 'Usage'] for T98123 in StaffPersonal.

@@ -1,0 +1,98 @@
+{
+    "expects": "403",
+    "comment": "Valid payload for %s entity(ies) for %s data object. To be used to test for 403 responses.",
+    "testcase": {
+        "StaffAssignments": {
+            "StaffAssignment": [
+                {
+                    "StaffAssignmentLocalId": "2020_T98121_90903",
+                    "StaffMember": {
+                        "LocalId": "T98121"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90903"
+                    },
+                    "StaffRole": "1205",
+                    "StartDate": "2016-10-17T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98122_90903",
+                    "StaffMember": {
+                        "LocalId": "T98122"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90903"
+                    },
+                    "StaffRole": "1205",
+                    "StartDate": "2016-10-31T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98123_90903",
+                    "StaffMember": {
+                        "LocalId": "T98123"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90903"
+                    },
+                    "StaffRole": "1205",
+                    "StartDate": "2017-07-03T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98124_90903",
+                    "StaffMember": {
+                        "LocalId": "T98124"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90903"
+                    },
+                    "StaffRole": "1205",
+                    "StartDate": "2017-07-17T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98125_90903",
+                    "StaffMember": {
+                        "LocalId": "T98125"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90903"
+                    },
+                    "StaffRole": "1205",
+                    "StartDate": "2018-10-08T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98126_90903",
+                    "StaffMember": {
+                        "LocalId": "T98126"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90903"
+                    },
+                    "StaffRole": "1205",
+                    "StartDate": "1997-10-20T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98127_90903",
+                    "StaffMember": {
+                        "LocalId": "T98127"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90903"
+                    },
+                    "StaffRole": "1009",
+                    "StartDate": "1999-05-10T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98128_90903",
+                    "StaffMember": {
+                        "LocalId": "T98128"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "90903"
+                    },
+                    "StaffRole": "1001",
+                    "StartDate": "2000-03-20T00:00:00+12:00"
+                }
+            ]
+        }
+    }
+}

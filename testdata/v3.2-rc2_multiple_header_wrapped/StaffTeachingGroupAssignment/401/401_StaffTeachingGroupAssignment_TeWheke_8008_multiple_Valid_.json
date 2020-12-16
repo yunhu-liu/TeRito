@@ -1,0 +1,108 @@
+{
+    "expects": "401",
+    "comment": "Valid payload for %s entity(ies) for %s data object. To be used to test for 401 responses.",
+    "testcase": {
+        "StaffTeachingGroupAssignments": {
+            "StaffTeachingGroupAssignment": [
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR7_HR8_T98091",
+                    "StaffMember": {
+                        "LocalId": "T98091"
+                    },
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR7_HR8"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR9_T98092",
+                    "StaffMember": {
+                        "LocalId": "T98092"
+                    },
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR9"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR9_T98093",
+                    "StaffMember": {
+                        "LocalId": "T98093"
+                    },
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR9"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR10_T98094",
+                    "StaffMember": {
+                        "LocalId": "T98094"
+                    },
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR10"
+                    },
+                    "Role": "1401",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR11_HR13_T98095",
+                    "StaffMember": {
+                        "LocalId": "T98095"
+                    },
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR11_HR13"
+                    },
+                    "Role": "1401",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR11_HR13_T98096",
+                    "StaffMember": {
+                        "LocalId": "T98096"
+                    },
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR11_HR13"
+                    },
+                    "Role": "1401",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR11_HR13_T98097",
+                    "StaffMember": {
+                        "LocalId": "T98097"
+                    },
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR11_HR13"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                }
+            ]
+        }
+    }
+}

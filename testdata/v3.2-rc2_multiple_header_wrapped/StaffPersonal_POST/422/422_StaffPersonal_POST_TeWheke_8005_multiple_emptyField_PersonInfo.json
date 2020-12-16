@@ -1,0 +1,316 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The PersonInfo field is replaced with an empty string.",
+    "testcase": {
+        "StaffPersonals": {
+            "StaffPersonal": [
+                {
+                    "StaffPersonalLocalId": "T98001",
+                    "SchoolSMSUserId": "SmythR",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "1995-01-02T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98002",
+                    "SchoolSMSUserId": "PartridgeV",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "1995-03-06T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98003",
+                    "SchoolSMSUserId": "MarksF",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "1995-05-01T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98004",
+                    "SchoolSMSUserId": "SquiresM",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "1995-05-15T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98005",
+                    "SchoolSMSUserId": "WheelerN",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "1996-03-25T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98006",
+                    "SchoolSMSUserId": "SharpK",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "1997-08-11T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98007",
+                    "SchoolSMSUserId": "LoveE",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2000-03-20T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98008",
+                    "SchoolSMSUserId": "DavidsonF",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2001-02-12T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98009",
+                    "SchoolSMSUserId": "AshtonD",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2001-03-26T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98010",
+                    "SchoolSMSUserId": "KrauseE",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2004-01-19T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98011",
+                    "SchoolSMSUserId": "HoldingM",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2005-10-31T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98012",
+                    "SchoolSMSUserId": "SearleC",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2006-09-25T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98013",
+                    "SchoolSMSUserId": "StampH",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2011-05-23T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98014",
+                    "SchoolSMSUserId": "BeasleyT",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2011-07-25T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98015",
+                    "SchoolSMSUserId": "RutledgeD",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2012-08-13T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98016",
+                    "SchoolSMSUserId": "MendozaE",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2013-11-04T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98017",
+                    "SchoolSMSUserId": "MasseyD",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2013-11-18T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98018",
+                    "SchoolSMSUserId": "DaweL",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2016-02-01T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98019",
+                    "SchoolSMSUserId": "WhittakerD",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2016-06-27T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98020",
+                    "SchoolSMSUserId": "HamiltonT",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2017-05-01T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98021",
+                    "SchoolSMSUserId": "FergusonM",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2017-09-18T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98022",
+                    "SchoolSMSUserId": "RobinR",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2018-02-19T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98023",
+                    "SchoolSMSUserId": "JoynerA",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2018-03-12T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98024",
+                    "SchoolSMSUserId": "GrantM",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2019-02-04T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98025",
+                    "SchoolSMSUserId": "LeZ",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2019-03-18T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98026",
+                    "SchoolSMSUserId": "TruongS",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "1995-02-06T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98027",
+                    "SchoolSMSUserId": "HouseK",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "1995-09-04T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98028",
+                    "SchoolSMSUserId": "FritzB",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "1995-12-18T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98029",
+                    "SchoolSMSUserId": "HookA",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2000-07-03T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98030",
+                    "SchoolSMSUserId": "EatonH",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2000-09-04T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98031",
+                    "SchoolSMSUserId": "RojasF",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2001-05-14T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98032",
+                    "SchoolSMSUserId": "CunninghamP",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1009",
+                        "StartDate": "2002-07-22T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98033",
+                    "SchoolSMSUserId": "GuerreroA",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1002",
+                        "StartDate": "2004-05-24T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98034",
+                    "SchoolSMSUserId": "MeltonM",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1001",
+                        "StartDate": "2004-12-27T00:00:00+12:00"
+                    }
+                }
+            ]
+        }
+    }
+}

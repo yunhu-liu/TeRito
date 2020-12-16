@@ -1,0 +1,80 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The StartDate field is replaced with an empty string.",
+    "testcase": {
+        "ScheduleTerms": {
+            "ScheduleTerm": [
+                {
+                    "ScheduleTermLocalId": "2020_8006_T1",
+                    "TermName": "2020",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "SchoolYear": 2020,
+                    "StartDate": "",
+                    "EndDate": "2020-03-27T00:00:00+12:00"
+                },
+                {
+                    "ScheduleTermLocalId": "2020_8006_T2",
+                    "TermName": "2020",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "SchoolYear": 2020,
+                    "StartDate": "",
+                    "EndDate": "2020-07-03T00:00:00+12:00"
+                },
+                {
+                    "ScheduleTermLocalId": "2020_8006_T3",
+                    "TermName": "2020",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "SchoolYear": 2020,
+                    "StartDate": "",
+                    "EndDate": "2020-09-25T00:00:00+12:00"
+                },
+                {
+                    "ScheduleTermLocalId": "2020_8006_T4",
+                    "TermName": "2020",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "SchoolYear": 2020,
+                    "StartDate": "",
+                    "EndDate": "2020-12-18T00:00:00+12:00"
+                },
+                {
+                    "ScheduleTermLocalId": "2020_8006_S1",
+                    "TermName": "2020",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "SchoolYear": 2020,
+                    "StartDate": "",
+                    "EndDate": "2020-07-03T00:00:00+12:00"
+                },
+                {
+                    "ScheduleTermLocalId": "2020_8006_S2",
+                    "TermName": "2020",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "SchoolYear": 2020,
+                    "StartDate": "",
+                    "EndDate": "2020-12-18T00:00:00+12:00"
+                },
+                {
+                    "ScheduleTermLocalId": "2020_8006_Y",
+                    "TermName": "2020",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "SchoolYear": 2020,
+                    "StartDate": "",
+                    "EndDate": "2020-12-18T00:00:00+12:00"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "expects": "200",
+    "comment": "Valid payload for multiple entity(ies) for TeachingGroup data object.",
+    "testcase": {
+        "TeachingGroups": {
+            "TeachingGroup": [
+                {
+                    "TeachingGroupLocalId": "2020_8005_JR",
+                    "ShortName": "Room 1",
+                    "LongName": "Room 1 - Jrs",
+                    "GroupType": "HR",
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8005_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            1,
+                            2
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8005_HR3",
+                    "ShortName": "Room 2",
+                    "LongName": "Room 2 - Year 3",
+                    "GroupType": "HR",
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8005_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            3
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8005_HR4",
+                    "ShortName": "Room 3",
+                    "LongName": "Room 3 - Year 4",
+                    "GroupType": "HR",
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8005_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            4
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8005_HR5",
+                    "ShortName": "Room 4",
+                    "LongName": "Room 4 - Year 5",
+                    "GroupType": "HR",
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8005_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            5
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8005_HR6",
+                    "ShortName": "Room 5",
+                    "LongName": "Room 5 - Year 6",
+                    "GroupType": "HR",
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8005_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            6
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8005_HR7_HR8",
+                    "ShortName": "Room 6",
+                    "LongName": "Room 6 - Years 7 & 8",
+                    "GroupType": "HR",
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8005_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            7,
+                            8
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

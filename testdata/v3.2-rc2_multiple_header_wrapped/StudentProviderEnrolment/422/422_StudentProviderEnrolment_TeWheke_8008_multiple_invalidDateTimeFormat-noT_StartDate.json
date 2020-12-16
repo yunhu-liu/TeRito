@@ -1,0 +1,2155 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The date time format for StartDate is incorrect. T is missing.",
+    "testcase": {
+        "StudentProviderEnrolments": {
+            "StudentProviderEnrolment": [
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000002",
+                    "Student": {
+                        "LocalId": "ST8000002",
+                        "NationalStudentNumber": 9008000002
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000002",
+                    "EntryDate": "2014-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 13,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 13,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000015",
+                    "Student": {
+                        "LocalId": "ST8000015",
+                        "NationalStudentNumber": 9008000015
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000015",
+                    "EntryDate": "2014-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPC"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 13,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 13,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000028",
+                    "Student": {
+                        "LocalId": "ST8000028",
+                        "NationalStudentNumber": 9008000028
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000028",
+                    "EntryDate": "2014-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EOS"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 13,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 13,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000030",
+                    "Student": {
+                        "LocalId": "ST8000030",
+                        "NationalStudentNumber": 9008000030
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000030",
+                    "EntryDate": "2014-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ETU"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 13,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 13,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000043",
+                    "Student": {
+                        "LocalId": "ST8000043",
+                        "NationalStudentNumber": 9008000043
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000043",
+                    "EntryDate": "2015-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 12,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 12,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000056",
+                    "Student": {
+                        "LocalId": "ST8000056",
+                        "NationalStudentNumber": 9008000056
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000056",
+                    "EntryDate": "2015-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 12,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 12,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000069",
+                    "Student": {
+                        "LocalId": "ST8000069",
+                        "NationalStudentNumber": 9008000069
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000069",
+                    "EntryDate": "2016-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 11,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 11,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000071",
+                    "Student": {
+                        "LocalId": "ST8000071",
+                        "NationalStudentNumber": 9008000071
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000071",
+                    "EntryDate": "2016-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 11,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 11,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000084",
+                    "Student": {
+                        "LocalId": "ST8000084",
+                        "NationalStudentNumber": 9008000084
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000084",
+                    "EntryDate": "2016-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 11,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 11,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000097",
+                    "Student": {
+                        "LocalId": "ST8000097",
+                        "NationalStudentNumber": 9008000097
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000097",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000107",
+                    "Student": {
+                        "LocalId": "ST8000107",
+                        "NationalStudentNumber": 9008000107
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000107",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPG"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8100115",
+                    "Student": {
+                        "LocalId": "ST8100115",
+                        "NationalStudentNumber": 9008100115
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8100115",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EOS"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000122",
+                    "Student": {
+                        "LocalId": "ST8000122",
+                        "NationalStudentNumber": 9008000122
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000122",
+                    "EntryDate": "2018-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 9,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 9,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000135",
+                    "Student": {
+                        "LocalId": "ST8000135",
+                        "NationalStudentNumber": 9008000135
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000135",
+                    "EntryDate": "2018-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPG"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 9,
+                                "FTE": 1,
+                                "FundingType": "SF",
+                                "FundingYearLevel": 9,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000148",
+                    "Student": {
+                        "LocalId": "ST8000148",
+                        "NationalStudentNumber": 9008000148
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000148",
+                    "EntryDate": "2018-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ETU"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 9,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 9,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000150",
+                    "Student": {
+                        "LocalId": "ST8000150",
+                        "NationalStudentNumber": 9008000150
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000150",
+                    "EntryDate": "2019-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 8,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 8,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000163",
+                    "Student": {
+                        "LocalId": "ST8000163",
+                        "NationalStudentNumber": 9008000163
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000163",
+                    "EntryDate": "2019-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EOS"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 8,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 8,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000176",
+                    "Student": {
+                        "LocalId": "ST8000176",
+                        "NationalStudentNumber": 9008000176
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000176",
+                    "EntryDate": "2019-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EKE"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 8,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 8,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000189",
+                    "Student": {
+                        "LocalId": "ST8000189",
+                        "NationalStudentNumber": 9008000189
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000189",
+                    "EntryDate": "2019-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 8,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 8,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000191",
+                    "Student": {
+                        "LocalId": "ST8000191",
+                        "NationalStudentNumber": 9008000191
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000191",
+                    "EntryDate": "2020-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ECO"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 7,
+                                "FTE": 1,
+                                "FundingType": "TPRE",
+                                "FundingYearLevel": 7,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000201",
+                    "Student": {
+                        "LocalId": "ST8000201",
+                        "NationalStudentNumber": 9008000201
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000201",
+                    "EntryDate": "2020-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPC"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 7,
+                                "FTE": 1,
+                                "FundingType": "TPRE",
+                                "FundingYearLevel": 7,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000214",
+                    "Student": {
+                        "LocalId": "ST8000214",
+                        "NationalStudentNumber": 9008000214
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000214",
+                    "EntryDate": "2020-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 7,
+                                "FTE": 1,
+                                "FundingType": "NA",
+                                "FundingYearLevel": 7,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000227",
+                    "Student": {
+                        "LocalId": "ST8000227",
+                        "NationalStudentNumber": 9008000227
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000227",
+                    "EntryDate": "2020-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPC"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 7,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 7,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8100235",
+                    "Student": {
+                        "LocalId": "ST8100235",
+                        "NationalStudentNumber": 9008100235
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8100235",
+                    "EntryDate": "2020-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 7,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 7,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000242",
+                    "Student": {
+                        "LocalId": "ST8000242",
+                        "NationalStudentNumber": 9008000242
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000242",
+                    "EntryDate": "2020-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 7,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 7,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000255",
+                    "Student": {
+                        "LocalId": "ST8000255",
+                        "NationalStudentNumber": 9008000255
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000255",
+                    "EntryDate": "2014-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 13,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 13,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000268",
+                    "Student": {
+                        "LocalId": "ST8000268",
+                        "NationalStudentNumber": 9008000268
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000268",
+                    "EntryDate": "2015-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 12,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 12,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000270",
+                    "Student": {
+                        "LocalId": "ST8000270",
+                        "NationalStudentNumber": 9008000270
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000270",
+                    "EntryDate": "2015-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPG"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 12,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 12,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000283",
+                    "Student": {
+                        "LocalId": "ST8000283",
+                        "NationalStudentNumber": 9008000283
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000283",
+                    "EntryDate": "2015-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 12,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 12,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000296",
+                    "Student": {
+                        "LocalId": "ST8000296",
+                        "NationalStudentNumber": 9008000296
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000296",
+                    "EntryDate": "2016-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EOS"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 11,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 11,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000306",
+                    "Student": {
+                        "LocalId": "ST8000306",
+                        "NationalStudentNumber": 9008000306
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000306",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000319",
+                    "Student": {
+                        "LocalId": "ST8000319",
+                        "NationalStudentNumber": 9008000319
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000319",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000321",
+                    "Student": {
+                        "LocalId": "ST8000321",
+                        "NationalStudentNumber": 9008000321
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000321",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPG"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000334",
+                    "Student": {
+                        "LocalId": "ST8000334",
+                        "NationalStudentNumber": 9008000334
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000334",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EKE"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000347",
+                    "Student": {
+                        "LocalId": "ST8000347",
+                        "NationalStudentNumber": 9008000347
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000347",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPC"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8100355",
+                    "Student": {
+                        "LocalId": "ST8100355",
+                        "NationalStudentNumber": 9008100355
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8100355",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ETU"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000362",
+                    "Student": {
+                        "LocalId": "ST8000362",
+                        "NationalStudentNumber": 9008000362
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000362",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPG"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000375",
+                    "Student": {
+                        "LocalId": "ST8000375",
+                        "NationalStudentNumber": 9008000375
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000375",
+                    "EntryDate": "2018-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ETU"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 9,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 9,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000388",
+                    "Student": {
+                        "LocalId": "ST8000388",
+                        "NationalStudentNumber": 9008000388
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000388",
+                    "EntryDate": "2018-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EOS"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 9,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 9,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000390",
+                    "Student": {
+                        "LocalId": "ST8000390",
+                        "NationalStudentNumber": 9008000390
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000390",
+                    "EntryDate": "2018-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EOS"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 9,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 9,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000400",
+                    "Student": {
+                        "LocalId": "ST8000400",
+                        "NationalStudentNumber": 9008000400
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000400",
+                    "EntryDate": "2018-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 9,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 9,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000413",
+                    "Student": {
+                        "LocalId": "ST8000413",
+                        "NationalStudentNumber": 9008000413
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000413",
+                    "EntryDate": "2018-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 9,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 9,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000426",
+                    "Student": {
+                        "LocalId": "ST8000426",
+                        "NationalStudentNumber": 9008000426
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000426",
+                    "EntryDate": "2019-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EKE"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 8,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 8,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000439",
+                    "Student": {
+                        "LocalId": "ST8000439",
+                        "NationalStudentNumber": 9008000439
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000439",
+                    "EntryDate": "2019-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 8,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 8,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000441",
+                    "Student": {
+                        "LocalId": "ST8000441",
+                        "NationalStudentNumber": 9008000441
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000441",
+                    "EntryDate": "2019-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 8,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 8,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000454",
+                    "Student": {
+                        "LocalId": "ST8000454",
+                        "NationalStudentNumber": 9008000454
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000454",
+                    "EntryDate": "2019-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EOS"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 8,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 8,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000467",
+                    "Student": {
+                        "LocalId": "ST8000467",
+                        "NationalStudentNumber": 9008000467
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000467",
+                    "EntryDate": "2019-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPG"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 8,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 8,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8100475",
+                    "Student": {
+                        "LocalId": "ST8100475",
+                        "NationalStudentNumber": 9008100475
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8100475",
+                    "EntryDate": "2019-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 8,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 8,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000482",
+                    "Student": {
+                        "LocalId": "ST8000482",
+                        "NationalStudentNumber": 9008000482
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000482",
+                    "EntryDate": "2020-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPC"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 7,
+                                "FTE": 1,
+                                "FundingType": "NA",
+                                "FundingYearLevel": 7,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000495",
+                    "Student": {
+                        "LocalId": "ST8000495",
+                        "NationalStudentNumber": 9008000495
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000495",
+                    "EntryDate": "2020-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ECO"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 7,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 7,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000505",
+                    "Student": {
+                        "LocalId": "ST8000505",
+                        "NationalStudentNumber": 9008000505
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000505",
+                    "EntryDate": "2014-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPC"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 13,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 13,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000518",
+                    "Student": {
+                        "LocalId": "ST8000518",
+                        "NationalStudentNumber": 9008000518
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000518",
+                    "EntryDate": "2014-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EKE"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 13,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 13,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000520",
+                    "Student": {
+                        "LocalId": "ST8000520",
+                        "NationalStudentNumber": 9008000520
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000520",
+                    "EntryDate": "2015-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 12,
+                                "FTE": 1,
+                                "FundingType": "SF",
+                                "FundingYearLevel": 12,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000533",
+                    "Student": {
+                        "LocalId": "ST8000533",
+                        "NationalStudentNumber": 9008000533
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000533",
+                    "EntryDate": "2015-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EUN"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 12,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 12,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000546",
+                    "Student": {
+                        "LocalId": "ST8000546",
+                        "NationalStudentNumber": 9008000546
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000546",
+                    "EntryDate": "2016-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 11,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 11,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000559",
+                    "Student": {
+                        "LocalId": "ST8000559",
+                        "NationalStudentNumber": 9008000559
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000559",
+                    "EntryDate": "2016-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ETU"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 11,
+                                "FTE": 1,
+                                "FundingType": "SF",
+                                "FundingYearLevel": 11,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000561",
+                    "Student": {
+                        "LocalId": "ST8000561",
+                        "NationalStudentNumber": 9008000561
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000561",
+                    "EntryDate": "2016-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 11,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 11,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000574",
+                    "Student": {
+                        "LocalId": "ST8000574",
+                        "NationalStudentNumber": 9008000574
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000574",
+                    "EntryDate": "2016-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EKE"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 11,
+                                "FTE": 1,
+                                "FundingType": "SF",
+                                "FundingYearLevel": 11,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000587",
+                    "Student": {
+                        "LocalId": "ST8000587",
+                        "NationalStudentNumber": 9008000587
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000587",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ECO"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8100595",
+                    "Student": {
+                        "LocalId": "ST8100595",
+                        "NationalStudentNumber": 9008100595
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8100595",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8100605",
+                    "Student": {
+                        "LocalId": "ST8100605",
+                        "NationalStudentNumber": 9008100605
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8100605",
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPG"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 10,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 10,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000612",
+                    "Student": {
+                        "LocalId": "ST8000612",
+                        "NationalStudentNumber": 9008000612
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000612",
+                    "EntryDate": "2018-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ENA"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 9,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 9,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000625",
+                    "Student": {
+                        "LocalId": "ST8000625",
+                        "NationalStudentNumber": 9008000625
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000625",
+                    "EntryDate": "2018-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPG"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 9,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 9,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000638",
+                    "Student": {
+                        "LocalId": "ST8000638",
+                        "NationalStudentNumber": 9008000638
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000638",
+                    "EntryDate": "2018-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "ECO"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 9,
+                                "FTE": 1,
+                                "FundingType": "NA",
+                                "FundingYearLevel": 9,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8008_ST8000640",
+                    "Student": {
+                        "LocalId": "ST8000640",
+                        "NationalStudentNumber": 9008000640
+                    },
+                    "Provider": {
+                        "RefId": "8008"
+                    },
+                    "StudentId": "ST8000640",
+                    "EntryDate": "2018-01-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "EPC"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-2700:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 9,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 9,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

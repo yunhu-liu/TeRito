@@ -1,0 +1,15 @@
+{
+    "SchedulePeriods": {
+        "SchedulePeriod": [
+            {
+                "SchedulePeriodLocalId": "8008_HR",
+                "Organisation": {
+                    "RefId": "8008"
+                },
+                "Schedule": {
+                    "LocalId": "8008_Sched_2020"
+                }
+            }
+        ]
+    }
+}

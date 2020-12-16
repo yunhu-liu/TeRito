@@ -1,0 +1,319 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). An invalid option for ['StaffRole'] codeset is provided.",
+    "testcase": {
+        "StaffAssignments": {
+            "StaffAssignment": [
+                {
+                    "StaffAssignmentLocalId": "2020_T98085_8008",
+                    "StaffMember": {
+                        "LocalId": "T98085"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2002-06-10T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98086_8008",
+                    "StaffMember": {
+                        "LocalId": "T98086"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2002-10-28T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98087_8008",
+                    "StaffMember": {
+                        "LocalId": "T98087"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2003-04-21T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98088_8008",
+                    "StaffMember": {
+                        "LocalId": "T98088"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2003-06-09T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98089_8008",
+                    "StaffMember": {
+                        "LocalId": "T98089"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2004-04-19T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98090_8008",
+                    "StaffMember": {
+                        "LocalId": "T98090"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2004-12-06T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98091_8008",
+                    "StaffMember": {
+                        "LocalId": "T98091"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2006-02-20T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98092_8008",
+                    "StaffMember": {
+                        "LocalId": "T98092"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2006-04-17T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98093_8008",
+                    "StaffMember": {
+                        "LocalId": "T98093"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2006-08-14T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98094_8008",
+                    "StaffMember": {
+                        "LocalId": "T98094"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2006-10-02T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98095_8008",
+                    "StaffMember": {
+                        "LocalId": "T98095"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2007-03-19T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98096_8008",
+                    "StaffMember": {
+                        "LocalId": "T98096"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2011-11-14T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98097_8008",
+                    "StaffMember": {
+                        "LocalId": "T98097"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2012-04-16T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98098_8008",
+                    "StaffMember": {
+                        "LocalId": "T98098"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2015-04-27T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98099_8008",
+                    "StaffMember": {
+                        "LocalId": "T98099"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2017-04-03T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98100_8008",
+                    "StaffMember": {
+                        "LocalId": "T98100"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2017-12-11T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98101_8008",
+                    "StaffMember": {
+                        "LocalId": "T98101"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "1995-01-09T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98102_8008",
+                    "StaffMember": {
+                        "LocalId": "T98102"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "1995-05-22T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98103_8008",
+                    "StaffMember": {
+                        "LocalId": "T98103"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "1996-09-02T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98104_8008",
+                    "StaffMember": {
+                        "LocalId": "T98104"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "1998-06-29T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98105_8008",
+                    "StaffMember": {
+                        "LocalId": "T98105"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "1998-12-07T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98106_8008",
+                    "StaffMember": {
+                        "LocalId": "T98106"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "1999-08-30T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98107_8008",
+                    "StaffMember": {
+                        "LocalId": "T98107"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2000-06-26T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98108_8008",
+                    "StaffMember": {
+                        "LocalId": "T98108"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2000-12-04T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98109_8008",
+                    "StaffMember": {
+                        "LocalId": "T98109"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "EmployingOrAccommodatingProvider": "Y",
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2001-10-15T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98110_8008",
+                    "StaffMember": {
+                        "LocalId": "T98110"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2002-08-26T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98111_8008",
+                    "StaffMember": {
+                        "LocalId": "T98111"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2004-10-11T00:00:00+12:00"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98112_8008",
+                    "StaffMember": {
+                        "LocalId": "T98112"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8008"
+                    },
+                    "StaffRole": "Andy is GREAT!",
+                    "StartDate": "2005-03-28T00:00:00+12:00"
+                }
+            ]
+        }
+    }
+}

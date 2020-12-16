@@ -1,0 +1,15 @@
+{
+    "StaffPersonals": {
+        "StaffPersonal": [
+            {
+                "StaffPersonalLocalId": "T98035",
+                "SchoolSMSUserId": "LilyH",
+                "PersonInfo": "",
+                "StaffAssignment": {
+                    "StaffRole": "1205",
+                    "StartDate": "2005-09-26T00:00:00+12:00"
+                }
+            }
+        ]
+    }
+}

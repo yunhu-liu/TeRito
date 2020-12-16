@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a1c2b51a-0352-4d6d-b272-bcd35556a59d" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TeachingGroup-CreateSingle" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a1c2b51a-0352-4d6d-b272-bcd35556a59dfileName">TeachingGroup-CreateSingle</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="LoadPayload-Single" id="0436ebb3-5d7c-4cc1-9366-43c54bc3a5f7">
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
+    </con:settings>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Directory">
+        <con:configuration>
+          <directory>C:/TeRito/SIF Sandbox - Off API Specs - git/testdata/v3.2-rc2_single_noheader_wrapped/TeachingGroup/200</directory>
+          <filter>*.json</filter>
+          <encoding/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>Payload</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasource" name="GetOrgRefId" id="d5865017-ea1d-4da3-b7f0-cb244ab80eb0">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="JSON">
+        <con:configuration>
+          <sourceStep>LoadPayload-Single</sourceStep>
+          <sourceProperty>Payload</sourceProperty>
+          <rowPath>$['TeachingGroups']['TeachingGroup'][0]</rowPath>
+          <columnPath>['Organisation']['RefId']</columnPath>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>OrgRefId</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasource" name="GenDynamicId" id="4e9d85b4-7043-4abd-a478-abe2d7172103">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>1</generatedDataCount>
+          <generatorsTotalNumber>1</generatorsTotalNumber>
+          <lastSelectedProperty>0</lastSelectedProperty>
+          <GeneratorType0>STR</GeneratorType0>
+          <PropertyName0>DynamicId</PropertyName0>
+          <repetitionCountDynamicId>0</repetitionCountDynamicId>
+          <repeatValuesDynamicId>false</repeatValuesDynamicId>
+          <PasswordDataGeneratorUseSpacesDynamicId>false</PasswordDataGeneratorUseSpacesDynamicId>
+          <PasswordDataGeneratorUsePunctuationMarksDynamicId>false</PasswordDataGeneratorUsePunctuationMarksDynamicId>
+          <PasswordDataGeneratorUseLettersDynamicId>true</PasswordDataGeneratorUseLettersDynamicId>
+          <PasswordDataGeneratorUseDigitsDynamicId>true</PasswordDataGeneratorUseDigitsDynamicId>
+          <PasswordDataGeneratorMaxCharacterCountDynamicId>8</PasswordDataGeneratorMaxCharacterCountDynamicId>
+          <PasswordDataGeneratorMinCharacterCountDynamicId>8</PasswordDataGeneratorMinCharacterCountDynamicId>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>DynamicId</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="UpdatePayload" id="f84ef26c-a56d-48df-8f58-575c05658089">
+    <con:settings/>
+    <con:config>
+      <script>// Update Payload by Adding Dynamic Values to Some Fields
+import groovy.json.*
+
+// Load Data for Teaching Groups 
+def dynamicId = context.expand( '${GenDynamicId#DynamicId}' ) 
+def payload = context.expand( '${LoadPayload-Single#Payload}' ) 
+def slurped = new JsonSlurper().parseText(payload)  
+
+// Get Values 
+def teachingGroup = new JsonBuilder(slurped.TeachingGroups.TeachingGroup[0]) 
+def tgLocalId = teachingGroup.content.TeachingGroupLocalId 
+def tgShortName =  teachingGroup.content.ShortName 
+def tgLongName =  teachingGroup.content.LongName  
+
+// Update Fields
+slurped.TeachingGroups.TeachingGroup[0].TeachingGroupLocalId = "$tgLocalId" + "_" + "$dynamicId" 
+slurped.TeachingGroups.TeachingGroup[0].ShortName = "$tgShortName" + "_" + "$dynamicId" 
+slurped.TeachingGroups.TeachingGroup[0].LongName = "$tgLongName" + "_" + "$dynamicId"
+
+// Write Updated Payload to Result
+return new JsonBuilder(slurped)</script>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="CreateSingle" id="ad628342-f3ea-4eda-8d98-ee82a4fccf97">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/teachinggroup" methodName="createTeachingGroups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="CreateSingle" id="de0baaa7-6a83-4b04-b68a-45a9e9174c20" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request>${UpdatePayload#result}</con:request>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/teachinggroup</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="ba6f7068-b7fd-4929-9c81-44cb06059afe" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${GetOrgRefId#OrgRefId}"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="4dd0dd4f-a6a1-4b2c-a7c4-03727695ea94">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>LoadPayload-Single</dataSourceStep>
+      <targetStep>DataSource</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties></con:properties>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>0436ebb3-5d7c-4cc1-9366-43c54bc3a5f7</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>4e9d85b4-7043-4abd-a478-abe2d7172103</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>d5865017-ea1d-4da3-b7f0-cb244ab80eb0</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

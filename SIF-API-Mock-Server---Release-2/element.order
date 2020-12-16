@@ -1,2 +1,7 @@
 Setup.xml
-TeachingGroup.xml
+TeachingGroup-CreateSingle.xml
+TeachingGroup-CreateMulti.xml
+TeachingGroup-GetMultiple.xml
+TeachingGroup-UpdateMultiple.xml
+TeachingGroup-PatchMultiple.xml
+TestCase-1.xml

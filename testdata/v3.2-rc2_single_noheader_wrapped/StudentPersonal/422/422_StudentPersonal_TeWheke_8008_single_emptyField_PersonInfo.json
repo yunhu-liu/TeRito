@@ -1,0 +1,15 @@
+{
+    "StudentPersonals": {
+        "StudentPersonal": [
+            {
+                "StudentPersonalLocalId": "ST8000296",
+                "NationalStudentNumber": 9008000296,
+                "FirstNZSchoolingDate": "2010-05-14T00:00:00+12:00",
+                "EarlyChildhoodEducation": {
+                    "Type": "EOS"
+                },
+                "PersonInfo": ""
+            }
+        ]
+    }
+}

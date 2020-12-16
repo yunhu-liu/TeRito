@@ -1,0 +1,33 @@
+{
+    "Schedules": {
+        "Schedule": [
+            {
+                "ScheduleLocalId": "8006_Sched_2020",
+                "ScheduleName": "Horoeka Intermediate Schedule - 2020",
+                "StartDate": "2020-01-27T00:00:00+12:00",
+                "EndDate": "2020-12-18T00:00:00+12:00",
+                "Organisation": "",
+                "AcademicDayList": {
+                    "AcademicDay": [
+                        {
+                            "LocalId": "8006_Normal",
+                            "BellSchedule": {
+                                "LocalId": "8006_Regular"
+                            },
+                            "PeriodList": {
+                                "Period": [
+                                    {
+                                        "LocalId": "8006_AM"
+                                    },
+                                    {
+                                        "LocalId": "8006_PM"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

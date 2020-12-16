@@ -1,0 +1,89 @@
+{
+    "expects": "403",
+    "comment": "Valid payload for %s entity(ies) for %s data object. To be used to test for 403 responses.",
+    "testcase": {
+        "Organisations": {
+            "Organisation": [
+                {
+                    "OrganisationRefId": "8007",
+                    "EducationRegion": "12010",
+                    "SpecialEducationDistrict": "182006",
+                    "EntityOpen": "1950-01-28T00:00:00+12:00",
+                    "Name": "Tarata High School",
+                    "OperationalStatus": "28001",
+                    "Type": "10033",
+                    "SectorRole": "35003",
+                    "ProviderSMS": "LIN",
+                    "Authority": "STATE",
+                    "Address": {
+                        "Physical": {
+                            "Type": "TH",
+                            "Line1": "Karamu Street",
+                            "City": "Mangakino",
+                            "Country": "New Zealand",
+                            "PostalCode": "3445",
+                            "GridLocation": {
+                                "Latitude": -38.369528,
+                                "Longitude": 175.771411
+                            }
+                        }
+                    },
+                    "Email": {
+                        "Main": {
+                            "Address": "principal@8007.school.nz"
+                        }
+                    },
+                    "Phone": {
+                        "Main": {
+                            "Number": "06 555 1234"
+                        }
+                    },
+                    "TeRitoConfig": {
+                        "DataAnalysisDashboardsInd": "Y",
+                        "StandardisedLearningSupportRegisterInd": "Y",
+                        "VirtualLearningEnvironmentInd": "N"
+                    },
+                    "SchoolService": {
+                        "CoEdStatus": "COED",
+                        "Decile": 3,
+                        "AllowManualProvisioning": "N",
+                        "SchoolClassificationList": {
+                            "Classification": [
+                                "52003"
+                            ]
+                        },
+                        "SchoolYearList": {
+                            "SchoolYear": [
+                                {
+                                    "YearLevel": 9,
+                                    "FIRSTSchoolYearGenderId": -800709,
+                                    "Gender": "55002"
+                                },
+                                {
+                                    "YearLevel": 10,
+                                    "FIRSTSchoolYearGenderId": -800710,
+                                    "Gender": "55002"
+                                },
+                                {
+                                    "YearLevel": 11,
+                                    "FIRSTSchoolYearGenderId": -800711,
+                                    "Gender": "55002"
+                                },
+                                {
+                                    "YearLevel": 12,
+                                    "FIRSTSchoolYearGenderId": -800712,
+                                    "Gender": "55002"
+                                },
+                                {
+                                    "YearLevel": 13,
+                                    "FIRSTSchoolYearGenderId": -800713,
+                                    "Gender": "55002"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

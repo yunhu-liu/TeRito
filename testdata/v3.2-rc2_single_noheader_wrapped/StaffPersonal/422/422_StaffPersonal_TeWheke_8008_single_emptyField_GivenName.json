@@ -1,0 +1,30 @@
+{
+    "StaffPersonals": {
+        "StaffPersonal": [
+            {
+                "StaffPersonalLocalId": "T98085",
+                "SchoolSMSUserId": "CC",
+                "PersonInfo": {
+                    "Name": {
+                        "Title": "Ms.",
+                        "FamilyName": "Carty",
+                        "GivenName": "",
+                        "MiddleName": "DP",
+                        "FullName": "Courtney DP Carty"
+                    },
+                    "Demographics": {
+                        "BirthDate": "1972-04-12T00:00:00+12:00"
+                    },
+                    "Email": {
+                        "Work": {
+                            "SourceOrganisation": {
+                                "RefId": "8008"
+                            },
+                            "Address": "courtneyc@mailinator.com"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

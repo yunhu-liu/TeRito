@@ -1,0 +1,94 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The StaffMember field is replaced with an empty string.",
+    "testcase": {
+        "StaffTeachingGroupAssignments": {
+            "StaffTeachingGroupAssignment": [
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR7_HR8_T98091",
+                    "StaffMember": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR7_HR8"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR9_T98092",
+                    "StaffMember": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR9"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR9_T98093",
+                    "StaffMember": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR9"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR10_T98094",
+                    "StaffMember": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR10"
+                    },
+                    "Role": "1401",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR11_HR13_T98095",
+                    "StaffMember": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR11_HR13"
+                    },
+                    "Role": "1401",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR11_HR13_T98096",
+                    "StaffMember": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR11_HR13"
+                    },
+                    "Role": "1401",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8008_HR11_HR13_T98097",
+                    "StaffMember": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8008_HR11_HR13"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27T00:00:00+12:00"
+                }
+            ]
+        }
+    }
+}

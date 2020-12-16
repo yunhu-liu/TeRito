@@ -1,0 +1,85 @@
+{
+    "StudentPersonals": {
+        "StudentPersonal": [
+            {
+                "StudentPersonalLocalId": "ST7000299",
+                "NationalStudentNumber": 9007000299,
+                "FirstNZSchoolingDate": "2009-01-16T00:00:00+12:00",
+                "EarlyChildhoodEducation": {
+                    "Type": "EPG"
+                },
+                "PersonInfo": {
+                    "Name": {
+                        "FamilyName": "Rowlands",
+                        "GivenName": "Anna",
+                        "FullName": "Anna Rowlands"
+                    },
+                    "Demographics": {
+                        "BirthDate": "",
+                        "Gender": "1",
+                        "LanguageList": {
+                            "Language": [
+                                {
+                                    "Code": "NZS16110",
+                                    "Usage": "SH",
+                                    "ProficiencyList": {
+                                        "Proficiency": [
+                                            {
+                                                "Level": "AD",
+                                                "Type": "SP"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "EthnicityList": {
+                            "Ethnicity": [
+                                {
+                                    "Code": "211"
+                                }
+                            ]
+                        },
+                        "IwiAffiliationList": {
+                            "Iwi": [
+                                {
+                                    "Code": "NZS0414"
+                                }
+                            ]
+                        }
+                    },
+                    "Address": {
+                        "Physical": {
+                            "Type": "TH",
+                            "Line1": "43 South Road",
+                            "Suburb": "Mamaku",
+                            "City": "South Waikato;Rotorua",
+                            "Country": "New Zealand",
+                            "PostalCode": "3020"
+                        }
+                    },
+                    "Email": {
+                        "Personal": {
+                            "SourceOrganisation": {
+                                "RefId": "8007"
+                            },
+                            "Address": "arowlands@mailinator.com"
+                        }
+                    },
+                    "Phone": {
+                        "Home": {
+                            "Number": "+64 7-784 3037"
+                        }
+                    }
+                },
+                "StudentProviderEnrolment": {
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "SchoolEnrolment": {
+                        "YearLevel": 12,
+                        "FundingYearLevel": 12
+                    }
+                }
+            }
+        ]
+    }
+}

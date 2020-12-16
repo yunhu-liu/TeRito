@@ -1,0 +1,50 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The PersonInfo field is replaced with an empty string.",
+    "testcase": {
+        "StaffPersonals": {
+            "StaffPersonal": [
+                {
+                    "StaffPersonalLocalId": "T98113",
+                    "SchoolSMSUserId": "KodiS",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98114",
+                    "SchoolSMSUserId": "MaeveC",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98115",
+                    "SchoolSMSUserId": "ElaH",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98116",
+                    "SchoolSMSUserId": "MelodyD",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98117",
+                    "SchoolSMSUserId": "MeganS",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98118",
+                    "SchoolSMSUserId": "KadeemT",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98119",
+                    "SchoolSMSUserId": "BartlomiejC",
+                    "PersonInfo": ""
+                },
+                {
+                    "StaffPersonalLocalId": "T98120",
+                    "SchoolSMSUserId": "RhondaH",
+                    "PersonInfo": ""
+                }
+            ]
+        }
+    }
+}

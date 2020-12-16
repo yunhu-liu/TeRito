@@ -1,0 +1,94 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The PeriodList field is replaced with an empty string.",
+    "testcase": {
+        "ScheduleAcademicDays": {
+            "ScheduleAcademicDay": [
+                {
+                    "ScheduleAcademicDayLocalId": "8007_Day_A",
+                    "AcademicDayName": "Day A",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "Schedule": {
+                        "LocalId": "8007_Sched_2020"
+                    },
+                    "BellSchedule": {
+                        "LocalId": "8007_Regular"
+                    },
+                    "PeriodList": ""
+                },
+                {
+                    "ScheduleAcademicDayLocalId": "8007_Day_B",
+                    "AcademicDayName": "Day B",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "Schedule": {
+                        "LocalId": "8007_Sched_2020"
+                    },
+                    "BellSchedule": {
+                        "LocalId": "8007_Regular"
+                    },
+                    "PeriodList": ""
+                },
+                {
+                    "ScheduleAcademicDayLocalId": "8007_Day_C",
+                    "AcademicDayName": "Day C",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "Schedule": {
+                        "LocalId": "8007_Sched_2020"
+                    },
+                    "BellSchedule": {
+                        "LocalId": "8007_Regular"
+                    },
+                    "PeriodList": ""
+                },
+                {
+                    "ScheduleAcademicDayLocalId": "8007_Day_D",
+                    "AcademicDayName": "Day D",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "Schedule": {
+                        "LocalId": "8007_Sched_2020"
+                    },
+                    "BellSchedule": {
+                        "LocalId": "8007_Regular"
+                    },
+                    "PeriodList": ""
+                },
+                {
+                    "ScheduleAcademicDayLocalId": "8007_Day_E",
+                    "AcademicDayName": "Day E",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "Schedule": {
+                        "LocalId": "8007_Sched_2020"
+                    },
+                    "BellSchedule": {
+                        "LocalId": "8007_Regular"
+                    },
+                    "PeriodList": ""
+                },
+                {
+                    "ScheduleAcademicDayLocalId": "8007_Day_F",
+                    "AcademicDayName": "Day F",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "Schedule": {
+                        "LocalId": "8007_Sched_2020"
+                    },
+                    "BellSchedule": {
+                        "LocalId": "8007_Regular"
+                    },
+                    "PeriodList": ""
+                }
+            ]
+        }
+    }
+}

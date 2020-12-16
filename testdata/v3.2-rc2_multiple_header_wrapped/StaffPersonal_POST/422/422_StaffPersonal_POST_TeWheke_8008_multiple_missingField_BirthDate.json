@@ -1,0 +1,725 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The BirthDate field is removed.",
+    "testcase": {
+        "StaffPersonals": {
+            "StaffPersonal": [
+                {
+                    "StaffPersonalLocalId": "T98085",
+                    "SchoolSMSUserId": "CC",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Carty",
+                            "GivenName": "Courtney",
+                            "MiddleName": "DP",
+                            "FullName": "Courtney DP Carty"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "courtneyc@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2002-06-10T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98086",
+                    "SchoolSMSUserId": "ML",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Mcdonald",
+                            "GivenName": "Libbi",
+                            "MiddleName": "OH",
+                            "FullName": "Libbi OH Mcdonald"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "libbim@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2002-10-28T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98087",
+                    "SchoolSMSUserId": "WC",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "White",
+                            "GivenName": "Cohan",
+                            "MiddleName": "O",
+                            "FullName": "Cohan O White"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "cohanw@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2003-04-21T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98088",
+                    "SchoolSMSUserId": "DT",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Drew",
+                            "GivenName": "Terrence",
+                            "FullName": "Terrence Drew"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "terrenced@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2003-06-09T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98089",
+                    "SchoolSMSUserId": "AL",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Adam",
+                            "GivenName": "Liberty",
+                            "FullName": "Liberty Adam"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "libertya@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2004-04-19T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98090",
+                    "SchoolSMSUserId": "LK",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Lacey",
+                            "GivenName": "Kristian",
+                            "FullName": "Kristian Lacey"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "kristianl@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2004-12-06T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98091",
+                    "SchoolSMSUserId": "MM",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Mcloughlin",
+                            "GivenName": "Macie",
+                            "FullName": "Macie Mcloughlin"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "maciem@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2006-02-20T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98092",
+                    "SchoolSMSUserId": "HP",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Hood",
+                            "GivenName": "Patryk",
+                            "FullName": "Patryk Hood"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "patrykh@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2006-04-17T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98093",
+                    "SchoolSMSUserId": "AS",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Adamson",
+                            "GivenName": "Sylvie",
+                            "FullName": "Sylvie Adamson"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "sylviea@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2006-08-14T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98094",
+                    "SchoolSMSUserId": "SJ",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Stafford",
+                            "GivenName": "James",
+                            "PreferredGivenName": "Jimmy",
+                            "FullName": "James 'Jimmy' Stafford"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "jamess@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2006-10-02T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98095",
+                    "SchoolSMSUserId": "GT",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Glover",
+                            "GivenName": "Tanvir",
+                            "FullName": "Tanvir Glover"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "tanvirg@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2007-03-19T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98096",
+                    "SchoolSMSUserId": "BF",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Brock",
+                            "GivenName": "Fabian",
+                            "MiddleName": "Jamie",
+                            "FullName": "Fabian Jamie Brock"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "fabianb@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2011-11-14T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98097",
+                    "SchoolSMSUserId": "RW",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Ramsay",
+                            "GivenName": "Wiktoria",
+                            "MiddleName": "Matthew",
+                            "FullName": "Wiktoria Matthew Ramsay"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "wiktoriar@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2012-04-16T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98098",
+                    "SchoolSMSUserId": "RR",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Regan",
+                            "GivenName": "Ray",
+                            "MiddleName": "Lauren",
+                            "FullName": "Ray Lauren Regan"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "rayr@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2015-04-27T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98099",
+                    "SchoolSMSUserId": "CA",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Clegg",
+                            "GivenName": "Arun",
+                            "MiddleName": "Isabelle",
+                            "FullName": "Arun Isabelle Clegg"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "arunc@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2017-04-03T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98100",
+                    "SchoolSMSUserId": "HS",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Hartman",
+                            "GivenName": "Simra",
+                            "MiddleName": "Charlotte",
+                            "FullName": "Simra Charlotte Hartman"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "simrah@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2017-12-11T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98101",
+                    "SchoolSMSUserId": "LS",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Leigh",
+                            "GivenName": "Sachin",
+                            "MiddleName": "Amber",
+                            "FullName": "Sachin Amber Leigh"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "sachinl@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "1995-01-09T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98102",
+                    "SchoolSMSUserId": "HA",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Haines",
+                            "GivenName": "Antonio",
+                            "FullName": "Antonio Haines"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "antonioh@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "1995-05-22T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98103",
+                    "SchoolSMSUserId": "MB",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Miles",
+                            "GivenName": "Brian",
+                            "FullName": "Brian Miles"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "brianm@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "1996-09-02T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98104",
+                    "SchoolSMSUserId": "KC",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Knox",
+                            "GivenName": "Coral",
+                            "FullName": "Coral Knox"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "coralk@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "1998-06-29T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98105",
+                    "SchoolSMSUserId": "CA",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Cannon",
+                            "GivenName": "Albi",
+                            "FullName": "Albi Cannon"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "albic@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "1998-12-07T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98106",
+                    "SchoolSMSUserId": "MH",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Mata",
+                            "GivenName": "Hunter",
+                            "FullName": "Hunter Mata"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "hunterm@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "1999-08-30T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98107",
+                    "SchoolSMSUserId": "HR",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Hernandez",
+                            "GivenName": "Reis",
+                            "Suffix": "Jr",
+                            "FullName": "Reis Hernandez Jr"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "reish@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2000-06-26T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98108",
+                    "SchoolSMSUserId": "RA",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Rennie",
+                            "GivenName": "Ari",
+                            "MiddleName": "Olivia",
+                            "FullName": "Ari Olivia Rennie"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "arir@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2000-12-04T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98109",
+                    "SchoolSMSUserId": "HB",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Hawes",
+                            "GivenName": "Blake",
+                            "MiddleName": "Madison",
+                            "FullName": "Blake Madison Hawes"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "blakeh@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1201",
+                        "StartDate": "2001-10-15T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98110",
+                    "SchoolSMSUserId": "LC",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Leach",
+                            "GivenName": "Coen",
+                            "MiddleName": "Laura",
+                            "FullName": "Coen Laura Leach"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "coenl@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1009",
+                        "StartDate": "2002-08-26T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98111",
+                    "SchoolSMSUserId": "KA",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Kidd",
+                            "GivenName": "Alessandro",
+                            "MiddleName": "Holly",
+                            "FullName": "Alessandro Holly Kidd"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "alessandrok@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1002",
+                        "StartDate": "2004-10-11T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98112",
+                    "SchoolSMSUserId": "PC",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Parra",
+                            "GivenName": "Cassidy",
+                            "FullName": "Cassidy Parra"
+                        },
+                        "Demographics": {},
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8008"
+                                },
+                                "Address": "cassidyp@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1001",
+                        "StartDate": "2005-03-28T00:00:00+12:00"
+                    }
+                }
+            ]
+        }
+    }
+}

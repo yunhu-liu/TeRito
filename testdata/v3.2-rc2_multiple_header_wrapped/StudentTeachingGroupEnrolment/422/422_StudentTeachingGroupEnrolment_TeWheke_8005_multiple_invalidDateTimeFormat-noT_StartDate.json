@@ -1,0 +1,1495 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The date time format for StartDate is incorrect. T is missing.",
+    "testcase": {
+        "StudentTeachingGroupEnrolments": {
+            "StudentTeachingGroupEnrolment": [
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000000",
+                    "Student": {
+                        "LocalId": "ST5000000",
+                        "NationalStudentNumber": 9005000000,
+                        "YearLevel": 8
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-01-2700:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000013",
+                    "Student": {
+                        "LocalId": "ST5000013",
+                        "NationalStudentNumber": 9005000013,
+                        "YearLevel": 7
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-01-2800:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000026",
+                    "Student": {
+                        "LocalId": "ST5000026",
+                        "NationalStudentNumber": 9005000026,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-01-2900:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000039",
+                    "Student": {
+                        "LocalId": "ST5000039",
+                        "NationalStudentNumber": 9005000039,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-01-3000:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000041",
+                    "Student": {
+                        "LocalId": "ST5000041",
+                        "NationalStudentNumber": 9005000041,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-01-3100:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000054",
+                    "Student": {
+                        "LocalId": "ST5000054",
+                        "NationalStudentNumber": 9005000054,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-02-0100:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000067",
+                    "Student": {
+                        "LocalId": "ST5000067",
+                        "NationalStudentNumber": 9005000067,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-02-0200:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5100075",
+                    "Student": {
+                        "LocalId": "ST5100075",
+                        "NationalStudentNumber": 9005100075,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-02-0300:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000082",
+                    "Student": {
+                        "LocalId": "ST5000082",
+                        "NationalStudentNumber": 9005000082,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-02-0400:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000095",
+                    "Student": {
+                        "LocalId": "ST5000095",
+                        "NationalStudentNumber": 9005000095,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-02-0500:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000105",
+                    "Student": {
+                        "LocalId": "ST5000105",
+                        "NationalStudentNumber": 9005000105,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-02-0600:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR3_ST5000118",
+                    "Student": {
+                        "LocalId": "ST5000118",
+                        "NationalStudentNumber": 9005000118,
+                        "YearLevel": 3
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "StartDate": "2020-02-0700:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR3_ST5000120",
+                    "Student": {
+                        "LocalId": "ST5000120",
+                        "NationalStudentNumber": 9005000120,
+                        "YearLevel": 3
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "StartDate": "2020-02-0800:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR3_ST5000133",
+                    "Student": {
+                        "LocalId": "ST5000133",
+                        "NationalStudentNumber": 9005000133,
+                        "YearLevel": 3
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "StartDate": "2020-02-0900:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR3_ST5000146",
+                    "Student": {
+                        "LocalId": "ST5000146",
+                        "NationalStudentNumber": 9005000146,
+                        "YearLevel": 3
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "StartDate": "2020-02-1000:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR3_ST5000159",
+                    "Student": {
+                        "LocalId": "ST5000159",
+                        "NationalStudentNumber": 9005000159,
+                        "YearLevel": 3
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "StartDate": "2020-02-1100:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000161",
+                    "Student": {
+                        "LocalId": "ST5000161",
+                        "NationalStudentNumber": 9005000161,
+                        "YearLevel": 2
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-02-1200:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000174",
+                    "Student": {
+                        "LocalId": "ST5000174",
+                        "NationalStudentNumber": 9005000174,
+                        "YearLevel": 2
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-02-1300:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000187",
+                    "Student": {
+                        "LocalId": "ST5000187",
+                        "NationalStudentNumber": 9005000187,
+                        "YearLevel": 2
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-02-1400:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5100195",
+                    "Student": {
+                        "LocalId": "ST5100195",
+                        "NationalStudentNumber": 9005100195,
+                        "YearLevel": 2
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-02-1500:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5100205",
+                    "Student": {
+                        "LocalId": "ST5100205",
+                        "NationalStudentNumber": 9005100205,
+                        "YearLevel": 2
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-02-1600:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000212",
+                    "Student": {
+                        "LocalId": "ST5000212",
+                        "NationalStudentNumber": 9005000212,
+                        "YearLevel": 1
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-02-1700:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000225",
+                    "Student": {
+                        "LocalId": "ST5000225",
+                        "NationalStudentNumber": 9005000225,
+                        "YearLevel": 1
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-02-1800:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000238",
+                    "Student": {
+                        "LocalId": "ST5000238",
+                        "NationalStudentNumber": 9005000238,
+                        "YearLevel": 1
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-02-1900:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000240",
+                    "Student": {
+                        "LocalId": "ST5000240",
+                        "NationalStudentNumber": 9005000240,
+                        "YearLevel": 1
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-02-2000:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000253",
+                    "Student": {
+                        "LocalId": "ST5000253",
+                        "NationalStudentNumber": 9005000253,
+                        "YearLevel": 8
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-02-2100:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000266",
+                    "Student": {
+                        "LocalId": "ST5000266",
+                        "NationalStudentNumber": 9005000266,
+                        "YearLevel": 8
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-02-2200:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000279",
+                    "Student": {
+                        "LocalId": "ST5000279",
+                        "NationalStudentNumber": 9005000279,
+                        "YearLevel": 7
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-02-2300:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000281",
+                    "Student": {
+                        "LocalId": "ST5000281",
+                        "NationalStudentNumber": 9005000281,
+                        "YearLevel": 7
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-02-2400:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000294",
+                    "Student": {
+                        "LocalId": "ST5000294",
+                        "NationalStudentNumber": 9005000294,
+                        "YearLevel": 7
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-02-2500:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000304",
+                    "Student": {
+                        "LocalId": "ST5000304",
+                        "NationalStudentNumber": 9005000304,
+                        "YearLevel": 7
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-02-2600:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000317",
+                    "Student": {
+                        "LocalId": "ST5000317",
+                        "NationalStudentNumber": 9005000317,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-02-2700:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5100325",
+                    "Student": {
+                        "LocalId": "ST5100325",
+                        "NationalStudentNumber": 9005100325,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-02-2800:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000332",
+                    "Student": {
+                        "LocalId": "ST5000332",
+                        "NationalStudentNumber": 9005000332,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-02-2900:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000345",
+                    "Student": {
+                        "LocalId": "ST5000345",
+                        "NationalStudentNumber": 9005000345,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-03-0100:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000358",
+                    "Student": {
+                        "LocalId": "ST5000358",
+                        "NationalStudentNumber": 9005000358,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-03-0200:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000360",
+                    "Student": {
+                        "LocalId": "ST5000360",
+                        "NationalStudentNumber": 9005000360,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-03-0300:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000373",
+                    "Student": {
+                        "LocalId": "ST5000373",
+                        "NationalStudentNumber": 9005000373,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-03-0400:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000386",
+                    "Student": {
+                        "LocalId": "ST5000386",
+                        "NationalStudentNumber": 9005000386,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-03-0500:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000399",
+                    "Student": {
+                        "LocalId": "ST5000399",
+                        "NationalStudentNumber": 9005000399,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-03-0600:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000409",
+                    "Student": {
+                        "LocalId": "ST5000409",
+                        "NationalStudentNumber": 9005000409,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-03-0700:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000411",
+                    "Student": {
+                        "LocalId": "ST5000411",
+                        "NationalStudentNumber": 9005000411,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-03-0800:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000424",
+                    "Student": {
+                        "LocalId": "ST5000424",
+                        "NationalStudentNumber": 9005000424,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-03-0900:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000437",
+                    "Student": {
+                        "LocalId": "ST5000437",
+                        "NationalStudentNumber": 9005000437,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-03-1000:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5100445",
+                    "Student": {
+                        "LocalId": "ST5100445",
+                        "NationalStudentNumber": 9005100445,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-03-1100:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR3_ST5000452",
+                    "Student": {
+                        "LocalId": "ST5000452",
+                        "NationalStudentNumber": 9005000452,
+                        "YearLevel": 3
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "StartDate": "2020-03-1200:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR3_ST5000465",
+                    "Student": {
+                        "LocalId": "ST5000465",
+                        "NationalStudentNumber": 9005000465,
+                        "YearLevel": 3
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "StartDate": "2020-03-1300:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000478",
+                    "Student": {
+                        "LocalId": "ST5000478",
+                        "NationalStudentNumber": 9005000478,
+                        "YearLevel": 2
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-03-1400:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000480",
+                    "Student": {
+                        "LocalId": "ST5000480",
+                        "NationalStudentNumber": 9005000480,
+                        "YearLevel": 2
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-03-1500:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000493",
+                    "Student": {
+                        "LocalId": "ST5000493",
+                        "NationalStudentNumber": 9005000493,
+                        "YearLevel": 1
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-03-1600:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000503",
+                    "Student": {
+                        "LocalId": "ST5000503",
+                        "NationalStudentNumber": 9005000503,
+                        "YearLevel": 8
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-03-1700:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000516",
+                    "Student": {
+                        "LocalId": "ST5000516",
+                        "NationalStudentNumber": 9005000516,
+                        "YearLevel": 8
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-03-1800:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000529",
+                    "Student": {
+                        "LocalId": "ST5000529",
+                        "NationalStudentNumber": 9005000529,
+                        "YearLevel": 8
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-03-1900:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000531",
+                    "Student": {
+                        "LocalId": "ST5000531",
+                        "NationalStudentNumber": 9005000531,
+                        "YearLevel": 7
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-03-2000:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000544",
+                    "Student": {
+                        "LocalId": "ST5000544",
+                        "NationalStudentNumber": 9005000544,
+                        "YearLevel": 7
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-03-2100:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000557",
+                    "Student": {
+                        "LocalId": "ST5000557",
+                        "NationalStudentNumber": 9005000557,
+                        "YearLevel": 7
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-03-2200:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5100565",
+                    "Student": {
+                        "LocalId": "ST5100565",
+                        "NationalStudentNumber": 9005100565,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-03-2300:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000572",
+                    "Student": {
+                        "LocalId": "ST5000572",
+                        "NationalStudentNumber": 9005000572,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-03-2400:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000585",
+                    "Student": {
+                        "LocalId": "ST5000585",
+                        "NationalStudentNumber": 9005000585,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-03-2500:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000598",
+                    "Student": {
+                        "LocalId": "ST5000598",
+                        "NationalStudentNumber": 9005000598,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-03-2600:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000608",
+                    "Student": {
+                        "LocalId": "ST5000608",
+                        "NationalStudentNumber": 9005000608,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-03-2700:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000610",
+                    "Student": {
+                        "LocalId": "ST5000610",
+                        "NationalStudentNumber": 9005000610,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-03-2800:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000623",
+                    "Student": {
+                        "LocalId": "ST5000623",
+                        "NationalStudentNumber": 9005000623,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-03-2900:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000636",
+                    "Student": {
+                        "LocalId": "ST5000636",
+                        "NationalStudentNumber": 9005000636,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-03-3000:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000649",
+                    "Student": {
+                        "LocalId": "ST5000649",
+                        "NationalStudentNumber": 9005000649,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-03-3100:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000651",
+                    "Student": {
+                        "LocalId": "ST5000651",
+                        "NationalStudentNumber": 9005000651,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-04-0100:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000664",
+                    "Student": {
+                        "LocalId": "ST5000664",
+                        "NationalStudentNumber": 9005000664,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-04-0200:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000677",
+                    "Student": {
+                        "LocalId": "ST5000677",
+                        "NationalStudentNumber": 9005000677,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-04-0300:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR3_ST5100685",
+                    "Student": {
+                        "LocalId": "ST5100685",
+                        "NationalStudentNumber": 9005100685,
+                        "YearLevel": 3
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "StartDate": "2020-04-0400:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR3_ST5000692",
+                    "Student": {
+                        "LocalId": "ST5000692",
+                        "NationalStudentNumber": 9005000692,
+                        "YearLevel": 3
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "StartDate": "2020-04-0500:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000702",
+                    "Student": {
+                        "LocalId": "ST5000702",
+                        "NationalStudentNumber": 9005000702,
+                        "YearLevel": 2
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-04-0600:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000715",
+                    "Student": {
+                        "LocalId": "ST5000715",
+                        "NationalStudentNumber": 9005000715,
+                        "YearLevel": 2
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-04-0700:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000728",
+                    "Student": {
+                        "LocalId": "ST5000728",
+                        "NationalStudentNumber": 9005000728,
+                        "YearLevel": 1
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-04-0800:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000730",
+                    "Student": {
+                        "LocalId": "ST5000730",
+                        "NationalStudentNumber": 9005000730,
+                        "YearLevel": 1
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-04-0900:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000743",
+                    "Student": {
+                        "LocalId": "ST5000743",
+                        "NationalStudentNumber": 9005000743,
+                        "YearLevel": 1
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-04-1000:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000756",
+                    "Student": {
+                        "LocalId": "ST5000756",
+                        "NationalStudentNumber": 9005000756,
+                        "YearLevel": 8
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-04-1100:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000769",
+                    "Student": {
+                        "LocalId": "ST5000769",
+                        "NationalStudentNumber": 9005000769,
+                        "YearLevel": 8
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-04-1200:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000771",
+                    "Student": {
+                        "LocalId": "ST5000771",
+                        "NationalStudentNumber": 9005000771,
+                        "YearLevel": 7
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-04-1300:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR7_HR8_ST5000784",
+                    "Student": {
+                        "LocalId": "ST5000784",
+                        "NationalStudentNumber": 9005000784,
+                        "YearLevel": 7
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR7_HR8"
+                    },
+                    "StartDate": "2020-04-1400:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000797",
+                    "Student": {
+                        "LocalId": "ST5000797",
+                        "NationalStudentNumber": 9005000797,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-04-1500:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5000807",
+                    "Student": {
+                        "LocalId": "ST5000807",
+                        "NationalStudentNumber": 9005000807,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-04-1600:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR6_ST5100815",
+                    "Student": {
+                        "LocalId": "ST5100815",
+                        "NationalStudentNumber": 9005100815,
+                        "YearLevel": 6
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR6"
+                    },
+                    "StartDate": "2020-04-1700:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000822",
+                    "Student": {
+                        "LocalId": "ST5000822",
+                        "NationalStudentNumber": 9005000822,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-04-1800:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR5_ST5000835",
+                    "Student": {
+                        "LocalId": "ST5000835",
+                        "NationalStudentNumber": 9005000835,
+                        "YearLevel": 5
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR5"
+                    },
+                    "StartDate": "2020-04-1900:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000848",
+                    "Student": {
+                        "LocalId": "ST5000848",
+                        "NationalStudentNumber": 9005000848,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-04-2000:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000850",
+                    "Student": {
+                        "LocalId": "ST5000850",
+                        "NationalStudentNumber": 9005000850,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-04-2100:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000863",
+                    "Student": {
+                        "LocalId": "ST5000863",
+                        "NationalStudentNumber": 9005000863,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-04-2200:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000876",
+                    "Student": {
+                        "LocalId": "ST5000876",
+                        "NationalStudentNumber": 9005000876,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-04-2300:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR4_ST5000889",
+                    "Student": {
+                        "LocalId": "ST5000889",
+                        "NationalStudentNumber": 9005000889,
+                        "YearLevel": 4
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR4"
+                    },
+                    "StartDate": "2020-04-2400:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR3_ST5000891",
+                    "Student": {
+                        "LocalId": "ST5000891",
+                        "NationalStudentNumber": 9005000891,
+                        "YearLevel": 3
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "StartDate": "2020-04-2500:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR3_ST5000901",
+                    "Student": {
+                        "LocalId": "ST5000901",
+                        "NationalStudentNumber": 9005000901,
+                        "YearLevel": 3
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "StartDate": "2020-04-2600:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_HR3_ST5000914",
+                    "Student": {
+                        "LocalId": "ST5000914",
+                        "NationalStudentNumber": 9005000914,
+                        "YearLevel": 3
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_HR3"
+                    },
+                    "StartDate": "2020-04-2700:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000927",
+                    "Student": {
+                        "LocalId": "ST5000927",
+                        "NationalStudentNumber": 9005000927,
+                        "YearLevel": 2
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-04-2800:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5100935",
+                    "Student": {
+                        "LocalId": "ST5100935",
+                        "NationalStudentNumber": 9005100935,
+                        "YearLevel": 2
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-04-2900:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000942",
+                    "Student": {
+                        "LocalId": "ST5000942",
+                        "NationalStudentNumber": 9005000942,
+                        "YearLevel": 2
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-04-3000:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000955",
+                    "Student": {
+                        "LocalId": "ST5000955",
+                        "NationalStudentNumber": 9005000955,
+                        "YearLevel": 1
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-05-0100:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000968",
+                    "Student": {
+                        "LocalId": "ST5000968",
+                        "NationalStudentNumber": 9005000968,
+                        "YearLevel": 1
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-05-0200:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000970",
+                    "Student": {
+                        "LocalId": "ST5000970",
+                        "NationalStudentNumber": 9005000970,
+                        "YearLevel": 1
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-05-0300:00:00+12:00"
+                },
+                {
+                    "StudentTeachingGroupEnrolmentLocalId": "2020_8005_JR_ST5000983",
+                    "Student": {
+                        "LocalId": "ST5000983",
+                        "NationalStudentNumber": 9005000983,
+                        "YearLevel": 1
+                    },
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8005_JR"
+                    },
+                    "StartDate": "2020-05-0400:00:00+12:00"
+                }
+            ]
+        }
+    }
+}

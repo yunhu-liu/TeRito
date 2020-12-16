@@ -1,0 +1,84 @@
+{
+    "StudentPersonals": {
+        "StudentPersonal": [
+            {
+                "StudentPersonalLocalId": "ST5000728",
+                "NationalStudentNumber": 9005000728,
+                "FirstNZSchoolingDate": "2020-03-24T00:00:00+12:00",
+                "EarlyChildhoodEducation": {
+                    "Type": "ENA"
+                },
+                "PersonInfo": {
+                    "Name": {
+                        "FamilyName": "Shepherd",
+                        "GivenName": "Ben",
+                        "FullName": "Ben Shepherd"
+                    },
+                    "Demographics": {
+                        "BirthDate": "2015-03-24T00:00:00+12:00",
+                        "Gender": "1",
+                        "LanguageList": {
+                            "Language": [
+                                {
+                                    "Code": "NZS16110",
+                                    "Usage": "SH",
+                                    "ProficiencyList": {
+                                        "Proficiency": [
+                                            {
+                                                "Level": "AD",
+                                                "Type": "SP"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "EthnicityList": {
+                            "Ethnicity": [
+                                {
+                                    "Code": "211"
+                                }
+                            ]
+                        },
+                        "IwiAffiliationList": {
+                            "Iwi": [
+                                {
+                                    "Code": "NZS0507"
+                                }
+                            ]
+                        }
+                    },
+                    "Address": {
+                        "Physical": {
+                            "Type": "TH",
+                            "Line1": "38 Amethyst Place",
+                            "Suburb": "Pukehangi",
+                            "City": "Rotorua",
+                            "Country": "New Zealand",
+                            "PostalCode": "3015"
+                        }
+                    },
+                    "Email": {
+                        "Personal": {
+                            "SourceOrganisation": {
+                                "RefId": "8005"
+                            },
+                            "Address": "bshepherd@mailinator.com"
+                        }
+                    },
+                    "Phone": {
+                        "Home": {
+                            "Number": "+64 7-892 3613"
+                        }
+                    }
+                },
+                "StudentProviderEnrolment": {
+                    "SchoolEnrolment": {
+                        "YearLevel": 1,
+                        "FundingYearLevel": 1
+                    }
+                }
+            }
+        ]
+    }
+}

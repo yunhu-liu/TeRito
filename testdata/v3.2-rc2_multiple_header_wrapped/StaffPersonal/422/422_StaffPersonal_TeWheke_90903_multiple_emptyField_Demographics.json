@@ -1,0 +1,183 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The Demographics field is replaced with an empty string.",
+    "testcase": {
+        "StaffPersonals": {
+            "StaffPersonal": [
+                {
+                    "StaffPersonalLocalId": "T98121",
+                    "SchoolSMSUserId": "WFannie",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Walmsley",
+                            "GivenName": "Fannie",
+                            "FullName": "Fannie Walmsley"
+                        },
+                        "Demographics": "",
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "fanniew@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98122",
+                    "SchoolSMSUserId": "EZakariyya",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Emery",
+                            "GivenName": "Zakariyya",
+                            "FullName": "Zakariyya Emery"
+                        },
+                        "Demographics": "",
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "zakariyyae@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98123",
+                    "SchoolSMSUserId": "MConrad",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Milne",
+                            "GivenName": "Conrad",
+                            "MiddleName": "P",
+                            "FullName": "Conrad P Milne"
+                        },
+                        "Demographics": "",
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "conradm@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98124",
+                    "SchoolSMSUserId": "MBella-Rose",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Marquez",
+                            "GivenName": "Bella-Rose",
+                            "MiddleName": "DP",
+                            "FullName": "Bella-Rose DP Marquez"
+                        },
+                        "Demographics": "",
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "bella-rosem@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98125",
+                    "SchoolSMSUserId": "JMurray",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Jordan",
+                            "GivenName": "Murray",
+                            "MiddleName": "OH",
+                            "FullName": "Murray OH Jordan"
+                        },
+                        "Demographics": "",
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "murrayj@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98126",
+                    "SchoolSMSUserId": "MNaya",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Moody",
+                            "GivenName": "Naya",
+                            "MiddleName": "O",
+                            "FullName": "Naya O Moody"
+                        },
+                        "Demographics": "",
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "nayam@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98127",
+                    "SchoolSMSUserId": "MSaima",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Mcdougall",
+                            "GivenName": "Saima",
+                            "MiddleName": "Jorja",
+                            "FullName": "Saima Jorja Mcdougall"
+                        },
+                        "Demographics": "",
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "saimam@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98128",
+                    "SchoolSMSUserId": "WLynsey",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Wilkinson",
+                            "GivenName": "Lynsey",
+                            "FullName": "Lynsey Wilkinson"
+                        },
+                        "Demographics": "",
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "lynseyw@mailinator.com"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

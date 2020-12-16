@@ -1,0 +1,30 @@
+{
+    "StaffPersonals": {
+        "StaffPersonal": [
+            {
+                "StaffPersonalLocalId": "T98061",
+                "SchoolSMSUserId": "BKorban",
+                "PersonInfo": {
+                    "Name": {
+                        "Title": "Ms.",
+                        "FamilyName": "Bond",
+                        "GivenName": "Korban",
+                        "MiddleName": "DP",
+                        "FullName": "Korban DP Bond"
+                    },
+                    "Demographics": {
+                        "BirthDate": "1976-01-14 00:00:00+1200+12:00"
+                    },
+                    "Email": {
+                        "Work": {
+                            "SourceOrganisation": {
+                                "RefId": "8007"
+                            },
+                            "Address": "korbanb@mailinator.com"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

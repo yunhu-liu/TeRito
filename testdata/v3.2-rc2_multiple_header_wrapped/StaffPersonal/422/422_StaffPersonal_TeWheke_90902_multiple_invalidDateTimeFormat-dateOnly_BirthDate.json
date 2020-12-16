@@ -1,0 +1,199 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The date time format for BirthDate is incorrect.Dates should be in date-time format.",
+    "testcase": {
+        "StaffPersonals": {
+            "StaffPersonal": [
+                {
+                    "StaffPersonalLocalId": "T98113",
+                    "SchoolSMSUserId": "KodiS",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Steadman",
+                            "GivenName": "Kodi",
+                            "MiddleName": "Jacob",
+                            "FullName": "Kodi Jacob Steadman"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1968-09-18"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "kodis@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98114",
+                    "SchoolSMSUserId": "MaeveC",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Cox",
+                            "GivenName": "Maeve",
+                            "FullName": "Maeve Cox"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1969-07-13"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "maevec@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98115",
+                    "SchoolSMSUserId": "ElaH",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Horn",
+                            "GivenName": "Ela",
+                            "MiddleName": "P",
+                            "FullName": "Ela P Horn"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1971-03-11"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "elah@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98116",
+                    "SchoolSMSUserId": "MelodyD",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Dale",
+                            "GivenName": "Melody",
+                            "MiddleName": "DP",
+                            "FullName": "Melody DP Dale"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1976-08-03"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "melodyd@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98117",
+                    "SchoolSMSUserId": "MeganS",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Sanchez",
+                            "GivenName": "Megan",
+                            "MiddleName": "OH",
+                            "FullName": "Megan OH Sanchez"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1977-07-11"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "megans@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98118",
+                    "SchoolSMSUserId": "KadeemT",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Tierney",
+                            "GivenName": "Kadeem",
+                            "MiddleName": "O",
+                            "FullName": "Kadeem O Tierney"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1977-08-30"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "kadeemt@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98119",
+                    "SchoolSMSUserId": "BartlomiejC",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Cortez",
+                            "GivenName": "Bartlomiej",
+                            "FullName": "Bartlomiej Cortez"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1979-08-16"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "bartlomiejc@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98120",
+                    "SchoolSMSUserId": "RhondaH",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Hartley",
+                            "GivenName": "Rhonda",
+                            "FullName": "Rhonda Hartley"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1980-01-10"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90902"
+                                },
+                                "Address": "rhondah@mailinator.com"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

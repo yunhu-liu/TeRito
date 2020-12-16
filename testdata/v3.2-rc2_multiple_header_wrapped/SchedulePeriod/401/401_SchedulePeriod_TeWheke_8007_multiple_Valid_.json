@@ -1,0 +1,70 @@
+{
+    "expects": "401",
+    "comment": "Valid payload for %s entity(ies) for %s data object. To be used to test for 401 responses.",
+    "testcase": {
+        "SchedulePeriods": {
+            "SchedulePeriod": [
+                {
+                    "SchedulePeriodLocalId": "8007_HR",
+                    "PeriodName": "Homeroom",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "Schedule": {
+                        "LocalId": "8007_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8007_P1",
+                    "PeriodName": "Period 1",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "Schedule": {
+                        "LocalId": "8007_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8007_P2",
+                    "PeriodName": "Period 2",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "Schedule": {
+                        "LocalId": "8007_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8007_P3",
+                    "PeriodName": "Period 3",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "Schedule": {
+                        "LocalId": "8007_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8007_P4",
+                    "PeriodName": "Period 4",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "Schedule": {
+                        "LocalId": "8007_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8007_P5",
+                    "PeriodName": "Period 5",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "Schedule": {
+                        "LocalId": "8007_Sched_2020"
+                    }
+                }
+            ]
+        }
+    }
+}

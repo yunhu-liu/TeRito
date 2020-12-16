@@ -1,0 +1,223 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The GivenName field is removed.",
+    "testcase": {
+        "StaffPersonals": {
+            "StaffPersonal": [
+                {
+                    "StaffPersonalLocalId": "T98121",
+                    "SchoolSMSUserId": "WFannie",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Walmsley",
+                            "FullName": "Fannie Walmsley"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1986-01-23T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "fanniew@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2016-10-17T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98122",
+                    "SchoolSMSUserId": "EZakariyya",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Emery",
+                            "FullName": "Zakariyya Emery"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1988-05-27T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "zakariyyae@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2016-10-31T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98123",
+                    "SchoolSMSUserId": "MConrad",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Milne",
+                            "MiddleName": "P",
+                            "FullName": "Conrad P Milne"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1988-06-30T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "conradm@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2017-07-03T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98124",
+                    "SchoolSMSUserId": "MBella-Rose",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Marquez",
+                            "MiddleName": "DP",
+                            "FullName": "Bella-Rose DP Marquez"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1989-09-28T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "bella-rosem@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2017-07-17T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98125",
+                    "SchoolSMSUserId": "JMurray",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Jordan",
+                            "MiddleName": "OH",
+                            "FullName": "Murray OH Jordan"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1993-05-31T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "murrayj@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2018-10-08T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98126",
+                    "SchoolSMSUserId": "MNaya",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Moody",
+                            "MiddleName": "O",
+                            "FullName": "Naya O Moody"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1955-05-20T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "nayam@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "1997-10-20T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98127",
+                    "SchoolSMSUserId": "MSaima",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Ms.",
+                            "FamilyName": "Mcdougall",
+                            "MiddleName": "Jorja",
+                            "FullName": "Saima Jorja Mcdougall"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1959-12-06T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "saimam@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1009",
+                        "StartDate": "1999-05-10T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98128",
+                    "SchoolSMSUserId": "WLynsey",
+                    "PersonInfo": {
+                        "Name": {
+                            "Title": "Mr",
+                            "FamilyName": "Wilkinson",
+                            "FullName": "Lynsey Wilkinson"
+                        },
+                        "Demographics": {
+                            "BirthDate": "1959-12-09T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "90903"
+                                },
+                                "Address": "lynseyw@mailinator.com"
+                            }
+                        }
+                    },
+                    "StaffAssignment": {
+                        "StaffRole": "1001",
+                        "StartDate": "2000-03-20T00:00:00+12:00"
+                    }
+                }
+            ]
+        }
+    }
+}

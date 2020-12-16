@@ -1,0 +1,23 @@
+{
+    "TeachingGroupEvents": {
+        "TeachingGroupEvent": [
+            {
+                "TeachingGroupEventLocalId": "2020_8008_HR7_HR8_Day_A",
+                "Organisation": {
+                    "RefId": "8008"
+                },
+                "TeachingGroup": {
+                    "LocalId": "2020_8008_HR7_HR8"
+                },
+                "Schedule": {
+                    "LocalId": "8008_Sched_2020"
+                },
+                "SchedulePeriod": "",
+                "AcademicDay": {
+                    "LocalId": "8008_Day_A"
+                },
+                "TakeAttendanceFlag": "Y"
+            }
+        ]
+    }
+}

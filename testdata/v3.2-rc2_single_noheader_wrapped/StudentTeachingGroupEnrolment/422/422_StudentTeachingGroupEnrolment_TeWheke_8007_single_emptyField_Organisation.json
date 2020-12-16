@@ -1,0 +1,19 @@
+{
+    "StudentTeachingGroupEnrolments": {
+        "StudentTeachingGroupEnrolment": [
+            {
+                "StudentTeachingGroupEnrolmentLocalId": "2020_8007_HR12_HR13_ST7000005",
+                "Student": {
+                    "LocalId": "ST7000005",
+                    "NationalStudentNumber": 9007000005,
+                    "YearLevel": 13
+                },
+                "Organisation": "",
+                "TeachingGroup": {
+                    "LocalId": "2020_8007_HR12_HR13"
+                },
+                "StartDate": "2020-08-01T00:00:00+12:00"
+            }
+        ]
+    }
+}

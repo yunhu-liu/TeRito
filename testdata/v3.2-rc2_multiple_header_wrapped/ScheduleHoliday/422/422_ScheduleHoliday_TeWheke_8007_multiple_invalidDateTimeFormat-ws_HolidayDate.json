@@ -1,0 +1,64 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The date time format for HolidayDate is incorrect.White space missing.",
+    "testcase": {
+        "ScheduleHolidays": {
+            "ScheduleHoliday": [
+                {
+                    "ScheduleHolidayLocalId": "8007-2020-Waitangi",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "HolidayDate": "2020-02-06 00:00:00+1200+12:00",
+                    "HolidayName": "Waitangi Day",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8007-2020-Gfri",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "HolidayDate": "2020-04-10 00:00:00+1200+12:00",
+                    "HolidayName": "Good Friday",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8007-2020-Emon",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "HolidayDate": "2020-04-13 00:00:00+1200+12:00",
+                    "HolidayName": "Easter Monday",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8007-2020-ANZAC",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "HolidayDate": "2020-04-25 00:00:00+1200+12:00",
+                    "HolidayName": "ANZAC Day",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8007-2020-Qbdy",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "HolidayDate": "2020-06-01 00:00:00+1200+12:00",
+                    "HolidayName": "Queen's Birthday",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8007-2020-Lbdy",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "HolidayDate": "2020-10-26 00:00:00+1200+12:00",
+                    "HolidayName": "Labour Day",
+                    "AlwaysDisplayFlag": "Y"
+                }
+            ]
+        }
+    }
+}

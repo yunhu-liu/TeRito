@@ -1,0 +1,58 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The Organisation field is replaced with an empty string.",
+    "testcase": {
+        "SchedulePeriods": {
+            "SchedulePeriod": [
+                {
+                    "SchedulePeriodLocalId": "8008_HR",
+                    "PeriodName": "Homeroom",
+                    "Organisation": "",
+                    "Schedule": {
+                        "LocalId": "8008_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8008_P1",
+                    "PeriodName": "Period 1",
+                    "Organisation": "",
+                    "Schedule": {
+                        "LocalId": "8008_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8008_P2",
+                    "PeriodName": "Period 2",
+                    "Organisation": "",
+                    "Schedule": {
+                        "LocalId": "8008_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8008_P3",
+                    "PeriodName": "Period 3",
+                    "Organisation": "",
+                    "Schedule": {
+                        "LocalId": "8008_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8008_P4",
+                    "PeriodName": "Period 4",
+                    "Organisation": "",
+                    "Schedule": {
+                        "LocalId": "8008_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8008_P5",
+                    "PeriodName": "Period 5",
+                    "Organisation": "",
+                    "Schedule": {
+                        "LocalId": "8008_Sched_2020"
+                    }
+                }
+            ]
+        }
+    }
+}

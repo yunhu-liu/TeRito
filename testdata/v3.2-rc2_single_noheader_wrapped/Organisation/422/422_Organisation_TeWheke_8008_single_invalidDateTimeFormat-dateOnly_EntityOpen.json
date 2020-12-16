@@ -1,0 +1,90 @@
+{
+    "Organisations": {
+        "Organisation": [
+            {
+                "OrganisationRefId": "8008",
+                "EducationRegion": "12010",
+                "SpecialEducationDistrict": "182006",
+                "EntityOpen": "1950-01-28",
+                "Name": "Pōhutukawa High School",
+                "OperationalStatus": "28001",
+                "Type": "10029",
+                "SectorRole": "35003",
+                "ProviderSMS": "ASS",
+                "Authority": "STATE",
+                "Address": {
+                    "Physical": {
+                        "Type": "TH",
+                        "Line1": "43 Miro Drive",
+                        "City": "Murupara",
+                        "Country": "New Zealand",
+                        "PostalCode": "3062",
+                        "GridLocation": {
+                            "Latitude": -38.460994,
+                            "Longitude": 176.70927
+                        }
+                    }
+                },
+                "Email": {
+                    "Main": {
+                        "Address": "principal@8008.school.nz"
+                    }
+                },
+                "Phone": {
+                    "Main": {
+                        "Number": "06 555 2387"
+                    }
+                },
+                "TeRitoConfig": {
+                    "DataAnalysisDashboardsInd": "Y",
+                    "StandardisedLearningSupportRegisterInd": "Y",
+                    "VirtualLearningEnvironmentInd": "N"
+                },
+                "SchoolService": {
+                    "CoEdStatus": "COED",
+                    "Decile": 3,
+                    "AllowManualProvisioning": "N",
+                    "SchoolYearList": {
+                        "SchoolYear": [
+                            {
+                                "YearLevel": 7,
+                                "FIRSTSchoolYearGenderId": -800807,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 8,
+                                "FIRSTSchoolYearGenderId": -880808,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 9,
+                                "FIRSTSchoolYearGenderId": -800809,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 10,
+                                "FIRSTSchoolYearGenderId": -800810,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 11,
+                                "FIRSTSchoolYearGenderId": -800811,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 12,
+                                "FIRSTSchoolYearGenderId": -800812,
+                                "Gender": "55002"
+                            },
+                            {
+                                "YearLevel": 13,
+                                "FIRSTSchoolYearGenderId": -800813,
+                                "Gender": "55002"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

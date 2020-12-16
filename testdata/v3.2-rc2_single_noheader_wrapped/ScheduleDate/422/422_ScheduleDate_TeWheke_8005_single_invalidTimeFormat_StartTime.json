@@ -1,0 +1,43 @@
+{
+    "ScheduleDates": {
+        "ScheduleDate": [
+            {
+                "ScheduleDateLocalId": "8005_2020_001",
+                "CalendarDate": "2020-01-27T00:00:00+12:00",
+                "Organisation": {
+                    "RefId": "8005"
+                },
+                "Term": {
+                    "LocalId": "2020_8005_T1"
+                },
+                "Schedule": {
+                    "LocalId": "8005_Sched_2020"
+                },
+                "AcademicDay": {
+                    "LocalId": "8005_Normal"
+                },
+                "BellSchedule": {
+                    "LocalId": "8005_Regular"
+                },
+                "SchedulePeriodList": {
+                    "SchedulePeriodTime": [
+                        {
+                            "Period": {
+                                "LocalId": "8005_AM"
+                            },
+                            "StartTime": "2020-01-01T09:00:00",
+                            "EndTime": "12:00:00+12:00"
+                        },
+                        {
+                            "Period": {
+                                "LocalId": "8005_PM"
+                            },
+                            "StartTime": "2020-01-01T12:45:00",
+                            "EndTime": "15:00:00+12:00"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

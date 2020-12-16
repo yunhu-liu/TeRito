@@ -1,0 +1,30 @@
+{
+    "expects": "403",
+    "comment": "Valid payload for %s entity(ies) for %s data object. To be used to test for 403 responses.",
+    "testcase": {
+        "SchedulePeriods": {
+            "SchedulePeriod": [
+                {
+                    "SchedulePeriodLocalId": "8005_AM",
+                    "PeriodName": "Morning",
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "Schedule": {
+                        "LocalId": "8005_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8005_PM",
+                    "PeriodName": "Afternoon",
+                    "Organisation": {
+                        "RefId": "8005"
+                    },
+                    "Schedule": {
+                        "LocalId": "8005_Sched_2020"
+                    }
+                }
+            ]
+        }
+    }
+}

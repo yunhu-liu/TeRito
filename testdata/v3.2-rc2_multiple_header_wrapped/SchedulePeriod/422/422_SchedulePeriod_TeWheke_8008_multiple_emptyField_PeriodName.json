@@ -1,0 +1,70 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The PeriodName field is replaced with an empty string.",
+    "testcase": {
+        "SchedulePeriods": {
+            "SchedulePeriod": [
+                {
+                    "SchedulePeriodLocalId": "8008_HR",
+                    "PeriodName": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "Schedule": {
+                        "LocalId": "8008_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8008_P1",
+                    "PeriodName": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "Schedule": {
+                        "LocalId": "8008_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8008_P2",
+                    "PeriodName": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "Schedule": {
+                        "LocalId": "8008_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8008_P3",
+                    "PeriodName": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "Schedule": {
+                        "LocalId": "8008_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8008_P4",
+                    "PeriodName": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "Schedule": {
+                        "LocalId": "8008_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8008_P5",
+                    "PeriodName": "",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "Schedule": {
+                        "LocalId": "8008_Sched_2020"
+                    }
+                }
+            ]
+        }
+    }
+}

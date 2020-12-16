@@ -1,0 +1,30 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The PeriodName field is replaced with an empty string.",
+    "testcase": {
+        "SchedulePeriods": {
+            "SchedulePeriod": [
+                {
+                    "SchedulePeriodLocalId": "8006_AM",
+                    "PeriodName": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    }
+                },
+                {
+                    "SchedulePeriodLocalId": "8006_PM",
+                    "PeriodName": "",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "Schedule": {
+                        "LocalId": "8006_Sched_2020"
+                    }
+                }
+            ]
+        }
+    }
+}

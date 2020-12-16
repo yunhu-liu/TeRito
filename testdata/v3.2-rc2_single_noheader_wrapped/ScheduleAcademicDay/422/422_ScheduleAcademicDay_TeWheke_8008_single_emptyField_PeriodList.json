@@ -1,0 +1,20 @@
+{
+    "ScheduleAcademicDays": {
+        "ScheduleAcademicDay": [
+            {
+                "ScheduleAcademicDayLocalId": "8008_Day_A",
+                "AcademicDayName": "Day A",
+                "Organisation": {
+                    "RefId": "8008"
+                },
+                "Schedule": {
+                    "LocalId": "8008_Sched_2020"
+                },
+                "BellSchedule": {
+                    "LocalId": "8008_Regular"
+                },
+                "PeriodList": ""
+            }
+        ]
+    }
+}

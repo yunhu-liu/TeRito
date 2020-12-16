@@ -1,0 +1,79 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The ShortName field is replaced with an empty string.",
+    "testcase": {
+        "TeachingGroups": {
+            "TeachingGroup": [
+                {
+                    "TeachingGroupLocalId": "2020_8007_HR9",
+                    "ShortName": "",
+                    "LongName": "Homeroom Year 9",
+                    "GroupType": "RC",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8007_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            9
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8007_HR10",
+                    "ShortName": "",
+                    "LongName": "Homeroom Year 10",
+                    "GroupType": "RC",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8007_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            10
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8007_HR11",
+                    "ShortName": "",
+                    "LongName": "Homeroom Year 11",
+                    "GroupType": "RC",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8007_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            11
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8007_HR12_HR13",
+                    "ShortName": "",
+                    "LongName": "Homeroom Years 12 & 13",
+                    "GroupType": "RC",
+                    "Organisation": {
+                        "RefId": "8007"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8007_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            12,
+                            13
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

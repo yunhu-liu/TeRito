@@ -1,0 +1,14 @@
+{
+    "SchedulePeriods": {
+        "SchedulePeriod": [
+            {
+                "SchedulePeriodLocalId": "8005_AM",
+                "PeriodName": "Morning",
+                "Organisation": {
+                    "RefId": "8005"
+                },
+                "Schedule": ""
+            }
+        ]
+    }
+}

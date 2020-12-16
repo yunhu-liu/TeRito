@@ -1,0 +1,34 @@
+{
+    "StaffPersonals": {
+        "StaffPersonal": [
+            {
+                "StaffPersonalLocalId": "T98113",
+                "SchoolSMSUserId": "KodiS",
+                "PersonInfo": {
+                    "Name": {
+                        "Title": "Mr",
+                        "FamilyName": "Steadman",
+                        "GivenName": "Kodi",
+                        "MiddleName": "Jacob",
+                        "FullName": "Kodi Jacob Steadman"
+                    },
+                    "Demographics": {
+                        "BirthDate": "1968-09-18T00:00:00+12:00"
+                    },
+                    "Email": {
+                        "Work": {
+                            "SourceOrganisation": {
+                                "RefId": "90902"
+                            },
+                            "Address": "kodis@mailinator.com"
+                        }
+                    }
+                },
+                "StaffAssignment": {
+                    "StaffRole": "",
+                    "StartDate": "2006-03-13T00:00:00+12:00"
+                }
+            }
+        ]
+    }
+}

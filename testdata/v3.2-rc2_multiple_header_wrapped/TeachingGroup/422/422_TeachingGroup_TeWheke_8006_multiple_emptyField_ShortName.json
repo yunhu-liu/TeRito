@@ -1,0 +1,80 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The ShortName field is replaced with an empty string.",
+    "testcase": {
+        "TeachingGroups": {
+            "TeachingGroup": [
+                {
+                    "TeachingGroupLocalId": "2020_8006_JR",
+                    "ShortName": "",
+                    "LongName": "Room 1 - Year 1 & 2",
+                    "GroupType": "HR",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8006_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            1,
+                            2
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8006_HR3",
+                    "ShortName": "",
+                    "LongName": "Room 2 - Year 3",
+                    "GroupType": "HR",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8006_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            3
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8006_HR4_HR5",
+                    "ShortName": "",
+                    "LongName": "Room 3 - Year 4 & 5",
+                    "GroupType": "HR",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8006_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            4,
+                            5
+                        ]
+                    }
+                },
+                {
+                    "TeachingGroupLocalId": "2020_8006_HR6",
+                    "ShortName": "",
+                    "LongName": "Room 4 - Year 6",
+                    "GroupType": "HR",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "ScheduleTerm": {
+                        "LocalId": "2020_8006_Y"
+                    },
+                    "YearLevelList": {
+                        "YearLevel": [
+                            6
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

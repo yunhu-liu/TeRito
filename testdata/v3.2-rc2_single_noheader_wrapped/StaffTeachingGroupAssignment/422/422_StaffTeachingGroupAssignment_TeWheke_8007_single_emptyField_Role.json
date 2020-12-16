@@ -1,0 +1,20 @@
+{
+    "StaffTeachingGroupAssignments": {
+        "StaffTeachingGroupAssignment": [
+            {
+                "StaffTeachingGroupAssignmentLocalId": "2020_8007_HR9_T98064",
+                "StaffMember": {
+                    "LocalId": "T98064"
+                },
+                "Organisation": {
+                    "RefId": "8007"
+                },
+                "TeachingGroup": {
+                    "LocalId": "2020_8007_HR9"
+                },
+                "Role": "",
+                "StartDate": "2020-01-27T00:00:00+12:00"
+            }
+        ]
+    }
+}

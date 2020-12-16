@@ -1,0 +1,442 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The Name field is replaced with an empty string.",
+    "testcase": {
+        "StaffPersonals": {
+            "StaffPersonal": [
+                {
+                    "StaffPersonalLocalId": "T98061",
+                    "SchoolSMSUserId": "BKorban",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1976-01-14T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "korbanb@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98062",
+                    "SchoolSMSUserId": "MKyle",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1978-03-26T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "kylem@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98063",
+                    "SchoolSMSUserId": "BTyrese",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1978-09-01T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "tyreseb@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98064",
+                    "SchoolSMSUserId": "FMimi",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1981-10-09T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "mimif@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98065",
+                    "SchoolSMSUserId": "BClarence",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1983-01-14T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "clarenceb@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98066",
+                    "SchoolSMSUserId": "ASuleman",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1984-05-31T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "sulemana@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98067",
+                    "SchoolSMSUserId": "CGianluca",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1985-04-29T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "gianlucac@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98068",
+                    "SchoolSMSUserId": "DPaddy",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1986-09-28T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "paddyd@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98069",
+                    "SchoolSMSUserId": "DLeslie",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1989-09-14T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "leslied@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98070",
+                    "SchoolSMSUserId": "PAasiyah",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1991-04-30T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "aasiyahp@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98071",
+                    "SchoolSMSUserId": "GTianna",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1991-11-11T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "tiannag@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98072",
+                    "SchoolSMSUserId": "NOttilie",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1993-06-04T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "ottilien@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98073",
+                    "SchoolSMSUserId": "BMarius",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1993-06-15T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "mariusb@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98074",
+                    "SchoolSMSUserId": "MIqrah",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1994-08-06T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "iqrahm@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98075",
+                    "SchoolSMSUserId": "KRudra",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1995-02-26T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "rudrak@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98076",
+                    "SchoolSMSUserId": "MKatey",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1953-07-02T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "kateym@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98077",
+                    "SchoolSMSUserId": "DDane",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1959-04-18T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "daned@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98078",
+                    "SchoolSMSUserId": "LRoger",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1960-10-19T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "rogerl@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98079",
+                    "SchoolSMSUserId": "RTheresa",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1965-10-11T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "theresar@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98080",
+                    "SchoolSMSUserId": "DEmelie",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1967-08-24T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "emelied@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98081",
+                    "SchoolSMSUserId": "HJesse",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1967-12-10T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "jesseh@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98082",
+                    "SchoolSMSUserId": "KBernard",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1971-04-06T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "bernardk@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98083",
+                    "SchoolSMSUserId": "CKianna",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1971-06-19T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "kiannac@mailinator.com"
+                            }
+                        }
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98084",
+                    "SchoolSMSUserId": "CElizabeth",
+                    "PersonInfo": {
+                        "Name": "",
+                        "Demographics": {
+                            "BirthDate": "1972-03-23T00:00:00+12:00"
+                        },
+                        "Email": {
+                            "Work": {
+                                "SourceOrganisation": {
+                                    "RefId": "8007"
+                                },
+                                "Address": "elizabethc@mailinator.com"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

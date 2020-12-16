@@ -1,0 +1,82 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The PersonInfo field is replaced with an empty string.",
+    "testcase": {
+        "StaffPersonals": {
+            "StaffPersonal": [
+                {
+                    "StaffPersonalLocalId": "T98113",
+                    "SchoolSMSUserId": "KodiS",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2006-03-13T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98114",
+                    "SchoolSMSUserId": "MaeveC",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2007-06-18T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98115",
+                    "SchoolSMSUserId": "ElaH",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2007-08-20T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98116",
+                    "SchoolSMSUserId": "MelodyD",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2008-08-11T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98117",
+                    "SchoolSMSUserId": "MeganS",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2009-01-12T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98118",
+                    "SchoolSMSUserId": "KadeemT",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1205",
+                        "StartDate": "2010-01-25T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98119",
+                    "SchoolSMSUserId": "BartlomiejC",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1009",
+                        "StartDate": "2012-11-19T00:00:00+12:00"
+                    }
+                },
+                {
+                    "StaffPersonalLocalId": "T98120",
+                    "SchoolSMSUserId": "RhondaH",
+                    "PersonInfo": "",
+                    "StaffAssignment": {
+                        "StaffRole": "1001",
+                        "StartDate": "2013-02-11T00:00:00+12:00"
+                    }
+                }
+            ]
+        }
+    }
+}

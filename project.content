@@ -80,4 +80,9 @@ SMS-Release---6-End-points\Mandatory_Data_Missing_POST.xml
 SMS-Release---6-End-points\Copy-of-StudentPersonal-PostSingle.xml
 SMS-Release---6-End-points\StudentPersonal-StudentPersonalRefId.xml
 SIF-API-Mock-Server---Release-2\Setup.xml
-SIF-API-Mock-Server---Release-2\TeachingGroup.xml
+SIF-API-Mock-Server---Release-2\TeachingGroup-CreateSingle.xml
+SIF-API-Mock-Server---Release-2\TeachingGroup-CreateMulti.xml
+SIF-API-Mock-Server---Release-2\TeachingGroup-GetMultiple.xml
+SIF-API-Mock-Server---Release-2\TeachingGroup-UpdateMultiple.xml
+SIF-API-Mock-Server---Release-2\TeachingGroup-PatchMultiple.xml
+SIF-API-Mock-Server---Release-2\TestCase-1.xml

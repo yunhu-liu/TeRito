@@ -1,0 +1,33 @@
+{
+    "StaffPersonals": {
+        "StaffPersonal": [
+            {
+                "StaffPersonalLocalId": "T98123",
+                "SchoolSMSUserId": "MConrad",
+                "PersonInfo": {
+                    "Name": {
+                        "Title": "Ms.",
+                        "FamilyName": "Milne",
+                        "GivenName": "Conrad",
+                        "MiddleName": "P",
+                        "FullName": "Conrad P Milne"
+                    },
+                    "Demographics": {
+                        "BirthDate": "1988-06-30T00:00:00+12:00"
+                    },
+                    "Email": {
+                        "Work": {
+                            "SourceOrganisation": {
+                                "RefId": "90903"
+                            },
+                            "Address": "conradm@mailinator.com"
+                        }
+                    }
+                },
+                "StaffAssignment": {
+                    "StartDate": "2017-07-03T00:00:00+12:00"
+                }
+            }
+        ]
+    }
+}

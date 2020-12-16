@@ -1,0 +1,272 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The StartDate field is removed.",
+    "testcase": {
+        "StaffAssignments": {
+            "StaffAssignment": [
+                {
+                    "StaffAssignmentLocalId": "2020_T98035_8006",
+                    "StaffMember": {
+                        "LocalId": "T98035"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98036_8006",
+                    "StaffMember": {
+                        "LocalId": "T98036"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98037_8006",
+                    "StaffMember": {
+                        "LocalId": "T98037"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98038_8006",
+                    "StaffMember": {
+                        "LocalId": "T98038"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "EmployingOrAccommodatingProvider": "Y",
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98039_8006",
+                    "StaffMember": {
+                        "LocalId": "T98039"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98040_8006",
+                    "StaffMember": {
+                        "LocalId": "T98040"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98041_8006",
+                    "StaffMember": {
+                        "LocalId": "T98041"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98042_8006",
+                    "StaffMember": {
+                        "LocalId": "T98042"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98043_8006",
+                    "StaffMember": {
+                        "LocalId": "T98043"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98044_8006",
+                    "StaffMember": {
+                        "LocalId": "T98044"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "EmployingOrAccommodatingProvider": "Y",
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98045_8006",
+                    "StaffMember": {
+                        "LocalId": "T98045"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98046_8006",
+                    "StaffMember": {
+                        "LocalId": "T98046"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98047_8006",
+                    "StaffMember": {
+                        "LocalId": "T98047"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98048_8006",
+                    "StaffMember": {
+                        "LocalId": "T98048"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98049_8006",
+                    "StaffMember": {
+                        "LocalId": "T98049"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98050_8006",
+                    "StaffMember": {
+                        "LocalId": "T98050"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98051_8006",
+                    "StaffMember": {
+                        "LocalId": "T98051"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98052_8006",
+                    "StaffMember": {
+                        "LocalId": "T98052"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98053_8006",
+                    "StaffMember": {
+                        "LocalId": "T98053"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98054_8006",
+                    "StaffMember": {
+                        "LocalId": "T98054"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98055_8006",
+                    "StaffMember": {
+                        "LocalId": "T98055"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98056_8006",
+                    "StaffMember": {
+                        "LocalId": "T98056"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98057_8006",
+                    "StaffMember": {
+                        "LocalId": "T98057"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1205"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98058_8006",
+                    "StaffMember": {
+                        "LocalId": "T98058"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1009"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98059_8006",
+                    "StaffMember": {
+                        "LocalId": "T98059"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1002"
+                },
+                {
+                    "StaffAssignmentLocalId": "2020_T98060_8006",
+                    "StaffMember": {
+                        "LocalId": "T98060"
+                    },
+                    "AssignedLocation": {
+                        "RefId": "8006"
+                    },
+                    "StaffRole": "1001"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The HolidayDate field is replaced with an empty string.",
+    "testcase": {
+        "ScheduleHolidays": {
+            "ScheduleHoliday": [
+                {
+                    "ScheduleHolidayLocalId": "8006-2020-Waitangi",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "HolidayDate": "",
+                    "HolidayName": "Waitangi Day",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8006-2020-Gfri",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "HolidayDate": "",
+                    "HolidayName": "Good Friday",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8006-2020-Emon",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "HolidayDate": "",
+                    "HolidayName": "Easter Monday",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8006-2020-ANZAC",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "HolidayDate": "",
+                    "HolidayName": "ANZAC Day",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8006-2020-Qbdy",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "HolidayDate": "",
+                    "HolidayName": "Queen's Birthday",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8006-2020-Lbdy",
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "HolidayDate": "",
+                    "HolidayName": "Labour Day",
+                    "AlwaysDisplayFlag": "Y"
+                }
+            ]
+        }
+    }
+}

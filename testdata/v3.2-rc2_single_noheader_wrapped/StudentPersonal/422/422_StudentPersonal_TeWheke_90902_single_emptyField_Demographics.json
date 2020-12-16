@@ -1,0 +1,41 @@
+{
+    "StudentPersonals": {
+        "StudentPersonal": [
+            {
+                "StudentPersonalLocalId": "ST2000274",
+                "NationalStudentNumber": 9902000274,
+                "PersonInfo": {
+                    "Name": {
+                        "FamilyName": "Lenihan",
+                        "GivenName": "Blake",
+                        "FullName": "Blake Lenihan"
+                    },
+                    "Demographics": "",
+                    "Address": {
+                        "Physical": {
+                            "Type": "TH",
+                            "Line1": "34 Maungatapu Road",
+                            "Suburb": "Maungatapu",
+                            "City": "Tauranga",
+                            "Country": "New Zealand",
+                            "PostalCode": "3112"
+                        }
+                    },
+                    "Email": {
+                        "Personal": {
+                            "SourceOrganisation": {
+                                "RefId": "90902"
+                            },
+                            "Address": "BLenihan@mailinator.com"
+                        }
+                    },
+                    "Phone": {
+                        "Home": {
+                            "Number": "+64 7-728 4892"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

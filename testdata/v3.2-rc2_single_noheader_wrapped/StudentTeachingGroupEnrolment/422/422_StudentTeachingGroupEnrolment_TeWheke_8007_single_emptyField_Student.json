@@ -1,0 +1,17 @@
+{
+    "StudentTeachingGroupEnrolments": {
+        "StudentTeachingGroupEnrolment": [
+            {
+                "StudentTeachingGroupEnrolmentLocalId": "2020_8007_HR12_HR13_ST7000005",
+                "Student": "",
+                "Organisation": {
+                    "RefId": "8007"
+                },
+                "TeachingGroup": {
+                    "LocalId": "2020_8007_HR12_HR13"
+                },
+                "StartDate": "2020-08-01T00:00:00+12:00"
+            }
+        ]
+    }
+}

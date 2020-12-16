@@ -1,0 +1,24 @@
+{
+    "StaffPersonals": {
+        "StaffPersonal": [
+            {
+                "StaffPersonalLocalId": "T98123",
+                "SchoolSMSUserId": "MConrad",
+                "PersonInfo": {
+                    "Name": "",
+                    "Demographics": {
+                        "BirthDate": "1988-06-30T00:00:00+12:00"
+                    },
+                    "Email": {
+                        "Work": {
+                            "SourceOrganisation": {
+                                "RefId": "90903"
+                            },
+                            "Address": "conradm@mailinator.com"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

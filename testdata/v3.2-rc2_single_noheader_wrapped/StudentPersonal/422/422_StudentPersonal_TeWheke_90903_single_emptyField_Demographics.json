@@ -1,0 +1,41 @@
+{
+    "StudentPersonals": {
+        "StudentPersonal": [
+            {
+                "StudentPersonalLocalId": "ST3000003",
+                "NationalStudentNumber": 9903000003,
+                "PersonInfo": {
+                    "Name": {
+                        "FamilyName": "Hewitt",
+                        "GivenName": "Aaron",
+                        "FullName": "Aaron Hewitt"
+                    },
+                    "Demographics": "",
+                    "Address": {
+                        "Physical": {
+                            "Type": "TH",
+                            "Line1": "67 Carribean Place",
+                            "Suburb": "Papamoa Beach",
+                            "City": "Tauranga",
+                            "Country": "New Zealand",
+                            "PostalCode": "3118"
+                        }
+                    },
+                    "Email": {
+                        "Personal": {
+                            "SourceOrganisation": {
+                                "RefId": "90903"
+                            },
+                            "Address": "AHewitt@mailinator.com"
+                        }
+                    },
+                    "Phone": {
+                        "Home": {
+                            "Number": "+64 7-848 7222"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

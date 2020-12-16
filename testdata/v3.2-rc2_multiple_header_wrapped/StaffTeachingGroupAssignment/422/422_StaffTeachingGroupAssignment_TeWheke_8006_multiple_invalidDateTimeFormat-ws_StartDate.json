@@ -1,0 +1,94 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). The date time format for StartDate is incorrect.White space missing.",
+    "testcase": {
+        "StaffTeachingGroupAssignments": {
+            "StaffTeachingGroupAssignment": [
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8006_JR_T98042",
+                    "StaffMember": {
+                        "LocalId": "T98042"
+                    },
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27 00:00:00+1200+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8006_JR_T98043",
+                    "StaffMember": {
+                        "LocalId": "T98043"
+                    },
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_JR"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27 00:00:00+1200+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8006_HR3_T98044",
+                    "StaffMember": {
+                        "LocalId": "T98044"
+                    },
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR3"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27 00:00:00+1200+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8006_HR4_HR5_T98045",
+                    "StaffMember": {
+                        "LocalId": "T98045"
+                    },
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27 00:00:00+1200+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8006_HR4_HR5_T98046",
+                    "StaffMember": {
+                        "LocalId": "T98046"
+                    },
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR4_HR5"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27 00:00:00+1200+12:00"
+                },
+                {
+                    "StaffTeachingGroupAssignmentLocalId": "2020_8006_HR6_T98047",
+                    "StaffMember": {
+                        "LocalId": "T98047"
+                    },
+                    "Organisation": {
+                        "RefId": "8006"
+                    },
+                    "TeachingGroup": {
+                        "LocalId": "2020_8006_HR6"
+                    },
+                    "Role": "1205",
+                    "StartDate": "2020-01-27 00:00:00+1200+12:00"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "expects": "403",
+    "comment": "Valid payload for %s entity(ies) for %s data object. To be used to test for 403 responses.",
+    "testcase": {
+        "ScheduleHolidays": {
+            "ScheduleHoliday": [
+                {
+                    "ScheduleHolidayLocalId": "8008-2020-Waitangi",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "HolidayDate": "2020-02-06T00:00:00+12:00",
+                    "HolidayName": "Waitangi Day",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8008-2020-Gfri",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "HolidayDate": "2020-04-10T00:00:00+12:00",
+                    "HolidayName": "Good Friday",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8008-2020-Emon",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "HolidayDate": "2020-04-13T00:00:00+12:00",
+                    "HolidayName": "Easter Monday",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8008-2020-ANZAC",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "HolidayDate": "2020-04-25T00:00:00+12:00",
+                    "HolidayName": "ANZAC Day",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8008-2020-Qbdy",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "HolidayDate": "2020-06-01T00:00:00+12:00",
+                    "HolidayName": "Queen's Birthday",
+                    "AlwaysDisplayFlag": "Y"
+                },
+                {
+                    "ScheduleHolidayLocalId": "8008-2020-Lbdy",
+                    "Organisation": {
+                        "RefId": "8008"
+                    },
+                    "HolidayDate": "2020-10-26T00:00:00+12:00",
+                    "HolidayName": "Labour Day",
+                    "AlwaysDisplayFlag": "Y"
+                }
+            ]
+        }
+    }
+}

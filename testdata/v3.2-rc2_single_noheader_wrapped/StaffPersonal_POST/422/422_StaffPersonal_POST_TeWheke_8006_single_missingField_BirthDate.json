@@ -1,0 +1,32 @@
+{
+    "StaffPersonals": {
+        "StaffPersonal": [
+            {
+                "StaffPersonalLocalId": "T98035",
+                "SchoolSMSUserId": "LilyH",
+                "PersonInfo": {
+                    "Name": {
+                        "Title": "Mr",
+                        "FamilyName": "Higgins",
+                        "GivenName": "Lily",
+                        "MiddleName": "OH",
+                        "FullName": "Lily OH Higgins"
+                    },
+                    "Demographics": {},
+                    "Email": {
+                        "Work": {
+                            "SourceOrganisation": {
+                                "RefId": "8006"
+                            },
+                            "Address": "lilyh@mailinator.com"
+                        }
+                    }
+                },
+                "StaffAssignment": {
+                    "StaffRole": "1205",
+                    "StartDate": "2005-09-26T00:00:00+12:00"
+                }
+            }
+        ]
+    }
+}

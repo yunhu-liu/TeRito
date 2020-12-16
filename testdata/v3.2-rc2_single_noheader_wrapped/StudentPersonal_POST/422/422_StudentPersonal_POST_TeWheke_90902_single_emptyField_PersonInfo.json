@@ -1,0 +1,17 @@
+{
+    "StudentPersonals": {
+        "StudentPersonal": [
+            {
+                "StudentPersonalLocalId": "ST2000274",
+                "NationalStudentNumber": 9902000274,
+                "PersonInfo": "",
+                "StudentProviderEnrolment": {
+                    "EntryDate": "2017-01-30T00:00:00+12:00",
+                    "ECEEnrolment": {
+                        "ECEYearLevel": "FOU"
+                    }
+                }
+            }
+        ]
+    }
+}

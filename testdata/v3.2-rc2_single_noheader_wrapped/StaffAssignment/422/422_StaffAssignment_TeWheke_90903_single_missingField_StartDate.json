@@ -1,0 +1,16 @@
+{
+    "StaffAssignments": {
+        "StaffAssignment": [
+            {
+                "StaffAssignmentLocalId": "2020_T98121_90903",
+                "StaffMember": {
+                    "LocalId": "T98121"
+                },
+                "AssignedLocation": {
+                    "RefId": "90903"
+                },
+                "StaffRole": "1205"
+            }
+        ]
+    }
+}

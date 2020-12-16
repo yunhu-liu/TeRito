@@ -1,0 +1,24 @@
+{
+    "StaffPersonals": {
+        "StaffPersonal": [
+            {
+                "StaffPersonalLocalId": "T98061",
+                "SchoolSMSUserId": "BKorban",
+                "PersonInfo": {
+                    "Name": "",
+                    "Demographics": {
+                        "BirthDate": "1976-01-14T00:00:00+12:00"
+                    },
+                    "Email": {
+                        "Work": {
+                            "SourceOrganisation": {
+                                "RefId": "8007"
+                            },
+                            "Address": "korbanb@mailinator.com"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

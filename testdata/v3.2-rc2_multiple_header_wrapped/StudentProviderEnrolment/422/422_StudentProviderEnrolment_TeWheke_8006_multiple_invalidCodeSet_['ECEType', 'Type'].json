@@ -1,0 +1,2914 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). An invalid option for ['ECEType', 'Type'] codeset is provided.",
+    "testcase": {
+        "StudentProviderEnrolments": {
+            "StudentProviderEnrolment": [
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000008",
+                    "Student": {
+                        "LocalId": "ST6000008",
+                        "NationalStudentNumber": 9006000008
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000008",
+                    "EntryDate": "2015-03-31T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000010",
+                    "Student": {
+                        "LocalId": "ST6000010",
+                        "NationalStudentNumber": 9006000010
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000010",
+                    "EntryDate": "2015-05-16T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000023",
+                    "Student": {
+                        "LocalId": "ST6000023",
+                        "NationalStudentNumber": 9006000023
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000023",
+                    "EntryDate": "2015-08-12T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "SF",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000036",
+                    "Student": {
+                        "LocalId": "ST6000036",
+                        "NationalStudentNumber": 9006000036
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000036",
+                    "EntryDate": "2016-08-24T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 5,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 5,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000049",
+                    "Student": {
+                        "LocalId": "ST6000049",
+                        "NationalStudentNumber": 9006000049
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000049",
+                    "EntryDate": "2016-11-04T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 5,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 5,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000051",
+                    "Student": {
+                        "LocalId": "ST6000051",
+                        "NationalStudentNumber": 9006000051
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000051",
+                    "EntryDate": "2017-01-07T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 4,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 4,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000064",
+                    "Student": {
+                        "LocalId": "ST6000064",
+                        "NationalStudentNumber": 9006000064
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000064",
+                    "EntryDate": "2017-03-09T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 4,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 4,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000077",
+                    "Student": {
+                        "LocalId": "ST6000077",
+                        "NationalStudentNumber": 9006000077
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000077",
+                    "EntryDate": "2017-03-12T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 4,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 4,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6100085",
+                    "Student": {
+                        "LocalId": "ST6100085",
+                        "NationalStudentNumber": 9006100085
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6100085",
+                    "EntryDate": "2017-03-15T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 4,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 4,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000092",
+                    "Student": {
+                        "LocalId": "ST6000092",
+                        "NationalStudentNumber": 9006000092
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000092",
+                    "EntryDate": "2017-12-06T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 4,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 4,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000102",
+                    "Student": {
+                        "LocalId": "ST6000102",
+                        "NationalStudentNumber": 9006000102
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000102",
+                    "EntryDate": "2018-02-24T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000115",
+                    "Student": {
+                        "LocalId": "ST6000115",
+                        "NationalStudentNumber": 9006000115
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000115",
+                    "EntryDate": "2018-03-08T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000128",
+                    "Student": {
+                        "LocalId": "ST6000128",
+                        "NationalStudentNumber": 9006000128
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000128",
+                    "EntryDate": "2018-04-15T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000130",
+                    "Student": {
+                        "LocalId": "ST6000130",
+                        "NationalStudentNumber": 9006000130
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000130",
+                    "EntryDate": "2018-05-04T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000143",
+                    "Student": {
+                        "LocalId": "ST6000143",
+                        "NationalStudentNumber": 9006000143
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000143",
+                    "EntryDate": "2018-05-16T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "NA",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000156",
+                    "Student": {
+                        "LocalId": "ST6000156",
+                        "NationalStudentNumber": 9006000156
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000156",
+                    "EntryDate": "2018-12-05T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000169",
+                    "Student": {
+                        "LocalId": "ST6000169",
+                        "NationalStudentNumber": 9006000169
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000169",
+                    "EntryDate": "2019-04-18T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "SF",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000171",
+                    "Student": {
+                        "LocalId": "ST6000171",
+                        "NationalStudentNumber": 9006000171
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000171",
+                    "EntryDate": "2019-08-09T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000184",
+                    "Student": {
+                        "LocalId": "ST6000184",
+                        "NationalStudentNumber": 9006000184
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000184",
+                    "EntryDate": "2019-08-13T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000197",
+                    "Student": {
+                        "LocalId": "ST6000197",
+                        "NationalStudentNumber": 9006000197
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000197",
+                    "EntryDate": "2019-11-08T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000207",
+                    "Student": {
+                        "LocalId": "ST6000207",
+                        "NationalStudentNumber": 9006000207
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000207",
+                    "EntryDate": "2020-01-20T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6100215",
+                    "Student": {
+                        "LocalId": "ST6100215",
+                        "NationalStudentNumber": 9006100215
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6100215",
+                    "EntryDate": "2020-04-04T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000222",
+                    "Student": {
+                        "LocalId": "ST6000222",
+                        "NationalStudentNumber": 9006000222
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000222",
+                    "EntryDate": "2020-06-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000235",
+                    "Student": {
+                        "LocalId": "ST6000235",
+                        "NationalStudentNumber": 9006000235
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000235",
+                    "EntryDate": "2020-08-10T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "SA",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000248",
+                    "Student": {
+                        "LocalId": "ST6000248",
+                        "NationalStudentNumber": 9006000248
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000248",
+                    "EntryDate": "2020-10-09T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000250",
+                    "Student": {
+                        "LocalId": "ST6000250",
+                        "NationalStudentNumber": 9006000250
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000250",
+                    "EntryDate": "2015-05-21T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000263",
+                    "Student": {
+                        "LocalId": "ST6000263",
+                        "NationalStudentNumber": 9006000263
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000263",
+                    "EntryDate": "2015-06-02T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000276",
+                    "Student": {
+                        "LocalId": "ST6000276",
+                        "NationalStudentNumber": 9006000276
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000276",
+                    "EntryDate": "2015-08-05T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "NA",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000289",
+                    "Student": {
+                        "LocalId": "ST6000289",
+                        "NationalStudentNumber": 9006000289
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000289",
+                    "EntryDate": "2015-10-06T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000291",
+                    "Student": {
+                        "LocalId": "ST6000291",
+                        "NationalStudentNumber": 9006000291
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000291",
+                    "EntryDate": "2016-01-09T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 5,
+                                "FTE": 1,
+                                "FundingType": "SF",
+                                "FundingYearLevel": 5,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000301",
+                    "Student": {
+                        "LocalId": "ST6000301",
+                        "NationalStudentNumber": 9006000301
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000301",
+                    "EntryDate": "2016-05-21T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 5,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 5,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000314",
+                    "Student": {
+                        "LocalId": "ST6000314",
+                        "NationalStudentNumber": 9006000314
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000314",
+                    "EntryDate": "2016-09-23T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 5,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 5,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000327",
+                    "Student": {
+                        "LocalId": "ST6000327",
+                        "NationalStudentNumber": 9006000327
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000327",
+                    "EntryDate": "2016-10-25T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 5,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 5,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6100335",
+                    "Student": {
+                        "LocalId": "ST6100335",
+                        "NationalStudentNumber": 9006100335
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6100335",
+                    "EntryDate": "2016-11-29T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 5,
+                                "FTE": 1,
+                                "FundingType": "NA",
+                                "FundingYearLevel": 5,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000342",
+                    "Student": {
+                        "LocalId": "ST6000342",
+                        "NationalStudentNumber": 9006000342
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000342",
+                    "EntryDate": "2017-01-14T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 4,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 4,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000355",
+                    "Student": {
+                        "LocalId": "ST6000355",
+                        "NationalStudentNumber": 9006000355
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000355",
+                    "EntryDate": "2017-03-17T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 4,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 4,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000368",
+                    "Student": {
+                        "LocalId": "ST6000368",
+                        "NationalStudentNumber": 9006000368
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000368",
+                    "EntryDate": "2017-07-29T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 4,
+                                "FTE": 1,
+                                "FundingType": "SF",
+                                "FundingYearLevel": 4,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000370",
+                    "Student": {
+                        "LocalId": "ST6000370",
+                        "NationalStudentNumber": 9006000370
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000370",
+                    "EntryDate": "2017-11-04T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 4,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 4,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000383",
+                    "Student": {
+                        "LocalId": "ST6000383",
+                        "NationalStudentNumber": 9006000383
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000383",
+                    "EntryDate": "2018-08-05T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000396",
+                    "Student": {
+                        "LocalId": "ST6000396",
+                        "NationalStudentNumber": 9006000396
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000396",
+                    "EntryDate": "2018-09-23T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000406",
+                    "Student": {
+                        "LocalId": "ST6000406",
+                        "NationalStudentNumber": 9006000406
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000406",
+                    "EntryDate": "2018-12-10T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000419",
+                    "Student": {
+                        "LocalId": "ST6000419",
+                        "NationalStudentNumber": 9006000419
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000419",
+                    "EntryDate": "2019-02-12T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000421",
+                    "Student": {
+                        "LocalId": "ST6000421",
+                        "NationalStudentNumber": 9006000421
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000421",
+                    "EntryDate": "2019-03-16T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000434",
+                    "Student": {
+                        "LocalId": "ST6000434",
+                        "NationalStudentNumber": 9006000434
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000434",
+                    "EntryDate": "2019-05-01T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000447",
+                    "Student": {
+                        "LocalId": "ST6000447",
+                        "NationalStudentNumber": 9006000447
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000447",
+                    "EntryDate": "2019-06-21T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "NA",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6100455",
+                    "Student": {
+                        "LocalId": "ST6100455",
+                        "NationalStudentNumber": 9006100455
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6100455",
+                    "EntryDate": "2019-12-18T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000462",
+                    "Student": {
+                        "LocalId": "ST6000462",
+                        "NationalStudentNumber": 9006000462
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000462",
+                    "EntryDate": "2019-12-20T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000475",
+                    "Student": {
+                        "LocalId": "ST6000475",
+                        "NationalStudentNumber": 9006000475
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000475",
+                    "EntryDate": "2020-05-17T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000488",
+                    "Student": {
+                        "LocalId": "ST6000488",
+                        "NationalStudentNumber": 9006000488
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000488",
+                    "EntryDate": "2020-05-26T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000490",
+                    "Student": {
+                        "LocalId": "ST6000490",
+                        "NationalStudentNumber": 9006000490
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000490",
+                    "EntryDate": "2020-08-03T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000500",
+                    "Student": {
+                        "LocalId": "ST6000500",
+                        "NationalStudentNumber": 9006000500
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000500",
+                    "EntryDate": "2015-01-06T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000513",
+                    "Student": {
+                        "LocalId": "ST6000513",
+                        "NationalStudentNumber": 9006000513
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000513",
+                    "EntryDate": "2015-02-07T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000526",
+                    "Student": {
+                        "LocalId": "ST6000526",
+                        "NationalStudentNumber": 9006000526
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000526",
+                    "EntryDate": "2015-03-31T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "NA",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000539",
+                    "Student": {
+                        "LocalId": "ST6000539",
+                        "NationalStudentNumber": 9006000539
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000539",
+                    "EntryDate": "2015-05-02T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000541",
+                    "Student": {
+                        "LocalId": "ST6000541",
+                        "NationalStudentNumber": 9006000541
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000541",
+                    "EntryDate": "2015-05-27T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000554",
+                    "Student": {
+                        "LocalId": "ST6000554",
+                        "NationalStudentNumber": 9006000554
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000554",
+                    "EntryDate": "2015-06-03T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000567",
+                    "Student": {
+                        "LocalId": "ST6000567",
+                        "NationalStudentNumber": 9006000567
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000567",
+                    "EntryDate": "2015-11-18T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 6,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 6,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6100575",
+                    "Student": {
+                        "LocalId": "ST6100575",
+                        "NationalStudentNumber": 9006100575
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6100575",
+                    "EntryDate": "2016-02-15T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 5,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 5,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000582",
+                    "Student": {
+                        "LocalId": "ST6000582",
+                        "NationalStudentNumber": 9006000582
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000582",
+                    "EntryDate": "2016-04-17T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 5,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 5,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000595",
+                    "Student": {
+                        "LocalId": "ST6000595",
+                        "NationalStudentNumber": 9006000595
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000595",
+                    "EntryDate": "2016-06-22T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 5,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 5,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000605",
+                    "Student": {
+                        "LocalId": "ST6000605",
+                        "NationalStudentNumber": 9006000605
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000605",
+                    "EntryDate": "2018-02-09T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000618",
+                    "Student": {
+                        "LocalId": "ST6000618",
+                        "NationalStudentNumber": 9006000618
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000618",
+                    "EntryDate": "2018-03-01T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000620",
+                    "Student": {
+                        "LocalId": "ST6000620",
+                        "NationalStudentNumber": 9006000620
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000620",
+                    "EntryDate": "2018-05-17T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000633",
+                    "Student": {
+                        "LocalId": "ST6000633",
+                        "NationalStudentNumber": 9006000633
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000633",
+                    "EntryDate": "2018-10-26T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000646",
+                    "Student": {
+                        "LocalId": "ST6000646",
+                        "NationalStudentNumber": 9006000646
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000646",
+                    "EntryDate": "2019-01-07T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000659",
+                    "Student": {
+                        "LocalId": "ST6000659",
+                        "NationalStudentNumber": 9006000659
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000659",
+                    "EntryDate": "2019-03-27T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000661",
+                    "Student": {
+                        "LocalId": "ST6000661",
+                        "NationalStudentNumber": 9006000661
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000661",
+                    "EntryDate": "2019-04-09T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000674",
+                    "Student": {
+                        "LocalId": "ST6000674",
+                        "NationalStudentNumber": 9006000674
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000674",
+                    "EntryDate": "2019-10-14T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "NA",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000687",
+                    "Student": {
+                        "LocalId": "ST6000687",
+                        "NationalStudentNumber": 9006000687
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000687",
+                    "EntryDate": "2019-10-16T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6100695",
+                    "Student": {
+                        "LocalId": "ST6100695",
+                        "NationalStudentNumber": 9006100695
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6100695",
+                    "EntryDate": "2019-12-22T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "SF",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6100705",
+                    "Student": {
+                        "LocalId": "ST6100705",
+                        "NationalStudentNumber": 9006100705
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6100705",
+                    "EntryDate": "2020-06-08T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000712",
+                    "Student": {
+                        "LocalId": "ST6000712",
+                        "NationalStudentNumber": 9006000712
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000712",
+                    "EntryDate": "2020-07-02T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000725",
+                    "Student": {
+                        "LocalId": "ST6000725",
+                        "NationalStudentNumber": 9006000725
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000725",
+                    "EntryDate": "2020-07-31T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000738",
+                    "Student": {
+                        "LocalId": "ST6000738",
+                        "NationalStudentNumber": 9006000738
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000738",
+                    "EntryDate": "2020-11-18T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000740",
+                    "Student": {
+                        "LocalId": "ST6000740",
+                        "NationalStudentNumber": 9006000740
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000740",
+                    "EntryDate": "2020-12-13T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000753",
+                    "Student": {
+                        "LocalId": "ST6000753",
+                        "NationalStudentNumber": 9006000753
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000753",
+                    "EntryDate": "2017-10-25T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 4,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 4,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000766",
+                    "Student": {
+                        "LocalId": "ST6000766",
+                        "NationalStudentNumber": 9006000766
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000766",
+                    "EntryDate": "2017-11-02T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 4,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 4,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000779",
+                    "Student": {
+                        "LocalId": "ST6000779",
+                        "NationalStudentNumber": 9006000779
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000779",
+                    "EntryDate": "2018-03-18T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000781",
+                    "Student": {
+                        "LocalId": "ST6000781",
+                        "NationalStudentNumber": 9006000781
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000781",
+                    "EntryDate": "2018-08-15T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 3,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 3,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000794",
+                    "Student": {
+                        "LocalId": "ST6000794",
+                        "NationalStudentNumber": 9006000794
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000794",
+                    "EntryDate": "2019-02-07T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000804",
+                    "Student": {
+                        "LocalId": "ST6000804",
+                        "NationalStudentNumber": 9006000804
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000804",
+                    "EntryDate": "2019-02-19T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000817",
+                    "Student": {
+                        "LocalId": "ST6000817",
+                        "NationalStudentNumber": 9006000817
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000817",
+                    "EntryDate": "2019-03-31T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "SF",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6100825",
+                    "Student": {
+                        "LocalId": "ST6100825",
+                        "NationalStudentNumber": 9006100825
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6100825",
+                    "EntryDate": "2019-06-30T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "NA",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000832",
+                    "Student": {
+                        "LocalId": "ST6000832",
+                        "NationalStudentNumber": 9006000832
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000832",
+                    "EntryDate": "2019-09-07T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000845",
+                    "Student": {
+                        "LocalId": "ST6000845",
+                        "NationalStudentNumber": 9006000845
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000845",
+                    "EntryDate": "2019-12-26T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 2,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 2,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000858",
+                    "Student": {
+                        "LocalId": "ST6000858",
+                        "NationalStudentNumber": 9006000858
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000858",
+                    "EntryDate": "2020-04-23T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000860",
+                    "Student": {
+                        "LocalId": "ST6000860",
+                        "NationalStudentNumber": 9006000860
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000860",
+                    "EntryDate": "2020-07-05T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "StudentProviderEnrolmentLocalId": "2020_8006_ST6000873",
+                    "Student": {
+                        "LocalId": "ST6000873",
+                        "NationalStudentNumber": 9006000873
+                    },
+                    "Provider": {
+                        "RefId": "8006"
+                    },
+                    "StudentId": "ST6000873",
+                    "EntryDate": "2020-07-07T00:00:00+12:00",
+                    "ECEEducationHistoryList": {
+                        "ECEType": [
+                            {
+                                "Type": "Andy is GREAT!"
+                            }
+                        ]
+                    },
+                    "SchoolEnrolmentList": {
+                        "SchoolEnrolment": [
+                            {
+                                "SchoolCalendarYear": 2020,
+                                "StartDate": "2020-01-27T00:00:00+12:00",
+                                "MembershipType": "BASE",
+                                "YearLevel": 1,
+                                "FTE": 1,
+                                "FundingType": "RE",
+                                "FundingYearLevel": 1,
+                                "Curriculum": "NZC"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

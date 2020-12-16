@@ -1,0 +1,100 @@
+{
+    "expects": "422",
+    "comment": "Invalid payload for a single entity(ies). An invalid option for ['Status'] codeset is provided.",
+    "testcase": {
+        "OrganisationRelationships": {
+            "OrganisationRelationship": [
+                {
+                    "OrganisationRelationshipLocalId": "90101_8005",
+                    "Status": "Andy is GREAT!",
+                    "RelationshipType": "34028",
+                    "SourceOrganisation": {
+                        "RefId": "90101"
+                    },
+                    "SourceOrganisationRole": "LSC",
+                    "RelatedOrganisation": {
+                        "RefId": "8005"
+                    },
+                    "RelatedOrganisationRole": "184000",
+                    "RelatedOrganisationAgreementDate": "2020-01-15T00:00:00+12:00",
+                    "EffectiveDate": "2020-01-15T00:00:00+12:00"
+                },
+                {
+                    "OrganisationRelationshipLocalId": "90101_8006",
+                    "Status": "Andy is GREAT!",
+                    "RelationshipType": "34028",
+                    "SourceOrganisation": {
+                        "RefId": "90101"
+                    },
+                    "SourceOrganisationRole": "LSC",
+                    "RelatedOrganisation": {
+                        "RefId": "8006"
+                    },
+                    "RelatedOrganisationRole": "184000",
+                    "RelatedOrganisationAgreementDate": "2020-01-16T00:00:00+12:00",
+                    "EffectiveDate": "2020-01-16T00:00:00+12:00"
+                },
+                {
+                    "OrganisationRelationshipLocalId": "90101_8007",
+                    "Status": "Andy is GREAT!",
+                    "RelationshipType": "34028",
+                    "SourceOrganisation": {
+                        "RefId": "90101"
+                    },
+                    "SourceOrganisationRole": "LSC",
+                    "RelatedOrganisation": {
+                        "RefId": "8007"
+                    },
+                    "RelatedOrganisationRole": "184000",
+                    "RelatedOrganisationAgreementDate": "2020-01-17T00:00:00+12:00",
+                    "EffectiveDate": "2020-01-17T00:00:00+12:00"
+                },
+                {
+                    "OrganisationRelationshipLocalId": "90101_8008",
+                    "Status": "Andy is GREAT!",
+                    "RelationshipType": "34028",
+                    "SourceOrganisation": {
+                        "RefId": "90101"
+                    },
+                    "SourceOrganisationRole": "LSC",
+                    "RelatedOrganisation": {
+                        "RefId": "8008"
+                    },
+                    "RelatedOrganisationRole": "184000",
+                    "RelatedOrganisationAgreementDate": "2020-01-18T00:00:00+12:00",
+                    "EffectiveDate": "2020-01-18T00:00:00+12:00"
+                },
+                {
+                    "OrganisationRelationshipLocalId": "90101_90902",
+                    "Status": "Andy is GREAT!",
+                    "RelationshipType": "34028",
+                    "SourceOrganisation": {
+                        "RefId": "90101"
+                    },
+                    "SourceOrganisationRole": "LSC",
+                    "RelatedOrganisation": {
+                        "RefId": "90902"
+                    },
+                    "RelatedOrganisationRole": "184000",
+                    "RelatedOrganisationAgreementDate": "2020-02-15T00:00:00+12:00",
+                    "EffectiveDate": "2020-02-15T00:00:00+12:00"
+                },
+                {
+                    "OrganisationRelationshipLocalId": "90101_90903",
+                    "Status": "Andy is GREAT!",
+                    "RelationshipType": "34028",
+                    "SourceOrganisation": {
+                        "RefId": "90101"
+                    },
+                    "SourceOrganisationRole": "LSC",
+                    "RelatedOrganisation": {
+                        "RefId": "90903"
+                    },
+                    "RelatedOrganisationRole": "184000",
+                    "RelatedOrganisationAgreementDate": "2020-02-15T00:00:00+12:00",
+                    "EffectiveDate": "2020-02-15T00:00:00+12:00"
+                }
+            ]
+        }
+    }
+}
