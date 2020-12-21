@@ -136,6 +136,11 @@ return new JsonBuilder(slurped)</script>
           <con:entry key="Accept" value="application/json"/>
           <con:entry key="X-Edsby-OrganisationRefId" value="${GetOrgRefId#OrgRefId}"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -147,7 +152,7 @@ return new JsonBuilder(slurped)</script>
       <discardResults>true</discardResults>
     </con:config>
   </con:testStep>
-  <con:properties></con:properties>
+  <con:properties/>
   <con:reportParameters/>
   <con:breakPoints>
     <con:testStepId>0436ebb3-5d7c-4cc1-9366-43c54bc3a5f7</con:testStepId>

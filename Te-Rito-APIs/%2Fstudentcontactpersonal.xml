@@ -175,6 +175,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="createStudentContactPersonal" id="0b34865f-1349-4c3e-80a8-6f56095321c1" method="POST">
@@ -433,6 +438,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="55df7a04-7f69-4a0e-a5cf-64a3f7cd7422" mediaType="application/xml">
       <con:settings/>
@@ -478,6 +488,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="updateStudentContactPersonals" id="269afa0c-d4b0-4b8a-8982-1469be2c40a8" method="PUT">
@@ -731,6 +746,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="296d89f8-bdfb-41b1-ae82-4587249b46d5" mediaType="application/xml">
       <con:settings/>
@@ -776,6 +796,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="patchStudentContactPersonals" id="c9a130bf-5948-4f12-9a6d-8b04e3da244f" method="PATCH">
@@ -1029,6 +1054,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="ba4fe156-e0b3-4ade-ac87-506e49e63a6a" mediaType="application/xml">
       <con:settings/>
@@ -1074,6 +1104,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
 </con:resource>

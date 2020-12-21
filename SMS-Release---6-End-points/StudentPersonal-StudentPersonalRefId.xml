@@ -173,6 +173,11 @@
           <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#OrgRefId}"/>
           <con:entry key="StudentPersonalRefId" value="${Properties#StudentRefId}"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -232,6 +237,11 @@
           <con:entry key="Accept" value="application/json"/>
           <con:entry key="StudentPersonalRefId" value="${Properties#StudentRefId}"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -260,6 +270,11 @@
           <con:entry key="Accept" value="application/json"/>
           <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#OrgRefId}"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -320,6 +335,11 @@
           <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#OrgRefId}"/>
           <con:entry key="StudentPersonalRefId" value="${Properties#StudentLocalId}"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -638,6 +658,11 @@
           <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#OrgRefId}"/>
           <con:entry key="StudentPersonalRefId" value="${Properties#StudentRefId}"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -782,6 +807,11 @@
           <con:entry key="Accept" value="application/json"/>
           <con:entry key="StudentPersonalRefId" value="9e9c3c75-ec1c-42c0-86d1-e04f34db8fcc"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -926,6 +956,11 @@
           <con:entry key="Accept" value="application/json"/>
           <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -1071,6 +1106,11 @@
           <con:entry key="X-Edsby-OrganisationRefId" value="8006"/>
           <con:entry key="StudentPersonalRefId" value="9e9c3c75-ec1c-42c0-86d1-e04f34db8fcc"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -1480,6 +1520,11 @@
           <con:entry>StudentPersonalRefId</con:entry>
           <con:entry>Content-Type</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -1624,6 +1669,11 @@
           <con:entry key="Accept" value="application/json"/>
           <con:entry key="StudentPersonalRefId" value="9e9c3c75-ec1c-42c0-86d1-e04f34db8fcc"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -1768,6 +1818,11 @@
           <con:entry key="Accept" value="application/json"/>
           <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
         </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -1919,6 +1974,11 @@
           <con:entry>StudentPersonalRefId</con:entry>
           <con:entry>Content-Type</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>

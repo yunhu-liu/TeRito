@@ -150,6 +150,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="PUT" id="f49f90ed-3335-497c-836e-96d84fc1eacc" method="PUT">
@@ -308,6 +313,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="af620111-9994-4ea0-bf27-ce836b0f9748" mediaType="application/xml">
       <con:settings/>
@@ -333,6 +343,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="patchOrganisationRelationship" id="07b5f507-1692-4dca-8526-77e5e659b3d4" method="PATCH">
@@ -491,6 +506,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="14f494d0-adf5-4ad5-b69d-5146f675f2f2" mediaType="application/xml">
       <con:settings/>
@@ -516,6 +536,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
 </con:resource>

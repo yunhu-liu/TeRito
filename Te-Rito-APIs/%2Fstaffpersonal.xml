@@ -168,6 +168,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="createStaffPersonals" id="5211dd55-66e9-47a9-8303-90b969fc8939" method="POST">
@@ -427,6 +432,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="af954945-932a-4ba8-b889-6341e67f0bad" mediaType="application/xml">
       <con:settings/>
@@ -486,6 +496,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="updateStaffPersonals" id="a215e362-b46b-41b3-b4c8-abca36497afc" method="PUT">
@@ -712,6 +727,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="1ec55933-8000-4d41-96df-c1e4874dc0a5" mediaType="application/xml">
       <con:settings/>
@@ -763,6 +783,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="patchStaffPersonals" id="28875201-20b7-4655-8dba-9b06927e9504" method="PATCH">
@@ -989,6 +1014,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="1bd7ae45-273b-42eb-b5f6-e45c3ebfc272" mediaType="application/xml" postQueryString="false">
       <con:settings/>
@@ -1041,6 +1071,11 @@
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
 </con:resource>

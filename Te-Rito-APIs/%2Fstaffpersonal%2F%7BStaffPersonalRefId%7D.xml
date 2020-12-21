@@ -159,6 +159,11 @@
         <con:entry key="Accept" value="application/json"/>
         <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
       </con:parameters>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="updateStaffPersonal" id="d9e546ce-693c-40b3-b52a-f6766dce3e29" method="PUT">
@@ -352,6 +357,11 @@
         <con:entry key="Accept" value="application/json"/>
         <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
       </con:parameters>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="f4d8b114-9ae0-4fd5-8c15-d8509967c1d1" mediaType="application/xml">
       <con:settings/>
@@ -382,6 +392,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="patchStaffPersonal" id="14476f3e-8ce3-4a2b-9c16-a07bd67e2eaa" method="PATCH">
@@ -576,6 +591,11 @@
         <con:entry>StaffPersonalRefId</con:entry>
         <con:entry>Filename</con:entry>
       </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="c786fbb5-d933-4a65-a43f-2c2b70d9cd8b" mediaType="application/xml" postQueryString="false">
       <con:settings/>
@@ -613,6 +633,11 @@
         <con:entry>StaffPersonalRefId</con:entry>
         <con:entry>Filename</con:entry>
       </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
 </con:resource>

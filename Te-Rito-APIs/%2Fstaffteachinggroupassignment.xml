@@ -129,6 +129,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="createStaffTeachingGroupAssignments" id="b9a795ce-464f-43fd-84bb-8a76eea68044" method="POST">
@@ -290,6 +295,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="ca2e4b3e-3500-4577-bfa3-d08e91b618f2" mediaType="application/xml">
       <con:settings/>
@@ -315,6 +325,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="updateStaffTeachingGroupAssignments" id="e0c0ef17-9614-4b3e-a3a2-a4ce0c1a3451" method="PUT">
@@ -471,6 +486,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="6599e78f-1e84-49bf-aed1-d7c4fd1dc7c5" mediaType="application/xml">
       <con:settings/>
@@ -496,6 +516,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="patchStaffTeachingGroupAssignments" id="bdb7b840-4537-4244-b9ba-c1b95424ab08" method="PATCH">
@@ -652,6 +677,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="89b6926a-8904-486e-bef4-cb58e6c62749" mediaType="application/xml">
       <con:settings/>
@@ -677,6 +707,11 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
 </con:resource>

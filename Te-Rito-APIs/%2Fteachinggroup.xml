@@ -160,6 +160,11 @@
         <con:entry key="Accept" value="application\json"/>
         <con:entry key="X-Edsby-OrganisationRefId" value="8005"/>
       </con:parameters>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="createTeachingGroups" id="401f816e-f910-40fe-8dc4-c272a0286063" method="POST">
@@ -354,6 +359,11 @@
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="a114afad-6b2c-49ac-87b0-8f1351c34733" mediaType="application/xml" postQueryString="false">
       <con:settings/>
@@ -396,6 +406,11 @@
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="updateTeachingGroups" id="193521a7-fab6-4000-beb2-bdcd07c495f3" method="PUT">
@@ -585,6 +600,11 @@
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="e7023504-83cf-4500-9d74-a6273ade0084" mediaType="application/xml" postQueryString="false">
       <con:settings/>
@@ -627,6 +647,11 @@
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:method name="patchTeachingGroups" id="d9c85955-1786-4782-9d84-accf87fd99bd" method="PATCH">
@@ -816,6 +841,11 @@
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
     <con:request name="Request 2" id="c7e378c9-890b-420c-96ab-bb9059980d82" mediaType="application/xml" postQueryString="false">
       <con:settings/>
@@ -858,11 +888,19 @@
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+          <con:authProfile>MockSif - Basic Auth</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
   </con:method>
   <con:environmentSpec>
     <con:entry environmentId="Default">
       <con:authProfile>Basic Auth - MockServer</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+      <con:authProfile>MockServer - Basic Auth</con:authProfile>
     </con:entry>
   </con:environmentSpec>
 </con:resource>

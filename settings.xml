@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="331a0d21-45cd-4709-ba97-ba77a84a14f5" created="3.3.0" activeEnvironment="Default environment" name="SIF Sandbox - Off API Specs - git" authProfile="Basic Auth - MockServer" updated="3.5.0" encryptionMode="Not encrypted" resourceRoot="" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="331a0d21-45cd-4709-ba97-ba77a84a14f5" created="3.3.0" activeEnvironment="MockSif" name="SIF Sandbox - Off API Specs - git" authProfile="Basic Auth - MockServer" updated="3.5.0" encryptionMode="Not encrypted" resourceRoot="" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="331a0d21-45cd-4709-ba97-ba77a84a14f5fileName">SIF Sandbox - Off API Specs</con:setting>
   </con:settings>
@@ -58,9 +58,24 @@
 // pw.close()
 // fos.close()</con:script>
   </con:eventHandlers>
+  <con:environment id="96c24e14-e8e1-43ad-a26f-ecd9dd30328f" name="MockSif" index="0">
+    <con:service type="REST" name="Te Rito APIs">
+      <con:endpoint authProfile="MockSif - Basic Auth" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+    </con:service>
+    <con:databaseConnectionContainer>
+      <con:databaseConnection>
+        <con:name>MockSIF</con:name>
+        <con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver>
+        <con:connectionString>jdbc:sqlserver://mocksifapidbserver.database.windows.net:1433;databaseName=mocksif;user=sifadmin;password=PASS_VALUE</con:connectionString>
+        <con:password>sifsandbox1!</con:password>
+        <con:connectionProperties/>
+      </con:databaseConnection>
+    </con:databaseConnectionContainer>
+    <con:jmsConnectionContainer/>
+  </con:environment>
   <con:authRepository>
     <con:basicAuthEntry>
-      <con:name>Basic Auth - MockServer</con:name>
+      <con:name>MockSif - Basic Auth</con:name>
       <con:type>Basic</con:type>
       <con:username>sif</con:username>
       <con:password>sandbox</con:password>
@@ -76,5 +91,10 @@
       <con:scope>FIRST SUPS NZQA LSR SMS DEFERRED</con:scope>
     </con:oAuth20AuthEntry>
   </con:authRepository>
+  <con:environmentSpec>
+    <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+      <con:authProfile>MockServer - Basic Auth</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
   <con:tags/>
 </con:soapui-project>
