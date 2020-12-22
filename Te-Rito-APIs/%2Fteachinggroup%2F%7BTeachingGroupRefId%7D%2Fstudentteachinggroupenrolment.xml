@@ -3,7 +3,12 @@
   <con:settings>
     <con:setting id="ad14f727-a334-46b7-98ac-ac479d39a679fileName">%2Fteachinggroup%2F%7BTeachingGroupRefId%7D%2Fstudentteachinggroupenrolment</con:setting>
   </con:settings>
-  <con:parameters/>
+  <con:parameters>
+    <con:parameter>
+      <con:name>TeachingGroupRefId</con:name>
+      <con:style>TEMPLATE</con:style>
+    </con:parameter>
+  </con:parameters>
   <con:method name="getStudentTeachingGroupEnrolmentByTeachingGroup" id="85626b41-4bf9-4ac4-9fc2-4287b259eb40" method="GET">
     <con:description>&lt;p>Retrieve all available records of any student's arrival at and departure from a particular TeachingGroup at the given Provider.&lt;/p></con:description>
     <con:settings/>

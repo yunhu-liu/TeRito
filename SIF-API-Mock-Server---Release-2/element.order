@@ -1,6 +1,6 @@
-TeachingGroup-CreateSingle.xml
 Setup.xml
-TeachingGroup-CreateMulti.xml
+TeachingGroup-CreateSingle.xml
+TeachingGroup-CreateMultiple.xml
 TeachingGroup-GetMultiple.xml
 TeachingGroup-UpdateMultiple.xml
 TeachingGroup-PatchMultiple.xml

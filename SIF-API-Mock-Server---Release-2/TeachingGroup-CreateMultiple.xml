@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="a970ce95-c0a5-4051-8cb3-2a7816c68d73" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TeachingGroup-CreateMulti" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase id="a970ce95-c0a5-4051-8cb3-2a7816c68d73" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TeachingGroup-CreateMultiple" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="a970ce95-c0a5-4051-8cb3-2a7816c68d73fileName">TeachingGroup-CreateMulti</con:setting>
+    <con:setting id="a970ce95-c0a5-4051-8cb3-2a7816c68d73fileName">TeachingGroup-CreateMultiple</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
-  <con:testStep type="datasource" name="LoadTestData-Multi" id="54fb67f4-4e19-4d93-a787-9736ff6a4625">
+  <con:testStep type="datasource" name="LoadTestData-Multiple" id="54fb67f4-4e19-4d93-a787-9736ff6a4625">
     <con:settings>
       <con:setting id="com.eviware.soapui.impl.wsdl.teststeps.datasource.DataSourceContainer@prepared-properties">&lt;xml-fragment/></con:setting>
     </con:settings>
@@ -27,7 +27,7 @@
     <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:dataSource type="JSON">
         <con:configuration>
-          <sourceStep>LoadTestData-Multi</sourceStep>
+          <sourceStep>LoadTestData-Multiple</sourceStep>
           <sourceProperty>TestData</sourceProperty>
           <rowPath>$['testcase']</rowPath>
           <columnPath/>
@@ -93,28 +93,36 @@ import groovy.json.*
 
 // Load Data for Teaching Groups 
 def dynamicId = context.expand( '${GenDynamicId#DynamicId}' ) 
-def payload = context.expand( '${LoadTestData-Multi#TestData}' ) 
-def slurped = new JsonSlurper().parseText(payload)  
+def payload = context.expand( '${GetPayload#Payload}' ) 
+def slurped = new JsonSlurper().parseText(payload)
 
-// Get Values 
-def teachingGroup = new JsonBuilder(slurped.TeachingGroups.TeachingGroup[0]) 
-def tgLocalId = teachingGroup.content.TeachingGroupLocalId 
-def tgShortName =  teachingGroup.content.ShortName 
-def tgLongName =  teachingGroup.content.LongName  
+// Get Total Count of Teaching Groups
+def tgCount = slurped.TeachingGroups.TeachingGroup.size()
 
-// Update Fields
-slurped.TeachingGroups.TeachingGroup[0].TeachingGroupLocalId = "$tgLocalId" + "_" + "$dynamicId" 
-slurped.TeachingGroups.TeachingGroup[0].ShortName = "$tgShortName" + "_" + "$dynamicId" 
-slurped.TeachingGroups.TeachingGroup[0].LongName = "$tgLongName" + "_" + "$dynamicId"
+// Loop Through Teaching Groups and Update Fields for Each
+for ( i = 0; i &lt; tgCount; i++)
+{
+	// Get Values 
+	def teachingGroup = new JsonBuilder(slurped.TeachingGroups.TeachingGroup[i]) 
+	def tgLocalId = teachingGroup.content.TeachingGroupLocalId 
+	def tgShortName =  teachingGroup.content.ShortName 
+	def tgLongName =  teachingGroup.content.LongName  
+	
+	// Update Fields
+	slurped.TeachingGroups.TeachingGroup[i].TeachingGroupLocalId = "$tgLocalId" + "_" + "$dynamicId" 
+	slurped.TeachingGroups.TeachingGroup[i].ShortName = "$tgShortName" + "_" + "$dynamicId" 
+	slurped.TeachingGroups.TeachingGroup[i].LongName = "$tgLongName" + "_" + "$dynamicId"	
+}
 
 // Write Updated Payload to Result
+log.info(new JsonBuilder(slurped))
 return new JsonBuilder(slurped)</script>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="CreateMulti" id="654f3f8f-db2b-4bcd-9e2a-fecc7cc69eef" disabled="true">
+  <con:testStep type="restrequest" name="CreateMultiple" id="654f3f8f-db2b-4bcd-9e2a-fecc7cc69eef">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/teachinggroup" methodName="createTeachingGroups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="CreateMulti" id="de0baaa7-6a83-4b04-b68a-45a9e9174c20" mediaType="application/json" postQueryString="false">
+      <con:restRequest name="CreateMultiple" id="de0baaa7-6a83-4b04-b68a-45a9e9174c20" mediaType="application/json" postQueryString="false">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
@@ -147,7 +155,7 @@ return new JsonBuilder(slurped)</script>
   <con:testStep type="datasourceloop" name="DataSource Loop" id="0215ec16-b469-4405-870d-8db8ace80e66">
     <con:settings/>
     <con:config>
-      <dataSourceStep>LoadTestData-Multi</dataSourceStep>
+      <dataSourceStep>LoadTestData-Multiple</dataSourceStep>
       <targetStep>GetPayload</targetStep>
       <discardResults>true</discardResults>
     </con:config>
