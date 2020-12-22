@@ -175,10 +175,12 @@
     <con:request name="Request 1" id="6ee366ca-7f67-4356-97db-a22dd1f1800e" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request/>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">

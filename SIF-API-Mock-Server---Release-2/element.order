@@ -1,7 +1,3 @@
 Setup.xml
-TeachingGroup-CreateSingle.xml
-TeachingGroup-CreateMultiple.xml
-TeachingGroup-GetMultiple.xml
-TeachingGroup-UpdateMultiple.xml
-TeachingGroup-PatchMultiple.xml
-TestCase-1.xml
+TeachingGroup-SingleValid.xml
+TeachingGroup-MultipleValid.xml

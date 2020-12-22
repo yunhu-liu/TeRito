@@ -133,10 +133,12 @@
     <con:request name="Request 1" id="40e6985e-2383-4502-817b-ae2558e3d004" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request/>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
@@ -271,7 +273,7 @@
   </YearLevelList>
 </TeachingGroup>]]></con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="2143797b-be05-439e-8ccd-59a1365165c6" mediaType="application/json">
+    <con:request name="Request 1" id="2143797b-be05-439e-8ccd-59a1365165c6" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request>{\r
@@ -295,6 +297,7 @@
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
@@ -458,7 +461,7 @@
   </YearLevelList>
 </TeachingGroup>]]></con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="bde63a9b-f4f3-4013-b559-a1db7d55cd63" mediaType="application/json">
+    <con:request name="Request 1" id="bde63a9b-f4f3-4013-b559-a1db7d55cd63" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request>{\r
@@ -482,6 +485,7 @@
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">

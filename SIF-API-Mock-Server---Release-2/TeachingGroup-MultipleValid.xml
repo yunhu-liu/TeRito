@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="a970ce95-c0a5-4051-8cb3-2a7816c68d73" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TeachingGroup-CreateMultiple" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase id="a970ce95-c0a5-4051-8cb3-2a7816c68d73" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TeachingGroup-MultipleValid" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="a970ce95-c0a5-4051-8cb3-2a7816c68d73fileName">TeachingGroup-CreateMultiple</con:setting>
+    <con:setting id="a970ce95-c0a5-4051-8cb3-2a7816c68d73fileName">TeachingGroup-MultipleValid</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep type="datasource" name="LoadTestData-Multiple" id="54fb67f4-4e19-4d93-a787-9736ff6a4625">
@@ -151,6 +151,105 @@ return new JsonBuilder(slurped)</script>
       </con:restRequest>
     </con:config>
   </con:testStep>
+  <con:testStep type="restrequest" name="UpdateMultiple" id="a6e0fd37-556e-4956-ae29-1977faad04b0">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/teachinggroup" methodName="updateTeachingGroups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="UpdateMultiple" id="7f0c5fd6-56ca-4d4c-ab9d-510a34df1043" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request>${UpdatePayload#result}</con:request>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/teachinggroup</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="11953101-51f0-4936-a41a-732e305495b7" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${GetOrgRefId#OrgRefId}"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="PatchMultiple" id="bb3f2fdd-2d01-4c54-bd20-6a9856c67db9">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/teachinggroup" methodName="patchTeachingGroups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="PatchMultiple" id="ee8168cf-c732-442d-ac36-63630fd7d49a" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request>${UpdatePayload#result}</con:request>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/teachinggroup</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="838590b5-5fe0-46a5-914b-c981531f877e" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${GetOrgRefId#OrgRefId}"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="GetTeachingGropus" id="df2189b4-a727-4a1f-913e-40c8a541ff3e">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/teachinggroup" methodName="getTeachingGroups" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="GetTeachingGropus" id="5963fbf5-4414-4f25-a49b-cd8e204462ff" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/teachinggroup</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="3e2525dd-347e-46c8-b677-2659cb6b3330" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application\json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${GetOrgRefId#OrgRefId}"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
   <con:testStep type="datasourceloop" name="DataSource Loop" id="0215ec16-b469-4405-870d-8db8ace80e66">
     <con:settings/>
     <con:config>
@@ -178,6 +277,11 @@ return new JsonBuilder(slurped)</script>
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>70e07003-dfdd-4015-8326-6bea37b98bf4</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>df2189b4-a727-4a1f-913e-40c8a541ff3e</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
