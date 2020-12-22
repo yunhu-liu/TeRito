@@ -115,7 +115,6 @@ for ( i = 0; i &lt; tgCount; i++)
 }
 
 // Write Updated Payload to Result
-log.info(new JsonBuilder(slurped))
 return new JsonBuilder(slurped)</script>
     </con:config>
   </con:testStep>
