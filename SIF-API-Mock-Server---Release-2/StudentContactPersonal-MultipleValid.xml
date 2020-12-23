@@ -4,6 +4,21 @@
     <con:setting id="993e397d-a39e-4f00-87bb-97d4868b2c19fileName">StudentContactPersonal-MultipleValid</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="properties" name="Properties" id="bdd4d6c3-f5e8-4bb4-88db-9e827ddcf403">
+    <con:settings/>
+    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties>
+        <con:property>
+          <con:name>OrgRefId</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name>StudentPersonalRefId</con:name>
+          <con:value/>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
   <con:testStep type="restrequest" name="CreateMultiple" id="f68958bb-a294-40d1-abba-619f47aad096">
     <con:settings/>
     <con:config service="Te Rito APIs" resourcePath="/studentcontactpersonal" methodName="createStudentContactPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -56,11 +71,6 @@
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="c269d4b1-81c9-47f8-9b1d-36cea691cb7c" name="Response SLA">
-          <con:configuration>
-            <SLA>200</SLA>
-          </con:configuration>
-        </con:assertion>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
@@ -68,6 +78,7 @@
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#OrgRefId}"/>
         </con:parameters>
         <con:environmentSpec>
           <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
@@ -129,11 +140,6 @@
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="4d3bf572-52cc-4c46-8c13-0048e2473de5" name="Response SLA">
-          <con:configuration>
-            <SLA>200</SLA>
-          </con:configuration>
-        </con:assertion>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
@@ -141,6 +147,7 @@
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#OrgRefId}"/>
         </con:parameters>
         <con:environmentSpec>
           <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
@@ -202,11 +209,6 @@
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="e458e838-f30d-4ff7-906d-4ca7ff79a491" name="Response SLA">
-          <con:configuration>
-            <SLA>200</SLA>
-          </con:configuration>
-        </con:assertion>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
@@ -214,6 +216,7 @@
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#OrgRefId}"/>
         </con:parameters>
         <con:environmentSpec>
           <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
@@ -238,11 +241,6 @@
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="168b7c2c-afd6-42d6-accf-64d6e5e6207a" name="Response SLA">
-          <con:configuration>
-            <SLA>200</SLA>
-          </con:configuration>
-        </con:assertion>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
@@ -250,6 +248,7 @@
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
           <con:entry key="Accept" value="application/json"/>
+          <con:entry key="X-Edsby-OrganisationRefId" value="${Properties#OrgRefId}"/>
         </con:parameters>
         <con:environmentSpec>
           <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
@@ -261,4 +260,9 @@
   </con:testStep>
   <con:properties/>
   <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>bdd4d6c3-f5e8-4bb4-88db-9e827ddcf403</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
 </con:testCase>
