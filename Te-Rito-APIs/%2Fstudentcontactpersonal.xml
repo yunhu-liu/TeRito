@@ -170,10 +170,12 @@
     <con:request name="Request 1" id="f9851bf9-78c4-471c-a85d-e3b14b380666" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+      <con:request/>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
@@ -392,7 +394,7 @@
   </StudentContactPersonal>
 </StudentContactPersonals>]]></con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="b8dd99e5-f32b-4787-8e56-aadbd0f92a46" mediaType="application/json">
+    <con:request name="Request 1" id="b8dd99e5-f32b-4787-8e56-aadbd0f92a46" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request>{\r
@@ -437,6 +439,7 @@
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
@@ -444,7 +447,7 @@
         </con:entry>
       </con:environmentSpec>
     </con:request>
-    <con:request name="Request 2" id="55df7a04-7f69-4a0e-a5cf-64a3f7cd7422" mediaType="application/xml">
+    <con:request name="Request 2" id="55df7a04-7f69-4a0e-a5cf-64a3f7cd7422" mediaType="application/xml" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request><![CDATA[<StudentContactPersonals>
@@ -487,6 +490,7 @@
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
@@ -700,7 +704,7 @@
   </StudentContactPersonal>
 </StudentContactPersonals>]]></con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="509da9b7-5116-4778-9cf0-ff0010f3465a" mediaType="application/json">
+    <con:request name="Request 1" id="509da9b7-5116-4778-9cf0-ff0010f3465a" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request>{\r
@@ -745,6 +749,7 @@
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
@@ -1008,7 +1013,7 @@
   </StudentContactPersonal>
 </StudentContactPersonals>]]></con:sampleContent>
     </con:representation>
-    <con:request name="Request 1" id="ffcfe0f2-55bc-4f03-82b6-f0466569dea1" mediaType="application/json">
+    <con:request name="Request 1" id="ffcfe0f2-55bc-4f03-82b6-f0466569dea1" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request>{\r
@@ -1053,6 +1058,7 @@
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">

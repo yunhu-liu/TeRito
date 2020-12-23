@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="993e397d-a39e-4f00-87bb-97d4868b2c19" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="StudentContactPersonal-MultipleValid" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="993e397d-a39e-4f00-87bb-97d4868b2c19fileName">StudentContactPersonal-MultipleValid</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="CreateMultiple" id="f68958bb-a294-40d1-abba-619f47aad096">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/studentcontactpersonal" methodName="createStudentContactPersonal" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="CreateMultiple" id="b8dd99e5-f32b-4787-8e56-aadbd0f92a46" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request>{\r
+  "StudentContactPersonals" : {\r
+    "StudentContactPersonal" : [ {\r
+      "StudentContactPersonalRefId" : "7c834ea9-eda1-2090-347f-83297e1c290f",\r
+      "StudentContactPersonalLocalId" : "P1234567",\r
+      "PersonInfo" : {\r
+        "Name" : {\r
+          "FamilyName" : "Hagrid",\r
+          "GivenName" : "Fridwulfa",\r
+          "FullName" : "Fridwulfa Hagrid",\r
+          "Type" : "LGL"\r
+        },\r
+        "AddressList" : {\r
+          "Address" : [ {\r
+            "Type" : "TH",\r
+            "Role" : "PHY",\r
+            "Line1" : "The Enchanted Wood",\r
+            "Line2" : "533 Hogwart's Way",\r
+            "City" : "Hogsmead",\r
+            "PostalCode" : "7733"\r
+          } ]\r
+        },\r
+        "EmailList" : {\r
+          "Email" : [ {\r
+            "Type" : "PRIM",\r
+            "Address" : "ridwulfa@gmail.com"\r
+          } ]\r
+        },\r
+        "PhoneNumberList" : {\r
+          "PhoneNumber" : [ {\r
+            "Type" : "MOB",\r
+            "Number" : "(021) 300 999"\r
+          } ]\r
+        }\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="ba5ea131-7141-4bce-817a-8417659345d4" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="c269d4b1-81c9-47f8-9b1d-36cea691cb7c" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="UpdateMultiple" id="311bd63f-0799-4ee6-af78-2bfb7882f5dc">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/studentcontactpersonal" methodName="updateStudentContactPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="UpdateMultiple" id="509da9b7-5116-4778-9cf0-ff0010f3465a" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request>{\r
+  "StudentContactPersonals" : {\r
+    "StudentContactPersonal" : [ {\r
+      "StudentContactPersonalRefId" : "7c834ea9-eda1-2090-347f-83297e1c290f",\r
+      "StudentContactPersonalLocalId" : "P1234567",\r
+      "PersonInfo" : {\r
+        "Name" : {\r
+          "FamilyName" : "Hagrid",\r
+          "GivenName" : "Fridwulfa",\r
+          "FullName" : "Fridwulfa Hagrid",\r
+          "Type" : "LGL"\r
+        },\r
+        "AddressList" : {\r
+          "Address" : [ {\r
+            "Type" : "TH",\r
+            "Role" : "PHY",\r
+            "Line1" : "The Enchanted Wood",\r
+            "Line2" : "533 Hogwart's Way",\r
+            "City" : "Hogsmead",\r
+            "PostalCode" : "7733"\r
+          } ]\r
+        },\r
+        "EmailList" : {\r
+          "Email" : [ {\r
+            "Type" : "PRIM",\r
+            "Address" : "ridwulfa@gmail.com"\r
+          } ]\r
+        },\r
+        "PhoneNumberList" : {\r
+          "PhoneNumber" : [ {\r
+            "Type" : "MOB",\r
+            "Number" : "(021) 300 999"\r
+          } ]\r
+        }\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="c71bfe1d-22b8-4c51-897a-373dc26115aa" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="4d3bf572-52cc-4c46-8c13-0048e2473de5" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="PatchMultiple" id="7c1f385a-cc6e-40b9-89f2-72246123a3f9">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/studentcontactpersonal" methodName="patchStudentContactPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="PatchMultiple" id="ffcfe0f2-55bc-4f03-82b6-f0466569dea1" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request>{\r
+  "StudentContactPersonals" : {\r
+    "StudentContactPersonal" : [ {\r
+      "StudentContactPersonalRefId" : "7c834ea9-eda1-2090-347f-83297e1c290f",\r
+      "StudentContactPersonalLocalId" : "P1234567",\r
+      "PersonInfo" : {\r
+        "Name" : {\r
+          "FamilyName" : "Hagrid",\r
+          "GivenName" : "Fridwulfa",\r
+          "FullName" : "Fridwulfa Hagrid",\r
+          "Type" : "LGL"\r
+        },\r
+        "AddressList" : {\r
+          "Address" : [ {\r
+            "Type" : "TH",\r
+            "Role" : "PHY",\r
+            "Line1" : "The Enchanted Wood",\r
+            "Line2" : "533 Hogwart's Way",\r
+            "City" : "Hogsmead",\r
+            "PostalCode" : "7733"\r
+          } ]\r
+        },\r
+        "EmailList" : {\r
+          "Email" : [ {\r
+            "Type" : "PRIM",\r
+            "Address" : "ridwulfa@gmail.com"\r
+          } ]\r
+        },\r
+        "PhoneNumberList" : {\r
+          "PhoneNumber" : [ {\r
+            "Type" : "MOB",\r
+            "Number" : "(021) 300 999"\r
+          } ]\r
+        }\r
+      }\r
+    } ]\r
+  }\r
+}</con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="be07b57f-9735-4374-a593-8966234fedf2" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="e458e838-f30d-4ff7-906d-4ca7ff79a491" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="GetStudentContactPersonal" id="197761f6-4536-4f81-9b34-7e3a464d3963">
+    <con:settings/>
+    <con:config service="Te Rito APIs" resourcePath="/studentcontactpersonal" methodName="getStudentContactPersonals" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="GetStudentContactPersonal" id="f9851bf9-78c4-471c-a85d-e3b14b380666" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="9601088d-eb57-406b-ab3e-fcb4a8e89862" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="168b7c2c-afd6-42d6-accf-64d6e5e6207a" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="96c24e14-e8e1-43ad-a26f-ecd9dd30328f">
+            <con:authProfile>MockSif - Basic Auth</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

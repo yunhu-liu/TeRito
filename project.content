@@ -82,3 +82,5 @@ SMS-Release---6-End-points\StudentPersonal-StudentPersonalRefId.xml
 SIF-API-Mock-Server---Release-2\Setup.xml
 SIF-API-Mock-Server---Release-2\TeachingGroup-SingleValid.xml
 SIF-API-Mock-Server---Release-2\TeachingGroup-MultipleValid.xml
+SIF-API-Mock-Server---Release-2\StudentContactPersonal-SingleValid.xml
+SIF-API-Mock-Server---Release-2\StudentContactPersonal-MultipleValid.xml
