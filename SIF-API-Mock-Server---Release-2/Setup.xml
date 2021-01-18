@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="35e654b6-cb2f-4f05-aa26-72c32257a146" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Setup" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" disabled="true" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase id="35e654b6-cb2f-4f05-aa26-72c32257a146" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Setup" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="35e654b6-cb2f-4f05-aa26-72c32257a146fileName">Setup</con:setting>
   </con:settings>
@@ -10,40 +10,45 @@
       <con:properties>
         <con:property>
           <con:name>OrgRefId</con:name>
-          <con:value>8007</con:value>
+          <con:value>90903</con:value>
         </con:property>
         <con:property>
           <con:name>InvalidOrgRefId</con:name>
-          <con:value>2283</con:value>
+          <con:value>6020</con:value>
         </con:property>
       </con:properties>
     </con:config>
   </con:testStep>
-  <con:testStep type="fileWaitTestStep" name="LoadJsonForOrgs" id="76141c84-728f-4a74-8119-7c8654237177">
-    <con:settings/>
-    <con:config>
-      <FileName>C:\TeRito\SIF Sandbox - Off API Specs - git\testdata\TeRitoSampleData-v3.2-rc2-TeWheke\TeWheke\Organisation\Organisation_TeRito-Imports-TeWheke-All.json</FileName>
-      <Timeout>0</Timeout>
-      <timeout_measure>0</timeout_measure>
-      <DeleteFile>false</DeleteFile>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="datasource" name="GetOrgRefId" id="788c2eea-a3ea-4257-9ea0-a6019ec7dbb7">
+  <con:testStep type="datasource" name="LoadTestData" id="f0bd82ee-456f-432d-a84d-57749885ca77">
     <con:settings/>
     <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:dataSource type="JSON">
+      <con:dataSource type="Directory">
         <con:configuration>
-          <sourceStep/>
-          <sourceProperty>fileContent</sourceProperty>
-          <rowPath>$['Organisations']['Organisation']</rowPath>
-          <columnPath>['OrganisationRefId']</columnPath>
-          <columnPath>['EducationRegion']</columnPath>
+          <directory>C:/TeRito/SIF Sandbox - Off API Specs - git/testdata/v3.2-rc2_multiple_header_wrapped/Organisation/200</directory>
+          <filter>*.json</filter>
+          <encoding/>
         </con:configuration>
       </con:dataSource>
       <con:shared>true</con:shared>
       <con:restartShared>true</con:restartShared>
-      <con:property>OrganisationRefId</con:property>
-      <con:property>EducationRegion</con:property>
+      <con:property>TestData</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasource" name="GetOrganisations" id="788c2eea-a3ea-4257-9ea0-a6019ec7dbb7">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="JSON">
+        <con:configuration>
+          <sourceStep>LoadTestData</sourceStep>
+          <sourceProperty>TestData</sourceProperty>
+          <rowPath>$['testcase']['Organisations']['Organisation']</rowPath>
+          <columnPath>['OrganisationRefId']</columnPath>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>OrgRefId</con:property>
       <con:completeLastOperation>true</con:completeLastOperation>
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
@@ -55,14 +60,14 @@
 if( context["allOrgs"] == null ) context["allOrgs"] = []
 
 // Append the current data source row value to the list
-context["allOrgs"] &lt;&lt; context.expand( '${GetOrgRefId#OrganisationRefId}' )</script>
+context["allOrgs"] &lt;&lt; context.expand( '${GetOrganisations#OrgRefId}' )</script>
     </con:config>
   </con:testStep>
-  <con:testStep type="datasourceloop" name="LoopAllOrgs" id="1ab147fb-e60e-433b-89bc-7403196583d8">
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="7b7d4820-ec90-4db8-92ea-651bbc5405d7">
     <con:settings/>
     <con:config>
-      <dataSourceStep>GetOrgRefId</dataSourceStep>
-      <targetStep>SaveAllOrgRefIds</targetStep>
+      <dataSourceStep>LoadTestData</dataSourceStep>
+      <targetStep>GetOrganisations</targetStep>
       <discardResults>true</discardResults>
     </con:config>
   </con:testStep>
@@ -285,6 +290,11 @@ if ( row + 1 &lt;= context["allOrgs"].size() )
   </con:breakPoints>
   <con:breakPoints>
     <con:testStepId>21564d34-e5c1-41f2-98b4-bda29739c6f1</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>5ab03b8b-cc61-419e-b84a-649596facd2f</con:testStepId>
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>

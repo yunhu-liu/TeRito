@@ -136,6 +136,7 @@ return new JsonBuilder(slurped)</script>
         </con:settings>
         <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
         <con:request/>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/teachinggroup/</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="2525f401-8b27-450a-b5a0-26f3a13e9707" name="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
@@ -169,6 +170,7 @@ return new JsonBuilder(slurped)</script>
         </con:settings>
         <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
         <con:request>${UpdatePayload#result}</con:request>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/teachinggroup/</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="abda4c40-2ae2-43e9-ae7e-f5da19bf4b25" name="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
@@ -202,6 +204,7 @@ return new JsonBuilder(slurped)</script>
         </con:settings>
         <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
         <con:request>${UpdatePayload#result}</con:request>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/teachinggroup/</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="c015c661-745d-447e-9b4e-de55550496a0" name="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
@@ -235,6 +238,7 @@ return new JsonBuilder(slurped)</script>
         </con:settings>
         <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
         <con:request/>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/teachinggroup/staffteachinggroupassignment</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="ec0b30a3-a221-4c30-aa94-74107f259c8f" name="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
@@ -269,6 +273,7 @@ return new JsonBuilder(slurped)</script>
         </con:settings>
         <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
         <con:request/>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/teachinggroup/studentattendancetimelist</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="dcafd451-ea3d-47e9-929c-a1402fd690e2" name="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
@@ -302,6 +307,7 @@ return new JsonBuilder(slurped)</script>
         </con:settings>
         <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
         <con:request/>
+        <con:originalUri>https://mocksifapi.azurewebsites.net/sif/teachinggroup/studentteachinggroupenrolment</con:originalUri>
         <con:assertion type="Valid HTTP Status Codes" id="11335b69-2d5b-4942-8170-4aa5e8530849" name="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
