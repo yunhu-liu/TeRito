@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="350c8e82-680b-4b16-9d62-8edcc02c9d31" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="StudentContactRelationship-MultipleValid" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="350c8e82-680b-4b16-9d62-8edcc02c9d31fileName">StudentContactRelationship-MultipleValid</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

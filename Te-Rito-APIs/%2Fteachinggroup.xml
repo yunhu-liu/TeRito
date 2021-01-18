@@ -332,7 +332,9 @@
 </TeachingGroups>]]></con:sampleContent>
     </con:representation>
     <con:request name="Request 1" id="de0baaa7-6a83-4b04-b68a-45a9e9174c20" mediaType="application/json" postQueryString="false">
-      <con:settings/>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>https://mocksifapi.azurewebsites.net/sif</con:endpoint>
       <con:request>{\r
   "TeachingGroups" : {\r
@@ -353,6 +355,7 @@
     } ]\r
   }\r
 }</con:request>
+      <con:originalUri>https://mocksifapi.azurewebsites.net/sif/teachinggroup</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>

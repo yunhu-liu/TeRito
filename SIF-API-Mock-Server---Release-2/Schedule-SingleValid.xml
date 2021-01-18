@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="1ed865d7-9433-4a80-9f90-76af451cde52" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Schedule-SingleValid" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1ed865d7-9433-4a80-9f90-76af451cde52fileName">Schedule-SingleValid</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

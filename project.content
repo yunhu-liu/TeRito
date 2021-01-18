@@ -84,3 +84,11 @@ SIF-API-Mock-Server---Release-2\TeachingGroup-SingleValid.xml
 SIF-API-Mock-Server---Release-2\TeachingGroup-MultipleValid.xml
 SIF-API-Mock-Server---Release-2\StudentContactPersonal-SingleValid.xml
 SIF-API-Mock-Server---Release-2\StudentContactPersonal-MultipleValid.xml
+SIF-API-Mock-Server---Release-2\StudentContactRelationship-SingleValid.xml
+SIF-API-Mock-Server---Release-2\StudentContactRelationship-MultipleValid.xml
+SIF-API-Mock-Server---Release-2\StudentTeachingGroupEnrolment-SingleValid.xml
+SIF-API-Mock-Server---Release-2\StudentTeachingGroupEnrolment-MultipleValid.xml
+SIF-API-Mock-Server---Release-2\Schedule-SingleValid.xml
+SIF-API-Mock-Server---Release-2\Schedule-MultipleValid.xml
+SIF-API-Mock-Server---Release-2\SchedulePeriod-SingleValid.xml
+SIF-API-Mock-Server---Release-2\SchedulePeriod-MultipleValid.xml

@@ -3,3 +3,11 @@ TeachingGroup-SingleValid.xml
 TeachingGroup-MultipleValid.xml
 StudentContactPersonal-SingleValid.xml
 StudentContactPersonal-MultipleValid.xml
+StudentContactRelationship-SingleValid.xml
+StudentContactRelationship-MultipleValid.xml
+StudentTeachingGroupEnrolment-SingleValid.xml
+StudentTeachingGroupEnrolment-MultipleValid.xml
+Schedule-SingleValid.xml
+Schedule-MultipleValid.xml
+SchedulePeriod-SingleValid.xml
+SchedulePeriod-MultipleValid.xml

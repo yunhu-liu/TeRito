@@ -10,11 +10,11 @@
       <con:properties>
         <con:property>
           <con:name>OrgRefId</con:name>
-          <con:value>90903</con:value>
+          <con:value>90902</con:value>
         </con:property>
         <con:property>
           <con:name>InvalidOrgRefId</con:name>
-          <con:value>6020</con:value>
+          <con:value>1436</con:value>
         </con:property>
       </con:properties>
     </con:config>
